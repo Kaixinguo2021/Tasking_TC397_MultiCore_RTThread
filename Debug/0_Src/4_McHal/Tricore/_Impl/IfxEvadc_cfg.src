@@ -1,0 +1,1405 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\4_McHal\\Tricore\\_Impl\\.IfxEvadc_cfg.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\4_McHal\\Tricore\\_Impl\\IfxEvadc_cfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\4_McHal\\Tricore\\_Impl\\IfxEvadc_cfg.src ..\\0_Src\\4_McHal\\Tricore\\_Impl\\IfxEvadc_cfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\4_McHal\\Tricore\\_Impl\\IfxEvadc_cfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.data.IfxEvadc_cfg.IfxEvadc_cfg_srcAddresses',data,cluster('IfxEvadc_cfg_srcAddresses')
+	.sect	'.data.IfxEvadc_cfg.IfxEvadc_cfg_srcAddresses'
+	.global	IfxEvadc_cfg_srcAddresses
+	.align	4
+IfxEvadc_cfg_srcAddresses:	.type	object
+	.size	IfxEvadc_cfg_srcAddresses,352
+	.word	-268204432,-268204428,-268204424,-268204420
+	.word	-268204416,-268204412,-268204408,-268204404
+	.word	-268204400,-268204396,-268204392,-268204388
+	.word	-268204384,-268204380,-268204376,-268204372
+	.word	-268204368,-268204364,-268204360,-268204356
+	.word	-268204352,-268204348,-268204344,-268204340
+	.word	-268204336,-268204332,-268204328,-268204324
+	.word	-268204320,-268204316,-268204312,-268204308
+	.word	-268204304,-268204300,-268204296,-268204292
+	.word	-268204288,-268204284,-268204280,-268204276
+	.word	-268204272,-268204268,-268204264,-268204260
+	.word	-268204256,-268204252,-268204248,-268204244
+	.word	-268204240
+	.space	12
+	.word	-268204236
+	.space	12
+	.word	-268204232
+	.space	12
+	.word	-268204228
+	.space	12
+	.word	-268204224
+	.space	12
+	.word	-268204220
+	.space	12
+	.word	-268204216
+	.space	12
+	.word	-268204212
+	.space	12
+	.word	-268204208,-268204204,-268204200,-268204196
+	.word	-268204192,-268204188,-268204184,-268204180
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	7255
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\0_Src\\4_McHal\\Tricore\\_Impl\\IfxEvadc_cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2,1,1,3
+	.word	168
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,58,17,1,1,5
+	.byte	'fun',0,1,58,43
+	.word	171
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1,7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,149,2,18
+	.word	216
+	.byte	1,1,5
+	.byte	'a',0,1,149,2,44
+	.word	228
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	308
+	.byte	8
+	.byte	'__ld64',0,3,2,132,1,19
+	.word	282
+	.byte	1,1,5
+	.byte	'addr',0,2,132,1,32
+	.word	314
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,140,1,17,1,1,5
+	.byte	'addr',0,2,140,1,30
+	.word	314
+	.byte	5
+	.byte	'value',0,2,140,1,43
+	.word	282
+	.byte	6,0,7
+	.byte	'unsigned int',0,4,7,7
+	.byte	'int',0,4,5,7
+	.byte	'unsigned char',0,1,8,10
+	.byte	'_Ifx_SRC_SRCR_Bits',0,4,68,16,4,11
+	.byte	'SRPN',0,1
+	.word	423
+	.byte	8,0,2,35,0,11
+	.byte	'reserved_8',0,1
+	.word	423
+	.byte	2,6,2,35,1,11
+	.byte	'SRE',0,1
+	.word	423
+	.byte	1,5,2,35,1,11
+	.byte	'TOS',0,1
+	.word	423
+	.byte	3,2,2,35,1,11
+	.byte	'reserved_14',0,1
+	.word	423
+	.byte	2,0,2,35,1,11
+	.byte	'ECC',0,1
+	.word	423
+	.byte	5,3,2,35,2,11
+	.byte	'reserved_21',0,1
+	.word	423
+	.byte	3,0,2,35,2,11
+	.byte	'SRR',0,1
+	.word	423
+	.byte	1,7,2,35,3,11
+	.byte	'CLRR',0,1
+	.word	423
+	.byte	1,6,2,35,3,11
+	.byte	'SETR',0,1
+	.word	423
+	.byte	1,5,2,35,3,11
+	.byte	'IOV',0,1
+	.word	423
+	.byte	1,4,2,35,3,11
+	.byte	'IOVCLR',0,1
+	.word	423
+	.byte	1,3,2,35,3,11
+	.byte	'SWS',0,1
+	.word	423
+	.byte	1,2,2,35,3,11
+	.byte	'SWSCLR',0,1
+	.word	423
+	.byte	1,1,2,35,3,11
+	.byte	'reserved_31',0,1
+	.word	423
+	.byte	1,0,2,35,3,0,12,4,93,9,4,13
+	.byte	'U',0
+	.word	400
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	416
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	440
+	.byte	4,2,35,0,0,14
+	.word	730
+	.byte	3
+	.word	769
+	.byte	4
+	.byte	'IfxSrc_clearRequest',0,3,3,247,1,17,1,1,5
+	.byte	'src',0,3,247,1,60
+	.word	774
+	.byte	6,0,15
+	.word	416
+	.byte	16
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,17
+	.word	822
+	.byte	0,14
+	.word	400
+	.byte	3
+	.word	400
+	.byte	18
+	.byte	'__cmpswapw',0
+	.word	864
+	.byte	1,1,1,1,19
+	.byte	'p',0
+	.word	869
+	.byte	19
+	.byte	'value',0
+	.word	400
+	.byte	19
+	.byte	'compare',0
+	.word	400
+	.byte	0,20
+	.word	176
+	.byte	21
+	.word	202
+	.byte	6,0,20
+	.word	237
+	.byte	21
+	.word	269
+	.byte	6,0,20
+	.word	319
+	.byte	21
+	.word	338
+	.byte	6,0,20
+	.word	354
+	.byte	21
+	.word	369
+	.byte	21
+	.word	383
+	.byte	6,0,20
+	.word	779
+	.byte	21
+	.word	807
+	.byte	6,0,7
+	.byte	'short int',0,2,5,22
+	.byte	'__wchar_t',0,5,1,1
+	.word	991
+	.byte	22
+	.byte	'__size_t',0,5,1,1
+	.word	400
+	.byte	22
+	.byte	'__ptrdiff_t',0,5,1,1
+	.word	416
+	.byte	23,1,3
+	.word	1059
+	.byte	22
+	.byte	'__codeptr',0,5,1,1
+	.word	1061
+	.byte	24,6,66,9,1,25
+	.byte	'IfxSrc_Tos_cpu0',0,0,25
+	.byte	'IfxSrc_Tos_dma',0,1,25
+	.byte	'IfxSrc_Tos_cpu1',0,2,25
+	.byte	'IfxSrc_Tos_cpu2',0,3,25
+	.byte	'IfxSrc_Tos_cpu3',0,4,25
+	.byte	'IfxSrc_Tos_cpu4',0,5,25
+	.byte	'IfxSrc_Tos_cpu5',0,6,0,22
+	.byte	'IfxSrc_Tos',0,6,75,3
+	.word	1084
+	.byte	22
+	.byte	'boolean',0,7,104,29
+	.word	423
+	.byte	22
+	.byte	'uint8',0,7,108,29
+	.word	423
+	.byte	7
+	.byte	'unsigned short int',0,2,7,22
+	.byte	'uint16',0,7,112,29
+	.word	1264
+	.byte	7
+	.byte	'unsigned long int',0,4,7,22
+	.byte	'uint32',0,7,116,29
+	.word	1301
+	.byte	22
+	.byte	'uint64',0,7,121,29
+	.word	282
+	.byte	22
+	.byte	'sint16',0,7,129,1,29
+	.word	991
+	.byte	7
+	.byte	'long int',0,4,5,22
+	.byte	'sint32',0,7,134,1,29
+	.word	1368
+	.byte	7
+	.byte	'long long int',0,8,5,22
+	.byte	'sint64',0,7,141,1,29
+	.word	1396
+	.byte	22
+	.byte	'float32',0,7,170,1,29
+	.word	228
+	.byte	22
+	.byte	'pvoid',0,8,54,28
+	.word	314
+	.byte	22
+	.byte	'Ifx_TickTime',0,8,76,28
+	.word	1396
+	.byte	22
+	.byte	'Ifx_Priority',0,8,100,16
+	.word	1264
+	.byte	22
+	.byte	'Ifx_UReg_8Bit',0,9,96,24
+	.word	423
+	.byte	22
+	.byte	'Ifx_UReg_32Bit',0,9,98,24
+	.word	400
+	.byte	22
+	.byte	'Ifx_SReg_32Bit',0,9,101,24
+	.word	416
+	.byte	22
+	.byte	'Ifx_SRC_SRCR_Bits',0,4,85,3
+	.word	440
+	.byte	22
+	.byte	'Ifx_SRC_SRCR',0,4,98,3
+	.word	730
+	.byte	10
+	.byte	'_Ifx_SRC_CPU_CPU',0,4,110,25,4,13
+	.byte	'SB',0
+	.word	730
+	.byte	4,2,35,0,0,14
+	.word	1617
+	.byte	22
+	.byte	'Ifx_SRC_CPU_CPU',0,4,113,3
+	.word	1652
+	.byte	26,24
+	.word	1617
+	.byte	27,5,0,14
+	.word	1681
+	.byte	10
+	.byte	'_Ifx_SRC_CPU',0,4,128,1,25,24,13
+	.byte	'CPU',0
+	.word	1690
+	.byte	24,2,35,0,0,14
+	.word	1695
+	.byte	22
+	.byte	'Ifx_SRC_CPU',0,4,131,1,3
+	.word	1728
+	.byte	10
+	.byte	'_Ifx_SRC_AGBT_AGBT',0,4,146,1,25,4,13
+	.byte	'SR',0
+	.word	730
+	.byte	4,2,35,0,0,14
+	.word	1754
+	.byte	22
+	.byte	'Ifx_SRC_AGBT_AGBT',0,4,149,1,3
+	.word	1792
+	.byte	26,4
+	.word	1754
+	.byte	27,0,0,14
+	.word	1824
+	.byte	10
+	.byte	'_Ifx_SRC_AGBT',0,4,164,1,25,4,13
+	.byte	'AGBT',0
+	.word	1833
+	.byte	4,2,35,0,0,14
+	.word	1838
+	.byte	22
+	.byte	'Ifx_SRC_AGBT',0,4,167,1,3
+	.word	1873
+	.byte	10
+	.byte	'_Ifx_SRC_XBAR_XBAR',0,4,182,1,25,4,13
+	.byte	'SR',0
+	.word	730
+	.byte	4,2,35,0,0,14
+	.word	1900
+	.byte	22
+	.byte	'Ifx_SRC_XBAR_XBAR',0,4,185,1,3
+	.word	1938
+	.byte	26,12
+	.word	1900
+	.byte	27,2,0,14
+	.word	1970
+	.byte	10
+	.byte	'_Ifx_SRC_XBAR',0,4,200,1,25,12,13
+	.byte	'XBAR',0
+	.word	1979
+	.byte	12,2,35,0,0,14
+	.word	1984
+	.byte	22
+	.byte	'Ifx_SRC_XBAR',0,4,203,1,3
+	.word	2019
+	.byte	26,8
+	.word	730
+	.byte	27,1,0,10
+	.byte	'_Ifx_SRC_CERBERUS_CERBERUS',0,4,218,1,25,8,13
+	.byte	'SR',0
+	.word	2046
+	.byte	8,2,35,0,0,14
+	.word	2055
+	.byte	22
+	.byte	'Ifx_SRC_CERBERUS_CERBERUS',0,4,221,1,3
+	.word	2101
+	.byte	14
+	.word	2055
+	.byte	10
+	.byte	'_Ifx_SRC_CERBERUS',0,4,236,1,25,8,13
+	.byte	'CERBERUS',0
+	.word	2141
+	.byte	8,2,35,0,0,14
+	.word	2146
+	.byte	22
+	.byte	'Ifx_SRC_CERBERUS',0,4,239,1,3
+	.word	2189
+	.byte	10
+	.byte	'_Ifx_SRC_ASCLIN_ASCLIN',0,4,254,1,25,12,13
+	.byte	'TX',0
+	.word	730
+	.byte	4,2,35,0,13
+	.byte	'RX',0
+	.word	730
+	.byte	4,2,35,4,13
+	.byte	'ERR',0
+	.word	730
+	.byte	4,2,35,8,0,14
+	.word	2220
+	.byte	22
+	.byte	'Ifx_SRC_ASCLIN_ASCLIN',0,4,131,2,3
+	.word	2287
+	.byte	26,144,1
+	.word	2220
+	.byte	27,11,0,14
+	.word	2323
+	.byte	10
+	.byte	'_Ifx_SRC_ASCLIN',0,4,146,2,25,144,1,13
+	.byte	'ASCLIN',0
+	.word	2333
+	.byte	144,1,2,35,0,0,14
+	.word	2338
+	.byte	22
+	.byte	'Ifx_SRC_ASCLIN',0,4,149,2,3
+	.word	2379
+	.byte	10
+	.byte	'_Ifx_SRC_QSPI_QSPI',0,4,164,2,25,20,13
+	.byte	'TX',0
+	.word	730
+	.byte	4,2,35,0,13
+	.byte	'RX',0
+	.word	730
+	.byte	4,2,35,4,13
+	.byte	'ERR',0
+	.word	730
+	.byte	4,2,35,8,13
+	.byte	'PT',0
+	.word	730
+	.byte	4,2,35,12,13
+	.byte	'U',0
+	.word	730
+	.byte	4,2,35,16,0,14
+	.word	2408
+	.byte	22
+	.byte	'Ifx_SRC_QSPI_QSPI',0,4,171,2,3
+	.word	2494
+	.byte	26,120
+	.word	2408
+	.byte	27,5,0,14
+	.word	2526
+	.byte	10
+	.byte	'_Ifx_SRC_QSPI',0,4,186,2,25,120,13
+	.byte	'QSPI',0
+	.word	2535
+	.byte	120,2,35,0,0,14
+	.word	2540
+	.byte	22
+	.byte	'Ifx_SRC_QSPI',0,4,189,2,3
+	.word	2575
+	.byte	10
+	.byte	'_Ifx_SRC_HSCT_HSCT',0,4,204,2,25,4,13
+	.byte	'SR',0
+	.word	730
+	.byte	4,2,35,0,0,14
+	.word	2602
+	.byte	22
+	.byte	'Ifx_SRC_HSCT_HSCT',0,4,207,2,3
+	.word	2640
+	.byte	26,8
+	.word	2602
+	.byte	27,1,0,14
+	.word	2672
+	.byte	10
+	.byte	'_Ifx_SRC_HSCT',0,4,222,2,25,8,13
+	.byte	'HSCT',0
+	.word	2681
+	.byte	8,2,35,0,0,14
+	.word	2686
+	.byte	22
+	.byte	'Ifx_SRC_HSCT',0,4,225,2,3
+	.word	2721
+	.byte	10
+	.byte	'_Ifx_SRC_HSSL_HSSL_CH',0,4,240,2,25,16,13
+	.byte	'COK',0
+	.word	730
+	.byte	4,2,35,0,13
+	.byte	'RDI',0
+	.word	730
+	.byte	4,2,35,4,13
+	.byte	'ERR',0
+	.word	730
+	.byte	4,2,35,8,13
+	.byte	'TRG',0
+	.word	730
+	.byte	4,2,35,12,0,14
+	.word	2748
+	.byte	22
+	.byte	'Ifx_SRC_HSSL_HSSL_CH',0,4,246,2,3
+	.word	2829
+	.byte	26,64
+	.word	2748
+	.byte	27,3,0,14
+	.word	2864
+	.byte	10
+	.byte	'_Ifx_SRC_HSSL_HSSL',0,4,133,3,25,68,13
+	.byte	'CH',0
+	.word	2873
+	.byte	64,2,35,0,13
+	.byte	'EXI',0
+	.word	730
+	.byte	4,2,35,64,0,14
+	.word	2878
+	.byte	22
+	.byte	'Ifx_SRC_HSSL_HSSL',0,4,137,3,3
+	.word	2929
+	.byte	26,136,1
+	.word	2878
+	.byte	27,1,0,14
+	.word	2961
+	.byte	10
+	.byte	'_Ifx_SRC_HSSL',0,4,152,3,25,136,1,13
+	.byte	'HSSL',0
+	.word	2971
+	.byte	136,1,2,35,0,0,14
+	.word	2976
+	.byte	22
+	.byte	'Ifx_SRC_HSSL',0,4,155,3,3
+	.word	3013
+	.byte	26,4
+	.word	423
+	.byte	27,3,0,10
+	.byte	'_Ifx_SRC_I2C_I2C',0,4,170,3,25,16,13
+	.byte	'DTR',0
+	.word	730
+	.byte	4,2,35,0,13
+	.byte	'ERR',0
+	.word	730
+	.byte	4,2,35,4,13
+	.byte	'P',0
+	.word	730
+	.byte	4,2,35,8,13
+	.byte	'reserved_C',0
+	.word	3040
+	.byte	4,2,35,12,0,14
+	.word	3049
+	.byte	22
+	.byte	'Ifx_SRC_I2C_I2C',0,4,176,3,3
+	.word	3130
+	.byte	26,32
+	.word	3049
+	.byte	27,1,0,14
+	.word	3160
+	.byte	10
+	.byte	'_Ifx_SRC_I2C',0,4,191,3,25,32,13
+	.byte	'I2C',0
+	.word	3169
+	.byte	32,2,35,0,0,14
+	.word	3174
+	.byte	22
+	.byte	'Ifx_SRC_I2C',0,4,194,3,3
+	.word	3207
+	.byte	10
+	.byte	'_Ifx_SRC_SENT_SENT',0,4,209,3,25,4,13
+	.byte	'SR',0
+	.word	730
+	.byte	4,2,35,0,0,14
+	.word	3233
+	.byte	22
+	.byte	'Ifx_SRC_SENT_SENT',0,4,212,3,3
+	.word	3271
+	.byte	26,40
+	.word	3233
+	.byte	27,9,0,14
+	.word	3303
+	.byte	10
+	.byte	'_Ifx_SRC_SENT',0,4,227,3,25,40,13
+	.byte	'SENT',0
+	.word	3312
+	.byte	40,2,35,0,0,14
+	.word	3317
+	.byte	22
+	.byte	'Ifx_SRC_SENT',0,4,230,3,3
+	.word	3352
+	.byte	26,20
+	.word	730
+	.byte	27,4,0,10
+	.byte	'_Ifx_SRC_MSC_MSC',0,4,245,3,25,20,13
+	.byte	'SR',0
+	.word	3379
+	.byte	20,2,35,0,0,14
+	.word	3388
+	.byte	22
+	.byte	'Ifx_SRC_MSC_MSC',0,4,248,3,3
+	.word	3424
+	.byte	26,80
+	.word	3388
+	.byte	27,3,0,14
+	.word	3454
+	.byte	10
+	.byte	'_Ifx_SRC_MSC',0,4,135,4,25,80,13
+	.byte	'MSC',0
+	.word	3463
+	.byte	80,2,35,0,0,14
+	.word	3468
+	.byte	22
+	.byte	'Ifx_SRC_MSC',0,4,138,4,3
+	.word	3501
+	.byte	26,16
+	.word	730
+	.byte	27,3,0,10
+	.byte	'_Ifx_SRC_CCU6_CCU',0,4,153,4,25,16,13
+	.byte	'SR',0
+	.word	3527
+	.byte	16,2,35,0,0,14
+	.word	3536
+	.byte	22
+	.byte	'Ifx_SRC_CCU6_CCU',0,4,156,4,3
+	.word	3573
+	.byte	26,32
+	.word	3536
+	.byte	27,1,0,14
+	.word	3604
+	.byte	10
+	.byte	'_Ifx_SRC_CCU6',0,4,171,4,25,32,13
+	.byte	'CCU',0
+	.word	3613
+	.byte	32,2,35,0,0,14
+	.word	3618
+	.byte	22
+	.byte	'Ifx_SRC_CCU6',0,4,174,4,3
+	.word	3652
+	.byte	10
+	.byte	'_Ifx_SRC_GPT12_GPT12',0,4,189,4,25,24,13
+	.byte	'CIRQ',0
+	.word	730
+	.byte	4,2,35,0,13
+	.byte	'T2',0
+	.word	730
+	.byte	4,2,35,4,13
+	.byte	'T3',0
+	.word	730
+	.byte	4,2,35,8,13
+	.byte	'T4',0
+	.word	730
+	.byte	4,2,35,12,13
+	.byte	'T5',0
+	.word	730
+	.byte	4,2,35,16,13
+	.byte	'T6',0
+	.word	730
+	.byte	4,2,35,20,0,14
+	.word	3679
+	.byte	22
+	.byte	'Ifx_SRC_GPT12_GPT12',0,4,197,4,3
+	.word	3781
+	.byte	26,24
+	.word	3679
+	.byte	27,0,0,14
+	.word	3815
+	.byte	10
+	.byte	'_Ifx_SRC_GPT12',0,4,212,4,25,24,13
+	.byte	'GPT12',0
+	.word	3824
+	.byte	24,2,35,0,0,14
+	.word	3829
+	.byte	22
+	.byte	'Ifx_SRC_GPT12',0,4,215,4,3
+	.word	3866
+	.byte	10
+	.byte	'_Ifx_SRC_STM_STM',0,4,230,4,25,8,13
+	.byte	'SR',0
+	.word	2046
+	.byte	8,2,35,0,0,14
+	.word	3894
+	.byte	22
+	.byte	'Ifx_SRC_STM_STM',0,4,233,4,3
+	.word	3930
+	.byte	26,48
+	.word	3894
+	.byte	27,5,0,14
+	.word	3960
+	.byte	10
+	.byte	'_Ifx_SRC_STM',0,4,248,4,25,48,13
+	.byte	'STM',0
+	.word	3969
+	.byte	48,2,35,0,0,14
+	.word	3974
+	.byte	22
+	.byte	'Ifx_SRC_STM',0,4,251,4,3
+	.word	4007
+	.byte	10
+	.byte	'_Ifx_SRC_FCE_FCE0',0,4,138,5,25,4,13
+	.byte	'SR',0
+	.word	730
+	.byte	4,2,35,0,0,14
+	.word	4033
+	.byte	22
+	.byte	'Ifx_SRC_FCE_FCE0',0,4,141,5,3
+	.word	4070
+	.byte	14
+	.word	4033
+	.byte	10
+	.byte	'_Ifx_SRC_FCE',0,4,156,5,25,4,13
+	.byte	'FCE0',0
+	.word	4101
+	.byte	4,2,35,0,0,14
+	.word	4106
+	.byte	22
+	.byte	'Ifx_SRC_FCE',0,4,159,5,3
+	.word	4140
+	.byte	26,32
+	.word	423
+	.byte	27,31,0,26,128,4
+	.word	730
+	.byte	27,127,0,10
+	.byte	'_Ifx_SRC_DMA_DMA',0,4,174,5,25,176,4,13
+	.byte	'ERR',0
+	.word	3527
+	.byte	16,2,35,0,13
+	.byte	'reserved_10',0
+	.word	4166
+	.byte	32,2,35,16,13
+	.byte	'CH',0
+	.word	4175
+	.byte	128,4,2,35,48,0,14
+	.word	4185
+	.byte	22
+	.byte	'Ifx_SRC_DMA_DMA',0,4,179,5,3
+	.word	4257
+	.byte	26,176,4
+	.word	4185
+	.byte	27,0,0,14
+	.word	4287
+	.byte	10
+	.byte	'_Ifx_SRC_DMA',0,4,194,5,25,176,4,13
+	.byte	'DMA',0
+	.word	4297
+	.byte	176,4,2,35,0,0,14
+	.word	4302
+	.byte	22
+	.byte	'Ifx_SRC_DMA',0,4,197,5,3
+	.word	4337
+	.byte	10
+	.byte	'_Ifx_SRC_SDMMC_SDMMC',0,4,212,5,25,8,13
+	.byte	'ERR',0
+	.word	730
+	.byte	4,2,35,0,13
+	.byte	'DMA',0
+	.word	730
+	.byte	4,2,35,4,0,14
+	.word	4363
+	.byte	22
+	.byte	'Ifx_SRC_SDMMC_SDMMC',0,4,216,5,3
+	.word	4417
+	.byte	26,8
+	.word	4363
+	.byte	27,0,0,14
+	.word	4451
+	.byte	10
+	.byte	'_Ifx_SRC_SDMMC',0,4,231,5,25,8,13
+	.byte	'SDMMC',0
+	.word	4460
+	.byte	8,2,35,0,0,14
+	.word	4465
+	.byte	22
+	.byte	'Ifx_SRC_SDMMC',0,4,234,5,3
+	.word	4502
+	.byte	26,40
+	.word	730
+	.byte	27,9,0,10
+	.byte	'_Ifx_SRC_GETH_GETH',0,4,249,5,25,40,13
+	.byte	'SR',0
+	.word	4530
+	.byte	40,2,35,0,0,14
+	.word	4539
+	.byte	22
+	.byte	'Ifx_SRC_GETH_GETH',0,4,252,5,3
+	.word	4577
+	.byte	26,40
+	.word	4539
+	.byte	27,0,0,14
+	.word	4609
+	.byte	10
+	.byte	'_Ifx_SRC_GETH',0,4,139,6,25,40,13
+	.byte	'GETH',0
+	.word	4618
+	.byte	40,2,35,0,0,14
+	.word	4623
+	.byte	22
+	.byte	'Ifx_SRC_GETH',0,4,142,6,3
+	.word	4658
+	.byte	26,64
+	.word	730
+	.byte	27,15,0,10
+	.byte	'_Ifx_SRC_CAN_CAN',0,4,157,6,25,64,13
+	.byte	'INT',0
+	.word	4685
+	.byte	64,2,35,0,0,14
+	.word	4694
+	.byte	22
+	.byte	'Ifx_SRC_CAN_CAN',0,4,160,6,3
+	.word	4731
+	.byte	26,192,1
+	.word	4694
+	.byte	27,2,0,14
+	.word	4761
+	.byte	10
+	.byte	'_Ifx_SRC_CAN',0,4,175,6,25,192,1,13
+	.byte	'CAN',0
+	.word	4771
+	.byte	192,1,2,35,0,0,14
+	.word	4776
+	.byte	22
+	.byte	'Ifx_SRC_CAN',0,4,178,6,3
+	.word	4811
+	.byte	10
+	.byte	'_Ifx_SRC_VADC_G',0,4,193,6,25,16,13
+	.byte	'SR0',0
+	.word	730
+	.byte	4,2,35,0,13
+	.byte	'SR1',0
+	.word	730
+	.byte	4,2,35,4,13
+	.byte	'SR2',0
+	.word	730
+	.byte	4,2,35,8,13
+	.byte	'SR3',0
+	.word	730
+	.byte	4,2,35,12,0,14
+	.word	4837
+	.byte	22
+	.byte	'Ifx_SRC_VADC_G',0,4,199,6,3
+	.word	4912
+	.byte	10
+	.byte	'_Ifx_SRC_VADC_FC',0,4,214,6,25,4,13
+	.byte	'SR0',0
+	.word	730
+	.byte	4,2,35,0,0,14
+	.word	4941
+	.byte	22
+	.byte	'Ifx_SRC_VADC_FC',0,4,217,6,3
+	.word	4978
+	.byte	26,192,1
+	.word	4837
+	.byte	27,11,0,14
+	.word	5008
+	.byte	26,32
+	.word	4941
+	.byte	27,7,0,14
+	.word	5023
+	.byte	26,32
+	.word	4837
+	.byte	27,1,0,14
+	.word	5037
+	.byte	10
+	.byte	'_Ifx_SRC_VADC',0,4,233,6,25,128,2,13
+	.byte	'G',0
+	.word	5018
+	.byte	192,1,2,35,0,13
+	.byte	'FC',0
+	.word	5032
+	.byte	32,3,35,192,1,13
+	.byte	'CG',0
+	.word	5046
+	.byte	32,3,35,224,1,0,14
+	.word	5051
+	.byte	22
+	.byte	'Ifx_SRC_VADC',0,4,238,6,3
+	.word	5111
+	.byte	10
+	.byte	'_Ifx_SRC_DSADC_DSADC',0,4,253,6,25,8,13
+	.byte	'SRM',0
+	.word	730
+	.byte	4,2,35,0,13
+	.byte	'SRA',0
+	.word	730
+	.byte	4,2,35,4,0,14
+	.word	5138
+	.byte	22
+	.byte	'Ifx_SRC_DSADC_DSADC',0,4,129,7,3
+	.word	5192
+	.byte	26,112
+	.word	5138
+	.byte	27,13,0,14
+	.word	5226
+	.byte	10
+	.byte	'_Ifx_SRC_DSADC',0,4,144,7,25,112,13
+	.byte	'DSADC',0
+	.word	5235
+	.byte	112,2,35,0,0,14
+	.word	5240
+	.byte	22
+	.byte	'Ifx_SRC_DSADC',0,4,147,7,3
+	.word	5277
+	.byte	26,8
+	.word	423
+	.byte	27,7,0,10
+	.byte	'_Ifx_SRC_ERAY_ERAY',0,4,162,7,25,48,13
+	.byte	'INT0',0
+	.word	730
+	.byte	4,2,35,0,13
+	.byte	'INT1',0
+	.word	730
+	.byte	4,2,35,4,13
+	.byte	'TINT0',0
+	.word	730
+	.byte	4,2,35,8,13
+	.byte	'TINT1',0
+	.word	730
+	.byte	4,2,35,12,13
+	.byte	'NDAT0',0
+	.word	730
+	.byte	4,2,35,16,13
+	.byte	'NDAT1',0
+	.word	730
+	.byte	4,2,35,20,13
+	.byte	'MBSC0',0
+	.word	730
+	.byte	4,2,35,24,13
+	.byte	'MBSC1',0
+	.word	730
+	.byte	4,2,35,28,13
+	.byte	'OBUSY',0
+	.word	730
+	.byte	4,2,35,32,13
+	.byte	'IBUSY',0
+	.word	730
+	.byte	4,2,35,36,13
+	.byte	'reserved_28',0
+	.word	5305
+	.byte	8,2,35,40,0,14
+	.word	5314
+	.byte	22
+	.byte	'Ifx_SRC_ERAY_ERAY',0,4,175,7,3
+	.word	5509
+	.byte	26,96
+	.word	5314
+	.byte	27,1,0,14
+	.word	5541
+	.byte	10
+	.byte	'_Ifx_SRC_ERAY',0,4,190,7,25,96,13
+	.byte	'ERAY',0
+	.word	5550
+	.byte	96,2,35,0,0,14
+	.word	5555
+	.byte	22
+	.byte	'Ifx_SRC_ERAY',0,4,193,7,3
+	.word	5590
+	.byte	10
+	.byte	'_Ifx_SRC_HSM_HSM',0,4,208,7,25,8,13
+	.byte	'HSM',0
+	.word	2046
+	.byte	8,2,35,0,0,14
+	.word	5617
+	.byte	22
+	.byte	'Ifx_SRC_HSM_HSM',0,4,211,7,3
+	.word	5654
+	.byte	26,8
+	.word	5617
+	.byte	27,0,0,14
+	.word	5684
+	.byte	10
+	.byte	'_Ifx_SRC_HSM',0,4,226,7,25,8,13
+	.byte	'HSM',0
+	.word	5693
+	.byte	8,2,35,0,0,14
+	.word	5698
+	.byte	22
+	.byte	'Ifx_SRC_HSM',0,4,229,7,3
+	.word	5731
+	.byte	10
+	.byte	'_Ifx_SRC_SCU',0,4,244,7,25,16,13
+	.byte	'SCUERU',0
+	.word	3527
+	.byte	16,2,35,0,0,14
+	.word	5757
+	.byte	22
+	.byte	'Ifx_SRC_SCU',0,4,247,7,3
+	.word	5793
+	.byte	10
+	.byte	'_Ifx_SRC_PMS_PMS',0,4,134,8,25,4,13
+	.byte	'SR',0
+	.word	730
+	.byte	4,2,35,0,0,14
+	.word	5819
+	.byte	22
+	.byte	'Ifx_SRC_PMS_PMS',0,4,137,8,3
+	.word	5855
+	.byte	26,16
+	.word	5819
+	.byte	27,3,0,14
+	.word	5885
+	.byte	10
+	.byte	'_Ifx_SRC_PMS',0,4,152,8,25,16,13
+	.byte	'PMS',0
+	.word	5894
+	.byte	16,2,35,0,0,14
+	.word	5899
+	.byte	22
+	.byte	'Ifx_SRC_PMS',0,4,155,8,3
+	.word	5932
+	.byte	26,12
+	.word	730
+	.byte	27,2,0,10
+	.byte	'_Ifx_SRC_SMU_SMU',0,4,170,8,25,12,13
+	.byte	'SR',0
+	.word	5958
+	.byte	12,2,35,0,0,14
+	.word	5967
+	.byte	22
+	.byte	'Ifx_SRC_SMU_SMU',0,4,173,8,3
+	.word	6003
+	.byte	26,12
+	.word	5967
+	.byte	27,0,0,14
+	.word	6033
+	.byte	10
+	.byte	'_Ifx_SRC_SMU',0,4,188,8,25,12,13
+	.byte	'SMU',0
+	.word	6042
+	.byte	12,2,35,0,0,14
+	.word	6047
+	.byte	22
+	.byte	'Ifx_SRC_SMU',0,4,191,8,3
+	.word	6080
+	.byte	26,32
+	.word	730
+	.byte	27,7,0,10
+	.byte	'_Ifx_SRC_PSI5_PSI5',0,4,206,8,25,32,13
+	.byte	'SR',0
+	.word	6106
+	.byte	32,2,35,0,0,14
+	.word	6115
+	.byte	22
+	.byte	'Ifx_SRC_PSI5_PSI5',0,4,209,8,3
+	.word	6153
+	.byte	26,32
+	.word	6115
+	.byte	27,0,0,14
+	.word	6185
+	.byte	10
+	.byte	'_Ifx_SRC_PSI5',0,4,224,8,25,32,13
+	.byte	'PSI5',0
+	.word	6194
+	.byte	32,2,35,0,0,14
+	.word	6199
+	.byte	22
+	.byte	'Ifx_SRC_PSI5',0,4,227,8,3
+	.word	6234
+	.byte	10
+	.byte	'_Ifx_SRC_HSPDM_HSPDM0',0,4,242,8,25,12,13
+	.byte	'BFR',0
+	.word	730
+	.byte	4,2,35,0,13
+	.byte	'RAMP',0
+	.word	730
+	.byte	4,2,35,4,13
+	.byte	'ERR',0
+	.word	730
+	.byte	4,2,35,8,0,14
+	.word	6261
+	.byte	22
+	.byte	'Ifx_SRC_HSPDM_HSPDM0',0,4,247,8,3
+	.word	6330
+	.byte	14
+	.word	6261
+	.byte	10
+	.byte	'_Ifx_SRC_HSPDM',0,4,134,9,25,12,13
+	.byte	'HSPDM0',0
+	.word	6365
+	.byte	12,2,35,0,0,14
+	.word	6370
+	.byte	22
+	.byte	'Ifx_SRC_HSPDM',0,4,137,9,3
+	.word	6408
+	.byte	10
+	.byte	'_Ifx_SRC_DAM_DAM',0,4,152,9,25,24,13
+	.byte	'LI0',0
+	.word	730
+	.byte	4,2,35,0,13
+	.byte	'RI0',0
+	.word	730
+	.byte	4,2,35,4,13
+	.byte	'LI1',0
+	.word	730
+	.byte	4,2,35,8,13
+	.byte	'RI1',0
+	.word	730
+	.byte	4,2,35,12,13
+	.byte	'DR',0
+	.word	730
+	.byte	4,2,35,16,13
+	.byte	'ERR',0
+	.word	730
+	.byte	4,2,35,20,0,14
+	.word	6436
+	.byte	22
+	.byte	'Ifx_SRC_DAM_DAM',0,4,160,9,3
+	.word	6537
+	.byte	26,48
+	.word	6436
+	.byte	27,1,0,14
+	.word	6567
+	.byte	10
+	.byte	'_Ifx_SRC_DAM',0,4,175,9,25,48,13
+	.byte	'DAM',0
+	.word	6576
+	.byte	48,2,35,0,0,14
+	.word	6581
+	.byte	22
+	.byte	'Ifx_SRC_DAM',0,4,178,9,3
+	.word	6614
+	.byte	10
+	.byte	'_Ifx_SRC_PSI5S_PSI5S',0,4,193,9,25,32,13
+	.byte	'SR',0
+	.word	6106
+	.byte	32,2,35,0,0,14
+	.word	6640
+	.byte	22
+	.byte	'Ifx_SRC_PSI5S_PSI5S',0,4,196,9,3
+	.word	6680
+	.byte	26,32
+	.word	6640
+	.byte	27,0,0,14
+	.word	6714
+	.byte	10
+	.byte	'_Ifx_SRC_PSI5S',0,4,211,9,25,32,13
+	.byte	'PSI5S',0
+	.word	6723
+	.byte	32,2,35,0,0,14
+	.word	6728
+	.byte	22
+	.byte	'Ifx_SRC_PSI5S',0,4,214,9,3
+	.word	6765
+	.byte	10
+	.byte	'_Ifx_SRC_RIF_RIF',0,4,229,9,25,8,13
+	.byte	'ERR',0
+	.word	730
+	.byte	4,2,35,0,13
+	.byte	'INT',0
+	.word	730
+	.byte	4,2,35,4,0,14
+	.word	6793
+	.byte	22
+	.byte	'Ifx_SRC_RIF_RIF',0,4,233,9,3
+	.word	6843
+	.byte	26,16
+	.word	6793
+	.byte	27,1,0,14
+	.word	6873
+	.byte	10
+	.byte	'_Ifx_SRC_RIF',0,4,248,9,25,16,13
+	.byte	'RIF',0
+	.word	6882
+	.byte	16,2,35,0,0,14
+	.word	6887
+	.byte	22
+	.byte	'Ifx_SRC_RIF',0,4,251,9,3
+	.word	6920
+	.byte	10
+	.byte	'_Ifx_SRC_SPU_SPU',0,4,138,10,25,8,13
+	.byte	'INT',0
+	.word	730
+	.byte	4,2,35,0,13
+	.byte	'ERR',0
+	.word	730
+	.byte	4,2,35,4,0,14
+	.word	6946
+	.byte	22
+	.byte	'Ifx_SRC_SPU_SPU',0,4,142,10,3
+	.word	6996
+	.byte	26,16
+	.word	6946
+	.byte	27,1,0,14
+	.word	7026
+	.byte	10
+	.byte	'_Ifx_SRC_SPU',0,4,157,10,25,16,13
+	.byte	'SPU',0
+	.word	7035
+	.byte	16,2,35,0,0,14
+	.word	7040
+	.byte	22
+	.byte	'Ifx_SRC_SPU',0,4,160,10,3
+	.word	7073
+	.byte	10
+	.byte	'_Ifx_SRC_GPSR_GPSR',0,4,175,10,25,32,13
+	.byte	'SR',0
+	.word	6106
+	.byte	32,2,35,0,0,14
+	.word	7099
+	.byte	22
+	.byte	'Ifx_SRC_GPSR_GPSR',0,4,178,10,3
+	.word	7137
+	.byte	26,192,1
+	.word	7099
+	.byte	27,5,0,14
+	.word	7169
+	.byte	10
+	.byte	'_Ifx_SRC_GPSR',0,4,193,10,25,192,1,13
+	.byte	'GPSR',0
+	.word	7179
+	.byte	192,1,2,35,0,0,14
+	.word	7184
+	.byte	22
+	.byte	'Ifx_SRC_GPSR',0,4,196,10,3
+	.word	7221
+.L8:
+	.byte	26,224,2
+	.word	774
+	.byte	27,87,0,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
+	.byte	57,15,11,15,0,0,11,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,12,23,1,58,15,59,15,57,15,11,15,0,0,13,13
+	.byte	0,3,8,73,19,11,15,56,9,0,0,14,53,0,73,19,0,0,15,38,0,73,19,0,0,16,46,1,3,8,54,15,39,12,63,12,60,12,0,0
+	.byte	17,5,0,73,19,0,0,18,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,19,5,0,3,8,73,19,0,0,20,46,1,49,19,0,0
+	.byte	21,5,0,49,19,0,0,22,22,0,3,8,58,15,59,15,57,15,73,19,0,0,23,21,0,54,15,0,0,24,4,1,58,15,59,15,57,15,11
+	.byte	15,0,0,25,40,0,3,8,28,13,0,0,26,1,1,11,15,73,19,0,0,27,33,0,47,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L10-.L9
+.L9:
+	.half	3
+	.word	.L12-.L11
+.L11:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl',0,0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'IfxSrc.h',0,2,0,0
+	.byte	'IfxSrc_regdef.h',0,3,0,0
+	.byte	'..\\0_Src\\4_McHal\\Tricore\\_Impl\\IfxEvadc_cfg.c',0,0,0,0
+	.byte	'IfxSrc_cfg.h',0,4,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'Ifx_TypesReg.h',0,3,0,0,0
+.L12:
+.L10:
+	.sdecl	'.debug_info',debug,cluster('IfxEvadc_cfg_srcAddresses')
+	.sect	'.debug_info'
+.L6:
+	.word	207
+	.half	3
+	.word	.L7
+	.byte	4,1
+	.byte	'..\\0_Src\\4_McHal\\Tricore\\_Impl\\IfxEvadc_cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'IfxEvadc_cfg_srcAddresses',0,5,52,24
+	.word	.L8
+	.byte	1,5,3
+	.word	IfxEvadc_cfg_srcAddresses
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxEvadc_cfg_srcAddresses')
+	.sect	'.debug_abbrev'
+.L7:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	     1  /**
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	     2   * \file IfxEvadc_cfg.c
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	     3   * \brief EVADC on-chip implementation data
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	     4   *
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	     5   * \version iLLD_1_0_1_12_0
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	     6   * \copyright Copyright (c) 2018 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	     7   *
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	     8   *
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	     9   *                                 IMPORTANT NOTICE
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    10   *
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    11   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    12   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    13   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    14   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    15   *
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    16   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    17   *
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    18   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    19   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    20   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    21   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    22   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    23   * do so, all subject to the following:
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    24   *
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    25   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    26   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    27   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    28   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    29   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    30   * language processor.
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    31   *
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    32   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    33   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    34   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    35   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    36   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    37   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    38   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    39   *
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    40   */
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    41  
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    42  /******************************************************************************/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    43  /*----------------------------------Includes----------------------------------*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    44  /******************************************************************************/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    45  
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    46  #include "IfxEvadc_cfg.h"
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    47  
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    48  /******************************************************************************/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    49  /*-----------------------Exported Variables/Constants-------------------------*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    50  /******************************************************************************/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    51  
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    52  volatile Ifx_SRC_SRCR *IfxEvadc_cfg_srcAddresses[(IFXEVADC_NUM_ADC_PRIMARY_GROUPS * 4) + (IFXEVADC_NUM_ADC_SECONDARY_GROUPS * 4) + (IFXEVADC_NUM_FAST_COMPARE_CHANNELS * 4) + (IFXEVADC_NUM_ADC_COMMON_GROUPS * 4)] = {
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    53  /* Primary Group 0*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    54      &SRC_VADCG0SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    55      &SRC_VADCG0SR1,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    56      &SRC_VADCG0SR2,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    57      &SRC_VADCG0SR3,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    58  /* Primary Group 1*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    59      &SRC_VADCG1SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    60      &SRC_VADCG1SR1,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    61      &SRC_VADCG1SR2,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    62      &SRC_VADCG1SR3,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    63  /* Primary Group 2*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    64      &SRC_VADCG2SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    65      &SRC_VADCG2SR1,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    66      &SRC_VADCG2SR2,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    67      &SRC_VADCG2SR3,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    68  /* Primary Group 3*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    69      &SRC_VADCG3SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    70      &SRC_VADCG3SR1,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    71      &SRC_VADCG3SR2,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    72      &SRC_VADCG3SR3,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    73  /* Primary Group 4*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    74      &SRC_VADCG4SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    75      &SRC_VADCG4SR1,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    76      &SRC_VADCG4SR2,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    77      &SRC_VADCG4SR3,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    78  /* Primary Group 5*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    79      &SRC_VADCG5SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    80      &SRC_VADCG5SR1,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    81      &SRC_VADCG5SR2,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    82      &SRC_VADCG5SR3,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    83  /* Primary Group 6*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    84      &SRC_VADCG6SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    85      &SRC_VADCG6SR1,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    86      &SRC_VADCG6SR2,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    87      &SRC_VADCG6SR3,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    88  /* Primary Group 7*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    89      &SRC_VADCG7SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    90      &SRC_VADCG7SR1,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    91      &SRC_VADCG7SR2,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    92      &SRC_VADCG7SR3,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    93  
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    94  /* Secondary Group 0*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    95      &SRC_VADCG8SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    96      &SRC_VADCG8SR1,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    97      &SRC_VADCG8SR2,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    98      &SRC_VADCG8SR3,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	    99  /* Secondary Group 1*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   100      &SRC_VADCG9SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   101      &SRC_VADCG9SR1,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   102      &SRC_VADCG9SR2,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   103      &SRC_VADCG9SR3,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   104  /* Secondary Group 2*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   105      &SRC_VADCG10SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   106      &SRC_VADCG10SR1,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   107      &SRC_VADCG10SR2,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   108      &SRC_VADCG10SR3,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   109  /* Secondary Group 3*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   110      &SRC_VADCG11SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   111      &SRC_VADCG11SR1,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   112      &SRC_VADCG11SR2,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   113      &SRC_VADCG11SR3,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   114  
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   115  /* Fast Compare Channel 0*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   116      &SRC_VADCFC0SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   117      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   118      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   119      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   120  /* Fast Compare Channel 1*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   121      &SRC_VADCFC1SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   122      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   123      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   124      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   125  /* Fast Compare Channel 2*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   126      &SRC_VADCFC2SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   127      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   128      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   129      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   130  /* Fast Compare Channel 3*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   131      &SRC_VADCFC3SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   132      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   133      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   134      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   135  /* Fast Compare Channel 4*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   136      &SRC_VADCFC4SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   137      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   138      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   139      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   140  /* Fast Compare Channel 5*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   141      &SRC_VADCFC5SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   142      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   143      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   144      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   145  /* Fast Compare Channel 6*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   146      &SRC_VADCFC6SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   147      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   148      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   149      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   150  /* Fast Compare Channel 7*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   151      &SRC_VADCFC7SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   152      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   153      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   154      NULL_PTR,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   155  
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   156  /*Common Group 0*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   157      &SRC_VADCCG0SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   158      &SRC_VADCCG0SR1,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   159      &SRC_VADCCG0SR2,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   160      &SRC_VADCCG0SR3,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   161  /*Common Group 1*/
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   162      &SRC_VADCCG1SR0,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   163      &SRC_VADCCG1SR1,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   164      &SRC_VADCCG1SR2,
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   165      &SRC_VADCCG1SR3
+; ..\0_Src\4_McHal\Tricore\_Impl\IfxEvadc_cfg.c	   166  };
+
+	; Module end

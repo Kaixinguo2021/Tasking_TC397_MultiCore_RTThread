@@ -1,0 +1,1770 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\.ppp.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Rtl8211f -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\ppp.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\ppp.src ..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\ppp.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\ppp.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	733
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\ppp.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	170
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	177
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	219
+	.byte	7
+	.word	219
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	235
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	240
+	.byte	9
+	.byte	'value',0
+	.word	219
+	.byte	9
+	.byte	'compare',0
+	.word	219
+	.byte	0,2
+	.byte	'short int',0,2,5,10
+	.byte	'__wchar_t',0,1,1,1
+	.word	297
+	.byte	10
+	.byte	'__size_t',0,1,1,1
+	.word	219
+	.byte	10
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	170
+	.byte	11,1,7
+	.word	365
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	367
+	.byte	10
+	.byte	'__intptr_t',0,1,1,1
+	.word	170
+	.byte	10
+	.byte	'__uintptr_t',0,1,1,1
+	.word	219
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,108,29
+	.word	429
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,112,29
+	.word	460
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,116,29
+	.word	497
+	.byte	2
+	.byte	'char',0,1,6,10
+	.byte	'sint8',0,2,125,29
+	.word	533
+	.byte	10
+	.byte	'sint16',0,2,129,1,29
+	.word	297
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'sint32',0,2,134,1,29
+	.word	571
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'sint64',0,2,141,1,29
+	.word	599
+	.byte	2
+	.byte	'float',0,4,4,10
+	.byte	'float32',0,2,170,1,29
+	.word	632
+	.byte	12
+	.byte	'void',0,7
+	.word	658
+	.byte	10
+	.byte	'pvoid',0,3,54,28
+	.word	664
+	.byte	10
+	.byte	'Ifx_TickTime',0,3,76,28
+	.word	599
+	.byte	10
+	.byte	'u32_t',0,4,87,16
+	.word	497
+	.byte	10
+	.byte	'intmax_t',0,5,198,2,41
+	.word	599
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,59,0
+	.byte	3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\ppp.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'cc.h',0,2,0,0
+	.byte	'stdint.h',0,3,0,0,0
+.L9:
+.L7:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	     1  /*****************************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	     2  * ppp.c - Network Point to Point Protocol program file.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	     3  *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	     4  * Copyright (c) 2003 by Marc Boucher, Services Informatiques (MBSI) inc.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	     5  * portions Copyright (c) 1997 by Global Election Systems Inc.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	     6  *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	     7  * The authors hereby grant permission to use, copy, modify, distribute,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	     8  * and license this software and its documentation for any purpose, provided
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	     9  * that existing copyright notices are retained in all copies and that this
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    10  * notice and the following disclaimer are included verbatim in any
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    11  * distributions. No written agreement, license, or royalty fee is required
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    12  * for any of the authorized uses.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    13  *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    14  * THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS *AS IS* AND ANY EXPRESS OR
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    15  * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    16  * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    17  * IN NO EVENT SHALL THE CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    18  * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    19  * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    20  * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    21  * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    22  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    23  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    24  *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    25  ******************************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    26  * REVISION HISTORY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    27  *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    28  * 03-01-01 Marc Boucher <marc@mbsi.ca>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    29  *   Ported to lwIP.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    30  * 97-11-05 Guy Lancaster <lancasterg@acm.org>, Global Election Systems Inc.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    31  *   Original.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    32  *****************************************************************************/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    33  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    34  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    35   * ppp_defs.h - PPP definitions.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    36   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    37   * if_pppvar.h - private structures and declarations for PPP.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    38   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    39   * Copyright (c) 1994 The Australian National University.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    40   * All rights reserved.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    41   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    42   * Permission to use, copy, modify, and distribute this software and its
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    43   * documentation is hereby granted, provided that the above copyright
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    44   * notice appears in all copies.  This software is provided without any
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    45   * warranty, express or implied. The Australian National University
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    46   * makes no representations about the suitability of this software for
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    47   * any purpose.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    48   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    49   * IN NO EVENT SHALL THE AUSTRALIAN NATIONAL UNIVERSITY BE LIABLE TO ANY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    50   * PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    51   * ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    52   * THE AUSTRALIAN NATIONAL UNIVERSITY HAVE BEEN ADVISED OF THE POSSIBILITY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    53   * OF SUCH DAMAGE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    54   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    55   * THE AUSTRALIAN NATIONAL UNIVERSITY SPECIFICALLY DISCLAIMS ANY WARRANTIES,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    56   * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    57   * AND FITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    58   * ON AN "AS IS" BASIS, AND THE AUSTRALIAN NATIONAL UNIVERSITY HAS NO
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    59   * OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    60   * OR MODIFICATIONS.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    61   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    62  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    63  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    64   * if_ppp.h - Point-to-Point Protocol definitions.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    65   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    66   * Copyright (c) 1989 Carnegie Mellon University.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    67   * All rights reserved.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    68   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    69   * Redistribution and use in source and binary forms are permitted
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    70   * provided that the above copyright notice and this paragraph are
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    71   * duplicated in all such forms and that any documentation,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    72   * advertising materials, and other materials related to such
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    73   * distribution and use acknowledge that the software was developed
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    74   * by Carnegie Mellon University.  The name of the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    75   * University may not be used to endorse or promote products derived
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    76   * from this software without specific prior written permission.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    77   * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    78   * IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    79   * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    80   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    81  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    82  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    83   * @defgroup ppp PPP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    84   * @ingroup netifs
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    85   * @verbinclude "ppp.txt"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    86   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    87  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    88  #include "netif/ppp/ppp_opts.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    89  #if PPP_SUPPORT /* don't build if not configured for use in lwipopts.h */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    90  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    91  #include "lwip/pbuf.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    92  #include "lwip/stats.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    93  #include "lwip/sys.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    94  #include "lwip/tcpip.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    95  #include "lwip/api.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    96  #include "lwip/snmp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    97  #include "lwip/ip4.h" /* for ip4_input() */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    98  #if PPP_IPV6_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	    99  #include "lwip/ip6.h" /* for ip6_input() */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   100  #endif /* PPP_IPV6_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   101  #include "lwip/dns.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   102  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   103  #include "netif/ppp/ppp_impl.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   104  #include "netif/ppp/pppos.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   105  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   106  #include "netif/ppp/fsm.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   107  #include "netif/ppp/lcp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   108  #include "netif/ppp/magic.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   109  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   110  #if PAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   111  #include "netif/ppp/upap.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   112  #endif /* PAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   113  #if CHAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   114  #include "netif/ppp/chap-new.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   115  #endif /* CHAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   116  #if EAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   117  #include "netif/ppp/eap.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   118  #endif /* EAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   119  #if CCP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   120  #include "netif/ppp/ccp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   121  #endif /* CCP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   122  #if MPPE_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   123  #include "netif/ppp/mppe.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   124  #endif /* MPPE_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   125  #if ECP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   126  #include "netif/ppp/ecp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   127  #endif /* EAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   128  #if VJ_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   129  #include "netif/ppp/vj.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   130  #endif /* VJ_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   131  #if PPP_IPV4_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   132  #include "netif/ppp/ipcp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   133  #endif /* PPP_IPV4_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   134  #if PPP_IPV6_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   135  #include "netif/ppp/ipv6cp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   136  #endif /* PPP_IPV6_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   137  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   138  /*************************/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   139  /*** LOCAL DEFINITIONS ***/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   140  /*************************/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   141  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   142  /* Memory pools */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   143  #if PPPOS_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   144  LWIP_MEMPOOL_PROTOTYPE(PPPOS_PCB);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   145  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   146  #if PPPOE_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   147  LWIP_MEMPOOL_PROTOTYPE(PPPOE_IF);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   148  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   149  #if PPPOL2TP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   150  LWIP_MEMPOOL_PROTOTYPE(PPPOL2TP_PCB);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   151  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   152  #if LWIP_PPP_API && LWIP_MPU_COMPATIBLE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   153  LWIP_MEMPOOL_PROTOTYPE(PPPAPI_MSG);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   154  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   155  LWIP_MEMPOOL_DECLARE(PPP_PCB, MEMP_NUM_PPP_PCB, sizeof(ppp_pcb), "PPP_PCB")
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   156  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   157  /* FIXME: add stats per PPP session */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   158  #if PPP_STATS_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   159  static struct timeval start_time; /* Time when link was started. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   160  static struct pppd_stats old_link_stats;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   161  struct pppd_stats link_stats;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   162  unsigned link_connect_time;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   163  int link_stats_valid;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   164  #endif /* PPP_STATS_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   165  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   166  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   167   * PPP Data Link Layer "protocol" table.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   168   * One entry per supported protocol.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   169   * The last entry must be NULL.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   170   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   171  const struct protent* const protocols[] = {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   172      &lcp_protent,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   173  #if PAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   174      &pap_protent,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   175  #endif /* PAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   176  #if CHAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   177      &chap_protent,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   178  #endif /* CHAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   179  #if CBCP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   180      &cbcp_protent,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   181  #endif /* CBCP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   182  #if PPP_IPV4_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   183      &ipcp_protent,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   184  #endif /* PPP_IPV4_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   185  #if PPP_IPV6_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   186      &ipv6cp_protent,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   187  #endif /* PPP_IPV6_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   188  #if CCP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   189      &ccp_protent,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   190  #endif /* CCP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   191  #if ECP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   192      &ecp_protent,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   193  #endif /* ECP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   194  #ifdef AT_CHANGE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   195      &atcp_protent,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   196  #endif /* AT_CHANGE */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   197  #if EAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   198      &eap_protent,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   199  #endif /* EAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   200      NULL
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   201  };
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   202  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   203  /* Prototypes for procedures local to this file. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   204  static void ppp_do_connect(void *arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   205  static err_t ppp_netif_init_cb(struct netif *netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   206  #if PPP_IPV4_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   207  static err_t ppp_netif_output_ip4(struct netif *netif, struct pbuf *pb, const ip4_addr_t *ipaddr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   208  #endif /* PPP_IPV4_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   209  #if PPP_IPV6_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   210  static err_t ppp_netif_output_ip6(struct netif *netif, struct pbuf *pb, const ip6_addr_t *ipaddr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   211  #endif /* PPP_IPV6_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   212  static err_t ppp_netif_output(struct netif *netif, struct pbuf *pb, u16_t protocol);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   213  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   214  /***********************************/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   215  /*** PUBLIC FUNCTION DEFINITIONS ***/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   216  /***********************************/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   217  #if PPP_AUTH_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   218  void ppp_set_auth(ppp_pcb *pcb, u8_t authtype, const char *user, const char *passwd) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   219    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   220  #if PAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   221    pcb->settings.refuse_pap = !(authtype & PPPAUTHTYPE_PAP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   222  #endif /* PAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   223  #if CHAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   224    pcb->settings.refuse_chap = !(authtype & PPPAUTHTYPE_CHAP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   225  #if MSCHAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   226    pcb->settings.refuse_mschap = !(authtype & PPPAUTHTYPE_MSCHAP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   227    pcb->settings.refuse_mschap_v2 = !(authtype & PPPAUTHTYPE_MSCHAP_V2);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   228  #endif /* MSCHAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   229  #endif /* CHAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   230  #if EAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   231    pcb->settings.refuse_eap = !(authtype & PPPAUTHTYPE_EAP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   232  #endif /* EAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   233    pcb->settings.user = user;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   234    pcb->settings.passwd = passwd;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   235  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   236  #endif /* PPP_AUTH_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   237  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   238  #if MPPE_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   239  /* Set MPPE configuration */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   240  void ppp_set_mppe(ppp_pcb *pcb, u8_t flags) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   241    if (flags == PPP_MPPE_DISABLE) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   242      pcb->settings.require_mppe = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   243      return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   244    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   245  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   246    pcb->settings.require_mppe = 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   247    pcb->settings.refuse_mppe_stateful = !(flags & PPP_MPPE_ALLOW_STATEFUL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   248    pcb->settings.refuse_mppe_40 = !!(flags & PPP_MPPE_REFUSE_40);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   249    pcb->settings.refuse_mppe_128 = !!(flags & PPP_MPPE_REFUSE_128);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   250  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   251  #endif /* MPPE_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   252  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   253  #if PPP_NOTIFY_PHASE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   254  void ppp_set_notify_phase_callback(ppp_pcb *pcb, ppp_notify_phase_cb_fn notify_phase_cb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   255    pcb->notify_phase_cb = notify_phase_cb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   256    notify_phase_cb(pcb, pcb->phase, pcb->ctx_cb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   257  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   258  #endif /* PPP_NOTIFY_PHASE */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   259  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   260  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   261   * Initiate a PPP connection.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   262   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   263   * This can only be called if PPP is in the dead phase.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   264   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   265   * Holdoff is the time to wait (in seconds) before initiating
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   266   * the connection.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   267   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   268   * If this port connects to a modem, the modem connection must be
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   269   * established before calling this.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   270   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   271  err_t ppp_connect(ppp_pcb *pcb, u16_t holdoff) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   272    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   273    if (pcb->phase != PPP_PHASE_DEAD) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   274      return ERR_ALREADY;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   275    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   276  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   277    PPPDEBUG(LOG_DEBUG, ("ppp_connect[%d]: holdoff=%d\n", pcb->netif->num, holdoff));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   278  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   279    magic_randomize();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   280  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   281    if (holdoff == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   282      ppp_do_connect(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   283      return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   284    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   285  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   286    new_phase(pcb, PPP_PHASE_HOLDOFF);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   287    sys_timeout((u32_t)(holdoff*1000), ppp_do_connect, pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   288    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   289  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   290  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   291  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   292  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   293   * Listen for an incoming PPP connection.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   294   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   295   * This can only be called if PPP is in the dead phase.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   296   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   297   * If this port connects to a modem, the modem connection must be
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   298   * established before calling this.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   299   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   300  err_t ppp_listen(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   301    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   302    if (pcb->phase != PPP_PHASE_DEAD) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   303      return ERR_ALREADY;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   304    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   305  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   306    PPPDEBUG(LOG_DEBUG, ("ppp_listen[%d]\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   307  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   308    magic_randomize();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   309  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   310    if (pcb->link_cb->listen) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   311      new_phase(pcb, PPP_PHASE_INITIALIZE);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   312      pcb->link_cb->listen(pcb, pcb->link_ctx_cb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   313      return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   314    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   315    return ERR_IF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   316  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   317  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   318  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   319  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   320   * Initiate the end of a PPP connection.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   321   * Any outstanding packets in the queues are dropped.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   322   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   323   * Setting nocarrier to 1 close the PPP connection without initiating the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   324   * shutdown procedure. Always using nocarrier = 0 is still recommended,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   325   * this is going to take a little longer time if your link is down, but
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   326   * is a safer choice for the PPP state machine.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   327   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   328   * Return 0 on success, an error code on failure.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   329   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   330  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   331  ppp_close(ppp_pcb *pcb, u8_t nocarrier)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   332  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   333    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   334  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   335    pcb->err_code = PPPERR_USER;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   336  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   337    /* holdoff phase, cancel the reconnection */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   338    if (pcb->phase == PPP_PHASE_HOLDOFF) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   339      sys_untimeout(ppp_do_connect, pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   340      new_phase(pcb, PPP_PHASE_DEAD);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   341    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   342  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   343    /* dead phase, nothing to do, call the status callback to be consistent */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   344    if (pcb->phase == PPP_PHASE_DEAD) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   345      pcb->link_status_cb(pcb, pcb->err_code, pcb->ctx_cb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   346      return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   347    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   348  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   349    /* Already terminating, nothing to do */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   350    if (pcb->phase >= PPP_PHASE_TERMINATE) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   351      return ERR_INPROGRESS;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   352    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   353  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   354    /* LCP not open, close link protocol */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   355    if (pcb->phase < PPP_PHASE_ESTABLISH) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   356      new_phase(pcb, PPP_PHASE_DISCONNECT);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   357      ppp_link_terminated(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   358      return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   359    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   360  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   361    /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   362     * Only accept carrier lost signal on the stable running phase in order
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   363     * to prevent changing the PPP phase FSM in transition phases.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   364     *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   365     * Always using nocarrier = 0 is still recommended, this is going to
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   366     * take a little longer time, but is a safer choice from FSM point of view.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   367     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   368    if (nocarrier && pcb->phase == PPP_PHASE_RUNNING) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   369      PPPDEBUG(LOG_DEBUG, ("ppp_close[%d]: carrier lost -> lcp_lowerdown\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   370      lcp_lowerdown(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   371      /* forced link termination, this will force link protocol to disconnect. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   372      link_terminated(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   373      return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   374    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   375  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   376    /* Disconnect */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   377    PPPDEBUG(LOG_DEBUG, ("ppp_close[%d]: kill_link -> lcp_close\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   378    /* LCP soft close request. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   379    lcp_close(pcb, "User request");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   380    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   381  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   382  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   383  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   384   * Release the control block.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   385   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   386   * This can only be called if PPP is in the dead phase.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   387   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   388   * You must use ppp_close() before if you wish to terminate
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   389   * an established PPP session.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   390   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   391   * Return 0 on success, an error code on failure.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   392   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   393  err_t ppp_free(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   394    err_t err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   395    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   396    if (pcb->phase != PPP_PHASE_DEAD) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   397      return ERR_CONN;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   398    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   399  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   400    PPPDEBUG(LOG_DEBUG, ("ppp_free[%d]\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   401  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   402    netif_remove(pcb->netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   403  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   404    err = pcb->link_cb->free(pcb, pcb->link_ctx_cb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   405  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   406    LWIP_MEMPOOL_FREE(PPP_PCB, pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   407    return err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   408  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   409  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   410  /* Get and set parameters for the given connection.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   411   * Return 0 on success, an error code on failure. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   412  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   413  ppp_ioctl(ppp_pcb *pcb, u8_t cmd, void *arg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   414  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   415    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   416    if (pcb == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   417      return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   418    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   419  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   420    switch(cmd) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   421      case PPPCTLG_UPSTATUS:      /* Get the PPP up status. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   422        if (!arg) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   423          goto fail;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   424        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   425        *(int *)arg = (int)(0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   426  #if PPP_IPV4_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   427             || pcb->if4_up
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   428  #endif /* PPP_IPV4_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   429  #if PPP_IPV6_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   430             || pcb->if6_up
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   431  #endif /* PPP_IPV6_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   432             );
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   433        return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   434  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   435      case PPPCTLG_ERRCODE:       /* Get the PPP error code. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   436        if (!arg) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   437          goto fail;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   438        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   439        *(int *)arg = (int)(pcb->err_code);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   440        return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   441  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   442      default:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   443        goto fail;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   444    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   445  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   446  fail:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   447    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   448  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   449  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   450  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   451  /**********************************/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   452  /*** LOCAL FUNCTION DEFINITIONS ***/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   453  /**********************************/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   454  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   455  static void ppp_do_connect(void *arg) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   456    ppp_pcb *pcb = (ppp_pcb*)arg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   457  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   458    LWIP_ASSERT("pcb->phase == PPP_PHASE_DEAD || pcb->phase == PPP_PHASE_HOLDOFF", pcb->phase == PPP_PHASE_DEAD || pcb->phase == PPP_PHASE_HOLDOFF);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   459  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   460    new_phase(pcb, PPP_PHASE_INITIALIZE);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   461    pcb->link_cb->connect(pcb, pcb->link_ctx_cb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   462  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   463  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   464  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   465   * ppp_netif_init_cb - netif init callback
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   466   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   467  static err_t ppp_netif_init_cb(struct netif *netif) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   468    netif->name[0] = 'p';
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   469    netif->name[1] = 'p';
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   470  #if PPP_IPV4_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   471    netif->output = ppp_netif_output_ip4;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   472  #endif /* PPP_IPV4_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   473  #if PPP_IPV6_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   474    netif->output_ip6 = ppp_netif_output_ip6;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   475  #endif /* PPP_IPV6_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   476    netif->flags = NETIF_FLAG_UP;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   477  #if LWIP_NETIF_HOSTNAME
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   478    /* @todo: Initialize interface hostname */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   479    /* netif_set_hostname(netif, "lwip"); */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   480  #endif /* LWIP_NETIF_HOSTNAME */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   481    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   482  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   483  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   484  #if PPP_IPV4_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   485  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   486   * Send an IPv4 packet on the given connection.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   487   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   488  static err_t ppp_netif_output_ip4(struct netif *netif, struct pbuf *pb, const ip4_addr_t *ipaddr) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   489    LWIP_UNUSED_ARG(ipaddr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   490    return ppp_netif_output(netif, pb, PPP_IP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   491  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   492  #endif /* PPP_IPV4_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   493  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   494  #if PPP_IPV6_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   495  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   496   * Send an IPv6 packet on the given connection.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   497   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   498  static err_t ppp_netif_output_ip6(struct netif *netif, struct pbuf *pb, const ip6_addr_t *ipaddr) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   499    LWIP_UNUSED_ARG(ipaddr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   500    return ppp_netif_output(netif, pb, PPP_IPV6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   501  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   502  #endif /* PPP_IPV6_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   503  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   504  static err_t ppp_netif_output(struct netif *netif, struct pbuf *pb, u16_t protocol) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   505    ppp_pcb *pcb = (ppp_pcb*)netif->state;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   506    err_t err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   507    struct pbuf *fpb = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   508  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   509    /* Check that the link is up. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   510    if (0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   511  #if PPP_IPV4_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   512        || (protocol == PPP_IP && !pcb->if4_up)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   513  #endif /* PPP_IPV4_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   514  #if PPP_IPV6_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   515        || (protocol == PPP_IPV6 && !pcb->if6_up)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   516  #endif /* PPP_IPV6_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   517        ) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   518      PPPDEBUG(LOG_ERR, ("ppp_netif_output[%d]: link not up\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   519      goto err_rte_drop;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   520    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   521  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   522  #if MPPE_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   523    /* If MPPE is required, refuse any IP packet until we are able to crypt them. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   524    if (pcb->settings.require_mppe && pcb->ccp_transmit_method != CI_MPPE) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   525      PPPDEBUG(LOG_ERR, ("ppp_netif_output[%d]: MPPE required, not up\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   526      goto err_rte_drop;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   527    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   528  #endif /* MPPE_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   529  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   530  #if VJ_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   531    /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   532     * Attempt Van Jacobson header compression if VJ is configured and
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   533     * this is an IP packet.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   534     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   535    if (protocol == PPP_IP && pcb->vj_enabled) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   536      switch (vj_compress_tcp(&pcb->vj_comp, &pb)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   537        case TYPE_IP:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   538          /* No change...
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   539             protocol = PPP_IP; */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   540          break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   541        case TYPE_COMPRESSED_TCP:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   542          /* vj_compress_tcp() returns a new allocated pbuf, indicate we should free
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   543           * our duplicated pbuf later */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   544          fpb = pb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   545          protocol = PPP_VJC_COMP;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   546          break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   547        case TYPE_UNCOMPRESSED_TCP:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   548          /* vj_compress_tcp() returns a new allocated pbuf, indicate we should free
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   549           * our duplicated pbuf later */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   550          fpb = pb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   551          protocol = PPP_VJC_UNCOMP;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   552          break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   553        default:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   554          PPPDEBUG(LOG_WARNING, ("ppp_netif_output[%d]: bad IP packet\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   555          LINK_STATS_INC(link.proterr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   556          LINK_STATS_INC(link.drop);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   557          MIB2_STATS_NETIF_INC(pcb->netif, ifoutdiscards);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   558          return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   559      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   560    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   561  #endif /* VJ_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   562  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   563  #if CCP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   564    switch (pcb->ccp_transmit_method) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   565    case 0:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   566      break; /* Don't compress */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   567  #if MPPE_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   568    case CI_MPPE:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   569      if ((err = mppe_compress(pcb, &pcb->mppe_comp, &pb, protocol)) != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   570        LINK_STATS_INC(link.memerr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   571        LINK_STATS_INC(link.drop);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   572        MIB2_STATS_NETIF_INC(netif, ifoutdiscards);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   573        goto err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   574      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   575      /* if VJ compressor returned a new allocated pbuf, free it */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   576      if (fpb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   577        pbuf_free(fpb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   578      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   579      /* mppe_compress() returns a new allocated pbuf, indicate we should free
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   580       * our duplicated pbuf later */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   581      fpb = pb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   582      protocol = PPP_COMP;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   583      break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   584  #endif /* MPPE_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   585    default:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   586      PPPDEBUG(LOG_ERR, ("ppp_netif_output[%d]: bad CCP transmit method\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   587      goto err_rte_drop; /* Cannot really happen, we only negotiate what we are able to do */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   588    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   589  #endif /* CCP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   590  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   591    err = pcb->link_cb->netif_output(pcb, pcb->link_ctx_cb, pb, protocol);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   592    goto err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   593  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   594  err_rte_drop:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   595    err = ERR_RTE;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   596    LINK_STATS_INC(link.rterr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   597    LINK_STATS_INC(link.drop);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   598    MIB2_STATS_NETIF_INC(netif, ifoutdiscards);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   599  err:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   600    if (fpb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   601      pbuf_free(fpb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   602    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   603    return err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   604  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   605  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   606  /************************************/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   607  /*** PRIVATE FUNCTION DEFINITIONS ***/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   608  /************************************/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   609  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   610  /* Initialize the PPP subsystem. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   611  int ppp_init(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   612  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   613  #if PPPOS_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   614    LWIP_MEMPOOL_INIT(PPPOS_PCB);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   615  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   616  #if PPPOE_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   617    LWIP_MEMPOOL_INIT(PPPOE_IF);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   618  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   619  #if PPPOL2TP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   620    LWIP_MEMPOOL_INIT(PPPOL2TP_PCB);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   621  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   622  #if LWIP_PPP_API && LWIP_MPU_COMPATIBLE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   623    LWIP_MEMPOOL_INIT(PPPAPI_MSG);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   624  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   625  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   626    LWIP_MEMPOOL_INIT(PPP_PCB);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   627  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   628    /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   629     * Initialize magic number generator now so that protocols may
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   630     * use magic numbers in initialization.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   631     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   632    magic_init();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   633  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   634    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   635  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   636   
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   637  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   638   * Create a new PPP control block.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   639   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   640   * This initializes the PPP control block but does not
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   641   * attempt to negotiate the LCP session.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   642   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   643   * Return a new PPP connection control block pointer
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   644   * on success or a null pointer on failure.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   645   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   646  ppp_pcb *ppp_new(struct netif *pppif, const struct link_callbacks *callbacks, void *link_ctx_cb, ppp_link_status_cb_fn link_status_cb, void *ctx_cb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   647    ppp_pcb *pcb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   648    const struct protent *protp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   649    int i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   650  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   651    /* PPP is single-threaded: without a callback,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   652     * there is no way to know when the link is up. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   653    if (link_status_cb == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   654      return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   655    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   656  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   657    pcb = (ppp_pcb*)LWIP_MEMPOOL_ALLOC(PPP_PCB);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   658    if (pcb == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   659      return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   660    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   661  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   662    memset(pcb, 0, sizeof(ppp_pcb));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   663  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   664    /* default configuration */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   665  #if PAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   666    pcb->settings.pap_timeout_time = UPAP_DEFTIMEOUT;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   667    pcb->settings.pap_max_transmits = UPAP_DEFTRANSMITS;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   668  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   669    pcb->settings.pap_req_timeout = UPAP_DEFREQTIME;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   670  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   671  #endif /* PAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   672  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   673  #if CHAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   674    pcb->settings.chap_timeout_time = CHAP_DEFTIMEOUT;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   675    pcb->settings.chap_max_transmits = CHAP_DEFTRANSMITS;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   676  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   677    pcb->settings.chap_rechallenge_time = CHAP_DEFRECHALLENGETIME;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   678  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   679  #endif /* CHAP_SUPPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   680  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   681  #if EAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   682    pcb->settings.eap_req_time = EAP_DEFREQTIME;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   683    pcb->settings.eap_allow_req = EAP_DEFALLOWREQ;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   684  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   685    pcb->settings.eap_timeout_time = EAP_DEFTIMEOUT;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   686    pcb->settings.eap_max_transmits = EAP_DEFTRANSMITS;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   687  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   688  #endif /* EAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   689  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   690    pcb->settings.lcp_loopbackfail = LCP_DEFLOOPBACKFAIL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   691    pcb->settings.lcp_echo_interval = LCP_ECHOINTERVAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   692    pcb->settings.lcp_echo_fails = LCP_MAXECHOFAILS;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   693  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   694    pcb->settings.fsm_timeout_time = FSM_DEFTIMEOUT;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   695    pcb->settings.fsm_max_conf_req_transmits = FSM_DEFMAXCONFREQS;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   696    pcb->settings.fsm_max_term_transmits = FSM_DEFMAXTERMREQS;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   697    pcb->settings.fsm_max_nak_loops = FSM_DEFMAXNAKLOOPS;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   698  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   699    pcb->netif = pppif;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   700    MIB2_INIT_NETIF(pppif, snmp_ifType_ppp, 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   701    if (!netif_add(pcb->netif,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   702  #if LWIP_IPV4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   703                   IP4_ADDR_ANY4, IP4_ADDR_BROADCAST, IP4_ADDR_ANY4,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   704  #endif /* LWIP_IPV4 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   705                   (void *)pcb, ppp_netif_init_cb, NULL)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   706      LWIP_MEMPOOL_FREE(PPP_PCB, pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   707      PPPDEBUG(LOG_ERR, ("ppp_new: netif_add failed\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   708      return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   709    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   710  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   711    pcb->link_cb = callbacks;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   712    pcb->link_ctx_cb = link_ctx_cb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   713    pcb->link_status_cb = link_status_cb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   714    pcb->ctx_cb = ctx_cb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   715  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   716    /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   717     * Initialize each protocol.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   718     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   719    for (i = 0; (protp = protocols[i]) != NULL; ++i) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   720        (*protp->init)(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   721    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   722  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   723    new_phase(pcb, PPP_PHASE_DEAD);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   724    return pcb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   725  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   726  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   727  /** Initiate LCP open request */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   728  void ppp_start(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   729    PPPDEBUG(LOG_DEBUG, ("ppp_start[%d]\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   730  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   731    /* Clean data not taken care by anything else, mostly shared data. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   732  #if PPP_STATS_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   733    link_stats_valid = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   734  #endif /* PPP_STATS_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   735  #if MPPE_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   736    pcb->mppe_keys_set = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   737    memset(&pcb->mppe_comp, 0, sizeof(pcb->mppe_comp));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   738    memset(&pcb->mppe_decomp, 0, sizeof(pcb->mppe_decomp));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   739  #endif /* MPPE_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   740  #if VJ_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   741    vj_compress_init(&pcb->vj_comp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   742  #endif /* VJ_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   743  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   744    /* Start protocol */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   745    new_phase(pcb, PPP_PHASE_ESTABLISH);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   746    lcp_open(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   747    lcp_lowerup(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   748    PPPDEBUG(LOG_DEBUG, ("ppp_start[%d]: finished\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   749  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   750  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   751  /** Called when link failed to setup */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   752  void ppp_link_failed(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   753    PPPDEBUG(LOG_DEBUG, ("ppp_link_failed[%d]\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   754    new_phase(pcb, PPP_PHASE_DEAD);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   755    pcb->err_code = PPPERR_OPEN;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   756    pcb->link_status_cb(pcb, pcb->err_code, pcb->ctx_cb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   757  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   758  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   759  /** Called when link is normally down (i.e. it was asked to end) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   760  void ppp_link_end(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   761    PPPDEBUG(LOG_DEBUG, ("ppp_link_end[%d]\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   762    new_phase(pcb, PPP_PHASE_DEAD);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   763    if (pcb->err_code == PPPERR_NONE) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   764      pcb->err_code = PPPERR_CONNECT;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   765    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   766    pcb->link_status_cb(pcb, pcb->err_code, pcb->ctx_cb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   767  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   768  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   769  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   770   * Pass the processed input packet to the appropriate handler.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   771   * This function and all handlers run in the context of the tcpip_thread
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   772   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   773  void ppp_input(ppp_pcb *pcb, struct pbuf *pb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   774    u16_t protocol;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   775  #if PPP_DEBUG && PPP_PROTOCOLNAME
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   776      const char *pname;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   777  #endif /* PPP_DEBUG && PPP_PROTOCOLNAME */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   778  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   779    magic_randomize();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   780  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   781    if (pb->len < 2) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   782      PPPDEBUG(LOG_ERR, ("ppp_input[%d]: packet too short\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   783      goto drop;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   784    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   785    protocol = (((u8_t *)pb->payload)[0] << 8) | ((u8_t*)pb->payload)[1];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   786  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   787  #if PRINTPKT_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   788    ppp_dump_packet(pcb, "rcvd", (unsigned char *)pb->payload, pb->len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   789  #endif /* PRINTPKT_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   790  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   791    pbuf_remove_header(pb, sizeof(protocol));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   792  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   793    LINK_STATS_INC(link.recv);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   794    MIB2_STATS_NETIF_INC(pcb->netif, ifinucastpkts);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   795    MIB2_STATS_NETIF_ADD(pcb->netif, ifinoctets, pb->tot_len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   796  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   797    /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   798     * Toss all non-LCP packets unless LCP is OPEN.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   799     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   800    if (protocol != PPP_LCP && pcb->lcp_fsm.state != PPP_FSM_OPENED) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   801      ppp_dbglog("Discarded non-LCP packet when LCP not open");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   802      goto drop;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   803    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   804  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   805    /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   806     * Until we get past the authentication phase, toss all packets
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   807     * except LCP, LQR and authentication packets.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   808     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   809    if (pcb->phase <= PPP_PHASE_AUTHENTICATE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   810     && !(protocol == PPP_LCP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   811  #if LQR_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   812     || protocol == PPP_LQR
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   813  #endif /* LQR_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   814  #if PAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   815     || protocol == PPP_PAP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   816  #endif /* PAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   817  #if CHAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   818     || protocol == PPP_CHAP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   819  #endif /* CHAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   820  #if EAP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   821     || protocol == PPP_EAP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   822  #endif /* EAP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   823     )) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   824      ppp_dbglog("discarding proto 0x%x in phase %d", protocol, pcb->phase);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   825      goto drop;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   826    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   827  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   828  #if CCP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   829  #if MPPE_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   830    /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   831     * MPPE is required and unencrypted data has arrived (this
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   832     * should never happen!). We should probably drop the link if
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   833     * the protocol is in the range of what should be encrypted.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   834     * At the least, we drop this packet.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   835     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   836    if (pcb->settings.require_mppe && protocol != PPP_COMP && protocol < 0x8000) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   837      PPPDEBUG(LOG_ERR, ("ppp_input[%d]: MPPE required, received unencrypted data!\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   838      goto drop;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   839    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   840  #endif /* MPPE_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   841  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   842    if (protocol == PPP_COMP) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   843      u8_t *pl;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   844  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   845      switch (pcb->ccp_receive_method) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   846  #if MPPE_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   847      case CI_MPPE:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   848        if (mppe_decompress(pcb, &pcb->mppe_decomp, &pb) != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   849          goto drop;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   850        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   851        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   852  #endif /* MPPE_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   853      default:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   854        PPPDEBUG(LOG_ERR, ("ppp_input[%d]: bad CCP receive method\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   855        goto drop; /* Cannot really happen, we only negotiate what we are able to do */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   856      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   857  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   858      /* Assume no PFC */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   859      if (pb->len < 2) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   860        goto drop;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   861      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   862  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   863      /* Extract and hide protocol (do PFC decompression if necessary) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   864      pl = (u8_t*)pb->payload;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   865      if (pl[0] & 0x01) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   866        protocol = pl[0];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   867        pbuf_remove_header(pb, 1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   868      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   869        protocol = (pl[0] << 8) | pl[1];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   870        pbuf_remove_header(pb, 2);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   871      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   872    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   873  #endif /* CCP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   874  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   875    switch(protocol) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   876  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   877  #if PPP_IPV4_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   878      case PPP_IP:            /* Internet Protocol */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   879        PPPDEBUG(LOG_INFO, ("ppp_input[%d]: ip in pbuf len=%d\n", pcb->netif->num, pb->tot_len));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   880        ip4_input(pb, pcb->netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   881        return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   882  #endif /* PPP_IPV4_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   883  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   884  #if PPP_IPV6_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   885      case PPP_IPV6:          /* Internet Protocol Version 6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   886        PPPDEBUG(LOG_INFO, ("ppp_input[%d]: ip6 in pbuf len=%d\n", pcb->netif->num, pb->tot_len));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   887        ip6_input(pb, pcb->netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   888        return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   889  #endif /* PPP_IPV6_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   890  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   891  #if VJ_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   892      case PPP_VJC_COMP:      /* VJ compressed TCP */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   893        /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   894         * Clip off the VJ header and prepend the rebuilt TCP/IP header and
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   895         * pass the result to IP.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   896         */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   897        PPPDEBUG(LOG_INFO, ("ppp_input[%d]: vj_comp in pbuf len=%d\n", pcb->netif->num, pb->tot_len));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   898        if (pcb->vj_enabled && vj_uncompress_tcp(&pb, &pcb->vj_comp) >= 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   899          ip4_input(pb, pcb->netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   900          return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   901        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   902        /* Something's wrong so drop it. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   903        PPPDEBUG(LOG_WARNING, ("ppp_input[%d]: Dropping VJ compressed\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   904        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   905  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   906      case PPP_VJC_UNCOMP:    /* VJ uncompressed TCP */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   907        /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   908         * Process the TCP/IP header for VJ header compression and then pass
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   909         * the packet to IP.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   910         */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   911        PPPDEBUG(LOG_INFO, ("ppp_input[%d]: vj_un in pbuf len=%d\n", pcb->netif->num, pb->tot_len));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   912        if (pcb->vj_enabled && vj_uncompress_uncomp(pb, &pcb->vj_comp) >= 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   913          ip4_input(pb, pcb->netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   914          return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   915        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   916        /* Something's wrong so drop it. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   917        PPPDEBUG(LOG_WARNING, ("ppp_input[%d]: Dropping VJ uncompressed\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   918        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   919  #endif /* VJ_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   920  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   921      default: {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   922        int i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   923        const struct protent *protp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   924  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   925        /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   926         * Upcall the proper protocol input routine.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   927         */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   928        for (i = 0; (protp = protocols[i]) != NULL; ++i) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   929          if (protp->protocol == protocol) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   930            pb = pbuf_coalesce(pb, PBUF_RAW);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   931            (*protp->input)(pcb, (u8_t*)pb->payload, pb->len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   932            goto out;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   933          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   934  #if 0   /* UNUSED
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   935           *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   936           * This is actually a (hacked?) way for the Linux kernel to pass a data
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   937           * packet to pppd. pppd in normal condition only do signaling
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   938           * (LCP, PAP, CHAP, IPCP, ...) and does not handle any data packet at all.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   939           *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   940           * We don't even need this interface, which is only there because of PPP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   941           * interface limitation between Linux kernel and pppd. For MPPE, which uses
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   942           * CCP to negotiate although it is not really a (de)compressor, we added
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   943           * ccp_resetrequest() in CCP and MPPE input data flow is calling either
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   944           * ccp_resetrequest() or lcp_close() if the issue is, respectively, non-fatal
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   945           * or fatal, this is what ccp_datainput() really do.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   946           */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   947          if (protocol == (protp->protocol & ~0x8000)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   948            && protp->datainput != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   949            (*protp->datainput)(pcb, pb->payload, pb->len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   950            goto out;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   951          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   952  #endif /* UNUSED */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   953        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   954  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   955  #if PPP_DEBUG
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   956  #if PPP_PROTOCOLNAME
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   957        pname = protocol_name(protocol);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   958        if (pname != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   959          ppp_warn("Unsupported protocol '%s' (0x%x) received", pname, protocol);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   960        } else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   961  #endif /* PPP_PROTOCOLNAME */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   962          ppp_warn("Unsupported protocol 0x%x received", protocol);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   963  #endif /* PPP_DEBUG */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   964          if (pbuf_add_header(pb, sizeof(protocol))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   965            PPPDEBUG(LOG_WARNING, ("ppp_input[%d]: Dropping (pbuf_add_header failed)\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   966            goto drop;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   967          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   968          lcp_sprotrej(pcb, (u8_t*)pb->payload, pb->len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   969        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   970        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   971    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   972  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   973  drop:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   974    LINK_STATS_INC(link.drop);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   975    MIB2_STATS_NETIF_INC(pcb->netif, ifindiscards);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   976  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   977  out:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   978    pbuf_free(pb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   979  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   980  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   981  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   982   * Write a pbuf to a ppp link, only used from PPP functions
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   983   * to send PPP packets.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   984   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   985   * IPv4 and IPv6 packets from lwIP are sent, respectively,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   986   * with ppp_netif_output_ip4() and ppp_netif_output_ip6()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   987   * functions (which are callbacks of the netif PPP interface).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   988   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   989  err_t ppp_write(ppp_pcb *pcb, struct pbuf *p) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   990  #if PRINTPKT_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   991    ppp_dump_packet(pcb, "sent", (unsigned char *)p->payload+2, p->len-2);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   992  #endif /* PRINTPKT_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   993    return pcb->link_cb->write(pcb, pcb->link_ctx_cb, p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   994  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   995  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   996  void ppp_link_terminated(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   997    PPPDEBUG(LOG_DEBUG, ("ppp_link_terminated[%d]\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   998    pcb->link_cb->disconnect(pcb, pcb->link_ctx_cb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	   999    PPPDEBUG(LOG_DEBUG, ("ppp_link_terminated[%d]: finished.\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1000  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1001  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1002  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1003  /************************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1004   * Functions called by various PPP subsystems to configure
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1005   * the PPP interface or change the PPP phase.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1006   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1007  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1008  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1009   * new_phase - signal the start of a new phase of pppd's operation.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1010   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1011  void new_phase(ppp_pcb *pcb, int p) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1012    pcb->phase = p;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1013    PPPDEBUG(LOG_DEBUG, ("ppp phase changed[%d]: phase=%d\n", pcb->netif->num, pcb->phase));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1014  #if PPP_NOTIFY_PHASE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1015    if (pcb->notify_phase_cb != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1016      pcb->notify_phase_cb(pcb, p, pcb->ctx_cb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1017    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1018  #endif /* PPP_NOTIFY_PHASE */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1019  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1020  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1021  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1022   * ppp_send_config - configure the transmit-side characteristics of
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1023   * the ppp interface.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1024   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1025  int ppp_send_config(ppp_pcb *pcb, int mtu, u32_t accm, int pcomp, int accomp) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1026    LWIP_UNUSED_ARG(mtu);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1027    /* pcb->mtu = mtu; -- set correctly with netif_set_mtu */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1028  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1029    if (pcb->link_cb->send_config) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1030      pcb->link_cb->send_config(pcb, pcb->link_ctx_cb, accm, pcomp, accomp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1031    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1032  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1033    PPPDEBUG(LOG_INFO, ("ppp_send_config[%d]\n", pcb->netif->num) );
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1034    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1035  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1036  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1037  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1038   * ppp_recv_config - configure the receive-side characteristics of
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1039   * the ppp interface.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1040   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1041  int ppp_recv_config(ppp_pcb *pcb, int mru, u32_t accm, int pcomp, int accomp) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1042    LWIP_UNUSED_ARG(mru);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1043  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1044    if (pcb->link_cb->recv_config) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1045      pcb->link_cb->recv_config(pcb, pcb->link_ctx_cb, accm, pcomp, accomp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1046    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1047  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1048    PPPDEBUG(LOG_INFO, ("ppp_recv_config[%d]\n", pcb->netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1049    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1050  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1051  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1052  #if PPP_IPV4_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1053  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1054   * sifaddr - Config the interface IP addresses and netmask.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1055   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1056  int sifaddr(ppp_pcb *pcb, u32_t our_adr, u32_t his_adr, u32_t netmask) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1057    ip4_addr_t ip, nm, gw;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1058  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1059    ip4_addr_set_u32(&ip, our_adr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1060    ip4_addr_set_u32(&nm, netmask);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1061    ip4_addr_set_u32(&gw, his_adr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1062    netif_set_addr(pcb->netif, &ip, &nm, &gw);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1063    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1064  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1065  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1066  /********************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1067   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1068   * cifaddr - Clear the interface IP addresses, and delete routes
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1069   * through the interface if possible.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1070   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1071  int cifaddr(ppp_pcb *pcb, u32_t our_adr, u32_t his_adr) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1072    LWIP_UNUSED_ARG(our_adr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1073    LWIP_UNUSED_ARG(his_adr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1074  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1075    netif_set_addr(pcb->netif, IP4_ADDR_ANY4, IP4_ADDR_BROADCAST, IP4_ADDR_ANY4);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1076    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1077  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1078  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1079  #if 0 /* UNUSED - PROXY ARP */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1080  /********************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1081   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1082   * sifproxyarp - Make a proxy ARP entry for the peer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1083   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1084  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1085  int sifproxyarp(ppp_pcb *pcb, u32_t his_adr) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1086    LWIP_UNUSED_ARG(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1087    LWIP_UNUSED_ARG(his_adr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1088    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1089  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1090  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1091  /********************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1092   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1093   * cifproxyarp - Delete the proxy ARP entry for the peer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1094   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1095  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1096  int cifproxyarp(ppp_pcb *pcb, u32_t his_adr) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1097    LWIP_UNUSED_ARG(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1098    LWIP_UNUSED_ARG(his_adr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1099    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1100  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1101  #endif /* UNUSED - PROXY ARP */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1102  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1103  #if LWIP_DNS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1104  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1105   * sdns - Config the DNS servers
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1106   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1107  int sdns(ppp_pcb *pcb, u32_t ns1, u32_t ns2) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1108    ip_addr_t ns;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1109    LWIP_UNUSED_ARG(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1110  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1111    ip_addr_set_ip4_u32_val(ns, ns1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1112    dns_setserver(0, &ns);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1113    ip_addr_set_ip4_u32_val(ns, ns2);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1114    dns_setserver(1, &ns);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1115    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1116  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1117  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1118  /********************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1119   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1120   * cdns - Clear the DNS servers
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1121   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1122  int cdns(ppp_pcb *pcb, u32_t ns1, u32_t ns2) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1123    const ip_addr_t *nsa;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1124    ip_addr_t nsb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1125    LWIP_UNUSED_ARG(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1126  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1127    nsa = dns_getserver(0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1128    ip_addr_set_ip4_u32_val(nsb, ns1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1129    if (ip_addr_cmp(nsa, &nsb)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1130      dns_setserver(0, IP_ADDR_ANY);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1131    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1132    nsa = dns_getserver(1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1133    ip_addr_set_ip4_u32_val(nsb, ns2);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1134    if (ip_addr_cmp(nsa, &nsb)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1135      dns_setserver(1, IP_ADDR_ANY);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1136    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1137    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1138  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1139  #endif /* LWIP_DNS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1140  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1141  #if VJ_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1142  /********************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1143   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1144   * sifvjcomp - config tcp header compression
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1145   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1146  int sifvjcomp(ppp_pcb *pcb, int vjcomp, int cidcomp, int maxcid) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1147    pcb->vj_enabled = vjcomp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1148    pcb->vj_comp.compressSlot = cidcomp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1149    pcb->vj_comp.maxSlotIndex = maxcid;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1150    PPPDEBUG(LOG_INFO, ("sifvjcomp[%d]: VJ compress enable=%d slot=%d max slot=%d\n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1151              pcb->netif->num, vjcomp, cidcomp, maxcid));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1152    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1153  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1154  #endif /* VJ_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1155  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1156  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1157   * sifup - Config the interface up and enable IP packets to pass.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1158   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1159  int sifup(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1160    pcb->if4_up = 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1161    pcb->err_code = PPPERR_NONE;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1162    netif_set_link_up(pcb->netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1163  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1164    PPPDEBUG(LOG_DEBUG, ("sifup[%d]: err_code=%d\n", pcb->netif->num, pcb->err_code));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1165    pcb->link_status_cb(pcb, pcb->err_code, pcb->ctx_cb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1166    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1167  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1168  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1169  /********************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1170   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1171   * sifdown - Disable the indicated protocol and config the interface
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1172   *           down if there are no remaining protocols.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1173   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1174  int sifdown(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1175  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1176    pcb->if4_up = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1177  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1178    if (1
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1179  #if PPP_IPV6_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1180     /* set the interface down if IPv6 is down as well */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1181     && !pcb->if6_up
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1182  #endif /* PPP_IPV6_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1183    ) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1184      /* make sure the netif link callback is called */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1185      netif_set_link_down(pcb->netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1186    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1187    PPPDEBUG(LOG_DEBUG, ("sifdown[%d]: err_code=%d\n", pcb->netif->num, pcb->err_code));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1188    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1189  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1190  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1191  /********************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1192   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1193   * Return user specified netmask, modified by any mask we might determine
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1194   * for address `addr' (in network byte order).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1195   * Here we scan through the system's list of interfaces, looking for
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1196   * any non-point-to-point interfaces which might appear to be on the same
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1197   * network as `addr'.  If we find any, we OR in their netmask to the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1198   * user-specified netmask.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1199   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1200  u32_t get_mask(u32_t addr) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1201  #if 0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1202    u32_t mask, nmask;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1203  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1204    addr = lwip_htonl(addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1205    if (IP_CLASSA(addr)) { /* determine network mask for address class */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1206      nmask = IP_CLASSA_NET;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1207    } else if (IP_CLASSB(addr)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1208      nmask = IP_CLASSB_NET;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1209    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1210      nmask = IP_CLASSC_NET;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1211    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1212  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1213    /* class D nets are disallowed by bad_ip_adrs */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1214    mask = PP_HTONL(0xffffff00UL) | lwip_htonl(nmask);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1215  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1216    /* XXX
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1217     * Scan through the system's network interfaces.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1218     * Get each netmask and OR them into our mask.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1219     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1220    /* return mask; */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1221    return mask;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1222  #endif /* 0 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1223    LWIP_UNUSED_ARG(addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1224    return IPADDR_BROADCAST;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1225  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1226  #endif /* PPP_IPV4_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1227  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1228  #if PPP_IPV6_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1229  #define IN6_LLADDR_FROM_EUI64(ip6, eui64) do {    \ 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1230    ip6.addr[0] = PP_HTONL(0xfe800000);             \ 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1231    ip6.addr[1] = 0;                                \ 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1232    eui64_copy(eui64, ip6.addr[2]);                 \ 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1233    } while (0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1234  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1235  /********************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1236   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1237   * sif6addr - Config the interface with an IPv6 link-local address
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1238   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1239  int sif6addr(ppp_pcb *pcb, eui64_t our_eui64, eui64_t his_eui64) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1240    ip6_addr_t ip6;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1241    LWIP_UNUSED_ARG(his_eui64);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1242  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1243    IN6_LLADDR_FROM_EUI64(ip6, our_eui64);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1244    netif_ip6_addr_set(pcb->netif, 0, &ip6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1245    netif_ip6_addr_set_state(pcb->netif, 0, IP6_ADDR_PREFERRED);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1246    /* FIXME: should we add an IPv6 static neighbor using his_eui64 ? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1247    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1248  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1249  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1250  /********************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1251   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1252   * cif6addr - Remove IPv6 address from interface
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1253   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1254  int cif6addr(ppp_pcb *pcb, eui64_t our_eui64, eui64_t his_eui64) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1255    LWIP_UNUSED_ARG(our_eui64);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1256    LWIP_UNUSED_ARG(his_eui64);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1257  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1258    netif_ip6_addr_set_state(pcb->netif, 0, IP6_ADDR_INVALID);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1259    netif_ip6_addr_set(pcb->netif, 0, IP6_ADDR_ANY6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1260    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1261  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1262  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1263  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1264   * sif6up - Config the interface up and enable IPv6 packets to pass.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1265   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1266  int sif6up(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1267  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1268    pcb->if6_up = 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1269    pcb->err_code = PPPERR_NONE;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1270    netif_set_link_up(pcb->netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1271  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1272    PPPDEBUG(LOG_DEBUG, ("sif6up[%d]: err_code=%d\n", pcb->netif->num, pcb->err_code));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1273    pcb->link_status_cb(pcb, pcb->err_code, pcb->ctx_cb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1274    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1275  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1276  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1277  /********************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1278   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1279   * sif6down - Disable the indicated protocol and config the interface
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1280   *            down if there are no remaining protocols.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1281   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1282  int sif6down(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1283  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1284    pcb->if6_up = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1285  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1286    if (1
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1287  #if PPP_IPV4_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1288     /* set the interface down if IPv4 is down as well */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1289     && !pcb->if4_up
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1290  #endif /* PPP_IPV4_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1291    ) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1292      /* make sure the netif link callback is called */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1293      netif_set_link_down(pcb->netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1294    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1295    PPPDEBUG(LOG_DEBUG, ("sif6down[%d]: err_code=%d\n", pcb->netif->num, pcb->err_code));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1296    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1297  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1298  #endif /* PPP_IPV6_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1299  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1300  #if DEMAND_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1301  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1302   * sifnpmode - Set the mode for handling packets for a given NP.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1303   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1304  int sifnpmode(ppp_pcb *pcb, int proto, enum NPmode mode) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1305    LWIP_UNUSED_ARG(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1306    LWIP_UNUSED_ARG(proto);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1307    LWIP_UNUSED_ARG(mode);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1308    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1309  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1310  #endif /* DEMAND_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1311  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1312  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1313   * netif_set_mtu - set the MTU on the PPP network interface.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1314   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1315  void netif_set_mtu(ppp_pcb *pcb, int mtu) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1316  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1317    pcb->netif->mtu = mtu;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1318    PPPDEBUG(LOG_INFO, ("netif_set_mtu[%d]: mtu=%d\n", pcb->netif->num, mtu));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1319  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1320  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1321  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1322   * netif_get_mtu - get PPP interface MTU
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1323   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1324  int netif_get_mtu(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1325  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1326    return pcb->netif->mtu;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1327  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1328  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1329  #if CCP_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1330  #if 0 /* unused */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1331  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1332   * ccp_test - whether a given compression method is acceptable for use.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1333   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1334  int
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1335  ccp_test(ppp_pcb *pcb, u_char *opt_ptr, int opt_len, int for_transmit)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1336  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1337    LWIP_UNUSED_ARG(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1338    LWIP_UNUSED_ARG(opt_ptr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1339    LWIP_UNUSED_ARG(opt_len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1340    LWIP_UNUSED_ARG(for_transmit);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1341    return -1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1342  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1343  #endif /* unused */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1344  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1345  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1346   * ccp_set - inform about the current state of CCP.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1347   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1348  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1349  ccp_set(ppp_pcb *pcb, u8_t isopen, u8_t isup, u8_t receive_method, u8_t transmit_method)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1350  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1351    LWIP_UNUSED_ARG(isopen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1352    LWIP_UNUSED_ARG(isup);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1353    pcb->ccp_receive_method = receive_method;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1354    pcb->ccp_transmit_method = transmit_method;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1355    PPPDEBUG(LOG_DEBUG, ("ccp_set[%d]: is_open=%d, is_up=%d, receive_method=%u, transmit_method=%u\n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1356             pcb->netif->num, isopen, isup, receive_method, transmit_method));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1357  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1358  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1359  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1360  ccp_reset_comp(ppp_pcb *pcb)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1361  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1362    switch (pcb->ccp_transmit_method) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1363  #if MPPE_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1364    case CI_MPPE:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1365      mppe_comp_reset(pcb, &pcb->mppe_comp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1366      break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1367  #endif /* MPPE_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1368    default:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1369      break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1370    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1371  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1372  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1373  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1374  ccp_reset_decomp(ppp_pcb *pcb)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1375  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1376    switch (pcb->ccp_receive_method) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1377  #if MPPE_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1378    case CI_MPPE:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1379      mppe_decomp_reset(pcb, &pcb->mppe_decomp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1380      break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1381  #endif /* MPPE_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1382    default:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1383      break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1384    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1385  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1386  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1387  #if 0 /* unused */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1388  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1389   * ccp_fatal_error - returns 1 if decompression was disabled as a
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1390   * result of an error detected after decompression of a packet,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1391   * 0 otherwise.  This is necessary because of patent nonsense.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1392   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1393  int
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1394  ccp_fatal_error(ppp_pcb *pcb)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1395  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1396    LWIP_UNUSED_ARG(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1397    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1398  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1399  #endif /* unused */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1400  #endif /* CCP_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1401  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1402  #if PPP_IDLETIMELIMIT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1403  /********************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1404   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1405   * get_idle_time - return how long the link has been idle.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1406   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1407  int get_idle_time(ppp_pcb *pcb, struct ppp_idle *ip) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1408    /* FIXME: add idle time support and make it optional */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1409    LWIP_UNUSED_ARG(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1410    LWIP_UNUSED_ARG(ip);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1411    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1412  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1413  #endif /* PPP_IDLETIMELIMIT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1414  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1415  #if DEMAND_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1416  /********************************************************************
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1417   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1418   * get_loop_output - get outgoing packets from the ppp device,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1419   * and detect when we want to bring the real link up.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1420   * Return value is 1 if we need to bring up the link, 0 otherwise.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1421   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1422  int get_loop_output(void) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1423    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1424  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1425  #endif /* DEMAND_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1426  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1427  #if PPP_PROTOCOLNAME
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1428  /* List of protocol names, to make our messages a little more informative. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1429  struct protocol_list {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1430    u_short proto;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1431    const char *name;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1432  } const protocol_list[] = {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1433    { 0x21, "IP" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1434    { 0x23, "OSI Network Layer" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1435    { 0x25, "Xerox NS IDP" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1436    { 0x27, "DECnet Phase IV" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1437    { 0x29, "Appletalk" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1438    { 0x2b, "Novell IPX" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1439    { 0x2d, "VJ compressed TCP/IP" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1440    { 0x2f, "VJ uncompressed TCP/IP" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1441    { 0x31, "Bridging PDU" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1442    { 0x33, "Stream Protocol ST-II" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1443    { 0x35, "Banyan Vines" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1444    { 0x39, "AppleTalk EDDP" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1445    { 0x3b, "AppleTalk SmartBuffered" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1446    { 0x3d, "Multi-Link" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1447    { 0x3f, "NETBIOS Framing" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1448    { 0x41, "Cisco Systems" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1449    { 0x43, "Ascom Timeplex" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1450    { 0x45, "Fujitsu Link Backup and Load Balancing (LBLB)" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1451    { 0x47, "DCA Remote Lan" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1452    { 0x49, "Serial Data Transport Protocol (PPP-SDTP)" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1453    { 0x4b, "SNA over 802.2" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1454    { 0x4d, "SNA" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1455    { 0x4f, "IP6 Header Compression" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1456    { 0x51, "KNX Bridging Data" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1457    { 0x53, "Encryption" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1458    { 0x55, "Individual Link Encryption" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1459    { 0x57, "IPv6" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1460    { 0x59, "PPP Muxing" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1461    { 0x5b, "Vendor-Specific Network Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1462    { 0x61, "RTP IPHC Full Header" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1463    { 0x63, "RTP IPHC Compressed TCP" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1464    { 0x65, "RTP IPHC Compressed non-TCP" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1465    { 0x67, "RTP IPHC Compressed UDP 8" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1466    { 0x69, "RTP IPHC Compressed RTP 8" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1467    { 0x6f, "Stampede Bridging" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1468    { 0x73, "MP+" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1469    { 0xc1, "NTCITS IPI" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1470    { 0xfb, "single-link compression" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1471    { 0xfd, "Compressed Datagram" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1472    { 0x0201, "802.1d Hello Packets" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1473    { 0x0203, "IBM Source Routing BPDU" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1474    { 0x0205, "DEC LANBridge100 Spanning Tree" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1475    { 0x0207, "Cisco Discovery Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1476    { 0x0209, "Netcs Twin Routing" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1477    { 0x020b, "STP - Scheduled Transfer Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1478    { 0x020d, "EDP - Extreme Discovery Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1479    { 0x0211, "Optical Supervisory Channel Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1480    { 0x0213, "Optical Supervisory Channel Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1481    { 0x0231, "Luxcom" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1482    { 0x0233, "Sigma Network Systems" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1483    { 0x0235, "Apple Client Server Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1484    { 0x0281, "MPLS Unicast" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1485    { 0x0283, "MPLS Multicast" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1486    { 0x0285, "IEEE p1284.4 standard - data packets" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1487    { 0x0287, "ETSI TETRA Network Protocol Type 1" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1488    { 0x0289, "Multichannel Flow Treatment Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1489    { 0x2063, "RTP IPHC Compressed TCP No Delta" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1490    { 0x2065, "RTP IPHC Context State" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1491    { 0x2067, "RTP IPHC Compressed UDP 16" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1492    { 0x2069, "RTP IPHC Compressed RTP 16" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1493    { 0x4001, "Cray Communications Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1494    { 0x4003, "CDPD Mobile Network Registration Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1495    { 0x4005, "Expand accelerator protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1496    { 0x4007, "ODSICP NCP" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1497    { 0x4009, "DOCSIS DLL" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1498    { 0x400B, "Cetacean Network Detection Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1499    { 0x4021, "Stacker LZS" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1500    { 0x4023, "RefTek Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1501    { 0x4025, "Fibre Channel" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1502    { 0x4027, "EMIT Protocols" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1503    { 0x405b, "Vendor-Specific Protocol (VSP)" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1504    { 0x8021, "Internet Protocol Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1505    { 0x8023, "OSI Network Layer Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1506    { 0x8025, "Xerox NS IDP Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1507    { 0x8027, "DECnet Phase IV Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1508    { 0x8029, "Appletalk Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1509    { 0x802b, "Novell IPX Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1510    { 0x8031, "Bridging NCP" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1511    { 0x8033, "Stream Protocol Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1512    { 0x8035, "Banyan Vines Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1513    { 0x803d, "Multi-Link Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1514    { 0x803f, "NETBIOS Framing Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1515    { 0x8041, "Cisco Systems Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1516    { 0x8043, "Ascom Timeplex" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1517    { 0x8045, "Fujitsu LBLB Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1518    { 0x8047, "DCA Remote Lan Network Control Protocol (RLNCP)" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1519    { 0x8049, "Serial Data Control Protocol (PPP-SDCP)" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1520    { 0x804b, "SNA over 802.2 Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1521    { 0x804d, "SNA Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1522    { 0x804f, "IP6 Header Compression Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1523    { 0x8051, "KNX Bridging Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1524    { 0x8053, "Encryption Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1525    { 0x8055, "Individual Link Encryption Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1526    { 0x8057, "IPv6 Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1527    { 0x8059, "PPP Muxing Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1528    { 0x805b, "Vendor-Specific Network Control Protocol (VSNCP)" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1529    { 0x806f, "Stampede Bridging Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1530    { 0x8073, "MP+ Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1531    { 0x80c1, "NTCITS IPI Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1532    { 0x80fb, "Single Link Compression Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1533    { 0x80fd, "Compression Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1534    { 0x8207, "Cisco Discovery Protocol Control" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1535    { 0x8209, "Netcs Twin Routing" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1536    { 0x820b, "STP - Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1537    { 0x820d, "EDPCP - Extreme Discovery Protocol Ctrl Prtcl" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1538    { 0x8235, "Apple Client Server Protocol Control" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1539    { 0x8281, "MPLSCP" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1540    { 0x8285, "IEEE p1284.4 standard - Protocol Control" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1541    { 0x8287, "ETSI TETRA TNP1 Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1542    { 0x8289, "Multichannel Flow Treatment Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1543    { 0xc021, "Link Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1544    { 0xc023, "Password Authentication Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1545    { 0xc025, "Link Quality Report" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1546    { 0xc027, "Shiva Password Authentication Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1547    { 0xc029, "CallBack Control Protocol (CBCP)" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1548    { 0xc02b, "BACP Bandwidth Allocation Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1549    { 0xc02d, "BAP" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1550    { 0xc05b, "Vendor-Specific Authentication Protocol (VSAP)" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1551    { 0xc081, "Container Control Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1552    { 0xc223, "Challenge Handshake Authentication Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1553    { 0xc225, "RSA Authentication Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1554    { 0xc227, "Extensible Authentication Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1555    { 0xc229, "Mitsubishi Security Info Exch Ptcl (SIEP)" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1556    { 0xc26f, "Stampede Bridging Authorization Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1557    { 0xc281, "Proprietary Authentication Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1558    { 0xc283, "Proprietary Authentication Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1559    { 0xc481, "Proprietary Node ID Authentication Protocol" },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1560    { 0, NULL },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1561  };
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1562  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1563  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1564   * protocol_name - find a name for a PPP protocol.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1565   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1566  const char * protocol_name(int proto) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1567    const struct protocol_list *lp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1568  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1569    for (lp = protocol_list; lp->proto != 0; ++lp) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1570      if (proto == lp->proto) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1571        return lp->name;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1572      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1573    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1574    return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1575  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1576  #endif /* PPP_PROTOCOLNAME */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1577  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1578  #if PPP_STATS_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1579  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1580  /* ---- Note on PPP Stats support ----
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1581   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1582   * The one willing link stats support should add the get_ppp_stats()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1583   * to fetch statistics from lwIP.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1584   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1585  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1586  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1587   * reset_link_stats - "reset" stats when link goes up.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1588   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1589  void reset_link_stats(int u) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1590    if (!get_ppp_stats(u, &old_link_stats)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1591      return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1592    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1593    gettimeofday(&start_time, NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1594  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1595  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1596  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1597   * update_link_stats - get stats at link termination.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1598   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1599  void update_link_stats(int u) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1600    struct timeval now;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1601    char numbuf[32];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1602  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1603    if (!get_ppp_stats(u, &link_stats) || gettimeofday(&now, NULL) < 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1604      return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1605    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1606    link_connect_time = now.tv_sec - start_time.tv_sec;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1607    link_stats_valid = 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1608  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1609    link_stats.bytes_in  -= old_link_stats.bytes_in;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1610    link_stats.bytes_out -= old_link_stats.bytes_out;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1611    link_stats.pkts_in   -= old_link_stats.pkts_in;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1612    link_stats.pkts_out  -= old_link_stats.pkts_out;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1613  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1614  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1615  void print_link_stats() {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1616    /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1617     * Print connect time and statistics.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1618     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1619    if (link_stats_valid) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1620      int t = (link_connect_time + 5) / 6;    /* 1/10ths of minutes */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1621      info("Connect time %d.%d minutes.", t/10, t%10);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1622      info("Sent %u bytes, received %u bytes.", link_stats.bytes_out, link_stats.bytes_in);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1623      link_stats_valid = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1624    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1625  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1626  #endif /* PPP_STATS_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1627  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\ppp.c	  1628  #endif /* PPP_SUPPORT */
+
+	; Module end

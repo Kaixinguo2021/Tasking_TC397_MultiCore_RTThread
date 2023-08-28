@@ -1,0 +1,823 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\.altcp.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Rtl8211f -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\altcp.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\altcp.src ..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\altcp.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\altcp.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	730
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\altcp.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	167
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	174
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	216
+	.byte	7
+	.word	216
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	232
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	237
+	.byte	9
+	.byte	'value',0
+	.word	216
+	.byte	9
+	.byte	'compare',0
+	.word	216
+	.byte	0,2
+	.byte	'short int',0,2,5,10
+	.byte	'__wchar_t',0,1,1,1
+	.word	294
+	.byte	10
+	.byte	'__size_t',0,1,1,1
+	.word	216
+	.byte	10
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	167
+	.byte	11,1,7
+	.word	362
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	364
+	.byte	10
+	.byte	'__intptr_t',0,1,1,1
+	.word	167
+	.byte	10
+	.byte	'__uintptr_t',0,1,1,1
+	.word	216
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,108,29
+	.word	426
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,112,29
+	.word	457
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,116,29
+	.word	494
+	.byte	2
+	.byte	'char',0,1,6,10
+	.byte	'sint8',0,2,125,29
+	.word	530
+	.byte	10
+	.byte	'sint16',0,2,129,1,29
+	.word	294
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'sint32',0,2,134,1,29
+	.word	568
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'sint64',0,2,141,1,29
+	.word	596
+	.byte	2
+	.byte	'float',0,4,4,10
+	.byte	'float32',0,2,170,1,29
+	.word	629
+	.byte	12
+	.byte	'void',0,7
+	.word	655
+	.byte	10
+	.byte	'pvoid',0,3,54,28
+	.word	661
+	.byte	10
+	.byte	'Ifx_TickTime',0,3,76,28
+	.word	596
+	.byte	10
+	.byte	'u32_t',0,4,87,16
+	.word	494
+	.byte	10
+	.byte	'intmax_t',0,5,198,2,41
+	.word	596
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,59,0
+	.byte	3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\altcp.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'cc.h',0,2,0,0
+	.byte	'stdint.h',0,3,0,0,0
+.L9:
+.L7:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	     1  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	     2   * @file
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	     3   * @defgroup altcp Application layered TCP Functions
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	     4   * @ingroup altcp_api
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	     5   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	     6   * This file contains the common functions for altcp to work.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	     7   * For more details see @ref altcp_api.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	     8   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	     9  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    10  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    11   * @defgroup altcp_api Application layered TCP Introduction
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    12   * @ingroup callbackstyle_api
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    13   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    14   * Overview
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    15   * --------
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    16   * altcp (application layered TCP connection API; to be used from TCPIP thread)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    17   * is an abstraction layer that prevents applications linking hard against the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    18   * @ref tcp.h functions while providing the same functionality. It is used to
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    19   * e.g. add SSL/TLS (see LWIP_ALTCP_TLS) or proxy-connect support to an application
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    20   * written for the tcp callback API without that application knowing the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    21   * protocol details.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    22   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    23   * * This interface mimics the tcp callback API to the application while preventing
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    24   *   direct linking (much like virtual functions).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    25   * * This way, an application can make use of other application layer protocols
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    26   *   on top of TCP without knowing the details (e.g. TLS, proxy connection).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    27   * * This is achieved by simply including "lwip/altcp.h" instead of "lwip/tcp.h",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    28   *   replacing "struct tcp_pcb" with "struct altcp_pcb" and prefixing all functions
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    29   *   with "altcp_" instead of "tcp_".
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    30   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    31   * With altcp support disabled (LWIP_ALTCP==0), applications written against the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    32   * altcp API can still be compiled but are directly linked against the tcp.h
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    33   * callback API and then cannot use layered protocols. To minimize code changes
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    34   * in this case, the use of altcp_allocators is strongly suggested.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    35   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    36   * Usage
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    37   * -----
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    38   * To make use of this API from an existing tcp raw API application:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    39   * * Include "lwip/altcp.h" instead of "lwip/tcp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    40   * * Replace "struct tcp_pcb" with "struct altcp_pcb"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    41   * * Prefix all called tcp API functions with "altcp_" instead of "tcp_" to link
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    42   *   against the altcp functions
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    43   * * @ref altcp_new (and @ref altcp_new_ip_type/@ref altcp_new_ip6) take
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    44   *   an @ref altcp_allocator_t as an argument, whereas the original tcp API
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    45   *   functions take no arguments.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    46   * * An @ref altcp_allocator_t allocator is an object that holds a pointer to an
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    47   *   allocator object and a corresponding state (e.g. for TLS, the corresponding
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    48   *   state may hold certificates or keys). This way, the application does not
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    49   *   even need to know if it uses TLS or pure TCP, this is handled at runtime
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    50   *   by passing a specific allocator.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    51   * * An application can alternatively bind hard to the altcp_tls API by calling
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    52   *   @ref altcp_tls_new or @ref altcp_tls_wrap.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    53   * * The TLS layer is not directly implemented by lwIP, but a port to mbedTLS is
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    54   *   provided.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    55   * * Another altcp layer is proxy-connect to use TLS behind a HTTP proxy (see
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    56   *   @ref altcp_proxyconnect.h)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    57   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    58   * altcp_allocator_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    59   * -----------------
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    60   * An altcp allocator is created by the application by combining an allocator
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    61   * callback function and a corresponding state, e.g.:\code{.c}
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    62   * static const unsigned char cert[] = {0x2D, ... (see mbedTLS doc for how to create this)};
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    63   * struct altcp_tls_config * conf = altcp_tls_create_config_client(cert, sizeof(cert));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    64   * altcp_allocator_t tls_allocator = {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    65   *   altcp_tls_alloc, conf
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    66   * };
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    67   * \endcode
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    68   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    69   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    70   * struct altcp_tls_config
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    71   * -----------------------
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    72   * The struct altcp_tls_config holds state that is needed to create new TLS client
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    73   * or server connections (e.g. certificates and private keys).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    74   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    75   * It is not defined by lwIP itself but by the TLS port (e.g. altcp_tls to mbedTLS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    76   * adaption). However, the parameters used to create it are defined in @ref
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    77   * altcp_tls.h (see @ref altcp_tls_create_config_server_privkey_cert for servers
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    78   * and @ref altcp_tls_create_config_client/@ref altcp_tls_create_config_client_2wayauth
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    79   * for clients).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    80   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    81   * For mbedTLS, ensure that certificates can be parsed by 'mbedtls_x509_crt_parse()' and
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    82   * private keys can be parsed by 'mbedtls_pk_parse_key()'.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    83   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    84  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    85  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    86   * Copyright (c) 2017 Simon Goldschmidt
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    87   * All rights reserved.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    88   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    89   * Redistribution and use in source and binary forms, with or without modification,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    90   * are permitted provided that the following conditions are met:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    91   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    92   * 1. Redistributions of source code must retain the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    93   *    this list of conditions and the following disclaimer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    94   * 2. Redistributions in binary form must reproduce the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    95   *    this list of conditions and the following disclaimer in the documentation
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    96   *    and/or other materials provided with the distribution.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    97   * 3. The name of the author may not be used to endorse or promote products
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    98   *    derived from this software without specific prior written permission.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	    99   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   100   * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   101   * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   102   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   103   * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   104   * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   105   * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   106   * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   107   * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   108   * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   109   * OF SUCH DAMAGE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   110   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   111   * This file is part of the lwIP TCP/IP stack.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   112   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   113   * Author: Simon Goldschmidt <goldsimon@gmx.de>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   114   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   115   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   116  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   117  #include "lwip/opt.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   118  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   119  #if LWIP_ALTCP /* don't build if not configured for use in lwipopts.h */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   120  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   121  #include "lwip/altcp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   122  #include "lwip/priv/altcp_priv.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   123  #include "lwip/altcp_tcp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   124  #include "lwip/tcp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   125  #include "lwip/mem.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   126  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   127  #include <string.h>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   128  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   129  extern const struct altcp_functions altcp_tcp_functions;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   130  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   131  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   132   * For altcp layer implementations only: allocate a new struct altcp_pcb from the pool
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   133   * and zero the memory
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   134   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   135  struct altcp_pcb *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   136  altcp_alloc(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   137  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   138    struct altcp_pcb *ret = (struct altcp_pcb *)memp_malloc(MEMP_ALTCP_PCB);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   139    if (ret != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   140      memset(ret, 0, sizeof(struct altcp_pcb));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   141    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   142    return ret;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   143  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   144  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   145  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   146   * For altcp layer implementations only: return a struct altcp_pcb to the pool
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   147   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   148  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   149  altcp_free(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   150  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   151    if (conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   152      if (conn->fns && conn->fns->dealloc) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   153        conn->fns->dealloc(conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   154      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   155      memp_free(MEMP_ALTCP_PCB, conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   156    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   157  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   158  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   159  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   160   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   161   * altcp_new_ip6: @ref altcp_new for IPv6 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   162   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   163  struct altcp_pcb *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   164  altcp_new_ip6(altcp_allocator_t *allocator)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   165  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   166    return altcp_new_ip_type(allocator, IPADDR_TYPE_V6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   167  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   168  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   169  /** 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   170   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   171   * altcp_new: @ref altcp_new for IPv4 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   172   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   173  struct altcp_pcb *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   174  altcp_new(altcp_allocator_t *allocator)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   175  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   176    return altcp_new_ip_type(allocator, IPADDR_TYPE_V4);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   177  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   178  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   179  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   180   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   181   * altcp_new_ip_type: called by applications to allocate a new pcb with the help of an
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   182   * allocator function.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   183   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   184   * @param allocator allocator function and argument
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   185   * @param ip_type IP version of the pcb (@ref lwip_ip_addr_type)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   186   * @return a new altcp_pcb or NULL on error
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   187   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   188  struct altcp_pcb *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   189  altcp_new_ip_type(altcp_allocator_t *allocator, u8_t ip_type)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   190  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   191    struct altcp_pcb *conn;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   192    if (allocator == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   193      /* no allocator given, create a simple TCP connection */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   194      return altcp_tcp_new_ip_type(ip_type);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   195    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   196    if (allocator->alloc == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   197      /* illegal allocator */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   198      return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   199    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   200    conn = allocator->alloc(allocator->arg, ip_type);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   201    if (conn == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   202      /* allocation failed */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   203      return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   204    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   205    return conn;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   206  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   207  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   208  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   209   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   210   * @see tcp_arg()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   211   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   212  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   213  altcp_arg(struct altcp_pcb *conn, void *arg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   214  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   215    if (conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   216      conn->arg = arg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   217    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   218  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   219  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   220  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   221   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   222   * @see tcp_accept()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   223   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   224  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   225  altcp_accept(struct altcp_pcb *conn, altcp_accept_fn accept)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   226  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   227    if (conn != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   228      conn->accept = accept;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   229    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   230  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   231  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   232  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   233   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   234   * @see tcp_recv()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   235   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   236  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   237  altcp_recv(struct altcp_pcb *conn, altcp_recv_fn recv)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   238  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   239    if (conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   240      conn->recv = recv;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   241    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   242  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   243  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   244  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   245   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   246   * @see tcp_sent()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   247   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   248  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   249  altcp_sent(struct altcp_pcb *conn, altcp_sent_fn sent)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   250  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   251    if (conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   252      conn->sent = sent;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   253    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   254  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   255  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   256  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   257   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   258   * @see tcp_poll()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   259   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   260  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   261  altcp_poll(struct altcp_pcb *conn, altcp_poll_fn poll, u8_t interval)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   262  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   263    if (conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   264      conn->poll = poll;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   265      conn->pollinterval = interval;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   266      if (conn->fns && conn->fns->set_poll) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   267        conn->fns->set_poll(conn, interval);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   268      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   269    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   270  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   271  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   272  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   273   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   274   * @see tcp_err()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   275   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   276  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   277  altcp_err(struct altcp_pcb *conn, altcp_err_fn err)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   278  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   279    if (conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   280      conn->err = err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   281    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   282  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   283  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   284  /* Generic functions calling the "virtual" ones */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   285  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   286  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   287   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   288   * @see tcp_recved()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   289   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   290  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   291  altcp_recved(struct altcp_pcb *conn, u16_t len)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   292  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   293    if (conn && conn->fns && conn->fns->recved) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   294      conn->fns->recved(conn, len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   295    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   296  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   297  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   298  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   299   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   300   * @see tcp_bind()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   301   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   302  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   303  altcp_bind(struct altcp_pcb *conn, const ip_addr_t *ipaddr, u16_t port)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   304  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   305    if (conn && conn->fns && conn->fns->bind) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   306      return conn->fns->bind(conn, ipaddr, port);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   307    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   308    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   309  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   310  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   311  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   312   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   313   * @see tcp_connect()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   314   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   315  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   316  altcp_connect(struct altcp_pcb *conn, const ip_addr_t *ipaddr, u16_t port, altcp_connected_fn connected)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   317  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   318    if (conn && conn->fns && conn->fns->connect) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   319      return conn->fns->connect(conn, ipaddr, port, connected);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   320    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   321    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   322  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   323  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   324  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   325   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   326   * @see tcp_listen_with_backlog_and_err()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   327   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   328  struct altcp_pcb *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   329  altcp_listen_with_backlog_and_err(struct altcp_pcb *conn, u8_t backlog, err_t *err)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   330  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   331    if (conn && conn->fns && conn->fns->listen) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   332      return conn->fns->listen(conn, backlog, err);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   333    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   334    return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   335  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   336  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   337  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   338   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   339   * @see tcp_abort()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   340   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   341  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   342  altcp_abort(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   343  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   344    if (conn && conn->fns && conn->fns->abort) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   345      conn->fns->abort(conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   346    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   347  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   348  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   349  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   350   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   351   * @see tcp_close()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   352   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   353  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   354  altcp_close(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   355  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   356    if (conn && conn->fns && conn->fns->close) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   357      return conn->fns->close(conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   358    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   359    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   360  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   361  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   362  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   363   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   364   * @see tcp_shutdown()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   365   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   366  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   367  altcp_shutdown(struct altcp_pcb *conn, int shut_rx, int shut_tx)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   368  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   369    if (conn && conn->fns && conn->fns->shutdown) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   370      return conn->fns->shutdown(conn, shut_rx, shut_tx);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   371    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   372    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   373  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   374  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   375  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   376   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   377   * @see tcp_write()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   378   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   379  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   380  altcp_write(struct altcp_pcb *conn, const void *dataptr, u16_t len, u8_t apiflags)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   381  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   382    if (conn && conn->fns && conn->fns->write) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   383      return conn->fns->write(conn, dataptr, len, apiflags);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   384    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   385    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   386  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   387  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   388  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   389   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   390   * @see tcp_output()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   391   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   392  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   393  altcp_output(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   394  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   395    if (conn && conn->fns && conn->fns->output) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   396      return conn->fns->output(conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   397    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   398    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   399  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   400  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   401  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   402   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   403   * @see tcp_mss()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   404   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   405  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   406  altcp_mss(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   407  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   408    if (conn && conn->fns && conn->fns->mss) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   409      return conn->fns->mss(conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   410    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   411    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   412  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   413  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   414  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   415   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   416   * @see tcp_sndbuf()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   417   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   418  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   419  altcp_sndbuf(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   420  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   421    if (conn && conn->fns && conn->fns->sndbuf) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   422      return conn->fns->sndbuf(conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   423    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   424    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   425  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   426  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   427  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   428   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   429   * @see tcp_sndqueuelen()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   430   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   431  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   432  altcp_sndqueuelen(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   433  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   434    if (conn && conn->fns && conn->fns->sndqueuelen) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   435      return conn->fns->sndqueuelen(conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   436    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   437    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   438  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   439  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   440  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   441  altcp_nagle_disable(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   442  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   443    if (conn && conn->fns && conn->fns->nagle_disable) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   444      conn->fns->nagle_disable(conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   445    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   446  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   447  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   448  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   449  altcp_nagle_enable(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   450  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   451    if (conn && conn->fns && conn->fns->nagle_enable) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   452      conn->fns->nagle_enable(conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   453    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   454  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   455  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   456  int
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   457  altcp_nagle_disabled(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   458  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   459    if (conn && conn->fns && conn->fns->nagle_disabled) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   460      return conn->fns->nagle_disabled(conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   461    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   462    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   463  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   464  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   465  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   466   * @ingroup altcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   467   * @see tcp_setprio()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   468   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   469  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   470  altcp_setprio(struct altcp_pcb *conn, u8_t prio)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   471  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   472    if (conn && conn->fns && conn->fns->setprio) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   473      conn->fns->setprio(conn, prio);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   474    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   475  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   476  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   477  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   478  altcp_get_tcp_addrinfo(struct altcp_pcb *conn, int local, ip_addr_t *addr, u16_t *port)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   479  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   480    if (conn && conn->fns && conn->fns->addrinfo) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   481      return conn->fns->addrinfo(conn, local, addr, port);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   482    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   483    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   484  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   485  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   486  ip_addr_t *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   487  altcp_get_ip(struct altcp_pcb *conn, int local)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   488  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   489    if (conn && conn->fns && conn->fns->getip) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   490      return conn->fns->getip(conn, local);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   491    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   492    return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   493  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   494  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   495  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   496  altcp_get_port(struct altcp_pcb *conn, int local)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   497  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   498    if (conn && conn->fns && conn->fns->getport) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   499      return conn->fns->getport(conn, local);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   500    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   501    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   502  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   503  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   504  #ifdef LWIP_DEBUG
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   505  enum tcp_state
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   506  altcp_dbg_get_tcp_state(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   507  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   508    if (conn && conn->fns && conn->fns->dbg_get_tcp_state) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   509      return conn->fns->dbg_get_tcp_state(conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   510    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   511    return CLOSED;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   512  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   513  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   514  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   515  /* Default implementations for the "virtual" functions */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   516  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   517  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   518  altcp_default_set_poll(struct altcp_pcb *conn, u8_t interval)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   519  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   520    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   521      altcp_poll(conn->inner_conn, conn->poll, interval);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   522    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   523  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   524  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   525  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   526  altcp_default_recved(struct altcp_pcb *conn, u16_t len)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   527  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   528    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   529      altcp_recved(conn->inner_conn, len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   530    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   531  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   532  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   533  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   534  altcp_default_bind(struct altcp_pcb *conn, const ip_addr_t *ipaddr, u16_t port)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   535  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   536    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   537      return altcp_bind(conn->inner_conn, ipaddr, port);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   538    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   539    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   540  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   541  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   542  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   543  altcp_default_shutdown(struct altcp_pcb *conn, int shut_rx, int shut_tx)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   544  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   545    if (conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   546      if (shut_rx && shut_tx && conn->fns && conn->fns->close) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   547        /* default shutdown for both sides is close */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   548        return conn->fns->close(conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   549      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   550      if (conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   551        return altcp_shutdown(conn->inner_conn, shut_rx, shut_tx);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   552      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   553    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   554    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   555  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   556  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   557  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   558  altcp_default_write(struct altcp_pcb *conn, const void *dataptr, u16_t len, u8_t apiflags)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   559  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   560    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   561      return altcp_write(conn->inner_conn, dataptr, len, apiflags);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   562    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   563    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   564  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   565  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   566  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   567  altcp_default_output(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   568  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   569    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   570      return altcp_output(conn->inner_conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   571    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   572    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   573  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   574  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   575  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   576  altcp_default_mss(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   577  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   578    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   579      return altcp_mss(conn->inner_conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   580    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   581    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   582  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   583  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   584  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   585  altcp_default_sndbuf(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   586  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   587    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   588      return altcp_sndbuf(conn->inner_conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   589    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   590    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   591  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   592  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   593  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   594  altcp_default_sndqueuelen(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   595  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   596    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   597      return altcp_sndqueuelen(conn->inner_conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   598    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   599    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   600  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   601  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   602  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   603  altcp_default_nagle_disable(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   604  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   605    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   606      altcp_nagle_disable(conn->inner_conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   607    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   608  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   609  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   610  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   611  altcp_default_nagle_enable(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   612  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   613    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   614      altcp_nagle_enable(conn->inner_conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   615    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   616  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   617  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   618  int
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   619  altcp_default_nagle_disabled(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   620  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   621    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   622      return altcp_nagle_disabled(conn->inner_conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   623    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   624    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   625  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   626  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   627  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   628  altcp_default_setprio(struct altcp_pcb *conn, u8_t prio)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   629  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   630    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   631      altcp_setprio(conn->inner_conn, prio);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   632    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   633  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   634  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   635  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   636  altcp_default_dealloc(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   637  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   638    LWIP_UNUSED_ARG(conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   639    /* nothing to do */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   640  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   641  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   642  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   643  altcp_default_get_tcp_addrinfo(struct altcp_pcb *conn, int local, ip_addr_t *addr, u16_t *port)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   644  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   645    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   646      return altcp_get_tcp_addrinfo(conn->inner_conn, local, addr, port);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   647    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   648    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   649  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   650  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   651  ip_addr_t *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   652  altcp_default_get_ip(struct altcp_pcb *conn, int local)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   653  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   654    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   655      return altcp_get_ip(conn->inner_conn, local);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   656    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   657    return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   658  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   659  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   660  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   661  altcp_default_get_port(struct altcp_pcb *conn, int local)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   662  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   663    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   664      return altcp_get_port(conn->inner_conn, local);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   665    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   666    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   667  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   668  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   669  #ifdef LWIP_DEBUG
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   670  enum tcp_state
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   671  altcp_default_dbg_get_tcp_state(struct altcp_pcb *conn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   672  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   673    if (conn && conn->inner_conn) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   674      return altcp_dbg_get_tcp_state(conn->inner_conn);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   675    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   676    return CLOSED;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   677  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   678  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   679  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   680  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\altcp.c	   681  #endif /* LWIP_ALTCP */
+
+	; Module end

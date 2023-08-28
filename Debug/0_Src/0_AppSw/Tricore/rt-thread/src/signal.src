@@ -1,0 +1,756 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\.signal.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\signal.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\signal.src ..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\signal.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\signal.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	850
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\signal.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	170
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	177
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	219
+	.byte	7
+	.word	219
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	235
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	240
+	.byte	9
+	.byte	'value',0
+	.word	219
+	.byte	9
+	.byte	'compare',0
+	.word	219
+	.byte	0,10
+	.byte	'__size_t',0,1,1,1
+	.word	219
+	.byte	11,1,7
+	.word	314
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	316
+	.byte	10
+	.byte	'__intptr_t',0,1,1,1
+	.word	170
+	.byte	10
+	.byte	'__uintptr_t',0,1,1,1
+	.word	219
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16_t',0,2,246,1,41
+	.word	378
+	.byte	10
+	.byte	'uint32_t',0,2,254,1,41
+	.word	219
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'rt_uint8_t',0,3,69,41
+	.word	436
+	.byte	10
+	.byte	'rt_uint16_t',0,3,70,41
+	.word	378
+	.byte	10
+	.byte	'rt_uint32_t',0,3,71,41
+	.word	219
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'rt_base_t',0,3,83,41
+	.word	512
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'rt_ubase_t',0,3,84,41
+	.word	542
+	.byte	10
+	.byte	'rt_err_t',0,3,86,41
+	.word	512
+	.byte	10
+	.byte	'rt_tick_t',0,3,88,41
+	.word	219
+	.byte	10
+	.byte	'rt_size_t',0,3,90,41
+	.word	542
+	.byte	7
+	.word	.L6-.L3
+.L6:
+	.byte	12
+	.byte	'rt_list_node',0,3,229,2,8,8,13
+	.byte	'next',0
+	.word	635
+	.byte	4,2,35,0,13
+	.byte	'prev',0
+	.word	635
+	.byte	4,2,35,4,0,10
+	.byte	'rt_list_t',0,3,234,2,29
+	.word	640
+	.byte	7
+	.word	.L7-.L3
+.L7:
+	.byte	12
+	.byte	'rt_slist_node',0,3,239,2,8,4,13
+	.byte	'next',0
+	.word	707
+	.byte	4,2,35,0,0,10
+	.byte	'rt_slist_t',0,3,243,2,30
+	.word	712
+	.byte	10
+	.byte	'time_t',0,4,44,25
+	.word	542
+	.byte	10
+	.byte	'fd_mask',0,5,39,17
+	.word	512
+	.byte	14
+	.byte	'void',0,7
+	.word	798
+	.byte	15,1,1,5
+	.word	170
+	.byte	5
+	.word	804
+	.byte	0,7
+	.word	809
+	.byte	10
+	.byte	'rt_isr_handler_t',0,6,73,16
+	.word	823
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,19,1
+	.byte	3,8,58,15,59,15,57,15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,14,59,0,3,8,0,0,15,21,1,54,15,39,12,0
+	.byte	0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L9-.L8
+.L8:
+	.half	3
+	.word	.L11-.L10
+.L10:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc',0
+	.byte	0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\signal.c',0,0,0,0
+	.byte	'stdint.h',0,1,0,0
+	.byte	'rtdef.h',0,2,0,0
+	.byte	'time.h',0,1,0,0
+	.byte	'libc_fdset.h',0,3,0,0
+	.byte	'rthw.h',0,2,0,0,0
+.L11:
+.L9:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	     1  /*
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	     3   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	     4   * SPDX-License-Identifier: Apache-2.0
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	     5   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	     6   * Change Logs:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	     7   * Date           Author       Notes
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	     8   * 2017/10/5      Bernard      the first version
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	     9   * 2018/09/17     Jesven       fix: in _signal_deliver RT_THREAD_STAT_MASK to RT_THREAD_STAT_SIGNAL_MASK
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    10   * 2018/11/22     Jesven       in smp version rt_hw_context_switch_to add a param
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    11   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    12  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    13  #include <stdint.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    14  #include <string.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    15  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    16  #include <rthw.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    17  #include <rtthread.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    18  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    19  #ifdef RT_USING_SIGNALS
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    20  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    21  #ifndef RT_SIG_INFO_MAX
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    22  #define RT_SIG_INFO_MAX 32
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    23  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    24  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    25  #define DBG_TAG     "SIGN"
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    26  #define DBG_LVL     DBG_WARNING
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    27  #include <rtdbg.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    28  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    29  #define sig_mask(sig_no)    (1u << sig_no)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    30  #define sig_valid(sig_no)   (sig_no >= 0 && sig_no < RT_SIG_MAX)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    31  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    32  struct siginfo_node
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    33  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    34      siginfo_t si;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    35      struct rt_slist_node list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    36  };
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    37  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    38  static struct rt_mempool *_rt_siginfo_pool;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    39  static void _signal_deliver(rt_thread_t tid);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    40  void rt_thread_handle_sig(rt_bool_t clean_state);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    41  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    42  static void _signal_default_handler(int signo)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    43  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    44      LOG_I("handled signo[%d] with default action.", signo);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    45      return ;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    46  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    47  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    48  static void _signal_entry(void *parameter)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    49  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    50      rt_thread_t tid = rt_thread_self();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    51  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    52      /* handle signal */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    53      rt_thread_handle_sig(RT_FALSE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    54  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    55  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    56      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    57          struct rt_cpu* pcpu = rt_cpu_self();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    58  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    59          pcpu->current_thread->cpus_lock_nest--;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    60          if (pcpu->current_thread->cpus_lock_nest == 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    61          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    62              pcpu->current_thread->scheduler_lock_nest--;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    63          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    64  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    65      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    66  #else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    67      /* return to thread */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    68      tid->sp = tid->sig_ret;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    69      tid->sig_ret = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    70  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    71  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    72      LOG_D("switch back to: 0x%08x\n", tid->sp);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    73      tid->stat &= ~RT_THREAD_STAT_SIGNAL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    74  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    75  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    76      rt_hw_context_switch_to((rt_base_t)&parameter, tid);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    77  #else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    78      rt_hw_context_switch_to((rt_ubase_t)&(tid->sp));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    79  #endif /*RT_USING_SMP*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    80  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    81  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    82  /*
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    83   * To deliver a signal to thread, there are cases:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    84   * 1. When thread is suspended, function resumes thread and
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    85   * set signal stat;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    86   * 2. When thread is ready:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    87   *   - If function delivers a signal to self thread, just handle
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    88   *    it.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    89   *   - If function delivers a signal to another ready thread, OS
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    90   *    should build a slice context to handle it.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    91   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    92  static void _signal_deliver(rt_thread_t tid)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    93  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    94      rt_ubase_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    95  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    96      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    97  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    98      /* thread is not interested in pended signals */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	    99      if (!(tid->sig_pending & tid->sig_mask))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   100      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   101          rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   102          return;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   103      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   104  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   105      if ((tid->stat & RT_THREAD_STAT_MASK) == RT_THREAD_SUSPEND)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   106      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   107          /* resume thread to handle signal */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   108          rt_thread_resume(tid);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   109          /* add signal state */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   110          tid->stat |= (RT_THREAD_STAT_SIGNAL | RT_THREAD_STAT_SIGNAL_PENDING);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   111  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   112          rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   113  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   114          /* re-schedule */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   115          rt_schedule();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   116      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   117      else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   118      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   119          if (tid == rt_thread_self())
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   120          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   121              /* add signal state */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   122              tid->stat |= RT_THREAD_STAT_SIGNAL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   123  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   124              rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   125  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   126              /* do signal action in self thread context */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   127              if (rt_interrupt_get_nest() == 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   128              {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   129                  rt_thread_handle_sig(RT_TRUE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   130              }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   131          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   132          else if (!((tid->stat & RT_THREAD_STAT_SIGNAL_MASK) & RT_THREAD_STAT_SIGNAL))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   133          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   134              /* add signal state */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   135              tid->stat |= (RT_THREAD_STAT_SIGNAL | RT_THREAD_STAT_SIGNAL_PENDING);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   136  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   137  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   138              {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   139                  int cpu_id;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   140  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   141                  cpu_id = tid->oncpu;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   142                  if ((cpu_id != RT_CPU_DETACHED) && (cpu_id != rt_hw_cpu_id()))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   143                  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   144                      rt_uint32_t cpu_mask;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   145  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   146                      cpu_mask = RT_CPU_MASK ^ (1 << cpu_id);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   147                      rt_hw_ipi_send(RT_SCHEDULE_IPI, cpu_mask);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   148                  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   149              }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   150  #else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   151              /* point to the signal handle entry */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   152              tid->stat &= ~RT_THREAD_STAT_SIGNAL_PENDING;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   153              tid->sig_ret = tid->sp;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   154              tid->sp = rt_hw_stack_init((void *)_signal_entry, RT_NULL,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   155                                         (void *)((char *)tid->sig_ret - 32), RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   156  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   157  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   158              rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   159              LOG_D("signal stack pointer @ 0x%08x", tid->sp);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   160  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   161              /* re-schedule */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   162              rt_schedule();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   163          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   164          else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   165          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   166              rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   167          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   168      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   169  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   170  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   171  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   172  void *rt_signal_check(void* context)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   173  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   174      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   175      int cpu_id;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   176      struct rt_cpu* pcpu;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   177      struct rt_thread *current_thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   178  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   179      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   180      cpu_id = rt_hw_cpu_id();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   181      pcpu   = rt_cpu_index(cpu_id);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   182      current_thread = pcpu->current_thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   183  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   184      if (pcpu->irq_nest)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   185      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   186          rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   187          return context;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   188      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   189  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   190      if (current_thread->cpus_lock_nest == 1)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   191      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   192          if (current_thread->stat & RT_THREAD_STAT_SIGNAL_PENDING)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   193          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   194              void *sig_context;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   195  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   196              current_thread->stat &= ~RT_THREAD_STAT_SIGNAL_PENDING;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   197  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   198              rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   199              sig_context = rt_hw_stack_init((void *)_signal_entry, context,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   200                      (void *)(context - 32), RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   201              return sig_context;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   202          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   203      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   204      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   205      return context;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   206  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   207  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   208  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   209  rt_sighandler_t rt_signal_install(int signo, rt_sighandler_t handler)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   210  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   211      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   212      rt_sighandler_t old = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   213      rt_thread_t tid = rt_thread_self();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   214  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   215      if (!sig_valid(signo)) return SIG_ERR;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   216  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   217      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   218      if (tid->sig_vectors == RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   219      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   220          rt_thread_alloc_sig(tid);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   221      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   222  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   223      if (tid->sig_vectors)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   224      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   225          old = tid->sig_vectors[signo];
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   226  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   227          if (handler == SIG_IGN) tid->sig_vectors[signo] = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   228          else if (handler == SIG_DFL) tid->sig_vectors[signo] = _signal_default_handler;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   229          else tid->sig_vectors[signo] = handler;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   230      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   231      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   232  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   233      return old;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   234  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   235  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   236  void rt_signal_mask(int signo)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   237  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   238      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   239      rt_thread_t tid = rt_thread_self();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   240  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   241      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   242  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   243      tid->sig_mask &= ~sig_mask(signo);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   244  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   245      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   246  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   247  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   248  void rt_signal_unmask(int signo)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   249  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   250      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   251      rt_thread_t tid = rt_thread_self();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   252  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   253      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   254  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   255      tid->sig_mask |= sig_mask(signo);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   256  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   257      /* let thread handle pended signals */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   258      if (tid->sig_mask & tid->sig_pending)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   259      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   260          rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   261          _signal_deliver(tid);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   262      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   263      else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   264      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   265          rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   266      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   267  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   268  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   269  int rt_signal_wait(const rt_sigset_t *set, rt_siginfo_t *si, rt_int32_t timeout)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   270  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   271      int ret = RT_EOK;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   272      rt_base_t   level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   273      rt_thread_t tid = rt_thread_self();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   274      struct siginfo_node *si_node = RT_NULL, *si_prev = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   275  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   276      /* current context checking */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   277      RT_DEBUG_IN_THREAD_CONTEXT;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   278  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   279      /* parameters check */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   280      if (set == NULL || *set == 0 || si == NULL )
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   281      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   282          ret = -RT_EINVAL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   283          goto __done_return;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   284      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   285  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   286      /* clear siginfo to avoid unknown value */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   287      memset(si, 0x0, sizeof(rt_siginfo_t));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   288  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   289      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   290  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   291      /* already pending */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   292      if (tid->sig_pending & *set) goto __done;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   293  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   294      if (timeout == 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   295      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   296          ret = -RT_ETIMEOUT;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   297          goto __done_int;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   298      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   299  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   300      /* suspend self thread */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   301      rt_thread_suspend(tid);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   302      /* set thread stat as waiting for signal */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   303      tid->stat |= RT_THREAD_STAT_SIGNAL_WAIT;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   304  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   305      /* start timeout timer */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   306      if (timeout != RT_WAITING_FOREVER)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   307      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   308          /* reset the timeout of thread timer and start it */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   309          rt_timer_control(&(tid->thread_timer),
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   310                           RT_TIMER_CTRL_SET_TIME,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   311                           &timeout);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   312          rt_timer_start(&(tid->thread_timer));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   313      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   314      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   315  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   316      /* do thread scheduling */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   317      rt_schedule();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   318  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   319      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   320  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   321      /* remove signal waiting flag */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   322      tid->stat &= ~RT_THREAD_STAT_SIGNAL_WAIT;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   323  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   324      /* check errno of thread */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   325      if (tid->error == -RT_ETIMEOUT)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   326      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   327          tid->error = RT_EOK;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   328          rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   329  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   330          /* timer timeout */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   331          ret = -RT_ETIMEOUT;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   332          goto __done_return;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   333      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   334  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   335  __done:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   336      /* to get the first matched pending signals */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   337      si_node = (struct siginfo_node *)tid->si_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   338      while (si_node)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   339      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   340          int signo;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   341  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   342          signo = si_node->si.si_signo;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   343          if (sig_mask(signo) & *set)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   344          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   345              *si  = si_node->si;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   346  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   347              LOG_D("sigwait: %d sig raised!", signo);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   348              if (si_prev) si_prev->list.next = si_node->list.next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   349              else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   350              {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   351                  struct siginfo_node *node_next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   352  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   353                  if (si_node->list.next)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   354                  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   355                      node_next = (void *)rt_slist_entry(si_node->list.next, struct siginfo_node, list);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   356                      tid->si_list = node_next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   357                  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   358                  else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   359                  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   360                      tid->si_list = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   361                  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   362              }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   363  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   364              /* clear pending */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   365              tid->sig_pending &= ~sig_mask(signo);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   366              rt_mp_free(si_node);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   367              break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   368          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   369  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   370          si_prev = si_node;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   371          if (si_node->list.next)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   372          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   373              si_node = (void *)rt_slist_entry(si_node->list.next, struct siginfo_node, list);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   374          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   375          else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   376          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   377              si_node = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   378          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   379       }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   380  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   381  __done_int:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   382      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   383  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   384  __done_return:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   385      return ret;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   386  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   387  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   388  void rt_thread_handle_sig(rt_bool_t clean_state)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   389  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   390      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   391  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   392      rt_thread_t tid = rt_thread_self();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   393      struct siginfo_node *si_node;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   394  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   395      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   396      if (tid->sig_pending & tid->sig_mask)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   397      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   398          /* if thread is not waiting for signal */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   399          if (!(tid->stat & RT_THREAD_STAT_SIGNAL_WAIT))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   400          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   401              while (tid->sig_pending & tid->sig_mask)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   402              {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   403                  int signo, error;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   404                  rt_sighandler_t handler;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   405  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   406                  si_node = (struct siginfo_node *)tid->si_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   407                  if (!si_node) break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   408  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   409                  /* remove this sig info node from list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   410                  if (si_node->list.next == RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   411                      tid->si_list = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   412                  else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   413                      tid->si_list = (void *)rt_slist_entry(si_node->list.next, struct siginfo_node, list);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   414  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   415                  signo   = si_node->si.si_signo;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   416                  handler = tid->sig_vectors[signo];
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   417                  tid->sig_pending &= ~sig_mask(signo);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   418                  rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   419  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   420                  LOG_D("handle signal: %d, handler 0x%08x", signo, handler);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   421                  if (handler) handler(signo);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   422  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   423                  level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   424                  error = -RT_EINTR;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   425  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   426                  rt_mp_free(si_node); /* release this siginfo node */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   427                  /* set errno in thread tcb */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   428                  tid->error = error;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   429              }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   430  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   431              /* whether clean signal status */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   432              if (clean_state == RT_TRUE)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   433              {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   434                  tid->stat &= ~RT_THREAD_STAT_SIGNAL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   435              }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   436              else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   437              {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   438                  return;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   439              }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   440          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   441      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   442      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   443  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   444  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   445  void rt_thread_alloc_sig(rt_thread_t tid)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   446  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   447      int index;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   448      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   449      rt_sighandler_t *vectors;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   450  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   451      vectors = (rt_sighandler_t *)RT_KERNEL_MALLOC(sizeof(rt_sighandler_t) * RT_SIG_MAX);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   452      RT_ASSERT(vectors != RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   453  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   454      for (index = 0; index < RT_SIG_MAX; index ++)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   455      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   456          vectors[index] = _signal_default_handler;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   457      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   458  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   459      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   460      tid->sig_vectors = vectors;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   461      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   462  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   463  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   464  void rt_thread_free_sig(rt_thread_t tid)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   465  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   466      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   467      struct siginfo_node *si_node;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   468      rt_sighandler_t *sig_vectors;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   469  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   470      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   471      si_node = (struct siginfo_node *)tid->si_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   472      tid->si_list = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   473  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   474      sig_vectors = tid->sig_vectors;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   475      tid->sig_vectors = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   476      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   477  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   478      if (si_node)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   479      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   480          struct rt_slist_node *node;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   481          struct rt_slist_node *node_to_free;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   482  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   483          LOG_D("free signal info list");
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   484          node = &(si_node->list);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   485          do
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   486          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   487              node_to_free = node;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   488              node = node->next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   489              si_node = rt_slist_entry(node_to_free, struct siginfo_node, list);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   490              rt_mp_free(si_node);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   491          } while (node);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   492      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   493  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   494      if (sig_vectors)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   495      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   496          RT_KERNEL_FREE(sig_vectors);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   497      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   498  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   499  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   500  int rt_thread_kill(rt_thread_t tid, int sig)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   501  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   502      siginfo_t si;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   503      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   504      struct siginfo_node *si_node;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   505  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   506      RT_ASSERT(tid != RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   507      if (!sig_valid(sig)) return -RT_EINVAL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   508  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   509      LOG_I("send signal: %d", sig);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   510      si.si_signo = sig;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   511      si.si_code  = SI_USER;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   512      si.si_value.sival_ptr = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   513  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   514      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   515      if (tid->sig_pending & sig_mask(sig))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   516      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   517          /* whether already emits this signal? */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   518          struct rt_slist_node *node;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   519          struct siginfo_node  *entry;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   520  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   521          si_node = (struct siginfo_node *)tid->si_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   522          if (si_node)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   523              node = (struct rt_slist_node *)&si_node->list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   524          else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   525              node = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   526  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   527          /* update sig info */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   528          for (; (node) != RT_NULL; node = node->next)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   529          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   530              entry = rt_slist_entry(node, struct siginfo_node, list);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   531              if (entry->si.si_signo == sig)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   532              {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   533                  memcpy(&(entry->si), &si, sizeof(siginfo_t));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   534                  rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   535                  return 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   536              }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   537          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   538      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   539      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   540  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   541      si_node = (struct siginfo_node *) rt_mp_alloc(_rt_siginfo_pool, 0);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   542      if (si_node)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   543      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   544          rt_slist_init(&(si_node->list));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   545          memcpy(&(si_node->si), &si, sizeof(siginfo_t));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   546  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   547          level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   548  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   549          if (tid->si_list)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   550          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   551              struct siginfo_node *si_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   552  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   553              si_list = (struct siginfo_node *)tid->si_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   554              rt_slist_append(&(si_list->list), &(si_node->list));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   555          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   556          else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   557          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   558              tid->si_list = si_node;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   559          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   560  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   561          /* a new signal */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   562          tid->sig_pending |= sig_mask(sig);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   563  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   564          rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   565      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   566      else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   567      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   568          LOG_E("The allocation of signal info node failed.");
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   569      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   570  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   571      /* deliver signal to this thread */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   572      _signal_deliver(tid);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   573  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   574      return RT_EOK;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   575  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   576  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   577  int rt_system_signal_init(void)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   578  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   579      _rt_siginfo_pool = rt_mp_create("signal", RT_SIG_INFO_MAX, sizeof(struct siginfo_node));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   580      if (_rt_siginfo_pool == RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   581      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   582          LOG_E("create memory pool for signal info failed.");
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   583          RT_ASSERT(0);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   584      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   585  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   586      return 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   587  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   588  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\signal.c	   589  #endif
+
+	; Module end

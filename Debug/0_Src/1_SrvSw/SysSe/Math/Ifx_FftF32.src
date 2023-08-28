@@ -1,0 +1,3270 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\1_SrvSw\\SysSe\\Math\\.Ifx_FftF32.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.src ..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c'
+
+	
+$TC162
+	.sdecl	'.zrodata.Ifx_FftF32..1.cnt',data,rom
+	.sect	'.zrodata.Ifx_FftF32..1.cnt'
+	.align	2
+.1.cnt:	.type	object
+	.size	.1.cnt,4
+	.word	1086918619
+	.sdecl	'.zrodata.Ifx_FftF32..2.cnt',data,rom
+	.sect	'.zrodata.Ifx_FftF32..2.cnt'
+	.align	2
+.2.cnt:	.type	object
+	.size	.2.cnt,4
+	.word	1431655765
+	.sdecl	'.zrodata.Ifx_FftF32..3.cnt',data,rom
+	.sect	'.zrodata.Ifx_FftF32..3.cnt'
+	.align	2
+.3.cnt:	.type	object
+	.size	.3.cnt,4
+	.word	858993459
+	.sdecl	'.zrodata.Ifx_FftF32..4.cnt',data,rom
+	.sect	'.zrodata.Ifx_FftF32..4.cnt'
+	.align	2
+.4.cnt:	.type	object
+	.size	.4.cnt,4
+	.word	252645135
+	.sdecl	'.zrodata.Ifx_FftF32..5.cnt',data,rom
+	.sect	'.zrodata.Ifx_FftF32..5.cnt'
+	.align	2
+.5.cnt:	.type	object
+	.size	.5.cnt,4
+	.word	16711935
+	
+	.sdecl	'.text.Ifx_FftF32.Ifx_FftF32_generateTwiddleFactor',code,cluster('Ifx_FftF32_generateTwiddleFactor')
+	.sect	'.text.Ifx_FftF32.Ifx_FftF32_generateTwiddleFactor'
+	.align	2
+	
+	.global	Ifx_FftF32_generateTwiddleFactor
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	     2   * \file Ifx_FftF32.c
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	     3   * \brief Floating-point Fast Fourier Transform
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	     4   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	     6   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	     8   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	     9   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    10   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    12   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    13   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    14   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    15   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    16   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    17   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    19   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    20   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    21   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    22   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    23   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    24   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    25   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    26   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    27   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    28   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    29   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    30   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    31   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    32   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    33   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    34   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    35   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    36   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    37   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    38   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    39   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    40   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    41   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    42  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    43  #include "Ifx_FftF32.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    44  #include <math.h>
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    45  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    46  //#include "Compiler.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    47  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    48  cfloat32 *Ifx_FftF32_generateTwiddleFactor(cfloat32 *TF, short nX)
+; Function Ifx_FftF32_generateTwiddleFactor
+.L21:
+Ifx_FftF32_generateTwiddleFactor:	.type	func
+	mov	d10,d4
+	mov.aa	a12,a4
+.L143:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    49  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    50      int    i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    51      double Theta;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    52  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    53      // prepare twiddle coefficients
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    54      for (i = 0; i < nX / 2; i++)
+	mov	d15,#2
+	mov.aa	a15,a12
+.L183:
+	mov	d11,#0
+.L144:
+	div	e8,d10,d15
+	j	.L2
+.L3:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    55      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    56          Theta      = 2 * IFX_PI * i / nX;
+	itof	d15,d11
+	ld.w	d0,.1.cnt
+.L184:
+	mul.f	d15,d15,d0
+.L185:
+	itof	d0,d10
+.L186:
+	div.f	d15,d15,d0
+.L145:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    57  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    58          TF[i].real = (float32)(cosf(Theta));
+	mov	d4,d15
+	call	cosf
+.L187:
+	st.w	[a15],d2
+.L188:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    59          TF[i].imag = (float32)(-sinf(Theta));
+	mov	d4,d15
+	call	sinf
+.L189:
+	insn.t	d15,d2:31,d2:31
+	st.w	[a15]4,d15
+.L146:
+	add	d11,#1
+	lea	a15,[a15]8
+.L2:
+	jlt	d11,d8,.L3
+.L190:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    60      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    61  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    62      return TF;
+	mov.aa	a2,a12
+.L147:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    63  }
+	ret
+.L67:
+	
+__Ifx_FftF32_generateTwiddleFactor_function_end:
+	.size	Ifx_FftF32_generateTwiddleFactor,__Ifx_FftF32_generateTwiddleFactor_function_end-Ifx_FftF32_generateTwiddleFactor
+.L40:
+	; End of function
+	
+	.sdecl	'.text.Ifx_FftF32.Ifx_FftF32_reverseBits',code,cluster('Ifx_FftF32_reverseBits')
+	.sect	'.text.Ifx_FftF32.Ifx_FftF32_reverseBits'
+	.align	2
+	
+	.global	Ifx_FftF32_reverseBits
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    64  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    65  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    66  /******************************************************************************/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    67  unsigned short Ifx_FftF32_reverseBits(unsigned short n, unsigned bits)
+; Function Ifx_FftF32_reverseBits
+.L23:
+Ifx_FftF32_reverseBits:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    68  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    69      /* This code is from:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    70       * http://graphics.stanford.edu/~seander/bithacks.html
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    71       * */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    72      unsigned long v = n; // 32-bit word to reverse bit order
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    73  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    74      // swap odd and even bits
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    75      v = ((v >> 1) & 0x55555555UL) | ((v & 0x55555555UL) << 1);
+	ld.w	d15,.2.cnt
+.L224:
+	sh	d0,d4,#-1
+.L225:
+	and	d4,d15
+.L148:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    76      // swap consecutive pairs
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    77      v = ((v >> 2) & 0x33333333UL) | ((v & 0x33333333UL) << 2);
+	and	d0,d15
+	ld.w	d15,.3.cnt
+.L226:
+	sh	d4,#1
+.L149:
+	or	d0,d4
+.L227:
+	sh	d1,d0,#-2
+.L228:
+	and	d0,d15
+.L150:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    78      // swap nibbles ...
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    79      v = ((v >> 4) & 0x0F0F0F0FUL) | ((v & 0x0F0F0F0FUL) << 4);
+	and	d1,d15
+	ld.w	d15,.4.cnt
+.L229:
+	sh	d0,#2
+.L151:
+	or	d1,d0
+.L230:
+	sh	d0,d1,#-4
+.L231:
+	and	d1,d15
+.L152:
+	and	d0,d15
+.L232:
+	sh	d1,#4
+.L153:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    80      // swap bytes
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    81      v = ((v >> 8) & 0x00FF00FFUL) | ((v & 0x00FF00FFUL) << 8);
+	or	d0,d1
+	ld.w	d1,.5.cnt
+.L233:
+	sh	d15,d0,#-8
+.L234:
+	and	d0,d1
+.L154:
+	sh	d0,d0,#8
+.L235:
+	or	d15,d0
+.L236:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    82      // swap 2-byte long pairs
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    83      v = (v >> 16) | (v << 16);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    84  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    85      v = v >> (32 - bits);
+	rsub	d0,d5,#32
+.L237:
+	sh	d15,d15,#16
+.L238:
+	rsub	d0,#0
+	sh	d15,d15,d0
+.L155:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    86      return (unsigned short)v;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    87  }
+	extr.u	d2,d15,#0,#16
+	ret
+.L98:
+	
+__Ifx_FftF32_reverseBits_function_end:
+	.size	Ifx_FftF32_reverseBits,__Ifx_FftF32_reverseBits_function_end-Ifx_FftF32_reverseBits
+.L55:
+	; End of function
+	
+	.sdecl	'.text.Ifx_FftF32.Ifx_FftF32_radix2DecimationInTime',code,cluster('Ifx_FftF32_radix2DecimationInTime')
+	.sect	'.text.Ifx_FftF32.Ifx_FftF32_radix2DecimationInTime'
+	.align	2
+	
+	.global	Ifx_FftF32_radix2DecimationInTime
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    88  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    89  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    90  /******************************************************************************/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    91  void Ifx_FftF32_radix2DecimationInTime(cfloat32 *R, unsigned long p)
+; Function Ifx_FftF32_radix2DecimationInTime
+.L25:
+Ifx_FftF32_radix2DecimationInTime:	.type	func
+	mov	d13,d4
+.L156:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    92  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    93      /* http://www.engineeringproductivitytools.com/stuff/T0001/PT04.HTM#Head317
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    94       * */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    95      /*Perform in place Ifx_FftF32_radix2DecimationInTime of 2^p points (=size of f)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    96       * N.B. The input array f is in bit reversed order! So all the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    97       * 'even' input samples are in the 'top' half, all the 'odd'
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    98       * input samples are in the 'bottom' halR..etc (recursively).
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	    99       */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   100      /*Ifx_FftF32_radix2DecimationInTime*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   101      unsigned long Bp, Np, Npx, P, b, k, BaseT, BaseB;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   102      cfloat32      top, bot;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   103      /*initialise pass parameters*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   104      Bp = 1 << (p - 1); /*No. of blocks*/
+	mov	d0,#1
+.L243:
+	add	d15,d13,#-1
+.L244:
+	sha	d0,d0,d15
+.L157:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   105      Np = 2;            /*No. of points in each block*/
+	mov	d1,#2
+.L158:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   106  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   107      /*perform p passes*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   108      for (P = 0; P < p; P++)
+	mov	d2,#0
+	j	.L6
+.L7:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   109      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   110          /*pass loop*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   111          Npx   = Np >> 1; /*No. of butterflies*/
+	sh	d3,d1,#-1
+.L159:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   112          BaseT = 0;       /*Reset even base index*/
+	mov	d4,#0
+.L160:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   113  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   114          for (b = 0; b < Bp; b++)
+	mov	d5,d4
+	j	.L8
+.L9:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   115          {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   116              /*block loop*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   117              BaseB = BaseT + Npx; /*calc odd base index*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   118  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   119              for (k = 0; k < Npx; k++)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   120              {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   121                  //printf("P = %d; b = %d; Np = %d; k = %d\n", P, b, Np, k);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   122                  /*butterfly loop*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   123                  top          = Ifx_FftF32_lookUpTwiddleFactor(Np, k);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   124                  bot          = IFX_Cf32_mul(&R[BaseB + k], &top); /*twiddle the odd n results*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   125                  top          = R[BaseT + k];
+	addsc.a	a2,a4,d4,#3
+.L245:
+	add	d15,d4,d3
+.L246:
+	addsc.a	a15,a4,d15,#3
+.L247:
+	mov	d12,#0
+	j	.L10
+.L11:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     2   * \file Ifx_FftF32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     3   * \brief Floating-point Fast Fourier Transform
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     4   * \ingroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     6   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     7   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     8   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     9   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    10   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    12   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    13   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    14   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    15   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    16   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    17   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    20   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    21   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    22   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    23   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    24   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    25   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    26   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    27   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    33   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    34   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    42   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    43   * \defgroup library_srvsw_sysse_math_f32_fft Floating-point FFT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    44   * This module implements the Fast Fourier Transform in single precision floating-point
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    45   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    46   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    47   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    48  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    49  #ifndef IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    50  #define IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    51  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    52  #include "Ifx_Cf32.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    53  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    54  /** \brief Maximum FFT resolution (bits).
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    55   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    56  #define IFX_FFTF32_MAX_RESOLUTION (14)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    57  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    58  /** \brief Maximum FFT length.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    59   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    60  #define IFX_FFTF32_MAX_LENGTH     (1U << IFX_FFTF32_MAX_RESOLUTION)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    61  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    62  /** \brief Bit reversal table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    63  IFX_EXTERN IFX_CONST uint16   Ifx_g_FftF32_bitReverseTable[IFX_FFTF32_MAX_LENGTH];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    64  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    65  /** \brief Twiddle factor table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    66  IFX_EXTERN IFX_CONST cfloat32 Ifx_g_FftF32_twiddleTable[IFX_FFTF32_MAX_LENGTH / 2];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    67  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    68  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    69  /** \addtogroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    70   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    71  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    72  /** \name Transform functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    73   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    74  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    75  /** \brief Twiddle factor generator */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    76  IFX_EXTERN cfloat32 *Ifx_FftF32_generateTwiddleFactor(cfloat32 *TF, sint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    77  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    78  /** \brief Radix-2 Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    79  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    80  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    81  /** \brief Radix-2 Inverse Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    82  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2I(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    83  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    84  /** \} */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    85  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    86  /** \name Utility functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    87   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    88  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    89  /** \brief Lookup from \ref Ifx_g_FftF32_bitReverseTable the bit-reversed \<n\> with \<bits\> as number of bits */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    90  IFX_INLINE uint16 Ifx_FftF32_lookUpReversedBits(uint16 n, unsigned bits)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    91  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    92      unsigned shift = IFX_FFTF32_MAX_RESOLUTION - bits;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    93      uint16   index = Ifx_g_FftF32_bitReverseTable[n];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    94      return index >> shift;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    95  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    96  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    97  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    98  /** \brief Lookup from \ref Ifx_g_FftF32_twiddleTable the twiddle factor for N, k */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    99  IFX_INLINE cfloat32 Ifx_FftF32_lookUpTwiddleFactor(sint32 N, sint32 k)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	   100  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	   101      return Ifx_g_FftF32_twiddleTable[k * IFX_FFTF32_MAX_LENGTH / N];
+	sh	d15,d12,#14
+	movh.a	a5,#@his(Ifx_g_FftF32_twiddleTable)
+.L248:
+	div.u	e6,d15,d1
+	lea	a5,[a5]@los(Ifx_g_FftF32_twiddleTable)
+.L117:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     2   * \file Ifx_Cf32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     3   * \brief Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     4   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     6   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     8   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     9   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    10   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    12   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    13   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    14   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    15   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    16   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    17   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    19   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    20   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    21   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    22   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    23   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    24   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    25   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    26   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    27   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    28   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    29   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    30   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    31   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    32   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    33   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    34   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    35   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    36   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    37   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    38   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    39   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    40   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    41   * \defgroup library_srvsw_sysse_math_cf32 Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    42   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    43   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    44  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    45  #ifndef IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    46  #define IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    47  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    48  #include "Cpu/Std/IfxCpu_Intrinsics.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    49  #include <math.h>
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    50  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    51  #define _DATAF(val) ((float32)(val))
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    52  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    53  /* Complex Arithmetic --------------------------------------------------------*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    54  IFX_INLINE cfloat32 IFX_Cf32_exp(const cfloat32 *c)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    55  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    56      float32  f = (float32)expf(c->real);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    57      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    58      R.real = f * (float32)cosf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    59      R.imag = f * (float32)sinf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    60      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    61  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    62  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    63  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    64  IFX_INLINE cfloat32 IFX_Cf32_mul(const cfloat32 *a, const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    65  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    66      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    67      R.real = (a->real * b->real) - (a->imag * b->imag);
+	ld.w	d9,[a15]
+.L249:
+	ld.w	d15,[a15]4
+.L118:
+	addsc.a	a5,a5,d6,#3
+.L250:
+	add	d12,#1
+.L251:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     2   * \file Ifx_FftF32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     3   * \brief Floating-point Fast Fourier Transform
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     4   * \ingroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     6   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     7   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     8   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     9   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    10   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    12   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    13   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    14   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    15   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    16   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    17   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    20   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    21   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    22   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    23   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    24   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    25   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    26   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    27   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    33   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    34   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    42   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    43   * \defgroup library_srvsw_sysse_math_f32_fft Floating-point FFT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    44   * This module implements the Fast Fourier Transform in single precision floating-point
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    45   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    46   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    47   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    48  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    49  #ifndef IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    50  #define IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    51  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    52  #include "Ifx_Cf32.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    53  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    54  /** \brief Maximum FFT resolution (bits).
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    55   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    56  #define IFX_FFTF32_MAX_RESOLUTION (14)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    57  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    58  /** \brief Maximum FFT length.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    59   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    60  #define IFX_FFTF32_MAX_LENGTH     (1U << IFX_FFTF32_MAX_RESOLUTION)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    61  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    62  /** \brief Bit reversal table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    63  IFX_EXTERN IFX_CONST uint16   Ifx_g_FftF32_bitReverseTable[IFX_FFTF32_MAX_LENGTH];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    64  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    65  /** \brief Twiddle factor table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    66  IFX_EXTERN IFX_CONST cfloat32 Ifx_g_FftF32_twiddleTable[IFX_FFTF32_MAX_LENGTH / 2];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    67  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    68  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    69  /** \addtogroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    70   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    71  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    72  /** \name Transform functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    73   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    74  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    75  /** \brief Twiddle factor generator */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    76  IFX_EXTERN cfloat32 *Ifx_FftF32_generateTwiddleFactor(cfloat32 *TF, sint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    77  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    78  /** \brief Radix-2 Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    79  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    80  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    81  /** \brief Radix-2 Inverse Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    82  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2I(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    83  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    84  /** \} */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    85  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    86  /** \name Utility functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    87   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    88  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    89  /** \brief Lookup from \ref Ifx_g_FftF32_bitReverseTable the bit-reversed \<n\> with \<bits\> as number of bits */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    90  IFX_INLINE uint16 Ifx_FftF32_lookUpReversedBits(uint16 n, unsigned bits)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    91  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    92      unsigned shift = IFX_FFTF32_MAX_RESOLUTION - bits;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    93      uint16   index = Ifx_g_FftF32_bitReverseTable[n];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    94      return index >> shift;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    95  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    96  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    97  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    98  /** \brief Lookup from \ref Ifx_g_FftF32_twiddleTable the twiddle factor for N, k */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    99  IFX_INLINE cfloat32 Ifx_FftF32_lookUpTwiddleFactor(sint32 N, sint32 k)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	   100  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	   101      return Ifx_g_FftF32_twiddleTable[k * IFX_FFTF32_MAX_LENGTH / N];
+	ld.d	e6,[a5]0
+.L125:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     2   * \file Ifx_Cf32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     3   * \brief Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     4   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     6   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     8   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     9   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    10   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    12   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    13   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    14   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    15   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    16   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    17   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    19   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    20   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    21   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    22   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    23   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    24   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    25   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    26   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    27   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    28   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    29   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    30   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    31   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    32   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    33   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    34   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    35   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    36   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    37   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    38   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    39   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    40   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    41   * \defgroup library_srvsw_sysse_math_cf32 Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    42   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    43   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    44  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    45  #ifndef IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    46  #define IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    47  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    48  #include "Cpu/Std/IfxCpu_Intrinsics.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    49  #include <math.h>
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    50  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    51  #define _DATAF(val) ((float32)(val))
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    52  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    53  /* Complex Arithmetic --------------------------------------------------------*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    54  IFX_INLINE cfloat32 IFX_Cf32_exp(const cfloat32 *c)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    55  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    56      float32  f = (float32)expf(c->real);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    57      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    58      R.real = f * (float32)cosf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    59      R.imag = f * (float32)sinf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    60      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    61  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    62  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    63  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    64  IFX_INLINE cfloat32 IFX_Cf32_mul(const cfloat32 *a, const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    65  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    66      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    67      R.real = (a->real * b->real) - (a->imag * b->imag);
+	mul.f	d10,d9,d6
+.L252:
+	mov	d8,d7
+.L253:
+	msub.f	d10,d10,d15,d8
+.L254:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    68      R.imag = (a->imag * b->real) + (a->real * b->imag);
+	mul.f	d8,d9,d8
+.L255:
+	madd.f	d11,d8,d15,d6
+	ld.d	e8,[a2]0
+.L126:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     2   * \file Ifx_Cf32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     3   * \brief Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     4   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     6   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     8   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     9   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    10   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    12   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    13   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    14   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    15   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    16   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    17   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    19   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    20   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    21   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    22   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    23   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    24   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    25   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    26   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    27   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    28   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    29   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    30   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    31   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    32   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    33   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    34   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    35   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    36   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    37   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    38   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    39   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    40   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    41   * \defgroup library_srvsw_sysse_math_cf32 Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    42   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    43   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    44  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    45  #ifndef IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    46  #define IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    47  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    48  #include "Cpu/Std/IfxCpu_Intrinsics.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    49  #include <math.h>
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    50  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    51  #define _DATAF(val) ((float32)(val))
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    52  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    53  /* Complex Arithmetic --------------------------------------------------------*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    54  IFX_INLINE cfloat32 IFX_Cf32_exp(const cfloat32 *c)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    55  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    56      float32  f = (float32)expf(c->real);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    57      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    58      R.real = f * (float32)cosf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    59      R.imag = f * (float32)sinf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    60      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    61  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    62  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    63  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    64  IFX_INLINE cfloat32 IFX_Cf32_mul(const cfloat32 *a, const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    65  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    66      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    67      R.real = (a->real * b->real) - (a->imag * b->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    68      R.imag = (a->imag * b->real) + (a->real * b->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    69      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    70  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    71  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    72  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    73  IFX_INLINE cfloat32 IFX_Cf32_amp(const cfloat32 *a, float32 gain)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    74  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    75      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    76      R.real = a->real * gain;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    77      R.imag = a->imag * gain;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    78      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    79  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    80  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    81  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    82  IFX_INLINE float32 IFX_Cf32_dot(const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    83  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    84      return (b->real * b->real) + (b->imag * b->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    85  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    86  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    87  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    88  IFX_INLINE float32 IFX_Cf32_mag(const cfloat32 *c)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    89  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    90      return (float32)sqrtf(IFX_Cf32_dot(c));
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    91  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    92  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    93  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    94  IFX_INLINE cfloat32 IFX_Cf32_div(const cfloat32 *a, const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    95  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    96      float32  denom = IFX_Cf32_dot(b);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    97      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    98      R.real = ((a->real * b->real) + (a->imag * b->imag)) / denom;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    99      R.imag = ((a->imag * b->real) - (a->real * b->imag)) / denom;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   100      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   101  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   102  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   103  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   104  IFX_INLINE cfloat32 IFX_Cf32_add(const cfloat32 *a, const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   105  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   106      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   107      R.real = (a->real + b->real);
+	mov	d6,d10
+.L256:
+	mov	d15,d8
+.L257:
+	add.f	d6,d15,d6
+.L258:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   108      R.imag = (a->imag + b->imag);
+	mov	d15,d9
+.L259:
+	mov	d14,d11
+.L260:
+	add.f	d7,d15,d14
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   126                  R[BaseT + k] = IFX_Cf32_add(&top, &bot);          /*top    subset*/
+	st.d	[a2+]8,e6
+.L129:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     2   * \file Ifx_Cf32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     3   * \brief Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     4   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     6   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     8   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     9   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    10   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    12   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    13   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    14   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    15   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    16   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    17   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    19   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    20   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    21   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    22   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    23   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    24   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    25   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    26   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    27   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    28   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    29   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    30   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    31   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    32   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    33   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    34   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    35   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    36   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    37   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    38   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    39   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    40   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    41   * \defgroup library_srvsw_sysse_math_cf32 Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    42   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    43   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    44  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    45  #ifndef IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    46  #define IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    47  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    48  #include "Cpu/Std/IfxCpu_Intrinsics.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    49  #include <math.h>
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    50  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    51  #define _DATAF(val) ((float32)(val))
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    52  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    53  /* Complex Arithmetic --------------------------------------------------------*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    54  IFX_INLINE cfloat32 IFX_Cf32_exp(const cfloat32 *c)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    55  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    56      float32  f = (float32)expf(c->real);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    57      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    58      R.real = f * (float32)cosf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    59      R.imag = f * (float32)sinf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    60      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    61  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    62  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    63  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    64  IFX_INLINE cfloat32 IFX_Cf32_mul(const cfloat32 *a, const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    65  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    66      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    67      R.real = (a->real * b->real) - (a->imag * b->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    68      R.imag = (a->imag * b->real) + (a->real * b->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    69      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    70  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    71  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    72  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    73  IFX_INLINE cfloat32 IFX_Cf32_amp(const cfloat32 *a, float32 gain)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    74  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    75      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    76      R.real = a->real * gain;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    77      R.imag = a->imag * gain;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    78      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    79  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    80  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    81  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    82  IFX_INLINE float32 IFX_Cf32_dot(const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    83  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    84      return (b->real * b->real) + (b->imag * b->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    85  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    86  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    87  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    88  IFX_INLINE float32 IFX_Cf32_mag(const cfloat32 *c)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    89  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    90      return (float32)sqrtf(IFX_Cf32_dot(c));
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    91  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    92  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    93  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    94  IFX_INLINE cfloat32 IFX_Cf32_div(const cfloat32 *a, const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    95  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    96      float32  denom = IFX_Cf32_dot(b);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    97      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    98      R.real = ((a->real * b->real) + (a->imag * b->imag)) / denom;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    99      R.imag = ((a->imag * b->real) - (a->real * b->imag)) / denom;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   100      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   101  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   102  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   103  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   104  IFX_INLINE cfloat32 IFX_Cf32_add(const cfloat32 *a, const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   105  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   106      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   107      R.real = (a->real + b->real);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   108      R.imag = (a->imag + b->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   109      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   110  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   111  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   112  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   113  IFX_INLINE cfloat32 IFX_Cf32_sub(const cfloat32 *a, const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   114  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   115      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   116      R.real = (a->real - b->real);
+	mov	d15,d8
+.L261:
+	mov	d6,d10
+.L161:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	   117      R.imag = (a->imag - b->imag);
+	sub.f	d7,d9,d11
+.L262:
+	sub.f	d6,d15,d6
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   127                  R[BaseB + k] = IFX_Cf32_sub(&top, &bot);          /*bottom subset*/
+	st.d	[a15+]8,e6
+.L10:
+	jlt.u	d12,d3,.L11
+.L263:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   128              } /*butterfly loop*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   129  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   130              BaseT = BaseT + Np;                                   /*start of next block*/
+	add	d4,d1
+.L264:
+	add	d5,#1
+.L8:
+	jlt.u	d5,d0,.L9
+.L265:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   131          } /*block loop*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   132  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   133          /*calc parameters for next pass*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   134          Bp = Bp >> 1; /*half as many blocks*/
+	sh	d0,#-1
+.L266:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   135          Np = Np << 1; /*twice as many points in each block*/
+	sh	d1,#1
+.L267:
+	add	d2,#1
+.L6:
+	jlt.u	d2,d13,.L7
+.L268:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   136      } /*pass loop*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   137  } /*Ifx_FftF32_radix2DecimationInTime*/
+	ret
+.L103:
+	
+__Ifx_FftF32_radix2DecimationInTime_function_end:
+	.size	Ifx_FftF32_radix2DecimationInTime,__Ifx_FftF32_radix2DecimationInTime_function_end-Ifx_FftF32_radix2DecimationInTime
+.L60:
+	; End of function
+	
+	.sdecl	'.text.Ifx_FftF32.Ifx_FftF32_radix2',code,cluster('Ifx_FftF32_radix2')
+	.sect	'.text.Ifx_FftF32.Ifx_FftF32_radix2'
+	.align	2
+	
+	.global	Ifx_FftF32_radix2
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   138  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   139  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   140  cfloat32 *Ifx_FftF32_radix2(cfloat32 *R, const cfloat32 *X, unsigned short nX)
+; Function Ifx_FftF32_radix2
+.L27:
+Ifx_FftF32_radix2:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   141  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   142      unsigned int   logN = 31 - __clz(nX);
+	clz	d15,d4
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     2   * \file Ifx_FftF32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     3   * \brief Floating-point Fast Fourier Transform
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     4   * \ingroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     6   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     7   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     8   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     9   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    10   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    12   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    13   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    14   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    15   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    16   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    17   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    20   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    21   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    22   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    23   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    24   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    25   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    26   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    27   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    33   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    34   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    42   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    43   * \defgroup library_srvsw_sysse_math_f32_fft Floating-point FFT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    44   * This module implements the Fast Fourier Transform in single precision floating-point
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    45   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    46   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    47   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    48  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    49  #ifndef IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    50  #define IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    51  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    52  #include "Ifx_Cf32.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    53  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    54  /** \brief Maximum FFT resolution (bits).
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    55   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    56  #define IFX_FFTF32_MAX_RESOLUTION (14)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    57  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    58  /** \brief Maximum FFT length.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    59   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    60  #define IFX_FFTF32_MAX_LENGTH     (1U << IFX_FFTF32_MAX_RESOLUTION)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    61  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    62  /** \brief Bit reversal table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    63  IFX_EXTERN IFX_CONST uint16   Ifx_g_FftF32_bitReverseTable[IFX_FFTF32_MAX_LENGTH];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    64  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    65  /** \brief Twiddle factor table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    66  IFX_EXTERN IFX_CONST cfloat32 Ifx_g_FftF32_twiddleTable[IFX_FFTF32_MAX_LENGTH / 2];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    67  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    68  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    69  /** \addtogroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    70   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    71  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    72  /** \name Transform functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    73   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    74  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    75  /** \brief Twiddle factor generator */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    76  IFX_EXTERN cfloat32 *Ifx_FftF32_generateTwiddleFactor(cfloat32 *TF, sint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    77  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    78  /** \brief Radix-2 Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    79  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    80  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    81  /** \brief Radix-2 Inverse Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    82  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2I(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    83  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    84  /** \} */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    85  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    86  /** \name Utility functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    87   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    88  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    89  /** \brief Lookup from \ref Ifx_g_FftF32_bitReverseTable the bit-reversed \<n\> with \<bits\> as number of bits */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    90  IFX_INLINE uint16 Ifx_FftF32_lookUpReversedBits(uint16 n, unsigned bits)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    91  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    92      unsigned shift = IFX_FFTF32_MAX_RESOLUTION - bits;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    93      uint16   index = Ifx_g_FftF32_bitReverseTable[n];
+	movh.a	a2,#@his(Ifx_g_FftF32_bitReverseTable)
+.L195:
+	rsub	d1,d15,#31
+	mov.aa	a12,a4
+.L165:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     2   * \file Ifx_FftF32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     3   * \brief Floating-point Fast Fourier Transform
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     4   * \ingroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     6   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     7   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     8   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     9   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    10   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    12   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    13   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    14   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    15   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    16   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    17   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    20   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    21   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    22   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    23   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    24   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    25   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    26   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    27   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    33   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    34   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    42   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    43   * \defgroup library_srvsw_sysse_math_f32_fft Floating-point FFT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    44   * This module implements the Fast Fourier Transform in single precision floating-point
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    45   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    46   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    47   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    48  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    49  #ifndef IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    50  #define IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    51  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    52  #include "Ifx_Cf32.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    53  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    54  /** \brief Maximum FFT resolution (bits).
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    55   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    56  #define IFX_FFTF32_MAX_RESOLUTION (14)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    57  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    58  /** \brief Maximum FFT length.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    59   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    60  #define IFX_FFTF32_MAX_LENGTH     (1U << IFX_FFTF32_MAX_RESOLUTION)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    61  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    62  /** \brief Bit reversal table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    63  IFX_EXTERN IFX_CONST uint16   Ifx_g_FftF32_bitReverseTable[IFX_FFTF32_MAX_LENGTH];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    64  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    65  /** \brief Twiddle factor table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    66  IFX_EXTERN IFX_CONST cfloat32 Ifx_g_FftF32_twiddleTable[IFX_FFTF32_MAX_LENGTH / 2];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    67  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    68  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    69  /** \addtogroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    70   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    71  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    72  /** \name Transform functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    73   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    74  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    75  /** \brief Twiddle factor generator */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    76  IFX_EXTERN cfloat32 *Ifx_FftF32_generateTwiddleFactor(cfloat32 *TF, sint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    77  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    78  /** \brief Radix-2 Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    79  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    80  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    81  /** \brief Radix-2 Inverse Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    82  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2I(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    83  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    84  /** \} */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    85  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    86  /** \name Utility functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    87   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    88  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    89  /** \brief Lookup from \ref Ifx_g_FftF32_bitReverseTable the bit-reversed \<n\> with \<bits\> as number of bits */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    90  IFX_INLINE uint16 Ifx_FftF32_lookUpReversedBits(uint16 n, unsigned bits)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    91  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    92      unsigned shift = IFX_FFTF32_MAX_RESOLUTION - bits;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    93      uint16   index = Ifx_g_FftF32_bitReverseTable[n];
+	rsub	d2,d1,#14
+	lea	a2,[a2]@los(Ifx_g_FftF32_bitReverseTable)
+.L196:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   143      unsigned short n, k;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   144  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   145      /* Arrange in bit-reversed index */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   146      for (n = 0; n < nX; n++)
+	mov	d0,#0
+	j	.L12
+.L13:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     2   * \file Ifx_FftF32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     3   * \brief Floating-point Fast Fourier Transform
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     4   * \ingroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     6   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     7   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     8   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     9   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    10   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    12   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    13   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    14   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    15   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    16   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    17   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    20   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    21   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    22   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    23   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    24   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    25   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    26   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    27   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    33   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    34   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    42   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    43   * \defgroup library_srvsw_sysse_math_f32_fft Floating-point FFT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    44   * This module implements the Fast Fourier Transform in single precision floating-point
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    45   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    46   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    47   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    48  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    49  #ifndef IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    50  #define IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    51  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    52  #include "Ifx_Cf32.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    53  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    54  /** \brief Maximum FFT resolution (bits).
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    55   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    56  #define IFX_FFTF32_MAX_RESOLUTION (14)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    57  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    58  /** \brief Maximum FFT length.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    59   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    60  #define IFX_FFTF32_MAX_LENGTH     (1U << IFX_FFTF32_MAX_RESOLUTION)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    61  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    62  /** \brief Bit reversal table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    63  IFX_EXTERN IFX_CONST uint16   Ifx_g_FftF32_bitReverseTable[IFX_FFTF32_MAX_LENGTH];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    64  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    65  /** \brief Twiddle factor table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    66  IFX_EXTERN IFX_CONST cfloat32 Ifx_g_FftF32_twiddleTable[IFX_FFTF32_MAX_LENGTH / 2];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    67  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    68  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    69  /** \addtogroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    70   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    71  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    72  /** \name Transform functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    73   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    74  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    75  /** \brief Twiddle factor generator */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    76  IFX_EXTERN cfloat32 *Ifx_FftF32_generateTwiddleFactor(cfloat32 *TF, sint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    77  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    78  /** \brief Radix-2 Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    79  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    80  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    81  /** \brief Radix-2 Inverse Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    82  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2I(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    83  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    84  /** \} */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    85  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    86  /** \name Utility functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    87   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    88  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    89  /** \brief Lookup from \ref Ifx_g_FftF32_bitReverseTable the bit-reversed \<n\> with \<bits\> as number of bits */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    90  IFX_INLINE uint16 Ifx_FftF32_lookUpReversedBits(uint16 n, unsigned bits)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    91  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    92      unsigned shift = IFX_FFTF32_MAX_RESOLUTION - bits;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    93      uint16   index = Ifx_g_FftF32_bitReverseTable[n];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    94      return index >> shift;
+	mov	d3,d2
+	ld.hu	d15,[a2]0
+.L197:
+	rsub	d3,#0
+	sha	d15,d15,d3
+.L198:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   147      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   148          //k = Ifx_FftF32_reverseBits(n, logN);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   149          k    = Ifx_FftF32_lookUpReversedBits(n, logN);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   150          R[k] = X[n];
+	addsc.a	a15,a12,d15,#3
+.L199:
+	ld.w	d15,[a5]
+.L200:
+	st.w	[a15],d15
+.L201:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     2   * \file Ifx_FftF32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     3   * \brief Floating-point Fast Fourier Transform
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     4   * \ingroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     6   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     7   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     8   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     9   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    10   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    12   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    13   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    14   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    15   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    16   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    17   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    20   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    21   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    22   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    23   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    24   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    25   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    26   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    27   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    33   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    34   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    42   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    43   * \defgroup library_srvsw_sysse_math_f32_fft Floating-point FFT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    44   * This module implements the Fast Fourier Transform in single precision floating-point
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    45   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    46   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    47   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    48  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    49  #ifndef IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    50  #define IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    51  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    52  #include "Ifx_Cf32.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    53  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    54  /** \brief Maximum FFT resolution (bits).
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    55   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    56  #define IFX_FFTF32_MAX_RESOLUTION (14)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    57  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    58  /** \brief Maximum FFT length.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    59   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    60  #define IFX_FFTF32_MAX_LENGTH     (1U << IFX_FFTF32_MAX_RESOLUTION)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    61  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    62  /** \brief Bit reversal table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    63  IFX_EXTERN IFX_CONST uint16   Ifx_g_FftF32_bitReverseTable[IFX_FFTF32_MAX_LENGTH];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    64  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    65  /** \brief Twiddle factor table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    66  IFX_EXTERN IFX_CONST cfloat32 Ifx_g_FftF32_twiddleTable[IFX_FFTF32_MAX_LENGTH / 2];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    67  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    68  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    69  /** \addtogroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    70   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    71  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    72  /** \name Transform functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    73   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    74  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    75  /** \brief Twiddle factor generator */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    76  IFX_EXTERN cfloat32 *Ifx_FftF32_generateTwiddleFactor(cfloat32 *TF, sint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    77  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    78  /** \brief Radix-2 Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    79  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    80  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    81  /** \brief Radix-2 Inverse Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    82  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2I(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    83  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    84  /** \} */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    85  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    86  /** \name Utility functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    87   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    88  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    89  /** \brief Lookup from \ref Ifx_g_FftF32_bitReverseTable the bit-reversed \<n\> with \<bits\> as number of bits */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    90  IFX_INLINE uint16 Ifx_FftF32_lookUpReversedBits(uint16 n, unsigned bits)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    91  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    92      unsigned shift = IFX_FFTF32_MAX_RESOLUTION - bits;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    93      uint16   index = Ifx_g_FftF32_bitReverseTable[n];
+	ld.hu	d15,[a2+]2
+.L202:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    94      return index >> shift;
+	sha	d15,d15,d3
+.L203:
+	addsc.a	a15,a12,d15,#3
+.L204:
+	ld.w	d15,[a5]4
+.L205:
+	fcall	.cocofun_6
+.L12:
+	jlt.u	d0,d4,.L13
+.L206:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   151      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   152  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   153      Ifx_FftF32_radix2DecimationInTime(R, logN);
+	mov.aa	a4,a12
+	mov	d4,d1
+	call	Ifx_FftF32_radix2DecimationInTime
+.L164:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   154  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   155      return R;
+	mov.aa	a2,a12
+.L166:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   156  }
+	ret
+.L75:
+	
+__Ifx_FftF32_radix2_function_end:
+	.size	Ifx_FftF32_radix2,__Ifx_FftF32_radix2_function_end-Ifx_FftF32_radix2
+.L45:
+	; End of function
+	
+	.sdecl	'.text.Ifx_FftF32..cocofun_6',code,cluster('.cocofun_6')
+	.sect	'.text.Ifx_FftF32..cocofun_6'
+	.align	2
+; Function .cocofun_6
+.L29:
+.cocofun_6:	.type	func
+; Function body .cocofun_6, coco_iter:0
+	add	d0,#1
+	st.w	[a15]4,d15
+.L163:
+	extr.u	d0,d0,#0,#16
+	lea	a5,[a5]8
+.L162:
+	fret
+.L65:
+	; End of function
+	.sdecl	'.text.Ifx_FftF32.Ifx_FftF32_radix2I',code,cluster('Ifx_FftF32_radix2I')
+	.sect	'.text.Ifx_FftF32.Ifx_FftF32_radix2I'
+	.align	2
+	
+	.global	Ifx_FftF32_radix2I
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   157  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   158  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   159  cfloat32 *Ifx_FftF32_radix2I(cfloat32 *R, const cfloat32 *X, unsigned short nX)
+; Function Ifx_FftF32_radix2I
+.L31:
+Ifx_FftF32_radix2I:	.type	func
+	mov	d8,d4
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     2   * \file Ifx_FftF32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     3   * \brief Floating-point Fast Fourier Transform
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     4   * \ingroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     6   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     7   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     8   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     9   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    10   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    12   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    13   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    14   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    15   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    16   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    17   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    20   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    21   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    22   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    23   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    24   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    25   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    26   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    27   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    33   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    34   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    42   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    43   * \defgroup library_srvsw_sysse_math_f32_fft Floating-point FFT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    44   * This module implements the Fast Fourier Transform in single precision floating-point
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    45   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    46   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    47   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    48  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    49  #ifndef IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    50  #define IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    51  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    52  #include "Ifx_Cf32.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    53  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    54  /** \brief Maximum FFT resolution (bits).
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    55   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    56  #define IFX_FFTF32_MAX_RESOLUTION (14)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    57  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    58  /** \brief Maximum FFT length.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    59   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    60  #define IFX_FFTF32_MAX_LENGTH     (1U << IFX_FFTF32_MAX_RESOLUTION)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    61  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    62  /** \brief Bit reversal table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    63  IFX_EXTERN IFX_CONST uint16   Ifx_g_FftF32_bitReverseTable[IFX_FFTF32_MAX_LENGTH];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    64  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    65  /** \brief Twiddle factor table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    66  IFX_EXTERN IFX_CONST cfloat32 Ifx_g_FftF32_twiddleTable[IFX_FFTF32_MAX_LENGTH / 2];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    67  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    68  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    69  /** \addtogroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    70   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    71  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    72  /** \name Transform functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    73   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    74  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    75  /** \brief Twiddle factor generator */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    76  IFX_EXTERN cfloat32 *Ifx_FftF32_generateTwiddleFactor(cfloat32 *TF, sint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    77  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    78  /** \brief Radix-2 Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    79  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    80  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    81  /** \brief Radix-2 Inverse Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    82  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2I(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    83  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    84  /** \} */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    85  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    86  /** \name Utility functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    87   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    88  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    89  /** \brief Lookup from \ref Ifx_g_FftF32_bitReverseTable the bit-reversed \<n\> with \<bits\> as number of bits */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    90  IFX_INLINE uint16 Ifx_FftF32_lookUpReversedBits(uint16 n, unsigned bits)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    91  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    92      unsigned shift = IFX_FFTF32_MAX_RESOLUTION - bits;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    93      uint16   index = Ifx_g_FftF32_bitReverseTable[n];
+	movh.a	a2,#@his(Ifx_g_FftF32_bitReverseTable)
+.L170:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   160  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   161      unsigned int   logN = 31 - __clz(nX);
+	clz	d15,d8
+	mov.aa	a12,a4
+.L168:
+	rsub	d4,d15,#31
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     2   * \file Ifx_FftF32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     3   * \brief Floating-point Fast Fourier Transform
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     4   * \ingroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     6   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     7   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     8   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     9   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    10   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    12   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    13   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    14   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    15   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    16   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    17   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    20   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    21   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    22   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    23   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    24   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    25   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    26   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    27   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    33   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    34   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    42   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    43   * \defgroup library_srvsw_sysse_math_f32_fft Floating-point FFT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    44   * This module implements the Fast Fourier Transform in single precision floating-point
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    45   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    46   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    47   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    48  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    49  #ifndef IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    50  #define IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    51  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    52  #include "Ifx_Cf32.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    53  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    54  /** \brief Maximum FFT resolution (bits).
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    55   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    56  #define IFX_FFTF32_MAX_RESOLUTION (14)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    57  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    58  /** \brief Maximum FFT length.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    59   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    60  #define IFX_FFTF32_MAX_LENGTH     (1U << IFX_FFTF32_MAX_RESOLUTION)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    61  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    62  /** \brief Bit reversal table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    63  IFX_EXTERN IFX_CONST uint16   Ifx_g_FftF32_bitReverseTable[IFX_FFTF32_MAX_LENGTH];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    64  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    65  /** \brief Twiddle factor table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    66  IFX_EXTERN IFX_CONST cfloat32 Ifx_g_FftF32_twiddleTable[IFX_FFTF32_MAX_LENGTH / 2];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    67  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    68  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    69  /** \addtogroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    70   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    71  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    72  /** \name Transform functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    73   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    74  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    75  /** \brief Twiddle factor generator */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    76  IFX_EXTERN cfloat32 *Ifx_FftF32_generateTwiddleFactor(cfloat32 *TF, sint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    77  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    78  /** \brief Radix-2 Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    79  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    80  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    81  /** \brief Radix-2 Inverse Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    82  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2I(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    83  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    84  /** \} */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    85  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    86  /** \name Utility functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    87   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    88  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    89  /** \brief Lookup from \ref Ifx_g_FftF32_bitReverseTable the bit-reversed \<n\> with \<bits\> as number of bits */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    90  IFX_INLINE uint16 Ifx_FftF32_lookUpReversedBits(uint16 n, unsigned bits)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    91  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    92      unsigned shift = IFX_FFTF32_MAX_RESOLUTION - bits;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    93      uint16   index = Ifx_g_FftF32_bitReverseTable[n];
+	lea	a2,[a2]@los(Ifx_g_FftF32_bitReverseTable)
+.L167:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   162      unsigned short n, k = 0;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   163  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   164      /* Arrange in bit-reversed index, and conjugate the input */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   165      for (n = 0; n < nX; n++)
+	mov	d0,#0
+	j	.L15
+.L16:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     2   * \file Ifx_FftF32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     3   * \brief Floating-point Fast Fourier Transform
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     4   * \ingroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     6   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     7   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     8   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	     9   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    10   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    12   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    13   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    14   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    15   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    16   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    17   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    20   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    21   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    22   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    23   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    24   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    25   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    26   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    27   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    33   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    34   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    42   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    43   * \defgroup library_srvsw_sysse_math_f32_fft Floating-point FFT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    44   * This module implements the Fast Fourier Transform in single precision floating-point
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    45   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    46   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    47   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    48  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    49  #ifndef IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    50  #define IFX_FFTF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    51  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    52  #include "Ifx_Cf32.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    53  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    54  /** \brief Maximum FFT resolution (bits).
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    55   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    56  #define IFX_FFTF32_MAX_RESOLUTION (14)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    57  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    58  /** \brief Maximum FFT length.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    59   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    60  #define IFX_FFTF32_MAX_LENGTH     (1U << IFX_FFTF32_MAX_RESOLUTION)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    61  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    62  /** \brief Bit reversal table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    63  IFX_EXTERN IFX_CONST uint16   Ifx_g_FftF32_bitReverseTable[IFX_FFTF32_MAX_LENGTH];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    64  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    65  /** \brief Twiddle factor table */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    66  IFX_EXTERN IFX_CONST cfloat32 Ifx_g_FftF32_twiddleTable[IFX_FFTF32_MAX_LENGTH / 2];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    67  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    68  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    69  /** \addtogroup library_srvsw_sysse_math_f32_fft
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    70   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    71  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    72  /** \name Transform functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    73   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    74  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    75  /** \brief Twiddle factor generator */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    76  IFX_EXTERN cfloat32 *Ifx_FftF32_generateTwiddleFactor(cfloat32 *TF, sint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    77  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    78  /** \brief Radix-2 Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    79  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    80  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    81  /** \brief Radix-2 Inverse Fast-Fourier Transform */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    82  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2I(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    83  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    84  /** \} */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    85  //----------------------------------------------------------------------------------------
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    86  /** \name Utility functions
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    87   * \{ */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    88  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    89  /** \brief Lookup from \ref Ifx_g_FftF32_bitReverseTable the bit-reversed \<n\> with \<bits\> as number of bits */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    90  IFX_INLINE uint16 Ifx_FftF32_lookUpReversedBits(uint16 n, unsigned bits)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    91  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    92      unsigned shift = IFX_FFTF32_MAX_RESOLUTION - bits;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    93      uint16   index = Ifx_g_FftF32_bitReverseTable[n];
+	rsub	d1,d4,#14
+	ld.hu	d15,[a2+]2
+.L211:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.h	    94      return index >> shift;
+	rsub	d1,#0
+	sha	d15,d15,d1
+.L92:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   166      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   167          //k = Ifx_FftF32_reverseBits(n, logN);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   168          k         = Ifx_FftF32_lookUpReversedBits(n, logN);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   169          R[k].real = X[n].real;
+	addsc.a	a15,a12,d15,#3
+.L212:
+	ld.w	d15,[a5]
+.L213:
+	st.w	[a15],d15
+.L214:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   170          R[k].imag = -X[n].imag;
+	ld.w	d15,[a5]4
+.L215:
+	insn.t	d15,d15:31,d15:31
+.L216:
+	fcall	.cocofun_6
+.L15:
+	jlt.u	d0,d8,.L16
+.L217:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   171      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   172  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   173      Ifx_FftF32_radix2DecimationInTime(R, logN);
+	mov.aa	a4,a12
+	call	Ifx_FftF32_radix2DecimationInTime
+.L169:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   174  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   175      /* Conjugate the output */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   176      for (n = 0; n < nX; n++)
+	mov	d0,#0
+	mov.aa	a15,a12
+.L171:
+	j	.L17
+.L18:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   177      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   178          R[n].imag = -R[n].imag;
+	add	d0,#1
+	ld.w	d15,[a15]4
+.L172:
+	extr.u	d0,d0,#0,#16
+.L173:
+	insn.t	d15,d15:31,d15:31
+	st.w	[a15]4,d15
+.L218:
+	lea	a15,[a15]8
+.L17:
+	jlt.u	d0,d8,.L18
+.L219:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   179      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   180  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   181      return R;
+	mov.aa	a2,a12
+.L174:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_FftF32.c	   182  }
+	ret
+.L85:
+	
+__Ifx_FftF32_radix2I_function_end:
+	.size	Ifx_FftF32_radix2I,__Ifx_FftF32_radix2I_function_end-Ifx_FftF32_radix2I
+.L50:
+	; End of function
+	
+	.calls	'Ifx_FftF32_generateTwiddleFactor','cosf'
+	.calls	'Ifx_FftF32_generateTwiddleFactor','sinf'
+	.calls	'Ifx_FftF32_radix2','Ifx_FftF32_radix2DecimationInTime'
+	.calls	'Ifx_FftF32_radix2I','Ifx_FftF32_radix2DecimationInTime'
+	.calls	'Ifx_FftF32_radix2','.cocofun_6'
+	.calls	'Ifx_FftF32_radix2I','.cocofun_6'
+	.calls	'Ifx_FftF32_generateTwiddleFactor','',0
+	.calls	'Ifx_FftF32_reverseBits','',0
+	.calls	'Ifx_FftF32_radix2DecimationInTime','',0
+	.calls	'Ifx_FftF32_radix2','',0
+	.calls	'.cocofun_6','',0
+	.extern	sinf
+	.extern	cosf
+	.extern	Ifx_g_FftF32_bitReverseTable
+	.extern	Ifx_g_FftF32_twiddleTable
+	.calls	'Ifx_FftF32_radix2I','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L33:
+	.word	1706
+	.half	3
+	.word	.L34
+	.byte	4
+.L32:
+	.byte	1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L35
+	.byte	2,1,1,3
+	.word	163
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,58,17,1,1,5
+	.byte	'fun',0,1,58,43
+	.word	166
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1
+.L73:
+	.byte	7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,149,2,18
+	.word	211
+	.byte	1,1,5
+	.byte	'a',0,1,149,2,44
+	.word	223
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	303
+	.byte	8
+	.byte	'__ld64',0,3,2,132,1,19
+	.word	277
+	.byte	1,1,5
+	.byte	'addr',0,2,132,1,32
+	.word	309
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,140,1,17,1,1,5
+	.byte	'addr',0,2,140,1,30
+	.word	309
+	.byte	5
+	.byte	'value',0,2,140,1,43
+	.word	277
+	.byte	6,0
+.L113:
+	.byte	10,4,58,9,8,11
+	.byte	'real',0
+	.word	223
+	.byte	4,2,35,0,11
+	.byte	'imag',0
+	.word	223
+	.byte	4,2,35,4,0,12
+	.word	395
+.L77:
+	.byte	3
+	.word	429
+.L116:
+	.byte	8
+	.byte	'IFX_Cf32_mul',0,3,3,64,21
+	.word	395
+	.byte	1,1
+.L119:
+	.byte	5
+	.byte	'a',0,3,64,50
+	.word	434
+.L121:
+	.byte	5
+	.byte	'b',0,3,64,69
+	.word	434
+.L123:
+	.byte	6,0,8
+	.byte	'IFX_Cf32_dot',0,3,3,82,20
+	.word	223
+	.byte	1,1,5
+	.byte	'b',0,3,82,49
+	.word	434
+	.byte	6,0,8
+	.byte	'IFX_Cf32_mag',0,3,3,88,20
+	.word	223
+	.byte	1,1,5
+	.byte	'c',0,3,88,49
+	.word	434
+	.byte	13,6,0,0
+.L128:
+	.byte	8
+	.byte	'IFX_Cf32_add',0,3,3,104,21
+	.word	395
+	.byte	1,1
+.L130:
+	.byte	5
+	.byte	'a',0,3,104,50
+	.word	434
+.L132:
+	.byte	5
+	.byte	'b',0,3,104,69
+	.word	434
+.L134:
+	.byte	6,0
+.L136:
+	.byte	8
+	.byte	'IFX_Cf32_sub',0,3,3,113,21
+	.word	395
+	.byte	1,1
+.L137:
+	.byte	5
+	.byte	'a',0,3,113,50
+	.word	434
+.L139:
+	.byte	5
+	.byte	'b',0,3,113,69
+	.word	434
+.L141:
+	.byte	6,0
+.L66:
+	.byte	3
+	.word	395
+	.byte	4
+	.byte	'IFX_Cf32_set',0,3,3,122,17,1,1,5
+	.byte	'a',0,3,122,40
+	.word	651
+	.byte	5
+	.byte	're',0,3,122,51
+	.word	223
+	.byte	5
+	.byte	'im',0,3,122,63
+	.word	223
+	.byte	6,0
+.L79:
+	.byte	7
+	.byte	'unsigned short int',0,2,7
+.L82:
+	.byte	7
+	.byte	'unsigned int',0,4,7
+.L91:
+	.byte	8
+	.byte	'Ifx_FftF32_lookUpReversedBits',0,3,5,90,19
+	.word	710
+	.byte	1,1
+.L93:
+	.byte	5
+	.byte	'n',0,5,90,56
+	.word	710
+.L95:
+	.byte	5
+	.byte	'bits',0,5,90,68
+	.word	732
+.L97:
+	.byte	6,0,7
+	.byte	'long int',0,4,5,8
+	.byte	'Ifx_FftF32_lookUpTwiddleFactor',0,3,5,99,21
+	.word	395
+	.byte	1,1,5
+	.byte	'N',0,5,99,59
+	.word	814
+	.byte	5
+	.byte	'k',0,5,99,69
+	.word	814
+	.byte	6,0
+.L71:
+	.byte	7
+	.byte	'int',0,4,5,12
+	.word	890
+	.byte	14
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,15
+	.word	897
+	.byte	0,16
+	.word	732
+	.byte	3
+	.word	732
+	.byte	17
+	.byte	'__cmpswapw',0
+	.word	939
+	.byte	1,1,1,1,18
+	.byte	'p',0
+	.word	944
+	.byte	18
+	.byte	'value',0
+	.word	732
+	.byte	18
+	.byte	'compare',0
+	.word	732
+	.byte	0,17
+	.byte	'__clz',0
+	.word	890
+	.byte	1,1,1,1,15
+	.word	890
+	.byte	0,19
+	.word	171
+	.byte	20
+	.word	197
+	.byte	6,0,19
+	.word	232
+	.byte	20
+	.word	264
+	.byte	6,0,19
+	.word	314
+	.byte	20
+	.word	333
+	.byte	6,0,19
+	.word	349
+	.byte	20
+	.word	364
+	.byte	20
+	.word	378
+	.byte	6,0,21
+	.byte	'sinf',0,6,89,25
+	.word	223
+	.byte	1,1,1,1,22,6,89,43
+	.word	223
+	.byte	0,21
+	.byte	'cosf',0,6,92,25
+	.word	223
+	.byte	1,1,1,1,22,6,92,43
+	.word	223
+	.byte	0,19
+	.word	439
+	.byte	20
+	.word	463
+	.byte	20
+	.word	473
+	.byte	6,0,19
+	.word	485
+	.byte	20
+	.word	509
+	.byte	6,0,19
+	.word	521
+	.byte	20
+	.word	545
+	.byte	13,23
+	.word	485
+	.byte	20
+	.word	509
+	.byte	24
+	.word	519
+	.byte	0,6,0,0,19
+	.word	559
+	.byte	20
+	.word	583
+	.byte	20
+	.word	593
+	.byte	6,0,19
+	.word	605
+	.byte	20
+	.word	629
+	.byte	20
+	.word	639
+	.byte	6,0,19
+	.word	656
+	.byte	20
+	.word	676
+	.byte	20
+	.word	686
+	.byte	20
+	.word	697
+	.byte	6,0
+.L69:
+	.byte	7
+	.byte	'short int',0,2,5,19
+	.word	748
+	.byte	20
+	.word	789
+	.byte	20
+	.word	799
+	.byte	6,0,19
+	.word	826
+	.byte	20
+	.word	868
+	.byte	20
+	.word	878
+	.byte	6,0
+.L101:
+	.byte	7
+	.byte	'unsigned long int',0,4,7,25
+	.byte	'__wchar_t',0,7,1,1
+	.word	1242
+	.byte	25
+	.byte	'__size_t',0,7,1,1
+	.word	732
+	.byte	25
+	.byte	'__ptrdiff_t',0,7,1,1
+	.word	890
+	.byte	26,1,3
+	.word	1365
+	.byte	25
+	.byte	'__codeptr',0,7,1,1
+	.word	1367
+	.byte	7
+	.byte	'unsigned char',0,1,8,25
+	.byte	'uint8',0,8,108,29
+	.word	1390
+	.byte	25
+	.byte	'uint16',0,8,112,29
+	.word	710
+	.byte	25
+	.byte	'uint32',0,8,116,29
+	.word	1289
+	.byte	25
+	.byte	'uint64',0,8,121,29
+	.word	277
+	.byte	25
+	.byte	'sint16',0,8,129,1,29
+	.word	1242
+	.byte	25
+	.byte	'sint32',0,8,134,1,29
+	.word	814
+	.byte	7
+	.byte	'long long int',0,8,5,25
+	.byte	'sint64',0,8,141,1,29
+	.word	1498
+	.byte	25
+	.byte	'float32',0,8,170,1,29
+	.word	223
+	.byte	25
+	.byte	'pvoid',0,4,54,28
+	.word	309
+	.byte	25
+	.byte	'cfloat32',0,4,62,3
+	.word	395
+	.byte	25
+	.byte	'Ifx_TickTime',0,4,76,28
+	.word	1498
+	.byte	27,128,128,2
+	.word	710
+	.byte	28,255,127,0,12
+	.word	1600
+	.byte	29
+	.byte	'Ifx_g_FftF32_bitReverseTable',0,5,63,31
+	.word	1612
+	.byte	1,1,27,128,128,4
+	.word	395
+	.byte	28,255,63,0,12
+	.word	1656
+	.byte	29
+	.byte	'Ifx_g_FftF32_twiddleTable',0,5,66,31
+	.word	1668
+	.byte	1,1,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L34:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,58,15,59,15,57
+	.byte	15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,38,0,73,19,0,0,13,11,1,0,0,14,46,1,3,8,54,15,39,12,63
+	.byte	12,60,12,0,0,15,5,0,73,19,0,0,16,53,0,73,19,0,0,17,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,18,5,0,3
+	.byte	8,73,19,0,0,19,46,1,49,19,0,0,20,5,0,49,19,0,0,21,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60
+	.byte	12,0,0,22,5,0,58,15,59,15,57,15,73,19,0,0,23,29,1,49,19,0,0,24,11,0,49,19,0,0,25,22,0,3,8,58,15,59,15
+	.byte	57,15,73,19,0,0,26,21,0,54,15,0,0,27,1,1,11,15,73,19,0,0,28,33,0,47,15,0,0,29,52,0,3,8,58,15,59,15,57
+	.byte	15,73,19,63,12,60,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L35:
+	.word	.L176-.L175
+.L175:
+	.half	3
+	.word	.L178-.L177
+.L177:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0,0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.h',0,0,0,0
+	.byte	'math.h',0,2,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0,0
+.L178:
+.L176:
+	.sdecl	'.debug_info',debug,cluster('Ifx_FftF32_generateTwiddleFactor')
+	.sect	'.debug_info'
+.L36:
+	.word	298
+	.half	3
+	.word	.L37
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L39,.L38
+	.byte	2
+	.word	.L32
+	.byte	3
+	.byte	'Ifx_FftF32_generateTwiddleFactor',0,1,48,11
+	.word	.L66
+	.byte	1,1,1
+	.word	.L21,.L67,.L20
+	.byte	4
+	.byte	'TF',0,1,48,54
+	.word	.L66,.L68
+	.byte	4
+	.byte	'nX',0,1,48,64
+	.word	.L69,.L70
+	.byte	5
+	.word	.L21,.L67
+	.byte	6
+	.byte	'i',0,1,50,12
+	.word	.L71,.L72
+	.byte	6
+	.byte	'Theta',0,1,51,12
+	.word	.L73,.L74
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_FftF32_generateTwiddleFactor')
+	.sect	'.debug_abbrev'
+.L37:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_FftF32_generateTwiddleFactor')
+	.sect	'.debug_line'
+.L38:
+	.word	.L180-.L179
+.L179:
+	.half	3
+	.word	.L182-.L181
+.L181:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c',0,0,0,0,0
+.L182:
+	.byte	5,11,7,0,5,2
+	.word	.L21
+	.byte	3,47,1,5,26,9
+	.half	.L143-.L21
+	.byte	3,6,1,5,32,1,5,12,9
+	.half	.L183-.L143
+	.byte	1,5,24,9
+	.half	.L144-.L183
+	.byte	1,5,27,1,5,35,9
+	.half	.L3-.L144
+	.byte	3,2,1,5,24,1,5,35,9
+	.half	.L184-.L3
+	.byte	1,5,39,9
+	.half	.L185-.L184
+	.byte	1,5,37,9
+	.half	.L186-.L185
+	.byte	1,9
+	.half	.L145-.L186
+	.byte	3,2,1,5,20,9
+	.half	.L187-.L145
+	.byte	1,5,38,9
+	.half	.L188-.L187
+	.byte	3,1,1,5,32,9
+	.half	.L189-.L188
+	.byte	1,5,20,1,5,30,9
+	.half	.L146-.L189
+	.byte	3,123,1,5,27,9
+	.half	.L2-.L146
+	.byte	1,5,5,7,9
+	.half	.L190-.L2
+	.byte	3,8,1,5,1,9
+	.half	.L147-.L190
+	.byte	3,1,1,7,9
+	.half	.L40-.L147
+	.byte	0,1,1
+.L180:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_FftF32_generateTwiddleFactor')
+	.sect	'.debug_ranges'
+.L39:
+	.word	-1,.L21,0,.L40-.L21,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_FftF32_radix2')
+	.sect	'.debug_info'
+.L41:
+	.word	297
+	.half	3
+	.word	.L42
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L44,.L43
+	.byte	2
+	.word	.L32
+	.byte	3
+	.byte	'Ifx_FftF32_radix2',0,1,140,1,11
+	.word	.L66
+	.byte	1,1,1
+	.word	.L27,.L75,.L26
+	.byte	4
+	.byte	'R',0,1,140,1,39
+	.word	.L66,.L76
+	.byte	4
+	.byte	'X',0,1,140,1,58
+	.word	.L77,.L78
+	.byte	4
+	.byte	'nX',0,1,140,1,76
+	.word	.L79,.L80
+	.byte	5
+	.word	.L81
+	.byte	6
+	.byte	'logN',0,1,142,1,20
+	.word	.L82,.L83
+	.byte	6
+	.byte	'n',0,1,143,1,20
+	.word	.L79,.L84
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_FftF32_radix2')
+	.sect	'.debug_abbrev'
+.L42:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,85,6,0,0,6,52,0
+	.byte	3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_FftF32_radix2')
+	.sect	'.debug_line'
+.L43:
+	.word	.L192-.L191
+.L191:
+	.half	3
+	.word	.L194-.L193
+.L193:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c',0,0,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.h',0,0,0,0,0
+.L194:
+	.byte	5,37,7,0,5,2
+	.word	.L27
+	.byte	3,141,1,1,4,2,5,22,3,79,1,4,1,5,30,9
+	.half	.L195-.L27
+	.byte	3,49,1,5,11,3,126,1,4,2,5,48,9
+	.half	.L165-.L195
+	.byte	3,80,1,5,22,3,1,1,4,1,5,12,9
+	.half	.L196-.L165
+	.byte	3,53,1,5,23,1,4,2,5,18,9
+	.half	.L13-.L196
+	.byte	3,76,1,5,50,3,127,1,5,18,9
+	.half	.L197-.L13
+	.byte	3,1,1,4,1,5,10,9
+	.half	.L198-.L197
+	.byte	3,56,1,5,17,9
+	.half	.L199-.L198
+	.byte	1,5,10,9
+	.half	.L200-.L199
+	.byte	1,4,2,5,50,9
+	.half	.L201-.L200
+	.byte	3,71,1,5,18,9
+	.half	.L202-.L201
+	.byte	3,1,1,4,1,5,10,9
+	.half	.L203-.L202
+	.byte	3,56,1,5,17,9
+	.half	.L204-.L203
+	.byte	1,5,10,9
+	.half	.L205-.L204
+	.byte	1,5,23,9
+	.half	.L12-.L205
+	.byte	3,124,1,5,42,7,9
+	.half	.L206-.L12
+	.byte	3,7,1,5,5,9
+	.half	.L164-.L206
+	.byte	3,2,1,5,1,9
+	.half	.L166-.L164
+	.byte	3,1,1,7,9
+	.half	.L45-.L166
+	.byte	0,1,1
+.L192:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_FftF32_radix2')
+	.sect	'.debug_ranges'
+.L44:
+	.word	-1,.L27,0,.L45-.L27,0,0
+.L81:
+	.word	-1,.L27,0,.L75-.L27,-1,.L29,0,.L65-.L29,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_FftF32_radix2I')
+	.sect	'.debug_info'
+.L46:
+	.word	347
+	.half	3
+	.word	.L47
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L49,.L48
+	.byte	2
+	.word	.L32
+	.byte	3
+	.byte	'Ifx_FftF32_radix2I',0,1,159,1,11
+	.word	.L66
+	.byte	1,1,1
+	.word	.L31,.L85,.L30
+	.byte	4
+	.byte	'R',0,1,159,1,40
+	.word	.L66,.L86
+	.byte	4
+	.byte	'X',0,1,159,1,59
+	.word	.L77,.L87
+	.byte	4
+	.byte	'nX',0,1,159,1,77
+	.word	.L79,.L88
+	.byte	5
+	.word	.L31,.L85
+	.byte	6
+	.byte	'logN',0,1,161,1,20
+	.word	.L82,.L89
+	.byte	6
+	.byte	'n',0,1,162,1,20
+	.word	.L79,.L90
+	.byte	7
+	.word	.L91,.L16,.L92
+	.byte	8
+	.word	.L93,.L94
+	.byte	8
+	.word	.L95,.L96
+	.byte	9
+	.word	.L97,.L16,.L92
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_FftF32_radix2I')
+	.sect	'.debug_abbrev'
+.L47:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17
+	.byte	1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_FftF32_radix2I')
+	.sect	'.debug_line'
+.L48:
+	.word	.L208-.L207
+.L207:
+	.half	3
+	.word	.L210-.L209
+.L209:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c',0,0,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.h',0,0,0,0,0
+.L210:
+	.byte	5,11,7,0,5,2
+	.word	.L31
+	.byte	3,158,1,1,4,2,5,22,3,190,127,1,4,1,5,37,9
+	.half	.L170-.L31
+	.byte	3,196,0,1,5,11,3,126,1,5,30,9
+	.half	.L168-.L170
+	.byte	3,2,1,4,2,5,22,3,188,127,1,4,1,5,12,9
+	.half	.L167-.L168
+	.byte	3,200,0,1,5,23,1,4,2,5,48,9
+	.half	.L16-.L167
+	.byte	3,183,127,1,5,50,3,1,1,5,18,9
+	.half	.L211-.L16
+	.byte	3,1,1,4,1,5,10,9
+	.half	.L92-.L211
+	.byte	3,203,0,1,5,25,9
+	.half	.L212-.L92
+	.byte	1,5,19,9
+	.half	.L213-.L212
+	.byte	1,5,26,9
+	.half	.L214-.L213
+	.byte	3,1,1,5,21,9
+	.half	.L215-.L214
+	.byte	1,5,19,9
+	.half	.L216-.L215
+	.byte	1,5,23,9
+	.half	.L15-.L216
+	.byte	3,123,1,5,42,7,9
+	.half	.L217-.L15
+	.byte	3,8,1,5,12,9
+	.half	.L169-.L217
+	.byte	3,3,1,5,28,1,5,23,9
+	.half	.L171-.L169
+	.byte	1,5,26,9
+	.half	.L18-.L171
+	.byte	1,3,2,1,9
+	.half	.L172-.L18
+	.byte	3,126,1,5,21,9
+	.half	.L173-.L172
+	.byte	3,2,1,5,19,1,5,26,9
+	.half	.L218-.L173
+	.byte	3,126,1,5,23,9
+	.half	.L17-.L218
+	.byte	1,5,5,7,9
+	.half	.L219-.L17
+	.byte	3,5,1,5,1,9
+	.half	.L174-.L219
+	.byte	3,1,1,7,9
+	.half	.L50-.L174
+	.byte	0,1,1
+.L208:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_FftF32_radix2I')
+	.sect	'.debug_ranges'
+.L49:
+	.word	-1,.L31,0,.L50-.L31,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_FftF32_reverseBits')
+	.sect	'.debug_info'
+.L51:
+	.word	271
+	.half	3
+	.word	.L52
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L54,.L53
+	.byte	2
+	.word	.L32
+	.byte	3
+	.byte	'Ifx_FftF32_reverseBits',0,1,67,16
+	.word	.L79
+	.byte	1,1,1
+	.word	.L23,.L98,.L22
+	.byte	4
+	.byte	'n',0,1,67,54
+	.word	.L79,.L99
+	.byte	4
+	.byte	'bits',0,1,67,66
+	.word	.L82,.L100
+	.byte	5
+	.word	.L23,.L98
+	.byte	6
+	.byte	'v',0,1,72,19
+	.word	.L101,.L102
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_FftF32_reverseBits')
+	.sect	'.debug_abbrev'
+.L52:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_FftF32_reverseBits')
+	.sect	'.debug_line'
+.L53:
+	.word	.L221-.L220
+.L220:
+	.half	3
+	.word	.L223-.L222
+.L222:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c',0,0,0,0,0
+.L223:
+	.byte	5,43,7,0,5,2
+	.word	.L23
+	.byte	3,202,0,1,5,13,9
+	.half	.L224-.L23
+	.byte	1,5,41,9
+	.half	.L225-.L224
+	.byte	1,5,19,9
+	.half	.L148-.L225
+	.byte	1,5,43,3,2,1,5,57,9
+	.half	.L226-.L148
+	.byte	3,126,1,5,35,9
+	.half	.L149-.L226
+	.byte	1,5,13,9
+	.half	.L227-.L149
+	.byte	3,2,1,5,41,9
+	.half	.L228-.L227
+	.byte	1,5,19,9
+	.half	.L150-.L228
+	.byte	1,5,43,3,2,1,5,57,9
+	.half	.L229-.L150
+	.byte	3,126,1,5,35,9
+	.half	.L151-.L229
+	.byte	1,5,13,9
+	.half	.L230-.L151
+	.byte	3,2,1,5,41,9
+	.half	.L231-.L230
+	.byte	1,5,19,9
+	.half	.L152-.L231
+	.byte	1,5,57,9
+	.half	.L232-.L152
+	.byte	1,5,35,9
+	.half	.L153-.L232
+	.byte	1,5,43,3,2,1,5,13,9
+	.half	.L233-.L153
+	.byte	1,5,41,9
+	.half	.L234-.L233
+	.byte	1,5,57,9
+	.half	.L154-.L234
+	.byte	1,5,35,9
+	.half	.L235-.L154
+	.byte	1,5,18,9
+	.half	.L236-.L235
+	.byte	3,4,1,5,24,9
+	.half	.L237-.L236
+	.byte	3,126,1,5,11,9
+	.half	.L238-.L237
+	.byte	3,2,1,5,12,9
+	.half	.L155-.L238
+	.byte	3,1,1,5,1,3,1,1,7,9
+	.half	.L55-.L155
+	.byte	0,1,1
+.L221:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_FftF32_reverseBits')
+	.sect	'.debug_ranges'
+.L54:
+	.word	-1,.L23,0,.L55-.L23,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_FftF32_radix2DecimationInTime')
+	.sect	'.debug_info'
+.L56:
+	.word	607
+	.half	3
+	.word	.L57
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L59,.L58
+	.byte	2
+	.word	.L32
+	.byte	3
+	.byte	'Ifx_FftF32_radix2DecimationInTime',0,1,91,6,1,1,1
+	.word	.L25,.L103,.L24
+	.byte	4
+	.byte	'R',0,1,91,50
+	.word	.L66,.L104
+	.byte	4
+	.byte	'p',0,1,91,67
+	.word	.L101,.L105
+	.byte	5
+	.word	.L25,.L103
+	.byte	6
+	.byte	'Bp',0,1,101,19
+	.word	.L101,.L106
+	.byte	6
+	.byte	'Np',0,1,101,23
+	.word	.L101,.L107
+	.byte	6
+	.byte	'Npx',0,1,101,27
+	.word	.L101,.L108
+	.byte	6
+	.byte	'P',0,1,101,32
+	.word	.L101,.L109
+	.byte	6
+	.byte	'b',0,1,101,35
+	.word	.L101,.L110
+	.byte	6
+	.byte	'k',0,1,101,38
+	.word	.L101,.L111
+	.byte	6
+	.byte	'BaseT',0,1,101,41
+	.word	.L101,.L112
+	.byte	6
+	.byte	'top',0,1,102,19
+	.word	.L113,.L114
+	.byte	6
+	.byte	'bot',0,1,102,24
+	.word	.L113,.L115
+	.byte	7
+	.word	.L116,.L117,.L118
+	.byte	8
+	.word	.L119,.L120
+	.byte	8
+	.word	.L121,.L122
+	.byte	9
+	.word	.L123,.L124
+	.byte	6
+	.byte	'R',0,2,66,14
+	.word	.L113,.L127
+	.byte	0,0,7
+	.word	.L116,.L125,.L126
+	.byte	8
+	.word	.L119,.L120
+	.byte	8
+	.word	.L121,.L122
+	.byte	0,7
+	.word	.L128,.L126,.L129
+	.byte	8
+	.word	.L130,.L131
+	.byte	8
+	.word	.L132,.L133
+	.byte	10
+	.word	.L134,.L126,.L129
+	.byte	6
+	.byte	'R',0,2,106,14
+	.word	.L113,.L135
+	.byte	0,0,7
+	.word	.L136,.L129,.L10
+	.byte	8
+	.word	.L137,.L138
+	.byte	8
+	.word	.L139,.L140
+	.byte	10
+	.word	.L141,.L129,.L10
+	.byte	6
+	.byte	'R',0,2,115,14
+	.word	.L113,.L142
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_FftF32_radix2DecimationInTime')
+	.sect	'.debug_abbrev'
+.L57:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,1,49,16,85,6,0,0
+	.byte	10,11,1,49,16,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_FftF32_radix2DecimationInTime')
+	.sect	'.debug_line'
+.L58:
+	.word	.L240-.L239
+.L239:
+	.half	3
+	.word	.L242-.L241
+.L241:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c',0,0,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.h',0,0,0,0,0
+.L242:
+	.byte	5,6,7,0,5,2
+	.word	.L25
+	.byte	3,218,0,1,5,10,9
+	.half	.L156-.L25
+	.byte	3,13,1,5,18,9
+	.half	.L243-.L156
+	.byte	1,5,12,9
+	.half	.L244-.L243
+	.byte	1,5,8,9
+	.half	.L157-.L244
+	.byte	3,1,1,5,12,9
+	.half	.L158-.L157
+	.byte	3,3,1,5,22,1,5,20,9
+	.half	.L7-.L158
+	.byte	3,3,1,5,15,9
+	.half	.L159-.L7
+	.byte	3,1,1,5,16,9
+	.half	.L160-.L159
+	.byte	3,2,1,5,27,1,5,32,9
+	.half	.L9-.L160
+	.byte	3,11,1,5,27,9
+	.half	.L245-.L9
+	.byte	3,120,1,5,46,9
+	.half	.L246-.L245
+	.byte	3,7,1,5,20,9
+	.half	.L247-.L246
+	.byte	3,123,1,5,32,1,4,3,5,38,9
+	.half	.L11-.L247
+	.byte	3,110,1,5,12,1,5,64,9
+	.half	.L248-.L11
+	.byte	1,5,12,1,4,2,5,16,9
+	.half	.L117-.L248
+	.byte	3,94,1,5,38,9
+	.half	.L249-.L117
+	.byte	1,4,3,5,37,9
+	.half	.L118-.L249
+	.byte	3,34,1,4,1,5,35,9
+	.half	.L250-.L118
+	.byte	3,18,1,4,3,5,37,9
+	.half	.L251-.L250
+	.byte	3,110,1,4,2,5,23,9
+	.half	.L125-.L251
+	.byte	3,94,1,5,48,9
+	.half	.L252-.L125
+	.byte	1,5,34,9
+	.half	.L253-.L252
+	.byte	1,5,45,9
+	.half	.L254-.L253
+	.byte	3,1,1,5,34,9
+	.half	.L255-.L254
+	.byte	1,4,1,5,33,3,57,1,4,2,5,26,9
+	.half	.L126-.L255
+	.byte	3,110,1,5,16,9
+	.half	.L256-.L126
+	.byte	1,5,23,9
+	.half	.L257-.L256
+	.byte	1,5,16,9
+	.half	.L258-.L257
+	.byte	3,1,1,5,26,9
+	.half	.L259-.L258
+	.byte	1,5,23,9
+	.half	.L260-.L259
+	.byte	1,4,1,5,30,3,18,1,4,2,5,16,9
+	.half	.L129-.L260
+	.byte	3,118,1,5,26,9
+	.half	.L261-.L129
+	.byte	1,5,23,9
+	.half	.L161-.L261
+	.byte	3,1,1,9
+	.half	.L262-.L161
+	.byte	3,127,1,4,1,5,30,3,11,1,5,32,9
+	.half	.L10-.L262
+	.byte	3,120,1,5,27,7,9
+	.half	.L263-.L10
+	.byte	3,11,1,5,30,9
+	.half	.L264-.L263
+	.byte	3,112,1,5,27,9
+	.half	.L8-.L264
+	.byte	1,5,17,7,9
+	.half	.L265-.L8
+	.byte	3,20,1,9
+	.half	.L266-.L265
+	.byte	3,1,1,5,25,9
+	.half	.L267-.L266
+	.byte	3,101,1,5,22,9
+	.half	.L6-.L267
+	.byte	1,5,1,7,9
+	.half	.L268-.L6
+	.byte	3,29,1,7,9
+	.half	.L60-.L268
+	.byte	0,1,1
+.L240:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_FftF32_radix2DecimationInTime')
+	.sect	'.debug_ranges'
+.L59:
+	.word	-1,.L25,0,.L60-.L25,0,0
+.L124:
+	.word	-1,.L25,.L117-.L25,.L118-.L25,.L125-.L25,.L126-.L25,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_6')
+	.sect	'.debug_info'
+.L61:
+	.word	198
+	.half	3
+	.word	.L62
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L64,.L63
+	.byte	2
+	.word	.L32
+	.byte	3
+	.byte	'.cocofun_6',0,1,140,1,11,1
+	.word	.L29,.L65,.L28
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_6')
+	.sect	'.debug_abbrev'
+.L62:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_6')
+	.sect	'.debug_line'
+.L63:
+	.word	.L270-.L269
+.L269:
+	.half	3
+	.word	.L272-.L271
+.L271:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_FftF32.c',0,0,0,0,0
+.L272:
+	.byte	5,26,7,0,5,2
+	.word	.L29
+	.byte	3,145,1,1,5,10,3,4,1,5,26,9
+	.half	.L163-.L29
+	.byte	3,124,1,9
+	.half	.L65-.L163
+	.byte	0,1,1,5,26,0,5,2
+	.word	.L29
+	.byte	3,164,1,1,5,19,3,5,1,5,26,9
+	.half	.L163-.L29
+	.byte	3,123,1,9
+	.half	.L162-.L163
+	.byte	3,109,1,7,9
+	.half	.L65-.L162
+	.byte	0,1,1
+.L270:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_6')
+	.sect	'.debug_ranges'
+.L64:
+	.word	-1,.L29,0,.L65-.L29,0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_6')
+	.sect	'.debug_loc'
+.L28:
+	.word	-1,.L29,0,.L65-.L29
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_FftF32_generateTwiddleFactor')
+	.sect	'.debug_loc'
+.L20:
+	.word	-1,.L21,0,.L67-.L21
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L68:
+	.word	-1,.L21,0,.L3-.L21
+	.half	1
+	.byte	100
+	.word	.L143-.L21,.L67-.L21
+	.half	1
+	.byte	108
+	.word	.L147-.L21,.L67-.L21
+	.half	1
+	.byte	98
+	.word	0,0
+.L74:
+	.word	-1,.L21,.L145-.L21,.L146-.L21
+	.half	1
+	.byte	95
+	.word	0,0
+.L72:
+	.word	-1,.L21,.L144-.L21,.L67-.L21
+	.half	1
+	.byte	91
+	.word	0,0
+.L70:
+	.word	-1,.L21,0,.L3-.L21
+	.half	1
+	.byte	84
+	.word	.L143-.L21,.L67-.L21
+	.half	1
+	.byte	90
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_FftF32_radix2')
+	.sect	'.debug_loc'
+.L26:
+	.word	-1,.L27,0,.L75-.L27
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L76:
+	.word	-1,.L27,.L29-.L27,.L162-.L27
+	.half	1
+	.byte	100
+	.word	.L29-.L27,.L162-.L27
+	.half	1
+	.byte	108
+	.word	0,.L164-.L27
+	.half	1
+	.byte	100
+	.word	.L165-.L27,.L75-.L27
+	.half	1
+	.byte	108
+	.word	.L166-.L27,.L75-.L27
+	.half	1
+	.byte	98
+	.word	0,0
+.L78:
+	.word	-1,.L27,.L29-.L27,.L162-.L27
+	.half	1
+	.byte	101
+	.word	0,.L164-.L27
+	.half	1
+	.byte	101
+	.word	0,0
+.L83:
+	.word	-1,.L27,.L29-.L27,.L162-.L27
+	.half	1
+	.byte	81
+	.word	.L165-.L27,.L164-.L27
+	.half	1
+	.byte	81
+	.word	0,0
+.L84:
+	.word	-1,.L27,.L29-.L27,.L163-.L27
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L13-.L27,.L164-.L27
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L80:
+	.word	-1,.L27,.L29-.L27,.L162-.L27
+	.half	1
+	.byte	84
+	.word	0,.L164-.L27
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_FftF32_radix2DecimationInTime')
+	.sect	'.debug_loc'
+.L112:
+	.word	-1,.L25,.L160-.L25,.L6-.L25
+	.half	1
+	.byte	84
+	.word	0,0
+.L106:
+	.word	-1,.L25,.L157-.L25,.L103-.L25
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L24:
+	.word	-1,.L25,0,.L103-.L25
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L107:
+	.word	-1,.L25,.L158-.L25,.L103-.L25
+	.half	1
+	.byte	81
+	.word	0,0
+.L108:
+	.word	-1,.L25,.L159-.L25,.L6-.L25
+	.half	1
+	.byte	83
+	.word	0,0
+.L109:
+	.word	-1,.L25,.L7-.L25,.L103-.L25
+	.half	1
+	.byte	82
+	.word	0,0
+.L127:
+	.word	-1,.L25,.L126-.L25,.L10-.L25
+	.half	2
+	.byte	144,37
+	.word	0,0
+.L104:
+	.word	-1,.L25,0,.L103-.L25
+	.half	1
+	.byte	100
+	.word	0,0
+.L135:
+	.word	-1,.L25,.L129-.L25,.L161-.L25
+	.half	2
+	.byte	144,35
+	.word	0,0
+.L142:
+	.word	0,0
+.L120:
+	.word	0,0
+.L131:
+	.word	0,0
+.L138:
+	.word	0,0
+.L122:
+	.word	0,0
+.L110:
+	.word	-1,.L25,.L9-.L25,.L6-.L25
+	.half	1
+	.byte	85
+	.word	0,0
+.L133:
+	.word	0,0
+.L140:
+	.word	0,0
+.L115:
+	.word	0,0
+.L111:
+	.word	-1,.L25,.L11-.L25,.L8-.L25
+	.half	1
+	.byte	92
+	.word	0,0
+.L105:
+	.word	-1,.L25,0,.L7-.L25
+	.half	1
+	.byte	84
+	.word	.L156-.L25,.L103-.L25
+	.half	1
+	.byte	93
+	.word	0,0
+.L114:
+	.word	-1,.L25,.L125-.L25,.L126-.L25
+	.half	2
+	.byte	144,35
+	.word	.L126-.L25,.L10-.L25
+	.half	2
+	.byte	144,36
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_FftF32_radix2I')
+	.sect	'.debug_loc'
+.L30:
+	.word	-1,.L31,0,.L85-.L31
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L86:
+	.word	-1,.L31,.L29-.L31,.L65-.L31
+	.half	1
+	.byte	108
+	.word	.L29-.L31,.L65-.L31
+	.half	1
+	.byte	100
+	.word	.L168-.L31,.L85-.L31
+	.half	1
+	.byte	108
+	.word	0,.L169-.L31
+	.half	1
+	.byte	100
+	.word	.L174-.L31,.L85-.L31
+	.half	1
+	.byte	98
+	.word	0,0
+.L87:
+	.word	-1,.L31,.L29-.L31,.L65-.L31
+	.half	1
+	.byte	101
+	.word	0,.L169-.L31
+	.half	1
+	.byte	101
+	.word	0,0
+.L96:
+	.word	0,0
+.L89:
+	.word	-1,.L31,.L29-.L31,.L65-.L31
+	.half	1
+	.byte	84
+	.word	.L167-.L31,.L169-.L31
+	.half	1
+	.byte	84
+	.word	0,0
+.L94:
+	.word	0,0
+.L90:
+	.word	-1,.L31,.L29-.L31,.L29-.L31
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L163-.L31,.L65-.L31
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L16-.L31,.L169-.L31
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L171-.L31,.L172-.L31
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L173-.L31,.L85-.L31
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L88:
+	.word	-1,.L31,0,.L167-.L31
+	.half	1
+	.byte	84
+	.word	.L29-.L31,.L65-.L31
+	.half	1
+	.byte	88
+	.word	.L170-.L31,.L85-.L31
+	.half	1
+	.byte	88
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_FftF32_reverseBits')
+	.sect	'.debug_loc'
+.L22:
+	.word	-1,.L23,0,.L98-.L23
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L100:
+	.word	-1,.L23,0,.L98-.L23
+	.half	1
+	.byte	85
+	.word	0,0
+.L99:
+	.word	-1,.L23,0,.L148-.L23
+	.half	1
+	.byte	84
+	.word	0,0
+.L102:
+	.word	-1,.L23,.L149-.L23,.L150-.L23
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L151-.L23,.L152-.L23
+	.half	1
+	.byte	81
+	.word	.L153-.L23,.L154-.L23
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L155-.L23,.L98-.L23
+	.half	1
+	.byte	95
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L273:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_FftF32_generateTwiddleFactor')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L273,.L21,.L67-.L21
+	.sdecl	'.debug_frame',debug,cluster('Ifx_FftF32_reverseBits')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L273,.L23,.L98-.L23
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Ifx_FftF32_radix2DecimationInTime')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L273,.L25,.L103-.L25
+	.byte	8,19,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_FftF32_radix2')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L273,.L27,.L75-.L27
+	.sdecl	'.debug_frame',debug,cluster('Ifx_FftF32_radix2I')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L273,.L31,.L85-.L31
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L274:
+	.word	52
+	.word	-1
+	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
+	.byte	8,37,8,38,8,39,0
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_6')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L274,.L29,.L65-.L29
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+
+	; Module end

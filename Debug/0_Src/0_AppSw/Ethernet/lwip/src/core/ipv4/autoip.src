@@ -1,0 +1,669 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\.autoip.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Rtl8211f -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\autoip.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\autoip.src ..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\autoip.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\autoip.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	736
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\autoip.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	173
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	180
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	222
+	.byte	7
+	.word	222
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	238
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	243
+	.byte	9
+	.byte	'value',0
+	.word	222
+	.byte	9
+	.byte	'compare',0
+	.word	222
+	.byte	0,2
+	.byte	'short int',0,2,5,10
+	.byte	'__wchar_t',0,1,1,1
+	.word	300
+	.byte	10
+	.byte	'__size_t',0,1,1,1
+	.word	222
+	.byte	10
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	173
+	.byte	11,1,7
+	.word	368
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	370
+	.byte	10
+	.byte	'__intptr_t',0,1,1,1
+	.word	173
+	.byte	10
+	.byte	'__uintptr_t',0,1,1,1
+	.word	222
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,108,29
+	.word	432
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,112,29
+	.word	463
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,116,29
+	.word	500
+	.byte	2
+	.byte	'char',0,1,6,10
+	.byte	'sint8',0,2,125,29
+	.word	536
+	.byte	10
+	.byte	'sint16',0,2,129,1,29
+	.word	300
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'sint32',0,2,134,1,29
+	.word	574
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'sint64',0,2,141,1,29
+	.word	602
+	.byte	2
+	.byte	'float',0,4,4,10
+	.byte	'float32',0,2,170,1,29
+	.word	635
+	.byte	12
+	.byte	'void',0,7
+	.word	661
+	.byte	10
+	.byte	'pvoid',0,3,54,28
+	.word	667
+	.byte	10
+	.byte	'Ifx_TickTime',0,3,76,28
+	.word	602
+	.byte	10
+	.byte	'u32_t',0,4,87,16
+	.word	500
+	.byte	10
+	.byte	'intmax_t',0,5,198,2,41
+	.word	602
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,59,0
+	.byte	3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\autoip.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'cc.h',0,2,0,0
+	.byte	'stdint.h',0,3,0,0,0
+.L9:
+.L7:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	     1  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	     2   * @file
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	     3   * AutoIP Automatic LinkLocal IP Configuration
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	     4   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	     5   * This is a AutoIP implementation for the lwIP TCP/IP stack. It aims to conform
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	     6   * with RFC 3927.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	     7   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	     8   * @defgroup autoip AUTOIP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	     9   * @ingroup ip4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    10   * AUTOIP related functions
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    11   * USAGE:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    12   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    13   * define @ref LWIP_AUTOIP 1 in your lwipopts.h
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    14   * Options:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    15   * AUTOIP_TMR_INTERVAL msecs,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    16   *   I recommend a value of 100. The value must divide 1000 with a remainder almost 0.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    17   *   Possible values are 1000, 500, 333, 250, 200, 166, 142, 125, 111, 100 ....
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    18   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    19   * Without DHCP:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    20   * - Call autoip_start() after netif_add().
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    21   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    22   * With DHCP:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    23   * - define @ref LWIP_DHCP_AUTOIP_COOP 1 in your lwipopts.h.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    24   * - Configure your DHCP Client.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    25   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    26   * @see netifapi_autoip
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    27   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    28  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    29  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    30   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    31   * Copyright (c) 2007 Dominik Spies <kontakt@dspies.de>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    32   * All rights reserved.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    33   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    34   * Redistribution and use in source and binary forms, with or without modification,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    35   * are permitted provided that the following conditions are met:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    36   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    37   * 1. Redistributions of source code must retain the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    38   *    this list of conditions and the following disclaimer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    39   * 2. Redistributions in binary form must reproduce the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    40   *    this list of conditions and the following disclaimer in the documentation
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    41   *    and/or other materials provided with the distribution.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    42   * 3. The name of the author may not be used to endorse or promote products
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    43   *    derived from this software without specific prior written permission.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    44   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    45   * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    46   * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    47   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    48   * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    49   * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    50   * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    51   * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    52   * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    53   * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    54   * OF SUCH DAMAGE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    55   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    56   * Author: Dominik Spies <kontakt@dspies.de>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    57   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    58  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    59  #include "lwip/opt.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    60  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    61  #if LWIP_IPV4 && LWIP_AUTOIP /* don't build if not configured for use in lwipopts.h */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    62  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    63  #include "lwip/mem.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    64  /* #include "lwip/udp.h" */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    65  #include "lwip/ip_addr.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    66  #include "lwip/netif.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    67  #include "lwip/autoip.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    68  #include "lwip/etharp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    69  #include "lwip/prot/autoip.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    70  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    71  #include <string.h>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    72  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    73  /** Pseudo random macro based on netif informations.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    74   * You could use "rand()" from the C Library if you define LWIP_AUTOIP_RAND in lwipopts.h */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    75  #ifndef LWIP_AUTOIP_RAND
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    76  #define LWIP_AUTOIP_RAND(netif) ( (((u32_t)((netif->hwaddr[5]) & 0xff) << 24) | \ 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    77                                     ((u32_t)((netif->hwaddr[3]) & 0xff) << 16) | \ 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    78                                     ((u32_t)((netif->hwaddr[2]) & 0xff) << 8) | \ 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    79                                     ((u32_t)((netif->hwaddr[4]) & 0xff))) + \ 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    80                                     (netif_autoip_data(netif)? netif_autoip_data(netif)->tried_llipaddr : 0))
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    81  #endif /* LWIP_AUTOIP_RAND */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    82  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    83  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    84   * Macro that generates the initial IP address to be tried by AUTOIP.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    85   * If you want to override this, define it to something else in lwipopts.h.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    86   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    87  #ifndef LWIP_AUTOIP_CREATE_SEED_ADDR
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    88  #define LWIP_AUTOIP_CREATE_SEED_ADDR(netif) \ 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    89    lwip_htonl(AUTOIP_RANGE_START + ((u32_t)(((u8_t)(netif->hwaddr[4])) | \ 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    90                   ((u32_t)((u8_t)(netif->hwaddr[5]))) << 8)))
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    91  #endif /* LWIP_AUTOIP_CREATE_SEED_ADDR */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    92  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    93  /* static functions */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    94  static err_t autoip_arp_announce(struct netif *netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    95  static void autoip_start_probing(struct netif *netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    96  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    97  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    98   * @ingroup autoip
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	    99   * Set a statically allocated struct autoip to work with.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   100   * Using this prevents autoip_start to allocate it using mem_malloc.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   101   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   102   * @param netif the netif for which to set the struct autoip
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   103   * @param autoip (uninitialised) autoip struct allocated by the application
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   104   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   105  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   106  autoip_set_struct(struct netif *netif, struct autoip *autoip)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   107  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   108    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   109    LWIP_ASSERT("netif != NULL", netif != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   110    LWIP_ASSERT("autoip != NULL", autoip != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   111    LWIP_ASSERT("netif already has a struct autoip set",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   112                netif_autoip_data(netif) == NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   113  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   114    /* clear data structure */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   115    memset(autoip, 0, sizeof(struct autoip));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   116    /* autoip->state = AUTOIP_STATE_OFF; */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   117    netif_set_client_data(netif, LWIP_NETIF_CLIENT_DATA_INDEX_AUTOIP, autoip);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   118  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   119  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   120  /** Restart AutoIP client and check the next address (conflict detected)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   121   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   122   * @param netif The netif under AutoIP control
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   123   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   124  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   125  autoip_restart(struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   126  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   127    struct autoip *autoip = netif_autoip_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   128    autoip->tried_llipaddr++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   129    autoip_start(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   130  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   131  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   132  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   133   * Handle a IP address conflict after an ARP conflict detection
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   134   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   135  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   136  autoip_handle_arp_conflict(struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   137  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   138    struct autoip *autoip = netif_autoip_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   139  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   140    /* RFC3927, 2.5 "Conflict Detection and Defense" allows two options where
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   141       a) means retreat on the first conflict and
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   142       b) allows to keep an already configured address when having only one
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   143          conflict in 10 seconds
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   144       We use option b) since it helps to improve the chance that one of the two
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   145       conflicting hosts may be able to retain its address. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   146  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   147    if (autoip->lastconflict > 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   148      /* retreat, there was a conflicting ARP in the last DEFEND_INTERVAL seconds */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   149      LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   150                  ("autoip_handle_arp_conflict(): we are defending, but in DEFEND_INTERVAL, retreating\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   151  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   152      /* Active TCP sessions are aborted when removing the ip addresss */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   153      autoip_restart(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   154    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   155      LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   156                  ("autoip_handle_arp_conflict(): we are defend, send ARP Announce\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   157      autoip_arp_announce(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   158      autoip->lastconflict = DEFEND_INTERVAL * AUTOIP_TICKS_PER_SECOND;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   159    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   160  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   161  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   162  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   163   * Create an IP-Address out of range 169.254.1.0 to 169.254.254.255
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   164   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   165   * @param netif network interface on which create the IP-Address
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   166   * @param ipaddr ip address to initialize
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   167   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   168  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   169  autoip_create_addr(struct netif *netif, ip4_addr_t *ipaddr)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   170  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   171    struct autoip *autoip = netif_autoip_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   172  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   173    /* Here we create an IP-Address out of range 169.254.1.0 to 169.254.254.255
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   174     * compliant to RFC 3927 Section 2.1
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   175     * We have 254 * 256 possibilities */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   176  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   177    u32_t addr = lwip_ntohl(LWIP_AUTOIP_CREATE_SEED_ADDR(netif));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   178    addr += autoip->tried_llipaddr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   179    addr = AUTOIP_NET | (addr & 0xffff);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   180    /* Now, 169.254.0.0 <= addr <= 169.254.255.255 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   181  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   182    if (addr < AUTOIP_RANGE_START) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   183      addr += AUTOIP_RANGE_END - AUTOIP_RANGE_START + 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   184    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   185    if (addr > AUTOIP_RANGE_END) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   186      addr -= AUTOIP_RANGE_END - AUTOIP_RANGE_START + 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   187    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   188    LWIP_ASSERT("AUTOIP address not in range", (addr >= AUTOIP_RANGE_START) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   189                (addr <= AUTOIP_RANGE_END));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   190    ip4_addr_set_u32(ipaddr, lwip_htonl(addr));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   191  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   192    LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   193                ("autoip_create_addr(): tried_llipaddr=%"U16_F", %"U16_F".%"U16_F".%"U16_F".%"U16_F"\n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   194                 (u16_t)(autoip->tried_llipaddr), ip4_addr1_16(ipaddr), ip4_addr2_16(ipaddr),
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   195                 ip4_addr3_16(ipaddr), ip4_addr4_16(ipaddr)));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   196  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   197  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   198  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   199   * Sends an ARP probe from a network interface
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   200   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   201   * @param netif network interface used to send the probe
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   202   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   203  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   204  autoip_arp_probe(struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   205  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   206    struct autoip *autoip = netif_autoip_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   207    /* this works because netif->ip_addr is ANY */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   208    return etharp_request(netif, &autoip->llipaddr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   209  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   210  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   211  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   212   * Sends an ARP announce from a network interface
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   213   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   214   * @param netif network interface used to send the announce
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   215   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   216  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   217  autoip_arp_announce(struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   218  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   219    return etharp_gratuitous(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   220  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   221  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   222  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   223   * Configure interface for use with current LL IP-Address
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   224   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   225   * @param netif network interface to configure with current LL IP-Address
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   226   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   227  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   228  autoip_bind(struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   229  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   230    struct autoip *autoip = netif_autoip_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   231    ip4_addr_t sn_mask, gw_addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   232  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   233    LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   234                ("autoip_bind(netif=%p) %c%c%"U16_F" %"U16_F".%"U16_F".%"U16_F".%"U16_F"\n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   235                 (void *)netif, netif->name[0], netif->name[1], (u16_t)netif->num,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   236                 ip4_addr1_16(&autoip->llipaddr), ip4_addr2_16(&autoip->llipaddr),
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   237                 ip4_addr3_16(&autoip->llipaddr), ip4_addr4_16(&autoip->llipaddr)));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   238  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   239    IP4_ADDR(&sn_mask, 255, 255, 0, 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   240    IP4_ADDR(&gw_addr, 0, 0, 0, 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   241  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   242    netif_set_addr(netif, &autoip->llipaddr, &sn_mask, &gw_addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   243    /* interface is used by routing now that an address is set */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   244  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   245    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   246  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   247  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   248  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   249   * @ingroup autoip
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   250   * Start AutoIP client
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   251   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   252   * @param netif network interface on which start the AutoIP client
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   253   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   254  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   255  autoip_start(struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   256  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   257    struct autoip *autoip = netif_autoip_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   258    err_t result = ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   259  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   260    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   261    LWIP_ERROR("netif is not up, old style port?", netif_is_up(netif), return ERR_ARG;);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   262  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   263    /* Set IP-Address, Netmask and Gateway to 0 to make sure that
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   264     * ARP Packets are formed correctly
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   265     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   266    netif_set_addr(netif, IP4_ADDR_ANY4, IP4_ADDR_ANY4, IP4_ADDR_ANY4);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   267  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   268    LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   269                ("autoip_start(netif=%p) %c%c%"U16_F"\n", (void *)netif, netif->name[0],
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   270                 netif->name[1], (u16_t)netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   271    if (autoip == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   272      /* no AutoIP client attached yet? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   273      LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   274                  ("autoip_start(): starting new AUTOIP client\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   275      autoip = (struct autoip *)mem_calloc(1, sizeof(struct autoip));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   276      if (autoip == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   277        LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   278                    ("autoip_start(): could not allocate autoip\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   279        return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   280      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   281      /* store this AutoIP client in the netif */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   282      netif_set_client_data(netif, LWIP_NETIF_CLIENT_DATA_INDEX_AUTOIP, autoip);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   283      LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE, ("autoip_start(): allocated autoip"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   284    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   285      autoip->state = AUTOIP_STATE_OFF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   286      autoip->ttw = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   287      autoip->sent_num = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   288      ip4_addr_set_zero(&autoip->llipaddr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   289      autoip->lastconflict = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   290    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   291  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   292    autoip_create_addr(netif, &(autoip->llipaddr));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   293    autoip_start_probing(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   294  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   295    return result;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   296  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   297  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   298  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   299  autoip_start_probing(struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   300  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   301    struct autoip *autoip = netif_autoip_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   302  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   303    autoip->state = AUTOIP_STATE_PROBING;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   304    autoip->sent_num = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   305    LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   306                ("autoip_start_probing(): changing state to PROBING: %"U16_F".%"U16_F".%"U16_F".%"U16_F"\n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   307                 ip4_addr1_16(&autoip->llipaddr), ip4_addr2_16(&autoip->llipaddr),
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   308                 ip4_addr3_16(&autoip->llipaddr), ip4_addr4_16(&autoip->llipaddr)));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   309  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   310    /* time to wait to first probe, this is randomly
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   311     * chosen out of 0 to PROBE_WAIT seconds.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   312     * compliant to RFC 3927 Section 2.2.1
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   313     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   314    autoip->ttw = (u16_t)(LWIP_AUTOIP_RAND(netif) % (PROBE_WAIT * AUTOIP_TICKS_PER_SECOND));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   315  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   316    /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   317     * if we tried more then MAX_CONFLICTS we must limit our rate for
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   318     * acquiring and probing address
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   319     * compliant to RFC 3927 Section 2.2.1
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   320     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   321    if (autoip->tried_llipaddr > MAX_CONFLICTS) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   322      autoip->ttw = RATE_LIMIT_INTERVAL * AUTOIP_TICKS_PER_SECOND;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   323    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   324  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   325  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   326  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   327   * Handle a possible change in the network configuration.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   328   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   329   * If there is an AutoIP address configured, take the interface down
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   330   * and begin probing with the same address.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   331   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   332  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   333  autoip_network_changed(struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   334  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   335    struct autoip *autoip = netif_autoip_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   336  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   337    if (autoip && (autoip->state != AUTOIP_STATE_OFF)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   338      autoip_start_probing(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   339    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   340  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   341  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   342  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   343   * @ingroup autoip
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   344   * Stop AutoIP client
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   345   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   346   * @param netif network interface on which stop the AutoIP client
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   347   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   348  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   349  autoip_stop(struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   350  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   351    struct autoip *autoip = netif_autoip_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   352  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   353    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   354    if (autoip != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   355      autoip->state = AUTOIP_STATE_OFF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   356      if (ip4_addr_islinklocal(netif_ip4_addr(netif))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   357        netif_set_addr(netif, IP4_ADDR_ANY4, IP4_ADDR_ANY4, IP4_ADDR_ANY4);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   358      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   359    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   360    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   361  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   362  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   363  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   364   * Has to be called in loop every AUTOIP_TMR_INTERVAL milliseconds
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   365   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   366  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   367  autoip_tmr(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   368  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   369    struct netif *netif;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   370    /* loop through netif's */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   371    NETIF_FOREACH(netif) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   372      struct autoip *autoip = netif_autoip_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   373      /* only act on AutoIP configured interfaces */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   374      if (autoip != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   375        if (autoip->lastconflict > 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   376          autoip->lastconflict--;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   377        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   378  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   379        LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   380                    ("autoip_tmr() AutoIP-State: %"U16_F", ttw=%"U16_F"\n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   381                     (u16_t)(autoip->state), autoip->ttw));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   382  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   383        if (autoip->ttw > 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   384          autoip->ttw--;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   385        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   386  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   387        switch (autoip->state) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   388          case AUTOIP_STATE_PROBING:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   389            if (autoip->ttw == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   390              if (autoip->sent_num >= PROBE_NUM) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   391                /* Switch to ANNOUNCING: now we can bind to an IP address and use it */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   392                autoip->state = AUTOIP_STATE_ANNOUNCING;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   393                autoip_bind(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   394                /* autoip_bind() calls netif_set_addr(): this triggers a gratuitous ARP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   395                   which counts as an announcement */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   396                autoip->sent_num = 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   397                autoip->ttw = ANNOUNCE_WAIT * AUTOIP_TICKS_PER_SECOND;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   398                LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   399                            ("autoip_tmr(): changing state to ANNOUNCING: %"U16_F".%"U16_F".%"U16_F".%"U16_F"\n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   400                             ip4_addr1_16(&autoip->llipaddr), ip4_addr2_16(&autoip->llipaddr),
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   401                             ip4_addr3_16(&autoip->llipaddr), ip4_addr4_16(&autoip->llipaddr)));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   402              } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   403                autoip_arp_probe(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   404                LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE, ("autoip_tmr() PROBING Sent Probe\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   405                autoip->sent_num++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   406                if (autoip->sent_num == PROBE_NUM) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   407                  /* calculate time to wait to for announce */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   408                  autoip->ttw = ANNOUNCE_WAIT * AUTOIP_TICKS_PER_SECOND;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   409                } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   410                  /* calculate time to wait to next probe */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   411                  autoip->ttw = (u16_t)((LWIP_AUTOIP_RAND(netif) %
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   412                                         ((PROBE_MAX - PROBE_MIN) * AUTOIP_TICKS_PER_SECOND) ) +
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   413                                        PROBE_MIN * AUTOIP_TICKS_PER_SECOND);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   414                }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   415              }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   416            }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   417            break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   418  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   419          case AUTOIP_STATE_ANNOUNCING:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   420            if (autoip->ttw == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   421              autoip_arp_announce(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   422              LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE, ("autoip_tmr() ANNOUNCING Sent Announce\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   423              autoip->ttw = ANNOUNCE_INTERVAL * AUTOIP_TICKS_PER_SECOND;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   424              autoip->sent_num++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   425  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   426              if (autoip->sent_num >= ANNOUNCE_NUM) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   427                autoip->state = AUTOIP_STATE_BOUND;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   428                autoip->sent_num = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   429                autoip->ttw = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   430                LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   431                            ("autoip_tmr(): changing state to BOUND: %"U16_F".%"U16_F".%"U16_F".%"U16_F"\n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   432                             ip4_addr1_16(&autoip->llipaddr), ip4_addr2_16(&autoip->llipaddr),
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   433                             ip4_addr3_16(&autoip->llipaddr), ip4_addr4_16(&autoip->llipaddr)));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   434              }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   435            }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   436            break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   437  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   438          default:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   439            /* nothing to do in other states */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   440            break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   441        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   442      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   443    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   444  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   445  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   446  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   447   * Handles every incoming ARP Packet, called by etharp_input().
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   448   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   449   * @param netif network interface to use for autoip processing
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   450   * @param hdr Incoming ARP packet
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   451   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   452  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   453  autoip_arp_reply(struct netif *netif, struct etharp_hdr *hdr)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   454  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   455    struct autoip *autoip = netif_autoip_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   456  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   457    LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE, ("autoip_arp_reply()\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   458    if ((autoip != NULL) && (autoip->state != AUTOIP_STATE_OFF)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   459      /* when ip.src == llipaddr && hw.src != netif->hwaddr
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   460       *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   461       * when probing  ip.dst == llipaddr && hw.src != netif->hwaddr
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   462       * we have a conflict and must solve it
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   463       */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   464      ip4_addr_t sipaddr, dipaddr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   465      struct eth_addr netifaddr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   466      SMEMCPY(netifaddr.addr, netif->hwaddr, ETH_HWADDR_LEN);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   467  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   468      /* Copy struct ip4_addr_wordaligned to aligned ip4_addr, to support compilers without
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   469       * structure packing (not using structure copy which breaks strict-aliasing rules).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   470       */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   471      IPADDR_WORDALIGNED_COPY_TO_IP4_ADDR_T(&sipaddr, &hdr->sipaddr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   472      IPADDR_WORDALIGNED_COPY_TO_IP4_ADDR_T(&dipaddr, &hdr->dipaddr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   473  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   474      if (autoip->state == AUTOIP_STATE_PROBING) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   475        /* RFC 3927 Section 2.2.1:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   476         * from beginning to after ANNOUNCE_WAIT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   477         * seconds we have a conflict if
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   478         * ip.src == llipaddr OR
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   479         * ip.dst == llipaddr && hw.src != own hwaddr
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   480         */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   481        if ((ip4_addr_cmp(&sipaddr, &autoip->llipaddr)) ||
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   482            (ip4_addr_isany_val(sipaddr) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   483             ip4_addr_cmp(&dipaddr, &autoip->llipaddr) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   484             !eth_addr_cmp(&netifaddr, &hdr->shwaddr))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   485          LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE | LWIP_DBG_LEVEL_WARNING,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   486                      ("autoip_arp_reply(): Probe Conflict detected\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   487          autoip_restart(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   488        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   489      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   490        /* RFC 3927 Section 2.5:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   491         * in any state we have a conflict if
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   492         * ip.src == llipaddr && hw.src != own hwaddr
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   493         */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   494        if (ip4_addr_cmp(&sipaddr, &autoip->llipaddr) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   495            !eth_addr_cmp(&netifaddr, &hdr->shwaddr)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   496          LWIP_DEBUGF(AUTOIP_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE | LWIP_DBG_LEVEL_WARNING,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   497                      ("autoip_arp_reply(): Conflicting ARP-Packet detected\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   498          autoip_handle_arp_conflict(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   499        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   500      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   501    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   502  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   503  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   504  /** check if AutoIP supplied netif->ip_addr
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   505   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   506   * @param netif the netif to check
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   507   * @return 1 if AutoIP supplied netif->ip_addr (state BOUND or ANNOUNCING),
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   508   *         0 otherwise
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   509   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   510  u8_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   511  autoip_supplied_address(const struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   512  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   513    if ((netif != NULL) && (netif_autoip_data(netif) != NULL)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   514      struct autoip *autoip = netif_autoip_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   515      return (autoip->state == AUTOIP_STATE_BOUND) || (autoip->state == AUTOIP_STATE_ANNOUNCING);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   516    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   517    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   518  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   519  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   520  u8_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   521  autoip_accept_packet(struct netif *netif, const ip4_addr_t *addr)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   522  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   523    struct autoip *autoip = netif_autoip_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   524    return (autoip != NULL) && ip4_addr_cmp(addr, &(autoip->llipaddr));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   525  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   526  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\autoip.c	   527  #endif /* LWIP_IPV4 && LWIP_AUTOIP */
+
+	; Module end

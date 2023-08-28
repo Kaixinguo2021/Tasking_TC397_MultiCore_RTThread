@@ -1,0 +1,800 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api\\.tcpip.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Rtl8211f -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api\\tcpip.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api\\tcpip.src ..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api\\tcpip.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api\\tcpip.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	729
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api\\tcpip.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	166
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	173
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	215
+	.byte	7
+	.word	215
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	231
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	236
+	.byte	9
+	.byte	'value',0
+	.word	215
+	.byte	9
+	.byte	'compare',0
+	.word	215
+	.byte	0,2
+	.byte	'short int',0,2,5,10
+	.byte	'__wchar_t',0,1,1,1
+	.word	293
+	.byte	10
+	.byte	'__size_t',0,1,1,1
+	.word	215
+	.byte	10
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	166
+	.byte	11,1,7
+	.word	361
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	363
+	.byte	10
+	.byte	'__intptr_t',0,1,1,1
+	.word	166
+	.byte	10
+	.byte	'__uintptr_t',0,1,1,1
+	.word	215
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,108,29
+	.word	425
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,112,29
+	.word	456
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,116,29
+	.word	493
+	.byte	2
+	.byte	'char',0,1,6,10
+	.byte	'sint8',0,2,125,29
+	.word	529
+	.byte	10
+	.byte	'sint16',0,2,129,1,29
+	.word	293
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'sint32',0,2,134,1,29
+	.word	567
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'sint64',0,2,141,1,29
+	.word	595
+	.byte	2
+	.byte	'float',0,4,4,10
+	.byte	'float32',0,2,170,1,29
+	.word	628
+	.byte	12
+	.byte	'void',0,7
+	.word	654
+	.byte	10
+	.byte	'pvoid',0,3,54,28
+	.word	660
+	.byte	10
+	.byte	'Ifx_TickTime',0,3,76,28
+	.word	595
+	.byte	10
+	.byte	'u32_t',0,4,87,16
+	.word	493
+	.byte	10
+	.byte	'intmax_t',0,5,198,2,41
+	.word	595
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,59,0
+	.byte	3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api\\tcpip.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'cc.h',0,2,0,0
+	.byte	'stdint.h',0,3,0,0,0
+.L9:
+.L7:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	     1  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	     2   * @file
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	     3   * Sequential API Main thread module
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	     4   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	     5   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	     6  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	     7  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	     8   * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	     9   * All rights reserved.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    10   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    11   * Redistribution and use in source and binary forms, with or without modification,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    12   * are permitted provided that the following conditions are met:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    13   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    14   * 1. Redistributions of source code must retain the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    15   *    this list of conditions and the following disclaimer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    16   * 2. Redistributions in binary form must reproduce the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    17   *    this list of conditions and the following disclaimer in the documentation
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    18   *    and/or other materials provided with the distribution.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    19   * 3. The name of the author may not be used to endorse or promote products
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    20   *    derived from this software without specific prior written permission.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    21   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    22   * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    23   * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    24   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    25   * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    26   * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    27   * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    28   * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    29   * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    30   * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    31   * OF SUCH DAMAGE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    32   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    33   * This file is part of the lwIP TCP/IP stack.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    34   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    35   * Author: Adam Dunkels <adam@sics.se>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    36   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    37   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    38  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    39  #include "lwip/opt.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    40  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    41  #if !NO_SYS /* don't build if not configured for use in lwipopts.h */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    42  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    43  #include "lwip/priv/tcpip_priv.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    44  #include "lwip/sys.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    45  #include "lwip/memp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    46  #include "lwip/mem.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    47  #include "lwip/init.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    48  #include "lwip/ip.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    49  #include "lwip/pbuf.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    50  #include "lwip/etharp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    51  #include "netif/ethernet.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    52  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    53  #define TCPIP_MSG_VAR_REF(name)     API_VAR_REF(name)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    54  #define TCPIP_MSG_VAR_DECLARE(name) API_VAR_DECLARE(struct tcpip_msg, name)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    55  #define TCPIP_MSG_VAR_ALLOC(name)   API_VAR_ALLOC(struct tcpip_msg, MEMP_TCPIP_MSG_API, name, ERR_MEM)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    56  #define TCPIP_MSG_VAR_FREE(name)    API_VAR_FREE(MEMP_TCPIP_MSG_API, name)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    57  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    58  /* global variables */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    59  static tcpip_init_done_fn tcpip_init_done;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    60  static void *tcpip_init_done_arg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    61  static sys_mbox_t tcpip_mbox;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    62  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    63  #if LWIP_TCPIP_CORE_LOCKING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    64  /** The global semaphore to lock the stack. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    65  sys_mutex_t lock_tcpip_core;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    66  #endif /* LWIP_TCPIP_CORE_LOCKING */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    67  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    68  static void tcpip_thread_handle_msg(struct tcpip_msg *msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    69  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    70  #if !LWIP_TIMERS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    71  /* wait for a message with timers disabled (e.g. pass a timer-check trigger into tcpip_thread) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    72  #define TCPIP_MBOX_FETCH(mbox, msg) sys_mbox_fetch(mbox, msg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    73  #else /* !LWIP_TIMERS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    74  /* wait for a message, timeouts are processed while waiting */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    75  #define TCPIP_MBOX_FETCH(mbox, msg) tcpip_timeouts_mbox_fetch(mbox, msg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    76  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    77   * Wait (forever) for a message to arrive in an mbox.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    78   * While waiting, timeouts are processed.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    79   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    80   * @param mbox the mbox to fetch the message from
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    81   * @param msg the place to store the message
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    82   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    83  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    84  tcpip_timeouts_mbox_fetch(sys_mbox_t *mbox, void **msg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    85  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    86    u32_t sleeptime, res;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    87  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    88  again:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    89    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    90  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    91    sleeptime = sys_timeouts_sleeptime();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    92    if (sleeptime == SYS_TIMEOUTS_SLEEPTIME_INFINITE) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    93      UNLOCK_TCPIP_CORE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    94      sys_arch_mbox_fetch(mbox, msg, 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    95      LOCK_TCPIP_CORE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    96      return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    97    } else if (sleeptime == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    98      sys_check_timeouts();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	    99      /* We try again to fetch a message from the mbox. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   100      goto again;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   101    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   102  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   103    UNLOCK_TCPIP_CORE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   104    res = sys_arch_mbox_fetch(mbox, msg, sleeptime);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   105    LOCK_TCPIP_CORE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   106    if (res == SYS_ARCH_TIMEOUT) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   107      /* If a SYS_ARCH_TIMEOUT value is returned, a timeout occurred
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   108         before a message could be fetched. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   109      sys_check_timeouts();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   110      /* We try again to fetch a message from the mbox. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   111      goto again;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   112    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   113  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   114  #endif /* !LWIP_TIMERS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   115  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   116  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   117   * The main lwIP thread. This thread has exclusive access to lwIP core functions
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   118   * (unless access to them is not locked). Other threads communicate with this
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   119   * thread using message boxes.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   120   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   121   * It also starts all the timers to make sure they are running in the right
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   122   * thread context.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   123   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   124   * @param arg unused argument
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   125   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   126  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   127  tcpip_thread(void *arg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   128  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   129    struct tcpip_msg *msg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   130    LWIP_UNUSED_ARG(arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   131  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   132    LWIP_MARK_TCPIP_THREAD();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   133  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   134    LOCK_TCPIP_CORE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   135    if (tcpip_init_done != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   136      tcpip_init_done(tcpip_init_done_arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   137    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   138  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   139    while (1) {                          /* MAIN Loop */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   140      LWIP_TCPIP_THREAD_ALIVE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   141      /* wait for a message, timeouts are processed while waiting */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   142      TCPIP_MBOX_FETCH(&tcpip_mbox, (void **)&msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   143      if (msg == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   144        LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: invalid message: NULL\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   145        LWIP_ASSERT("tcpip_thread: invalid message", 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   146        continue;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   147      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   148      tcpip_thread_handle_msg(msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   149    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   150  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   151  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   152  /* Handle a single tcpip_msg
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   153   * This is in its own function for access by tests only.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   154   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   155  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   156  tcpip_thread_handle_msg(struct tcpip_msg *msg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   157  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   158    switch (msg->type) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   159  #if !LWIP_TCPIP_CORE_LOCKING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   160      case TCPIP_MSG_API:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   161        LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: API message %p\n", (void *)msg));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   162        msg->msg.api_msg.function(msg->msg.api_msg.msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   163        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   164      case TCPIP_MSG_API_CALL:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   165        LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: API CALL message %p\n", (void *)msg));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   166        msg->msg.api_call.arg->err = msg->msg.api_call.function(msg->msg.api_call.arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   167        sys_sem_signal(msg->msg.api_call.sem);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   168        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   169  #endif /* !LWIP_TCPIP_CORE_LOCKING */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   170  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   171  #if !LWIP_TCPIP_CORE_LOCKING_INPUT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   172      case TCPIP_MSG_INPKT:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   173        LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: PACKET %p\n", (void *)msg));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   174        if (msg->msg.inp.input_fn(msg->msg.inp.p, msg->msg.inp.netif) != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   175          pbuf_free(msg->msg.inp.p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   176        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   177        memp_free(MEMP_TCPIP_MSG_INPKT, msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   178        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   179  #endif /* !LWIP_TCPIP_CORE_LOCKING_INPUT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   180  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   181  #if LWIP_TCPIP_TIMEOUT && LWIP_TIMERS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   182      case TCPIP_MSG_TIMEOUT:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   183        LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: TIMEOUT %p\n", (void *)msg));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   184        sys_timeout(msg->msg.tmo.msecs, msg->msg.tmo.h, msg->msg.tmo.arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   185        memp_free(MEMP_TCPIP_MSG_API, msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   186        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   187      case TCPIP_MSG_UNTIMEOUT:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   188        LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: UNTIMEOUT %p\n", (void *)msg));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   189        sys_untimeout(msg->msg.tmo.h, msg->msg.tmo.arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   190        memp_free(MEMP_TCPIP_MSG_API, msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   191        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   192  #endif /* LWIP_TCPIP_TIMEOUT && LWIP_TIMERS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   193  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   194      case TCPIP_MSG_CALLBACK:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   195        LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: CALLBACK %p\n", (void *)msg));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   196        msg->msg.cb.function(msg->msg.cb.ctx);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   197        memp_free(MEMP_TCPIP_MSG_API, msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   198        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   199  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   200      case TCPIP_MSG_CALLBACK_STATIC:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   201        LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: CALLBACK_STATIC %p\n", (void *)msg));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   202        msg->msg.cb.function(msg->msg.cb.ctx);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   203        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   204  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   205      default:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   206        LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: invalid message: %d\n", msg->type));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   207        LWIP_ASSERT("tcpip_thread: invalid message", 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   208        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   209    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   210  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   211  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   212  #ifdef TCPIP_THREAD_TEST
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   213  /** Work on queued items in single-threaded test mode */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   214  int
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   215  tcpip_thread_poll_one(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   216  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   217    int ret = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   218    struct tcpip_msg *msg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   219  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   220    if (sys_arch_mbox_tryfetch(&tcpip_mbox, (void **)&msg) != SYS_ARCH_TIMEOUT) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   221      LOCK_TCPIP_CORE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   222      if (msg != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   223        tcpip_thread_handle_msg(msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   224        ret = 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   225      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   226      UNLOCK_TCPIP_CORE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   227    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   228    return ret;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   229  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   230  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   231  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   232  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   233   * Pass a received packet to tcpip_thread for input processing
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   234   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   235   * @param p the received packet
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   236   * @param inp the network interface on which the packet was received
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   237   * @param input_fn input function to call
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   238   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   239  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   240  tcpip_inpkt(struct pbuf *p, struct netif *inp, netif_input_fn input_fn)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   241  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   242  #if LWIP_TCPIP_CORE_LOCKING_INPUT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   243    err_t ret;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   244    LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_inpkt: PACKET %p/%p\n", (void *)p, (void *)inp));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   245    LOCK_TCPIP_CORE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   246    ret = input_fn(p, inp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   247    UNLOCK_TCPIP_CORE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   248    return ret;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   249  #else /* LWIP_TCPIP_CORE_LOCKING_INPUT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   250    struct tcpip_msg *msg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   251  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   252    LWIP_ASSERT("Invalid mbox", sys_mbox_valid_val(tcpip_mbox));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   253  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   254    msg = (struct tcpip_msg *)memp_malloc(MEMP_TCPIP_MSG_INPKT);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   255    if (msg == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   256      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   257    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   258  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   259    msg->type = TCPIP_MSG_INPKT;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   260    msg->msg.inp.p = p;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   261    msg->msg.inp.netif = inp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   262    msg->msg.inp.input_fn = input_fn;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   263    if (sys_mbox_trypost(&tcpip_mbox, msg) != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   264      memp_free(MEMP_TCPIP_MSG_INPKT, msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   265      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   266    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   267    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   268  #endif /* LWIP_TCPIP_CORE_LOCKING_INPUT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   269  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   270  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   271  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   272   * @ingroup lwip_os
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   273   * Pass a received packet to tcpip_thread for input processing with
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   274   * ethernet_input or ip_input. Don't call directly, pass to netif_add()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   275   * and call netif->input().
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   276   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   277   * @param p the received packet, p->payload pointing to the Ethernet header or
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   278   *          to an IP header (if inp doesn't have NETIF_FLAG_ETHARP or
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   279   *          NETIF_FLAG_ETHERNET flags)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   280   * @param inp the network interface on which the packet was received
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   281   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   282  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   283  tcpip_input(struct pbuf *p, struct netif *inp)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   284  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   285  #if LWIP_ETHERNET
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   286    if (inp->flags & (NETIF_FLAG_ETHARP | NETIF_FLAG_ETHERNET)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   287      return tcpip_inpkt(p, inp, ethernet_input);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   288    } else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   289  #endif /* LWIP_ETHERNET */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   290      return tcpip_inpkt(p, inp, ip_input);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   291  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   292  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   293  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   294   * @ingroup lwip_os
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   295   * Call a specific function in the thread context of
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   296   * tcpip_thread for easy access synchronization.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   297   * A function called in that way may access lwIP core code
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   298   * without fearing concurrent access.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   299   * Blocks until the request is posted.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   300   * Must not be called from interrupt context!
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   301   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   302   * @param function the function to call
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   303   * @param ctx parameter passed to f
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   304   * @return ERR_OK if the function was called, another err_t if not
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   305   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   306   * @see tcpip_try_callback
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   307   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   308  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   309  tcpip_callback(tcpip_callback_fn function, void *ctx)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   310  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   311    struct tcpip_msg *msg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   312  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   313    LWIP_ASSERT("Invalid mbox", sys_mbox_valid_val(tcpip_mbox));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   314  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   315    msg = (struct tcpip_msg *)memp_malloc(MEMP_TCPIP_MSG_API);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   316    if (msg == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   317      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   318    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   319  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   320    msg->type = TCPIP_MSG_CALLBACK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   321    msg->msg.cb.function = function;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   322    msg->msg.cb.ctx = ctx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   323  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   324    sys_mbox_post(&tcpip_mbox, msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   325    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   326  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   327  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   328  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   329   * @ingroup lwip_os
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   330   * Call a specific function in the thread context of
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   331   * tcpip_thread for easy access synchronization.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   332   * A function called in that way may access lwIP core code
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   333   * without fearing concurrent access.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   334   * Does NOT block when the request cannot be posted because the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   335   * tcpip_mbox is full, but returns ERR_MEM instead.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   336   * Can be called from interrupt context.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   337   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   338   * @param function the function to call
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   339   * @param ctx parameter passed to f
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   340   * @return ERR_OK if the function was called, another err_t if not
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   341   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   342   * @see tcpip_callback
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   343   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   344  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   345  tcpip_try_callback(tcpip_callback_fn function, void *ctx)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   346  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   347    struct tcpip_msg *msg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   348  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   349    LWIP_ASSERT("Invalid mbox", sys_mbox_valid_val(tcpip_mbox));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   350  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   351    msg = (struct tcpip_msg *)memp_malloc(MEMP_TCPIP_MSG_API);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   352    if (msg == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   353      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   354    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   355  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   356    msg->type = TCPIP_MSG_CALLBACK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   357    msg->msg.cb.function = function;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   358    msg->msg.cb.ctx = ctx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   359  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   360    if (sys_mbox_trypost(&tcpip_mbox, msg) != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   361      memp_free(MEMP_TCPIP_MSG_API, msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   362      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   363    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   364    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   365  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   366  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   367  #if LWIP_TCPIP_TIMEOUT && LWIP_TIMERS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   368  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   369   * call sys_timeout in tcpip_thread
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   370   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   371   * @param msecs time in milliseconds for timeout
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   372   * @param h function to be called on timeout
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   373   * @param arg argument to pass to timeout function h
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   374   * @return ERR_MEM on memory error, ERR_OK otherwise
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   375   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   376  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   377  tcpip_timeout(u32_t msecs, sys_timeout_handler h, void *arg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   378  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   379    struct tcpip_msg *msg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   380  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   381    LWIP_ASSERT("Invalid mbox", sys_mbox_valid_val(tcpip_mbox));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   382  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   383    msg = (struct tcpip_msg *)memp_malloc(MEMP_TCPIP_MSG_API);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   384    if (msg == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   385      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   386    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   387  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   388    msg->type = TCPIP_MSG_TIMEOUT;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   389    msg->msg.tmo.msecs = msecs;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   390    msg->msg.tmo.h = h;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   391    msg->msg.tmo.arg = arg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   392    sys_mbox_post(&tcpip_mbox, msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   393    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   394  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   395  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   396  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   397   * call sys_untimeout in tcpip_thread
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   398   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   399   * @param h function to be called on timeout
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   400   * @param arg argument to pass to timeout function h
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   401   * @return ERR_MEM on memory error, ERR_OK otherwise
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   402   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   403  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   404  tcpip_untimeout(sys_timeout_handler h, void *arg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   405  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   406    struct tcpip_msg *msg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   407  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   408    LWIP_ASSERT("Invalid mbox", sys_mbox_valid_val(tcpip_mbox));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   409  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   410    msg = (struct tcpip_msg *)memp_malloc(MEMP_TCPIP_MSG_API);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   411    if (msg == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   412      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   413    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   414  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   415    msg->type = TCPIP_MSG_UNTIMEOUT;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   416    msg->msg.tmo.h = h;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   417    msg->msg.tmo.arg = arg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   418    sys_mbox_post(&tcpip_mbox, msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   419    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   420  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   421  #endif /* LWIP_TCPIP_TIMEOUT && LWIP_TIMERS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   422  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   423  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   424  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   425   * Sends a message to TCPIP thread to call a function. Caller thread blocks on
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   426   * on a provided semaphore, which ist NOT automatically signalled by TCPIP thread,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   427   * this has to be done by the user.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   428   * It is recommended to use LWIP_TCPIP_CORE_LOCKING since this is the way
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   429   * with least runtime overhead.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   430   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   431   * @param fn function to be called from TCPIP thread
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   432   * @param apimsg argument to API function
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   433   * @param sem semaphore to wait on
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   434   * @return ERR_OK if the function was called, another err_t if not
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   435   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   436  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   437  tcpip_send_msg_wait_sem(tcpip_callback_fn fn, void *apimsg, sys_sem_t *sem)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   438  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   439  #if LWIP_TCPIP_CORE_LOCKING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   440    LWIP_UNUSED_ARG(sem);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   441    LOCK_TCPIP_CORE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   442    fn(apimsg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   443    UNLOCK_TCPIP_CORE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   444    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   445  #else /* LWIP_TCPIP_CORE_LOCKING */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   446    TCPIP_MSG_VAR_DECLARE(msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   447  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   448    LWIP_ASSERT("semaphore not initialized", sys_sem_valid(sem));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   449    LWIP_ASSERT("Invalid mbox", sys_mbox_valid_val(tcpip_mbox));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   450  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   451    TCPIP_MSG_VAR_ALLOC(msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   452    TCPIP_MSG_VAR_REF(msg).type = TCPIP_MSG_API;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   453    TCPIP_MSG_VAR_REF(msg).msg.api_msg.function = fn;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   454    TCPIP_MSG_VAR_REF(msg).msg.api_msg.msg = apimsg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   455    sys_mbox_post(&tcpip_mbox, &TCPIP_MSG_VAR_REF(msg));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   456    sys_arch_sem_wait(sem, 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   457    TCPIP_MSG_VAR_FREE(msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   458    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   459  #endif /* LWIP_TCPIP_CORE_LOCKING */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   460  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   461  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   462  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   463   * Synchronously calls function in TCPIP thread and waits for its completion.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   464   * It is recommended to use LWIP_TCPIP_CORE_LOCKING (preferred) or
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   465   * LWIP_NETCONN_SEM_PER_THREAD.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   466   * If not, a semaphore is created and destroyed on every call which is usually
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   467   * an expensive/slow operation.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   468   * @param fn Function to call
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   469   * @param call Call parameters
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   470   * @return Return value from tcpip_api_call_fn
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   471   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   472  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   473  tcpip_api_call(tcpip_api_call_fn fn, struct tcpip_api_call_data *call)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   474  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   475  #if LWIP_TCPIP_CORE_LOCKING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   476    err_t err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   477    LOCK_TCPIP_CORE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   478    err = fn(call);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   479    UNLOCK_TCPIP_CORE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   480    return err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   481  #else /* LWIP_TCPIP_CORE_LOCKING */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   482    TCPIP_MSG_VAR_DECLARE(msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   483  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   484  #if !LWIP_NETCONN_SEM_PER_THREAD
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   485    err_t err = sys_sem_new(&call->sem, 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   486    if (err != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   487      return err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   488    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   489  #endif /* LWIP_NETCONN_SEM_PER_THREAD */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   490  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   491    LWIP_ASSERT("Invalid mbox", sys_mbox_valid_val(tcpip_mbox));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   492  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   493    TCPIP_MSG_VAR_ALLOC(msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   494    TCPIP_MSG_VAR_REF(msg).type = TCPIP_MSG_API_CALL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   495    TCPIP_MSG_VAR_REF(msg).msg.api_call.arg = call;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   496    TCPIP_MSG_VAR_REF(msg).msg.api_call.function = fn;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   497  #if LWIP_NETCONN_SEM_PER_THREAD
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   498    TCPIP_MSG_VAR_REF(msg).msg.api_call.sem = LWIP_NETCONN_THREAD_SEM_GET();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   499  #else /* LWIP_NETCONN_SEM_PER_THREAD */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   500    TCPIP_MSG_VAR_REF(msg).msg.api_call.sem = &call->sem;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   501  #endif /* LWIP_NETCONN_SEM_PER_THREAD */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   502    sys_mbox_post(&tcpip_mbox, &TCPIP_MSG_VAR_REF(msg));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   503    sys_arch_sem_wait(TCPIP_MSG_VAR_REF(msg).msg.api_call.sem, 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   504    TCPIP_MSG_VAR_FREE(msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   505  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   506  #if !LWIP_NETCONN_SEM_PER_THREAD
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   507    sys_sem_free(&call->sem);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   508  #endif /* LWIP_NETCONN_SEM_PER_THREAD */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   509  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   510    return call->err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   511  #endif /* LWIP_TCPIP_CORE_LOCKING */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   512  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   513  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   514  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   515   * @ingroup lwip_os
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   516   * Allocate a structure for a static callback message and initialize it.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   517   * The message has a special type such that lwIP never frees it.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   518   * This is intended to be used to send "static" messages from interrupt context,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   519   * e.g. the message is allocated once and posted several times from an IRQ
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   520   * using tcpip_callbackmsg_trycallback().
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   521   * Example usage: Trigger execution of an ethernet IRQ DPC routine in lwIP thread context.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   522   * 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   523   * @param function the function to call
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   524   * @param ctx parameter passed to function
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   525   * @return a struct pointer to pass to tcpip_callbackmsg_trycallback().
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   526   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   527   * @see tcpip_callbackmsg_trycallback()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   528   * @see tcpip_callbackmsg_delete()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   529   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   530  struct tcpip_callback_msg *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   531  tcpip_callbackmsg_new(tcpip_callback_fn function, void *ctx)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   532  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   533    struct tcpip_msg *msg = (struct tcpip_msg *)memp_malloc(MEMP_TCPIP_MSG_API);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   534    if (msg == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   535      return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   536    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   537    msg->type = TCPIP_MSG_CALLBACK_STATIC;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   538    msg->msg.cb.function = function;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   539    msg->msg.cb.ctx = ctx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   540    return (struct tcpip_callback_msg *)msg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   541  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   542  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   543  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   544   * @ingroup lwip_os
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   545   * Free a callback message allocated by tcpip_callbackmsg_new().
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   546   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   547   * @param msg the message to free
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   548   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   549   * @see tcpip_callbackmsg_new()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   550   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   551  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   552  tcpip_callbackmsg_delete(struct tcpip_callback_msg *msg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   553  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   554    memp_free(MEMP_TCPIP_MSG_API, msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   555  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   556  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   557  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   558   * @ingroup lwip_os
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   559   * Try to post a callback-message to the tcpip_thread tcpip_mbox.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   560   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   561   * @param msg pointer to the message to post
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   562   * @return sys_mbox_trypost() return code
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   563   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   564   * @see tcpip_callbackmsg_new()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   565   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   566  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   567  tcpip_callbackmsg_trycallback(struct tcpip_callback_msg *msg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   568  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   569    LWIP_ASSERT("Invalid mbox", sys_mbox_valid_val(tcpip_mbox));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   570    return sys_mbox_trypost(&tcpip_mbox, msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   571  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   572  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   573  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   574   * @ingroup lwip_os
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   575   * Try to post a callback-message to the tcpip_thread mbox.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   576   * Same as @ref tcpip_callbackmsg_trycallback but calls sys_mbox_trypost_fromisr(),
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   577   * mainly to help FreeRTOS, where calls differ between task level and ISR level.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   578   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   579   * @param msg pointer to the message to post
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   580   * @return sys_mbox_trypost_fromisr() return code (without change, so this
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   581   *         knowledge can be used to e.g. propagate "bool needs_scheduling")
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   582   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   583   * @see tcpip_callbackmsg_new()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   584   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   585  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   586  tcpip_callbackmsg_trycallback_fromisr(struct tcpip_callback_msg *msg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   587  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   588    LWIP_ASSERT("Invalid mbox", sys_mbox_valid_val(tcpip_mbox));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   589    return sys_mbox_trypost_fromisr(&tcpip_mbox, msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   590  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   591  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   592  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   593   * @ingroup lwip_os
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   594   * Initialize this module:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   595   * - initialize all sub modules
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   596   * - start the tcpip_thread
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   597   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   598   * @param initfunc a function to call when tcpip_thread is running and finished initializing
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   599   * @param arg argument to pass to initfunc
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   600   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   601  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   602  tcpip_init(tcpip_init_done_fn initfunc, void *arg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   603  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   604    lwip_init();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   605  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   606    tcpip_init_done = initfunc;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   607    tcpip_init_done_arg = arg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   608    if (sys_mbox_new(&tcpip_mbox, TCPIP_MBOX_SIZE) != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   609      LWIP_ASSERT("failed to create tcpip_thread mbox", 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   610    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   611  #if LWIP_TCPIP_CORE_LOCKING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   612    if (sys_mutex_new(&lock_tcpip_core) != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   613      LWIP_ASSERT("failed to create lock_tcpip_core", 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   614    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   615  #endif /* LWIP_TCPIP_CORE_LOCKING */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   616  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   617    sys_thread_new(TCPIP_THREAD_NAME, tcpip_thread, NULL, TCPIP_THREAD_STACKSIZE, TCPIP_THREAD_PRIO);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   618  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   619  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   620  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   621   * Simple callback function used with tcpip_callback to free a pbuf
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   622   * (pbuf_free has a wrong signature for tcpip_callback)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   623   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   624   * @param p The pbuf (chain) to be dereferenced.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   625   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   626  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   627  pbuf_free_int(void *p)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   628  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   629    struct pbuf *q = (struct pbuf *)p;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   630    pbuf_free(q);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   631  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   632  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   633  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   634   * A simple wrapper function that allows you to free a pbuf from interrupt context.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   635   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   636   * @param p The pbuf (chain) to be dereferenced.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   637   * @return ERR_OK if callback could be enqueued, an err_t if not
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   638   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   639  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   640  pbuf_free_callback(struct pbuf *p)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   641  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   642    return tcpip_try_callback(pbuf_free_int, p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   643  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   644  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   645  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   646   * A simple wrapper function that allows you to free heap memory from
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   647   * interrupt context.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   648   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   649   * @param m the heap memory to free
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   650   * @return ERR_OK if callback could be enqueued, an err_t if not
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   651   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   652  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   653  mem_free_callback(void *m)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   654  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   655    return tcpip_try_callback(mem_free, m);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   656  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   657  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\tcpip.c	   658  #endif /* !NO_SYS */
+
+	; Module end

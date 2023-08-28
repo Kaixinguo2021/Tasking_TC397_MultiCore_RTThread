@@ -1,0 +1,4100 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\.memheap.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.src ..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c'
+
+	
+$TC162
+	.sdecl	'.zrodata.memheap..1.cnt',data,rom
+	.sect	'.zrodata.memheap..1.cnt'
+	.align	2
+.1.cnt:	.type	object
+	.size	.1.cnt,4
+	.word	513810080
+	.sdecl	'.zrodata.memheap..2.cnt',data,rom
+	.sect	'.zrodata.memheap..2.cnt'
+	.align	2
+.2.cnt:	.type	object
+	.size	.2.cnt,4
+	.word	513810081
+	
+	.sdecl	'.text.memheap.rt_memheap_init',code,cluster('rt_memheap_init')
+	.sect	'.text.memheap.rt_memheap_init'
+	.align	2
+	
+	.global	rt_memheap_init
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	     1  /*
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	     3   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	     4   * SPDX-License-Identifier: Apache-2.0
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	     5   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	     6  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	     7  /*
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	     8   * File      : memheap.c
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	     9   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    10   * Change Logs:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    11   * Date           Author       Notes
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    12   * 2012-04-10     Bernard      first implementation
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    13   * 2012-10-16     Bernard      add the mutex lock for heap object.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    14   * 2012-12-29     Bernard      memheap can be used as system heap.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    15   *                             change mutex lock to semaphore lock.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    16   * 2013-04-10     Bernard      add rt_memheap_realloc function.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    17   * 2013-05-24     Bernard      fix the rt_memheap_realloc issue.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    18   * 2013-07-11     Grissiom     fix the memory block splitting issue.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    19   * 2013-07-15     Grissiom     optimize rt_memheap_realloc
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    20   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    21  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    22  #include <rthw.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    23  #include <rtthread.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    24  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    25  #ifdef RT_USING_MEMHEAP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    26  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    27  /* dynamic pool magic and mask */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    28  #define RT_MEMHEAP_MAGIC        0x1ea01ea0
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    29  #define RT_MEMHEAP_MASK         0xfffffffe
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    30  #define RT_MEMHEAP_USED         0x01
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    31  #define RT_MEMHEAP_FREED        0x00
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    32  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    33  #define RT_MEMHEAP_IS_USED(i)   ((i)->magic & RT_MEMHEAP_USED)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    34  #define RT_MEMHEAP_MINIALLOC    12
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    35  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    36  #define RT_MEMHEAP_SIZE         RT_ALIGN(sizeof(struct rt_memheap_item), RT_ALIGN_SIZE)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    37  #define MEMITEM_SIZE(item)      ((rt_ubase_t)item->next - (rt_ubase_t)item - RT_MEMHEAP_SIZE)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    38  #define MEMITEM(ptr)            (struct rt_memheap_item*)((rt_uint8_t*)ptr - RT_MEMHEAP_SIZE)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    39  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    40  #ifdef RT_USING_MEMTRACE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    41  rt_inline void rt_memheap_setname(struct rt_memheap_item *item, const char *name)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    42  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    43      int index;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    44      rt_uint8_t* ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    45  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    46      ptr = (rt_uint8_t*)&(item->next_free);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    47      for (index = 0; index < sizeof(void*); index ++)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    48      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    49          if (name[index] == '\0') break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    50          ptr[index] = name[index];
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    51      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    52      if (name[index] == '\0') ptr[index] = '\0';
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    53      else 
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    54      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    55          ptr = (rt_uint8_t*)&(item->prev_free);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    56          for (index = 0; index < sizeof(void*) && (index + sizeof(void*))< RT_NAME_MAX; index ++)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    57          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    58              if (name[sizeof(void*) + index] == '\0') break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    59              ptr[index] = name[sizeof(void*) + index];
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    60          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    61  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    62          if (name[sizeof(void*) + index] == '\0') ptr[index] = '\0';
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    63      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    64  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    65  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    66  void rt_mem_set_tag(void* ptr, const char* name)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    67  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    68      struct rt_memheap_item* item;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    69  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    70      if (ptr && name)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    71      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    72          item = MEMITEM(ptr);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    73          rt_memheap_setname(item, name);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    74      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    75  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    76  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    77  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    78  /*
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    79   * The initialized memory pool will be:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    80   * +-----------------------------------+--------------------------+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    81   * | whole freed memory block          | Used Memory Block Tailer |
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    82   * +-----------------------------------+--------------------------+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    83   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    84   * block_list --> whole freed memory block
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    85   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    86   * The length of Used Memory Block Tailer is 0,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    87   * which is prevents block merging across list
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    88   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    89  rt_err_t rt_memheap_init(struct rt_memheap *memheap,
+; Function rt_memheap_init
+.L42:
+rt_memheap_init:	.type	func
+	mov	d8,d4
+	mov.aa	a15,a4
+.L165:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    90                           const char        *name,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    91                           void              *start_addr,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    92                           rt_size_t         size)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    93  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    94      struct rt_memheap_item *item;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    95  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    96      RT_ASSERT(memheap != RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    97  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    98      /* initialize pool object */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	    99      rt_object_init(&(memheap->parent), RT_Object_Class_MemHeap, name);
+	mov	d4,#7
+	mov.aa	a12,a5
+.L164:
+	mov.aa	a13,a6
+.L166:
+	call	rt_object_init
+.L163:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   100  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   101      memheap->start_addr     = start_addr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   102      memheap->pool_size      = RT_ALIGN_DOWN(size, RT_ALIGN_SIZE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   103      memheap->available_size = memheap->pool_size - (2 * RT_MEMHEAP_SIZE);
+	insert	d0,d8,#0,#0,#2
+	st.a	[a15]20,a13
+.L239:
+	insert	d15,d8,#0,#0,#2
+	st.w	[a15]24,d15
+.L240:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   104      memheap->max_used_size  = memheap->pool_size - memheap->available_size;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   105  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   106      /* initialize the free list header */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   107      item            = &(memheap->free_header);
+	lea	a2,[a15]44
+.L167:
+	add	d0,d0,#-48
+	st.w	[a15]28,d0
+.L241:
+	sub	d15,d0
+	st.w	[a15]32,d15
+.L242:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   108      item->magic     = (RT_MEMHEAP_MAGIC | RT_MEMHEAP_FREED);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   109      item->pool_ptr  = memheap;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   110      item->next      = RT_NULL;
+	mov.a	a4,#0
+.L243:
+	ld.w	d15,.1.cnt
+.L244:
+	st.w	[a2],d15
+.L245:
+	st.a	[a15]48,a15
+.L246:
+	st.a	[a15]52,a4
+.L247:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   111      item->prev      = RT_NULL;
+	st.a	[a15]56,a4
+.L248:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   112      item->next_free = item;
+	st.a	[a15]60,a2
+.L249:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   113      item->prev_free = item;
+	st.a	[a15]64,a2
+.L250:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   114  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   115      /* set the free list to free list header */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   116      memheap->free_list = item;
+	st.a	[a15]40,a2
+.L251:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   117  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   118      /* initialize the first big memory block */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   119      item            = (struct rt_memheap_item *)start_addr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   120      item->magic     = (RT_MEMHEAP_MAGIC | RT_MEMHEAP_FREED);
+	st.w	[a13],d15
+.L252:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   121      item->pool_ptr  = memheap;
+	st.a	[a13]4,a15
+.L253:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   122      item->next      = RT_NULL;
+	st.a	[a13]8,a4
+.L254:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   123      item->prev      = RT_NULL;
+	st.a	[a13]12,a4
+.L255:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   124      item->next_free = item;
+	st.a	[a13]16,a13
+.L256:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   125      item->prev_free = item;
+	st.a	[a13]20,a13
+.L257:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   126  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   127  #ifdef RT_USING_MEMTRACE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   128      rt_memset(item->owner_thread_name, ' ', sizeof(item->owner_thread_name));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   129  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   130  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   131      item->next = (struct rt_memheap_item *)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   132                   ((rt_uint8_t *)item + memheap->available_size + RT_MEMHEAP_SIZE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   133      item->prev = item->next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   134  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   135      /* block list header */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   136      memheap->block_list = item;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   137  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   138      /* place the big memory block to free list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   139      item->next_free = memheap->free_list->next_free;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   140      item->prev_free = memheap->free_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   141      memheap->free_list->next_free->prev_free = item;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   142      memheap->free_list->next_free            = item;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   143  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   144      /* move to the end of memory pool to build a small tailer block,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   145       * which prevents block merging
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   146       */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   147      item = item->next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   148      /* it's a used memory block */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   149      item->magic     = (RT_MEMHEAP_MAGIC | RT_MEMHEAP_USED);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   150      item->pool_ptr  = memheap;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   151      item->next      = (struct rt_memheap_item *)start_addr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   152      item->prev      = (struct rt_memheap_item *)start_addr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   153      /* not in free list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   154      item->next_free = item->prev_free = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   155  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   156      /* initialize semaphore lock */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   157      rt_sem_init(&(memheap->lock), name, 1, RT_IPC_FLAG_FIFO);
+	mov	d4,#1
+	mov.aa	a5,a12
+.L169:
+	ld.w	d15,[a15]28
+.L258:
+	mov	d5,#0
+.L259:
+	addsc.a	a2,a13,d15,#0
+.L168:
+	lea	a2,[a2]24
+.L260:
+	st.a	[a13]8,a2
+.L261:
+	st.a	[a13]12,a2
+.L262:
+	st.a	[a15]36,a13
+.L263:
+	ld.a	a2,[a15]40
+.L264:
+	ld.a	a2,[a2]16
+.L265:
+	st.a	[a13]16,a2
+.L266:
+	ld.a	a2,[a15]40
+.L267:
+	st.a	[a13]20,a2
+.L268:
+	ld.a	a2,[a15]40
+.L269:
+	ld.a	a2,[a2]16
+.L270:
+	st.a	[a2]20,a13
+.L271:
+	ld.a	a2,[a15]40
+.L272:
+	st.a	[a2]16,a13
+.L273:
+	ld.a	a2,[a13]8
+.L171:
+	ld.w	d15,.2.cnt
+.L274:
+	st.w	[a2],d15
+.L275:
+	st.a	[a2]4,a15
+.L276:
+	st.a	[a2]8,a13
+.L277:
+	st.a	[a2]12,a13
+.L278:
+	st.a	[a2]20,a4
+.L279:
+	st.a	[a2]16,a4
+.L280:
+	lea	a4,[a15]68
+.L281:
+	call	rt_sem_init
+.L170:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   158  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   159      RT_DEBUG_LOG(RT_DEBUG_MEMHEAP,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   160                   ("memory heap: start addr 0x%08x, size %d, free list header 0x%08x\n",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   161                    start_addr, size, &(memheap->free_header)));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   162  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   163      return RT_EOK;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   164  }
+	mov	d2,#0
+	ret
+.L116:
+	
+__rt_memheap_init_function_end:
+	.size	rt_memheap_init,__rt_memheap_init_function_end-rt_memheap_init
+.L69:
+	; End of function
+	
+	.sdecl	'.text.memheap.rt_memheap_detach',code,cluster('rt_memheap_detach')
+	.sect	'.text.memheap.rt_memheap_detach'
+	.align	2
+	
+	.global	rt_memheap_detach
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   165  RTM_EXPORT(rt_memheap_init);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   166  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   167  rt_err_t rt_memheap_detach(struct rt_memheap *heap)
+; Function rt_memheap_detach
+.L44:
+rt_memheap_detach:	.type	func
+	mov.aa	a15,a4
+.L173:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   168  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   169      RT_ASSERT(heap);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   170      RT_ASSERT(rt_object_get_type(&heap->parent) == RT_Object_Class_MemHeap);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   171      RT_ASSERT(rt_object_is_systemobject(&heap->parent));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   172  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   173      rt_sem_detach(&heap->lock);
+	lea	a4,[a15]68
+.L172:
+	call	rt_sem_detach
+.L286:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   174      rt_object_detach(&(heap->parent));
+	mov.aa	a4,a15
+.L174:
+	call	rt_object_detach
+.L175:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   175  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   176      /* Return a successful completion. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   177      return RT_EOK;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   178  }
+	mov	d2,#0
+	ret
+.L127:
+	
+__rt_memheap_detach_function_end:
+	.size	rt_memheap_detach,__rt_memheap_detach_function_end-rt_memheap_detach
+.L74:
+	; End of function
+	
+	.sdecl	'.text.memheap.rt_memheap_alloc',code,cluster('rt_memheap_alloc')
+	.sect	'.text.memheap.rt_memheap_alloc'
+	.align	2
+	
+	.global	rt_memheap_alloc
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   179  RTM_EXPORT(rt_memheap_detach);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   180  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   181  void *rt_memheap_alloc(struct rt_memheap *heap, rt_size_t size)
+; Function rt_memheap_alloc
+.L46:
+rt_memheap_alloc:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   182  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   183      rt_err_t result;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   184      rt_uint32_t free_size;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   185      struct rt_memheap_item *header_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   186  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   187      RT_ASSERT(heap != RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   188      RT_ASSERT(rt_object_get_type(&heap->parent) == RT_Object_Class_MemHeap);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   189  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   190      /* align allocated size */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   191      size = RT_ALIGN(size, RT_ALIGN_SIZE);
+	add	d4,#3
+	mov.aa	a12,a4
+.L177:
+	insert	d15,d4,#0,#0,#2
+.L291:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   192      if (size < RT_MEMHEAP_MINIALLOC)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   193          size = RT_MEMHEAP_MINIALLOC;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   194  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   195      RT_DEBUG_LOG(RT_DEBUG_MEMHEAP, ("allocate %d on heap:%8.*s",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   196                                      size, RT_NAME_MAX, heap->parent.name));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   197  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   198      if (size < heap->available_size)
+	max.u	d9,d15,#12
+	ld.w	d15,[a12]28
+.L186:
+	jge.u	d9,d15,.L4
+.L292:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   199      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   200          /* search on free list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   201          free_size = 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   202  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   203          /* lock memheap */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   204          result = rt_sem_take(&(heap->lock), RT_WAITING_FOREVER);
+	mov	d8,#0
+	lea	a4,[a12]68
+.L176:
+	mov	d4,#-1
+	call	rt_sem_take
+.L178:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   205          if (result != RT_EOK)
+	jeq	d2,#0,.L5
+.L293:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   206          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   207              rt_set_errno(result);
+	mov	d4,d2
+	call	rt_set_errno
+.L179:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   208  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   209              return RT_NULL;
+	j	.L6
+.L5:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   210          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   211  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   212          /* get the first free memory block */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   213          header_ptr = heap->free_list->next_free;
+	ld.a	a2,[a12]40
+.L294:
+	ld.a	a15,[a2]16
+.L184:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   214          while (header_ptr != heap->free_list && free_size < size)
+	j	.L7
+.L8:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   215          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   216              /* get current freed memory block size */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   217              free_size = MEMITEM_SIZE(header_ptr);
+	ld.w	d15,[a15]8
+	mov.d	d0,a15
+.L180:
+	sub	d0,d15,d0
+.L181:
+	add	d8,d0,#-24
+.L295:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   218              if (free_size < size)
+	jge.u	d8,d9,.L9
+.L296:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   219              {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   220                  /* move to next free memory block */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   221                  header_ptr = header_ptr->next_free;
+	ld.a	a15,[a15]16
+.L9:
+.L7:
+	jeq.a	a15,a2,.L10
+.L297:
+	jlt.u	d8,d9,.L8
+.L10:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   222              }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   223          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   224  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   225          /* determine if the memory is available. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   226          if (free_size >= size)
+	jlt.u	d8,d9,.L11
+.L298:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   227          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   228              /* a block that satisfies the request has been found. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   229  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   230              /* determine if the block needs to be split. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   231              if (free_size >= (size + RT_MEMHEAP_SIZE + RT_MEMHEAP_MINIALLOC))
+	add	d0,d9,#36
+.L299:
+	jlt.u	d8,d0,.L12
+.L138:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   232              {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   233                  struct rt_memheap_item *new_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   234  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   235                  /* split the block. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   236                  new_ptr = (struct rt_memheap_item *)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   237                            (((rt_uint8_t *)header_ptr) + size + RT_MEMHEAP_SIZE);
+	addsc.a	a2,a15,d9,#0
+.L300:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   238  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   239                  RT_DEBUG_LOG(RT_DEBUG_MEMHEAP,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   240                               ("split: block[0x%08x] nextm[0x%08x] prevm[0x%08x] to new[0x%08x]\n",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   241                                header_ptr,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   242                                header_ptr->next,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   243                                header_ptr->prev,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   244                                new_ptr));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   245  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   246                  /* mark the new block as a memory block and freed. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   247                  new_ptr->magic = (RT_MEMHEAP_MAGIC | RT_MEMHEAP_FREED);
+	ld.w	d0,.1.cnt
+.L301:
+	lea	a5,[a2]24
+.L182:
+	st.w	[a5],d0
+.L302:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   248  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   249                  /* put the pool pointer into the new block. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   250                  new_ptr->pool_ptr = heap;
+	st.a	[a5]4,a12
+.L303:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   251  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   252  #ifdef RT_USING_MEMTRACE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   253                  rt_memset(new_ptr->owner_thread_name, ' ', sizeof(new_ptr->owner_thread_name));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   254  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   255  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   256                  /* break down the block list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   257                  new_ptr->prev          = header_ptr;
+	st.a	[a5]12,a15
+.L304:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   258                  new_ptr->next          = header_ptr->next;
+	ld.a	a2,[a15]8
+.L305:
+	st.a	[a5]8,a2
+.L306:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   259                  header_ptr->next->prev = new_ptr;
+	ld.a	a2,[a15]8
+.L307:
+	st.a	[a2]12,a5
+.L308:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   260                  header_ptr->next       = new_ptr;
+	st.a	[a15]8,a5
+.L309:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   261  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   262                  /* remove header ptr from free list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   263                  header_ptr->next_free->prev_free = header_ptr->prev_free;
+	fcall	.cocofun_6
+.L310:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   264                  header_ptr->prev_free->next_free = header_ptr->next_free;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   265                  header_ptr->next_free = RT_NULL;
+	mov.a	a2,#0
+.L311:
+	st.a	[a15]16,a2
+.L312:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   266                  header_ptr->prev_free = RT_NULL;
+	st.a	[a15]20,a2
+.L313:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   267  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   268                  /* insert new_ptr to free list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   269                  new_ptr->next_free = heap->free_list->next_free;
+	fcall	.cocofun_7
+.L314:
+	st.a	[a5]16,a2
+.L315:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   270                  new_ptr->prev_free = heap->free_list;
+	ld.a	a2,[a12]40
+.L316:
+	st.a	[a5]20,a2
+.L317:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   271                  heap->free_list->next_free->prev_free = new_ptr;
+	fcall	.cocofun_7
+.L318:
+	st.a	[a2]20,a5
+.L319:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   272                  heap->free_list->next_free            = new_ptr;
+	ld.a	a2,[a12]40
+.L320:
+	st.a	[a2]16,a5
+.L321:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   273                  RT_DEBUG_LOG(RT_DEBUG_MEMHEAP, ("new ptr: next_free 0x%08x, prev_free 0x%08x\n",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   274                                                  new_ptr->next_free,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   275                                                  new_ptr->prev_free));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   276  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   277                  /* decrement the available byte count.  */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   278                  heap->available_size = heap->available_size -
+	ld.w	d15,[a12]28
+.L322:
+	sub	d15,d9
+.L323:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   279                                         size -
+	add	d0,d15,#-24
+	st.w	[a12]28,d0
+.L324:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   280                                         RT_MEMHEAP_SIZE;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   281                  if (heap->pool_size - heap->available_size > heap->max_used_size)
+	ld.w	d15,[a12]24
+.L325:
+	sub	d0,d15,d0
+	ld.w	d15,[a12]32
+.L326:
+	jge.u	d15,d0,.L13
+.L327:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   282                      heap->max_used_size = heap->pool_size - heap->available_size;
+	st.w	[a12]32,d0
+.L139:
+	j	.L14
+.L12:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   283              }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   284              else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   285              {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   286                  /* decrement the entire free size from the available bytes count. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   287                  heap->available_size = heap->available_size - free_size;
+	ld.w	d15,[a12]28
+.L328:
+	sub	d0,d15,d8
+.L329:
+	fcall	.cocofun_3
+.L330:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   288                  if (heap->pool_size - heap->available_size > heap->max_used_size)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   289                      heap->max_used_size = heap->pool_size - heap->available_size;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   290  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   291                  /* remove header_ptr from free list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   292                  RT_DEBUG_LOG(RT_DEBUG_MEMHEAP,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   293                               ("one block: block[0x%08x], next_free 0x%08x, prev_free 0x%08x\n",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   294                                header_ptr,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   295                                header_ptr->next_free,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   296                                header_ptr->prev_free));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   297  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   298                  header_ptr->next_free->prev_free = header_ptr->prev_free;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   299                  header_ptr->prev_free->next_free = header_ptr->next_free;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   300                  header_ptr->next_free = RT_NULL;
+	mov.a	a2,#0
+.L331:
+	st.a	[a15]16,a2
+.L332:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   301                  header_ptr->prev_free = RT_NULL;
+	st.a	[a15]20,a2
+.L14:
+.L13:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   302              }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   303  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   304              /* Mark the allocated block as not available. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   305              header_ptr->magic = (RT_MEMHEAP_MAGIC | RT_MEMHEAP_USED);
+	ld.w	d15,.2.cnt
+.L333:
+	st.w	[a15],d15
+.L334:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   306  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   307  #ifdef RT_USING_MEMTRACE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   308              if (rt_thread_self())
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   309                  rt_memcpy(header_ptr->owner_thread_name, rt_thread_self()->name, sizeof(header_ptr->owner_thread_name));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   310              else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   311                  rt_memcpy(header_ptr->owner_thread_name, "NONE", sizeof(header_ptr->owner_thread_name));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   312  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   313  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   314              /* release lock */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   315              rt_sem_release(&(heap->lock));
+	lea	a4,[a12]68
+	call	rt_sem_release
+.L185:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   316  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   317              /* Return a memory address to the caller.  */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   318              RT_DEBUG_LOG(RT_DEBUG_MEMHEAP,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   319                           ("alloc mem: memory[0x%08x], heap[0x%08x], size: %d\n",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   320                            (void *)((rt_uint8_t *)header_ptr + RT_MEMHEAP_SIZE),
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   321                            header_ptr,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   322                            size));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   323  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   324              return (void *)((rt_uint8_t *)header_ptr + RT_MEMHEAP_SIZE);
+	lea	a2,[a15]24
+.L335:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   325          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   326  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   327          /* release lock */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   328          rt_sem_release(&(heap->lock));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   329      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   330  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   331      RT_DEBUG_LOG(RT_DEBUG_MEMHEAP, ("allocate memory: failed\n"));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   332  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   333      /* Return the completion status.  */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   334      return RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   335  }
+	ret
+.L11:
+	lea	a4,[a12]68
+	call	rt_sem_release
+.L6:
+.L4:
+	mov.a	a2,#0
+.L336:
+	ret
+.L129:
+	
+__rt_memheap_alloc_function_end:
+	.size	rt_memheap_alloc,__rt_memheap_alloc_function_end-rt_memheap_alloc
+.L79:
+	; End of function
+	
+	.sdecl	'.text.memheap..cocofun_7',code,cluster('.cocofun_7')
+	.sect	'.text.memheap..cocofun_7'
+	.align	2
+; Function .cocofun_7
+.L48:
+.cocofun_7:	.type	func
+; Function body .cocofun_7, coco_iter:1
+	ld.a	a2,[a12]40
+.L466:
+	ld.a	a2,[a2]16
+.L467:
+	fret
+.L114:
+	; End of function
+	.sdecl	'.text.memheap..cocofun_6',code,cluster('.cocofun_6')
+	.sect	'.text.memheap..cocofun_6'
+	.align	2
+; Function .cocofun_6
+.L50:
+.cocofun_6:	.type	func
+; Function body .cocofun_6, coco_iter:1
+	ld.a	a2,[a15]16
+.L456:
+	ld.a	a4,[a15]20
+.L457:
+	st.a	[a2]20,a4
+.L458:
+	ld.a	a2,[a15]20
+.L459:
+	ld.a	a4,[a15]16
+.L460:
+	st.a	[a2]16,a4
+.L461:
+	fret
+.L109:
+	; End of function
+	.sdecl	'.text.memheap..cocofun_3',code,cluster('.cocofun_3')
+	.sect	'.text.memheap..cocofun_3'
+	.align	2
+; Function .cocofun_3
+.L52:
+.cocofun_3:	.type	func
+; Function body .cocofun_3, coco_iter:0
+	st.w	[a12]28,d0
+.L424:
+	ld.w	d15,[a12]24
+.L425:
+	sub	d0,d15,d0
+	ld.w	d15,[a12]32
+.L426:
+	jge.u	d15,d0,.L15
+.L427:
+	st.w	[a12]32,d0
+.L15:
+	fcall	.cocofun_6
+.L183:
+	fret
+.L94:
+	; End of function
+	.sdecl	'.text.memheap.rt_memheap_realloc',code,cluster('rt_memheap_realloc')
+	.sect	'.text.memheap.rt_memheap_realloc'
+	.align	2
+	
+	.global	rt_memheap_realloc
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   336  RTM_EXPORT(rt_memheap_alloc);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   337  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   338  void *rt_memheap_realloc(struct rt_memheap *heap, void *ptr, rt_size_t newsize)
+; Function rt_memheap_realloc
+.L54:
+rt_memheap_realloc:	.type	func
+	mov.aa	a12,a4
+.L198:
+	mov.aa	a13,a5
+.L203:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   339  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   340      rt_err_t result;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   341      rt_size_t oldsize;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   342      struct rt_memheap_item *header_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   343      struct rt_memheap_item *new_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   344  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   345      RT_ASSERT(heap);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   346      RT_ASSERT(rt_object_get_type(&heap->parent) == RT_Object_Class_MemHeap);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   347  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   348      if (newsize == 0)
+	jne	d4,#0,.L18
+.L341:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   349      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   350          rt_memheap_free(ptr);
+	mov.aa	a4,a13
+.L187:
+	call	rt_memheap_free
+.L188:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   351  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   352          return RT_NULL;
+	j	.L19
+.L18:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   353      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   354      /* align allocated size */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   355      newsize = RT_ALIGN(newsize, RT_ALIGN_SIZE);
+	add	d4,#3
+.L190:
+	insert	d15,d4,#0,#0,#2
+.L342:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   356      if (newsize < RT_MEMHEAP_MINIALLOC)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   357          newsize = RT_MEMHEAP_MINIALLOC;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   358  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   359      if (ptr == RT_NULL)
+	max.u	d8,d15,#12
+	jnz.a	a13,.L20
+.L199:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   360      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   361          return rt_memheap_alloc(heap, newsize);
+	mov	d4,d8
+.L192:
+	j	rt_memheap_alloc
+.L20:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   362      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   363  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   364      /* get memory block header and get the size of memory block */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   365      header_ptr = (struct rt_memheap_item *)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   366                   ((rt_uint8_t *)ptr - RT_MEMHEAP_SIZE);
+	lea	a14,[a13]-24
+.L196:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   367      oldsize = MEMITEM_SIZE(header_ptr);
+	ld.w	d0,[a13]-16
+	mov.d	d1,a14
+.L193:
+	sub	d0,d1
+	add	d9,d0,#-24
+.L202:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   368      /* re-allocate memory */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   369      if (newsize > oldsize)
+	jge.u	d9,d8,.L22
+.L149:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   370      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   371          void *new_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   372          struct rt_memheap_item *next_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   373  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   374          /* lock memheap */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   375          result = rt_sem_take(&(heap->lock), RT_WAITING_FOREVER);
+	lea	a4,[a12]68
+.L189:
+	mov	d4,#-1
+	call	rt_sem_take
+.L191:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   376          if (result != RT_EOK)
+	jne	d2,#0,.L23
+.L343:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   377          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   378              rt_set_errno(result);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   379              return RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   380          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   381  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   382          next_ptr = header_ptr->next;
+	ld.a	a15,[a13]-16
+.L200:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   383  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   384          /* header_ptr should not be the tail */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   385          RT_ASSERT(next_ptr > header_ptr);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   386  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   387          /* check whether the following free space is enough to expand */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   388          if (!RT_MEMHEAP_IS_USED(next_ptr))
+	ld.w	d0,[a15]
+	jnz.t	d0:0,.L24
+.L154:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   389          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   390              rt_int32_t nextsize;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   391  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   392              nextsize = MEMITEM_SIZE(next_ptr);
+	ld.w	d15,[a15]8
+	mov.d	d0,a15
+.L194:
+	sub	d0,d15,d0
+.L195:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   393              RT_ASSERT(next_ptr > 0);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   394  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   395              /* Here is the ASCII art of the situation that we can make use of
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   396               * the next free node without alloc/memcpy, |*| is the control
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   397               * block:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   398               *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   399               *      oldsize           free node
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   400               * |*|-----------|*|----------------------|*|
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   401               *         newsize          >= minialloc
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   402               * |*|----------------|*|-----------------|*|
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   403               */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   404              if (nextsize + oldsize > newsize + RT_MEMHEAP_MINIALLOC)
+	add	d0,d9
+.L344:
+	add	d0,d0,#-24
+.L345:
+	add	d15,d8,#12
+.L346:
+	jge.u	d15,d0,.L25
+.L347:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   405              {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   406                  /* decrement the entire free size from the available bytes count. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   407                  heap->available_size = heap->available_size - (newsize - oldsize);
+	ld.w	d15,[a12]28
+.L348:
+	sub	d0,d8,d9
+.L349:
+	sub	d0,d15,d0
+.L350:
+	fcall	.cocofun_3
+.L351:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   408                  if (heap->pool_size - heap->available_size > heap->max_used_size)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   409                      heap->max_used_size = heap->pool_size - heap->available_size;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   410  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   411                  /* remove next_ptr from free list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   412                  RT_DEBUG_LOG(RT_DEBUG_MEMHEAP,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   413                               ("remove block: block[0x%08x], next_free 0x%08x, prev_free 0x%08x",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   414                                next_ptr,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   415                                next_ptr->next_free,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   416                                next_ptr->prev_free));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   417  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   418                  next_ptr->next_free->prev_free = next_ptr->prev_free;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   419                  next_ptr->prev_free->next_free = next_ptr->next_free;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   420                  next_ptr->next->prev = next_ptr->prev;
+	ld.a	a2,[a15]8
+.L352:
+	ld.a	a4,[a15]12
+.L353:
+	st.a	[a2]12,a4
+.L354:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   421                  next_ptr->prev->next = next_ptr->next;
+	ld.a	a2,[a15]12
+.L355:
+	ld.a	a15,[a15]8
+.L201:
+	st.a	[a2]8,a15
+.L356:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   422  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   423                  /* build a new one on the right place */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   424                  next_ptr = (struct rt_memheap_item *)((char *)ptr + newsize);
+	fcall	.cocofun_5
+.L197:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   425  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   426                  RT_DEBUG_LOG(RT_DEBUG_MEMHEAP,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   427                               ("new free block: block[0x%08x] nextm[0x%08x] prevm[0x%08x]",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   428                                next_ptr,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   429                                next_ptr->next,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   430                                next_ptr->prev));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   431  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   432                  /* mark the new block as a memory block and freed. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   433                  next_ptr->magic = (RT_MEMHEAP_MAGIC | RT_MEMHEAP_FREED);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   434  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   435                  /* put the pool pointer into the new block. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   436                  next_ptr->pool_ptr = heap;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   437  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   438  #ifdef RT_USING_MEMTRACE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   439                  rt_memset(next_ptr->owner_thread_name, ' ', sizeof(next_ptr->owner_thread_name));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   440  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   441  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   442                  next_ptr->prev          = header_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   443                  next_ptr->next          = header_ptr->next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   444                  header_ptr->next->prev = next_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   445                  header_ptr->next       = next_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   446  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   447                  /* insert next_ptr to free list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   448                  next_ptr->next_free = heap->free_list->next_free;
+	fcall	.cocofun_4
+.L206:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   449                  next_ptr->prev_free = heap->free_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   450                  heap->free_list->next_free->prev_free = next_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   451                  heap->free_list->next_free            = next_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   452                  RT_DEBUG_LOG(RT_DEBUG_MEMHEAP, ("new ptr: next_free 0x%08x, prev_free 0x%08x",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   453                                                  next_ptr->next_free,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   454                                                  next_ptr->prev_free));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   455  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   456                  /* release lock */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   457                  rt_sem_release(&(heap->lock));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   458  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   459                  return ptr;
+	j	.L27
+.L25:
+.L24:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   460              }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   461          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   462  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   463          /* release lock */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   464          rt_sem_release(&(heap->lock));
+	lea	a4,[a12]68
+	call	rt_sem_release
+.L208:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   465  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   466          /* re-allocate a memory block */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   467          new_ptr = (void *)rt_memheap_alloc(heap, newsize);
+	mov.aa	a4,a12
+.L209:
+	mov	d4,d8
+	call	rt_memheap_alloc
+.L210:
+	mov.aa	a15,a2
+.L207:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   468          if (new_ptr != RT_NULL)
+	jz.a	a15,.L28
+.L357:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   469          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   470              rt_memcpy(new_ptr, ptr, oldsize < newsize ? oldsize : newsize);
+	min.u	d4,d9,d8
+	mov.aa	a4,a15
+.L211:
+	mov.aa	a5,a13
+.L213:
+	call	rt_memcpy
+.L212:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   471              rt_memheap_free(ptr);
+	mov.aa	a4,a13
+.L214:
+	call	rt_memheap_free
+.L28:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   472          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   473  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   474          return new_ptr;
+	mov.aa	a2,a15
+.L150:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   475      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   476  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   477      /* don't split when there is less than one node space left */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   478      if (newsize + RT_MEMHEAP_SIZE + RT_MEMHEAP_MINIALLOC >= oldsize)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   479          return ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   480  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   481      /* lock memheap */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   482      result = rt_sem_take(&(heap->lock), RT_WAITING_FOREVER);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   483      if (result != RT_EOK)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   484      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   485          rt_set_errno(result);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   486  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   487          return RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   488      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   489  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   490      /* split the block. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   491      new_ptr = (struct rt_memheap_item *)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   492                (((rt_uint8_t *)header_ptr) + newsize + RT_MEMHEAP_SIZE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   493  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   494      RT_DEBUG_LOG(RT_DEBUG_MEMHEAP,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   495                   ("split: block[0x%08x] nextm[0x%08x] prevm[0x%08x] to new[0x%08x]\n",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   496                    header_ptr,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   497                    header_ptr->next,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   498                    header_ptr->prev,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   499                    new_ptr));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   500  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   501      /* mark the new block as a memory block and freed. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   502      new_ptr->magic = (RT_MEMHEAP_MAGIC | RT_MEMHEAP_FREED);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   503      /* put the pool pointer into the new block. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   504      new_ptr->pool_ptr = heap;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   505  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   506  #ifdef RT_USING_MEMTRACE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   507      rt_memset(new_ptr->owner_thread_name, ' ', sizeof(new_ptr->owner_thread_name));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   508  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   509  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   510      /* break down the block list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   511      new_ptr->prev          = header_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   512      new_ptr->next          = header_ptr->next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   513      header_ptr->next->prev = new_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   514      header_ptr->next       = new_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   515  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   516      /* determine if the block can be merged with the next neighbor. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   517      if (!RT_MEMHEAP_IS_USED(new_ptr->next))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   518      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   519          struct rt_memheap_item *free_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   520  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   521          /* merge block with next neighbor. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   522          free_ptr = new_ptr->next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   523          heap->available_size = heap->available_size - MEMITEM_SIZE(free_ptr);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   524  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   525          RT_DEBUG_LOG(RT_DEBUG_MEMHEAP,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   526                       ("merge: right node 0x%08x, next_free 0x%08x, prev_free 0x%08x\n",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   527                        header_ptr, header_ptr->next_free, header_ptr->prev_free));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   528  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   529          free_ptr->next->prev = new_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   530          new_ptr->next   = free_ptr->next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   531  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   532          /* remove free ptr from free list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   533          free_ptr->next_free->prev_free = free_ptr->prev_free;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   534          free_ptr->prev_free->next_free = free_ptr->next_free;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   535      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   536  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   537      /* insert the split block to free list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   538      new_ptr->next_free = heap->free_list->next_free;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   539      new_ptr->prev_free = heap->free_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   540      heap->free_list->next_free->prev_free = new_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   541      heap->free_list->next_free            = new_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   542      RT_DEBUG_LOG(RT_DEBUG_MEMHEAP, ("new free ptr: next_free 0x%08x, prev_free 0x%08x\n",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   543                                      new_ptr->next_free,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   544                                      new_ptr->prev_free));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   545  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   546      /* increment the available byte count.  */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   547      heap->available_size = heap->available_size + MEMITEM_SIZE(new_ptr);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   548  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   549      /* release lock */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   550      rt_sem_release(&(heap->lock));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   551  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   552      /* return the old memory block */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   553      return ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   554  }
+	ret
+.L22:
+	add	d15,d8,#36
+.L358:
+	jge.u	d15,d9,.L30
+.L359:
+	lea	a4,[a12]68
+.L216:
+	mov	d4,#-1
+	call	rt_sem_take
+.L215:
+	jeq	d2,#0,.L31
+.L23:
+	mov	d4,d2
+	call	rt_set_errno
+.L19:
+	mov.a	a2,#0
+.L360:
+	ret
+.L31:
+	fcall	.cocofun_5
+.L217:
+	ld.a	a2,[a15]8
+	ld.w	d15,[a2]
+	jnz.t	d15:0,.L33
+.L155:
+	ld.w	d0,[a12]28
+.L361:
+	ld.w	d15,[a2]8
+.L362:
+	mov.d	d1,a2
+.L363:
+	sub	d15,d1
+	add	d15,d15,#-24
+.L364:
+	sub	d0,d15
+	st.w	[a12]28,d0
+.L365:
+	ld.a	a4,[a2]8
+.L366:
+	st.a	[a4]12,a15
+.L367:
+	ld.a	a4,[a2]8
+.L368:
+	st.a	[a15]8,a4
+.L369:
+	ld.a	a4,[a2]16
+.L370:
+	ld.a	a5,[a2]20
+.L371:
+	st.a	[a4]20,a5
+.L372:
+	ld.a	a4,[a2]20
+.L373:
+	ld.a	a2,[a2]16
+.L374:
+	st.a	[a4]16,a2
+.L33:
+	fcall	.cocofun_4
+.L375:
+	ld.w	d0,[a12]28
+.L376:
+	ld.w	d15,[a15]8
+	mov.d	d1,a15
+.L218:
+	sub	d15,d1
+	add	d15,d15,#-24
+.L377:
+	add	d0,d15
+	st.w	[a12]28,d0
+.L27:
+	lea	a4,[a12]68
+	call	rt_sem_release
+.L30:
+	mov.aa	a2,a13
+.L219:
+	ret
+.L141:
+	
+__rt_memheap_realloc_function_end:
+	.size	rt_memheap_realloc,__rt_memheap_realloc_function_end-rt_memheap_realloc
+.L84:
+	; End of function
+	
+	.sdecl	'.text.memheap..cocofun_5',code,cluster('.cocofun_5')
+	.sect	'.text.memheap..cocofun_5'
+	.align	2
+; Function .cocofun_5
+.L56:
+.cocofun_5:	.type	func
+; Function body .cocofun_5, coco_iter:0
+	addsc.a	a15,a13,d8,#0
+.L204:
+	ld.w	d15,.1.cnt
+.L443:
+	st.w	[a15],d15
+.L444:
+	st.a	[a15]4,a12
+.L445:
+	st.a	[a15]12,a14
+.L446:
+	ld.a	a2,[a13]-16
+.L447:
+	st.a	[a15]8,a2
+.L448:
+	ld.a	a2,[a13]-16
+.L449:
+	st.a	[a2]12,a15
+.L450:
+	st.a	[a13]-16,a15
+.L451:
+	fret
+.L104:
+	; End of function
+	.sdecl	'.text.memheap..cocofun_4',code,cluster('.cocofun_4')
+	.sect	'.text.memheap..cocofun_4'
+	.align	2
+; Function .cocofun_4
+.L58:
+.cocofun_4:	.type	func
+; Function body .cocofun_4, coco_iter:0
+	fcall	.cocofun_7
+.L205:
+	st.a	[a15]16,a2
+.L432:
+	ld.a	a2,[a12]40
+.L433:
+	st.a	[a15]20,a2
+.L434:
+	fcall	.cocofun_7
+.L435:
+	st.a	[a2]20,a15
+.L436:
+	ld.a	a2,[a12]40
+.L437:
+	st.a	[a2]16,a15
+.L438:
+	fret
+.L99:
+	; End of function
+	.sdecl	'.text.memheap.rt_memheap_free',code,cluster('rt_memheap_free')
+	.sect	'.text.memheap.rt_memheap_free'
+	.align	2
+	
+	.global	rt_memheap_free
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   555  RTM_EXPORT(rt_memheap_realloc);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   556  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   557  void rt_memheap_free(void *ptr)
+; Function rt_memheap_free
+.L60:
+rt_memheap_free:	.type	func
+	mov.aa	a12,a4
+.L221:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   558  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   559      rt_err_t result;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   560      struct rt_memheap *heap;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   561      struct rt_memheap_item *header_ptr, *new_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   562      rt_uint32_t insert_header;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   563  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   564      /* NULL check */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   565      if (ptr == RT_NULL) return;
+	jz.a	a12,.L35
+.L382:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   566  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   567      /* set initial status as OK */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   568      insert_header = 1;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   569      new_ptr       = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   570      header_ptr    = (struct rt_memheap_item *)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   571                      ((rt_uint8_t *)ptr - RT_MEMHEAP_SIZE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   572  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   573      RT_DEBUG_LOG(RT_DEBUG_MEMHEAP, ("free memory: memory[0x%08x], block[0x%08x]\n",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   574                                      ptr, header_ptr));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   575  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   576      /* check magic */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   577      if (header_ptr->magic != (RT_MEMHEAP_MAGIC | RT_MEMHEAP_USED))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   578      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   579          RT_DEBUG_LOG(RT_DEBUG_MEMHEAP, ("bad magic:0x%08x @ memheap\n",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   580                                          header_ptr->magic));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   581      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   582      RT_ASSERT(header_ptr->magic == (RT_MEMHEAP_MAGIC | RT_MEMHEAP_USED));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   583      /* check whether this block of memory has been over-written. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   584      RT_ASSERT((header_ptr->next->magic & RT_MEMHEAP_MASK) == RT_MEMHEAP_MAGIC);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   585  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   586      /* get pool ptr */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   587      heap = header_ptr->pool_ptr;
+	ld.a	a13,[a12]-20
+.L222:
+	mov	d8,#1
+	lea	a14,[a12]-24
+.L223:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   588  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   589      RT_ASSERT(heap);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   590      RT_ASSERT(rt_object_get_type(&heap->parent) == RT_Object_Class_MemHeap);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   591  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   592      /* lock memheap */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   593      result = rt_sem_take(&(heap->lock), RT_WAITING_FOREVER);
+	mov	d4,#-1
+.L383:
+	lea	a4,[a13]68
+.L220:
+	call	rt_sem_take
+.L224:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   594      if (result != RT_EOK)
+	jeq	d2,#0,.L36
+.L384:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   595      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   596          rt_set_errno(result);
+	mov	d4,d2
+.L225:
+	j	rt_set_errno
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   597  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   598          return ;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   599      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   600  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   601      /* Mark the memory as available. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   602      header_ptr->magic = (RT_MEMHEAP_MAGIC | RT_MEMHEAP_FREED);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   603      /* Adjust the available number of bytes. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   604      heap->available_size += MEMITEM_SIZE(header_ptr);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   605  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   606      /* Determine if the block can be merged with the previous neighbor. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   607      if (!RT_MEMHEAP_IS_USED(header_ptr->prev))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   608      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   609          RT_DEBUG_LOG(RT_DEBUG_MEMHEAP, ("merge: left node 0x%08x\n",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   610                                          header_ptr->prev));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   611  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   612          /* adjust the available number of bytes. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   613          heap->available_size += RT_MEMHEAP_SIZE;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   614  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   615          /* yes, merge block with previous neighbor. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   616          (header_ptr->prev)->next = header_ptr->next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   617          (header_ptr->next)->prev = header_ptr->prev;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   618  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   619          /* move header pointer to previous. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   620          header_ptr = header_ptr->prev;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   621          /* don't insert header to free list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   622          insert_header = 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   623      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   624  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   625      /* determine if the block can be merged with the next neighbor. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   626      if (!RT_MEMHEAP_IS_USED(header_ptr->next))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   627      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   628          /* adjust the available number of bytes. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   629          heap->available_size += RT_MEMHEAP_SIZE;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   630  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   631          /* merge block with next neighbor. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   632          new_ptr = header_ptr->next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   633  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   634          RT_DEBUG_LOG(RT_DEBUG_MEMHEAP,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   635                       ("merge: right node 0x%08x, next_free 0x%08x, prev_free 0x%08x\n",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   636                        new_ptr, new_ptr->next_free, new_ptr->prev_free));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   637  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   638          new_ptr->next->prev = header_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   639          header_ptr->next    = new_ptr->next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   640  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   641          /* remove new ptr from free list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   642          new_ptr->next_free->prev_free = new_ptr->prev_free;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   643          new_ptr->prev_free->next_free = new_ptr->next_free;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   644      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   645  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   646      if (insert_header)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   647      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   648          /* no left merge, insert to free list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   649          header_ptr->next_free = heap->free_list->next_free;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   650          header_ptr->prev_free = heap->free_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   651          heap->free_list->next_free->prev_free = header_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   652          heap->free_list->next_free            = header_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   653  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   654          RT_DEBUG_LOG(RT_DEBUG_MEMHEAP,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   655                       ("insert to free list: next_free 0x%08x, prev_free 0x%08x\n",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   656                        header_ptr->next_free, header_ptr->prev_free));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   657      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   658  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   659  #ifdef RT_USING_MEMTRACE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   660      rt_memset(header_ptr->owner_thread_name, ' ', sizeof(header_ptr->owner_thread_name));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   661  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   662  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   663      /* release lock */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   664      rt_sem_release(&(heap->lock));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   665  }
+.L35:
+	ret
+.L36:
+	ld.w	d0,.1.cnt
+.L385:
+	st.w	[a14],d0
+.L386:
+	ld.w	d15,[a13]28
+.L387:
+	ld.w	d0,[a12]-16
+	mov.d	d1,a14
+.L226:
+	sub	d0,d1
+	add	d0,d0,#-24
+.L388:
+	add	d0,d15
+	st.w	[a13]28,d0
+.L389:
+	ld.a	a2,[a12]-12
+	ld.w	d15,[a2]
+	jnz.t	d15:0,.L38
+.L390:
+	add	d15,d0,#24
+	st.w	[a13]28,d15
+.L391:
+	mov	d8,#0
+.L392:
+	ld.a	a2,[a12]-12
+.L393:
+	ld.a	a15,[a12]-16
+.L394:
+	st.a	[a2]8,a15
+.L395:
+	ld.a	a2,[a12]-16
+.L396:
+	ld.a	a15,[a12]-12
+.L397:
+	st.a	[a2]12,a15
+.L398:
+	ld.a	a14,[a12]-12
+.L38:
+	ld.a	a15,[a14]8
+	ld.w	d15,[a15]
+	jnz.t	d15:0,.L39
+.L399:
+	ld.w	d15,[a13]28
+.L400:
+	add	d15,d15,#24
+	st.w	[a13]28,d15
+.L401:
+	ld.a	a15,[a14]8
+.L227:
+	ld.a	a2,[a15]8
+.L402:
+	st.a	[a2]12,a14
+.L403:
+	ld.a	a2,[a15]8
+.L404:
+	st.a	[a14]8,a2
+.L405:
+	ld.a	a2,[a15]16
+.L406:
+	ld.a	a4,[a15]20
+.L407:
+	st.a	[a2]20,a4
+.L408:
+	ld.a	a2,[a15]20
+.L409:
+	ld.a	a15,[a15]16
+.L228:
+	st.a	[a2]16,a15
+.L39:
+	jeq	d8,#0,.L40
+.L410:
+	ld.a	a15,[a13]40
+.L411:
+	ld.a	a15,[a15]16
+.L412:
+	st.a	[a14]16,a15
+.L413:
+	ld.a	a15,[a13]40
+.L414:
+	st.a	[a14]20,a15
+.L415:
+	ld.a	a15,[a13]40
+.L416:
+	ld.a	a15,[a15]16
+.L417:
+	st.a	[a15]20,a14
+.L418:
+	ld.a	a15,[a13]40
+.L419:
+	st.a	[a15]16,a14
+.L40:
+	lea	a4,[a13]68
+	j	rt_sem_release
+.L156:
+	
+__rt_memheap_free_function_end:
+	.size	rt_memheap_free,__rt_memheap_free_function_end-rt_memheap_free
+.L89:
+	; End of function
+	
+	.calls	'rt_memheap_init','rt_object_init'
+	.calls	'rt_memheap_init','rt_sem_init'
+	.calls	'rt_memheap_detach','rt_sem_detach'
+	.calls	'rt_memheap_detach','rt_object_detach'
+	.calls	'rt_memheap_alloc','rt_sem_take'
+	.calls	'rt_memheap_alloc','rt_set_errno'
+	.calls	'rt_memheap_alloc','rt_sem_release'
+	.calls	'rt_memheap_realloc','rt_memheap_free'
+	.calls	'rt_memheap_realloc','rt_memheap_alloc'
+	.calls	'rt_memheap_realloc','rt_sem_take'
+	.calls	'rt_memheap_realloc','rt_sem_release'
+	.calls	'rt_memheap_realloc','rt_memcpy'
+	.calls	'rt_memheap_realloc','rt_set_errno'
+	.calls	'rt_memheap_free','rt_sem_take'
+	.calls	'rt_memheap_free','rt_set_errno'
+	.calls	'rt_memheap_free','rt_sem_release'
+	.calls	'rt_memheap_alloc','.cocofun_6'
+	.calls	'rt_memheap_alloc','.cocofun_7'
+	.calls	'rt_memheap_alloc','.cocofun_3'
+	.calls	'.cocofun_3','.cocofun_6'
+	.calls	'rt_memheap_realloc','.cocofun_3'
+	.calls	'rt_memheap_realloc','.cocofun_5'
+	.calls	'rt_memheap_realloc','.cocofun_4'
+	.calls	'.cocofun_4','.cocofun_7'
+	.calls	'rt_memheap_init','',0
+	.calls	'rt_memheap_detach','',0
+	.calls	'rt_memheap_alloc','',0
+	.calls	'.cocofun_7','',0
+	.calls	'.cocofun_6','',0
+	.calls	'.cocofun_3','',0
+	.calls	'rt_memheap_realloc','',0
+	.calls	'.cocofun_5','',0
+	.calls	'.cocofun_4','',0
+	.extern	rt_object_init
+	.extern	rt_object_detach
+	.extern	rt_sem_init
+	.extern	rt_sem_detach
+	.extern	rt_sem_take
+	.extern	rt_sem_release
+	.extern	rt_set_errno
+	.extern	rt_memcpy
+	.calls	'rt_memheap_free','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L62:
+	.word	2303
+	.half	3
+	.word	.L63
+	.byte	4
+.L61:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L64
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	171
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	178
+	.byte	0
+.L134:
+	.byte	2
+	.byte	'unsigned int',0,4,7,6
+	.word	220
+	.byte	7
+	.word	220
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	236
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	241
+	.byte	9
+	.byte	'value',0
+	.word	220
+	.byte	9
+	.byte	'compare',0
+	.word	220
+	.byte	0,2
+	.byte	'char',0,1,6,10,8
+	.word	298
+	.byte	11,7,0,2
+	.byte	'unsigned char',0,1,8,7
+	.word	.L229-.L62
+.L229:
+	.byte	12
+	.byte	'rt_list_node',0,2,229,2,8,8,13
+	.byte	'next',0
+	.word	332
+	.byte	4,2,35,0,13
+	.byte	'prev',0
+	.word	332
+	.byte	4,2,35,4,0,12
+	.byte	'rt_object',0,2,131,3,8,20,13
+	.byte	'name',0
+	.word	306
+	.byte	8,2,35,0,13
+	.byte	'type',0
+	.word	315
+	.byte	1,2,35,8,13
+	.byte	'flag',0
+	.word	315
+	.byte	1,2,35,9,13
+	.byte	'list',0
+	.word	337
+	.byte	8,2,35,12,0,7
+	.word	385
+	.byte	14
+	.byte	'rt_object_class_type',0,2,161,3,6,1,15
+	.byte	'RT_Object_Class_Null',0,0,15
+	.byte	'RT_Object_Class_Thread',0,1,15
+	.byte	'RT_Object_Class_Semaphore',0,2,15
+	.byte	'RT_Object_Class_Mutex',0,3,15
+	.byte	'RT_Object_Class_Event',0,4,15
+	.byte	'RT_Object_Class_MailBox',0,5,15
+	.byte	'RT_Object_Class_MessageQueue',0,6,15
+	.byte	'RT_Object_Class_MemHeap',0,7,15
+	.byte	'RT_Object_Class_MemPool',0,8,15
+	.byte	'RT_Object_Class_Device',0,9,15
+	.byte	'RT_Object_Class_Timer',0,10,15
+	.byte	'RT_Object_Class_Module',0,11,15
+	.byte	'RT_Object_Class_Unknown',0,12,15
+	.byte	'RT_Object_Class_Static',0,128,1,0,3
+	.word	298
+.L119:
+	.byte	7
+	.word	850
+	.byte	16
+	.byte	'rt_object_init',0,1,47,6,1,1,1,1,17
+	.byte	'object',0,1,47,47
+	.word	458
+	.byte	17
+	.byte	'type',0,1,48,47
+	.word	463
+	.byte	17
+	.byte	'name',0,1,49,47
+	.word	855
+	.byte	0,18
+	.byte	'rt_object_t',0,2,142,3,27
+	.word	458
+	.byte	16
+	.byte	'rt_object_detach',0,1,50,6,1,1,1,1,17
+	.byte	'object',0,1,50,35
+	.word	925
+	.byte	0,7
+	.word	385
+.L115:
+	.byte	2
+	.byte	'long int',0,4,5,19
+	.byte	'void',0
+.L121:
+	.byte	7
+	.word	1004
+	.byte	12
+	.byte	'rt_memheap_item',0,2,178,6,8,24,13
+	.byte	'magic',0
+	.word	220
+	.byte	4,2,35,0,13
+	.byte	'pool_ptr',0
+	.word	.L117-.L62
+	.byte	4,2,35,4,13
+	.byte	'next',0
+	.word	.L125-.L62
+	.byte	4,2,35,8,13
+	.byte	'prev',0
+	.word	.L125-.L62
+	.byte	4,2,35,12,13
+	.byte	'next_free',0
+	.word	.L125-.L62
+	.byte	4,2,35,16,13
+	.byte	'prev_free',0
+	.word	.L125-.L62
+	.byte	4,2,35,20,0
+.L125:
+	.byte	7
+	.word	1015
+	.byte	12
+	.byte	'rt_ipc_object',0,2,185,5,8,28,13
+	.byte	'parent',0
+	.word	385
+	.byte	20,2,35,0,13
+	.byte	'suspend_thread',0
+	.word	337
+	.byte	8,2,35,20,0,2
+	.byte	'unsigned short int',0,2,7,12
+	.byte	'rt_semaphore',0,2,196,5,8,32,13
+	.byte	'parent',0
+	.word	1142
+	.byte	28,2,35,0,13
+	.byte	'value',0
+	.word	1203
+	.byte	2,2,35,28,13
+	.byte	'reserved',0
+	.word	1203
+	.byte	2,2,35,30,0,12
+	.byte	'rt_memheap',0,2,196,6,8,100,13
+	.byte	'parent',0
+	.word	385
+	.byte	20,2,35,0,13
+	.byte	'start_addr',0
+	.word	1010
+	.byte	4,2,35,20,13
+	.byte	'pool_size',0
+	.word	220
+	.byte	4,2,35,24,13
+	.byte	'available_size',0
+	.word	220
+	.byte	4,2,35,28,13
+	.byte	'max_used_size',0
+	.word	220
+	.byte	4,2,35,32,13
+	.byte	'block_list',0
+	.word	1137
+	.byte	4,2,35,36,13
+	.byte	'free_list',0
+	.word	1137
+	.byte	4,2,35,40,13
+	.byte	'free_header',0
+	.word	1015
+	.byte	24,2,35,44,13
+	.byte	'lock',0
+	.word	1225
+	.byte	32,2,35,68,0
+.L117:
+	.byte	7
+	.word	1294
+.L123:
+	.byte	2
+	.byte	'unsigned long int',0,4,7,7
+	.word	1225
+	.byte	18
+	.byte	'rt_sem_t',0,2,203,5,30
+	.word	1514
+	.byte	20
+	.byte	'rt_sem_init',0,1,173,2,10
+	.word	992
+	.byte	1,1,1,1,17
+	.byte	'sem',0,1,173,2,34
+	.word	1519
+	.byte	17
+	.byte	'name',0,1,174,2,34
+	.word	855
+	.byte	17
+	.byte	'value',0,1,175,2,34
+	.word	220
+	.byte	17
+	.byte	'flag',0,1,176,2,34
+	.word	315
+	.byte	0,7
+	.word	1225
+	.byte	20
+	.byte	'rt_sem_detach',0,1,177,2,10
+	.word	992
+	.byte	1,1,1,1,17
+	.byte	'sem',0,1,177,2,33
+	.word	1519
+	.byte	0,20
+	.byte	'rt_sem_take',0,1,181,2,10
+	.word	992
+	.byte	1,1,1,1,17
+	.byte	'sem',0,1,181,2,31
+	.word	1519
+	.byte	17
+	.byte	'time',0,1,181,2,47
+	.word	171
+	.byte	0,20
+	.byte	'rt_sem_release',0,1,183,2,10
+	.word	992
+	.byte	1,1,1,1,17
+	.byte	'sem',0,1,183,2,34
+	.word	1519
+	.byte	0,16
+	.byte	'rt_set_errno',0,1,148,4,6,1,1,1,1,17
+	.byte	'no',0,1,148,4,28
+	.word	992
+	.byte	0,3
+	.word	1004
+	.byte	7
+	.word	1795
+	.byte	20
+	.byte	'rt_memcpy',0,1,159,4,7
+	.word	1010
+	.byte	1,1,1,1,17
+	.byte	'dest',0,1,159,4,23
+	.word	1010
+	.byte	17
+	.byte	'src',0,1,159,4,41
+	.word	1800
+	.byte	17
+	.byte	'n',0,1,159,4,57
+	.word	1493
+	.byte	0,18
+	.byte	'__size_t',0,3,1,1
+	.word	220
+	.byte	21,1,7
+	.word	1884
+	.byte	18
+	.byte	'__codeptr',0,3,1,1
+	.word	1886
+	.byte	18
+	.byte	'__intptr_t',0,3,1,1
+	.word	171
+	.byte	18
+	.byte	'__uintptr_t',0,3,1,1
+	.word	220
+	.byte	18
+	.byte	'rt_int32_t',0,2,68,41
+	.word	171
+	.byte	18
+	.byte	'rt_uint8_t',0,2,69,41
+	.word	315
+	.byte	18
+	.byte	'rt_uint16_t',0,2,70,41
+	.word	1203
+	.byte	18
+	.byte	'rt_uint32_t',0,2,71,41
+	.word	220
+	.byte	18
+	.byte	'rt_base_t',0,2,83,41
+	.word	992
+	.byte	18
+	.byte	'rt_ubase_t',0,2,84,41
+	.word	1493
+	.byte	18
+	.byte	'rt_err_t',0,2,86,41
+	.word	992
+	.byte	18
+	.byte	'rt_tick_t',0,2,88,41
+	.word	220
+	.byte	18
+	.byte	'rt_size_t',0,2,90,41
+	.word	1493
+	.byte	18
+	.byte	'rt_list_t',0,2,234,2,29
+	.word	337
+	.byte	7
+	.word	.L230-.L62
+.L230:
+	.byte	12
+	.byte	'rt_slist_node',0,2,239,2,8,4,13
+	.byte	'next',0
+	.word	2135
+	.byte	4,2,35,0,0,18
+	.byte	'rt_slist_t',0,2,243,2,30
+	.word	2140
+	.byte	18
+	.byte	'uint16_t',0,4,246,1,41
+	.word	1203
+	.byte	18
+	.byte	'uint32_t',0,4,254,1,41
+	.word	220
+	.byte	18
+	.byte	'time_t',0,5,44,25
+	.word	1493
+	.byte	18
+	.byte	'fd_mask',0,6,39,17
+	.word	992
+	.byte	22,1,1,5
+	.word	171
+	.byte	5
+	.word	1010
+	.byte	0,7
+	.word	2262
+	.byte	18
+	.byte	'rt_isr_handler_t',0,7,73,16
+	.word	2276
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L63:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,1,1,11,15,73,19,0,0,11,33,0,47,15,0,0,12,19,1,3,8,58,15,59,15,57
+	.byte	15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,14,4,1,3,8,58,15,59,15,57,15,11,15,0,0,15,40,0,3,8,28,13
+	.byte	0,0,16,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,17,5,0,3,8,58,15,59,15,57,15,73,19,0,0,18
+	.byte	22,0,3,8,58,15,59,15,57,15,73,19,0,0,19,59,0,3,8,0,0,20,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63
+	.byte	12,60,12,0,0,21,21,0,54,15,0,0,22,21,1,54,15,39,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L64:
+	.word	.L232-.L231
+.L231:
+	.half	3
+	.word	.L234-.L233
+.L233:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc',0
+	.byte	0
+	.byte	'rtthread.h',0,1,0,0
+	.byte	'rtdef.h',0,1,0,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0,0,0,0
+	.byte	'stdint.h',0,2,0,0
+	.byte	'time.h',0,2,0,0
+	.byte	'libc_fdset.h',0,3,0,0
+	.byte	'rthw.h',0,1,0,0,0
+.L234:
+.L232:
+	.sdecl	'.debug_info',debug,cluster('rt_memheap_init')
+	.sect	'.debug_info'
+.L65:
+	.word	321
+	.half	3
+	.word	.L66
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L68,.L67
+	.byte	2
+	.word	.L61
+	.byte	3
+	.byte	'rt_memheap_init',0,1,89,10
+	.word	.L115
+	.byte	1,1,1
+	.word	.L42,.L116,.L41
+	.byte	4
+	.byte	'memheap',0,1,89,45
+	.word	.L117,.L118
+	.byte	4
+	.byte	'name',0,1,90,45
+	.word	.L119,.L120
+	.byte	4
+	.byte	'start_addr',0,1,91,45
+	.word	.L121,.L122
+	.byte	4
+	.byte	'size',0,1,92,44
+	.word	.L123,.L124
+	.byte	5
+	.word	.L42,.L116
+	.byte	6
+	.byte	'item',0,1,94,29
+	.word	.L125,.L126
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_memheap_init')
+	.sect	'.debug_abbrev'
+.L66:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_memheap_init')
+	.sect	'.debug_line'
+.L67:
+	.word	.L236-.L235
+.L235:
+	.half	3
+	.word	.L238-.L237
+.L237:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0,0,0,0,0
+.L238:
+	.byte	5,10,7,0,5,2
+	.word	.L42
+	.byte	3,216,0,1,5,40,9
+	.half	.L165-.L42
+	.byte	3,10,1,5,10,3,118,1,5,65,9
+	.half	.L166-.L165
+	.byte	3,10,1,5,38,9
+	.half	.L163-.L166
+	.byte	3,4,1,5,29,3,126,1,5,31,9
+	.half	.L239-.L163
+	.byte	3,1,1,5,29,1,5,32,9
+	.half	.L240-.L239
+	.byte	3,5,1,5,50,9
+	.half	.L167-.L240
+	.byte	3,124,1,5,29,1,5,50,9
+	.half	.L241-.L167
+	.byte	3,1,1,5,29,1,5,23,9
+	.half	.L242-.L241
+	.byte	3,6,1,5,41,9
+	.half	.L243-.L242
+	.byte	3,126,1,5,21,9
+	.half	.L244-.L243
+	.byte	1,9
+	.half	.L245-.L244
+	.byte	3,1,1,9
+	.half	.L246-.L245
+	.byte	3,1,1,9
+	.half	.L247-.L246
+	.byte	3,1,1,9
+	.half	.L248-.L247
+	.byte	3,1,1,9
+	.half	.L249-.L248
+	.byte	3,1,1,5,24,9
+	.half	.L250-.L249
+	.byte	3,3,1,5,21,9
+	.half	.L251-.L250
+	.byte	3,4,1,9
+	.half	.L252-.L251
+	.byte	3,1,1,9
+	.half	.L253-.L252
+	.byte	3,1,1,9
+	.half	.L254-.L253
+	.byte	3,1,1,9
+	.half	.L255-.L254
+	.byte	3,1,1,9
+	.half	.L256-.L255
+	.byte	3,1,1,5,41,9
+	.half	.L257-.L256
+	.byte	3,32,1,5,44,1,5,47,9
+	.half	.L169-.L257
+	.byte	3,103,1,5,44,9
+	.half	.L258-.L169
+	.byte	3,25,1,5,38,9
+	.half	.L259-.L258
+	.byte	3,103,1,5,64,9
+	.half	.L168-.L259
+	.byte	1,5,16,9
+	.half	.L260-.L168
+	.byte	3,127,1,9
+	.half	.L261-.L260
+	.byte	3,2,1,5,25,9
+	.half	.L262-.L261
+	.byte	3,3,1,5,30,9
+	.half	.L263-.L262
+	.byte	3,3,1,5,41,9
+	.half	.L264-.L263
+	.byte	1,5,21,9
+	.half	.L265-.L264
+	.byte	1,5,30,9
+	.half	.L266-.L265
+	.byte	3,1,1,5,21,9
+	.half	.L267-.L266
+	.byte	1,5,12,9
+	.half	.L268-.L267
+	.byte	3,1,1,5,23,9
+	.half	.L269-.L268
+	.byte	1,5,46,9
+	.half	.L270-.L269
+	.byte	1,5,12,9
+	.half	.L271-.L270
+	.byte	3,1,1,5,46,9
+	.half	.L272-.L271
+	.byte	1,5,16,9
+	.half	.L273-.L272
+	.byte	3,5,1,5,41,9
+	.half	.L171-.L273
+	.byte	3,2,1,5,21,9
+	.half	.L274-.L171
+	.byte	1,9
+	.half	.L275-.L274
+	.byte	3,1,1,9
+	.half	.L276-.L275
+	.byte	3,1,1,9
+	.half	.L277-.L276
+	.byte	3,1,1,5,39,9
+	.half	.L278-.L277
+	.byte	3,2,1,5,21,9
+	.half	.L279-.L278
+	.byte	1,5,26,9
+	.half	.L280-.L279
+	.byte	3,3,1,5,44,9
+	.half	.L281-.L280
+	.byte	1,5,12,9
+	.half	.L170-.L281
+	.byte	3,6,1,5,1,3,1,1,7,9
+	.half	.L69-.L170
+	.byte	0,1,1
+.L236:
+	.sdecl	'.debug_ranges',debug,cluster('rt_memheap_init')
+	.sect	'.debug_ranges'
+.L68:
+	.word	-1,.L42,0,.L69-.L42,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_memheap_detach')
+	.sect	'.debug_info'
+.L70:
+	.word	247
+	.half	3
+	.word	.L71
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L73,.L72
+	.byte	2
+	.word	.L61
+	.byte	3
+	.byte	'rt_memheap_detach',0,1,167,1,10
+	.word	.L115
+	.byte	1,1,1
+	.word	.L44,.L127,.L43
+	.byte	4
+	.byte	'heap',0,1,167,1,47
+	.word	.L117,.L128
+	.byte	5
+	.word	.L44,.L127
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_memheap_detach')
+	.sect	'.debug_abbrev'
+.L71:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_memheap_detach')
+	.sect	'.debug_line'
+.L72:
+	.word	.L283-.L282
+.L282:
+	.half	3
+	.word	.L285-.L284
+.L284:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0,0,0,0,0
+.L285:
+	.byte	5,10,7,0,5,2
+	.word	.L44
+	.byte	3,166,1,1,5,24,9
+	.half	.L173-.L44
+	.byte	3,6,1,5,28,9
+	.half	.L286-.L173
+	.byte	3,1,1,5,12,9
+	.half	.L175-.L286
+	.byte	3,3,1,5,1,3,1,1,7,9
+	.half	.L74-.L175
+	.byte	0,1,1
+.L283:
+	.sdecl	'.debug_ranges',debug,cluster('rt_memheap_detach')
+	.sect	'.debug_ranges'
+.L73:
+	.word	-1,.L44,0,.L74-.L44,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_memheap_alloc')
+	.sect	'.debug_info'
+.L75:
+	.word	355
+	.half	3
+	.word	.L76
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L78,.L77
+	.byte	2
+	.word	.L61
+	.byte	3
+	.byte	'rt_memheap_alloc',0,1,181,1,7
+	.word	.L121
+	.byte	1,1,1
+	.word	.L46,.L129,.L45
+	.byte	4
+	.byte	'heap',0,1,181,1,43
+	.word	.L117,.L130
+	.byte	4
+	.byte	'size',0,1,181,1,59
+	.word	.L123,.L131
+	.byte	5
+	.word	.L132
+	.byte	6
+	.byte	'result',0,1,183,1,14
+	.word	.L115,.L133
+	.byte	6
+	.byte	'free_size',0,1,184,1,17
+	.word	.L134,.L135
+	.byte	6
+	.byte	'header_ptr',0,1,185,1,29
+	.word	.L125,.L136
+	.byte	5
+	.word	.L137
+	.byte	6
+	.byte	'new_ptr',0,1,233,1,41
+	.word	.L125,.L140
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_memheap_alloc')
+	.sect	'.debug_abbrev'
+.L76:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,85,6,0,0,6,52,0
+	.byte	3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_memheap_alloc')
+	.sect	'.debug_line'
+.L77:
+	.word	.L288-.L287
+.L287:
+	.half	3
+	.word	.L290-.L289
+.L289:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0,0,0,0,0
+.L290:
+	.byte	5,12,7,0,5,2
+	.word	.L46
+	.byte	3,190,1,1,5,7,3,118,1,5,12,9
+	.half	.L177-.L46
+	.byte	3,10,1,5,14,9
+	.half	.L291-.L177
+	.byte	3,1,1,5,20,3,6,1,5,5,9
+	.half	.L186-.L291
+	.byte	1,5,19,7,9
+	.half	.L292-.L186
+	.byte	3,3,1,5,36,3,3,1,5,45,9
+	.half	.L176-.L292
+	.byte	1,5,9,9
+	.half	.L178-.L176
+	.byte	3,1,1,5,26,7,9
+	.half	.L293-.L178
+	.byte	3,2,1,5,13,9
+	.half	.L179-.L293
+	.byte	3,2,1,5,26,9
+	.half	.L5-.L179
+	.byte	3,4,1,5,37,9
+	.half	.L294-.L5
+	.byte	1,5,65,9
+	.half	.L184-.L294
+	.byte	3,1,1,5,25,9
+	.half	.L8-.L184
+	.byte	3,3,1,5,13,9
+	.half	.L295-.L8
+	.byte	3,1,1,5,40,7,9
+	.half	.L296-.L295
+	.byte	3,3,1,5,16,9
+	.half	.L7-.L296
+	.byte	3,121,1,5,59,7,9
+	.half	.L297-.L7
+	.byte	1,5,9,7,9
+	.half	.L10-.L297
+	.byte	3,12,1,5,31,7,9
+	.half	.L298-.L10
+	.byte	3,5,1,5,13,9
+	.half	.L299-.L298
+	.byte	1,5,55,7,9
+	.half	.L138-.L299
+	.byte	3,6,1,5,52,9
+	.half	.L300-.L138
+	.byte	3,10,1,5,62,9
+	.half	.L301-.L300
+	.byte	3,118,1,5,32,9
+	.half	.L182-.L301
+	.byte	3,10,1,5,35,9
+	.half	.L302-.L182
+	.byte	3,3,1,5,40,9
+	.half	.L303-.L302
+	.byte	3,7,1,5,52,9
+	.half	.L304-.L303
+	.byte	3,1,1,5,40,9
+	.half	.L305-.L304
+	.byte	1,5,27,9
+	.half	.L306-.L305
+	.byte	3,1,1,5,40,9
+	.half	.L307-.L306
+	.byte	1,9
+	.half	.L308-.L307
+	.byte	3,1,1,5,27,9
+	.half	.L309-.L308
+	.byte	3,3,1,5,41,9
+	.half	.L310-.L309
+	.byte	3,2,1,5,39,9
+	.half	.L311-.L310
+	.byte	1,9
+	.half	.L312-.L311
+	.byte	3,1,1,5,42,9
+	.half	.L313-.L312
+	.byte	3,3,1,5,36,9
+	.half	.L314-.L313
+	.byte	1,5,42,9
+	.half	.L315-.L314
+	.byte	3,1,1,5,36,9
+	.half	.L316-.L315
+	.byte	1,5,21,9
+	.half	.L317-.L316
+	.byte	3,1,1,5,55,9
+	.half	.L318-.L317
+	.byte	1,5,21,9
+	.half	.L319-.L318
+	.byte	3,1,1,5,55,9
+	.half	.L320-.L319
+	.byte	1,5,44,9
+	.half	.L321-.L320
+	.byte	3,6,1,5,61,9
+	.half	.L322-.L321
+	.byte	1,5,45,9
+	.half	.L323-.L322
+	.byte	3,1,1,5,38,3,127,1,5,25,9
+	.half	.L324-.L323
+	.byte	3,3,1,5,37,9
+	.half	.L325-.L324
+	.byte	1,5,66,1,5,17,9
+	.half	.L326-.L325
+	.byte	1,5,41,7,9
+	.half	.L327-.L326
+	.byte	3,1,1,5,17,9
+	.half	.L139-.L327
+	.byte	3,127,1,5,44,9
+	.half	.L12-.L139
+	.byte	3,6,1,5,61,9
+	.half	.L328-.L12
+	.byte	1,5,38,9
+	.half	.L329-.L328
+	.byte	1,5,41,9
+	.half	.L330-.L329
+	.byte	3,13,1,5,39,9
+	.half	.L331-.L330
+	.byte	1,9
+	.half	.L332-.L331
+	.byte	3,1,1,5,51,9
+	.half	.L13-.L332
+	.byte	3,4,1,5,31,9
+	.half	.L333-.L13
+	.byte	1,5,34,9
+	.half	.L334-.L333
+	.byte	3,10,1,5,54,9
+	.half	.L185-.L334
+	.byte	3,9,1,5,1,9
+	.half	.L335-.L185
+	.byte	3,11,1,5,30,7,9
+	.half	.L11-.L335
+	.byte	3,121,1,5,12,9
+	.half	.L4-.L11
+	.byte	3,6,1,5,1,9
+	.half	.L336-.L4
+	.byte	3,1,1,7,9
+	.half	.L79-.L336
+	.byte	0,1,1
+.L288:
+	.sdecl	'.debug_ranges',debug,cluster('rt_memheap_alloc')
+	.sect	'.debug_ranges'
+.L78:
+	.word	-1,.L46,0,.L79-.L46,0,0
+.L132:
+	.word	-1,.L46,0,.L129-.L46,-1,.L52,0,.L94-.L52,0,0
+.L137:
+	.word	-1,.L46,.L138-.L46,.L139-.L46,-1,.L48,0,.L114-.L48,-1,.L50,0,.L109-.L50,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_memheap_realloc')
+	.sect	'.debug_info'
+.L80:
+	.word	440
+	.half	3
+	.word	.L81
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L83,.L82
+	.byte	2
+	.word	.L61
+	.byte	3
+	.byte	'rt_memheap_realloc',0,1,210,2,7
+	.word	.L121
+	.byte	1,1,1
+	.word	.L54,.L141,.L53
+	.byte	4
+	.byte	'heap',0,1,210,2,45
+	.word	.L117,.L142
+	.byte	4
+	.byte	'ptr',0,1,210,2,57
+	.word	.L121,.L143
+	.byte	4
+	.byte	'newsize',0,1,210,2,72
+	.word	.L123,.L144
+	.byte	5
+	.word	.L54,.L141
+	.byte	6
+	.byte	'result',0,1,212,2,14
+	.word	.L115,.L145
+	.byte	6
+	.byte	'oldsize',0,1,213,2,15
+	.word	.L123,.L146
+	.byte	6
+	.byte	'header_ptr',0,1,214,2,29
+	.word	.L125,.L147
+	.byte	6
+	.byte	'new_ptr',0,1,215,2,29
+	.word	.L125,.L148
+	.byte	5
+	.word	.L149,.L150
+	.byte	6
+	.byte	'new_ptr',0,1,243,2,15
+	.word	.L121,.L151
+	.byte	6
+	.byte	'next_ptr',0,1,244,2,33
+	.word	.L125,.L152
+	.byte	7
+	.word	.L153
+	.byte	0,8
+	.word	.L155,.L33
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_memheap_realloc')
+	.sect	'.debug_abbrev'
+.L81:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,11,0,85,6,0,0,8,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_memheap_realloc')
+	.sect	'.debug_line'
+.L82:
+	.word	.L338-.L337
+.L337:
+	.half	3
+	.word	.L340-.L339
+.L339:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0,0,0,0,0
+.L340:
+	.byte	5,7,7,0,5,2
+	.word	.L54
+	.byte	3,209,2,1,5,5,9
+	.half	.L203-.L54
+	.byte	3,10,1,5,25,7,9
+	.half	.L341-.L203
+	.byte	3,2,1,5,9,9
+	.half	.L188-.L341
+	.byte	3,2,1,5,15,9
+	.half	.L18-.L188
+	.byte	3,3,1,5,17,9
+	.half	.L342-.L18
+	.byte	3,1,1,5,5,3,3,1,5,39,7,9
+	.half	.L199-.L342
+	.byte	3,2,1,5,37,9
+	.half	.L20-.L199
+	.byte	3,5,1,5,15,9
+	.half	.L196-.L20
+	.byte	3,1,1,5,5,9
+	.half	.L202-.L196
+	.byte	3,2,1,5,36,7,9
+	.half	.L149-.L202
+	.byte	3,6,1,5,45,9
+	.half	.L189-.L149
+	.byte	1,5,9,9
+	.half	.L191-.L189
+	.byte	3,1,1,5,30,7,9
+	.half	.L343-.L191
+	.byte	3,6,1,5,14,9
+	.half	.L200-.L343
+	.byte	3,6,1,5,24,9
+	.half	.L154-.L200
+	.byte	3,4,1,5,26,9
+	.half	.L195-.L154
+	.byte	3,12,1,5,24,9
+	.half	.L344-.L195
+	.byte	3,116,1,5,46,9
+	.half	.L345-.L344
+	.byte	3,12,1,5,13,9
+	.half	.L346-.L345
+	.byte	1,5,44,7,9
+	.half	.L347-.L346
+	.byte	3,3,1,5,72,9
+	.half	.L348-.L347
+	.byte	1,5,61,9
+	.half	.L349-.L348
+	.byte	1,5,38,9
+	.half	.L350-.L349
+	.byte	1,5,25,9
+	.half	.L351-.L350
+	.byte	3,13,1,5,48,9
+	.half	.L352-.L351
+	.byte	1,5,38,9
+	.half	.L353-.L352
+	.byte	1,5,25,9
+	.half	.L354-.L353
+	.byte	3,1,1,5,48,9
+	.half	.L355-.L354
+	.byte	1,5,38,9
+	.half	.L201-.L355
+	.byte	1,5,67,9
+	.half	.L356-.L201
+	.byte	3,3,1,5,43,9
+	.half	.L197-.L356
+	.byte	3,24,1,5,17,9
+	.half	.L206-.L197
+	.byte	3,11,1,5,30,9
+	.half	.L24-.L206
+	.byte	3,5,1,5,50,9
+	.half	.L208-.L24
+	.byte	3,3,1,5,17,9
+	.half	.L210-.L208
+	.byte	1,5,9,9
+	.half	.L207-.L210
+	.byte	3,1,1,5,45,7,9
+	.half	.L357-.L207
+	.byte	3,2,1,5,29,9
+	.half	.L212-.L357
+	.byte	3,1,1,5,9,9
+	.half	.L28-.L212
+	.byte	3,3,1,5,1,9
+	.half	.L150-.L28
+	.byte	3,208,0,1,5,9,7,9
+	.half	.L22-.L150
+	.byte	3,180,127,1,5,5,9
+	.half	.L358-.L22
+	.byte	1,5,32,7,9
+	.half	.L359-.L358
+	.byte	3,4,1,5,41,9
+	.half	.L216-.L359
+	.byte	1,5,5,9
+	.half	.L215-.L216
+	.byte	3,1,1,5,22,7,9
+	.half	.L23-.L215
+	.byte	3,2,1,5,16,9
+	.half	.L19-.L23
+	.byte	3,2,1,5,1,9
+	.half	.L360-.L19
+	.byte	3,195,0,1,5,43,7,9
+	.half	.L31-.L360
+	.byte	3,66,1,5,10,9
+	.half	.L217-.L31
+	.byte	3,25,1,5,36,9
+	.half	.L155-.L217
+	.byte	3,6,1,5,55,9
+	.half	.L361-.L155
+	.byte	1,5,27,9
+	.half	.L362-.L361
+	.byte	3,127,1,5,55,9
+	.half	.L363-.L362
+	.byte	3,1,1,5,53,9
+	.half	.L364-.L363
+	.byte	1,5,30,1,5,17,9
+	.half	.L365-.L364
+	.byte	3,6,1,5,30,9
+	.half	.L366-.L365
+	.byte	1,5,35,9
+	.half	.L367-.L366
+	.byte	3,1,1,5,25,9
+	.half	.L368-.L367
+	.byte	1,5,17,9
+	.half	.L369-.L368
+	.byte	3,3,1,5,50,9
+	.half	.L370-.L369
+	.byte	1,5,40,9
+	.half	.L371-.L370
+	.byte	1,5,17,9
+	.half	.L372-.L371
+	.byte	3,1,1,5,50,9
+	.half	.L373-.L372
+	.byte	1,5,40,9
+	.half	.L374-.L373
+	.byte	1,5,30,9
+	.half	.L33-.L374
+	.byte	3,4,1,5,32,9
+	.half	.L375-.L33
+	.byte	3,9,1,5,51,9
+	.half	.L376-.L375
+	.byte	1,5,49,9
+	.half	.L377-.L376
+	.byte	1,5,26,1,9
+	.half	.L27-.L377
+	.byte	3,3,1,5,5,9
+	.half	.L30-.L27
+	.byte	3,3,1,5,1,9
+	.half	.L219-.L30
+	.byte	3,1,1,7,9
+	.half	.L84-.L219
+	.byte	0,1,1
+.L338:
+	.sdecl	'.debug_ranges',debug,cluster('rt_memheap_realloc')
+	.sect	'.debug_ranges'
+.L83:
+	.word	-1,.L54,0,.L84-.L54,0,0
+.L153:
+	.word	-1,.L54,.L154-.L54,.L24-.L54,-1,.L56,0,.L104-.L56,-1,.L58,0,.L99-.L58,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_memheap_free')
+	.sect	'.debug_info'
+.L85:
+	.word	351
+	.half	3
+	.word	.L86
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L88,.L87
+	.byte	2
+	.word	.L61
+	.byte	3
+	.byte	'rt_memheap_free',0,1,173,4,6,1,1,1
+	.word	.L60,.L156,.L59
+	.byte	4
+	.byte	'ptr',0,1,173,4,28
+	.word	.L121,.L157
+	.byte	5
+	.word	.L60,.L156
+	.byte	6
+	.byte	'result',0,1,175,4,14
+	.word	.L115,.L158
+	.byte	6
+	.byte	'heap',0,1,176,4,24
+	.word	.L117,.L159
+	.byte	6
+	.byte	'header_ptr',0,1,177,4,29
+	.word	.L125,.L160
+	.byte	6
+	.byte	'new_ptr',0,1,177,4,42
+	.word	.L125,.L161
+	.byte	6
+	.byte	'insert_header',0,1,178,4,17
+	.word	.L134,.L162
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_memheap_free')
+	.sect	'.debug_abbrev'
+.L86:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_memheap_free')
+	.sect	'.debug_line'
+.L87:
+	.word	.L379-.L378
+.L378:
+	.half	3
+	.word	.L381-.L380
+.L380:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0,0,0,0,0
+.L381:
+	.byte	5,6,7,0,5,2
+	.word	.L60
+	.byte	3,172,4,1,5,5,9
+	.half	.L221-.L60
+	.byte	3,8,1,5,22,7,9
+	.half	.L382-.L221
+	.byte	3,22,1,5,19,9
+	.half	.L222-.L382
+	.byte	3,109,1,5,40,3,3,1,5,41,9
+	.half	.L223-.L222
+	.byte	3,22,1,5,32,9
+	.half	.L383-.L223
+	.byte	1,5,41,9
+	.half	.L220-.L383
+	.byte	1,5,5,9
+	.half	.L224-.L220
+	.byte	3,1,1,5,22,7,9
+	.half	.L384-.L224
+	.byte	3,2,1,5,1,9
+	.half	.L35-.L384
+	.byte	3,197,0,1,5,43,7,9
+	.half	.L36-.L35
+	.byte	3,65,1,5,23,9
+	.half	.L385-.L36
+	.byte	1,5,9,9
+	.half	.L386-.L385
+	.byte	3,2,1,5,29,9
+	.half	.L387-.L386
+	.byte	1,5,26,9
+	.half	.L388-.L387
+	.byte	1,5,10,9
+	.half	.L389-.L388
+	.byte	3,3,1,5,30,9
+	.half	.L390-.L389
+	.byte	3,6,1,5,23,9
+	.half	.L391-.L390
+	.byte	3,9,1,5,20,9
+	.half	.L392-.L391
+	.byte	3,122,1,5,46,9
+	.half	.L393-.L392
+	.byte	1,5,34,9
+	.half	.L394-.L393
+	.byte	1,5,20,9
+	.half	.L395-.L394
+	.byte	3,1,1,5,46,9
+	.half	.L396-.L395
+	.byte	1,5,34,9
+	.half	.L397-.L396
+	.byte	1,5,32,9
+	.half	.L398-.L397
+	.byte	3,3,1,5,10,9
+	.half	.L38-.L398
+	.byte	3,6,1,5,13,9
+	.half	.L399-.L38
+	.byte	3,3,1,5,30,9
+	.half	.L400-.L399
+	.byte	1,5,29,9
+	.half	.L401-.L400
+	.byte	3,3,1,5,16,9
+	.half	.L227-.L401
+	.byte	3,6,1,5,29,9
+	.half	.L402-.L227
+	.byte	1,5,38,9
+	.half	.L403-.L402
+	.byte	3,1,1,5,29,9
+	.half	.L404-.L403
+	.byte	1,5,16,9
+	.half	.L405-.L404
+	.byte	3,3,1,5,48,9
+	.half	.L406-.L405
+	.byte	1,5,39,9
+	.half	.L407-.L406
+	.byte	1,5,16,9
+	.half	.L408-.L407
+	.byte	3,1,1,5,48,9
+	.half	.L409-.L408
+	.byte	1,5,39,9
+	.half	.L228-.L409
+	.byte	1,5,5,9
+	.half	.L39-.L228
+	.byte	3,3,1,5,37,7,9
+	.half	.L410-.L39
+	.byte	3,3,1,5,48,9
+	.half	.L411-.L410
+	.byte	1,5,31,9
+	.half	.L412-.L411
+	.byte	1,5,37,9
+	.half	.L413-.L412
+	.byte	3,1,1,5,31,9
+	.half	.L414-.L413
+	.byte	1,5,13,9
+	.half	.L415-.L414
+	.byte	3,1,1,5,24,9
+	.half	.L416-.L415
+	.byte	1,5,47,9
+	.half	.L417-.L416
+	.byte	1,5,13,9
+	.half	.L418-.L417
+	.byte	3,1,1,5,47,9
+	.half	.L419-.L418
+	.byte	1,5,26,9
+	.half	.L40-.L419
+	.byte	3,12,1,5,1,9
+	.half	.L89-.L40
+	.byte	3,1,0,1,1
+.L379:
+	.sdecl	'.debug_ranges',debug,cluster('rt_memheap_free')
+	.sect	'.debug_ranges'
+.L88:
+	.word	-1,.L60,0,.L89-.L60,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_3')
+	.sect	'.debug_info'
+.L90:
+	.word	206
+	.half	3
+	.word	.L91
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L93,.L92
+	.byte	2
+	.word	.L61
+	.byte	3
+	.byte	'.cocofun_3',0,1,181,1,7,1
+	.word	.L52,.L94,.L51
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_3')
+	.sect	'.debug_abbrev'
+.L91:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_3')
+	.sect	'.debug_line'
+.L92:
+	.word	.L421-.L420
+.L420:
+	.half	3
+	.word	.L423-.L422
+.L422:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0,0,0,0,0
+.L423:
+	.byte	5,38,7,0,5,2
+	.word	.L52
+	.byte	3,158,2,1,5,25,9
+	.half	.L424-.L52
+	.byte	3,1,1,5,37,9
+	.half	.L425-.L424
+	.byte	1,5,66,1,5,17,9
+	.half	.L426-.L425
+	.byte	1,5,41,7,9
+	.half	.L427-.L426
+	.byte	3,1,1,5,27,9
+	.half	.L15-.L427
+	.byte	3,9,1,5,50,9
+	.half	.L183-.L15
+	.byte	3,1,1,7,9
+	.half	.L94-.L183
+	.byte	0,1,1,5,38,0,5,2
+	.word	.L52
+	.byte	3,150,3,1,5,25,9
+	.half	.L424-.L52
+	.byte	3,1,1,5,37,9
+	.half	.L425-.L424
+	.byte	1,5,66,1,5,17,9
+	.half	.L426-.L425
+	.byte	1,5,41,7,9
+	.half	.L427-.L426
+	.byte	3,1,1,5,27,9
+	.half	.L15-.L427
+	.byte	3,145,127,1,5,50,9
+	.half	.L183-.L15
+	.byte	3,1,1,7,9
+	.half	.L94-.L183
+	.byte	0,1,1
+.L421:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_3')
+	.sect	'.debug_ranges'
+.L93:
+	.word	-1,.L52,0,.L94-.L52,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_4')
+	.sect	'.debug_info'
+.L95:
+	.word	206
+	.half	3
+	.word	.L96
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L98,.L97
+	.byte	2
+	.word	.L61
+	.byte	3
+	.byte	'.cocofun_4',0,1,210,2,7,1
+	.word	.L58,.L99,.L57
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_4')
+	.sect	'.debug_abbrev'
+.L96:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_4')
+	.sect	'.debug_line'
+.L97:
+	.word	.L429-.L428
+.L428:
+	.half	3
+	.word	.L431-.L430
+.L430:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0,0,0,0,0
+.L431:
+	.byte	5,43,7,0,5,2
+	.word	.L58
+	.byte	3,191,3,1,5,37,9
+	.half	.L205-.L58
+	.byte	1,5,43,9
+	.half	.L432-.L205
+	.byte	3,1,1,5,37,9
+	.half	.L433-.L432
+	.byte	1,5,21,9
+	.half	.L434-.L433
+	.byte	3,1,1,5,55,9
+	.half	.L435-.L434
+	.byte	1,5,21,9
+	.half	.L436-.L435
+	.byte	3,1,1,5,55,9
+	.half	.L437-.L436
+	.byte	1,9
+	.half	.L99-.L437
+	.byte	0,1,1,5,43,0,5,2
+	.word	.L58
+	.byte	3,191,3,1,5,24,9
+	.half	.L205-.L58
+	.byte	3,218,0,1,5,30,9
+	.half	.L432-.L205
+	.byte	3,1,1,5,24,9
+	.half	.L433-.L432
+	.byte	1,5,21,9
+	.half	.L434-.L433
+	.byte	3,167,127,1,5,43,9
+	.half	.L435-.L434
+	.byte	3,218,0,1,5,9,9
+	.half	.L436-.L435
+	.byte	3,1,1,5,43,9
+	.half	.L437-.L436
+	.byte	1,5,55,9
+	.half	.L438-.L437
+	.byte	3,166,127,1,7,9
+	.half	.L99-.L438
+	.byte	0,1,1
+.L429:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_4')
+	.sect	'.debug_ranges'
+.L98:
+	.word	-1,.L58,0,.L99-.L58,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_5')
+	.sect	'.debug_info'
+.L100:
+	.word	206
+	.half	3
+	.word	.L101
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L103,.L102
+	.byte	2
+	.word	.L61
+	.byte	3
+	.byte	'.cocofun_5',0,1,210,2,7,1
+	.word	.L56,.L104,.L55
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_5')
+	.sect	'.debug_abbrev'
+.L101:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_5')
+	.sect	'.debug_line'
+.L102:
+	.word	.L440-.L439
+.L439:
+	.half	3
+	.word	.L442-.L441
+.L441:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0,0,0,0,0
+.L442:
+	.byte	5,67,7,0,5,2
+	.word	.L56
+	.byte	3,167,3,1,5,53,9
+	.half	.L204-.L56
+	.byte	3,9,1,5,33,9
+	.half	.L443-.L204
+	.byte	1,5,36,9
+	.half	.L444-.L443
+	.byte	3,3,1,5,41,9
+	.half	.L445-.L444
+	.byte	3,6,1,5,53,9
+	.half	.L446-.L445
+	.byte	3,1,1,5,41,9
+	.half	.L447-.L446
+	.byte	1,5,27,9
+	.half	.L448-.L447
+	.byte	3,1,1,5,40,9
+	.half	.L449-.L448
+	.byte	1,9
+	.half	.L450-.L449
+	.byte	3,1,1,9
+	.half	.L104-.L450
+	.byte	0,1,1,5,43,0,5,2
+	.word	.L56
+	.byte	3,235,3,1,5,40,9
+	.half	.L204-.L56
+	.byte	3,10,1,5,20,9
+	.half	.L443-.L204
+	.byte	1,5,23,9
+	.half	.L444-.L443
+	.byte	3,2,1,5,28,9
+	.half	.L445-.L444
+	.byte	3,7,1,5,40,9
+	.half	.L446-.L445
+	.byte	3,1,1,5,28,9
+	.half	.L447-.L446
+	.byte	1,5,15,9
+	.half	.L448-.L447
+	.byte	3,1,1,5,28,9
+	.half	.L449-.L448
+	.byte	1,9
+	.half	.L450-.L449
+	.byte	3,1,1,5,40,9
+	.half	.L451-.L450
+	.byte	3,187,127,1,7,9
+	.half	.L104-.L451
+	.byte	0,1,1
+.L440:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_5')
+	.sect	'.debug_ranges'
+.L103:
+	.word	-1,.L56,0,.L104-.L56,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_6')
+	.sect	'.debug_info'
+.L105:
+	.word	206
+	.half	3
+	.word	.L106
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L108,.L107
+	.byte	2
+	.word	.L61
+	.byte	3
+	.byte	'.cocofun_6',0,1,181,1,7,1
+	.word	.L50,.L109,.L49
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_6')
+	.sect	'.debug_abbrev'
+.L106:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_6')
+	.sect	'.debug_line'
+.L107:
+	.word	.L453-.L452
+.L452:
+	.half	3
+	.word	.L455-.L454
+.L454:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0,0,0,0,0
+.L455:
+	.byte	5,27,7,0,5,2
+	.word	.L50
+	.byte	3,134,2,1,5,62,9
+	.half	.L456-.L50
+	.byte	1,5,50,9
+	.half	.L457-.L456
+	.byte	1,5,27,9
+	.half	.L458-.L457
+	.byte	3,1,1,5,62,9
+	.half	.L459-.L458
+	.byte	1,5,50,9
+	.half	.L460-.L459
+	.byte	1,9
+	.half	.L109-.L460
+	.byte	0,1,1,5,27,0,5,2
+	.word	.L50
+	.byte	3,169,2,1,5,62,9
+	.half	.L456-.L50
+	.byte	1,5,50,9
+	.half	.L457-.L456
+	.byte	1,5,27,9
+	.half	.L458-.L457
+	.byte	3,1,1,5,62,9
+	.half	.L459-.L458
+	.byte	1,5,50,9
+	.half	.L460-.L459
+	.byte	1,9
+	.half	.L461-.L460
+	.byte	3,93,1,7,9
+	.half	.L109-.L461
+	.byte	0,1,1,5,25,0,5,2
+	.word	.L50
+	.byte	3,161,3,1,5,58,9
+	.half	.L456-.L50
+	.byte	1,5,48,9
+	.half	.L457-.L456
+	.byte	1,5,25,9
+	.half	.L458-.L457
+	.byte	3,1,1,5,58,9
+	.half	.L459-.L458
+	.byte	1,5,48,9
+	.half	.L460-.L459
+	.byte	1,5,50,9
+	.half	.L461-.L460
+	.byte	3,229,126,1,7,9
+	.half	.L109-.L461
+	.byte	0,1,1
+.L453:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_6')
+	.sect	'.debug_ranges'
+.L108:
+	.word	-1,.L50,0,.L109-.L50,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_7')
+	.sect	'.debug_info'
+.L110:
+	.word	206
+	.half	3
+	.word	.L111
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L113,.L112
+	.byte	2
+	.word	.L61
+	.byte	3
+	.byte	'.cocofun_7',0,1,181,1,7,1
+	.word	.L48,.L114,.L47
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_7')
+	.sect	'.debug_abbrev'
+.L111:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_7')
+	.sect	'.debug_line'
+.L112:
+	.word	.L463-.L462
+.L462:
+	.half	3
+	.word	.L465-.L464
+.L464:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\memheap.c',0,0,0,0,0
+.L465:
+	.byte	5,42,7,0,5,2
+	.word	.L48
+	.byte	3,140,2,1,5,53,9
+	.half	.L466-.L48
+	.byte	1,9
+	.half	.L114-.L466
+	.byte	0,1,1,5,21,0,5,2
+	.word	.L48
+	.byte	3,142,2,1,5,32,9
+	.half	.L466-.L48
+	.byte	1,5,53,9
+	.half	.L467-.L466
+	.byte	3,126,1,7,9
+	.half	.L114-.L467
+	.byte	0,1,1,5,43,0,5,2
+	.word	.L48
+	.byte	3,191,3,1,5,54,9
+	.half	.L466-.L48
+	.byte	1,5,53,9
+	.half	.L467-.L466
+	.byte	3,205,126,1,7,9
+	.half	.L114-.L467
+	.byte	0,1,1,5,30,0,5,2
+	.word	.L48
+	.byte	3,153,4,1,5,41,9
+	.half	.L466-.L48
+	.byte	1,5,53,9
+	.half	.L467-.L466
+	.byte	3,243,125,1,7,9
+	.half	.L114-.L467
+	.byte	0,1,1,5,21,0,5,2
+	.word	.L48
+	.byte	3,193,3,1,5,32,9
+	.half	.L466-.L48
+	.byte	1,5,53,9
+	.half	.L467-.L466
+	.byte	3,203,126,1,7,9
+	.half	.L114-.L467
+	.byte	0,1,1,5,9,0,5,2
+	.word	.L48
+	.byte	3,155,4,1,5,20,9
+	.half	.L466-.L48
+	.byte	1,5,53,9
+	.half	.L467-.L466
+	.byte	3,241,125,1,7,9
+	.half	.L114-.L467
+	.byte	0,1,1
+.L463:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_7')
+	.sect	'.debug_ranges'
+.L113:
+	.word	-1,.L48,0,.L114-.L48,0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_3')
+	.sect	'.debug_loc'
+.L51:
+	.word	-1,.L52,0,.L94-.L52
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_4')
+	.sect	'.debug_loc'
+.L57:
+	.word	-1,.L58,0,.L99-.L58
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_5')
+	.sect	'.debug_loc'
+.L55:
+	.word	-1,.L56,0,.L104-.L56
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_6')
+	.sect	'.debug_loc'
+.L49:
+	.word	-1,.L50,0,.L109-.L50
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_7')
+	.sect	'.debug_loc'
+.L47:
+	.word	-1,.L48,0,.L114-.L48
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_memheap_alloc')
+	.sect	'.debug_loc'
+.L135:
+	.word	-1,.L46,.L50-.L46,.L109-.L46
+	.half	1
+	.byte	88
+	.word	.L48-.L46,.L114-.L46
+	.half	1
+	.byte	88
+	.word	.L52-.L46,.L183-.L46
+	.half	1
+	.byte	88
+	.word	.L176-.L46,.L4-.L46
+	.half	1
+	.byte	88
+	.word	0,0
+.L136:
+	.word	-1,.L46,.L180-.L46,.L181-.L46
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L50-.L46,.L109-.L46
+	.half	1
+	.byte	111
+	.word	.L48-.L46,.L114-.L46
+	.half	1
+	.byte	111
+	.word	.L52-.L46,.L183-.L46
+	.half	1
+	.byte	111
+	.word	.L184-.L46,.L4-.L46
+	.half	1
+	.byte	111
+	.word	0,0
+.L130:
+	.word	-1,.L46,0,.L176-.L46
+	.half	1
+	.byte	100
+	.word	.L50-.L46,.L109-.L46
+	.half	1
+	.byte	108
+	.word	.L48-.L46,.L114-.L46
+	.half	1
+	.byte	108
+	.word	.L52-.L46,.L183-.L46
+	.half	1
+	.byte	108
+	.word	.L177-.L46,.L129-.L46
+	.half	1
+	.byte	108
+	.word	0,0
+.L140:
+	.word	-1,.L46,.L50-.L46,.L109-.L46
+	.half	1
+	.byte	101
+	.word	.L48-.L46,.L114-.L46
+	.half	1
+	.byte	101
+	.word	.L182-.L46,.L12-.L46
+	.half	1
+	.byte	101
+	.word	0,0
+.L133:
+	.word	-1,.L46,.L178-.L46,.L179-.L46
+	.half	1
+	.byte	82
+	.word	.L50-.L46,.L109-.L46
+	.half	1
+	.byte	82
+	.word	.L48-.L46,.L114-.L46
+	.half	1
+	.byte	82
+	.word	.L52-.L46,.L183-.L46
+	.half	1
+	.byte	82
+	.word	.L5-.L46,.L185-.L46
+	.half	1
+	.byte	82
+	.word	.L11-.L46,.L4-.L46
+	.half	1
+	.byte	82
+	.word	0,0
+.L45:
+	.word	-1,.L46,0,.L129-.L46
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L131:
+	.word	-1,.L46,0,.L177-.L46
+	.half	1
+	.byte	84
+	.word	.L50-.L46,.L109-.L46
+	.half	1
+	.byte	89
+	.word	.L48-.L46,.L114-.L46
+	.half	1
+	.byte	89
+	.word	.L52-.L46,.L183-.L46
+	.half	1
+	.byte	89
+	.word	.L186-.L46,.L129-.L46
+	.half	1
+	.byte	89
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_memheap_detach')
+	.sect	'.debug_loc'
+.L128:
+	.word	-1,.L44,0,.L172-.L44
+	.half	1
+	.byte	100
+	.word	.L173-.L44,.L127-.L44
+	.half	1
+	.byte	111
+	.word	.L174-.L44,.L175-.L44
+	.half	1
+	.byte	100
+	.word	0,0
+.L43:
+	.word	-1,.L44,0,.L127-.L44
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_memheap_free')
+	.sect	'.debug_loc'
+.L160:
+	.word	-1,.L60,.L223-.L60,.L35-.L60
+	.half	1
+	.byte	110
+	.word	.L36-.L60,.L156-.L60
+	.half	1
+	.byte	110
+	.word	.L226-.L60,.L38-.L60
+	.half	1
+	.byte	81
+	.word	0,0
+.L159:
+	.word	-1,.L60,.L222-.L60,.L35-.L60
+	.half	1
+	.byte	109
+	.word	.L36-.L60,.L156-.L60
+	.half	1
+	.byte	109
+	.word	0,0
+.L162:
+	.word	-1,.L60,.L223-.L60,.L35-.L60
+	.half	1
+	.byte	88
+	.word	.L36-.L60,.L156-.L60
+	.half	1
+	.byte	88
+	.word	0,0
+.L161:
+	.word	-1,.L60,.L227-.L60,.L228-.L60
+	.half	1
+	.byte	111
+	.word	0,0
+.L157:
+	.word	-1,.L60,0,.L220-.L60
+	.half	1
+	.byte	100
+	.word	.L221-.L60,.L156-.L60
+	.half	1
+	.byte	108
+	.word	.L35-.L60,.L36-.L60
+	.half	1
+	.byte	100
+	.word	0,0
+.L158:
+	.word	-1,.L60,.L224-.L60,.L35-.L60
+	.half	1
+	.byte	82
+	.word	.L225-.L60,.L35-.L60
+	.half	1
+	.byte	84
+	.word	.L36-.L60,.L156-.L60
+	.half	1
+	.byte	82
+	.word	0,0
+.L59:
+	.word	-1,.L60,0,.L156-.L60
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_memheap_init')
+	.sect	'.debug_loc'
+.L126:
+	.word	-1,.L42,.L167-.L42,.L168-.L42
+	.half	1
+	.byte	98
+	.word	.L171-.L42,.L170-.L42
+	.half	1
+	.byte	98
+	.word	0,0
+.L118:
+	.word	-1,.L42,0,.L163-.L42
+	.half	1
+	.byte	100
+	.word	.L165-.L42,.L116-.L42
+	.half	1
+	.byte	111
+	.word	0,0
+.L120:
+	.word	-1,.L42,0,.L163-.L42
+	.half	1
+	.byte	101
+	.word	.L164-.L42,.L116-.L42
+	.half	1
+	.byte	108
+	.word	.L169-.L42,.L170-.L42
+	.half	1
+	.byte	101
+	.word	0,0
+.L41:
+	.word	-1,.L42,0,.L116-.L42
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L124:
+	.word	-1,.L42,0,.L164-.L42
+	.half	1
+	.byte	84
+	.word	.L165-.L42,.L116-.L42
+	.half	1
+	.byte	88
+	.word	0,0
+.L122:
+	.word	-1,.L42,0,.L163-.L42
+	.half	1
+	.byte	102
+	.word	.L166-.L42,.L116-.L42
+	.half	1
+	.byte	109
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_memheap_realloc')
+	.sect	'.debug_loc'
+.L147:
+	.word	-1,.L54,.L193-.L54,.L191-.L54
+	.half	1
+	.byte	81
+	.word	.L52-.L54,.L183-.L54
+	.half	1
+	.byte	110
+	.word	.L50-.L54,.L109-.L54
+	.half	1
+	.byte	110
+	.word	.L196-.L54,.L197-.L54
+	.half	1
+	.byte	110
+	.word	.L56-.L54,.L104-.L54
+	.half	1
+	.byte	110
+	.word	.L48-.L54,.L114-.L54
+	.half	1
+	.byte	110
+	.word	.L205-.L54,.L99-.L54
+	.half	1
+	.byte	110
+	.word	.L206-.L54,.L19-.L54
+	.half	1
+	.byte	110
+	.word	.L22-.L54,.L215-.L54
+	.half	1
+	.byte	81
+	.word	.L31-.L54,.L141-.L54
+	.half	1
+	.byte	110
+	.word	0,0
+.L142:
+	.word	-1,.L54,0,.L187-.L54
+	.half	1
+	.byte	100
+	.word	.L18-.L54,.L189-.L54
+	.half	1
+	.byte	100
+	.word	.L52-.L54,.L183-.L54
+	.half	1
+	.byte	108
+	.word	.L50-.L54,.L109-.L54
+	.half	1
+	.byte	108
+	.word	.L198-.L54,.L197-.L54
+	.half	1
+	.byte	108
+	.word	.L56-.L54,.L104-.L54
+	.half	1
+	.byte	108
+	.word	.L48-.L54,.L114-.L54
+	.half	1
+	.byte	108
+	.word	.L205-.L54,.L99-.L54
+	.half	1
+	.byte	108
+	.word	.L209-.L54,.L210-.L54
+	.half	1
+	.byte	100
+	.word	.L22-.L54,.L216-.L54
+	.half	1
+	.byte	100
+	.word	.L206-.L54,.L141-.L54
+	.half	1
+	.byte	108
+	.word	0,0
+.L148:
+	.word	-1,.L54,.L204-.L54,.L104-.L54
+	.half	1
+	.byte	111
+	.word	.L48-.L54,.L114-.L54
+	.half	1
+	.byte	111
+	.word	.L205-.L54,.L99-.L54
+	.half	1
+	.byte	111
+	.word	.L217-.L54,.L27-.L54
+	.half	1
+	.byte	111
+	.word	.L218-.L54,.L27-.L54
+	.half	1
+	.byte	81
+	.word	0,0
+.L151:
+	.word	-1,.L54,.L210-.L54,.L211-.L54
+	.half	1
+	.byte	98
+	.word	.L207-.L54,.L22-.L54
+	.half	1
+	.byte	111
+	.word	.L211-.L54,.L212-.L54
+	.half	1
+	.byte	100
+	.word	.L150-.L54,.L22-.L54
+	.half	1
+	.byte	98
+	.word	0,0
+.L144:
+	.word	-1,.L54,0,.L188-.L54
+	.half	1
+	.byte	84
+	.word	.L18-.L54,.L190-.L54
+	.half	1
+	.byte	84
+	.word	.L192-.L54,.L20-.L54
+	.half	1
+	.byte	84
+	.word	.L52-.L54,.L183-.L54
+	.half	1
+	.byte	88
+	.word	.L50-.L54,.L109-.L54
+	.half	1
+	.byte	88
+	.word	.L199-.L54,.L197-.L54
+	.half	1
+	.byte	88
+	.word	.L56-.L54,.L104-.L54
+	.half	1
+	.byte	88
+	.word	.L48-.L54,.L114-.L54
+	.half	1
+	.byte	88
+	.word	.L205-.L54,.L99-.L54
+	.half	1
+	.byte	88
+	.word	.L206-.L54,.L19-.L54
+	.half	1
+	.byte	88
+	.word	.L31-.L54,.L141-.L54
+	.half	1
+	.byte	88
+	.word	0,0
+.L152:
+	.word	-1,.L54,.L194-.L54,.L195-.L54
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L52-.L54,.L183-.L54
+	.half	1
+	.byte	111
+	.word	.L50-.L54,.L109-.L54
+	.half	1
+	.byte	111
+	.word	.L200-.L54,.L201-.L54
+	.half	1
+	.byte	111
+	.word	.L204-.L54,.L104-.L54
+	.half	1
+	.byte	111
+	.word	.L48-.L54,.L114-.L54
+	.half	1
+	.byte	111
+	.word	.L205-.L54,.L99-.L54
+	.half	1
+	.byte	111
+	.word	.L206-.L54,.L207-.L54
+	.half	1
+	.byte	111
+	.word	0,0
+.L146:
+	.word	-1,.L54,.L52-.L54,.L183-.L54
+	.half	1
+	.byte	89
+	.word	.L50-.L54,.L109-.L54
+	.half	1
+	.byte	89
+	.word	.L202-.L54,.L197-.L54
+	.half	1
+	.byte	89
+	.word	.L56-.L54,.L104-.L54
+	.half	1
+	.byte	89
+	.word	.L48-.L54,.L114-.L54
+	.half	1
+	.byte	89
+	.word	.L205-.L54,.L99-.L54
+	.half	1
+	.byte	89
+	.word	.L206-.L54,.L19-.L54
+	.half	1
+	.byte	89
+	.word	.L31-.L54,.L141-.L54
+	.half	1
+	.byte	89
+	.word	0,0
+.L143:
+	.word	-1,.L54,0,.L187-.L54
+	.half	1
+	.byte	101
+	.word	.L187-.L54,.L188-.L54
+	.half	1
+	.byte	100
+	.word	.L18-.L54,.L191-.L54
+	.half	1
+	.byte	101
+	.word	.L52-.L54,.L183-.L54
+	.half	1
+	.byte	109
+	.word	.L50-.L54,.L109-.L54
+	.half	1
+	.byte	109
+	.word	.L203-.L54,.L197-.L54
+	.half	1
+	.byte	109
+	.word	.L56-.L54,.L104-.L54
+	.half	1
+	.byte	109
+	.word	.L48-.L54,.L114-.L54
+	.half	1
+	.byte	109
+	.word	.L205-.L54,.L99-.L54
+	.half	1
+	.byte	109
+	.word	.L213-.L54,.L212-.L54
+	.half	1
+	.byte	101
+	.word	.L214-.L54,.L28-.L54
+	.half	1
+	.byte	100
+	.word	.L22-.L54,.L215-.L54
+	.half	1
+	.byte	101
+	.word	.L206-.L54,.L141-.L54
+	.half	1
+	.byte	109
+	.word	.L219-.L54,.L141-.L54
+	.half	1
+	.byte	98
+	.word	0,0
+.L145:
+	.word	-1,.L54,.L52-.L54,.L183-.L54
+	.half	1
+	.byte	82
+	.word	.L50-.L54,.L109-.L54
+	.half	1
+	.byte	82
+	.word	.L191-.L54,.L197-.L54
+	.half	1
+	.byte	82
+	.word	.L56-.L54,.L104-.L54
+	.half	1
+	.byte	82
+	.word	.L48-.L54,.L114-.L54
+	.half	1
+	.byte	82
+	.word	.L205-.L54,.L99-.L54
+	.half	1
+	.byte	82
+	.word	.L206-.L54,.L208-.L54
+	.half	1
+	.byte	82
+	.word	.L215-.L54,.L19-.L54
+	.half	1
+	.byte	82
+	.word	.L31-.L54,.L30-.L54
+	.half	1
+	.byte	82
+	.word	0,0
+.L53:
+	.word	-1,.L54,0,.L141-.L54
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L468:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('rt_memheap_init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L468,.L42,.L116-.L42
+	.sdecl	'.debug_frame',debug,cluster('rt_memheap_detach')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L468,.L44,.L127-.L44
+	.sdecl	'.debug_frame',debug,cluster('rt_memheap_alloc')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L468,.L46,.L129-.L46
+	.sdecl	'.debug_frame',debug,cluster('rt_memheap_realloc')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L468,.L54,.L141-.L54
+	.sdecl	'.debug_frame',debug,cluster('rt_memheap_free')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L468,.L60,.L156-.L60
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L469:
+	.word	52
+	.word	-1
+	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
+	.byte	8,37,8,38,8,39,0
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_7')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L469,.L48,.L114-.L48
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_6')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L469,.L50,.L109-.L50
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_3')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L469,.L52,.L94-.L52
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_5')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L469,.L56,.L104-.L56
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_4')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L469,.L58,.L99-.L58
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   666  RTM_EXPORT(rt_memheap_free);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   667  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   668  #ifdef RT_USING_FINSH
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   669  static void _memheap_dump_tag(struct rt_memheap_item* item)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   670  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   671      rt_uint8_t name[2 * sizeof(void*)];
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   672      rt_uint8_t* ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   673  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   674      ptr = (rt_uint8_t*)&(item->next_free);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   675      rt_memcpy(name, ptr, sizeof(void*));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   676      ptr = (rt_uint8_t*)&(item->prev_free);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   677      rt_memcpy(&name[sizeof(void*)], ptr, sizeof(void*));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   678  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   679      rt_kprintf("%.*s", 2 * sizeof(void*), name);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   680  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   681  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   682  int rt_memheap_dump(struct rt_memheap *heap)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   683  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   684      struct rt_memheap_item *item, *end;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   685  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   686      if (heap == RT_NULL) return 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   687      RT_ASSERT(rt_object_get_type(&heap->parent) == RT_Object_Class_MemHeap);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   688  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   689      rt_kprintf("\n[%.*s] [0x%08x - 0x%08x]->\n", RT_NAME_MAX, heap->parent.name, 
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   690          (rt_ubase_t)heap->start_addr, (rt_ubase_t)heap->start_addr + heap->pool_size);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   691      rt_kprintf("------------------------------\n");
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   692  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   693      /* lock memheap */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   694      rt_sem_take(&(heap->lock), RT_WAITING_FOREVER);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   695      item = heap->block_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   696  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   697      end = (struct rt_memheap_item *) ((rt_uint8_t *)heap->start_addr + heap->pool_size - RT_MEMHEAP_SIZE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   698  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   699      /* for each memory block */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   700      while ((rt_ubase_t)item < ((rt_ubase_t)end))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   701      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   702          if (RT_MEMHEAP_IS_USED(item) && ((item->magic & RT_MEMHEAP_MASK) != RT_MEMHEAP_MAGIC))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   703              rt_kprintf("0x%08x", item + 1);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   704  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   705          if (item->magic == (RT_MEMHEAP_MAGIC | RT_MEMHEAP_USED))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   706          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   707              rt_kprintf("0x%08x: %-8d ",     item + 1, MEMITEM_SIZE(item));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   708              _memheap_dump_tag(item);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   709              rt_kprintf("\n");
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   710          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   711          else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   712          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   713              rt_kprintf("0x%08x: %-8d <F>\n", item + 1, MEMITEM_SIZE(item));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   714          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   715  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   716          item = item->next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   717      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   718      rt_sem_release(&(heap->lock));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   719  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   720      return 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   721  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   722  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   723  int memheaptrace(void)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   724  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   725      int count = rt_object_get_length(RT_Object_Class_MemHeap);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   726      struct rt_memheap **heaps;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   727  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   728      if (count > 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   729      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   730          int index;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   731          extern int list_memheap(void);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   732  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   733          heaps = (struct rt_memheap**)rt_malloc(sizeof(struct rt_memheap*) * count);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   734          if (heaps == RT_NULL) return 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   735  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   736          list_memheap();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   737  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   738          rt_kprintf("memheap header size: %d\n", RT_MEMHEAP_SIZE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   739          count = rt_object_get_pointers(RT_Object_Class_MemHeap, (rt_object_t*)heaps, count);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   740          for (index = 0; index < count; index++)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   741          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   742              rt_memheap_dump(heaps[index]);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   743          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   744  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   745          rt_free(heaps);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   746      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   747  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   748      return 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   749  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   750  MSH_CMD_EXPORT(memheaptrace, dump memory trace information);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   751  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   752  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   753  #ifdef RT_USING_MEMHEAP_AS_HEAP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   754  static struct rt_memheap _heap;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   755  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   756  void rt_system_heap_init(void *begin_addr, void *end_addr)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   757  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   758      /* initialize a default heap in the system */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   759      rt_memheap_init(&_heap,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   760                      "heap",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   761                      begin_addr,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   762                      (rt_uint32_t)end_addr - (rt_uint32_t)begin_addr);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   763  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   764  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   765  void *rt_malloc(rt_size_t size)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   766  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   767      void *ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   768  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   769      /* try to allocate in system heap */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   770      ptr = rt_memheap_alloc(&_heap, size);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   771      if (ptr == RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   772      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   773          struct rt_object *object;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   774          struct rt_list_node *node;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   775          struct rt_memheap *heap;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   776          struct rt_object_information *information;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   777  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   778          /* try to allocate on other memory heap */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   779          information = rt_object_get_information(RT_Object_Class_MemHeap);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   780          RT_ASSERT(information != RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   781          for (node  = information->object_list.next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   782               node != &(information->object_list);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   783               node  = node->next)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   784          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   785              object = rt_list_entry(node, struct rt_object, list);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   786              heap   = (struct rt_memheap *)object;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   787  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   788              RT_ASSERT(heap);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   789              RT_ASSERT(rt_object_get_type(&heap->parent) == RT_Object_Class_MemHeap);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   790  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   791              /* not allocate in the default system heap */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   792              if (heap == &_heap)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   793                  continue;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   794  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   795              ptr = rt_memheap_alloc(heap, size);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   796              if (ptr != RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   797                  break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   798          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   799      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   800  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   801  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   802  #ifdef RT_USING_MEMTRACE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   803      if (ptr == RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   804      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   805          RT_DEBUG_LOG(RT_DEBUG_MEMHEAP, ("malloc[%d] => NULL", size));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   806      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   807      else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   808      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   809          struct rt_memheap_item *item = MEMITEM(ptr);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   810          if (rt_thread_self())
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   811              rt_memheap_setname(item, rt_thread_self()->name);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   812          else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   813              rt_memheap_setname(item, "<null>");
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   814  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   815          RT_DEBUG_LOG(RT_DEBUG_MEMHEAP, ("malloc => 0x%08x : %d", ptr, size));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   816      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   817  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   818  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   819      return ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   820  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   821  RTM_EXPORT(rt_malloc);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   822  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   823  void rt_free(void *rmem)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   824  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   825      rt_memheap_free(rmem);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   826  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   827  RTM_EXPORT(rt_free);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   828  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   829  void *rt_realloc(void *rmem, rt_size_t newsize)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   830  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   831      void *new_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   832      struct rt_memheap_item *header_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   833  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   834      if (rmem == RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   835          return rt_malloc(newsize);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   836  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   837      if (newsize == 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   838      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   839          rt_free(rmem);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   840          return RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   841      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   842  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   843      /* get old memory item */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   844      header_ptr = (struct rt_memheap_item *)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   845                   ((rt_uint8_t *)rmem - RT_MEMHEAP_SIZE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   846  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   847      new_ptr = rt_memheap_realloc(header_ptr->pool_ptr, rmem, newsize);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   848      if (new_ptr == RT_NULL && newsize != 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   849      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   850          /* allocate memory block from other memheap */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   851          new_ptr = rt_malloc(newsize);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   852          if (new_ptr != RT_NULL && rmem != RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   853          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   854              rt_size_t oldsize;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   855  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   856              /* get the size of old memory block */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   857              oldsize = MEMITEM_SIZE(header_ptr);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   858              if (newsize > oldsize)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   859                  rt_memcpy(new_ptr, rmem, oldsize);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   860              else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   861                  rt_memcpy(new_ptr, rmem, newsize);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   862  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   863              rt_free(rmem);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   864          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   865      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   866  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   867  #ifdef RT_USING_MEMTRACE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   868      if (new_ptr == RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   869      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   870          RT_DEBUG_LOG(RT_DEBUG_MEMHEAP, ("realloc[%d] => NULL", newsize));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   871      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   872      else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   873      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   874          struct rt_memheap_item *item = MEMITEM(new_ptr);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   875          if (rt_thread_self())
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   876              rt_memheap_setname(item, rt_thread_self()->name);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   877          else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   878              rt_memheap_setname(item, "<null>");
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   879  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   880          RT_DEBUG_LOG(RT_DEBUG_MEMHEAP, ("realloc => 0x%08x : %d",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   881                                          new_ptr, newsize));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   882      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   883  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   884  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   885      return new_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   886  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   887  RTM_EXPORT(rt_realloc);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   888  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   889  void *rt_calloc(rt_size_t count, rt_size_t size)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   890  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   891      void *ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   892      rt_size_t total_size;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   893  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   894      total_size = count * size;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   895      ptr = rt_malloc(total_size);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   896      if (ptr != RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   897      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   898          /* clean memory */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   899          rt_memset(ptr, 0, total_size);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   900      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   901  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   902  #ifdef RT_USING_MEMTRACE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   903      if (ptr == RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   904      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   905          RT_DEBUG_LOG(RT_DEBUG_MEMHEAP, ("calloc[%d x %d] => NULL",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   906                                          count, size));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   907      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   908      else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   909      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   910          RT_DEBUG_LOG(RT_DEBUG_MEMHEAP, ("calloc => 0x%08x : %d",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   911                                          ptr, count * size));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   912      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   913  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   914  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   915      return ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   916  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   917  RTM_EXPORT(rt_calloc);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   918  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   919  void rt_memory_info(rt_uint32_t *total,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   920                      rt_uint32_t *used,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   921                      rt_uint32_t *max_used)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   922  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   923      if (total != RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   924          *total = _heap.pool_size;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   925  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   926      if (used  != RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   927          *used = _heap.pool_size - _heap.available_size;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   928  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   929      if (max_used != RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   930          *max_used = _heap.max_used_size;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   931  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   932  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   933  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   934  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   935  #ifdef RT_USING_MEMTRACE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   936  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   937  void dump_used_memheap(struct rt_memheap *mh)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   938  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   939      struct rt_memheap_item *header_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   940      rt_uint32_t block_size;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   941  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   942  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   943      rt_kprintf("\nmemory heap address:\n");
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   944      rt_kprintf("heap_ptr: 0x%08x\n", mh->start_addr);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   945      rt_kprintf("free    : 0x%08x\n", mh->available_size);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   946      rt_kprintf("max_used: 0x%08x\n", mh->max_used_size);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   947      rt_kprintf("size    : 0x%08x\n", mh->pool_size);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   948  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   949      rt_kprintf("\n--memory used information --\n");
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   950  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   951      header_ptr = mh->block_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   952      while (header_ptr->next != mh->block_list)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   953      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   954          if ((header_ptr->magic & RT_MEMHEAP_MASK) != RT_MEMHEAP_MAGIC)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   955          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   956              rt_kprintf("[0x%08x - incorrect magic: 0x%08x\n", header_ptr, header_ptr->magic);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   957              break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   958          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   959  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   960          /* get current memory block size */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   961          block_size = MEMITEM_SIZE(header_ptr);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   962          if (block_size < 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   963              break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   964  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   965          if (RT_MEMHEAP_IS_USED(header_ptr))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   966          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   967              /* dump information */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   968              rt_kprintf("[0x%08x - %d - %c%c%c%c] used\n", header_ptr, block_size,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   969                  header_ptr->owner_thread_name[0], header_ptr->owner_thread_name[1],
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   970                  header_ptr->owner_thread_name[2], header_ptr->owner_thread_name[3]);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   971          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   972          else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   973          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   974              /* dump information */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   975              rt_kprintf("[0x%08x - %d - %c%c%c%c] free\n", header_ptr, block_size,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   976                  header_ptr->owner_thread_name[0], header_ptr->owner_thread_name[1],
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   977                  header_ptr->owner_thread_name[2], header_ptr->owner_thread_name[3]);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   978          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   979  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   980          /* move to next used memory block */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   981          header_ptr = header_ptr->next;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   982      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   983  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   984  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   985  void memtrace_heap()
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   986  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   987      struct rt_object_information *info;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   988      struct rt_list_node *list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   989      struct rt_memheap *mh;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   990      struct rt_list_node *node;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   991  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   992      info = rt_object_get_information(RT_Object_Class_MemHeap);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   993      list = &info->object_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   994  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   995      for (node = list->next; node != list; node = node->next)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   996      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   997          mh = (struct rt_memheap *)rt_list_entry(node, struct rt_object, list);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   998          dump_used_memheap(mh);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	   999      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	  1000  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	  1001  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	  1002  #ifdef RT_USING_FINSH
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	  1003  #include <finsh.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	  1004  MSH_CMD_EXPORT(memtrace_heap, dump memory trace for heap);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	  1005  #endif /* end of RT_USING_FINSH */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	  1006  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	  1007  #endif /* end of RT_USING_MEMTRACE */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	  1008  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\memheap.c	  1009  #endif /* end of RT_USING_MEMHEAP */
+
+	; Module end

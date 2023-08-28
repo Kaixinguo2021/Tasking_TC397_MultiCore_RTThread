@@ -1,0 +1,954 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6\\.dhcp6.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Rtl8211f -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6\\dhcp6.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6\\dhcp6.src ..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6\\dhcp6.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6\\dhcp6.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	735
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6\\dhcp6.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	172
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	179
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	221
+	.byte	7
+	.word	221
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	237
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	242
+	.byte	9
+	.byte	'value',0
+	.word	221
+	.byte	9
+	.byte	'compare',0
+	.word	221
+	.byte	0,2
+	.byte	'short int',0,2,5,10
+	.byte	'__wchar_t',0,1,1,1
+	.word	299
+	.byte	10
+	.byte	'__size_t',0,1,1,1
+	.word	221
+	.byte	10
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	172
+	.byte	11,1,7
+	.word	367
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	369
+	.byte	10
+	.byte	'__intptr_t',0,1,1,1
+	.word	172
+	.byte	10
+	.byte	'__uintptr_t',0,1,1,1
+	.word	221
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,108,29
+	.word	431
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,112,29
+	.word	462
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,116,29
+	.word	499
+	.byte	2
+	.byte	'char',0,1,6,10
+	.byte	'sint8',0,2,125,29
+	.word	535
+	.byte	10
+	.byte	'sint16',0,2,129,1,29
+	.word	299
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'sint32',0,2,134,1,29
+	.word	573
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'sint64',0,2,141,1,29
+	.word	601
+	.byte	2
+	.byte	'float',0,4,4,10
+	.byte	'float32',0,2,170,1,29
+	.word	634
+	.byte	12
+	.byte	'void',0,7
+	.word	660
+	.byte	10
+	.byte	'pvoid',0,3,54,28
+	.word	666
+	.byte	10
+	.byte	'Ifx_TickTime',0,3,76,28
+	.word	601
+	.byte	10
+	.byte	'u32_t',0,4,87,16
+	.word	499
+	.byte	10
+	.byte	'intmax_t',0,5,198,2,41
+	.word	601
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,59,0
+	.byte	3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6\\dhcp6.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'cc.h',0,2,0,0
+	.byte	'stdint.h',0,3,0,0,0
+.L9:
+.L7:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	     1  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	     2   * @file
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	     3   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	     4   * @defgroup dhcp6 DHCPv6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	     5   * @ingroup ip6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	     6   * DHCPv6 client: IPv6 address autoconfiguration as per
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	     7   * RFC 3315 (stateful DHCPv6) and
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	     8   * RFC 3736 (stateless DHCPv6).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	     9   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    10   * For now, only stateless DHCPv6 is implemented!
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    11   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    12   * TODO:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    13   * - enable/disable API to not always start when RA is received
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    14   * - stateful DHCPv6 (for now, only stateless DHCPv6 for DNS and NTP servers works)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    15   * - create Client Identifier?
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    16   * - only start requests if a valid local address is available on the netif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    17   * - only start information requests if required (not for every RA)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    18   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    19   * dhcp6_enable_stateful() enables stateful DHCPv6 for a netif (stateless disabled)\n
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    20   * dhcp6_enable_stateless() enables stateless DHCPv6 for a netif (stateful disabled)\n
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    21   * dhcp6_disable() disable DHCPv6 for a netif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    22   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    23   * When enabled, requests are only issued after receipt of RA with the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    24   * corresponding bits set.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    25   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    26  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    27  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    28   * Copyright (c) 2018 Simon Goldschmidt
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    29   * All rights reserved.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    30   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    31   * Redistribution and use in source and binary forms, with or without modification,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    32   * are permitted provided that the following conditions are met:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    33   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    34   * 1. Redistributions of source code must retain the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    35   *    this list of conditions and the following disclaimer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    36   * 2. Redistributions in binary form must reproduce the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    37   *    this list of conditions and the following disclaimer in the documentation
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    38   *    and/or other materials provided with the distribution.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    39   * 3. The name of the author may not be used to endorse or promote products
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    40   *    derived from this software without specific prior written permission.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    41   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    42   * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    43   * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    44   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    45   * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    46   * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    47   * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    48   * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    49   * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    50   * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    51   * OF SUCH DAMAGE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    52   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    53   * This file is part of the lwIP TCP/IP stack.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    54   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    55   * Author: Simon Goldschmidt <goldsimon@gmx.de>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    56   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    57  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    58  #include "lwip/opt.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    59  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    60  #if LWIP_IPV6 && LWIP_IPV6_DHCP6 /* don't build if not configured for use in lwipopts.h */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    61  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    62  #include "lwip/dhcp6.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    63  #include "lwip/prot/dhcp6.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    64  #include "lwip/def.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    65  #include "lwip/udp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    66  #include "lwip/dns.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    67  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    68  #include <string.h>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    69  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    70  #ifdef LWIP_HOOK_FILENAME
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    71  #include LWIP_HOOK_FILENAME
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    72  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    73  #ifndef LWIP_HOOK_DHCP6_APPEND_OPTIONS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    74  #define LWIP_HOOK_DHCP6_APPEND_OPTIONS(netif, dhcp6, state, msg, msg_type, options_len_ptr, max_len)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    75  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    76  #ifndef LWIP_HOOK_DHCP6_PARSE_OPTION
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    77  #define LWIP_HOOK_DHCP6_PARSE_OPTION(netif, dhcp6, state, msg, msg_type, option, len, pbuf, offset) do { LWIP_UNUSED_ARG(msg); } while(0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    78  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    79  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    80  #if LWIP_DNS && LWIP_DHCP6_MAX_DNS_SERVERS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    81  #if DNS_MAX_SERVERS > LWIP_DHCP6_MAX_DNS_SERVERS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    82  #define LWIP_DHCP6_PROVIDE_DNS_SERVERS LWIP_DHCP6_MAX_DNS_SERVERS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    83  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    84  #define LWIP_DHCP6_PROVIDE_DNS_SERVERS DNS_MAX_SERVERS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    85  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    86  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    87  #define LWIP_DHCP6_PROVIDE_DNS_SERVERS 0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    88  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    89  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    90  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    91  /** Option handling: options are parsed in dhcp6_parse_reply
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    92   * and saved in an array where other functions can load them from.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    93   * This might be moved into the struct dhcp6 (not necessarily since
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    94   * lwIP is single-threaded and the array is only used while in recv
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    95   * callback). */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    96  enum dhcp6_option_idx {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    97    DHCP6_OPTION_IDX_CLI_ID = 0,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    98    DHCP6_OPTION_IDX_SERVER_ID,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	    99  #if LWIP_DHCP6_PROVIDE_DNS_SERVERS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   100    DHCP6_OPTION_IDX_DNS_SERVER,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   101    DHCP6_OPTION_IDX_DOMAIN_LIST,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   102  #endif /* LWIP_DHCP_PROVIDE_DNS_SERVERS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   103  #if LWIP_DHCP6_GET_NTP_SRV
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   104    DHCP6_OPTION_IDX_NTP_SERVER,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   105  #endif /* LWIP_DHCP_GET_NTP_SRV */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   106    DHCP6_OPTION_IDX_MAX
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   107  };
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   108  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   109  struct dhcp6_option_info {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   110    u8_t option_given;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   111    u16_t val_start;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   112    u16_t val_length;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   113  };
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   114  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   115  /** Holds the decoded option info, only valid while in dhcp6_recv. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   116  struct dhcp6_option_info dhcp6_rx_options[DHCP6_OPTION_IDX_MAX];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   117  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   118  #define dhcp6_option_given(dhcp6, idx)           (dhcp6_rx_options[idx].option_given != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   119  #define dhcp6_got_option(dhcp6, idx)             (dhcp6_rx_options[idx].option_given = 1)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   120  #define dhcp6_clear_option(dhcp6, idx)           (dhcp6_rx_options[idx].option_given = 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   121  #define dhcp6_clear_all_options(dhcp6)           (memset(dhcp6_rx_options, 0, sizeof(dhcp6_rx_options)))
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   122  #define dhcp6_get_option_start(dhcp6, idx)       (dhcp6_rx_options[idx].val_start)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   123  #define dhcp6_get_option_length(dhcp6, idx)      (dhcp6_rx_options[idx].val_length)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   124  #define dhcp6_set_option(dhcp6, idx, start, len) do { dhcp6_rx_options[idx].val_start = (start); dhcp6_rx_options[idx].val_length = (len); }while(0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   125  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   126  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   127  const ip_addr_t dhcp6_All_DHCP6_Relay_Agents_and_Servers = IPADDR6_INIT_HOST(0xFF020000, 0, 0, 0x00010002);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   128  const ip_addr_t dhcp6_All_DHCP6_Servers = IPADDR6_INIT_HOST(0xFF020000, 0, 0, 0x00010003);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   129  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   130  static struct udp_pcb *dhcp6_pcb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   131  static u8_t dhcp6_pcb_refcount;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   132  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   133  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   134  /* receive, unfold, parse and free incoming messages */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   135  static void dhcp6_recv(void *arg, struct udp_pcb *pcb, struct pbuf *p, const ip_addr_t *addr, u16_t port);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   136  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   137  /** Ensure DHCP PCB is allocated and bound */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   138  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   139  dhcp6_inc_pcb_refcount(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   140  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   141    if (dhcp6_pcb_refcount == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   142      LWIP_ASSERT("dhcp6_inc_pcb_refcount(): memory leak", dhcp6_pcb == NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   143  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   144      /* allocate UDP PCB */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   145      dhcp6_pcb = udp_new_ip6();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   146  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   147      if (dhcp6_pcb == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   148        return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   149      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   150  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   151      ip_set_option(dhcp6_pcb, SOF_BROADCAST);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   152  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   153      /* set up local and remote port for the pcb -> listen on all interfaces on all src/dest IPs */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   154      udp_bind(dhcp6_pcb, IP6_ADDR_ANY, DHCP6_CLIENT_PORT);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   155      udp_recv(dhcp6_pcb, dhcp6_recv, NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   156    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   157  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   158    dhcp6_pcb_refcount++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   159  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   160    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   161  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   162  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   163  /** Free DHCP PCB if the last netif stops using it */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   164  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   165  dhcp6_dec_pcb_refcount(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   166  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   167    LWIP_ASSERT("dhcp6_pcb_refcount(): refcount error", (dhcp6_pcb_refcount > 0));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   168    dhcp6_pcb_refcount--;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   169  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   170    if (dhcp6_pcb_refcount == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   171      udp_remove(dhcp6_pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   172      dhcp6_pcb = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   173    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   174  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   175  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   176  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   177   * @ingroup dhcp6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   178   * Set a statically allocated struct dhcp6 to work with.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   179   * Using this prevents dhcp6_start to allocate it using mem_malloc.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   180   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   181   * @param netif the netif for which to set the struct dhcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   182   * @param dhcp6 (uninitialised) dhcp6 struct allocated by the application
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   183   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   184  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   185  dhcp6_set_struct(struct netif *netif, struct dhcp6 *dhcp6)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   186  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   187    LWIP_ASSERT("netif != NULL", netif != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   188    LWIP_ASSERT("dhcp6 != NULL", dhcp6 != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   189    LWIP_ASSERT("netif already has a struct dhcp6 set", netif_dhcp6_data(netif) == NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   190  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   191    /* clear data structure */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   192    memset(dhcp6, 0, sizeof(struct dhcp6));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   193    /* dhcp6_set_state(&dhcp, DHCP6_STATE_OFF); */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   194    netif_set_client_data(netif, LWIP_NETIF_CLIENT_DATA_INDEX_DHCP6, dhcp6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   195  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   196  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   197  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   198   * @ingroup dhcp6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   199   * Removes a struct dhcp6 from a netif.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   200   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   201   * ATTENTION: Only use this when not using dhcp6_set_struct() to allocate the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   202   *            struct dhcp6 since the memory is passed back to the heap.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   203   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   204   * @param netif the netif from which to remove the struct dhcp
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   205   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   206  void dhcp6_cleanup(struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   207  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   208    LWIP_ASSERT("netif != NULL", netif != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   209  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   210    if (netif_dhcp6_data(netif) != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   211      mem_free(netif_dhcp6_data(netif));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   212      netif_set_client_data(netif, LWIP_NETIF_CLIENT_DATA_INDEX_DHCP6, NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   213    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   214  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   215  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   216  static struct dhcp6*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   217  dhcp6_get_struct(struct netif *netif, const char *dbg_requester)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   218  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   219    struct dhcp6 *dhcp6 = netif_dhcp6_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   220    if (dhcp6 == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   221      LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE, ("%s: mallocing new DHCPv6 client\n", dbg_requester));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   222      dhcp6 = (struct dhcp6 *)mem_malloc(sizeof(struct dhcp6));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   223      if (dhcp6 == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   224        LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE, ("%s: could not allocate dhcp6\n", dbg_requester));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   225        return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   226      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   227  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   228      /* clear data structure, this implies DHCP6_STATE_OFF */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   229      memset(dhcp6, 0, sizeof(struct dhcp6));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   230      /* store this dhcp6 client in the netif */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   231      netif_set_client_data(netif, LWIP_NETIF_CLIENT_DATA_INDEX_DHCP6, dhcp6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   232    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   233      /* already has DHCP6 client attached */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   234      LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE, ("%s: using existing DHCPv6 client\n", dbg_requester));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   235    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   236  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   237    if (!dhcp6->pcb_allocated) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   238      if (dhcp6_inc_pcb_refcount() != ERR_OK) { /* ensure DHCP6 PCB is allocated */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   239        mem_free(dhcp6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   240        netif_set_client_data(netif, LWIP_NETIF_CLIENT_DATA_INDEX_DHCP6, NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   241        return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   242      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   243      LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE, ("%s: allocated dhcp6", dbg_requester));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   244      dhcp6->pcb_allocated = 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   245    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   246    return dhcp6;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   247  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   248  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   249  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   250   * Set the DHCPv6 state
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   251   * If the state changed, reset the number of tries.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   252   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   253  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   254  dhcp6_set_state(struct dhcp6 *dhcp6, u8_t new_state, const char *dbg_caller)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   255  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   256    LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE, ("DHCPv6 state: %d -> %d (%s)\n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   257      dhcp6->state, new_state, dbg_caller));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   258    if (new_state != dhcp6->state) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   259      dhcp6->state = new_state;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   260      dhcp6->tries = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   261      dhcp6->request_timeout = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   262    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   263  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   264  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   265  static int
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   266  dhcp6_stateless_enabled(struct dhcp6 *dhcp6)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   267  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   268    if ((dhcp6->state == DHCP6_STATE_STATELESS_IDLE) ||
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   269        (dhcp6->state == DHCP6_STATE_REQUESTING_CONFIG)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   270      return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   271    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   272    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   273  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   274  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   275  /*static int
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   276  dhcp6_stateful_enabled(struct dhcp6 *dhcp6)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   277  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   278    if (dhcp6->state == DHCP6_STATE_OFF) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   279      return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   280    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   281    if (dhcp6_stateless_enabled(dhcp6)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   282      return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   283    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   284    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   285  }*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   286  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   287  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   288   * @ingroup dhcp6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   289   * Enable stateful DHCPv6 on this netif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   290   * Requests are sent on receipt of an RA message with the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   291   * ND6_RA_FLAG_MANAGED_ADDR_CONFIG flag set.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   292   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   293   * A struct dhcp6 will be allocated for this netif if not
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   294   * set via @ref dhcp6_set_struct before.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   295   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   296   * @todo: stateful DHCPv6 not supported, yet
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   297   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   298  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   299  dhcp6_enable_stateful(struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   300  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   301    LWIP_UNUSED_ARG(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   302    LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE, ("stateful dhcp6 not implemented yet"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   303    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   304  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   305  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   306  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   307   * @ingroup dhcp6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   308   * Enable stateless DHCPv6 on this netif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   309   * Requests are sent on receipt of an RA message with the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   310   * ND6_RA_FLAG_OTHER_CONFIG flag set.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   311   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   312   * A struct dhcp6 will be allocated for this netif if not
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   313   * set via @ref dhcp6_set_struct before.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   314   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   315  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   316  dhcp6_enable_stateless(struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   317  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   318    struct dhcp6 *dhcp6;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   319  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   320    LWIP_DEBUGF(DHCP_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE, ("dhcp6_enable_stateless(netif=%p) %c%c%"U16_F"\n", (void *)netif, netif->name[0], netif->name[1], (u16_t)netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   321  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   322    dhcp6 = dhcp6_get_struct(netif, "dhcp6_enable_stateless()");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   323    if (dhcp6 == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   324      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   325    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   326    if (dhcp6_stateless_enabled(dhcp6)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   327      LWIP_DEBUGF(DHCP_DEBUG | LWIP_DBG_TRACE, ("dhcp6_enable_stateless(): stateless DHCPv6 already enabled"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   328      return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   329    } else if (dhcp6->state != DHCP6_STATE_OFF) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   330      /* stateful running */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   331      /* @todo: stop stateful once it is implemented */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   332      LWIP_DEBUGF(DHCP_DEBUG | LWIP_DBG_TRACE, ("dhcp6_enable_stateless(): switching from stateful to stateless DHCPv6"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   333    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   334    LWIP_DEBUGF(DHCP_DEBUG | LWIP_DBG_TRACE, ("dhcp6_enable_stateless(): stateless DHCPv6 enabled\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   335    dhcp6_set_state(dhcp6, DHCP6_STATE_STATELESS_IDLE, "dhcp6_enable_stateless");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   336    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   337  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   338  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   339  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   340   * @ingroup dhcp6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   341   * Disable stateful or stateless DHCPv6 on this netif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   342   * Requests are sent on receipt of an RA message with the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   343   * ND6_RA_FLAG_OTHER_CONFIG flag set.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   344   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   345  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   346  dhcp6_disable(struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   347  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   348    struct dhcp6 *dhcp6;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   349  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   350    LWIP_DEBUGF(DHCP_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE, ("dhcp6_disable(netif=%p) %c%c%"U16_F"\n", (void *)netif, netif->name[0], netif->name[1], (u16_t)netif->num));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   351  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   352    dhcp6 = netif_dhcp6_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   353    if (dhcp6 != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   354      if (dhcp6->state != DHCP6_STATE_OFF) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   355        LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE, ("dhcp6_disable(): DHCPv6 disabled (old state: %s)\n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   356          (dhcp6_stateless_enabled(dhcp6) ? "stateless" : "stateful")));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   357        dhcp6_set_state(dhcp6, DHCP6_STATE_OFF, "dhcp6_disable");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   358        if (dhcp6->pcb_allocated != 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   359          dhcp6_dec_pcb_refcount(); /* free DHCPv6 PCB if not needed any more */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   360          dhcp6->pcb_allocated = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   361        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   362      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   363    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   364  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   365  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   366  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   367   * Create a DHCPv6 request, fill in common headers
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   368   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   369   * @param netif the netif under DHCPv6 control
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   370   * @param dhcp6 dhcp6 control struct
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   371   * @param message_type message type of the request
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   372   * @param opt_len_alloc option length to allocate
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   373   * @param options_out_len option length on exit
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   374   * @return a pbuf for the message
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   375   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   376  static struct pbuf *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   377  dhcp6_create_msg(struct netif *netif, struct dhcp6 *dhcp6, u8_t message_type,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   378                   u16_t opt_len_alloc, u16_t *options_out_len)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   379  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   380    struct pbuf *p_out;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   381    struct dhcp6_msg *msg_out;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   382  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   383    LWIP_ERROR("dhcp6_create_msg: netif != NULL", (netif != NULL), return NULL;);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   384    LWIP_ERROR("dhcp6_create_msg: dhcp6 != NULL", (dhcp6 != NULL), return NULL;);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   385    p_out = pbuf_alloc(PBUF_TRANSPORT, sizeof(struct dhcp6_msg) + opt_len_alloc, PBUF_RAM);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   386    if (p_out == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   387      LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_LEVEL_SERIOUS,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   388                  ("dhcp6_create_msg(): could not allocate pbuf\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   389      return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   390    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   391    LWIP_ASSERT("dhcp6_create_msg: check that first pbuf can hold struct dhcp6_msg",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   392                (p_out->len >= sizeof(struct dhcp6_msg) + opt_len_alloc));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   393  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   394    /* @todo: limit new xid for certain message types? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   395    /* reuse transaction identifier in retransmissions */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   396    if (dhcp6->tries == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   397      dhcp6->xid = LWIP_RAND() & 0xFFFFFF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   398    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   399  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   400    LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   401                ("transaction id xid(%"X32_F")\n", dhcp6->xid));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   402  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   403    msg_out = (struct dhcp6_msg *)p_out->payload;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   404    memset(msg_out, 0, sizeof(struct dhcp6_msg) + opt_len_alloc);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   405  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   406    msg_out->msgtype = message_type;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   407    msg_out->transaction_id[0] = (u8_t)(dhcp6->xid >> 16);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   408    msg_out->transaction_id[1] = (u8_t)(dhcp6->xid >> 8);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   409    msg_out->transaction_id[2] = (u8_t)dhcp6->xid;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   410    *options_out_len = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   411    return p_out;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   412  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   413  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   414  static u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   415  dhcp6_option_short(u16_t options_out_len, u8_t *options, u16_t value)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   416  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   417    options[options_out_len++] = (u8_t)((value & 0xff00U) >> 8);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   418    options[options_out_len++] = (u8_t) (value & 0x00ffU);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   419    return options_out_len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   420  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   421  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   422  static u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   423  dhcp6_option_optionrequest(u16_t options_out_len, u8_t *options, const u16_t *req_options,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   424                             u16_t num_req_options, u16_t max_len)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   425  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   426    size_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   427    u16_t ret;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   428  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   429    LWIP_ASSERT("dhcp6_option_optionrequest: options_out_len + sizeof(struct dhcp6_msg) + addlen <= max_len",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   430      sizeof(struct dhcp6_msg) + options_out_len + 4U + (2U * num_req_options) <= max_len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   431    LWIP_UNUSED_ARG(max_len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   432  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   433    ret = dhcp6_option_short(options_out_len, options, DHCP6_OPTION_ORO);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   434    ret = dhcp6_option_short(ret, options, 2 * num_req_options);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   435    for (i = 0; i < num_req_options; i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   436      ret = dhcp6_option_short(ret, options, req_options[i]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   437    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   438    return ret;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   439  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   440  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   441  /* All options are added, shrink the pbuf to the required size */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   442  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   443  dhcp6_msg_finalize(u16_t options_out_len, struct pbuf *p_out)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   444  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   445    /* shrink the pbuf to the actual content length */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   446    pbuf_realloc(p_out, (u16_t)(sizeof(struct dhcp6_msg) + options_out_len));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   447  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   448  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   449  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   450  #if LWIP_IPV6_DHCP6_STATELESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   451  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   452  dhcp6_information_request(struct netif *netif, struct dhcp6 *dhcp6)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   453  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   454    const u16_t requested_options[] = {DHCP6_OPTION_DNS_SERVERS, DHCP6_OPTION_DOMAIN_LIST, DHCP6_OPTION_SNTP_SERVERS};
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   455    u16_t msecs;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   456    struct pbuf *p_out;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   457    u16_t options_out_len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   458    LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE, ("dhcp6_information_request()\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   459    /* create and initialize the DHCP message header */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   460    p_out = dhcp6_create_msg(netif, dhcp6, DHCP6_INFOREQUEST, 4 + sizeof(requested_options), &options_out_len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   461    if (p_out != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   462      err_t err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   463      struct dhcp6_msg *msg_out = (struct dhcp6_msg *)p_out->payload;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   464      u8_t *options = (u8_t *)(msg_out + 1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   465      LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE, ("dhcp6_information_request: making request\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   466  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   467      options_out_len = dhcp6_option_optionrequest(options_out_len, options, requested_options,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   468        LWIP_ARRAYSIZE(requested_options), p_out->len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   469      LWIP_HOOK_DHCP6_APPEND_OPTIONS(netif, dhcp6, DHCP6_STATE_REQUESTING_CONFIG, msg_out,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   470        DHCP6_INFOREQUEST, options_out_len, p_out->len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   471      dhcp6_msg_finalize(options_out_len, p_out);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   472  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   473      err = udp_sendto_if(dhcp6_pcb, p_out, &dhcp6_All_DHCP6_Relay_Agents_and_Servers, DHCP6_SERVER_PORT, netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   474      pbuf_free(p_out);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   475      LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE, ("dhcp6_information_request: INFOREQUESTING -> %d\n", (int)err));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   476      LWIP_UNUSED_ARG(err);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   477    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   478      LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_LEVEL_SERIOUS, ("dhcp6_information_request: could not allocate DHCP6 request\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   479    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   480    dhcp6_set_state(dhcp6, DHCP6_STATE_REQUESTING_CONFIG, "dhcp6_information_request");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   481    if (dhcp6->tries < 255) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   482      dhcp6->tries++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   483    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   484    msecs = (u16_t)((dhcp6->tries < 6 ? 1 << dhcp6->tries : 60) * 1000);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   485    dhcp6->request_timeout = (u16_t)((msecs + DHCP6_TIMER_MSECS - 1) / DHCP6_TIMER_MSECS);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   486    LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE, ("dhcp6_information_request(): set request timeout %"U16_F" msecs\n", msecs));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   487  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   488  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   489  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   490  dhcp6_request_config(struct netif *netif, struct dhcp6 *dhcp6)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   491  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   492    /* stateless mode enabled and no request running? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   493    if (dhcp6->state == DHCP6_STATE_STATELESS_IDLE) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   494      /* send Information-request and wait for answer; setup receive timeout */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   495      dhcp6_information_request(netif, dhcp6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   496    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   497  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   498    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   499  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   500  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   501  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   502  dhcp6_abort_config_request(struct dhcp6 *dhcp6)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   503  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   504    if (dhcp6->state == DHCP6_STATE_REQUESTING_CONFIG) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   505      /* abort running request */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   506      dhcp6_set_state(dhcp6, DHCP6_STATE_STATELESS_IDLE, "dhcp6_abort_config_request");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   507    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   508  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   509  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   510  /* Handle a REPLY to INFOREQUEST
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   511   * This parses DNS and NTP server addresses from the reply.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   512   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   513  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   514  dhcp6_handle_config_reply(struct netif *netif, struct pbuf *p_msg_in)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   515  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   516    struct dhcp6 *dhcp6 = netif_dhcp6_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   517  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   518    LWIP_UNUSED_ARG(dhcp6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   519    LWIP_UNUSED_ARG(p_msg_in);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   520  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   521  #if LWIP_DHCP6_PROVIDE_DNS_SERVERS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   522    if (dhcp6_option_given(dhcp6, DHCP6_OPTION_IDX_DNS_SERVER)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   523      ip_addr_t dns_addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   524      ip6_addr_t *dns_addr6;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   525      u16_t op_start = dhcp6_get_option_start(dhcp6, DHCP6_OPTION_IDX_DNS_SERVER);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   526      u16_t op_len = dhcp6_get_option_length(dhcp6, DHCP6_OPTION_IDX_DNS_SERVER);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   527      u16_t idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   528      u8_t n;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   529  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   530      memset(&dns_addr, 0, sizeof(dns_addr));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   531      dns_addr6 = ip_2_ip6(&dns_addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   532      for (n = 0, idx = op_start; (idx < op_start + op_len) && (n < LWIP_DHCP6_PROVIDE_DNS_SERVERS);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   533           n++, idx += sizeof(struct ip6_addr_packed)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   534        u16_t copied = pbuf_copy_partial(p_msg_in, dns_addr6, sizeof(struct ip6_addr_packed), idx);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   535        if (copied != sizeof(struct ip6_addr_packed)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   536          /* pbuf length mismatch */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   537          return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   538        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   539        ip6_addr_assign_zone(dns_addr6, IP6_UNKNOWN, netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   540        /* @todo: do we need a different offset than DHCP(v4)? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   541        dns_setserver(n, &dns_addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   542      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   543    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   544    /* @ todo: parse and set Domain Search List */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   545  #endif /* LWIP_DHCP6_PROVIDE_DNS_SERVERS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   546  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   547  #if LWIP_DHCP6_GET_NTP_SRV
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   548    if (dhcp6_option_given(dhcp6, DHCP6_OPTION_IDX_NTP_SERVER)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   549      ip_addr_t ntp_server_addrs[LWIP_DHCP6_MAX_NTP_SERVERS];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   550      u16_t op_start = dhcp6_get_option_start(dhcp6, DHCP6_OPTION_IDX_NTP_SERVER);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   551      u16_t op_len = dhcp6_get_option_length(dhcp6, DHCP6_OPTION_IDX_NTP_SERVER);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   552      u16_t idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   553      u8_t n;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   554  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   555      for (n = 0, idx = op_start; (idx < op_start + op_len) && (n < LWIP_DHCP6_MAX_NTP_SERVERS);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   556           n++, idx += sizeof(struct ip6_addr_packed)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   557        u16_t copied;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   558        ip6_addr_t *ntp_addr6 = ip_2_ip6(&ntp_server_addrs[n]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   559        ip_addr_set_zero_ip6(&ntp_server_addrs[n]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   560        copied = pbuf_copy_partial(p_msg_in, ntp_addr6, sizeof(struct ip6_addr_packed), idx);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   561        if (copied != sizeof(struct ip6_addr_packed)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   562          /* pbuf length mismatch */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   563          return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   564        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   565        ip6_addr_assign_zone(ntp_addr6, IP6_UNKNOWN, netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   566      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   567      dhcp6_set_ntp_servers(n, ntp_server_addrs);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   568    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   569  #endif /* LWIP_DHCP6_GET_NTP_SRV */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   570  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   571  #endif /* LWIP_IPV6_DHCP6_STATELESS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   572  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   573  /** This function is called from nd6 module when an RA messsage is received
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   574   * It triggers DHCPv6 requests (if enabled).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   575   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   576  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   577  dhcp6_nd6_ra_trigger(struct netif *netif, u8_t managed_addr_config, u8_t other_config)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   578  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   579    struct dhcp6 *dhcp6;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   580  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   581    LWIP_ASSERT("netif != NULL", netif != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   582    dhcp6 = netif_dhcp6_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   583  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   584    LWIP_UNUSED_ARG(managed_addr_config);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   585    LWIP_UNUSED_ARG(other_config);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   586    LWIP_UNUSED_ARG(dhcp6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   587  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   588  #if LWIP_IPV6_DHCP6_STATELESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   589    if (dhcp6 != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   590      if (dhcp6_stateless_enabled(dhcp6)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   591        if (other_config) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   592          dhcp6_request_config(netif, dhcp6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   593        } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   594          dhcp6_abort_config_request(dhcp6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   595        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   596      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   597    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   598  #endif /* LWIP_IPV6_DHCP6_STATELESS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   599  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   600  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   601  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   602   * Parse the DHCPv6 message and extract the DHCPv6 options.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   603   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   604   * Extract the DHCPv6 options (offset + length) so that we can later easily
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   605   * check for them or extract the contents.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   606   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   607  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   608  dhcp6_parse_reply(struct pbuf *p, struct dhcp6 *dhcp6)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   609  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   610    u16_t offset;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   611    u16_t offset_max;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   612    u16_t options_idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   613    struct dhcp6_msg *msg_in;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   614  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   615    LWIP_UNUSED_ARG(dhcp6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   616  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   617    /* clear received options */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   618    dhcp6_clear_all_options(dhcp6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   619    msg_in = (struct dhcp6_msg *)p->payload;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   620  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   621    /* parse options */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   622  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   623    options_idx = sizeof(struct dhcp6_msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   624    /* parse options to the end of the received packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   625    offset_max = p->tot_len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   626  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   627    offset = options_idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   628    /* at least 4 byte to read? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   629    while ((offset + 4 <= offset_max)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   630      u8_t op_len_buf[4];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   631      u8_t *op_len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   632      u16_t op;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   633      u16_t len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   634      u16_t val_offset = (u16_t)(offset + 4);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   635      if (val_offset < offset) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   636        /* overflow */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   637        return ERR_BUF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   638      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   639      /* copy option + length, might be split accross pbufs */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   640      op_len = (u8_t *)pbuf_get_contiguous(p, op_len_buf, 4, 4, offset);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   641      if (op_len == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   642        /* failed to get option and length */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   643        return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   644      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   645      op = (op_len[0] << 8) | op_len[1];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   646      len = (op_len[2] << 8) | op_len[3];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   647      offset = val_offset + len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   648      if (offset < val_offset) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   649        /* overflow */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   650        return ERR_BUF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   651      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   652  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   653      switch (op) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   654        case (DHCP6_OPTION_CLIENTID):
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   655          dhcp6_got_option(dhcp6, DHCP6_OPTION_IDX_CLI_ID);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   656          dhcp6_set_option(dhcp6, DHCP6_OPTION_IDX_CLI_ID, val_offset, len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   657          break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   658        case (DHCP6_OPTION_SERVERID):
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   659          dhcp6_got_option(dhcp6, DHCP6_OPTION_IDX_SERVER_ID);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   660          dhcp6_set_option(dhcp6, DHCP6_OPTION_IDX_SERVER_ID, val_offset, len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   661          break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   662  #if LWIP_DHCP6_PROVIDE_DNS_SERVERS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   663        case (DHCP6_OPTION_DNS_SERVERS):
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   664          dhcp6_got_option(dhcp6, DHCP6_OPTION_IDX_DNS_SERVER);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   665          dhcp6_set_option(dhcp6, DHCP6_OPTION_IDX_DNS_SERVER, val_offset, len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   666          break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   667        case (DHCP6_OPTION_DOMAIN_LIST):
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   668          dhcp6_got_option(dhcp6, DHCP6_OPTION_IDX_DOMAIN_LIST);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   669          dhcp6_set_option(dhcp6, DHCP6_OPTION_IDX_DOMAIN_LIST, val_offset, len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   670          break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   671  #endif /* LWIP_DHCP6_PROVIDE_DNS_SERVERS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   672  #if LWIP_DHCP6_GET_NTP_SRV
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   673        case (DHCP6_OPTION_SNTP_SERVERS):
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   674          dhcp6_got_option(dhcp6, DHCP6_OPTION_IDX_NTP_SERVER);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   675          dhcp6_set_option(dhcp6, DHCP6_OPTION_IDX_NTP_SERVER, val_offset, len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   676          break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   677  #endif /* LWIP_DHCP6_GET_NTP_SRV*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   678        default:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   679          LWIP_DEBUGF(DHCP6_DEBUG, ("skipping option %"U16_F" in options\n", op));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   680          LWIP_HOOK_DHCP6_PARSE_OPTION(ip_current_netif(), dhcp6, dhcp6->state, msg_in,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   681            msg_in->msgtype, op, len, q, val_offset);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   682          break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   683      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   684    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   685    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   686  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   687  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   688  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   689  dhcp6_recv(void *arg, struct udp_pcb *pcb, struct pbuf *p, const ip_addr_t *addr, u16_t port)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   690  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   691    struct netif *netif = ip_current_input_netif();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   692    struct dhcp6 *dhcp6 = netif_dhcp6_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   693    struct dhcp6_msg *reply_msg = (struct dhcp6_msg *)p->payload;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   694    u8_t msg_type;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   695    u32_t xid;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   696  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   697    LWIP_UNUSED_ARG(arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   698  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   699    /* Caught DHCPv6 message from netif that does not have DHCPv6 enabled? -> not interested */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   700    if ((dhcp6 == NULL) || (dhcp6->pcb_allocated == 0)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   701      goto free_pbuf_and_return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   702    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   703  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   704    LWIP_ERROR("invalid server address type", IP_IS_V6(addr), goto free_pbuf_and_return;);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   705  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   706    LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE, ("dhcp6_recv(pbuf = %p) from DHCPv6 server %s port %"U16_F"\n", (void *)p,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   707      ipaddr_ntoa(addr), port));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   708    LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE, ("pbuf->len = %"U16_F"\n", p->len));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   709    LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE, ("pbuf->tot_len = %"U16_F"\n", p->tot_len));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   710    /* prevent warnings about unused arguments */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   711    LWIP_UNUSED_ARG(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   712    LWIP_UNUSED_ARG(addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   713    LWIP_UNUSED_ARG(port);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   714  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   715    if (p->len < sizeof(struct dhcp6_msg)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   716      LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_LEVEL_WARNING, ("DHCPv6 reply message or pbuf too short\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   717      goto free_pbuf_and_return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   718    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   719  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   720    /* match transaction ID against what we expected */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   721    xid = reply_msg->transaction_id[0] << 16;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   722    xid |= reply_msg->transaction_id[1] << 8;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   723    xid |= reply_msg->transaction_id[2];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   724    if (xid != dhcp6->xid) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   725      LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_LEVEL_WARNING,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   726                  ("transaction id mismatch reply_msg->xid(%"X32_F")!= dhcp6->xid(%"X32_F")\n", xid, dhcp6->xid));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   727      goto free_pbuf_and_return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   728    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   729    /* option fields could be unfold? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   730    if (dhcp6_parse_reply(p, dhcp6) != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   731      LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_LEVEL_SERIOUS,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   732                  ("problem unfolding DHCPv6 message - too short on memory?\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   733      goto free_pbuf_and_return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   734    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   735  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   736    /* read DHCP message type */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   737    msg_type = reply_msg->msgtype;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   738    /* message type is DHCP6 REPLY? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   739    if (msg_type == DHCP6_REPLY) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   740      LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE, ("DHCP6_REPLY received\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   741  #if LWIP_IPV6_DHCP6_STATELESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   742      /* in info-requesting state? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   743      if (dhcp6->state == DHCP6_STATE_REQUESTING_CONFIG) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   744        dhcp6_set_state(dhcp6, DHCP6_STATE_STATELESS_IDLE, "dhcp6_recv");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   745        dhcp6_handle_config_reply(netif, p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   746      } else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   747  #endif /* LWIP_IPV6_DHCP6_STATELESS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   748      {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   749        /* @todo: handle reply in other states? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   750      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   751    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   752      /* @todo: handle other message types */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   753    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   754  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   755  free_pbuf_and_return:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   756    pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   757  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   758  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   759  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   760   * A DHCPv6 request has timed out.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   761   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   762   * The timer that was started with the DHCPv6 request has
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   763   * timed out, indicating no response was received in time.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   764   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   765  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   766  dhcp6_timeout(struct netif *netif, struct dhcp6 *dhcp6)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   767  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   768    LWIP_DEBUGF(DHCP_DEBUG | LWIP_DBG_TRACE, ("dhcp6_timeout()\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   769  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   770    LWIP_UNUSED_ARG(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   771    LWIP_UNUSED_ARG(dhcp6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   772  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   773  #if LWIP_IPV6_DHCP6_STATELESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   774    /* back-off period has passed, or server selection timed out */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   775    if (dhcp6->state == DHCP6_STATE_REQUESTING_CONFIG) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   776      LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE, ("dhcp6_timeout(): retrying information request\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   777      dhcp6_information_request(netif, dhcp6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   778    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   779  #endif /* LWIP_IPV6_DHCP6_STATELESS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   780  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   781  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   782  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   783   * DHCPv6 timeout handling (this function must be called every 500ms,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   784   * see @ref DHCP6_TIMER_MSECS).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   785   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   786   * A DHCPv6 server is expected to respond within a short period of time.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   787   * This timer checks whether an outstanding DHCPv6 request is timed out.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   788   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   789  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   790  dhcp6_tmr(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   791  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   792    struct netif *netif;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   793    /* loop through netif's */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   794    NETIF_FOREACH(netif) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   795      struct dhcp6 *dhcp6 = netif_dhcp6_data(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   796      /* only act on DHCPv6 configured interfaces */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   797      if (dhcp6 != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   798        /* timer is active (non zero), and is about to trigger now */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   799        if (dhcp6->request_timeout > 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   800          dhcp6->request_timeout--;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   801        } else if (dhcp6->request_timeout == 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   802          dhcp6->request_timeout--;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   803          /* { dhcp6->request_timeout == 0 } */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   804          LWIP_DEBUGF(DHCP6_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_STATE, ("dhcp6_tmr(): request timeout\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   805          /* this client's request timeout triggered */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   806          dhcp6_timeout(netif, dhcp6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   807        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   808      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   809    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   810  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   811  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv6\dhcp6.c	   812  #endif /* LWIP_IPV6 && LWIP_IPV6_DHCP6 */
+
+	; Module end

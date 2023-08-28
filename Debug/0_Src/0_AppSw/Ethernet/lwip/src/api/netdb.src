@@ -1,0 +1,556 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api\\.netdb.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Rtl8211f -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api\\netdb.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api\\netdb.src ..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api\\netdb.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api\\netdb.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	729
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api\\netdb.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	166
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	173
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	215
+	.byte	7
+	.word	215
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	231
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	236
+	.byte	9
+	.byte	'value',0
+	.word	215
+	.byte	9
+	.byte	'compare',0
+	.word	215
+	.byte	0,2
+	.byte	'short int',0,2,5,10
+	.byte	'__wchar_t',0,1,1,1
+	.word	293
+	.byte	10
+	.byte	'__size_t',0,1,1,1
+	.word	215
+	.byte	10
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	166
+	.byte	11,1,7
+	.word	361
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	363
+	.byte	10
+	.byte	'__intptr_t',0,1,1,1
+	.word	166
+	.byte	10
+	.byte	'__uintptr_t',0,1,1,1
+	.word	215
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,108,29
+	.word	425
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,112,29
+	.word	456
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,116,29
+	.word	493
+	.byte	2
+	.byte	'char',0,1,6,10
+	.byte	'sint8',0,2,125,29
+	.word	529
+	.byte	10
+	.byte	'sint16',0,2,129,1,29
+	.word	293
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'sint32',0,2,134,1,29
+	.word	567
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'sint64',0,2,141,1,29
+	.word	595
+	.byte	2
+	.byte	'float',0,4,4,10
+	.byte	'float32',0,2,170,1,29
+	.word	628
+	.byte	12
+	.byte	'void',0,7
+	.word	654
+	.byte	10
+	.byte	'pvoid',0,3,54,28
+	.word	660
+	.byte	10
+	.byte	'Ifx_TickTime',0,3,76,28
+	.word	595
+	.byte	10
+	.byte	'u32_t',0,4,87,16
+	.word	493
+	.byte	10
+	.byte	'intmax_t',0,5,198,2,41
+	.word	595
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,59,0
+	.byte	3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api\\netdb.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'cc.h',0,2,0,0
+	.byte	'stdint.h',0,3,0,0,0
+.L9:
+.L7:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	     1  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	     2   * @file
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	     3   * API functions for name resolving
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	     4   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	     5   * @defgroup netdbapi NETDB API
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	     6   * @ingroup socket
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	     7   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	     8  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	     9  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    10   * Redistribution and use in source and binary forms, with or without modification,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    11   * are permitted provided that the following conditions are met:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    12   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    13   * 1. Redistributions of source code must retain the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    14   *    this list of conditions and the following disclaimer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    15   * 2. Redistributions in binary form must reproduce the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    16   *    this list of conditions and the following disclaimer in the documentation
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    17   *    and/or other materials provided with the distribution.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    18   * 3. The name of the author may not be used to endorse or promote products
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    19   *    derived from this software without specific prior written permission.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    20   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    21   * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    22   * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    23   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    24   * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    25   * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    26   * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    27   * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    28   * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    29   * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    30   * OF SUCH DAMAGE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    31   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    32   * This file is part of the lwIP TCP/IP stack.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    33   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    34   * Author: Simon Goldschmidt
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    35   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    36   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    37  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    38  #include "lwip/netdb.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    39  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    40  #if LWIP_DNS && LWIP_SOCKET
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    41  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    42  #include "lwip/err.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    43  #include "lwip/mem.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    44  #include "lwip/memp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    45  #include "lwip/ip_addr.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    46  #include "lwip/api.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    47  #include "lwip/dns.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    48  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    49  #include <string.h> /* memset */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    50  #include <stdlib.h> /* atoi */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    51  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    52  /** helper struct for gethostbyname_r to access the char* buffer */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    53  struct gethostbyname_r_helper {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    54    ip_addr_t *addr_list[2];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    55    ip_addr_t addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    56    char *aliases;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    57  };
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    58  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    59  /** h_errno is exported in netdb.h for access by applications. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    60  #if LWIP_DNS_API_DECLARE_H_ERRNO
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    61  int h_errno;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    62  #endif /* LWIP_DNS_API_DECLARE_H_ERRNO */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    63  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    64  /** define "hostent" variables storage: 0 if we use a static (but unprotected)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    65   * set of variables for lwip_gethostbyname, 1 if we use a local storage */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    66  #ifndef LWIP_DNS_API_HOSTENT_STORAGE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    67  #define LWIP_DNS_API_HOSTENT_STORAGE 0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    68  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    69  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    70  /** define "hostent" variables storage */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    71  #if LWIP_DNS_API_HOSTENT_STORAGE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    72  #define HOSTENT_STORAGE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    73  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    74  #define HOSTENT_STORAGE static
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    75  #endif /* LWIP_DNS_API_STATIC_HOSTENT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    76  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    77  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    78   * Returns an entry containing addresses of address family AF_INET
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    79   * for the host with name name.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    80   * Due to dns_gethostbyname limitations, only one address is returned.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    81   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    82   * @param name the hostname to resolve
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    83   * @return an entry containing addresses of address family AF_INET
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    84   *         for the host with name name
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    85   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    86  struct hostent *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    87  lwip_gethostbyname(const char *name)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    88  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    89    err_t err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    90    ip_addr_t addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    91  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    92    /* buffer variables for lwip_gethostbyname() */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    93    HOSTENT_STORAGE struct hostent s_hostent;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    94    HOSTENT_STORAGE char *s_aliases;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    95    HOSTENT_STORAGE ip_addr_t s_hostent_addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    96    HOSTENT_STORAGE ip_addr_t *s_phostent_addr[2];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    97    HOSTENT_STORAGE char s_hostname[DNS_MAX_NAME_LENGTH + 1];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    98  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	    99    /* query host IP address */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   100    err = netconn_gethostbyname(name, &addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   101    if (err != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   102      LWIP_DEBUGF(DNS_DEBUG, ("lwip_gethostbyname(%s) failed, err=%d\n", name, err));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   103      h_errno = HOST_NOT_FOUND;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   104      return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   105    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   106  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   107    /* fill hostent */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   108    s_hostent_addr = addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   109    s_phostent_addr[0] = &s_hostent_addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   110    s_phostent_addr[1] = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   111    strncpy(s_hostname, name, DNS_MAX_NAME_LENGTH);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   112    s_hostname[DNS_MAX_NAME_LENGTH] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   113    s_hostent.h_name = s_hostname;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   114    s_aliases = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   115    s_hostent.h_aliases = &s_aliases;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   116    s_hostent.h_addrtype = AF_INET;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   117    s_hostent.h_length = sizeof(ip_addr_t);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   118    s_hostent.h_addr_list = (char **)&s_phostent_addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   119  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   120  #if DNS_DEBUG
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   121    /* dump hostent */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   122    LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_name           == %s\n", s_hostent.h_name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   123    LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_aliases        == %p\n", (void *)s_hostent.h_aliases));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   124    /* h_aliases are always empty */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   125    LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_addrtype       == %d\n", s_hostent.h_addrtype));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   126    LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_length         == %d\n", s_hostent.h_length));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   127    LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_addr_list      == %p\n", (void *)s_hostent.h_addr_list));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   128    if (s_hostent.h_addr_list != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   129      u8_t idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   130      for (idx = 0; s_hostent.h_addr_list[idx]; idx++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   131        LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_addr_list[%i]   == %p\n", idx, s_hostent.h_addr_list[idx]));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   132        LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_addr_list[%i]-> == %s\n", idx, ipaddr_ntoa((ip_addr_t *)s_hostent.h_addr_list[idx])));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   133      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   134    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   135  #endif /* DNS_DEBUG */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   136  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   137  #if LWIP_DNS_API_HOSTENT_STORAGE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   138    /* this function should return the "per-thread" hostent after copy from s_hostent */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   139    return sys_thread_hostent(&s_hostent);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   140  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   141    return &s_hostent;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   142  #endif /* LWIP_DNS_API_HOSTENT_STORAGE */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   143  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   144  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   145  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   146   * Thread-safe variant of lwip_gethostbyname: instead of using a static
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   147   * buffer, this function takes buffer and errno pointers as arguments
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   148   * and uses these for the result.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   149   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   150   * @param name the hostname to resolve
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   151   * @param ret pre-allocated struct where to store the result
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   152   * @param buf pre-allocated buffer where to store additional data
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   153   * @param buflen the size of buf
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   154   * @param result pointer to a hostent pointer that is set to ret on success
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   155   *               and set to zero on error
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   156   * @param h_errnop pointer to an int where to store errors (instead of modifying
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   157   *                 the global h_errno)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   158   * @return 0 on success, non-zero on error, additional error information
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   159   *         is stored in *h_errnop instead of h_errno to be thread-safe
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   160   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   161  int
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   162  lwip_gethostbyname_r(const char *name, struct hostent *ret, char *buf,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   163                       size_t buflen, struct hostent **result, int *h_errnop)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   164  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   165    err_t err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   166    struct gethostbyname_r_helper *h;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   167    char *hostname;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   168    size_t namelen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   169    int lh_errno;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   170  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   171    if (h_errnop == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   172      /* ensure h_errnop is never NULL */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   173      h_errnop = &lh_errno;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   174    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   175  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   176    if (result == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   177      /* not all arguments given */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   178      *h_errnop = EINVAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   179      return -1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   180    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   181    /* first thing to do: set *result to nothing */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   182    *result = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   183    if ((name == NULL) || (ret == NULL) || (buf == NULL)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   184      /* not all arguments given */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   185      *h_errnop = EINVAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   186      return -1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   187    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   188  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   189    namelen = strlen(name);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   190    if (buflen < (sizeof(struct gethostbyname_r_helper) + LWIP_MEM_ALIGN_BUFFER(namelen + 1))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   191      /* buf can't hold the data needed + a copy of name */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   192      *h_errnop = ERANGE;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   193      return -1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   194    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   195  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   196    h = (struct gethostbyname_r_helper *)LWIP_MEM_ALIGN(buf);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   197    hostname = ((char *)h) + sizeof(struct gethostbyname_r_helper);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   198  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   199    /* query host IP address */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   200    err = netconn_gethostbyname(name, &h->addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   201    if (err != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   202      LWIP_DEBUGF(DNS_DEBUG, ("lwip_gethostbyname(%s) failed, err=%d\n", name, err));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   203      *h_errnop = HOST_NOT_FOUND;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   204      return -1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   205    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   206  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   207    /* copy the hostname into buf */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   208    MEMCPY(hostname, name, namelen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   209    hostname[namelen] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   210  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   211    /* fill hostent */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   212    h->addr_list[0] = &h->addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   213    h->addr_list[1] = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   214    h->aliases = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   215    ret->h_name = hostname;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   216    ret->h_aliases = &h->aliases;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   217    ret->h_addrtype = AF_INET;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   218    ret->h_length = sizeof(ip_addr_t);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   219    ret->h_addr_list = (char **)&h->addr_list;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   220  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   221    /* set result != NULL */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   222    *result = ret;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   223  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   224    /* return success */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   225    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   226  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   227  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   228  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   229   * Frees one or more addrinfo structures returned by getaddrinfo(), along with
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   230   * any additional storage associated with those structures. If the ai_next field
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   231   * of the structure is not null, the entire list of structures is freed.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   232   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   233   * @param ai struct addrinfo to free
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   234   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   235  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   236  lwip_freeaddrinfo(struct addrinfo *ai)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   237  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   238    struct addrinfo *next;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   239  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   240    while (ai != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   241      next = ai->ai_next;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   242      memp_free(MEMP_NETDB, ai);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   243      ai = next;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   244    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   245  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   246  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   247  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   248   * Translates the name of a service location (for example, a host name) and/or
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   249   * a service name and returns a set of socket addresses and associated
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   250   * information to be used in creating a socket with which to address the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   251   * specified service.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   252   * Memory for the result is allocated internally and must be freed by calling
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   253   * lwip_freeaddrinfo()!
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   254   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   255   * Due to a limitation in dns_gethostbyname, only the first address of a
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   256   * host is returned.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   257   * Also, service names are not supported (only port numbers)!
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   258   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   259   * @param nodename descriptive name or address string of the host
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   260   *                 (may be NULL -> local address)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   261   * @param servname port number as string of NULL
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   262   * @param hints structure containing input values that set socktype and protocol
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   263   * @param res pointer to a pointer where to store the result (set to NULL on failure)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   264   * @return 0 on success, non-zero on failure
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   265   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   266   * @todo: implement AI_V4MAPPED, AI_ADDRCONFIG
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   267   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   268  int
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   269  lwip_getaddrinfo(const char *nodename, const char *servname,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   270                   const struct addrinfo *hints, struct addrinfo **res)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   271  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   272    err_t err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   273    ip_addr_t addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   274    struct addrinfo *ai;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   275    struct sockaddr_storage *sa = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   276    int port_nr = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   277    size_t total_size;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   278    size_t namelen = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   279    int ai_family;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   280  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   281    if (res == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   282      return EAI_FAIL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   283    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   284    *res = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   285    if ((nodename == NULL) && (servname == NULL)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   286      return EAI_NONAME;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   287    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   288  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   289    if (hints != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   290      ai_family = hints->ai_family;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   291      if ((ai_family != AF_UNSPEC)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   292  #if LWIP_IPV4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   293          && (ai_family != AF_INET)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   294  #endif /* LWIP_IPV4 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   295  #if LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   296          && (ai_family != AF_INET6)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   297  #endif /* LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   298         ) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   299        return EAI_FAMILY;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   300      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   301    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   302      ai_family = AF_UNSPEC;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   303    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   304  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   305    if (servname != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   306      /* service name specified: convert to port number
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   307       * @todo?: currently, only ASCII integers (port numbers) are supported (AI_NUMERICSERV)! */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   308      port_nr = atoi(servname);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   309      if ((port_nr <= 0) || (port_nr > 0xffff)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   310        return EAI_SERVICE;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   311      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   312    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   313  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   314    if (nodename != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   315      /* service location specified, try to resolve */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   316      if ((hints != NULL) && (hints->ai_flags & AI_NUMERICHOST)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   317        /* no DNS lookup, just parse for an address string */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   318        if (!ipaddr_aton(nodename, &addr)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   319          return EAI_NONAME;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   320        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   321  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   322        if ((IP_IS_V6_VAL(addr) && ai_family == AF_INET) ||
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   323            (IP_IS_V4_VAL(addr) && ai_family == AF_INET6)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   324          return EAI_NONAME;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   325        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   326  #endif /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   327      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   328  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   329        /* AF_UNSPEC: prefer IPv4 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   330        u8_t type = NETCONN_DNS_IPV4_IPV6;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   331        if (ai_family == AF_INET) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   332          type = NETCONN_DNS_IPV4;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   333        } else if (ai_family == AF_INET6) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   334          type = NETCONN_DNS_IPV6;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   335        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   336  #endif /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   337        err = netconn_gethostbyname_addrtype(nodename, &addr, type);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   338        if (err != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   339          return EAI_FAIL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   340        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   341      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   342    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   343      /* service location specified, use loopback address */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   344      if ((hints != NULL) && (hints->ai_flags & AI_PASSIVE)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   345        ip_addr_set_any_val(ai_family == AF_INET6, addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   346      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   347        ip_addr_set_loopback_val(ai_family == AF_INET6, addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   348      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   349    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   350  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   351    total_size = sizeof(struct addrinfo) + sizeof(struct sockaddr_storage);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   352    if (nodename != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   353      namelen = strlen(nodename);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   354      if (namelen > DNS_MAX_NAME_LENGTH) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   355        /* invalid name length */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   356        return EAI_FAIL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   357      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   358      LWIP_ASSERT("namelen is too long", total_size + namelen + 1 > total_size);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   359      total_size += namelen + 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   360    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   361    /* If this fails, please report to lwip-devel! :-) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   362    LWIP_ASSERT("total_size <= NETDB_ELEM_SIZE: please report this!",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   363                total_size <= NETDB_ELEM_SIZE);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   364    ai = (struct addrinfo *)memp_malloc(MEMP_NETDB);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   365    if (ai == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   366      return EAI_MEMORY;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   367    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   368    memset(ai, 0, total_size);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   369    /* cast through void* to get rid of alignment warnings */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   370    sa = (struct sockaddr_storage *)(void *)((u8_t *)ai + sizeof(struct addrinfo));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   371    if (IP_IS_V6_VAL(addr)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   372  #if LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   373      struct sockaddr_in6 *sa6 = (struct sockaddr_in6 *)sa;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   374      /* set up sockaddr */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   375      inet6_addr_from_ip6addr(&sa6->sin6_addr, ip_2_ip6(&addr));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   376      sa6->sin6_family = AF_INET6;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   377      sa6->sin6_len = sizeof(struct sockaddr_in6);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   378      sa6->sin6_port = lwip_htons((u16_t)port_nr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   379      sa6->sin6_scope_id = ip6_addr_zone(ip_2_ip6(&addr));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   380      ai->ai_family = AF_INET6;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   381  #endif /* LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   382    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   383  #if LWIP_IPV4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   384      struct sockaddr_in *sa4 = (struct sockaddr_in *)sa;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   385      /* set up sockaddr */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   386      inet_addr_from_ip4addr(&sa4->sin_addr, ip_2_ip4(&addr));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   387      sa4->sin_family = AF_INET;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   388      sa4->sin_len = sizeof(struct sockaddr_in);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   389      sa4->sin_port = lwip_htons((u16_t)port_nr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   390      ai->ai_family = AF_INET;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   391  #endif /* LWIP_IPV4 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   392    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   393  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   394    /* set up addrinfo */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   395    if (hints != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   396      /* copy socktype & protocol from hints if specified */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   397      ai->ai_socktype = hints->ai_socktype;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   398      ai->ai_protocol = hints->ai_protocol;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   399    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   400    if (nodename != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   401      /* copy nodename to canonname if specified */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   402      ai->ai_canonname = ((char *)ai + sizeof(struct addrinfo) + sizeof(struct sockaddr_storage));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   403      MEMCPY(ai->ai_canonname, nodename, namelen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   404      ai->ai_canonname[namelen] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   405    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   406    ai->ai_addrlen = sizeof(struct sockaddr_storage);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   407    ai->ai_addr = (struct sockaddr *)sa;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   408  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   409    *res = ai;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   410  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   411    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   412  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   413  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\api\netdb.c	   414  #endif /* LWIP_DNS && LWIP_SOCKET */
+
+	; Module end

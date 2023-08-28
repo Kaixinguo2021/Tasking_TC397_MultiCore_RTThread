@@ -1,0 +1,1818 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\.components.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.src ..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.components.rti_start',code,cluster('rti_start')
+	.sect	'.text.components.rti_start'
+	.align	2
+	
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	     1  /*
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	     3   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	     4   * SPDX-License-Identifier: Apache-2.0
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	     5   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	     6   * Change Logs:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	     7   * Date           Author       Notes
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	     8   * 2012-09-20     Bernard      Change the name to components.c
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	     9   *                             And all components related header files.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    10   * 2012-12-23     Bernard      fix the pthread initialization issue.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    11   * 2013-06-23     Bernard      Add the init_call for components initialization.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    12   * 2013-07-05     Bernard      Remove initialization feature for MS VC++ compiler
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    13   * 2015-02-06     Bernard      Remove the MS VC++ support and move to the kernel
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    14   * 2015-05-04     Bernard      Rename it to components.c because compiling issue
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    15   *                             in some IDEs.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    16   * 2015-07-29     Arda.Fu      Add support to use RT_USING_USER_MAIN with IAR
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    17   * 2018-11-22     Jesven       Add secondary cpu boot up
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    18   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    19  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    20  #include <rthw.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    21  #include <rtthread.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    22  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    23  #ifdef RT_USING_USER_MAIN
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    24  #ifndef RT_MAIN_THREAD_STACK_SIZE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    25  #define RT_MAIN_THREAD_STACK_SIZE     2048
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    26  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    27  #ifndef RT_MAIN_THREAD_PRIORITY
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    28  #define RT_MAIN_THREAD_PRIORITY       (RT_THREAD_PRIORITY_MAX / 3)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    29  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    30  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    31  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    32  #ifdef RT_USING_COMPONENTS_INIT
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    33  /*
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    34   * Components Initialization will initialize some driver and components as following
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    35   * order:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    36   * rti_start         --> 0
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    37   * BOARD_EXPORT      --> 1
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    38   * rti_board_end     --> 1.end
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    39   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    40   * DEVICE_EXPORT     --> 2
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    41   * COMPONENT_EXPORT  --> 3
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    42   * FS_EXPORT         --> 4
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    43   * ENV_EXPORT        --> 5
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    44   * APP_EXPORT        --> 6
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    45   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    46   * rti_end           --> 6.end
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    47   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    48   * These automatically initialization, the driver or component initial function must
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    49   * be defined with:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    50   * INIT_BOARD_EXPORT(fn);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    51   * INIT_DEVICE_EXPORT(fn);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    52   * ...
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    53   * INIT_APP_EXPORT(fn);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    54   * etc.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    55   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    56  static int rti_start(void)
+; Function rti_start
+.L13:
+rti_start:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    57  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    58      return 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    59  }
+	mov	d2,#0
+	ret
+.L99:
+	
+__rti_start_function_end:
+	.size	rti_start,__rti_start_function_end-rti_start
+.L48:
+	; End of function
+	
+	.sdecl	'.text.components.rti_board_start',code,cluster('rti_board_start')
+	.sect	'.text.components.rti_board_start'
+	.align	2
+	
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    60  INIT_EXPORT(rti_start, "0");
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    61  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    62  static int rti_board_start(void)
+; Function rti_board_start
+.L15:
+rti_board_start:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    63  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    64      return 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    65  }
+	mov	d2,#0
+	ret
+.L100:
+	
+__rti_board_start_function_end:
+	.size	rti_board_start,__rti_board_start_function_end-rti_board_start
+.L53:
+	; End of function
+	
+	.sdecl	'.text.components.rti_board_end',code,cluster('rti_board_end')
+	.sect	'.text.components.rti_board_end'
+	.align	2
+	
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    66  INIT_EXPORT(rti_board_start, "0.end");
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    67  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    68  static int rti_board_end(void)
+; Function rti_board_end
+.L17:
+rti_board_end:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    69  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    70      return 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    71  }
+	mov	d2,#0
+	ret
+.L101:
+	
+__rti_board_end_function_end:
+	.size	rti_board_end,__rti_board_end_function_end-rti_board_end
+.L58:
+	; End of function
+	
+	.sdecl	'.text.components.rti_end',code,cluster('rti_end')
+	.sect	'.text.components.rti_end'
+	.align	2
+	
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    72  INIT_EXPORT(rti_board_end, "1.end");
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    73  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    74  static int rti_end(void)
+; Function rti_end
+.L19:
+rti_end:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    75  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    76      return 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    77  }
+	mov	d2,#0
+	ret
+.L102:
+	
+__rti_end_function_end:
+	.size	rti_end,__rti_end_function_end-rti_end
+.L63:
+	; End of function
+	
+	.sdecl	'.text.components.rt_components_board_init',code,cluster('rt_components_board_init')
+	.sect	'.text.components.rt_components_board_init'
+	.align	2
+	
+	.global	rt_components_board_init
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    78  INIT_EXPORT(rti_end, "6.end");
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    79  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    80  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    81   * RT-Thread Components Initialization for board
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    82   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    83  void rt_components_board_init(void)
+; Function rt_components_board_init
+.L21:
+rt_components_board_init:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    84  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    85  #if RT_DEBUG_INIT
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    86      int result;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    87      const struct rt_init_desc *desc;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    88      for (desc = &__rt_init_desc_rti_board_start; desc < &__rt_init_desc_rti_board_end; desc ++)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    89      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    90          rt_kprintf("initialize %s", desc->fn_name);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    91          result = desc->fn();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    92          rt_kprintf(":%d done\n", result);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    93      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    94  #else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    95      volatile const init_fn_t *fn_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    96  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    97      for (fn_ptr = &__rt_init_rti_board_start; fn_ptr < &__rt_init_rti_board_end; fn_ptr++)
+	lea	a15,__rt_init_rti_board_start
+.L117:
+	lea	a2,__rt_init_rti_board_end
+.L142:
+	ge.a	d15,a15,a2
+.L143:
+	jne	d15,#0,.L6
+.L7:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    98      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	    99          (*fn_ptr)();
+	ld.a	a2,[a15+]
+.L144:
+	calli	a2
+.L145:
+	lea	a2,__rt_init_rti_board_end
+.L146:
+	lt.a	d15,a15,a2
+.L147:
+	jne	d15,#0,.L7
+.L6:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   100      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   101  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   102  }
+	ret
+.L96:
+	
+__rt_components_board_init_function_end:
+	.size	rt_components_board_init,__rt_components_board_init_function_end-rt_components_board_init
+.L43:
+	; End of function
+	
+	.sdecl	'.text.components.rt_components_init',code,cluster('rt_components_init')
+	.sect	'.text.components.rt_components_init'
+	.align	2
+	
+	.global	rt_components_init
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   103  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   104  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   105   * RT-Thread Components Initialization
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   106   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   107  void rt_components_init(void)
+; Function rt_components_init
+.L23:
+rt_components_init:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   108  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   109  #if RT_DEBUG_INIT
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   110      int result;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   111      const struct rt_init_desc *desc;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   112  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   113      rt_kprintf("do components initialization.\n");
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   114      for (desc = &__rt_init_desc_rti_board_end; desc < &__rt_init_desc_rti_end; desc ++)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   115      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   116          rt_kprintf("initialize %s", desc->fn_name);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   117          result = desc->fn();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   118          rt_kprintf(":%d done\n", result);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   119      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   120  #else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   121      volatile const init_fn_t *fn_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   122  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   123      for (fn_ptr = &__rt_init_rti_board_end; fn_ptr < &__rt_init_rti_end; fn_ptr ++)
+	lea	a15,__rt_init_rti_board_end
+.L118:
+	lea	a2,__rt_init_rti_end
+.L132:
+	ge.a	d15,a15,a2
+.L133:
+	jne	d15,#0,.L8
+.L9:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   124      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   125          (*fn_ptr)();
+	ld.a	a2,[a15+]
+.L134:
+	calli	a2
+.L135:
+	lea	a2,__rt_init_rti_end
+.L136:
+	lt.a	d15,a15,a2
+.L137:
+	jne	d15,#0,.L9
+.L8:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   126      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   127  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   128  }
+	ret
+.L93:
+	
+__rt_components_init_function_end:
+	.size	rt_components_init,__rt_components_init_function_end-rt_components_init
+.L38:
+	; End of function
+	
+	.sdecl	'.text.components.main_thread_entry',code,cluster('main_thread_entry')
+	.sect	'.text.components.main_thread_entry'
+	.align	2
+	
+	.global	main_thread_entry
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   129  #endif   /* RT_USING_COMPONENTS_INIT */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   130  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   131  #ifdef RT_USING_USER_MAIN
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   132  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   133  void rt_application_init(void);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   134  void rt_hw_board_init(void);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   135  int rtthread_startup(void);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   136  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   137  #if defined(__CC_ARM) || defined(__CLANG_ARM)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   138  extern int $Super$$main(void);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   139  /* re-define main function */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   140  int $Sub$$main(void)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   141  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   142      rtthread_startup();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   143      return 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   144  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   145  #elif defined(__ICCARM__)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   146  extern int main(void);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   147  /* __low_level_init will auto called by IAR cstartup */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   148  extern void __iar_data_init3(void);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   149  int __low_level_init(void)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   150  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   151      // call IAR table copy function.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   152      __iar_data_init3();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   153      rtthread_startup();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   154      return 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   155  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   156  #elif defined(__GNUC__)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   157  /* Add -eentry to arm-none-eabi-gcc argument ,block by song*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   158  // int entry(void)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   159  // {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   160  //     rtthread_startup();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   161  //     return 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   162  // }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   163  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   164  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   165  // #ifndef RT_USING_HEAP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   166  /* if there is not enable heap, we should use static thread and stack. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   167  ALIGN(4)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   168  static rt_uint8_t main_stack[RT_MAIN_THREAD_STACK_SIZE];
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   169  static struct rt_thread main_thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   170  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   171  // #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   172  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   173  /* the system main thread */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   174  void main_thread_entry(void *parameter)
+; Function main_thread_entry
+.L25:
+main_thread_entry:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   175  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   176     extern int main(void);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   177  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   178  #ifdef RT_USING_COMPONENTS_INIT
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   179      /* RT-Thread components initialization */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   180      // rt_components_init();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   181  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   182  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   183  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   184      rt_hw_secondary_cpu_up();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   185  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   186      /* invoke system main function */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   187  #if defined(__CC_ARM) || defined(__CLANG_ARM)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   188      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   189          extern int $Super$$main(void);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   190          $Super$$main(); /* for ARMCC. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   191      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   192  #elif defined(__ICCARM__) || defined(__GNUC__) || defined(__TASKING__)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   193     main();
+	j	main
+.L107:
+	
+__main_thread_entry_function_end:
+	.size	main_thread_entry,__main_thread_entry_function_end-main_thread_entry
+.L78:
+	; End of function
+	
+	.sdecl	'.text.components.rt_application_init',code,cluster('rt_application_init')
+	.sect	'.text.components.rt_application_init'
+	.align	2
+	
+	.global	rt_application_init
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   194  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   195  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   196  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   197  static struct rt_timer  timer1;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   198  rt_uint8_t Flag_10ms;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   199  /* ??? 1 ???? */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   200  static void timeout1(void *parameter)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   201  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   202      // Flag_10ms = 1;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   203  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   204  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   205  void rt_application_init(void)
+; Function rt_application_init
+.L27:
+rt_application_init:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   206  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   207      rt_thread_t tid;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   208  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   209  #ifdef RT_USING_HEAP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   210      tid = rt_thread_create("main", main_thread_entry, RT_NULL,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   211                             RT_MAIN_THREAD_STACK_SIZE, RT_MAIN_THREAD_PRIORITY, 20);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   212  #else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   213      rt_err_t result;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   214  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   215      tid = &main_thread;
+	movh.a	a15,#@his(main_thread)
+.L168:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   216      result = rt_thread_init(tid, "main", main_thread_entry, RT_NULL,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   217                              &main_stack[0], sizeof(main_stack), RT_MAIN_THREAD_PRIORITY, 20);
+	movh.a	a2,#@his(main_stack)
+.L169:
+	mov	d4,#2048
+	lea	a15,[a15]@los(main_thread)
+.L170:
+	mov	d5,#10
+	lea	a2,[a2]@los(main_stack)
+.L171:
+	mov	d6,#20
+	sub.a	a10,#8
+.L119:
+	movh.a	a6,#@his(main_thread_entry)
+.L172:
+	st.a	[a10],a2
+.L173:
+	lea	a6,[a6]@los(main_thread_entry)
+.L174:
+	mov.aa	a4,a15
+.L175:
+	lea	a5,.1.str
+.L176:
+	mov.a	a7,#0
+.L177:
+	call	rt_thread_init
+.L120:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   218      /* if not define RT_USING_HEAP, using to eliminate the warning */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   219      (void)result;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   220  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   221  #ifdef RT_USING_HEAP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   222      /* 如果获得线程控制块，启动这个线程 */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   223      if (tid != RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   224          rt_thread_startup(tid);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   225  #else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   226      if(result == RT_EOK)
+	jne	d2,#0,.L10
+.L178:
+	mov.aa	a4,a15
+	j	rt_thread_startup
+.L10:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   227          rt_thread_startup(tid);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   228  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   229  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   230      // rt_timer_init(&timer1, "timer1", timeout1, RT_NULL,10, RT_TIMER_FLAG_PERIODIC); 
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   231      // /* 启动定时器 */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   232      // rt_timer_start(&timer1);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   233  }
+	ret
+.L103:
+	
+__rt_application_init_function_end:
+	.size	rt_application_init,__rt_application_init_function_end-rt_application_init
+.L68:
+	; End of function
+	
+	.sdecl	'.text.components.rtthread_startup',code,cluster('rtthread_startup')
+	.sect	'.text.components.rtthread_startup'
+	.align	2
+	
+	.global	rtthread_startup
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   234  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   235  int rtthread_startup(void)
+; Function rtthread_startup
+.L29:
+rtthread_startup:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   236  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   237      rt_hw_interrupt_disable();
+	call	rt_hw_interrupt_disable
+.L183:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   238  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   239      /* board level initialization
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   240       * NOTE: please initialize heap inside board initialization.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   241       */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   242      rt_hw_board_init();
+	call	rt_hw_board_init
+.L184:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   243  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   244      /* show RT-Thread version */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   245  //    rt_show_version();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   246  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   247      /* timer system initialization */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   248      rt_system_timer_init();
+	call	rt_system_timer_init
+.L185:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   249  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   250      /* scheduler system initialization */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   251      rt_system_scheduler_init();
+	call	rt_system_scheduler_init
+.L186:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   252  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   253  #ifdef RT_USING_SIGNALS
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   254      /* signal system initialization */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   255      rt_system_signal_init();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   256  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   257  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   258      /* create init_thread */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   259      rt_application_init();
+	call	rt_application_init
+.L187:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   260  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   261      /* timer thread initialization */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   262      rt_system_timer_thread_init();
+	call	rt_system_timer_thread_init
+.L188:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   263  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   264      /* idle thread initialization */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   265      rt_thread_idle_init();
+	call	rt_thread_idle_init
+.L189:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   266  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   267  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   268      rt_hw_spin_lock(&_cpus_lock);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   269  #endif /*RT_USING_SMP*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   270  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   271      /* start scheduler */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   272      rt_system_scheduler_start();
+	call	rt_system_scheduler_start
+.L190:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   273  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   274      /* never reach here */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   275      return 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   276  }
+	mov	d2,#0
+	ret
+.L106:
+	
+__rtthread_startup_function_end:
+	.size	rtthread_startup,__rtthread_startup_function_end-rtthread_startup
+.L73:
+	; End of function
+	
+	.sdecl	'.rti_fn.0',data,rom,cluster('__rt_init_rti_start'),protect
+	.sect	'.rti_fn.0'
+	.global	__rt_init_rti_start
+	.align	4
+__rt_init_rti_start:	.type	object
+	.size	__rt_init_rti_start,4
+	.word	rti_start
+	.sdecl	'.rti_fn.0.end',data,rom,cluster('__rt_init_rti_board_start'),protect
+	.sect	'.rti_fn.0.end'
+	.global	__rt_init_rti_board_start
+	.align	4
+__rt_init_rti_board_start:	.type	object
+	.size	__rt_init_rti_board_start,4
+	.word	rti_board_start
+	.sdecl	'.rti_fn.1.end',data,rom,cluster('__rt_init_rti_board_end'),protect
+	.sect	'.rti_fn.1.end'
+	.global	__rt_init_rti_board_end
+	.align	4
+__rt_init_rti_board_end:	.type	object
+	.size	__rt_init_rti_board_end,4
+	.word	rti_board_end
+	.sdecl	'.rti_fn.6.end',data,rom,cluster('__rt_init_rti_end'),protect
+	.sect	'.rti_fn.6.end'
+	.global	__rt_init_rti_end
+	.align	4
+__rt_init_rti_end:	.type	object
+	.size	__rt_init_rti_end,4
+	.word	rti_end
+	.sdecl	'.bss.components.main_stack',data,cluster('main_stack')
+	.sect	'.bss.components.main_stack'
+	.align	4
+main_stack:	.type	object
+	.size	main_stack,2048
+	.space	2048
+	.sdecl	'.bss.components.main_thread',data,cluster('main_thread')
+	.sect	'.bss.components.main_thread'
+	.align	4
+main_thread:	.type	object
+	.size	main_thread,128
+	.space	128
+	.sdecl	'.zbss.components.Flag_10ms',data,cluster('Flag_10ms')
+	.sect	'.zbss.components.Flag_10ms'
+	.global	Flag_10ms
+Flag_10ms:	.type	object
+	.size	Flag_10ms,1
+	.space	1
+	.sdecl	'.zrodata.components..1.str',data,rom
+	.sect	'.zrodata.components..1.str'
+.1.str:	.type	object
+	.size	.1.str,5
+	.byte	109,97,105,110
+	.space	1
+	.calls	'__INDIRECT__','rti_start'
+	.calls	'__INDIRECT__','rti_board_start'
+	.calls	'__INDIRECT__','rti_board_end'
+	.calls	'__INDIRECT__','rti_end'
+	.calls	'__INDIRECT__','main_thread_entry'
+	.calls	'rt_components_board_init','__INDIRECT__'
+	.calls	'rt_components_init','__INDIRECT__'
+	.calls	'main_thread_entry','main'
+	.calls	'rt_application_init','rt_thread_init'
+	.calls	'rt_application_init','rt_thread_startup'
+	.calls	'rtthread_startup','rt_hw_interrupt_disable'
+	.calls	'rtthread_startup','rt_hw_board_init'
+	.calls	'rtthread_startup','rt_system_timer_init'
+	.calls	'rtthread_startup','rt_system_scheduler_init'
+	.calls	'rtthread_startup','rt_application_init'
+	.calls	'rtthread_startup','rt_system_timer_thread_init'
+	.calls	'rtthread_startup','rt_thread_idle_init'
+	.calls	'rtthread_startup','rt_system_scheduler_start'
+	.calls	'rti_start','',0
+	.calls	'rti_board_start','',0
+	.calls	'rti_board_end','',0
+	.calls	'rti_end','',0
+	.calls	'rt_components_board_init','',0
+	.calls	'rt_components_init','',0
+	.calls	'main_thread_entry','',0
+	.calls	'rt_application_init','',8
+	.extern	rt_system_timer_init
+	.extern	rt_system_timer_thread_init
+	.extern	rt_thread_init
+	.extern	rt_thread_startup
+	.extern	rt_thread_idle_init
+	.extern	rt_system_scheduler_init
+	.extern	rt_system_scheduler_start
+	.extern	rt_hw_interrupt_disable
+	.extern	rt_hw_board_init
+	.extern	main
+	.extern	__INDIRECT__
+	.calls	'rtthread_startup','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L31:
+	.word	2116
+	.half	3
+	.word	.L32
+	.byte	4
+.L30:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L33
+.L98:
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	174
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	181
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	223
+	.byte	7
+	.word	223
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	239
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	244
+	.byte	9
+	.byte	'value',0
+	.word	223
+	.byte	9
+	.byte	'compare',0
+	.word	223
+	.byte	0,10
+	.byte	'rt_system_timer_init',0,1,83,6,1,1,1,1,10
+	.byte	'rt_system_timer_thread_init',0,1,84,6,1,1,1,1
+.L104:
+	.byte	2
+	.byte	'long int',0,4,5,2
+	.byte	'char',0,1,6,11,8
+	.word	378
+	.byte	12,7,0
+.L116:
+	.byte	2
+	.byte	'unsigned char',0,1,8,7
+	.word	.L121-.L31
+.L121:
+	.byte	13
+	.byte	'rt_list_node',0,2,229,2,8,8,14
+	.byte	'next',0
+	.word	412
+	.byte	4,2,35,0,14
+	.byte	'prev',0
+	.word	412
+	.byte	4,2,35,4,0,15
+	.byte	'void',0
+.L108:
+	.byte	7
+	.word	465
+	.byte	2
+	.byte	'unsigned long int',0,4,7,13
+	.byte	'rt_object',0,2,131,3,8,20,14
+	.byte	'name',0
+	.word	386
+	.byte	8,2,35,0,14
+	.byte	'type',0
+	.word	395
+	.byte	1,2,35,8,14
+	.byte	'flag',0
+	.word	395
+	.byte	1,2,35,9,14
+	.byte	'list',0
+	.word	417
+	.byte	8,2,35,12,0,11,8
+	.word	417
+	.byte	12,0,0,16,1,1,5
+	.word	471
+	.byte	0,7
+	.word	579
+	.byte	13
+	.byte	'rt_timer',0,2,236,3,8,44,14
+	.byte	'parent',0
+	.word	497
+	.byte	20,2,35,0,14
+	.byte	'row',0
+	.word	570
+	.byte	8,2,35,20,14
+	.byte	'timeout_func',0
+	.word	588
+	.byte	4,2,35,28,14
+	.byte	'parameter',0
+	.word	471
+	.byte	4,2,35,32,14
+	.byte	'init_tick',0
+	.word	223
+	.byte	4,2,35,36,14
+	.byte	'timeout_tick',0
+	.word	223
+	.byte	4,2,35,40,0,16,1,1,5
+	.word	.L122-.L31
+	.byte	0,7
+	.word	720
+.L115:
+	.byte	13
+	.byte	'rt_thread',0,2,213,4,8,128,1,14
+	.byte	'name',0
+	.word	386
+	.byte	8,2,35,0,14
+	.byte	'type',0
+	.word	395
+	.byte	1,2,35,8,14
+	.byte	'flags',0
+	.word	395
+	.byte	1,2,35,9,14
+	.byte	'list',0
+	.word	417
+	.byte	8,2,35,12,14
+	.byte	'tlist',0
+	.word	417
+	.byte	8,2,35,20,14
+	.byte	'sp',0
+	.word	471
+	.byte	4,2,35,28,14
+	.byte	'entry',0
+	.word	471
+	.byte	4,2,35,32,14
+	.byte	'parameter',0
+	.word	471
+	.byte	4,2,35,36,14
+	.byte	'stack_addr',0
+	.word	471
+	.byte	4,2,35,40,14
+	.byte	'stack_size',0
+	.word	223
+	.byte	4,2,35,44,14
+	.byte	'error',0
+	.word	366
+	.byte	4,2,35,48,14
+	.byte	'stat',0
+	.word	395
+	.byte	1,2,35,52,14
+	.byte	'current_priority',0
+	.word	395
+	.byte	1,2,35,53,14
+	.byte	'init_priority',0
+	.word	395
+	.byte	1,2,35,54,14
+	.byte	'number_mask',0
+	.word	223
+	.byte	4,2,35,56,14
+	.byte	'event_set',0
+	.word	223
+	.byte	4,2,35,60,14
+	.byte	'event_info',0
+	.word	395
+	.byte	1,2,35,64,14
+	.byte	'init_tick',0
+	.word	476
+	.byte	4,2,35,66,14
+	.byte	'remaining_tick',0
+	.word	476
+	.byte	4,2,35,70,14
+	.byte	'thread_timer',0
+	.word	593
+	.byte	44,2,35,76,14
+	.byte	'cleanup',0
+	.word	729
+	.byte	4,2,35,120,14
+	.byte	'user_data',0
+	.word	476
+	.byte	4,2,35,124,0
+.L122:
+	.byte	7
+	.word	734
+	.byte	3
+	.word	378
+	.byte	7
+	.word	1154
+	.byte	17
+	.byte	'rt_thread_init',0,1,122,10
+	.word	366
+	.byte	1,1,1,1,18
+	.byte	'thread',0,1,122,43
+	.word	1149
+	.byte	18
+	.byte	'name',0,1,123,43
+	.word	1159
+	.byte	18
+	.byte	'entry',0,1,124,32
+	.word	588
+	.byte	18
+	.byte	'parameter',0,1,125,43
+	.word	471
+	.byte	18
+	.byte	'stack_start',0,1,126,43
+	.word	471
+	.byte	18
+	.byte	'stack_size',0,1,127,43
+	.word	223
+	.byte	18
+	.byte	'priority',0,1,128,1,43
+	.word	395
+	.byte	18
+	.byte	'tick',0,1,129,1,43
+	.word	223
+	.byte	0,19
+	.byte	'rt_thread_t',0,2,160,5,27
+	.word	1149
+	.byte	17
+	.byte	'rt_thread_startup',0,1,139,1,10
+	.word	366
+	.byte	1,1,1,1,18
+	.byte	'thread',0,1,139,1,40
+	.word	1323
+	.byte	0,7
+	.word	734
+	.byte	10
+	.byte	'rt_thread_idle_init',0,1,166,1,6,1,1,1,1,10
+	.byte	'rt_system_scheduler_init',0,1,177,1,6,1,1,1,1,10
+	.byte	'rt_system_scheduler_start',0,1,178,1,6,1,1,1,1,20
+	.word	174
+	.byte	1,1,7
+	.word	1495
+	.byte	19
+	.byte	'init_fn_t',0,2,211,1,15
+	.word	1502
+	.byte	6
+	.word	1507
+	.byte	3
+	.word	1526
+.L94:
+	.byte	7
+	.word	1531
+	.byte	7
+	.word	1495
+	.byte	21
+	.byte	'rt_hw_interrupt_disable',0,3,105,11
+	.word	366
+	.byte	1,1,1,1,10
+	.byte	'rt_hw_board_init',0,4,134,1,6,1,1,1,1,21
+	.byte	'main',0,4,176,1,15
+	.word	174
+	.byte	1,1,1,1,22
+	.byte	'__INDIRECT__',0,4,1,1,1,1,1,19
+	.byte	'__size_t',0,4,1,1
+	.word	223
+	.byte	23,1,7
+	.word	1663
+	.byte	19
+	.byte	'__codeptr',0,4,1,1
+	.word	1665
+	.byte	19
+	.byte	'__intptr_t',0,4,1,1
+	.word	174
+	.byte	19
+	.byte	'__uintptr_t',0,4,1,1
+	.word	223
+	.byte	19
+	.byte	'rt_uint8_t',0,2,69,41
+	.word	395
+	.byte	2
+	.byte	'unsigned short int',0,2,7,19
+	.byte	'rt_uint16_t',0,2,70,41
+	.word	1746
+	.byte	19
+	.byte	'rt_uint32_t',0,2,71,41
+	.word	223
+	.byte	19
+	.byte	'rt_base_t',0,2,83,41
+	.word	366
+	.byte	19
+	.byte	'rt_ubase_t',0,2,84,41
+	.word	476
+	.byte	19
+	.byte	'rt_err_t',0,2,86,41
+	.word	366
+	.byte	19
+	.byte	'rt_tick_t',0,2,88,41
+	.word	223
+	.byte	19
+	.byte	'rt_size_t',0,2,90,41
+	.word	476
+	.byte	19
+	.byte	'rt_list_t',0,2,234,2,29
+	.word	417
+	.byte	7
+	.word	.L123-.L31
+.L123:
+	.byte	13
+	.byte	'rt_slist_node',0,2,239,2,8,4,14
+	.byte	'next',0
+	.word	1917
+	.byte	4,2,35,0,0,19
+	.byte	'rt_slist_t',0,2,243,2,30
+	.word	1922
+	.byte	19
+	.byte	'uint16_t',0,5,246,1,41
+	.word	1746
+	.byte	19
+	.byte	'uint32_t',0,5,254,1,41
+	.word	223
+	.byte	19
+	.byte	'time_t',0,6,44,25
+	.word	476
+	.byte	19
+	.byte	'fd_mask',0,7,39,17
+	.word	366
+	.byte	16,1,1,5
+	.word	174
+	.byte	5
+	.word	471
+	.byte	0,7
+	.word	2044
+	.byte	19
+	.byte	'rt_isr_handler_t',0,3,73,16
+	.word	2058
+.L110:
+	.byte	3
+	.word	1507
+.L111:
+	.byte	3
+	.word	1507
+.L112:
+	.byte	3
+	.word	1507
+.L113:
+	.byte	3
+	.word	1507
+.L114:
+	.byte	11,128,16
+	.word	395
+	.byte	12,255,15,0,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L32:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,11,1,1,11
+	.byte	15,73,19,0,0,12,33,0,47,15,0,0,13,19,1,3,8,58,15,59,15,57,15,11,15,0,0,14,13,0,3,8,73,19,11,15,56,9,0
+	.byte	0,15,59,0,3,8,0,0,16,21,1,54,15,39,12,0,0,17,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12
+	.byte	0,0,18,5,0,3,8,58,15,59,15,57,15,73,19,0,0,19,22,0,3,8,58,15,59,15,57,15,73,19,0,0,20,21,0,73,19,54,15
+	.byte	39,12,0,0,21,46,0,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,22,46,0,3,8,58,15,59,15,57,15
+	.byte	54,15,63,12,60,12,0,0,23,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L33:
+	.word	.L125-.L124
+.L124:
+	.half	3
+	.word	.L127-.L126
+.L126:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc',0
+	.byte	0
+	.byte	'rtthread.h',0,1,0,0
+	.byte	'rtdef.h',0,1,0,0
+	.byte	'rthw.h',0,1,0,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0,0,0,0
+	.byte	'stdint.h',0,2,0,0
+	.byte	'time.h',0,2,0,0
+	.byte	'libc_fdset.h',0,3,0,0,0
+.L127:
+.L125:
+	.sdecl	'.debug_info',debug,cluster('rt_components_init')
+	.sect	'.debug_info'
+.L34:
+	.word	248
+	.half	3
+	.word	.L35
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L37,.L36
+	.byte	2
+	.word	.L30
+	.byte	3
+	.byte	'rt_components_init',0,1,107,6,1,1,1
+	.word	.L23,.L93,.L22
+	.byte	4
+	.word	.L23,.L93
+	.byte	5
+	.byte	'fn_ptr',0,1,121,31
+	.word	.L94,.L95
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_components_init')
+	.sect	'.debug_abbrev'
+.L35:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_components_init')
+	.sect	'.debug_line'
+.L36:
+	.word	.L129-.L128
+.L128:
+	.half	3
+	.word	.L131-.L130
+.L130:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0,0,0,0,0
+.L131:
+	.byte	5,20,7,0,5,2
+	.word	.L23
+	.byte	3,250,0,1,5,55,9
+	.half	.L118-.L23
+	.byte	1,5,52,9
+	.half	.L132-.L118
+	.byte	1,5,72,9
+	.half	.L133-.L132
+	.byte	1,5,10,7,9
+	.half	.L9-.L133
+	.byte	3,2,1,5,18,9
+	.half	.L134-.L9
+	.byte	1,5,55,9
+	.half	.L135-.L134
+	.byte	3,126,1,5,52,9
+	.half	.L136-.L135
+	.byte	1,5,72,9
+	.half	.L137-.L136
+	.byte	1,5,1,7,9
+	.half	.L8-.L137
+	.byte	3,5,1,7,9
+	.half	.L38-.L8
+	.byte	0,1,1
+.L129:
+	.sdecl	'.debug_ranges',debug,cluster('rt_components_init')
+	.sect	'.debug_ranges'
+.L37:
+	.word	-1,.L23,0,.L38-.L23,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_components_board_init')
+	.sect	'.debug_info'
+.L39:
+	.word	254
+	.half	3
+	.word	.L40
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L42,.L41
+	.byte	2
+	.word	.L30
+	.byte	3
+	.byte	'rt_components_board_init',0,1,83,6,1,1,1
+	.word	.L21,.L96,.L20
+	.byte	4
+	.word	.L21,.L96
+	.byte	5
+	.byte	'fn_ptr',0,1,95,31
+	.word	.L94,.L97
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_components_board_init')
+	.sect	'.debug_abbrev'
+.L40:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_components_board_init')
+	.sect	'.debug_line'
+.L41:
+	.word	.L139-.L138
+.L138:
+	.half	3
+	.word	.L141-.L140
+.L140:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0,0,0,0,0
+.L141:
+	.byte	5,20,7,0,5,2
+	.word	.L21
+	.byte	3,224,0,1,5,57,9
+	.half	.L117-.L21
+	.byte	1,5,54,9
+	.half	.L142-.L117
+	.byte	1,5,80,9
+	.half	.L143-.L142
+	.byte	1,5,10,7,9
+	.half	.L7-.L143
+	.byte	3,2,1,5,18,9
+	.half	.L144-.L7
+	.byte	1,5,57,9
+	.half	.L145-.L144
+	.byte	3,126,1,5,54,9
+	.half	.L146-.L145
+	.byte	1,5,80,9
+	.half	.L147-.L146
+	.byte	1,5,1,7,9
+	.half	.L6-.L147
+	.byte	3,5,1,7,9
+	.half	.L43-.L6
+	.byte	0,1,1
+.L139:
+	.sdecl	'.debug_ranges',debug,cluster('rt_components_board_init')
+	.sect	'.debug_ranges'
+.L42:
+	.word	-1,.L21,0,.L43-.L21,0,0
+	.sdecl	'.debug_info',debug,cluster('rti_start')
+	.sect	'.debug_info'
+.L44:
+	.word	222
+	.half	3
+	.word	.L45
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L47,.L46
+	.byte	2
+	.word	.L30
+	.byte	3
+	.byte	'rti_start',0,1,56,12
+	.word	.L98
+	.byte	1,1
+	.word	.L13,.L99,.L12
+	.byte	4
+	.word	.L13,.L99
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rti_start')
+	.sect	'.debug_abbrev'
+.L45:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rti_start')
+	.sect	'.debug_line'
+.L46:
+	.word	.L149-.L148
+.L148:
+	.half	3
+	.word	.L151-.L150
+.L150:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0,0,0,0,0
+.L151:
+	.byte	5,12,7,0,5,2
+	.word	.L13
+	.byte	3,57,1,5,1,3,1,1,7,9
+	.half	.L48-.L13
+	.byte	0,1,1
+.L149:
+	.sdecl	'.debug_ranges',debug,cluster('rti_start')
+	.sect	'.debug_ranges'
+.L47:
+	.word	-1,.L13,0,.L48-.L13,0,0
+	.sdecl	'.debug_info',debug,cluster('rti_board_start')
+	.sect	'.debug_info'
+.L49:
+	.word	228
+	.half	3
+	.word	.L50
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L52,.L51
+	.byte	2
+	.word	.L30
+	.byte	3
+	.byte	'rti_board_start',0,1,62,12
+	.word	.L98
+	.byte	1,1
+	.word	.L15,.L100,.L14
+	.byte	4
+	.word	.L15,.L100
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rti_board_start')
+	.sect	'.debug_abbrev'
+.L50:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rti_board_start')
+	.sect	'.debug_line'
+.L51:
+	.word	.L153-.L152
+.L152:
+	.half	3
+	.word	.L155-.L154
+.L154:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0,0,0,0,0
+.L155:
+	.byte	5,12,7,0,5,2
+	.word	.L15
+	.byte	3,63,1,5,1,3,1,1,7,9
+	.half	.L53-.L15
+	.byte	0,1,1
+.L153:
+	.sdecl	'.debug_ranges',debug,cluster('rti_board_start')
+	.sect	'.debug_ranges'
+.L52:
+	.word	-1,.L15,0,.L53-.L15,0,0
+	.sdecl	'.debug_info',debug,cluster('rti_board_end')
+	.sect	'.debug_info'
+.L54:
+	.word	226
+	.half	3
+	.word	.L55
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L57,.L56
+	.byte	2
+	.word	.L30
+	.byte	3
+	.byte	'rti_board_end',0,1,68,12
+	.word	.L98
+	.byte	1,1
+	.word	.L17,.L101,.L16
+	.byte	4
+	.word	.L17,.L101
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rti_board_end')
+	.sect	'.debug_abbrev'
+.L55:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rti_board_end')
+	.sect	'.debug_line'
+.L56:
+	.word	.L157-.L156
+.L156:
+	.half	3
+	.word	.L159-.L158
+.L158:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0,0,0,0,0
+.L159:
+	.byte	5,12,7,0,5,2
+	.word	.L17
+	.byte	3,197,0,1,5,1,3,1,1,7,9
+	.half	.L58-.L17
+	.byte	0,1,1
+.L157:
+	.sdecl	'.debug_ranges',debug,cluster('rti_board_end')
+	.sect	'.debug_ranges'
+.L57:
+	.word	-1,.L17,0,.L58-.L17,0,0
+	.sdecl	'.debug_info',debug,cluster('rti_end')
+	.sect	'.debug_info'
+.L59:
+	.word	220
+	.half	3
+	.word	.L60
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L62,.L61
+	.byte	2
+	.word	.L30
+	.byte	3
+	.byte	'rti_end',0,1,74,12
+	.word	.L98
+	.byte	1,1
+	.word	.L19,.L102,.L18
+	.byte	4
+	.word	.L19,.L102
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rti_end')
+	.sect	'.debug_abbrev'
+.L60:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rti_end')
+	.sect	'.debug_line'
+.L61:
+	.word	.L161-.L160
+.L160:
+	.half	3
+	.word	.L163-.L162
+.L162:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0,0,0,0,0
+.L163:
+	.byte	5,12,7,0,5,2
+	.word	.L19
+	.byte	3,203,0,1,5,1,3,1,1,7,9
+	.half	.L63-.L19
+	.byte	0,1,1
+.L161:
+	.sdecl	'.debug_ranges',debug,cluster('rti_end')
+	.sect	'.debug_ranges'
+.L62:
+	.word	-1,.L19,0,.L63-.L19,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_application_init')
+	.sect	'.debug_info'
+.L64:
+	.word	251
+	.half	3
+	.word	.L65
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L67,.L66
+	.byte	2
+	.word	.L30
+	.byte	3
+	.byte	'rt_application_init',0,1,205,1,6,1,1,1
+	.word	.L27,.L103,.L26
+	.byte	4
+	.word	.L27,.L103
+	.byte	5
+	.byte	'result',0,1,213,1,14
+	.word	.L104,.L105
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_application_init')
+	.sect	'.debug_abbrev'
+.L65:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_application_init')
+	.sect	'.debug_line'
+.L66:
+	.word	.L165-.L164
+.L164:
+	.half	3
+	.word	.L167-.L166
+.L166:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0,0,0,0,0
+.L167:
+	.byte	5,12,7,0,5,2
+	.word	.L27
+	.byte	3,214,1,1,5,30,9
+	.half	.L168-.L27
+	.byte	3,2,1,5,45,9
+	.half	.L169-.L168
+	.byte	1,5,12,3,126,1,5,65,9
+	.half	.L170-.L169
+	.byte	3,2,1,5,30,1,5,90,9
+	.half	.L171-.L170
+	.byte	1,5,6,3,116,1,5,42,9
+	.half	.L119-.L171
+	.byte	3,11,1,5,40,9
+	.half	.L172-.L119
+	.byte	3,1,1,5,42,9
+	.half	.L173-.L172
+	.byte	3,127,1,5,90,9
+	.half	.L174-.L173
+	.byte	3,1,1,5,34,9
+	.half	.L175-.L174
+	.byte	3,127,1,5,61,9
+	.half	.L176-.L175
+	.byte	1,5,90,9
+	.half	.L177-.L176
+	.byte	3,1,1,5,5,9
+	.half	.L120-.L177
+	.byte	3,9,1,5,12,7,9
+	.half	.L178-.L120
+	.byte	3,117,1,5,1,9
+	.half	.L10-.L178
+	.byte	3,18,1,7,9
+	.half	.L68-.L10
+	.byte	0,1,1
+.L165:
+	.sdecl	'.debug_ranges',debug,cluster('rt_application_init')
+	.sect	'.debug_ranges'
+.L67:
+	.word	-1,.L27,0,.L68-.L27,0,0
+	.sdecl	'.debug_info',debug,cluster('rtthread_startup')
+	.sect	'.debug_info'
+.L69:
+	.word	231
+	.half	3
+	.word	.L70
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L72,.L71
+	.byte	2
+	.word	.L30
+	.byte	3
+	.byte	'rtthread_startup',0,1,235,1,5
+	.word	.L98
+	.byte	1,1,1
+	.word	.L29,.L106,.L28
+	.byte	4
+	.word	.L29,.L106
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rtthread_startup')
+	.sect	'.debug_abbrev'
+.L70:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rtthread_startup')
+	.sect	'.debug_line'
+.L71:
+	.word	.L180-.L179
+.L179:
+	.half	3
+	.word	.L182-.L181
+.L181:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0,0,0,0,0
+.L182:
+	.byte	5,28,7,0,5,2
+	.word	.L29
+	.byte	3,236,1,1,5,21,9
+	.half	.L183-.L29
+	.byte	3,5,1,5,25,9
+	.half	.L184-.L183
+	.byte	3,6,1,5,29,9
+	.half	.L185-.L184
+	.byte	3,3,1,5,24,9
+	.half	.L186-.L185
+	.byte	3,8,1,5,32,9
+	.half	.L187-.L186
+	.byte	3,3,1,5,24,9
+	.half	.L188-.L187
+	.byte	3,3,1,5,30,9
+	.half	.L189-.L188
+	.byte	3,7,1,5,12,9
+	.half	.L190-.L189
+	.byte	3,3,1,5,1,3,1,1,7,9
+	.half	.L73-.L190
+	.byte	0,1,1
+.L180:
+	.sdecl	'.debug_ranges',debug,cluster('rtthread_startup')
+	.sect	'.debug_ranges'
+.L72:
+	.word	-1,.L29,0,.L73-.L29,0,0
+	.sdecl	'.debug_info',debug,cluster('main_thread_entry')
+	.sect	'.debug_info'
+.L74:
+	.word	251
+	.half	3
+	.word	.L75
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L77,.L76
+	.byte	2
+	.word	.L30
+	.byte	3
+	.byte	'main_thread_entry',0,1,174,1,6,1,1,1
+	.word	.L25,.L107,.L24
+	.byte	4
+	.byte	'parameter',0,1,174,1,30
+	.word	.L108,.L109
+	.byte	5
+	.word	.L25,.L107
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('main_thread_entry')
+	.sect	'.debug_abbrev'
+.L75:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('main_thread_entry')
+	.sect	'.debug_line'
+.L76:
+	.word	.L192-.L191
+.L191:
+	.half	3
+	.word	.L194-.L193
+.L193:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0,0,0,0,0
+.L194:
+	.byte	5,8,7,0,5,2
+	.word	.L25
+	.byte	3,192,1,1,5,1,7,9
+	.half	.L78-.L25
+	.byte	3,2,0,1,1
+.L192:
+	.sdecl	'.debug_ranges',debug,cluster('main_thread_entry')
+	.sect	'.debug_ranges'
+.L77:
+	.word	-1,.L25,0,.L78-.L25,0,0
+	.sdecl	'.debug_info',debug,cluster('__rt_init_rti_start')
+	.sect	'.debug_info'
+.L79:
+	.word	207
+	.half	3
+	.word	.L80
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L30
+	.byte	3
+	.byte	'__rt_init_rti_start',0,4,60,1
+	.word	.L110
+	.byte	1,5,3
+	.word	__rt_init_rti_start
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('__rt_init_rti_start')
+	.sect	'.debug_abbrev'
+.L80:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('__rt_init_rti_board_start')
+	.sect	'.debug_info'
+.L81:
+	.word	213
+	.half	3
+	.word	.L82
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L30
+	.byte	3
+	.byte	'__rt_init_rti_board_start',0,4,66,1
+	.word	.L111
+	.byte	1,5,3
+	.word	__rt_init_rti_board_start
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('__rt_init_rti_board_start')
+	.sect	'.debug_abbrev'
+.L82:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('__rt_init_rti_board_end')
+	.sect	'.debug_info'
+.L83:
+	.word	211
+	.half	3
+	.word	.L84
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L30
+	.byte	3
+	.byte	'__rt_init_rti_board_end',0,4,72,1
+	.word	.L112
+	.byte	1,5,3
+	.word	__rt_init_rti_board_end
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('__rt_init_rti_board_end')
+	.sect	'.debug_abbrev'
+.L84:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('__rt_init_rti_end')
+	.sect	'.debug_info'
+.L85:
+	.word	205
+	.half	3
+	.word	.L86
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L30
+	.byte	3
+	.byte	'__rt_init_rti_end',0,4,78,1
+	.word	.L113
+	.byte	1,5,3
+	.word	__rt_init_rti_end
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('__rt_init_rti_end')
+	.sect	'.debug_abbrev'
+.L86:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('main_stack')
+	.sect	'.debug_info'
+.L87:
+	.word	198
+	.half	3
+	.word	.L88
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L30
+	.byte	3
+	.byte	'main_stack',0,4,168,1,19
+	.word	.L114
+	.byte	5,3
+	.word	main_stack
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('main_stack')
+	.sect	'.debug_abbrev'
+.L88:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('main_thread')
+	.sect	'.debug_info'
+.L89:
+	.word	199
+	.half	3
+	.word	.L90
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L30
+	.byte	3
+	.byte	'main_thread',0,4,169,1,25
+	.word	.L115
+	.byte	5,3
+	.word	main_thread
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('main_thread')
+	.sect	'.debug_abbrev'
+.L90:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('Flag_10ms')
+	.sect	'.debug_info'
+.L91:
+	.word	198
+	.half	3
+	.word	.L92
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\components.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L30
+	.byte	3
+	.byte	'Flag_10ms',0,4,198,1,12
+	.word	.L116
+	.byte	1,5,3
+	.word	Flag_10ms
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Flag_10ms')
+	.sect	'.debug_abbrev'
+.L92:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_loc',debug,cluster('main_thread_entry')
+	.sect	'.debug_loc'
+.L24:
+	.word	-1,.L25,0,.L107-.L25
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L109:
+	.word	-1,.L25,0,.L107-.L25
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_application_init')
+	.sect	'.debug_loc'
+.L105:
+	.word	-1,.L27,.L120-.L27,.L103-.L27
+	.half	1
+	.byte	82
+	.word	0,0
+.L26:
+	.word	-1,.L27,0,.L119-.L27
+	.half	2
+	.byte	138,0
+	.word	.L119-.L27,.L10-.L27
+	.half	2
+	.byte	138,8
+	.word	.L10-.L27,.L10-.L27
+	.half	2
+	.byte	138,0
+	.word	.L10-.L27,.L103-.L27
+	.half	2
+	.byte	138,8
+	.word	.L103-.L27,.L103-.L27
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_components_board_init')
+	.sect	'.debug_loc'
+.L97:
+	.word	-1,.L21,.L117-.L21,.L96-.L21
+	.half	1
+	.byte	111
+	.word	0,0
+.L20:
+	.word	-1,.L21,0,.L96-.L21
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_components_init')
+	.sect	'.debug_loc'
+.L95:
+	.word	-1,.L23,.L118-.L23,.L93-.L23
+	.half	1
+	.byte	111
+	.word	0,0
+.L22:
+	.word	-1,.L23,0,.L93-.L23
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rti_board_end')
+	.sect	'.debug_loc'
+.L16:
+	.word	-1,.L17,0,.L101-.L17
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rti_board_start')
+	.sect	'.debug_loc'
+.L14:
+	.word	-1,.L15,0,.L100-.L15
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rti_end')
+	.sect	'.debug_loc'
+.L18:
+	.word	-1,.L19,0,.L102-.L19
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rti_start')
+	.sect	'.debug_loc'
+.L12:
+	.word	-1,.L13,0,.L99-.L13
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rtthread_startup')
+	.sect	'.debug_loc'
+.L28:
+	.word	-1,.L29,0,.L106-.L29
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L195:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('rti_start')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L195,.L13,.L99-.L13
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('rti_board_start')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L195,.L15,.L100-.L15
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('rti_board_end')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L195,.L17,.L101-.L17
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('rti_end')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L195,.L19,.L102-.L19
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('rt_components_board_init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L195,.L21,.L96-.L21
+	.sdecl	'.debug_frame',debug,cluster('rt_components_init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L195,.L23,.L93-.L23
+	.sdecl	'.debug_frame',debug,cluster('main_thread_entry')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L195,.L25,.L107-.L25
+	.sdecl	'.debug_frame',debug,cluster('rt_application_init')
+	.sect	'.debug_frame'
+	.word	52
+	.word	.L195,.L27,.L103-.L27
+	.byte	4
+	.word	(.L119-.L27)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L10-.L119)/2
+	.byte	19,0,8,26,19,8,22,26,3,19,138,8,4
+	.word	(.L103-.L10)/2
+	.byte	19,0,8,26,0
+	.sdecl	'.debug_frame',debug,cluster('rtthread_startup')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L195,.L29,.L106-.L29
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\components.c	   277  #endif
+
+	; Module end

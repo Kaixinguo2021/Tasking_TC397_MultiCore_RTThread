@@ -1,0 +1,622 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\.mempool.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\mempool.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\mempool.src ..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\mempool.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\mempool.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	851
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\mempool.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	171
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	178
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	220
+	.byte	7
+	.word	220
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	236
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	241
+	.byte	9
+	.byte	'value',0
+	.word	220
+	.byte	9
+	.byte	'compare',0
+	.word	220
+	.byte	0,10
+	.byte	'__size_t',0,1,1,1
+	.word	220
+	.byte	11,1,7
+	.word	315
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	317
+	.byte	10
+	.byte	'__intptr_t',0,1,1,1
+	.word	171
+	.byte	10
+	.byte	'__uintptr_t',0,1,1,1
+	.word	220
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'rt_uint8_t',0,2,69,41
+	.word	379
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'rt_uint16_t',0,2,70,41
+	.word	415
+	.byte	10
+	.byte	'rt_uint32_t',0,2,71,41
+	.word	220
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'rt_base_t',0,2,83,41
+	.word	477
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'rt_ubase_t',0,2,84,41
+	.word	507
+	.byte	10
+	.byte	'rt_err_t',0,2,86,41
+	.word	477
+	.byte	10
+	.byte	'rt_tick_t',0,2,88,41
+	.word	220
+	.byte	10
+	.byte	'rt_size_t',0,2,90,41
+	.word	507
+	.byte	7
+	.word	.L6-.L3
+.L6:
+	.byte	12
+	.byte	'rt_list_node',0,2,229,2,8,8,13
+	.byte	'next',0
+	.word	600
+	.byte	4,2,35,0,13
+	.byte	'prev',0
+	.word	600
+	.byte	4,2,35,4,0,10
+	.byte	'rt_list_t',0,2,234,2,29
+	.word	605
+	.byte	7
+	.word	.L7-.L3
+.L7:
+	.byte	12
+	.byte	'rt_slist_node',0,2,239,2,8,4,13
+	.byte	'next',0
+	.word	672
+	.byte	4,2,35,0,0,10
+	.byte	'rt_slist_t',0,2,243,2,30
+	.word	677
+	.byte	10
+	.byte	'uint16_t',0,3,246,1,41
+	.word	415
+	.byte	10
+	.byte	'uint32_t',0,3,254,1,41
+	.word	220
+	.byte	10
+	.byte	'time_t',0,4,44,25
+	.word	507
+	.byte	10
+	.byte	'fd_mask',0,5,39,17
+	.word	477
+	.byte	14
+	.byte	'void',0,7
+	.word	799
+	.byte	15,1,1,5
+	.word	171
+	.byte	5
+	.word	805
+	.byte	0,7
+	.word	810
+	.byte	10
+	.byte	'rt_isr_handler_t',0,6,73,16
+	.word	824
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,19,1
+	.byte	3,8,58,15,59,15,57,15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,14,59,0,3,8,0,0,15,21,1,54,15,39,12,0
+	.byte	0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L9-.L8
+.L8:
+	.half	3
+	.word	.L11-.L10
+.L10:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc',0
+	.byte	0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\mempool.c',0,0,0,0
+	.byte	'rtdef.h',0,1,0,0
+	.byte	'stdint.h',0,2,0,0
+	.byte	'time.h',0,2,0,0
+	.byte	'libc_fdset.h',0,3,0,0
+	.byte	'rthw.h',0,1,0,0,0
+.L11:
+.L9:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	     1  /*
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	     3   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	     4   * SPDX-License-Identifier: Apache-2.0
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	     5   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	     6   * Change Logs:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	     7   * Date           Author       Notes
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	     8   * 2006-05-27     Bernard      implement memory pool
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	     9   * 2006-06-03     Bernard      fix the thread timer init bug
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    10   * 2006-06-30     Bernard      fix the allocate/free block bug
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    11   * 2006-08-04     Bernard      add hook support
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    12   * 2006-08-10     Bernard      fix interrupt bug in rt_mp_alloc
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    13   * 2010-07-13     Bernard      fix RT_ALIGN issue found by kuronca
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    14   * 2010-10-26     yi.qiu       add module support in rt_mp_delete
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    15   * 2011-01-24     Bernard      add object allocation check.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    16   * 2012-03-22     Bernard      fix align issue in rt_mp_init and rt_mp_create.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    17   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    18  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    19  #include <rthw.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    20  #include <rtthread.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    21  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    22  #ifdef RT_USING_MEMPOOL
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    23  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    24  #ifdef RT_USING_HOOK
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    25  static void (*rt_mp_alloc_hook)(struct rt_mempool *mp, void *block);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    26  static void (*rt_mp_free_hook)(struct rt_mempool *mp, void *block);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    27  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    28  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    29   * @addtogroup Hook
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    30   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    31  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    32  /**@{*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    33  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    34  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    35   * This function will set a hook function, which will be invoked when a memory
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    36   * block is allocated from memory pool.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    37   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    38   * @param hook the hook function
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    39   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    40  void rt_mp_alloc_sethook(void (*hook)(struct rt_mempool *mp, void *block))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    41  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    42      rt_mp_alloc_hook = hook;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    43  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    44  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    45  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    46   * This function will set a hook function, which will be invoked when a memory
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    47   * block is released to memory pool.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    48   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    49   * @param hook the hook function
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    50   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    51  void rt_mp_free_sethook(void (*hook)(struct rt_mempool *mp, void *block))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    52  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    53      rt_mp_free_hook = hook;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    54  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    55  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    56  /**@}*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    57  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    58  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    59  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    60   * @addtogroup MM
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    61   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    62  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    63  /**@{*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    64  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    65  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    66   * This function will initialize a memory pool object, normally which is used
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    67   * for static object.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    68   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    69   * @param mp the memory pool object
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    70   * @param name the name of memory pool
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    71   * @param start the star address of memory pool
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    72   * @param size the total size of memory pool
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    73   * @param block_size the size for each block
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    74   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    75   * @return RT_EOK
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    76   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    77  rt_err_t rt_mp_init(struct rt_mempool *mp,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    78                      const char        *name,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    79                      void              *start,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    80                      rt_size_t          size,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    81                      rt_size_t          block_size)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    82  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    83      rt_uint8_t *block_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    84      register rt_size_t offset;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    85  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    86      /* parameter check */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    87      RT_ASSERT(mp != RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    88      RT_ASSERT(name != RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    89      RT_ASSERT(start != RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    90      RT_ASSERT(size > 0 && block_size > 0);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    91  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    92      /* initialize object */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    93      rt_object_init(&(mp->parent), RT_Object_Class_MemPool, name);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    94  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    95      /* initialize memory pool */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    96      mp->start_address = start;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    97      mp->size = RT_ALIGN_DOWN(size, RT_ALIGN_SIZE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    98  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	    99      /* align the block size */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   100      block_size = RT_ALIGN(block_size, RT_ALIGN_SIZE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   101      mp->block_size = block_size;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   102  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   103      /* align to align size byte */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   104      mp->block_total_count = mp->size / (mp->block_size + sizeof(rt_uint8_t *));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   105      mp->block_free_count  = mp->block_total_count;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   106  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   107      /* initialize suspended thread list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   108      rt_list_init(&(mp->suspend_thread));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   109  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   110      /* initialize free block list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   111      block_ptr = (rt_uint8_t *)mp->start_address;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   112      for (offset = 0; offset < mp->block_total_count; offset ++)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   113      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   114          *(rt_uint8_t **)(block_ptr + offset * (block_size + sizeof(rt_uint8_t *))) =
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   115              (rt_uint8_t *)(block_ptr + (offset + 1) * (block_size + sizeof(rt_uint8_t *)));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   116      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   117  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   118      *(rt_uint8_t **)(block_ptr + (offset - 1) * (block_size + sizeof(rt_uint8_t *))) =
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   119          RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   120  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   121      mp->block_list = block_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   122  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   123      return RT_EOK;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   124  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   125  RTM_EXPORT(rt_mp_init);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   126  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   127  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   128   * This function will detach a memory pool from system object management.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   129   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   130   * @param mp the memory pool object
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   131   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   132   * @return RT_EOK
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   133   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   134  rt_err_t rt_mp_detach(struct rt_mempool *mp)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   135  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   136      struct rt_thread *thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   137      register rt_ubase_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   138  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   139      /* parameter check */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   140      RT_ASSERT(mp != RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   141      RT_ASSERT(rt_object_get_type(&mp->parent) == RT_Object_Class_MemPool);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   142      RT_ASSERT(rt_object_is_systemobject(&mp->parent));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   143  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   144      /* wake up all suspended threads */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   145      while (!rt_list_isempty(&(mp->suspend_thread)))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   146      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   147          /* disable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   148          level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   149  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   150          /* get next suspend thread */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   151          thread = rt_list_entry(mp->suspend_thread.next, struct rt_thread, tlist);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   152          /* set error code to RT_ERROR */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   153          thread->error = -RT_ERROR;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   154  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   155          /*
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   156           * resume thread
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   157           * In rt_thread_resume function, it will remove current thread from
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   158           * suspend list
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   159           */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   160          rt_thread_resume(thread);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   161  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   162          /* enable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   163          rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   164      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   165  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   166      /* detach object */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   167      rt_object_detach(&(mp->parent));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   168  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   169      return RT_EOK;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   170  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   171  RTM_EXPORT(rt_mp_detach);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   172  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   173  #ifdef RT_USING_HEAP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   174  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   175   * This function will create a mempool object and allocate the memory pool from
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   176   * heap.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   177   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   178   * @param name the name of memory pool
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   179   * @param block_count the count of blocks in memory pool
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   180   * @param block_size the size for each block
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   181   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   182   * @return the created mempool object
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   183   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   184  rt_mp_t rt_mp_create(const char *name,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   185                       rt_size_t   block_count,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   186                       rt_size_t   block_size)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   187  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   188      rt_uint8_t *block_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   189      struct rt_mempool *mp;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   190      register rt_size_t offset;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   191  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   192      RT_DEBUG_NOT_IN_INTERRUPT;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   193  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   194      /* parameter check */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   195      RT_ASSERT(name != RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   196      RT_ASSERT(block_count > 0 && block_size > 0);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   197  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   198      /* allocate object */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   199      mp = (struct rt_mempool *)rt_object_allocate(RT_Object_Class_MemPool, name);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   200      /* allocate object failed */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   201      if (mp == RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   202          return RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   203  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   204      /* initialize memory pool */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   205      block_size     = RT_ALIGN(block_size, RT_ALIGN_SIZE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   206      mp->block_size = block_size;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   207      mp->size       = (block_size + sizeof(rt_uint8_t *)) * block_count;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   208  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   209      /* allocate memory */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   210      mp->start_address = rt_malloc((block_size + sizeof(rt_uint8_t *)) *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   211                                    block_count);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   212      if (mp->start_address == RT_NULL)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   213      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   214          /* no memory, delete memory pool object */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   215          rt_object_delete(&(mp->parent));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   216  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   217          return RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   218      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   219  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   220      mp->block_total_count = block_count;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   221      mp->block_free_count  = mp->block_total_count;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   222  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   223      /* initialize suspended thread list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   224      rt_list_init(&(mp->suspend_thread));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   225  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   226      /* initialize free block list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   227      block_ptr = (rt_uint8_t *)mp->start_address;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   228      for (offset = 0; offset < mp->block_total_count; offset ++)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   229      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   230          *(rt_uint8_t **)(block_ptr + offset * (block_size + sizeof(rt_uint8_t *)))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   231              = block_ptr + (offset + 1) * (block_size + sizeof(rt_uint8_t *));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   232      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   233  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   234      *(rt_uint8_t **)(block_ptr + (offset - 1) * (block_size + sizeof(rt_uint8_t *)))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   235          = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   236  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   237      mp->block_list = block_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   238  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   239      return mp;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   240  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   241  RTM_EXPORT(rt_mp_create);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   242  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   243  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   244   * This function will delete a memory pool and release the object memory.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   245   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   246   * @param mp the memory pool object
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   247   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   248   * @return RT_EOK
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   249   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   250  rt_err_t rt_mp_delete(rt_mp_t mp)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   251  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   252      struct rt_thread *thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   253      register rt_ubase_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   254  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   255      RT_DEBUG_NOT_IN_INTERRUPT;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   256  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   257      /* parameter check */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   258      RT_ASSERT(mp != RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   259      RT_ASSERT(rt_object_get_type(&mp->parent) == RT_Object_Class_MemPool);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   260      RT_ASSERT(rt_object_is_systemobject(&mp->parent) == RT_FALSE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   261  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   262      /* wake up all suspended threads */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   263      while (!rt_list_isempty(&(mp->suspend_thread)))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   264      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   265          /* disable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   266          level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   267  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   268          /* get next suspend thread */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   269          thread = rt_list_entry(mp->suspend_thread.next, struct rt_thread, tlist);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   270          /* set error code to RT_ERROR */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   271          thread->error = -RT_ERROR;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   272  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   273          /*
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   274           * resume thread
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   275           * In rt_thread_resume function, it will remove current thread from
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   276           * suspend list
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   277           */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   278          rt_thread_resume(thread);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   279  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   280          /* enable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   281          rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   282      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   283  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   284      /* release allocated room */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   285      rt_free(mp->start_address);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   286  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   287      /* detach object */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   288      rt_object_delete(&(mp->parent));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   289  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   290      return RT_EOK;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   291  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   292  RTM_EXPORT(rt_mp_delete);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   293  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   294  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   295  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   296   * This function will allocate a block from memory pool
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   297   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   298   * @param mp the memory pool object
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   299   * @param time the waiting time
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   300   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   301   * @return the allocated memory block or RT_NULL on allocated failed
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   302   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   303  void *rt_mp_alloc(rt_mp_t mp, rt_int32_t time)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   304  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   305      rt_uint8_t *block_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   306      register rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   307      struct rt_thread *thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   308      rt_uint32_t before_sleep = 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   309  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   310      /* parameter check */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   311      RT_ASSERT(mp != RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   312  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   313      /* get current thread */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   314      thread = rt_thread_self();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   315  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   316      /* disable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   317      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   318  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   319      while (mp->block_free_count == 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   320      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   321          /* memory block is unavailable. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   322          if (time == 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   323          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   324              /* enable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   325              rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   326  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   327              rt_set_errno(-RT_ETIMEOUT);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   328  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   329              return RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   330          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   331  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   332          RT_DEBUG_NOT_IN_INTERRUPT;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   333  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   334          thread->error = RT_EOK;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   335  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   336          /* need suspend thread */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   337          rt_thread_suspend(thread);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   338          rt_list_insert_after(&(mp->suspend_thread), &(thread->tlist));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   339  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   340          if (time > 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   341          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   342              /* get the start tick of timer */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   343              before_sleep = rt_tick_get();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   344  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   345              /* init thread timer and start it */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   346              rt_timer_control(&(thread->thread_timer),
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   347                               RT_TIMER_CTRL_SET_TIME,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   348                               &time);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   349              rt_timer_start(&(thread->thread_timer));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   350          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   351  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   352          /* enable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   353          rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   354  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   355          /* do a schedule */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   356          rt_schedule();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   357  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   358          if (thread->error != RT_EOK)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   359              return RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   360  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   361          if (time > 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   362          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   363              time -= rt_tick_get() - before_sleep;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   364              if (time < 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   365                  time = 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   366          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   367          /* disable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   368          level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   369      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   370  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   371      /* memory block is available. decrease the free block counter */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   372      mp->block_free_count--;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   373  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   374      /* get block from block list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   375      block_ptr = mp->block_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   376      RT_ASSERT(block_ptr != RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   377  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   378      /* Setup the next free node. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   379      mp->block_list = *(rt_uint8_t **)block_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   380  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   381      /* point to memory pool */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   382      *(rt_uint8_t **)block_ptr = (rt_uint8_t *)mp;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   383  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   384      /* enable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   385      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   386  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   387      RT_OBJECT_HOOK_CALL(rt_mp_alloc_hook,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   388                          (mp, (rt_uint8_t *)(block_ptr + sizeof(rt_uint8_t *))));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   389  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   390      return (rt_uint8_t *)(block_ptr + sizeof(rt_uint8_t *));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   391  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   392  RTM_EXPORT(rt_mp_alloc);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   393  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   394  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   395   * This function will release a memory block
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   396   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   397   * @param block the address of memory block to be released
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   398   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   399  void rt_mp_free(void *block)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   400  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   401      rt_uint8_t **block_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   402      struct rt_mempool *mp;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   403      struct rt_thread *thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   404      register rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   405  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   406      /* parameter check */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   407      if (block == RT_NULL) return;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   408  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   409      /* get the control block of pool which the block belongs to */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   410      block_ptr = (rt_uint8_t **)((rt_uint8_t *)block - sizeof(rt_uint8_t *));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   411      mp        = (struct rt_mempool *)*block_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   412  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   413      RT_OBJECT_HOOK_CALL(rt_mp_free_hook, (mp, block));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   414  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   415      /* disable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   416      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   417  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   418      /* increase the free block count */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   419      mp->block_free_count ++;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   420  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   421      /* link the block into the block list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   422      *block_ptr = mp->block_list;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   423      mp->block_list = (rt_uint8_t *)block_ptr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   424  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   425      if (!rt_list_isempty(&(mp->suspend_thread)))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   426      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   427          /* get the suspended thread */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   428          thread = rt_list_entry(mp->suspend_thread.next,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   429                                 struct rt_thread,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   430                                 tlist);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   431  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   432          /* set error */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   433          thread->error = RT_EOK;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   434  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   435          /* resume thread */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   436          rt_thread_resume(thread);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   437  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   438          /* enable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   439          rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   440  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   441          /* do a schedule */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   442          rt_schedule();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   443  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   444          return;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   445      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   446  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   447      /* enable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   448      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   449  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   450  RTM_EXPORT(rt_mp_free);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   451  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   452  /**@}*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   453  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   454  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\mempool.c	   455  
+
+	; Module end

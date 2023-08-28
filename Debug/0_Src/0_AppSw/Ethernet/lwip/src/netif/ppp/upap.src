@@ -1,0 +1,819 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\.upap.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Rtl8211f -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\upap.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\upap.src ..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\upap.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\upap.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	734
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\upap.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	171
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	178
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	220
+	.byte	7
+	.word	220
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	236
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	241
+	.byte	9
+	.byte	'value',0
+	.word	220
+	.byte	9
+	.byte	'compare',0
+	.word	220
+	.byte	0,2
+	.byte	'short int',0,2,5,10
+	.byte	'__wchar_t',0,1,1,1
+	.word	298
+	.byte	10
+	.byte	'__size_t',0,1,1,1
+	.word	220
+	.byte	10
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	171
+	.byte	11,1,7
+	.word	366
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	368
+	.byte	10
+	.byte	'__intptr_t',0,1,1,1
+	.word	171
+	.byte	10
+	.byte	'__uintptr_t',0,1,1,1
+	.word	220
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,108,29
+	.word	430
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,112,29
+	.word	461
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,116,29
+	.word	498
+	.byte	2
+	.byte	'char',0,1,6,10
+	.byte	'sint8',0,2,125,29
+	.word	534
+	.byte	10
+	.byte	'sint16',0,2,129,1,29
+	.word	298
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'sint32',0,2,134,1,29
+	.word	572
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'sint64',0,2,141,1,29
+	.word	600
+	.byte	2
+	.byte	'float',0,4,4,10
+	.byte	'float32',0,2,170,1,29
+	.word	633
+	.byte	12
+	.byte	'void',0,7
+	.word	659
+	.byte	10
+	.byte	'pvoid',0,3,54,28
+	.word	665
+	.byte	10
+	.byte	'Ifx_TickTime',0,3,76,28
+	.word	600
+	.byte	10
+	.byte	'u32_t',0,4,87,16
+	.word	498
+	.byte	10
+	.byte	'intmax_t',0,5,198,2,41
+	.word	600
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,59,0
+	.byte	3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\upap.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'cc.h',0,2,0,0
+	.byte	'stdint.h',0,3,0,0,0
+.L9:
+.L7:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	     1  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	     2   * upap.c - User/Password Authentication Protocol.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	     3   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	     4   * Copyright (c) 1984-2000 Carnegie Mellon University. All rights reserved.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	     5   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	     6   * Redistribution and use in source and binary forms, with or without
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	     7   * modification, are permitted provided that the following conditions
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	     8   * are met:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	     9   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    10   * 1. Redistributions of source code must retain the above copyright
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    11   *    notice, this list of conditions and the following disclaimer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    12   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    13   * 2. Redistributions in binary form must reproduce the above copyright
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    14   *    notice, this list of conditions and the following disclaimer in
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    15   *    the documentation and/or other materials provided with the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    16   *    distribution.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    17   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    18   * 3. The name "Carnegie Mellon University" must not be used to
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    19   *    endorse or promote products derived from this software without
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    20   *    prior written permission. For permission or any legal
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    21   *    details, please contact
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    22   *      Office of Technology Transfer
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    23   *      Carnegie Mellon University
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    24   *      5000 Forbes Avenue
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    25   *      Pittsburgh, PA  15213-3890
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    26   *      (412) 268-4387, fax: (412) 268-7395
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    27   *      tech-transfer@andrew.cmu.edu
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    28   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    29   * 4. Redistributions of any form whatsoever must retain the following
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    30   *    acknowledgment:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    31   *    "This product includes software developed by Computing Services
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    32   *     at Carnegie Mellon University (http://www.cmu.edu/computing/)."
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    33   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    34   * CARNEGIE MELLON UNIVERSITY DISCLAIMS ALL WARRANTIES WITH REGARD TO
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    35   * THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    36   * AND FITNESS, IN NO EVENT SHALL CARNEGIE MELLON UNIVERSITY BE LIABLE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    37   * FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    38   * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    39   * AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    40   * OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    41   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    42  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    43  #include "netif/ppp/ppp_opts.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    44  #if PPP_SUPPORT && PAP_SUPPORT  /* don't build if not configured for use in lwipopts.h */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    45  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    46  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    47   * @todo:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    48   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    49  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    50  #if 0 /* UNUSED */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    51  #include <stdio.h>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    52  #include <string.h>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    53  #endif /* UNUSED */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    54  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    55  #include "netif/ppp/ppp_impl.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    56  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    57  #include "netif/ppp/upap.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    58  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    59  #if PPP_OPTIONS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    60  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    61   * Command-line options.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    62   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    63  static option_t pap_option_list[] = {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    64      { "hide-password", o_bool, &hide_password,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    65        "Don't output passwords to log", OPT_PRIO | 1 },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    66      { "show-password", o_bool, &hide_password,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    67        "Show password string in debug log messages", OPT_PRIOSUB | 0 },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    68  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    69      { "pap-restart", o_int, &upap[0].us_timeouttime,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    70        "Set retransmit timeout for PAP", OPT_PRIO },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    71      { "pap-max-authreq", o_int, &upap[0].us_maxtransmits,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    72        "Set max number of transmissions for auth-reqs", OPT_PRIO },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    73      { "pap-timeout", o_int, &upap[0].us_reqtimeout,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    74        "Set time limit for peer PAP authentication", OPT_PRIO },
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    75  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    76      { NULL }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    77  };
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    78  #endif /* PPP_OPTIONS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    79  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    80  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    81   * Protocol entry points.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    82   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    83  static void upap_init(ppp_pcb *pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    84  static void upap_lowerup(ppp_pcb *pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    85  static void upap_lowerdown(ppp_pcb *pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    86  static void upap_input(ppp_pcb *pcb, u_char *inpacket, int l);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    87  static void upap_protrej(ppp_pcb *pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    88  #if PRINTPKT_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    89  static int upap_printpkt(const u_char *p, int plen, void (*printer) (void *, const char *, ...), void *arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    90  #endif /* PRINTPKT_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    91  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    92  const struct protent pap_protent = {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    93      PPP_PAP,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    94      upap_init,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    95      upap_input,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    96      upap_protrej,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    97      upap_lowerup,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    98      upap_lowerdown,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	    99      NULL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   100      NULL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   101  #if PRINTPKT_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   102      upap_printpkt,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   103  #endif /* PRINTPKT_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   104  #if PPP_DATAINPUT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   105      NULL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   106  #endif /* PPP_DATAINPUT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   107  #if PRINTPKT_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   108      "PAP",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   109      NULL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   110  #endif /* PRINTPKT_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   111  #if PPP_OPTIONS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   112      pap_option_list,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   113      NULL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   114  #endif /* PPP_OPTIONS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   115  #if DEMAND_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   116      NULL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   117      NULL
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   118  #endif /* DEMAND_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   119  };
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   120  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   121  static void upap_timeout(void *arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   122  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   123  static void upap_reqtimeout(void *arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   124  static void upap_rauthreq(ppp_pcb *pcb, u_char *inp, int id, int len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   125  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   126  static void upap_rauthack(ppp_pcb *pcb, u_char *inp, int id, int len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   127  static void upap_rauthnak(ppp_pcb *pcb, u_char *inp, int id, int len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   128  static void upap_sauthreq(ppp_pcb *pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   129  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   130  static void upap_sresp(ppp_pcb *pcb, u_char code, u_char id, const char *msg, int msglen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   131  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   132  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   133  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   134  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   135   * upap_init - Initialize a UPAP unit.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   136   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   137  static void upap_init(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   138      pcb->upap.us_user = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   139      pcb->upap.us_userlen = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   140      pcb->upap.us_passwd = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   141      pcb->upap.us_passwdlen = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   142      pcb->upap.us_clientstate = UPAPCS_INITIAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   143  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   144      pcb->upap.us_serverstate = UPAPSS_INITIAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   145  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   146      pcb->upap.us_id = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   147  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   148  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   149  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   150  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   151   * upap_authwithpeer - Authenticate us with our peer (start client).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   152   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   153   * Set new state and send authenticate's.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   154   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   155  void upap_authwithpeer(ppp_pcb *pcb, const char *user, const char *password) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   156  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   157      if(!user || !password)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   158          return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   159  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   160      /* Save the username and password we're given */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   161      pcb->upap.us_user = user;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   162      pcb->upap.us_userlen = (u8_t)LWIP_MIN(strlen(user), 0xff);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   163      pcb->upap.us_passwd = password;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   164      pcb->upap.us_passwdlen = (u8_t)LWIP_MIN(strlen(password), 0xff);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   165      pcb->upap.us_transmits = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   166  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   167      /* Lower layer up yet? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   168      if (pcb->upap.us_clientstate == UPAPCS_INITIAL ||
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   169  	pcb->upap.us_clientstate == UPAPCS_PENDING) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   170  	pcb->upap.us_clientstate = UPAPCS_PENDING;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   171  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   172      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   173  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   174      upap_sauthreq(pcb);		/* Start protocol */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   175  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   176  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   177  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   178  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   179   * upap_authpeer - Authenticate our peer (start server).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   180   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   181   * Set new state.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   182   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   183  void upap_authpeer(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   184  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   185      /* Lower layer up yet? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   186      if (pcb->upap.us_serverstate == UPAPSS_INITIAL ||
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   187  	pcb->upap.us_serverstate == UPAPSS_PENDING) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   188  	pcb->upap.us_serverstate = UPAPSS_PENDING;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   189  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   190      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   191  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   192      pcb->upap.us_serverstate = UPAPSS_LISTEN;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   193      if (pcb->settings.pap_req_timeout > 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   194  	TIMEOUT(upap_reqtimeout, pcb, pcb->settings.pap_req_timeout);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   195  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   196  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   197  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   198  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   199   * upap_timeout - Retransmission timer for sending auth-reqs expired.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   200   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   201  static void upap_timeout(void *arg) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   202      ppp_pcb *pcb = (ppp_pcb*)arg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   203  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   204      if (pcb->upap.us_clientstate != UPAPCS_AUTHREQ)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   205  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   206  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   207      if (pcb->upap.us_transmits >= pcb->settings.pap_max_transmits) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   208  	/* give up in disgust */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   209  	ppp_error("No response to PAP authenticate-requests");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   210  	pcb->upap.us_clientstate = UPAPCS_BADAUTH;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   211  	auth_withpeer_fail(pcb, PPP_PAP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   212  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   213      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   214  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   215      upap_sauthreq(pcb);		/* Send Authenticate-Request */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   216  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   217  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   218  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   219  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   220  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   221   * upap_reqtimeout - Give up waiting for the peer to send an auth-req.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   222   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   223  static void upap_reqtimeout(void *arg) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   224      ppp_pcb *pcb = (ppp_pcb*)arg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   225  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   226      if (pcb->upap.us_serverstate != UPAPSS_LISTEN)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   227  	return;			/* huh?? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   228  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   229      auth_peer_fail(pcb, PPP_PAP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   230      pcb->upap.us_serverstate = UPAPSS_BADAUTH;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   231  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   232  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   233  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   234  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   235  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   236   * upap_lowerup - The lower layer is up.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   237   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   238   * Start authenticating if pending.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   239   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   240  static void upap_lowerup(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   241  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   242      if (pcb->upap.us_clientstate == UPAPCS_INITIAL)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   243  	pcb->upap.us_clientstate = UPAPCS_CLOSED;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   244      else if (pcb->upap.us_clientstate == UPAPCS_PENDING) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   245  	upap_sauthreq(pcb);	/* send an auth-request */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   246      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   247  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   248  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   249      if (pcb->upap.us_serverstate == UPAPSS_INITIAL)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   250  	pcb->upap.us_serverstate = UPAPSS_CLOSED;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   251      else if (pcb->upap.us_serverstate == UPAPSS_PENDING) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   252  	pcb->upap.us_serverstate = UPAPSS_LISTEN;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   253  	if (pcb->settings.pap_req_timeout > 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   254  	    TIMEOUT(upap_reqtimeout, pcb, pcb->settings.pap_req_timeout);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   255      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   256  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   257  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   258  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   259  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   260  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   261   * upap_lowerdown - The lower layer is down.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   262   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   263   * Cancel all timeouts.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   264   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   265  static void upap_lowerdown(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   266  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   267      if (pcb->upap.us_clientstate == UPAPCS_AUTHREQ)	/* Timeout pending? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   268  	UNTIMEOUT(upap_timeout, pcb);		/* Cancel timeout */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   269  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   270      if (pcb->upap.us_serverstate == UPAPSS_LISTEN && pcb->settings.pap_req_timeout > 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   271  	UNTIMEOUT(upap_reqtimeout, pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   272  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   273  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   274      pcb->upap.us_clientstate = UPAPCS_INITIAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   275  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   276      pcb->upap.us_serverstate = UPAPSS_INITIAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   277  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   278  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   279  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   280  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   281  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   282   * upap_protrej - Peer doesn't speak this protocol.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   283   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   284   * This shouldn't happen.  In any case, pretend lower layer went down.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   285   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   286  static void upap_protrej(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   287  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   288      if (pcb->upap.us_clientstate == UPAPCS_AUTHREQ) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   289  	ppp_error("PAP authentication failed due to protocol-reject");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   290  	auth_withpeer_fail(pcb, PPP_PAP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   291      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   292  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   293      if (pcb->upap.us_serverstate == UPAPSS_LISTEN) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   294  	ppp_error("PAP authentication of peer failed (protocol-reject)");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   295  	auth_peer_fail(pcb, PPP_PAP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   296      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   297  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   298      upap_lowerdown(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   299  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   300  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   301  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   302  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   303   * upap_input - Input UPAP packet.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   304   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   305  static void upap_input(ppp_pcb *pcb, u_char *inpacket, int l) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   306      u_char *inp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   307      u_char code, id;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   308      int len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   309  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   310      /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   311       * Parse header (code, id and length).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   312       * If packet too short, drop it.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   313       */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   314      inp = inpacket;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   315      if (l < UPAP_HEADERLEN) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   316  	UPAPDEBUG(("pap_input: rcvd short header."));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   317  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   318      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   319      GETCHAR(code, inp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   320      GETCHAR(id, inp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   321      GETSHORT(len, inp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   322      if (len < UPAP_HEADERLEN) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   323  	UPAPDEBUG(("pap_input: rcvd illegal length."));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   324  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   325      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   326      if (len > l) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   327  	UPAPDEBUG(("pap_input: rcvd short packet."));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   328  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   329      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   330      len -= UPAP_HEADERLEN;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   331  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   332      /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   333       * Action depends on code.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   334       */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   335      switch (code) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   336      case UPAP_AUTHREQ:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   337  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   338  	upap_rauthreq(pcb, inp, id, len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   339  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   340  	break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   341  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   342      case UPAP_AUTHACK:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   343  	upap_rauthack(pcb, inp, id, len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   344  	break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   345  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   346      case UPAP_AUTHNAK:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   347  	upap_rauthnak(pcb, inp, id, len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   348  	break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   349  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   350      default:				/* XXX Need code reject */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   351  	break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   352      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   353  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   354  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   355  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   356  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   357   * upap_rauth - Receive Authenticate.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   358   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   359  static void upap_rauthreq(ppp_pcb *pcb, u_char *inp, int id, int len) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   360      u_char ruserlen, rpasswdlen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   361      char *ruser;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   362      char *rpasswd;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   363      char rhostname[256];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   364      int retcode;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   365      const char *msg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   366      int msglen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   367  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   368      if (pcb->upap.us_serverstate < UPAPSS_LISTEN)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   369  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   370  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   371      /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   372       * If we receive a duplicate authenticate-request, we are
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   373       * supposed to return the same status as for the first request.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   374       */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   375      if (pcb->upap.us_serverstate == UPAPSS_OPEN) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   376  	upap_sresp(pcb, UPAP_AUTHACK, id, "", 0);	/* return auth-ack */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   377  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   378      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   379      if (pcb->upap.us_serverstate == UPAPSS_BADAUTH) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   380  	upap_sresp(pcb, UPAP_AUTHNAK, id, "", 0);	/* return auth-nak */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   381  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   382      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   383  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   384      /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   385       * Parse user/passwd.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   386       */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   387      if (len < 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   388  	UPAPDEBUG(("pap_rauth: rcvd short packet."));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   389  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   390      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   391      GETCHAR(ruserlen, inp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   392      len -= sizeof (u_char) + ruserlen + sizeof (u_char);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   393      if (len < 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   394  	UPAPDEBUG(("pap_rauth: rcvd short packet."));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   395  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   396      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   397      ruser = (char *) inp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   398      INCPTR(ruserlen, inp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   399      GETCHAR(rpasswdlen, inp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   400      if (len < rpasswdlen) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   401  	UPAPDEBUG(("pap_rauth: rcvd short packet."));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   402  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   403      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   404  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   405      rpasswd = (char *) inp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   406  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   407      /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   408       * Check the username and password given.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   409       */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   410      retcode = UPAP_AUTHNAK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   411      if (auth_check_passwd(pcb, ruser, ruserlen, rpasswd, rpasswdlen, &msg, &msglen)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   412        retcode = UPAP_AUTHACK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   413      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   414      BZERO(rpasswd, rpasswdlen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   415  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   416  #if 0 /* UNUSED */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   417      /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   418       * Check remote number authorization.  A plugin may have filled in
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   419       * the remote number or added an allowed number, and rather than
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   420       * return an authenticate failure, is leaving it for us to verify.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   421       */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   422      if (retcode == UPAP_AUTHACK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   423  	if (!auth_number()) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   424  	    /* We do not want to leak info about the pap result. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   425  	    retcode = UPAP_AUTHNAK; /* XXX exit value will be "wrong" */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   426  	    warn("calling number %q is not authorized", remote_number);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   427  	}
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   428      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   429  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   430      msglen = strlen(msg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   431      if (msglen > 255)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   432  	msglen = 255;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   433  #endif /* UNUSED */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   434  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   435      upap_sresp(pcb, retcode, id, msg, msglen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   436  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   437      /* Null terminate and clean remote name. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   438      ppp_slprintf(rhostname, sizeof(rhostname), "%.*v", ruserlen, ruser);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   439  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   440      if (retcode == UPAP_AUTHACK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   441  	pcb->upap.us_serverstate = UPAPSS_OPEN;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   442  	ppp_notice("PAP peer authentication succeeded for %q", rhostname);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   443  	auth_peer_success(pcb, PPP_PAP, 0, ruser, ruserlen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   444      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   445  	pcb->upap.us_serverstate = UPAPSS_BADAUTH;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   446  	ppp_warn("PAP peer authentication failed for %q", rhostname);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   447  	auth_peer_fail(pcb, PPP_PAP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   448      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   449  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   450      if (pcb->settings.pap_req_timeout > 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   451  	UNTIMEOUT(upap_reqtimeout, pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   452  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   453  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   454  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   455  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   456   * upap_rauthack - Receive Authenticate-Ack.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   457   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   458  static void upap_rauthack(ppp_pcb *pcb, u_char *inp, int id, int len) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   459      u_char msglen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   460      char *msg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   461      LWIP_UNUSED_ARG(id);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   462  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   463      if (pcb->upap.us_clientstate != UPAPCS_AUTHREQ) /* XXX */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   464  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   465  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   466      /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   467       * Parse message.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   468       */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   469      if (len < 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   470  	UPAPDEBUG(("pap_rauthack: ignoring missing msg-length."));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   471      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   472  	GETCHAR(msglen, inp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   473  	if (msglen > 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   474  	    len -= sizeof (u_char);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   475  	    if (len < msglen) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   476  		UPAPDEBUG(("pap_rauthack: rcvd short packet."));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   477  		return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   478  	    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   479  	    msg = (char *) inp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   480  	    PRINTMSG(msg, msglen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   481  	}
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   482      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   483  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   484      pcb->upap.us_clientstate = UPAPCS_OPEN;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   485  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   486      auth_withpeer_success(pcb, PPP_PAP, 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   487  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   488  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   489  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   490  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   491   * upap_rauthnak - Receive Authenticate-Nak.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   492   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   493  static void upap_rauthnak(ppp_pcb *pcb, u_char *inp, int id, int len) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   494      u_char msglen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   495      char *msg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   496      LWIP_UNUSED_ARG(id);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   497  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   498      if (pcb->upap.us_clientstate != UPAPCS_AUTHREQ) /* XXX */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   499  	return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   500  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   501      /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   502       * Parse message.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   503       */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   504      if (len < 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   505  	UPAPDEBUG(("pap_rauthnak: ignoring missing msg-length."));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   506      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   507  	GETCHAR(msglen, inp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   508  	if (msglen > 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   509  	    len -= sizeof (u_char);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   510  	    if (len < msglen) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   511  		UPAPDEBUG(("pap_rauthnak: rcvd short packet."));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   512  		return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   513  	    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   514  	    msg = (char *) inp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   515  	    PRINTMSG(msg, msglen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   516  	}
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   517      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   518  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   519      pcb->upap.us_clientstate = UPAPCS_BADAUTH;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   520  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   521      ppp_error("PAP authentication failed");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   522      auth_withpeer_fail(pcb, PPP_PAP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   523  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   524  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   525  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   526  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   527   * upap_sauthreq - Send an Authenticate-Request.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   528   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   529  static void upap_sauthreq(ppp_pcb *pcb) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   530      struct pbuf *p;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   531      u_char *outp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   532      int outlen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   533  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   534      outlen = UPAP_HEADERLEN + 2 * sizeof (u_char) +
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   535  	pcb->upap.us_userlen + pcb->upap.us_passwdlen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   536      p = pbuf_alloc(PBUF_RAW, (u16_t)(PPP_HDRLEN +outlen), PPP_CTRL_PBUF_TYPE);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   537      if(NULL == p)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   538          return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   539      if(p->tot_len != p->len) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   540          pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   541          return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   542      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   543  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   544      outp = (u_char*)p->payload;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   545      MAKEHEADER(outp, PPP_PAP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   546  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   547      PUTCHAR(UPAP_AUTHREQ, outp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   548      PUTCHAR(++pcb->upap.us_id, outp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   549      PUTSHORT(outlen, outp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   550      PUTCHAR(pcb->upap.us_userlen, outp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   551      MEMCPY(outp, pcb->upap.us_user, pcb->upap.us_userlen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   552      INCPTR(pcb->upap.us_userlen, outp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   553      PUTCHAR(pcb->upap.us_passwdlen, outp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   554      MEMCPY(outp, pcb->upap.us_passwd, pcb->upap.us_passwdlen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   555  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   556      ppp_write(pcb, p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   557  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   558      TIMEOUT(upap_timeout, pcb, pcb->settings.pap_timeout_time);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   559      ++pcb->upap.us_transmits;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   560      pcb->upap.us_clientstate = UPAPCS_AUTHREQ;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   561  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   562  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   563  #if PPP_SERVER
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   564  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   565   * upap_sresp - Send a response (ack or nak).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   566   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   567  static void upap_sresp(ppp_pcb *pcb, u_char code, u_char id, const char *msg, int msglen) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   568      struct pbuf *p;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   569      u_char *outp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   570      int outlen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   571  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   572      outlen = UPAP_HEADERLEN + sizeof (u_char) + msglen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   573      p = pbuf_alloc(PBUF_RAW, (u16_t)(PPP_HDRLEN +outlen), PPP_CTRL_PBUF_TYPE);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   574      if(NULL == p)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   575          return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   576      if(p->tot_len != p->len) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   577          pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   578          return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   579      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   580  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   581      outp = (u_char*)p->payload;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   582      MAKEHEADER(outp, PPP_PAP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   583  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   584      PUTCHAR(code, outp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   585      PUTCHAR(id, outp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   586      PUTSHORT(outlen, outp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   587      PUTCHAR(msglen, outp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   588      MEMCPY(outp, msg, msglen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   589  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   590      ppp_write(pcb, p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   591  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   592  #endif /* PPP_SERVER */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   593  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   594  #if PRINTPKT_SUPPORT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   595  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   596   * upap_printpkt - print the contents of a PAP packet.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   597   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   598  static const char* const upap_codenames[] = {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   599      "AuthReq", "AuthAck", "AuthNak"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   600  };
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   601  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   602  static int upap_printpkt(const u_char *p, int plen, void (*printer) (void *, const char *, ...), void *arg) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   603      int code, id, len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   604      int mlen, ulen, wlen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   605      const u_char *user, *pwd, *msg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   606      const u_char *pstart;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   607  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   608      if (plen < UPAP_HEADERLEN)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   609  	return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   610      pstart = p;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   611      GETCHAR(code, p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   612      GETCHAR(id, p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   613      GETSHORT(len, p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   614      if (len < UPAP_HEADERLEN || len > plen)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   615  	return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   616  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   617      if (code >= 1 && code <= (int)LWIP_ARRAYSIZE(upap_codenames))
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   618  	printer(arg, " %s", upap_codenames[code-1]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   619      else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   620  	printer(arg, " code=0x%x", code);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   621      printer(arg, " id=0x%x", id);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   622      len -= UPAP_HEADERLEN;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   623      switch (code) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   624      case UPAP_AUTHREQ:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   625  	if (len < 1)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   626  	    break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   627  	ulen = p[0];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   628  	if (len < ulen + 2)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   629  	    break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   630  	wlen = p[ulen + 1];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   631  	if (len < ulen + wlen + 2)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   632  	    break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   633  	user = (const u_char *) (p + 1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   634  	pwd = (const u_char *) (p + ulen + 2);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   635  	p += ulen + wlen + 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   636  	len -= ulen + wlen + 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   637  	printer(arg, " user=");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   638  	ppp_print_string(user, ulen, printer, arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   639  	printer(arg, " password=");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   640  /* FIXME: require ppp_pcb struct as printpkt() argument */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   641  #if 0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   642  	if (!pcb->settings.hide_password)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   643  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   644  	    ppp_print_string(pwd, wlen, printer, arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   645  #if 0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   646  	else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   647  	    printer(arg, "<hidden>");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   648  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   649  	break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   650      case UPAP_AUTHACK:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   651      case UPAP_AUTHNAK:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   652  	if (len < 1)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   653  	    break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   654  	mlen = p[0];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   655  	if (len < mlen + 1)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   656  	    break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   657  	msg = (const u_char *) (p + 1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   658  	p += mlen + 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   659  	len -= mlen + 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   660  	printer(arg, " ");
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   661  	ppp_print_string(msg, mlen, printer, arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   662  	break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   663      default:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   664  	break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   665      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   666  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   667      /* print the rest of the bytes in the packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   668      for (; len > 0; --len) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   669  	GETCHAR(code, p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   670  	printer(arg, " %.2x", code);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   671      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   672  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   673      return p - pstart;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   674  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   675  #endif /* PRINTPKT_SUPPORT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   676  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\ppp\upap.c	   677  #endif /* PPP_SUPPORT && PAP_SUPPORT */
+
+	; Module end

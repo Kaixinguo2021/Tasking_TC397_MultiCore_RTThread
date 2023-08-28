@@ -1,0 +1,1773 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\.dns.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Rtl8211f -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\dns.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\dns.src ..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\dns.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\dns.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	728
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\dns.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	165
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	172
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	214
+	.byte	7
+	.word	214
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	230
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	235
+	.byte	9
+	.byte	'value',0
+	.word	214
+	.byte	9
+	.byte	'compare',0
+	.word	214
+	.byte	0,2
+	.byte	'short int',0,2,5,10
+	.byte	'__wchar_t',0,1,1,1
+	.word	292
+	.byte	10
+	.byte	'__size_t',0,1,1,1
+	.word	214
+	.byte	10
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	165
+	.byte	11,1,7
+	.word	360
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	362
+	.byte	10
+	.byte	'__intptr_t',0,1,1,1
+	.word	165
+	.byte	10
+	.byte	'__uintptr_t',0,1,1,1
+	.word	214
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,108,29
+	.word	424
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,112,29
+	.word	455
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,116,29
+	.word	492
+	.byte	2
+	.byte	'char',0,1,6,10
+	.byte	'sint8',0,2,125,29
+	.word	528
+	.byte	10
+	.byte	'sint16',0,2,129,1,29
+	.word	292
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'sint32',0,2,134,1,29
+	.word	566
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'sint64',0,2,141,1,29
+	.word	594
+	.byte	2
+	.byte	'float',0,4,4,10
+	.byte	'float32',0,2,170,1,29
+	.word	627
+	.byte	12
+	.byte	'void',0,7
+	.word	653
+	.byte	10
+	.byte	'pvoid',0,3,54,28
+	.word	659
+	.byte	10
+	.byte	'Ifx_TickTime',0,3,76,28
+	.word	594
+	.byte	10
+	.byte	'u32_t',0,4,87,16
+	.word	492
+	.byte	10
+	.byte	'intmax_t',0,5,198,2,41
+	.word	594
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,59,0
+	.byte	3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\dns.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'cc.h',0,2,0,0
+	.byte	'stdint.h',0,3,0,0,0
+.L9:
+.L7:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	     1  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	     2   * @file
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	     3   * DNS - host name to IP address resolver.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	     4   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	     5   * @defgroup dns DNS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	     6   * @ingroup callbackstyle_api
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	     7   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	     8   * Implements a DNS host name to IP address resolver.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	     9   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    10   * The lwIP DNS resolver functions are used to lookup a host name and
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    11   * map it to a numerical IP address. It maintains a list of resolved
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    12   * hostnames that can be queried with the dns_lookup() function.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    13   * New hostnames can be resolved using the dns_query() function.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    14   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    15   * The lwIP version of the resolver also adds a non-blocking version of
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    16   * gethostbyname() that will work with a raw API application. This function
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    17   * checks for an IP address string first and converts it if it is valid.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    18   * gethostbyname() then does a dns_lookup() to see if the name is
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    19   * already in the table. If so, the IP is returned. If not, a query is
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    20   * issued and the function returns with a ERR_INPROGRESS status. The app
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    21   * using the dns client must then go into a waiting state.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    22   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    23   * Once a hostname has been resolved (or found to be non-existent),
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    24   * the resolver code calls a specified callback function (which
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    25   * must be implemented by the module that uses the resolver).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    26   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    27   * Multicast DNS queries are supported for names ending on ".local".
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    28   * However, only "One-Shot Multicast DNS Queries" are supported (RFC 6762
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    29   * chapter 5.1), this is not a fully compliant implementation of continuous
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    30   * mDNS querying!
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    31   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    32   * All functions must be called from TCPIP thread.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    33   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    34   * @see DNS_MAX_SERVERS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    35   * @see LWIP_DHCP_MAX_DNS_SERVERS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    36   * @see @ref netconn_common for thread-safe access.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    37   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    38  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    39  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    40   * Port to lwIP from uIP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    41   * by Jim Pettinato April 2007
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    42   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    43   * security fixes and more by Simon Goldschmidt
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    44   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    45   * uIP version Copyright (c) 2002-2003, Adam Dunkels.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    46   * All rights reserved.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    47   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    48   * Redistribution and use in source and binary forms, with or without
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    49   * modification, are permitted provided that the following conditions
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    50   * are met:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    51   * 1. Redistributions of source code must retain the above copyright
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    52   *    notice, this list of conditions and the following disclaimer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    53   * 2. Redistributions in binary form must reproduce the above copyright
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    54   *    notice, this list of conditions and the following disclaimer in the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    55   *    documentation and/or other materials provided with the distribution.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    56   * 3. The name of the author may not be used to endorse or promote
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    57   *    products derived from this software without specific prior
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    58   *    written permission.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    59   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    60   * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    61   * OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    62   * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    63   * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    64   * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    65   * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    66   * GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    67   * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    68   * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    69   * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    70   * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    71   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    72  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    73  /*-----------------------------------------------------------------------------
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    74   * RFC 1035 - Domain names - implementation and specification
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    75   * RFC 2181 - Clarifications to the DNS Specification
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    76   *----------------------------------------------------------------------------*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    77  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    78  /** @todo: define good default values (rfc compliance) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    79  /** @todo: improve answer parsing, more checkings... */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    80  /** @todo: check RFC1035 - 7.3. Processing responses */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    81  /** @todo: one-shot mDNS: dual-stack fallback to another IP version */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    82  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    83  /*-----------------------------------------------------------------------------
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    84   * Includes
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    85   *----------------------------------------------------------------------------*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    86  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    87  #include "lwip/opt.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    88  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    89  #if LWIP_DNS /* don't build if not configured for use in lwipopts.h */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    90  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    91  #include "lwip/def.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    92  #include "lwip/udp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    93  #include "lwip/mem.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    94  #include "lwip/memp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    95  #include "lwip/dns.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    96  #include "lwip/prot/dns.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    97  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    98  #include <string.h>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	    99  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   100  /** Random generator function to create random TXIDs and source ports for queries */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   101  #ifndef DNS_RAND_TXID
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   102  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_RAND_XID) != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   103  #define DNS_RAND_TXID LWIP_RAND
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   104  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   105  static u16_t dns_txid;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   106  #define DNS_RAND_TXID() (++dns_txid)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   107  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   108  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   109  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   110  /** Limits the source port to be >= 1024 by default */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   111  #ifndef DNS_PORT_ALLOWED
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   112  #define DNS_PORT_ALLOWED(port) ((port) >= 1024)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   113  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   114  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   115  /** DNS resource record max. TTL (one week as default) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   116  #ifndef DNS_MAX_TTL
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   117  #define DNS_MAX_TTL               604800
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   118  #elif DNS_MAX_TTL > 0x7FFFFFFF
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   119  #error DNS_MAX_TTL must be a positive 32-bit value
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   120  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   121  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   122  #if DNS_TABLE_SIZE > 255
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   123  #error DNS_TABLE_SIZE must fit into an u8_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   124  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   125  #if DNS_MAX_SERVERS > 255
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   126  #error DNS_MAX_SERVERS must fit into an u8_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   127  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   128  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   129  /* The number of parallel requests (i.e. calls to dns_gethostbyname
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   130   * that cannot be answered from the DNS table.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   131   * This is set to the table size by default.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   132   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   133  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_NO_MULTIPLE_OUTSTANDING) != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   134  #ifndef DNS_MAX_REQUESTS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   135  #define DNS_MAX_REQUESTS          DNS_TABLE_SIZE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   136  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   137  #if DNS_MAX_REQUESTS > 255
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   138  #error DNS_MAX_REQUESTS must fit into an u8_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   139  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   140  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   141  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   142  /* In this configuration, both arrays have to have the same size and are used
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   143   * like one entry (used/free) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   144  #define DNS_MAX_REQUESTS          DNS_TABLE_SIZE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   145  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   146  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   147  /* The number of UDP source ports used in parallel */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   148  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_RAND_SRC_PORT) != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   149  #ifndef DNS_MAX_SOURCE_PORTS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   150  #define DNS_MAX_SOURCE_PORTS      DNS_MAX_REQUESTS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   151  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   152  #if DNS_MAX_SOURCE_PORTS > 255
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   153  #error DNS_MAX_SOURCE_PORTS must fit into an u8_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   154  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   155  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   156  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   157  #ifdef DNS_MAX_SOURCE_PORTS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   158  #undef DNS_MAX_SOURCE_PORTS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   159  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   160  #define DNS_MAX_SOURCE_PORTS      1
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   161  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   162  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   163  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   164  #define LWIP_DNS_ADDRTYPE_IS_IPV6(t) (((t) == LWIP_DNS_ADDRTYPE_IPV6_IPV4) || ((t) == LWIP_DNS_ADDRTYPE_IPV6))
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   165  #define LWIP_DNS_ADDRTYPE_MATCH_IP(t, ip) (IP_IS_V6_VAL(ip) ? LWIP_DNS_ADDRTYPE_IS_IPV6(t) : (!LWIP_DNS_ADDRTYPE_IS_IPV6(t)))
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   166  #define LWIP_DNS_ADDRTYPE_ARG(x) , x
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   167  #define LWIP_DNS_ADDRTYPE_ARG_OR_ZERO(x) x
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   168  #define LWIP_DNS_SET_ADDRTYPE(x, y) do { x = y; } while(0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   169  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   170  #if LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   171  #define LWIP_DNS_ADDRTYPE_IS_IPV6(t) 1
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   172  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   173  #define LWIP_DNS_ADDRTYPE_IS_IPV6(t) 0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   174  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   175  #define LWIP_DNS_ADDRTYPE_MATCH_IP(t, ip) 1
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   176  #define LWIP_DNS_ADDRTYPE_ARG(x)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   177  #define LWIP_DNS_ADDRTYPE_ARG_OR_ZERO(x) 0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   178  #define LWIP_DNS_SET_ADDRTYPE(x, y)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   179  #endif /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   180  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   181  #if LWIP_DNS_SUPPORT_MDNS_QUERIES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   182  #define LWIP_DNS_ISMDNS_ARG(x) , x
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   183  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   184  #define LWIP_DNS_ISMDNS_ARG(x)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   185  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   186  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   187  /** DNS query message structure.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   188      No packing needed: only used locally on the stack. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   189  struct dns_query {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   190    /* DNS query record starts with either a domain name or a pointer
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   191       to a name already present somewhere in the packet. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   192    u16_t type;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   193    u16_t cls;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   194  };
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   195  #define SIZEOF_DNS_QUERY 4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   196  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   197  /** DNS answer message structure.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   198      No packing needed: only used locally on the stack. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   199  struct dns_answer {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   200    /* DNS answer record starts with either a domain name or a pointer
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   201       to a name already present somewhere in the packet. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   202    u16_t type;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   203    u16_t cls;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   204    u32_t ttl;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   205    u16_t len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   206  };
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   207  #define SIZEOF_DNS_ANSWER 10
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   208  /* maximum allowed size for the struct due to non-packed */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   209  #define SIZEOF_DNS_ANSWER_ASSERT 12
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   210  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   211  /* DNS table entry states */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   212  typedef enum {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   213    DNS_STATE_UNUSED           = 0,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   214    DNS_STATE_NEW              = 1,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   215    DNS_STATE_ASKING           = 2,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   216    DNS_STATE_DONE             = 3
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   217  } dns_state_enum_t;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   218  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   219  /** DNS table entry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   220  struct dns_table_entry {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   221    u32_t ttl;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   222    ip_addr_t ipaddr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   223    u16_t txid;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   224    u8_t  state;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   225    u8_t  server_idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   226    u8_t  tmr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   227    u8_t  retries;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   228    u8_t  seqno;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   229  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_RAND_SRC_PORT) != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   230    u8_t pcb_idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   231  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   232    char name[DNS_MAX_NAME_LENGTH];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   233  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   234    u8_t reqaddrtype;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   235  #endif /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   236  #if LWIP_DNS_SUPPORT_MDNS_QUERIES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   237    u8_t is_mdns;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   238  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   239  };
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   240  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   241  /** DNS request table entry: used when dns_gehostbyname cannot answer the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   242   * request from the DNS table */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   243  struct dns_req_entry {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   244    /* pointer to callback on DNS query done */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   245    dns_found_callback found;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   246    /* argument passed to the callback function */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   247    void *arg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   248  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_NO_MULTIPLE_OUTSTANDING) != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   249    u8_t dns_table_idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   250  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   251  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   252    u8_t reqaddrtype;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   253  #endif /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   254  };
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   255  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   256  #if DNS_LOCAL_HOSTLIST
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   257  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   258  #if DNS_LOCAL_HOSTLIST_IS_DYNAMIC
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   259  /** Local host-list. For hostnames in this list, no
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   260   *  external name resolution is performed */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   261  static struct local_hostlist_entry *local_hostlist_dynamic;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   262  #else /* DNS_LOCAL_HOSTLIST_IS_DYNAMIC */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   263  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   264  /** Defining this allows the local_hostlist_static to be placed in a different
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   265   * linker section (e.g. FLASH) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   266  #ifndef DNS_LOCAL_HOSTLIST_STORAGE_PRE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   267  #define DNS_LOCAL_HOSTLIST_STORAGE_PRE static
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   268  #endif /* DNS_LOCAL_HOSTLIST_STORAGE_PRE */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   269  /** Defining this allows the local_hostlist_static to be placed in a different
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   270   * linker section (e.g. FLASH) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   271  #ifndef DNS_LOCAL_HOSTLIST_STORAGE_POST
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   272  #define DNS_LOCAL_HOSTLIST_STORAGE_POST
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   273  #endif /* DNS_LOCAL_HOSTLIST_STORAGE_POST */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   274  DNS_LOCAL_HOSTLIST_STORAGE_PRE struct local_hostlist_entry local_hostlist_static[]
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   275    DNS_LOCAL_HOSTLIST_STORAGE_POST = DNS_LOCAL_HOSTLIST_INIT;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   276  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   277  #endif /* DNS_LOCAL_HOSTLIST_IS_DYNAMIC */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   278  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   279  static void dns_init_local(void);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   280  static err_t dns_lookup_local(const char *hostname, ip_addr_t *addr LWIP_DNS_ADDRTYPE_ARG(u8_t dns_addrtype));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   281  #endif /* DNS_LOCAL_HOSTLIST */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   282  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   283  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   284  /* forward declarations */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   285  static void dns_recv(void *s, struct udp_pcb *pcb, struct pbuf *p, const ip_addr_t *addr, u16_t port);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   286  static void dns_check_entries(void);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   287  static void dns_call_found(u8_t idx, ip_addr_t *addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   288  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   289  /*-----------------------------------------------------------------------------
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   290   * Globals
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   291   *----------------------------------------------------------------------------*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   292  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   293  /* DNS variables */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   294  static struct udp_pcb        *dns_pcbs[DNS_MAX_SOURCE_PORTS];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   295  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_RAND_SRC_PORT) != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   296  static u8_t                   dns_last_pcb_idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   297  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   298  static u8_t                   dns_seqno;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   299  static struct dns_table_entry dns_table[DNS_TABLE_SIZE];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   300  static struct dns_req_entry   dns_requests[DNS_MAX_REQUESTS];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   301  static ip_addr_t              dns_servers[DNS_MAX_SERVERS];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   302  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   303  #if LWIP_IPV4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   304  const ip_addr_t dns_mquery_v4group = DNS_MQUERY_IPV4_GROUP_INIT;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   305  #endif /* LWIP_IPV4 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   306  #if LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   307  const ip_addr_t dns_mquery_v6group = DNS_MQUERY_IPV6_GROUP_INIT;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   308  #endif /* LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   309  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   310  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   311   * Initialize the resolver: set up the UDP pcb and configure the default server
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   312   * (if DNS_SERVER_ADDRESS is set).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   313   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   314  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   315  dns_init(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   316  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   317  #ifdef DNS_SERVER_ADDRESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   318    /* initialize default DNS server address */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   319    ip_addr_t dnsserver;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   320    DNS_SERVER_ADDRESS(&dnsserver);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   321    dns_setserver(0, &dnsserver);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   322  #endif /* DNS_SERVER_ADDRESS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   323  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   324    LWIP_ASSERT("sanity check SIZEOF_DNS_QUERY",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   325                sizeof(struct dns_query) == SIZEOF_DNS_QUERY);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   326    LWIP_ASSERT("sanity check SIZEOF_DNS_ANSWER",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   327                sizeof(struct dns_answer) <= SIZEOF_DNS_ANSWER_ASSERT);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   328  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   329    LWIP_DEBUGF(DNS_DEBUG, ("dns_init: initializing\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   330  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   331    /* if dns client not yet initialized... */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   332  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_RAND_SRC_PORT) == 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   333    if (dns_pcbs[0] == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   334      dns_pcbs[0] = udp_new_ip_type(IPADDR_TYPE_ANY);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   335      LWIP_ASSERT("dns_pcbs[0] != NULL", dns_pcbs[0] != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   336  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   337      /* initialize DNS table not needed (initialized to zero since it is a
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   338       * global variable) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   339      LWIP_ASSERT("For implicit initialization to work, DNS_STATE_UNUSED needs to be 0",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   340                  DNS_STATE_UNUSED == 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   341  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   342      /* initialize DNS client */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   343      udp_bind(dns_pcbs[0], IP_ANY_TYPE, 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   344      udp_recv(dns_pcbs[0], dns_recv, NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   345    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   346  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   347  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   348  #if DNS_LOCAL_HOSTLIST
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   349    dns_init_local();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   350  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   351  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   352  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   353  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   354   * @ingroup dns
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   355   * Initialize one of the DNS servers.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   356   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   357   * @param numdns the index of the DNS server to set must be < DNS_MAX_SERVERS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   358   * @param dnsserver IP address of the DNS server to set
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   359   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   360  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   361  dns_setserver(u8_t numdns, const ip_addr_t *dnsserver)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   362  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   363    if (numdns < DNS_MAX_SERVERS) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   364      if (dnsserver != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   365        dns_servers[numdns] = (*dnsserver);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   366      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   367        dns_servers[numdns] = *IP_ADDR_ANY;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   368      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   369    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   370  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   371  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   372  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   373   * @ingroup dns
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   374   * Obtain one of the currently configured DNS server.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   375   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   376   * @param numdns the index of the DNS server
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   377   * @return IP address of the indexed DNS server or "ip_addr_any" if the DNS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   378   *         server has not been configured.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   379   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   380  const ip_addr_t *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   381  dns_getserver(u8_t numdns)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   382  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   383    if (numdns < DNS_MAX_SERVERS) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   384      return &dns_servers[numdns];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   385    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   386      return IP_ADDR_ANY;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   387    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   388  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   389  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   390  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   391   * The DNS resolver client timer - handle retries and timeouts and should
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   392   * be called every DNS_TMR_INTERVAL milliseconds (every second by default).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   393   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   394  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   395  dns_tmr(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   396  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   397    LWIP_DEBUGF(DNS_DEBUG, ("dns_tmr: dns_check_entries\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   398    dns_check_entries();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   399  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   400  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   401  #if DNS_LOCAL_HOSTLIST
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   402  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   403  dns_init_local(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   404  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   405  #if DNS_LOCAL_HOSTLIST_IS_DYNAMIC && defined(DNS_LOCAL_HOSTLIST_INIT)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   406    size_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   407    struct local_hostlist_entry *entry;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   408    /* Dynamic: copy entries from DNS_LOCAL_HOSTLIST_INIT to list */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   409    struct local_hostlist_entry local_hostlist_init[] = DNS_LOCAL_HOSTLIST_INIT;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   410    size_t namelen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   411    for (i = 0; i < LWIP_ARRAYSIZE(local_hostlist_init); i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   412      struct local_hostlist_entry *init_entry = &local_hostlist_init[i];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   413      LWIP_ASSERT("invalid host name (NULL)", init_entry->name != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   414      namelen = strlen(init_entry->name);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   415      LWIP_ASSERT("namelen <= DNS_LOCAL_HOSTLIST_MAX_NAMELEN", namelen <= DNS_LOCAL_HOSTLIST_MAX_NAMELEN);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   416      entry = (struct local_hostlist_entry *)memp_malloc(MEMP_LOCALHOSTLIST);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   417      LWIP_ASSERT("mem-error in dns_init_local", entry != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   418      if (entry != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   419        char *entry_name = (char *)entry + sizeof(struct local_hostlist_entry);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   420        MEMCPY(entry_name, init_entry->name, namelen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   421        entry_name[namelen] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   422        entry->name = entry_name;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   423        entry->addr = init_entry->addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   424        entry->next = local_hostlist_dynamic;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   425        local_hostlist_dynamic = entry;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   426      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   427    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   428  #endif /* DNS_LOCAL_HOSTLIST_IS_DYNAMIC && defined(DNS_LOCAL_HOSTLIST_INIT) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   429  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   430  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   431  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   432   * @ingroup dns
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   433   * Iterate the local host-list for a hostname.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   434   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   435   * @param iterator_fn a function that is called for every entry in the local host-list
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   436   * @param iterator_arg 3rd argument passed to iterator_fn
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   437   * @return the number of entries in the local host-list
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   438   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   439  size_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   440  dns_local_iterate(dns_found_callback iterator_fn, void *iterator_arg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   441  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   442    size_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   443  #if DNS_LOCAL_HOSTLIST_IS_DYNAMIC
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   444    struct local_hostlist_entry *entry = local_hostlist_dynamic;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   445    i = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   446    while (entry != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   447      if (iterator_fn != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   448        iterator_fn(entry->name, &entry->addr, iterator_arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   449      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   450      i++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   451      entry = entry->next;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   452    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   453  #else /* DNS_LOCAL_HOSTLIST_IS_DYNAMIC */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   454    for (i = 0; i < LWIP_ARRAYSIZE(local_hostlist_static); i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   455      if (iterator_fn != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   456        iterator_fn(local_hostlist_static[i].name, &local_hostlist_static[i].addr, iterator_arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   457      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   458    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   459  #endif /* DNS_LOCAL_HOSTLIST_IS_DYNAMIC */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   460    return i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   461  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   462  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   463  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   464   * @ingroup dns
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   465   * Scans the local host-list for a hostname.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   466   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   467   * @param hostname Hostname to look for in the local host-list
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   468   * @param addr the first IP address for the hostname in the local host-list or
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   469   *         IPADDR_NONE if not found.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   470   * @param dns_addrtype - LWIP_DNS_ADDRTYPE_IPV4_IPV6: try to resolve IPv4 (ATTENTION: no fallback here!)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   471   *                     - LWIP_DNS_ADDRTYPE_IPV6_IPV4: try to resolve IPv6 (ATTENTION: no fallback here!)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   472   *                     - LWIP_DNS_ADDRTYPE_IPV4: try to resolve IPv4 only
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   473   *                     - LWIP_DNS_ADDRTYPE_IPV6: try to resolve IPv6 only
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   474   * @return ERR_OK if found, ERR_ARG if not found
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   475   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   476  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   477  dns_local_lookup(const char *hostname, ip_addr_t *addr, u8_t dns_addrtype)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   478  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   479    LWIP_UNUSED_ARG(dns_addrtype);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   480    return dns_lookup_local(hostname, addr LWIP_DNS_ADDRTYPE_ARG(dns_addrtype));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   481  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   482  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   483  /* Internal implementation for dns_local_lookup and dns_lookup */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   484  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   485  dns_lookup_local(const char *hostname, ip_addr_t *addr LWIP_DNS_ADDRTYPE_ARG(u8_t dns_addrtype))
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   486  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   487  #if DNS_LOCAL_HOSTLIST_IS_DYNAMIC
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   488    struct local_hostlist_entry *entry = local_hostlist_dynamic;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   489    while (entry != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   490      if ((lwip_stricmp(entry->name, hostname) == 0) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   491          LWIP_DNS_ADDRTYPE_MATCH_IP(dns_addrtype, entry->addr)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   492        if (addr) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   493          ip_addr_copy(*addr, entry->addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   494        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   495        return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   496      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   497      entry = entry->next;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   498    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   499  #else /* DNS_LOCAL_HOSTLIST_IS_DYNAMIC */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   500    size_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   501    for (i = 0; i < LWIP_ARRAYSIZE(local_hostlist_static); i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   502      if ((lwip_stricmp(local_hostlist_static[i].name, hostname) == 0) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   503          LWIP_DNS_ADDRTYPE_MATCH_IP(dns_addrtype, local_hostlist_static[i].addr)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   504        if (addr) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   505          ip_addr_copy(*addr, local_hostlist_static[i].addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   506        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   507        return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   508      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   509    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   510  #endif /* DNS_LOCAL_HOSTLIST_IS_DYNAMIC */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   511    return ERR_ARG;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   512  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   513  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   514  #if DNS_LOCAL_HOSTLIST_IS_DYNAMIC
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   515  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   516   * @ingroup dns
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   517   * Remove all entries from the local host-list for a specific hostname
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   518   * and/or IP address
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   519   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   520   * @param hostname hostname for which entries shall be removed from the local
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   521   *                 host-list
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   522   * @param addr address for which entries shall be removed from the local host-list
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   523   * @return the number of removed entries
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   524   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   525  int
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   526  dns_local_removehost(const char *hostname, const ip_addr_t *addr)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   527  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   528    int removed = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   529    struct local_hostlist_entry *entry = local_hostlist_dynamic;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   530    struct local_hostlist_entry *last_entry = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   531    while (entry != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   532      if (((hostname == NULL) || !lwip_stricmp(entry->name, hostname)) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   533          ((addr == NULL) || ip_addr_cmp(&entry->addr, addr))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   534        struct local_hostlist_entry *free_entry;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   535        if (last_entry != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   536          last_entry->next = entry->next;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   537        } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   538          local_hostlist_dynamic = entry->next;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   539        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   540        free_entry = entry;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   541        entry = entry->next;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   542        memp_free(MEMP_LOCALHOSTLIST, free_entry);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   543        removed++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   544      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   545        last_entry = entry;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   546        entry = entry->next;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   547      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   548    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   549    return removed;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   550  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   551  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   552  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   553   * @ingroup dns
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   554   * Add a hostname/IP address pair to the local host-list.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   555   * Duplicates are not checked.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   556   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   557   * @param hostname hostname of the new entry
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   558   * @param addr IP address of the new entry
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   559   * @return ERR_OK if succeeded or ERR_MEM on memory error
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   560   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   561  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   562  dns_local_addhost(const char *hostname, const ip_addr_t *addr)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   563  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   564    struct local_hostlist_entry *entry;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   565    size_t namelen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   566    char *entry_name;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   567    LWIP_ASSERT("invalid host name (NULL)", hostname != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   568    namelen = strlen(hostname);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   569    LWIP_ASSERT("namelen <= DNS_LOCAL_HOSTLIST_MAX_NAMELEN", namelen <= DNS_LOCAL_HOSTLIST_MAX_NAMELEN);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   570    entry = (struct local_hostlist_entry *)memp_malloc(MEMP_LOCALHOSTLIST);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   571    if (entry == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   572      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   573    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   574    entry_name = (char *)entry + sizeof(struct local_hostlist_entry);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   575    MEMCPY(entry_name, hostname, namelen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   576    entry_name[namelen] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   577    entry->name = entry_name;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   578    ip_addr_copy(entry->addr, *addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   579    entry->next = local_hostlist_dynamic;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   580    local_hostlist_dynamic = entry;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   581    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   582  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   583  #endif /* DNS_LOCAL_HOSTLIST_IS_DYNAMIC*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   584  #endif /* DNS_LOCAL_HOSTLIST */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   585  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   586  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   587   * @ingroup dns
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   588   * Look up a hostname in the array of known hostnames.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   589   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   590   * @note This function only looks in the internal array of known
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   591   * hostnames, it does not send out a query for the hostname if none
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   592   * was found. The function dns_enqueue() can be used to send a query
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   593   * for a hostname.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   594   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   595   * @param name the hostname to look up
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   596   * @param addr the hostname's IP address, as u32_t (instead of ip_addr_t to
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   597   *         better check for failure: != IPADDR_NONE) or IPADDR_NONE if the hostname
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   598   *         was not found in the cached dns_table.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   599   * @return ERR_OK if found, ERR_ARG if not found
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   600   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   601  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   602  dns_lookup(const char *name, ip_addr_t *addr LWIP_DNS_ADDRTYPE_ARG(u8_t dns_addrtype))
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   603  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   604    u8_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   605  #if DNS_LOCAL_HOSTLIST
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   606    if (dns_lookup_local(name, addr LWIP_DNS_ADDRTYPE_ARG(dns_addrtype)) == ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   607      return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   608    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   609  #endif /* DNS_LOCAL_HOSTLIST */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   610  #ifdef DNS_LOOKUP_LOCAL_EXTERN
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   611    if (DNS_LOOKUP_LOCAL_EXTERN(name, addr, LWIP_DNS_ADDRTYPE_ARG_OR_ZERO(dns_addrtype)) == ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   612      return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   613    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   614  #endif /* DNS_LOOKUP_LOCAL_EXTERN */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   615  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   616    /* Walk through name list, return entry if found. If not, return NULL. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   617    for (i = 0; i < DNS_TABLE_SIZE; ++i) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   618      if ((dns_table[i].state == DNS_STATE_DONE) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   619          (lwip_strnicmp(name, dns_table[i].name, sizeof(dns_table[i].name)) == 0) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   620          LWIP_DNS_ADDRTYPE_MATCH_IP(dns_addrtype, dns_table[i].ipaddr)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   621        LWIP_DEBUGF(DNS_DEBUG, ("dns_lookup: \"%s\": found = ", name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   622        ip_addr_debug_print_val(DNS_DEBUG, dns_table[i].ipaddr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   623        LWIP_DEBUGF(DNS_DEBUG, ("\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   624        if (addr) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   625          ip_addr_copy(*addr, dns_table[i].ipaddr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   626        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   627        return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   628      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   629    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   630  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   631    return ERR_ARG;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   632  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   633  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   634  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   635   * Compare the "dotted" name "query" with the encoded name "response"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   636   * to make sure an answer from the DNS server matches the current dns_table
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   637   * entry (otherwise, answers might arrive late for hostname not on the list
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   638   * any more).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   639   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   640   * For now, this function compares case-insensitive to cope with all kinds of
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   641   * servers. This also means that "dns 0x20 bit encoding" must be checked
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   642   * externally, if we want to implement it.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   643   * Currently, the request is sent exactly as passed in by he user request.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   644   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   645   * @param query hostname (not encoded) from the dns_table
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   646   * @param p pbuf containing the encoded hostname in the DNS response
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   647   * @param start_offset offset into p where the name starts
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   648   * @return 0xFFFF: names differ, other: names equal -> offset behind name
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   649   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   650  static u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   651  dns_compare_name(const char *query, struct pbuf *p, u16_t start_offset)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   652  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   653    int n;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   654    u16_t response_offset = start_offset;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   655  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   656    do {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   657      n = pbuf_try_get_at(p, response_offset);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   658      if ((n < 0) || (response_offset == 0xFFFF)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   659        /* error or overflow */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   660        return 0xFFFF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   661      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   662      response_offset++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   663      /** @see RFC 1035 - 4.1.4. Message compression */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   664      if ((n & 0xc0) == 0xc0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   665        /* Compressed name: cannot be equal since we don't send them */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   666        return 0xFFFF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   667      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   668        /* Not compressed name */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   669        while (n > 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   670          int c = pbuf_try_get_at(p, response_offset);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   671          if (c < 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   672            return 0xFFFF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   673          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   674          if (lwip_tolower((*query)) != lwip_tolower((u8_t)c)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   675            return 0xFFFF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   676          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   677          if (response_offset == 0xFFFF) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   678            /* would overflow */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   679            return 0xFFFF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   680          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   681          response_offset++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   682          ++query;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   683          --n;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   684        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   685        ++query;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   686      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   687      n = pbuf_try_get_at(p, response_offset);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   688      if (n < 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   689        return 0xFFFF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   690      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   691    } while (n != 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   692  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   693    if (response_offset == 0xFFFF) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   694      /* would overflow */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   695      return 0xFFFF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   696    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   697    return (u16_t)(response_offset + 1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   698  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   699  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   700  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   701   * Walk through a compact encoded DNS name and return the end of the name.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   702   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   703   * @param p pbuf containing the name
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   704   * @param query_idx start index into p pointing to encoded DNS name in the DNS server response
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   705   * @return index to end of the name
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   706   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   707  static u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   708  dns_skip_name(struct pbuf *p, u16_t query_idx)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   709  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   710    int n;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   711    u16_t offset = query_idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   712  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   713    do {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   714      n = pbuf_try_get_at(p, offset++);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   715      if ((n < 0) || (offset == 0)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   716        return 0xFFFF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   717      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   718      /** @see RFC 1035 - 4.1.4. Message compression */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   719      if ((n & 0xc0) == 0xc0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   720        /* Compressed name: since we only want to skip it (not check it), stop here */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   721        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   722      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   723        /* Not compressed name */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   724        if (offset + n >= p->tot_len) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   725          return 0xFFFF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   726        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   727        offset = (u16_t)(offset + n);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   728      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   729      n = pbuf_try_get_at(p, offset);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   730      if (n < 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   731        return 0xFFFF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   732      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   733    } while (n != 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   734  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   735    if (offset == 0xFFFF) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   736      return 0xFFFF;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   737    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   738    return (u16_t)(offset + 1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   739  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   740  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   741  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   742   * Send a DNS query packet.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   743   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   744   * @param idx the DNS table entry index for which to send a request
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   745   * @return ERR_OK if packet is sent; an err_t indicating the problem otherwise
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   746   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   747  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   748  dns_send(u8_t idx)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   749  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   750    err_t err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   751    struct dns_hdr hdr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   752    struct dns_query qry;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   753    struct pbuf *p;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   754    u16_t query_idx, copy_len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   755    const char *hostname, *hostname_part;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   756    u8_t n;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   757    u8_t pcb_idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   758    struct dns_table_entry *entry = &dns_table[idx];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   759  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   760    LWIP_DEBUGF(DNS_DEBUG, ("dns_send: dns_servers[%"U16_F"] \"%s\": request\n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   761                            (u16_t)(entry->server_idx), entry->name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   762    LWIP_ASSERT("dns server out of array", entry->server_idx < DNS_MAX_SERVERS);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   763    if (ip_addr_isany_val(dns_servers[entry->server_idx])
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   764  #if LWIP_DNS_SUPPORT_MDNS_QUERIES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   765        && !entry->is_mdns
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   766  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   767       ) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   768      /* DNS server not valid anymore, e.g. PPP netif has been shut down */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   769      /* call specified callback function if provided */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   770      dns_call_found(idx, NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   771      /* flush this entry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   772      entry->state = DNS_STATE_UNUSED;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   773      return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   774    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   775  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   776    /* if here, we have either a new query or a retry on a previous query to process */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   777    p = pbuf_alloc(PBUF_TRANSPORT, (u16_t)(SIZEOF_DNS_HDR + strlen(entry->name) + 2 +
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   778                                           SIZEOF_DNS_QUERY), PBUF_RAM);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   779    if (p != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   780      const ip_addr_t *dst;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   781      u16_t dst_port;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   782      /* fill dns header */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   783      memset(&hdr, 0, SIZEOF_DNS_HDR);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   784      hdr.id = lwip_htons(entry->txid);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   785      hdr.flags1 = DNS_FLAG1_RD;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   786      hdr.numquestions = PP_HTONS(1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   787      pbuf_take(p, &hdr, SIZEOF_DNS_HDR);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   788      hostname = entry->name;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   789      --hostname;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   790  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   791      /* convert hostname into suitable query format. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   792      query_idx = SIZEOF_DNS_HDR;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   793      do {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   794        ++hostname;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   795        hostname_part = hostname;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   796        for (n = 0; *hostname != '.' && *hostname != 0; ++hostname) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   797          ++n;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   798        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   799        copy_len = (u16_t)(hostname - hostname_part);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   800        if (query_idx + n + 1 > 0xFFFF) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   801          /* u16_t overflow */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   802          goto overflow_return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   803        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   804        pbuf_put_at(p, query_idx, n);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   805        pbuf_take_at(p, hostname_part, copy_len, (u16_t)(query_idx + 1));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   806        query_idx = (u16_t)(query_idx + n + 1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   807      } while (*hostname != 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   808      pbuf_put_at(p, query_idx, 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   809      query_idx++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   810  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   811      /* fill dns query */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   812      if (LWIP_DNS_ADDRTYPE_IS_IPV6(entry->reqaddrtype)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   813        qry.type = PP_HTONS(DNS_RRTYPE_AAAA);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   814      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   815        qry.type = PP_HTONS(DNS_RRTYPE_A);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   816      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   817      qry.cls = PP_HTONS(DNS_RRCLASS_IN);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   818      pbuf_take_at(p, &qry, SIZEOF_DNS_QUERY, query_idx);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   819  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   820  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_RAND_SRC_PORT) != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   821      pcb_idx = entry->pcb_idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   822  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   823      pcb_idx = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   824  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   825      /* send dns packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   826      LWIP_DEBUGF(DNS_DEBUG, ("sending DNS request ID %d for name \"%s\" to server %d\r\n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   827                              entry->txid, entry->name, entry->server_idx));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   828  #if LWIP_DNS_SUPPORT_MDNS_QUERIES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   829      if (entry->is_mdns) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   830        dst_port = DNS_MQUERY_PORT;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   831  #if LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   832        if (LWIP_DNS_ADDRTYPE_IS_IPV6(entry->reqaddrtype)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   833          dst = &dns_mquery_v6group;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   834        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   835  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   836  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   837        else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   838  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   839  #if LWIP_IPV4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   840        {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   841          dst = &dns_mquery_v4group;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   842        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   843  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   844      } else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   845  #endif /* LWIP_DNS_SUPPORT_MDNS_QUERIES */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   846      {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   847        dst_port = DNS_SERVER_PORT;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   848        dst = &dns_servers[entry->server_idx];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   849      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   850      err = udp_sendto(dns_pcbs[pcb_idx], p, dst, dst_port);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   851  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   852      /* free pbuf */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   853      pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   854    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   855      err = ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   856    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   857  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   858    return err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   859  overflow_return:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   860    pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   861    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   862  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   863  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   864  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_RAND_SRC_PORT) != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   865  static struct udp_pcb *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   866  dns_alloc_random_port(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   867  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   868    err_t err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   869    struct udp_pcb *pcb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   870  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   871    pcb = udp_new_ip_type(IPADDR_TYPE_ANY);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   872    if (pcb == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   873      /* out of memory, have to reuse an existing pcb */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   874      return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   875    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   876    do {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   877      u16_t port = (u16_t)DNS_RAND_TXID();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   878      if (DNS_PORT_ALLOWED(port)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   879        err = udp_bind(pcb, IP_ANY_TYPE, port);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   880      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   881        /* this port is not allowed, try again */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   882        err = ERR_USE;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   883      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   884    } while (err == ERR_USE);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   885    if (err != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   886      udp_remove(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   887      return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   888    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   889    udp_recv(pcb, dns_recv, NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   890    return pcb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   891  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   892  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   893  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   894   * dns_alloc_pcb() - allocates a new pcb (or reuses an existing one) to be used
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   895   * for sending a request
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   896   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   897   * @return an index into dns_pcbs
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   898   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   899  static u8_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   900  dns_alloc_pcb(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   901  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   902    u8_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   903    u8_t idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   904  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   905    for (i = 0; i < DNS_MAX_SOURCE_PORTS; i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   906      if (dns_pcbs[i] == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   907        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   908      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   909    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   910    if (i < DNS_MAX_SOURCE_PORTS) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   911      dns_pcbs[i] = dns_alloc_random_port();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   912      if (dns_pcbs[i] != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   913        /* succeeded */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   914        dns_last_pcb_idx = i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   915        return i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   916      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   917    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   918    /* if we come here, creating a new UDP pcb failed, so we have to use
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   919       an already existing one (so overflow is no issue) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   920    for (i = 0, idx = (u8_t)(dns_last_pcb_idx + 1); i < DNS_MAX_SOURCE_PORTS; i++, idx++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   921      if (idx >= DNS_MAX_SOURCE_PORTS) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   922        idx = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   923      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   924      if (dns_pcbs[idx] != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   925        dns_last_pcb_idx = idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   926        return idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   927      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   928    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   929    return DNS_MAX_SOURCE_PORTS;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   930  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   931  #endif /* ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_RAND_SRC_PORT) != 0) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   932  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   933  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   934   * dns_call_found() - call the found callback and check if there are duplicate
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   935   * entries for the given hostname. If there are any, their found callback will
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   936   * be called and they will be removed.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   937   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   938   * @param idx dns table index of the entry that is resolved or removed
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   939   * @param addr IP address for the hostname (or NULL on error or memory shortage)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   940   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   941  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   942  dns_call_found(u8_t idx, ip_addr_t *addr)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   943  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   944  #if ((LWIP_DNS_SECURE & (LWIP_DNS_SECURE_NO_MULTIPLE_OUTSTANDING | LWIP_DNS_SECURE_RAND_SRC_PORT)) != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   945    u8_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   946  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   947  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   948  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   949    if (addr != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   950      /* check that address type matches the request and adapt the table entry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   951      if (IP_IS_V6_VAL(*addr)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   952        LWIP_ASSERT("invalid response", LWIP_DNS_ADDRTYPE_IS_IPV6(dns_table[idx].reqaddrtype));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   953        dns_table[idx].reqaddrtype = LWIP_DNS_ADDRTYPE_IPV6;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   954      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   955        LWIP_ASSERT("invalid response", !LWIP_DNS_ADDRTYPE_IS_IPV6(dns_table[idx].reqaddrtype));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   956        dns_table[idx].reqaddrtype = LWIP_DNS_ADDRTYPE_IPV4;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   957      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   958    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   959  #endif /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   960  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   961  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_NO_MULTIPLE_OUTSTANDING) != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   962    for (i = 0; i < DNS_MAX_REQUESTS; i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   963      if (dns_requests[i].found && (dns_requests[i].dns_table_idx == idx)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   964        (*dns_requests[i].found)(dns_table[idx].name, addr, dns_requests[i].arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   965        /* flush this entry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   966        dns_requests[i].found = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   967      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   968    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   969  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   970    if (dns_requests[idx].found) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   971      (*dns_requests[idx].found)(dns_table[idx].name, addr, dns_requests[idx].arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   972    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   973    dns_requests[idx].found = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   974  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   975  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_RAND_SRC_PORT) != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   976    /* close the pcb used unless other request are using it */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   977    for (i = 0; i < DNS_MAX_REQUESTS; i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   978      if (i == idx) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   979        continue; /* only check other requests */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   980      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   981      if (dns_table[i].state == DNS_STATE_ASKING) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   982        if (dns_table[i].pcb_idx == dns_table[idx].pcb_idx) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   983          /* another request is still using the same pcb */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   984          dns_table[idx].pcb_idx = DNS_MAX_SOURCE_PORTS;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   985          break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   986        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   987      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   988    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   989    if (dns_table[idx].pcb_idx < DNS_MAX_SOURCE_PORTS) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   990      /* if we come here, the pcb is not used any more and can be removed */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   991      udp_remove(dns_pcbs[dns_table[idx].pcb_idx]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   992      dns_pcbs[dns_table[idx].pcb_idx] = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   993      dns_table[idx].pcb_idx = DNS_MAX_SOURCE_PORTS;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   994    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   995  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   996  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   997  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   998  /* Create a query transmission ID that is unique for all outstanding queries */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	   999  static u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1000  dns_create_txid(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1001  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1002    u16_t txid;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1003    u8_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1004  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1005  again:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1006    txid = (u16_t)DNS_RAND_TXID();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1007  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1008    /* check whether the ID is unique */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1009    for (i = 0; i < DNS_TABLE_SIZE; i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1010      if ((dns_table[i].state == DNS_STATE_ASKING) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1011          (dns_table[i].txid == txid)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1012        /* ID already used by another pending query */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1013        goto again;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1014      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1015    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1016  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1017    return txid;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1018  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1019  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1020  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1021   * Check whether there are other backup DNS servers available to try
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1022   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1023  static u8_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1024  dns_backupserver_available(struct dns_table_entry *pentry)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1025  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1026    u8_t ret = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1027  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1028    if (pentry) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1029      if ((pentry->server_idx + 1 < DNS_MAX_SERVERS) && !ip_addr_isany_val(dns_servers[pentry->server_idx + 1])) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1030        ret = 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1031      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1032    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1033  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1034    return ret;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1035  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1036  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1037  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1038   * dns_check_entry() - see if entry has not yet been queried and, if so, sends out a query.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1039   * Check an entry in the dns_table:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1040   * - send out query for new entries
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1041   * - retry old pending entries on timeout (also with different servers)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1042   * - remove completed entries from the table if their TTL has expired
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1043   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1044   * @param i index of the dns_table entry to check
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1045   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1046  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1047  dns_check_entry(u8_t i)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1048  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1049    err_t err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1050    struct dns_table_entry *entry = &dns_table[i];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1051  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1052    LWIP_ASSERT("array index out of bounds", i < DNS_TABLE_SIZE);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1053  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1054    switch (entry->state) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1055      case DNS_STATE_NEW:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1056        /* initialize new entry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1057        entry->txid = dns_create_txid();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1058        entry->state = DNS_STATE_ASKING;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1059        entry->server_idx = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1060        entry->tmr = 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1061        entry->retries = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1062  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1063        /* send DNS packet for this entry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1064        err = dns_send(i);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1065        if (err != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1066          LWIP_DEBUGF(DNS_DEBUG | LWIP_DBG_LEVEL_WARNING,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1067                      ("dns_send returned error: %s\n", lwip_strerr(err)));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1068        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1069        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1070      case DNS_STATE_ASKING:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1071        if (--entry->tmr == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1072          if (++entry->retries == DNS_MAX_RETRIES) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1073            if (dns_backupserver_available(entry)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1074  #if LWIP_DNS_SUPPORT_MDNS_QUERIES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1075                && !entry->is_mdns
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1076  #endif /* LWIP_DNS_SUPPORT_MDNS_QUERIES */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1077               ) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1078              /* change of server */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1079              entry->server_idx++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1080              entry->tmr = 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1081              entry->retries = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1082            } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1083              LWIP_DEBUGF(DNS_DEBUG, ("dns_check_entry: \"%s\": timeout\n", entry->name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1084              /* call specified callback function if provided */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1085              dns_call_found(i, NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1086              /* flush this entry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1087              entry->state = DNS_STATE_UNUSED;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1088              break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1089            }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1090          } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1091            /* wait longer for the next retry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1092            entry->tmr = entry->retries;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1093          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1094  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1095          /* send DNS packet for this entry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1096          err = dns_send(i);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1097          if (err != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1098            LWIP_DEBUGF(DNS_DEBUG | LWIP_DBG_LEVEL_WARNING,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1099                        ("dns_send returned error: %s\n", lwip_strerr(err)));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1100          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1101        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1102        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1103      case DNS_STATE_DONE:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1104        /* if the time to live is nul */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1105        if ((entry->ttl == 0) || (--entry->ttl == 0)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1106          LWIP_DEBUGF(DNS_DEBUG, ("dns_check_entry: \"%s\": flush\n", entry->name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1107          /* flush this entry, there cannot be any related pending entries in this state */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1108          entry->state = DNS_STATE_UNUSED;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1109        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1110        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1111      case DNS_STATE_UNUSED:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1112        /* nothing to do */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1113        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1114      default:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1115        LWIP_ASSERT("unknown dns_table entry state:", 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1116        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1117    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1118  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1119  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1120  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1121   * Call dns_check_entry for each entry in dns_table - check all entries.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1122   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1123  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1124  dns_check_entries(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1125  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1126    u8_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1127  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1128    for (i = 0; i < DNS_TABLE_SIZE; ++i) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1129      dns_check_entry(i);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1130    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1131  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1132  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1133  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1134   * Save TTL and call dns_call_found for correct response.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1135   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1136  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1137  dns_correct_response(u8_t idx, u32_t ttl)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1138  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1139    struct dns_table_entry *entry = &dns_table[idx];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1140  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1141    entry->state = DNS_STATE_DONE;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1142  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1143    LWIP_DEBUGF(DNS_DEBUG, ("dns_recv: \"%s\": response = ", entry->name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1144    ip_addr_debug_print_val(DNS_DEBUG, entry->ipaddr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1145    LWIP_DEBUGF(DNS_DEBUG, ("\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1146  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1147    /* read the answer resource record's TTL, and maximize it if needed */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1148    entry->ttl = ttl;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1149    if (entry->ttl > DNS_MAX_TTL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1150      entry->ttl = DNS_MAX_TTL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1151    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1152    dns_call_found(idx, &entry->ipaddr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1153  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1154    if (entry->ttl == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1155      /* RFC 883, page 29: "Zero values are
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1156         interpreted to mean that the RR can only be used for the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1157         transaction in progress, and should not be cached."
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1158         -> flush this entry now */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1159      /* entry reused during callback? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1160      if (entry->state == DNS_STATE_DONE) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1161        entry->state = DNS_STATE_UNUSED;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1162      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1163    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1164  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1165  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1166  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1167   * Receive input function for DNS response packets arriving for the dns UDP pcb.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1168   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1169  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1170  dns_recv(void *arg, struct udp_pcb *pcb, struct pbuf *p, const ip_addr_t *addr, u16_t port)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1171  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1172    u8_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1173    u16_t txid;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1174    u16_t res_idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1175    struct dns_hdr hdr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1176    struct dns_answer ans;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1177    struct dns_query qry;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1178    u16_t nquestions, nanswers;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1179  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1180    LWIP_UNUSED_ARG(arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1181    LWIP_UNUSED_ARG(pcb);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1182    LWIP_UNUSED_ARG(port);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1183  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1184    /* is the dns message big enough ? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1185    if (p->tot_len < (SIZEOF_DNS_HDR + SIZEOF_DNS_QUERY)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1186      LWIP_DEBUGF(DNS_DEBUG, ("dns_recv: pbuf too small\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1187      /* free pbuf and return */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1188      goto ignore_packet;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1189    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1190  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1191    /* copy dns payload inside static buffer for processing */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1192    if (pbuf_copy_partial(p, &hdr, SIZEOF_DNS_HDR, 0) == SIZEOF_DNS_HDR) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1193      /* Match the ID in the DNS header with the name table. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1194      txid = lwip_htons(hdr.id);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1195      for (i = 0; i < DNS_TABLE_SIZE; i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1196        struct dns_table_entry *entry = &dns_table[i];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1197        if ((entry->state == DNS_STATE_ASKING) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1198            (entry->txid == txid)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1199  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1200          /* We only care about the question(s) and the answers. The authrr
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1201             and the extrarr are simply discarded. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1202          nquestions = lwip_htons(hdr.numquestions);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1203          nanswers   = lwip_htons(hdr.numanswers);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1204  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1205          /* Check for correct response. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1206          if ((hdr.flags1 & DNS_FLAG1_RESPONSE) == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1207            LWIP_DEBUGF(DNS_DEBUG, ("dns_recv: \"%s\": not a response\n", entry->name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1208            goto ignore_packet; /* ignore this packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1209          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1210          if (nquestions != 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1211            LWIP_DEBUGF(DNS_DEBUG, ("dns_recv: \"%s\": response not match to query\n", entry->name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1212            goto ignore_packet; /* ignore this packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1213          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1214  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1215  #if LWIP_DNS_SUPPORT_MDNS_QUERIES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1216          if (!entry->is_mdns)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1217  #endif /* LWIP_DNS_SUPPORT_MDNS_QUERIES */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1218          {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1219            /* Check whether response comes from the same network address to which the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1220               question was sent. (RFC 5452) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1221            if (!ip_addr_cmp(addr, &dns_servers[entry->server_idx])) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1222              goto ignore_packet; /* ignore this packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1223            }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1224          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1225  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1226          /* Check if the name in the "question" part match with the name in the entry and
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1227             skip it if equal. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1228          res_idx = dns_compare_name(entry->name, p, SIZEOF_DNS_HDR);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1229          if (res_idx == 0xFFFF) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1230            LWIP_DEBUGF(DNS_DEBUG, ("dns_recv: \"%s\": response not match to query\n", entry->name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1231            goto ignore_packet; /* ignore this packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1232          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1233  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1234          /* check if "question" part matches the request */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1235          if (pbuf_copy_partial(p, &qry, SIZEOF_DNS_QUERY, res_idx) != SIZEOF_DNS_QUERY) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1236            goto ignore_packet; /* ignore this packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1237          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1238          if ((qry.cls != PP_HTONS(DNS_RRCLASS_IN)) ||
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1239              (LWIP_DNS_ADDRTYPE_IS_IPV6(entry->reqaddrtype) && (qry.type != PP_HTONS(DNS_RRTYPE_AAAA))) ||
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1240              (!LWIP_DNS_ADDRTYPE_IS_IPV6(entry->reqaddrtype) && (qry.type != PP_HTONS(DNS_RRTYPE_A)))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1241            LWIP_DEBUGF(DNS_DEBUG, ("dns_recv: \"%s\": response not match to query\n", entry->name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1242            goto ignore_packet; /* ignore this packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1243          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1244          /* skip the rest of the "question" part */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1245          if (res_idx + SIZEOF_DNS_QUERY > 0xFFFF) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1246            goto ignore_packet;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1247          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1248          res_idx = (u16_t)(res_idx + SIZEOF_DNS_QUERY);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1249  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1250          /* Check for error. If so, call callback to inform. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1251          if (hdr.flags2 & DNS_FLAG2_ERR_MASK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1252            LWIP_DEBUGF(DNS_DEBUG, ("dns_recv: \"%s\": error in flags\n", entry->name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1253  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1254            /* if there is another backup DNS server to try
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1255             * then don't stop the DNS request
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1256             */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1257            if (dns_backupserver_available(entry)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1258              /* avoid retrying the same server */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1259              entry->retries = DNS_MAX_RETRIES-1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1260              entry->tmr     = 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1261  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1262              /* contact next available server for this entry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1263              dns_check_entry(i);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1264  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1265              goto ignore_packet;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1266            }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1267          } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1268            while ((nanswers > 0) && (res_idx < p->tot_len)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1269              /* skip answer resource record's host name */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1270              res_idx = dns_skip_name(p, res_idx);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1271              if (res_idx == 0xFFFF) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1272                goto ignore_packet; /* ignore this packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1273              }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1274  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1275              /* Check for IP address type and Internet class. Others are discarded. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1276              if (pbuf_copy_partial(p, &ans, SIZEOF_DNS_ANSWER, res_idx) != SIZEOF_DNS_ANSWER) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1277                goto ignore_packet; /* ignore this packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1278              }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1279              if (res_idx + SIZEOF_DNS_ANSWER > 0xFFFF) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1280                goto ignore_packet;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1281              }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1282              res_idx = (u16_t)(res_idx + SIZEOF_DNS_ANSWER);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1283  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1284              if (ans.cls == PP_HTONS(DNS_RRCLASS_IN)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1285  #if LWIP_IPV4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1286                if ((ans.type == PP_HTONS(DNS_RRTYPE_A)) && (ans.len == PP_HTONS(sizeof(ip4_addr_t)))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1287  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1288                  if (!LWIP_DNS_ADDRTYPE_IS_IPV6(entry->reqaddrtype))
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1289  #endif /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1290                  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1291                    ip4_addr_t ip4addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1292                    /* read the IP address after answer resource record's header */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1293                    if (pbuf_copy_partial(p, &ip4addr, sizeof(ip4_addr_t), res_idx) != sizeof(ip4_addr_t)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1294                      goto ignore_packet; /* ignore this packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1295                    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1296                    ip_addr_copy_from_ip4(dns_table[i].ipaddr, ip4addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1297                    pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1298                    /* handle correct response */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1299                    dns_correct_response(i, lwip_ntohl(ans.ttl));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1300                    return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1301                  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1302                }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1303  #endif /* LWIP_IPV4 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1304  #if LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1305                if ((ans.type == PP_HTONS(DNS_RRTYPE_AAAA)) && (ans.len == PP_HTONS(sizeof(ip6_addr_p_t)))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1306  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1307                  if (LWIP_DNS_ADDRTYPE_IS_IPV6(entry->reqaddrtype))
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1308  #endif /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1309                  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1310                    ip6_addr_p_t ip6addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1311                    /* read the IP address after answer resource record's header */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1312                    if (pbuf_copy_partial(p, &ip6addr, sizeof(ip6_addr_p_t), res_idx) != sizeof(ip6_addr_p_t)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1313                      goto ignore_packet; /* ignore this packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1314                    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1315                    /* @todo: scope ip6addr? Might be required for link-local addresses at least? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1316                    ip_addr_copy_from_ip6_packed(dns_table[i].ipaddr, ip6addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1317                    pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1318                    /* handle correct response */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1319                    dns_correct_response(i, lwip_ntohl(ans.ttl));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1320                    return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1321                  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1322                }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1323  #endif /* LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1324              }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1325              /* skip this answer */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1326              if ((int)(res_idx + lwip_htons(ans.len)) > 0xFFFF) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1327                goto ignore_packet; /* ignore this packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1328              }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1329              res_idx = (u16_t)(res_idx + lwip_htons(ans.len));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1330              --nanswers;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1331            }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1332  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1333            if ((entry->reqaddrtype == LWIP_DNS_ADDRTYPE_IPV4_IPV6) ||
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1334                (entry->reqaddrtype == LWIP_DNS_ADDRTYPE_IPV6_IPV4)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1335              if (entry->reqaddrtype == LWIP_DNS_ADDRTYPE_IPV4_IPV6) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1336                /* IPv4 failed, try IPv6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1337                dns_table[i].reqaddrtype = LWIP_DNS_ADDRTYPE_IPV6;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1338              } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1339                /* IPv6 failed, try IPv4 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1340                dns_table[i].reqaddrtype = LWIP_DNS_ADDRTYPE_IPV4;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1341              }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1342              pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1343              dns_table[i].state = DNS_STATE_NEW;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1344              dns_check_entry(i);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1345              return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1346            }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1347  #endif /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1348            LWIP_DEBUGF(DNS_DEBUG, ("dns_recv: \"%s\": error in response\n", entry->name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1349          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1350          /* call callback to indicate error, clean up memory and return */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1351          pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1352          dns_call_found(i, NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1353          dns_table[i].state = DNS_STATE_UNUSED;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1354          return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1355        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1356      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1357    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1358  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1359  ignore_packet:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1360    /* deallocate memory and return */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1361    pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1362    return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1363  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1364  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1365  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1366   * Queues a new hostname to resolve and sends out a DNS query for that hostname
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1367   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1368   * @param name the hostname that is to be queried
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1369   * @param hostnamelen length of the hostname
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1370   * @param found a callback function to be called on success, failure or timeout
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1371   * @param callback_arg argument to pass to the callback function
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1372   * @return err_t return code.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1373   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1374  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1375  dns_enqueue(const char *name, size_t hostnamelen, dns_found_callback found,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1376              void *callback_arg LWIP_DNS_ADDRTYPE_ARG(u8_t dns_addrtype) LWIP_DNS_ISMDNS_ARG(u8_t is_mdns))
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1377  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1378    u8_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1379    u8_t lseq, lseqi;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1380    struct dns_table_entry *entry = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1381    size_t namelen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1382    struct dns_req_entry *req;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1383  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1384  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_NO_MULTIPLE_OUTSTANDING) != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1385    u8_t r;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1386    /* check for duplicate entries */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1387    for (i = 0; i < DNS_TABLE_SIZE; i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1388      if ((dns_table[i].state == DNS_STATE_ASKING) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1389          (lwip_strnicmp(name, dns_table[i].name, sizeof(dns_table[i].name)) == 0)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1390  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1391        if (dns_table[i].reqaddrtype != dns_addrtype) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1392          /* requested address types don't match
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1393             this can lead to 2 concurrent requests, but mixing the address types
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1394             for the same host should not be that common */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1395          continue;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1396        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1397  #endif /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1398        /* this is a duplicate entry, find a free request entry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1399        for (r = 0; r < DNS_MAX_REQUESTS; r++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1400          if (dns_requests[r].found == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1401            dns_requests[r].found = found;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1402            dns_requests[r].arg = callback_arg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1403            dns_requests[r].dns_table_idx = i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1404            LWIP_DNS_SET_ADDRTYPE(dns_requests[r].reqaddrtype, dns_addrtype);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1405            LWIP_DEBUGF(DNS_DEBUG, ("dns_enqueue: \"%s\": duplicate request\n", name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1406            return ERR_INPROGRESS;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1407          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1408        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1409      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1410    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1411    /* no duplicate entries found */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1412  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1413  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1414    /* search an unused entry, or the oldest one */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1415    lseq = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1416    lseqi = DNS_TABLE_SIZE;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1417    for (i = 0; i < DNS_TABLE_SIZE; ++i) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1418      entry = &dns_table[i];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1419      /* is it an unused entry ? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1420      if (entry->state == DNS_STATE_UNUSED) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1421        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1422      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1423      /* check if this is the oldest completed entry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1424      if (entry->state == DNS_STATE_DONE) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1425        u8_t age = (u8_t)(dns_seqno - entry->seqno);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1426        if (age > lseq) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1427          lseq = age;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1428          lseqi = i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1429        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1430      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1431    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1432  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1433    /* if we don't have found an unused entry, use the oldest completed one */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1434    if (i == DNS_TABLE_SIZE) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1435      if ((lseqi >= DNS_TABLE_SIZE) || (dns_table[lseqi].state != DNS_STATE_DONE)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1436        /* no entry can be used now, table is full */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1437        LWIP_DEBUGF(DNS_DEBUG, ("dns_enqueue: \"%s\": DNS entries table is full\n", name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1438        return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1439      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1440        /* use the oldest completed one */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1441        i = lseqi;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1442        entry = &dns_table[i];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1443      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1444    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1445  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1446  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_NO_MULTIPLE_OUTSTANDING) != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1447    /* find a free request entry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1448    req = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1449    for (r = 0; r < DNS_MAX_REQUESTS; r++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1450      if (dns_requests[r].found == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1451        req = &dns_requests[r];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1452        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1453      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1454    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1455    if (req == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1456      /* no request entry can be used now, table is full */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1457      LWIP_DEBUGF(DNS_DEBUG, ("dns_enqueue: \"%s\": DNS request entries table is full\n", name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1458      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1459    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1460    req->dns_table_idx = i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1461  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1462    /* in this configuration, the entry index is the same as the request index */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1463    req = &dns_requests[i];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1464  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1465  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1466    /* use this entry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1467    LWIP_DEBUGF(DNS_DEBUG, ("dns_enqueue: \"%s\": use DNS entry %"U16_F"\n", name, (u16_t)(i)));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1468  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1469    /* fill the entry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1470    entry->state = DNS_STATE_NEW;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1471    entry->seqno = dns_seqno;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1472    LWIP_DNS_SET_ADDRTYPE(entry->reqaddrtype, dns_addrtype);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1473    LWIP_DNS_SET_ADDRTYPE(req->reqaddrtype, dns_addrtype);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1474    req->found = found;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1475    req->arg   = callback_arg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1476    namelen = LWIP_MIN(hostnamelen, DNS_MAX_NAME_LENGTH - 1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1477    MEMCPY(entry->name, name, namelen);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1478    entry->name[namelen] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1479  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1480  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_RAND_SRC_PORT) != 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1481    entry->pcb_idx = dns_alloc_pcb();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1482    if (entry->pcb_idx >= DNS_MAX_SOURCE_PORTS) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1483      /* failed to get a UDP pcb */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1484      LWIP_DEBUGF(DNS_DEBUG, ("dns_enqueue: \"%s\": failed to allocate a pcb\n", name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1485      entry->state = DNS_STATE_UNUSED;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1486      req->found = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1487      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1488    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1489    LWIP_DEBUGF(DNS_DEBUG, ("dns_enqueue: \"%s\": use DNS pcb %"U16_F"\n", name, (u16_t)(entry->pcb_idx)));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1490  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1491  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1492  #if LWIP_DNS_SUPPORT_MDNS_QUERIES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1493    entry->is_mdns = is_mdns;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1494  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1495  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1496    dns_seqno++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1497  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1498    /* force to send query without waiting timer */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1499    dns_check_entry(i);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1500  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1501    /* dns query is enqueued */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1502    return ERR_INPROGRESS;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1503  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1504  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1505  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1506   * @ingroup dns
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1507   * Resolve a hostname (string) into an IP address.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1508   * NON-BLOCKING callback version for use with raw API!!!
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1509   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1510   * Returns immediately with one of err_t return codes:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1511   * - ERR_OK if hostname is a valid IP address string or the host
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1512   *   name is already in the local names table.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1513   * - ERR_INPROGRESS enqueue a request to be sent to the DNS server
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1514   *   for resolution if no errors are present.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1515   * - ERR_ARG: dns client not initialized or invalid hostname
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1516   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1517   * @param hostname the hostname that is to be queried
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1518   * @param addr pointer to a ip_addr_t where to store the address if it is already
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1519   *             cached in the dns_table (only valid if ERR_OK is returned!)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1520   * @param found a callback function to be called on success, failure or timeout (only if
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1521   *              ERR_INPROGRESS is returned!)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1522   * @param callback_arg argument to pass to the callback function
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1523   * @return a err_t return code.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1524   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1525  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1526  dns_gethostbyname(const char *hostname, ip_addr_t *addr, dns_found_callback found,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1527                    void *callback_arg)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1528  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1529    return dns_gethostbyname_addrtype(hostname, addr, found, callback_arg, LWIP_DNS_ADDRTYPE_DEFAULT);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1530  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1531  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1532  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1533   * @ingroup dns
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1534   * Like dns_gethostbyname, but returned address type can be controlled:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1535   * @param hostname the hostname that is to be queried
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1536   * @param addr pointer to a ip_addr_t where to store the address if it is already
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1537   *             cached in the dns_table (only valid if ERR_OK is returned!)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1538   * @param found a callback function to be called on success, failure or timeout (only if
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1539   *              ERR_INPROGRESS is returned!)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1540   * @param callback_arg argument to pass to the callback function
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1541   * @param dns_addrtype - LWIP_DNS_ADDRTYPE_IPV4_IPV6: try to resolve IPv4 first, try IPv6 if IPv4 fails only
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1542   *                     - LWIP_DNS_ADDRTYPE_IPV6_IPV4: try to resolve IPv6 first, try IPv4 if IPv6 fails only
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1543   *                     - LWIP_DNS_ADDRTYPE_IPV4: try to resolve IPv4 only
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1544   *                     - LWIP_DNS_ADDRTYPE_IPV6: try to resolve IPv6 only
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1545   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1546  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1547  dns_gethostbyname_addrtype(const char *hostname, ip_addr_t *addr, dns_found_callback found,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1548                             void *callback_arg, u8_t dns_addrtype)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1549  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1550    size_t hostnamelen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1551  #if LWIP_DNS_SUPPORT_MDNS_QUERIES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1552    u8_t is_mdns;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1553  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1554    /* not initialized or no valid server yet, or invalid addr pointer
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1555     * or invalid hostname or invalid hostname length */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1556    if ((addr == NULL) ||
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1557        (!hostname) || (!hostname[0])) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1558      return ERR_ARG;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1559    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1560  #if ((LWIP_DNS_SECURE & LWIP_DNS_SECURE_RAND_SRC_PORT) == 0)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1561    if (dns_pcbs[0] == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1562      return ERR_ARG;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1563    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1564  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1565    hostnamelen = strlen(hostname);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1566    if (hostnamelen >= DNS_MAX_NAME_LENGTH) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1567      LWIP_DEBUGF(DNS_DEBUG, ("dns_gethostbyname: name too long to resolve"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1568      return ERR_ARG;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1569    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1570  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1571  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1572  #if LWIP_HAVE_LOOPIF
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1573    if (strcmp(hostname, "localhost") == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1574      ip_addr_set_loopback(LWIP_DNS_ADDRTYPE_IS_IPV6(dns_addrtype), addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1575      return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1576    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1577  #endif /* LWIP_HAVE_LOOPIF */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1578  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1579    /* host name already in octet notation? set ip addr and return ERR_OK */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1580    if (ipaddr_aton(hostname, addr)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1581  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1582      if ((IP_IS_V6(addr) && (dns_addrtype != LWIP_DNS_ADDRTYPE_IPV4)) ||
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1583          (IP_IS_V4(addr) && (dns_addrtype != LWIP_DNS_ADDRTYPE_IPV6)))
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1584  #endif /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1585      {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1586        return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1587      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1588    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1589    /* already have this address cached? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1590    if (dns_lookup(hostname, addr LWIP_DNS_ADDRTYPE_ARG(dns_addrtype)) == ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1591      return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1592    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1593  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1594    if ((dns_addrtype == LWIP_DNS_ADDRTYPE_IPV4_IPV6) || (dns_addrtype == LWIP_DNS_ADDRTYPE_IPV6_IPV4)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1595      /* fallback to 2nd IP type and try again to lookup */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1596      u8_t fallback;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1597      if (dns_addrtype == LWIP_DNS_ADDRTYPE_IPV4_IPV6) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1598        fallback = LWIP_DNS_ADDRTYPE_IPV6;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1599      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1600        fallback = LWIP_DNS_ADDRTYPE_IPV4;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1601      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1602      if (dns_lookup(hostname, addr LWIP_DNS_ADDRTYPE_ARG(fallback)) == ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1603        return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1604      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1605    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1606  #else /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1607    LWIP_UNUSED_ARG(dns_addrtype);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1608  #endif /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1609  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1610  #if LWIP_DNS_SUPPORT_MDNS_QUERIES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1611    if (strstr(hostname, ".local") == &hostname[hostnamelen] - 6) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1612      is_mdns = 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1613    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1614      is_mdns = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1615    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1616  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1617    if (!is_mdns)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1618  #endif /* LWIP_DNS_SUPPORT_MDNS_QUERIES */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1619    {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1620      /* prevent calling found callback if no server is set, return error instead */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1621      if (ip_addr_isany_val(dns_servers[0])) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1622        return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1623      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1624    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1625  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1626    /* queue query with specified callback */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1627    return dns_enqueue(hostname, hostnamelen, found, callback_arg LWIP_DNS_ADDRTYPE_ARG(dns_addrtype)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1628                       LWIP_DNS_ISMDNS_ARG(is_mdns));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1629  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1630  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\dns.c	  1631  #endif /* LWIP_DNS */
+
+	; Module end

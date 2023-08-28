@@ -1,0 +1,951 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Config\\Common\\.Ifx_Cfg_SswBmhd.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Config\\Common\\Ifx_Cfg_SswBmhd.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Config\\Common\\Ifx_Cfg_SswBmhd.src ..\\0_Src\\0_AppSw\\Config\\Common\\Ifx_Cfg_SswBmhd.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Config\\Common\\Ifx_Cfg_SswBmhd.c'
+
+	
+$TC162
+	
+	.sdecl	'.rodata.bmhd_0_orig',data,rom,cluster('bmhd_0_orig')
+	.sect	'.rodata.bmhd_0_orig'
+	.global	bmhd_0_orig
+	.align	4
+bmhd_0_orig:	.type	object
+	.size	bmhd_0_orig,500
+	.half	254,45913
+	.word	-1610612736,830035312,-830035313
+	.space	480
+	.word	1126240820
+	.sdecl	'.rodata.bmhd_0_copy',data,rom,cluster('bmhd_0_copy')
+	.sect	'.rodata.bmhd_0_copy'
+	.global	bmhd_0_copy
+	.align	4
+bmhd_0_copy:	.type	object
+	.size	bmhd_0_copy,500
+	.half	254,45913
+	.word	-1610612736,830035312,-830035313
+	.space	480
+	.word	1126240820
+	.sdecl	'.rodata.bmhd_1_orig',data,rom,cluster('bmhd_1_orig')
+	.sect	'.rodata.bmhd_1_orig'
+	.global	bmhd_1_orig
+	.align	4
+bmhd_1_orig:	.type	object
+	.size	bmhd_1_orig,500
+	.half	254,45913
+	.word	-1610612736,830035312,-830035313
+	.space	480
+	.word	1126240820
+	.sdecl	'.rodata.bmhd_1_copy',data,rom,cluster('bmhd_1_copy')
+	.sect	'.rodata.bmhd_1_copy'
+	.global	bmhd_1_copy
+	.align	4
+bmhd_1_copy:	.type	object
+	.size	bmhd_1_copy,500
+	.half	254,45913
+	.word	-1610612736,830035312,-830035313
+	.space	480
+	.word	1126240820
+	.sdecl	'.rodata.bmhd_2_orig',data,rom,cluster('bmhd_2_orig')
+	.sect	'.rodata.bmhd_2_orig'
+	.global	bmhd_2_orig
+	.align	4
+bmhd_2_orig:	.type	object
+	.size	bmhd_2_orig,500
+	.half	254,45913
+	.word	-1610612736,830035312,-830035313
+	.space	480
+	.word	1126240820
+	.sdecl	'.rodata.bmhd_2_copy',data,rom,cluster('bmhd_2_copy')
+	.sect	'.rodata.bmhd_2_copy'
+	.global	bmhd_2_copy
+	.align	4
+bmhd_2_copy:	.type	object
+	.size	bmhd_2_copy,500
+	.half	254,45913
+	.word	-1610612736,830035312,-830035313
+	.space	480
+	.word	1126240820
+	.sdecl	'.rodata.bmhd_3_orig',data,rom,cluster('bmhd_3_orig')
+	.sect	'.rodata.bmhd_3_orig'
+	.global	bmhd_3_orig
+	.align	4
+bmhd_3_orig:	.type	object
+	.size	bmhd_3_orig,500
+	.half	254,45913
+	.word	-1610612736,830035312,-830035313
+	.space	480
+	.word	1126240820
+	.sdecl	'.rodata.bmhd_3_copy',data,rom,cluster('bmhd_3_copy')
+	.sect	'.rodata.bmhd_3_copy'
+	.global	bmhd_3_copy
+	.align	4
+bmhd_3_copy:	.type	object
+	.size	bmhd_3_copy,500
+	.half	254,45913
+	.word	-1610612736,830035312,-830035313
+	.space	480
+	.word	1126240820
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	588
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Config\\Common\\Ifx_Cfg_SswBmhd.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	171
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	178
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	220
+	.byte	7
+	.word	220
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	236
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	241
+	.byte	9
+	.byte	'value',0
+	.word	220
+	.byte	9
+	.byte	'compare',0
+	.word	220
+	.byte	0,10,1,7
+	.word	298
+	.byte	11
+	.byte	'__codeptr',0,1,1,1
+	.word	300
+	.byte	2
+	.byte	'unsigned short int',0,2,7,12,240,1
+	.word	220
+	.byte	13,59,0,12,32
+	.word	220
+	.byte	13,7,0,12,208,1
+	.word	220
+	.byte	13,51,0,14,2,105,9,244,3,15
+	.byte	'bmi',0
+	.word	323
+	.byte	2,2,35,0,15
+	.byte	'bmhdid',0
+	.word	323
+	.byte	2,2,35,2,15
+	.byte	'stad',0
+	.word	220
+	.byte	4,2,35,4,15
+	.byte	'crc',0
+	.word	220
+	.byte	4,2,35,8,15
+	.byte	'crcInv',0
+	.word	220
+	.byte	4,2,35,12,15
+	.byte	'reserved0',0
+	.word	345
+	.byte	240,1,2,35,16,15
+	.byte	'pw',0
+	.word	355
+	.byte	32,3,35,128,2,15
+	.byte	'reserved1',0
+	.word	364
+	.byte	208,1,3,35,160,2,15
+	.byte	'confirmation',0
+	.word	220
+	.byte	4,3,35,240,3,0,11
+	.byte	'Ifx_Ssw_Bmhd',0,2,116,3
+	.word	374
+.L22:
+	.byte	3
+	.word	374
+.L23:
+	.byte	3
+	.word	374
+.L24:
+	.byte	3
+	.word	374
+.L25:
+	.byte	3
+	.word	374
+.L26:
+	.byte	3
+	.word	374
+.L27:
+	.byte	3
+	.word	374
+.L28:
+	.byte	3
+	.word	374
+.L29:
+	.byte	3
+	.word	374
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,21,0,54,15,0,0,11,22,0,3,8,58,15,59,15,57,15,73,19,0,0,12,1,1,11
+	.byte	15,73,19,0,0,13,33,0,47,15,0,0,14,19,1,58,15,59,15,57,15,11,15,0,0,15,13,0,3,8,73,19,11,15,56,9,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L31-.L30
+.L30:
+	.half	3
+	.word	.L33-.L32
+.L32:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers',0,0
+	.byte	'..\\0_Src\\0_AppSw\\Config\\Common\\Ifx_Cfg_SswBmhd.c',0,0,0,0
+	.byte	'Ifx_Ssw.h',0,1,0,0,0
+.L33:
+.L31:
+	.sdecl	'.debug_info',debug,cluster('bmhd_0_orig')
+	.sect	'.debug_info'
+.L6:
+	.word	196
+	.half	3
+	.word	.L7
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Config\\Common\\Ifx_Cfg_SswBmhd.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'bmhd_0_orig',0,1,50,20
+	.word	.L22
+	.byte	1,5,3
+	.word	bmhd_0_orig
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('bmhd_0_orig')
+	.sect	'.debug_abbrev'
+.L7:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('bmhd_0_copy')
+	.sect	'.debug_info'
+.L8:
+	.word	196
+	.half	3
+	.word	.L9
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Config\\Common\\Ifx_Cfg_SswBmhd.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'bmhd_0_copy',0,1,115,20
+	.word	.L23
+	.byte	1,5,3
+	.word	bmhd_0_copy
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('bmhd_0_copy')
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('bmhd_1_orig')
+	.sect	'.debug_info'
+.L10:
+	.word	197
+	.half	3
+	.word	.L11
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Config\\Common\\Ifx_Cfg_SswBmhd.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'bmhd_1_orig',0,1,180,1,20
+	.word	.L24
+	.byte	1,5,3
+	.word	bmhd_1_orig
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('bmhd_1_orig')
+	.sect	'.debug_abbrev'
+.L11:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('bmhd_1_copy')
+	.sect	'.debug_info'
+.L12:
+	.word	197
+	.half	3
+	.word	.L13
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Config\\Common\\Ifx_Cfg_SswBmhd.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'bmhd_1_copy',0,1,245,1,20
+	.word	.L25
+	.byte	1,5,3
+	.word	bmhd_1_copy
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('bmhd_1_copy')
+	.sect	'.debug_abbrev'
+.L13:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('bmhd_2_orig')
+	.sect	'.debug_info'
+.L14:
+	.word	197
+	.half	3
+	.word	.L15
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Config\\Common\\Ifx_Cfg_SswBmhd.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'bmhd_2_orig',0,1,182,2,20
+	.word	.L26
+	.byte	1,5,3
+	.word	bmhd_2_orig
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('bmhd_2_orig')
+	.sect	'.debug_abbrev'
+.L15:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('bmhd_2_copy')
+	.sect	'.debug_info'
+.L16:
+	.word	197
+	.half	3
+	.word	.L17
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Config\\Common\\Ifx_Cfg_SswBmhd.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'bmhd_2_copy',0,1,247,2,20
+	.word	.L27
+	.byte	1,5,3
+	.word	bmhd_2_copy
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('bmhd_2_copy')
+	.sect	'.debug_abbrev'
+.L17:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('bmhd_3_orig')
+	.sect	'.debug_info'
+.L18:
+	.word	197
+	.half	3
+	.word	.L19
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Config\\Common\\Ifx_Cfg_SswBmhd.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'bmhd_3_orig',0,1,184,3,20
+	.word	.L28
+	.byte	1,5,3
+	.word	bmhd_3_orig
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('bmhd_3_orig')
+	.sect	'.debug_abbrev'
+.L19:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('bmhd_3_copy')
+	.sect	'.debug_info'
+.L20:
+	.word	197
+	.half	3
+	.word	.L21
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Config\\Common\\Ifx_Cfg_SswBmhd.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'bmhd_3_copy',0,1,249,3,20
+	.word	.L29
+	.byte	1,5,3
+	.word	bmhd_3_copy
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('bmhd_3_copy')
+	.sect	'.debug_abbrev'
+.L21:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	     1  /**********************************************************************************************************************
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	     2   * \file Ifx_Cfg_SswBmhd.c
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	     3   * \brief This file contains the Bmhd for Aurix TC3XX.
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	     4   * \copyright Copyright (C) Infineon Technologies AG 2019
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	     5   * 
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	     6   * Use of this file is subject to the terms of use agreed between (i) you or the company in which ordinary course of 
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	     7   * business you are acting and (ii) Infineon Technologies AG or its licensees. If and as long as no such terms of use
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	     8   * are agreed, use of this file is subject to following:
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	     9   * 
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    10   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    11   * 
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    12   * Permission is hereby granted, free of charge, to any person or organization obtaining a copy of the software and 
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    13   * accompanying documentation covered by this license (the "Software") to use, reproduce, display, distribute, execute,
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    14   * and transmit the Software, and to prepare derivative works of the Software, and to permit third-parties to whom the
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    15   * Software is furnished to do so, all subject to the following:
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    16   * 
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    17   * The copyright notices in the Software and this entire statement, including the above license grant, this restriction
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    18   * and the following disclaimer, must be included in all copies of the Software, in whole or in part, and all 
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    19   * derivative works of the Software, unless such copies or derivative works are solely in the form of 
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    20   * machine-executable object code generated by a source language processor.
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    21   * 
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    22   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    23   * WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE 
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    24   * COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN 
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    25   * CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    26   * IN THE SOFTWARE.
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    27   *********************************************************************************************************************/
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    28   
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    29  /*********************************************************************************************************************/
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    30  /*-----------------------------------------------------Includes------------------------------------------------------*/
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    31  /*********************************************************************************************************************/
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    32  #include "Ifx_Ssw.h"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    33  
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    34  /*********************************************************************************************************************/
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    35  /*--------------------------------------------------BMHD constants---------------------------------------------------*/
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    36  /*********************************************************************************************************************/
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    37  #if defined(__HIGHTEC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    38  #pragma section
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    39  #pragma section ".bmhd_0_orig" a
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    40  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    41  #if defined(__TASKING__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    42  #pragma section farrom "bmhd_0_orig"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    43  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    44  #if defined(__DCC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    45  #pragma section CONST ".bmhd_0_orig" far-absolute R
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    46  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    47  #if defined(__ghs__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    48  #pragma ghs section rodata= ".bmhd_0_orig"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    49  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    50  const Ifx_Ssw_Bmhd bmhd_0_orig =
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    51  {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    52      0x00FE,         /* 0x000: .bmi: Boot Mode Index (BMI)                                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    53      0xB359,         /* 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    54      0xA0000000,     /* 0x004: .stad: User Code start address                                            */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    55      0x31795570,     /* 0x008: .crc: Check Result for the BMI Header (offset 000H - 007H)                */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    56      0xCE86AA8F,     /* 0x00C: .crcInv: Inverted Check Result for the BMI Header (offset 000H - 007H)    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    57      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    58          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x010: Reserved (0x010 - 0x01F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    59          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x020: Reserved (0x020 - 0x02F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    60          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x030: Reserved (0x030 - 0x03F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    61          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x040: Reserved (0x040 - 0x04F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    62          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x050: Reserved (0x050 - 0x05F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    63          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x060: Reserved (0x060 - 0x06F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    64          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x070: Reserved (0x070 - 0x07F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    65          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x080: Reserved (0x080 - 0x08F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    66          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x090: Reserved (0x090 - 0x09F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    67          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0A0: Reserved (0x0A0 - 0x0AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    68          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0B0: Reserved (0x0B0 - 0x0BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    69          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0C0: Reserved (0x0C0 - 0x0CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    70          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0D0: Reserved (0x0D0 - 0x0DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    71          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0E0: Reserved (0x0E0 - 0x0EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    72          0x00000000, 0x00000000, 0x00000000, 0x00000000         /* 0x0F0: Reserved (0x0F0 - 0x0FF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    73      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    74      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    75          0x00000000, /* 0x100: .pw0: Password protection word 0 (lsw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    76          0x00000000, /* 0x104: .pw1: Password protection word 1                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    77          0x00000000, /* 0x108: .pw2: Password protection word 2                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    78          0x00000000, /* 0x10C: .pw3: Password protection word 3                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    79          0x00000000, /* 0x110: .pw4: Password protection word 4                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    80          0x00000000, /* 0x114: .pw5: Password protection word 5                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    81          0x00000000, /* 0x118: .pw6: Password protection word 6                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    82          0x00000000, /* 0x11C: .pw7: Password protection word 7 (msw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    83      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    84      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    85          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x120: Reserved (0x120 - 0x12F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    86          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x130: Reserved (0x130 - 0x13F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    87          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x140: Reserved (0x140 - 0x14F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    88          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x150: Reserved (0x150 - 0x15F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    89          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x160: Reserved (0x160 - 0x16F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    90          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x170: Reserved (0x170 - 0x17F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    91          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x180: Reserved (0x180 - 0x18F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    92          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x190: Reserved (0x190 - 0x19F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    93          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1A0: Reserved (0x1A0 - 0x1AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    94          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1B0: Reserved (0x1B0 - 0x1BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    95          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1C0: Reserved (0x1C0 - 0x1CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    96          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1D0: Reserved (0x1D0 - 0x1DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    97          0x00000000, 0x00000000, 0x00000000, 0x00000000         /* 0x1E0: Reserved (0x1E0 - 0x1EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    98      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	    99      0x43211234      /* 0x1F0: .confirmation: 32-bit CODE, (always same)                                 */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   100  };
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   101  
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   102  #if defined(__HIGHTEC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   103  #pragma section
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   104  #pragma section ".bmhd_0_copy" a
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   105  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   106  #if defined(__TASKING__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   107  #pragma section farrom "bmhd_0_copy"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   108  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   109  #if defined(__DCC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   110  #pragma section CONST ".bmhd_0_copy" far-absolute R
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   111  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   112  #if defined(__ghs__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   113  #pragma ghs section rodata= ".bmhd_0_copy"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   114  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   115  const Ifx_Ssw_Bmhd bmhd_0_copy =
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   116  {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   117      0x00FE,         /* 0x000: .bmi: Boot Mode Index (BMI)                                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   118      0xB359,         /* 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   119      0xA0000000,     /* 0x004: .stad: User Code start address                                            */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   120      0x31795570,     /* 0x008: .crc: Check Result for the BMI Header (offset 000H - 007H)                */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   121      0xCE86AA8F,     /* 0x00C: .crcInv: Inverted Check Result for the BMI Header (offset 000H - 007H)    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   122      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   123          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x010: Reserved (0x010 - 0x01F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   124          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x020: Reserved (0x020 - 0x02F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   125          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x030: Reserved (0x030 - 0x03F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   126          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x040: Reserved (0x040 - 0x04F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   127          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x050: Reserved (0x050 - 0x05F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   128          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x060: Reserved (0x060 - 0x06F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   129          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x070: Reserved (0x070 - 0x07F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   130          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x080: Reserved (0x080 - 0x08F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   131          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x090: Reserved (0x090 - 0x09F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   132          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0A0: Reserved (0x0A0 - 0x0AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   133          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0B0: Reserved (0x0B0 - 0x0BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   134          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0C0: Reserved (0x0C0 - 0x0CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   135          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0D0: Reserved (0x0D0 - 0x0DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   136          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0E0: Reserved (0x0E0 - 0x0EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   137          0x00000000, 0x00000000, 0x00000000, 0x00000000         /* 0x0F0: Reserved (0x0F0 - 0x0FF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   138      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   139      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   140          0x00000000, /* 0x100: .pw0: Password protection word 0 (lsw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   141          0x00000000, /* 0x104: .pw1: Password protection word 1                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   142          0x00000000, /* 0x108: .pw2: Password protection word 2                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   143          0x00000000, /* 0x10C: .pw3: Password protection word 3                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   144          0x00000000, /* 0x110: .pw4: Password protection word 4                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   145          0x00000000, /* 0x114: .pw5: Password protection word 5                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   146          0x00000000, /* 0x118: .pw6: Password protection word 6                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   147          0x00000000, /* 0x11C: .pw7: Password protection word 7 (msw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   148      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   149      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   150          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x120: Reserved (0x120 - 0x12F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   151          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x130: Reserved (0x120 - 0x13F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   152          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x140: Reserved (0x120 - 0x14F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   153          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x150: Reserved (0x120 - 0x15F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   154          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x160: Reserved (0x120 - 0x16F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   155          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x170: Reserved (0x120 - 0x17F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   156          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x180: Reserved (0x120 - 0x18F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   157          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x190: Reserved (0x120 - 0x19F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   158          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1A0: Reserved (0x120 - 0x1AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   159          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1B0: Reserved (0x120 - 0x1BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   160          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1C0: Reserved (0x120 - 0x1CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   161          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1D0: Reserved (0x120 - 0x1DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   162          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1E0: Reserved (0x120 - 0x1EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   163      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   164      0x43211234      /* 0x1F0: .confirmation: 32-bit CODE, (always same)                                 */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   165  };
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   166  
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   167  #if defined(__HIGHTEC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   168  #pragma section
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   169  #pragma section ".bmhd_1_orig" a
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   170  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   171  #if defined(__TASKING__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   172  #pragma section farrom "bmhd_1_orig"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   173  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   174  #if defined(__DCC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   175  #pragma section CONST ".bmhd_1_orig" far-absolute R
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   176  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   177  #if defined(__ghs__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   178  #pragma ghs section rodata= ".bmhd_1_orig"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   179  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   180  const Ifx_Ssw_Bmhd bmhd_1_orig =
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   181  {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   182      0x00FE,         /* 0x000: .bmi: Boot Mode Index (BMI)                                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   183      0xB359,         /* 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   184      0xA0000000,     /* 0x004: .stad: User Code start address                                            */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   185      0x31795570,     /* 0x008: .crc: Check Result for the BMI Header (offset 000H - 007H)                */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   186      0xCE86AA8F,     /* 0x00C: .crcInv: Inverted Check Result for the BMI Header (offset 000H - 007H)    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   187      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   188          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x010: Reserved (0x010 - 0x01F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   189          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x020: Reserved (0x020 - 0x02F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   190          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x030: Reserved (0x030 - 0x03F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   191          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x040: Reserved (0x040 - 0x04F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   192          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x050: Reserved (0x050 - 0x05F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   193          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x060: Reserved (0x060 - 0x06F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   194          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x070: Reserved (0x070 - 0x07F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   195          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x080: Reserved (0x080 - 0x08F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   196          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x090: Reserved (0x090 - 0x09F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   197          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0A0: Reserved (0x0A0 - 0x0AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   198          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0B0: Reserved (0x0B0 - 0x0BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   199          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0C0: Reserved (0x0C0 - 0x0CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   200          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0D0: Reserved (0x0D0 - 0x0DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   201          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0E0: Reserved (0x0E0 - 0x0EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   202          0x00000000, 0x00000000, 0x00000000, 0x00000000         /* 0x0F0: Reserved (0x0F0 - 0x0FF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   203      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   204      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   205          0x00000000, /* 0x100: .pw0: Password protection word 0 (lsw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   206          0x00000000, /* 0x104: .pw1: Password protection word 1                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   207          0x00000000, /* 0x108: .pw2: Password protection word 2                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   208          0x00000000, /* 0x10C: .pw3: Password protection word 3                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   209          0x00000000, /* 0x110: .pw4: Password protection word 4                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   210          0x00000000, /* 0x114: .pw5: Password protection word 5                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   211          0x00000000, /* 0x118: .pw6: Password protection word 6                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   212          0x00000000, /* 0x11C: .pw7: Password protection word 7 (msw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   213      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   214      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   215          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x120: Reserved (0x120 - 0x12F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   216          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x130: Reserved (0x130 - 0x13F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   217          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x140: Reserved (0x140 - 0x14F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   218          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x150: Reserved (0x150 - 0x15F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   219          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x160: Reserved (0x160 - 0x16F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   220          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x170: Reserved (0x170 - 0x17F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   221          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x180: Reserved (0x180 - 0x18F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   222          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x190: Reserved (0x190 - 0x19F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   223          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1A0: Reserved (0x1A0 - 0x1AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   224          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1B0: Reserved (0x1B0 - 0x1BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   225          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1C0: Reserved (0x1C0 - 0x1CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   226          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1D0: Reserved (0x1D0 - 0x1DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   227          0x00000000, 0x00000000, 0x00000000, 0x00000000         /* 0x1E0: Reserved (0x1E0 - 0x1EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   228      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   229      0x43211234      /* 0x1F0: .confirmation: 32-bit CODE, (always same)                                 */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   230  };
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   231  
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   232  #if defined(__HIGHTEC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   233  #pragma section
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   234  #pragma section ".bmhd_1_copy" a
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   235  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   236  #if defined(__TASKING__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   237  #pragma section farrom "bmhd_1_copy"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   238  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   239  #if defined(__DCC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   240  #pragma section CONST ".bmhd_1_copy" far-absolute R
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   241  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   242  #if defined(__ghs__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   243  #pragma ghs section rodata= ".bmhd_1_copy"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   244  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   245  const Ifx_Ssw_Bmhd bmhd_1_copy =
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   246  {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   247      0x00FE,         /* 0x000: .bmi: Boot Mode Index (BMI)                                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   248      0xB359,         /* 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   249      0xA0000000,     /* 0x004: .stad: User Code start address                                            */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   250      0x31795570,     /* 0x008: .crc: Check Result for the BMI Header (offset 000H - 007H)                */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   251      0xCE86AA8F,     /* 0x00C: .crcInv: Inverted Check Result for the BMI Header (offset 000H - 007H)    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   252      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   253          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x010: Reserved (0x010 - 0x01F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   254          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x020: Reserved (0x020 - 0x02F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   255          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x030: Reserved (0x030 - 0x03F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   256          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x040: Reserved (0x040 - 0x04F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   257          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x050: Reserved (0x050 - 0x05F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   258          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x060: Reserved (0x060 - 0x06F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   259          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x070: Reserved (0x070 - 0x07F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   260          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x080: Reserved (0x080 - 0x08F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   261          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x090: Reserved (0x090 - 0x09F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   262          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0A0: Reserved (0x0A0 - 0x0AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   263          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0B0: Reserved (0x0B0 - 0x0BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   264          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0C0: Reserved (0x0C0 - 0x0CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   265          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0D0: Reserved (0x0D0 - 0x0DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   266          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0E0: Reserved (0x0E0 - 0x0EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   267          0x00000000, 0x00000000, 0x00000000, 0x00000000         /* 0x0F0: Reserved (0x0F0 - 0x0FF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   268      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   269      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   270          0x00000000, /* 0x100: .pw0: Password protection word 0 (lsw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   271          0x00000000, /* 0x104: .pw1: Password protection word 1                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   272          0x00000000, /* 0x108: .pw2: Password protection word 2                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   273          0x00000000, /* 0x10C: .pw3: Password protection word 3                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   274          0x00000000, /* 0x110: .pw4: Password protection word 4                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   275          0x00000000, /* 0x114: .pw5: Password protection word 5                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   276          0x00000000, /* 0x118: .pw6: Password protection word 6                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   277          0x00000000, /* 0x11C: .pw7: Password protection word 7 (msw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   278      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   279      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   280          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x120: Reserved (0x120 - 0x12F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   281          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x130: Reserved (0x120 - 0x13F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   282          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x140: Reserved (0x120 - 0x14F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   283          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x150: Reserved (0x120 - 0x15F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   284          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x160: Reserved (0x120 - 0x16F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   285          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x170: Reserved (0x120 - 0x17F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   286          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x180: Reserved (0x120 - 0x18F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   287          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x190: Reserved (0x120 - 0x19F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   288          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1A0: Reserved (0x120 - 0x1AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   289          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1B0: Reserved (0x120 - 0x1BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   290          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1C0: Reserved (0x120 - 0x1CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   291          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1D0: Reserved (0x120 - 0x1DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   292          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1E0: Reserved (0x120 - 0x1EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   293      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   294      0x43211234      /* 0x1F0: .confirmation: 32-bit CODE, (always same)                                 */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   295  };
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   296  
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   297  #if defined(__HIGHTEC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   298  #pragma section
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   299  #pragma section ".bmhd_2_orig" a
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   300  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   301  #if defined(__TASKING__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   302  #pragma section farrom "bmhd_2_orig"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   303  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   304  #if defined(__DCC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   305  #pragma section CONST ".bmhd_2_orig" far-absolute R
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   306  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   307  #if defined(__ghs__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   308  #pragma ghs section rodata= ".bmhd_2_orig"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   309  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   310  const Ifx_Ssw_Bmhd bmhd_2_orig =
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   311  {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   312      0x00FE,         /* 0x000: .bmi: Boot Mode Index (BMI)                                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   313      0xB359,         /* 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   314      0xA0000000,     /* 0x004: .stad: User Code start address                                            */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   315      0x31795570,     /* 0x008: .crc: Check Result for the BMI Header (offset 000H - 007H)                */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   316      0xCE86AA8F,     /* 0x00C: .crcInv: Inverted Check Result for the BMI Header (offset 000H - 007H)    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   317      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   318          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x010: Reserved (0x010 - 0x01F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   319          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x020: Reserved (0x020 - 0x02F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   320          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x030: Reserved (0x030 - 0x03F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   321          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x040: Reserved (0x040 - 0x04F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   322          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x050: Reserved (0x050 - 0x05F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   323          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x060: Reserved (0x060 - 0x06F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   324          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x070: Reserved (0x070 - 0x07F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   325          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x080: Reserved (0x080 - 0x08F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   326          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x090: Reserved (0x090 - 0x09F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   327          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0A0: Reserved (0x0A0 - 0x0AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   328          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0B0: Reserved (0x0B0 - 0x0BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   329          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0C0: Reserved (0x0C0 - 0x0CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   330          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0D0: Reserved (0x0D0 - 0x0DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   331          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0E0: Reserved (0x0E0 - 0x0EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   332          0x00000000, 0x00000000, 0x00000000, 0x00000000         /* 0x0F0: Reserved (0x0F0 - 0x0FF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   333      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   334      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   335          0x00000000, /* 0x100: .pw0: Password protection word 0 (lsw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   336          0x00000000, /* 0x104: .pw1: Password protection word 1                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   337          0x00000000, /* 0x108: .pw2: Password protection word 2                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   338          0x00000000, /* 0x10C: .pw3: Password protection word 3                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   339          0x00000000, /* 0x110: .pw4: Password protection word 4                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   340          0x00000000, /* 0x114: .pw5: Password protection word 5                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   341          0x00000000, /* 0x118: .pw6: Password protection word 6                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   342          0x00000000, /* 0x11C: .pw7: Password protection word 7 (msw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   343      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   344      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   345          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x120: Reserved (0x120 - 0x12F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   346          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x130: Reserved (0x130 - 0x13F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   347          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x140: Reserved (0x140 - 0x14F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   348          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x150: Reserved (0x150 - 0x15F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   349          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x160: Reserved (0x160 - 0x16F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   350          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x170: Reserved (0x170 - 0x17F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   351          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x180: Reserved (0x180 - 0x18F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   352          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x190: Reserved (0x190 - 0x19F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   353          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1A0: Reserved (0x1A0 - 0x1AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   354          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1B0: Reserved (0x1B0 - 0x1BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   355          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1C0: Reserved (0x1C0 - 0x1CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   356          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1D0: Reserved (0x1D0 - 0x1DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   357          0x00000000, 0x00000000, 0x00000000, 0x00000000         /* 0x1E0: Reserved (0x1E0 - 0x1EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   358      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   359      0x43211234      /* 0x1F0: .confirmation: 32-bit CODE, (always same)                                 */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   360  };
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   361  
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   362  #if defined(__HIGHTEC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   363  #pragma section
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   364  #pragma section ".bmhd_2_copy" a
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   365  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   366  #if defined(__TASKING__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   367  #pragma section farrom "bmhd_2_copy"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   368  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   369  #if defined(__DCC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   370  #pragma section CONST ".bmhd_2_copy" far-absolute R
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   371  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   372  #if defined(__ghs__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   373  #pragma ghs section rodata= ".bmhd_2_copy"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   374  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   375  const Ifx_Ssw_Bmhd bmhd_2_copy =
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   376  {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   377      0x00FE,         /* 0x000: .bmi: Boot Mode Index (BMI)                                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   378      0xB359,         /* 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   379      0xA0000000,     /* 0x004: .stad: User Code start address                                            */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   380      0x31795570,     /* 0x008: .crc: Check Result for the BMI Header (offset 000H - 007H)                */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   381      0xCE86AA8F,     /* 0x00C: .crcInv: Inverted Check Result for the BMI Header (offset 000H - 007H)    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   382      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   383          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x010: Reserved (0x010 - 0x01F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   384          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x020: Reserved (0x020 - 0x02F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   385          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x030: Reserved (0x030 - 0x03F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   386          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x040: Reserved (0x040 - 0x04F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   387          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x050: Reserved (0x050 - 0x05F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   388          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x060: Reserved (0x060 - 0x06F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   389          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x070: Reserved (0x070 - 0x07F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   390          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x080: Reserved (0x080 - 0x08F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   391          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x090: Reserved (0x090 - 0x09F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   392          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0A0: Reserved (0x0A0 - 0x0AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   393          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0B0: Reserved (0x0B0 - 0x0BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   394          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0C0: Reserved (0x0C0 - 0x0CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   395          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0D0: Reserved (0x0D0 - 0x0DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   396          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0E0: Reserved (0x0E0 - 0x0EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   397          0x00000000, 0x00000000, 0x00000000, 0x00000000         /* 0x0F0: Reserved (0x0F0 - 0x0FF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   398      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   399      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   400          0x00000000, /* 0x100: .pw0: Password protection word 0 (lsw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   401          0x00000000, /* 0x104: .pw1: Password protection word 1                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   402          0x00000000, /* 0x108: .pw2: Password protection word 2                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   403          0x00000000, /* 0x10C: .pw3: Password protection word 3                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   404          0x00000000, /* 0x110: .pw4: Password protection word 4                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   405          0x00000000, /* 0x114: .pw5: Password protection word 5                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   406          0x00000000, /* 0x118: .pw6: Password protection word 6                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   407          0x00000000, /* 0x11C: .pw7: Password protection word 7 (msw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   408      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   409      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   410          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x120: Reserved (0x120 - 0x12F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   411          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x130: Reserved (0x120 - 0x13F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   412          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x140: Reserved (0x120 - 0x14F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   413          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x150: Reserved (0x120 - 0x15F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   414          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x160: Reserved (0x120 - 0x16F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   415          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x170: Reserved (0x120 - 0x17F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   416          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x180: Reserved (0x120 - 0x18F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   417          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x190: Reserved (0x120 - 0x19F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   418          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1A0: Reserved (0x120 - 0x1AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   419          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1B0: Reserved (0x120 - 0x1BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   420          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1C0: Reserved (0x120 - 0x1CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   421          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1D0: Reserved (0x120 - 0x1DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   422          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1E0: Reserved (0x120 - 0x1EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   423      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   424      0x43211234      /* 0x1F0: .confirmation: 32-bit CODE, (always same)                                 */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   425  };
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   426  
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   427  #if defined(__HIGHTEC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   428  #pragma section
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   429  #pragma section ".bmhd_3_orig" a
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   430  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   431  #if defined(__TASKING__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   432  #pragma section farrom "bmhd_3_orig"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   433  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   434  #if defined(__DCC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   435  #pragma section CONST ".bmhd_3_orig" far-absolute R
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   436  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   437  #if defined(__ghs__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   438  #pragma ghs section rodata= ".bmhd_3_orig"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   439  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   440  const Ifx_Ssw_Bmhd bmhd_3_orig =
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   441  {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   442      0x00FE,         /* 0x000: .bmi: Boot Mode Index (BMI)                                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   443      0xB359,         /* 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   444      0xA0000000,     /* 0x004: .stad: User Code start address                                            */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   445      0x31795570,     /* 0x008: .crc: Check Result for the BMI Header (offset 000H - 007H)                */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   446      0xCE86AA8F,     /* 0x00C: .crcInv: Inverted Check Result for the BMI Header (offset 000H - 007H)    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   447      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   448          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x010: Reserved (0x010 - 0x01F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   449          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x020: Reserved (0x020 - 0x02F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   450          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x030: Reserved (0x030 - 0x03F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   451          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x040: Reserved (0x040 - 0x04F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   452          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x050: Reserved (0x050 - 0x05F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   453          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x060: Reserved (0x060 - 0x06F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   454          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x070: Reserved (0x070 - 0x07F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   455          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x080: Reserved (0x080 - 0x08F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   456          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x090: Reserved (0x090 - 0x09F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   457          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0A0: Reserved (0x0A0 - 0x0AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   458          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0B0: Reserved (0x0B0 - 0x0BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   459          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0C0: Reserved (0x0C0 - 0x0CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   460          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0D0: Reserved (0x0D0 - 0x0DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   461          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0E0: Reserved (0x0E0 - 0x0EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   462          0x00000000, 0x00000000, 0x00000000, 0x00000000         /* 0x0F0: Reserved (0x0F0 - 0x0FF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   463      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   464      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   465          0x00000000, /* 0x100: .pw0: Password protection word 0 (lsw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   466          0x00000000, /* 0x104: .pw1: Password protection word 1                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   467          0x00000000, /* 0x108: .pw2: Password protection word 2                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   468          0x00000000, /* 0x10C: .pw3: Password protection word 3                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   469          0x00000000, /* 0x110: .pw4: Password protection word 4                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   470          0x00000000, /* 0x114: .pw5: Password protection word 5                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   471          0x00000000, /* 0x118: .pw6: Password protection word 6                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   472          0x00000000, /* 0x11C: .pw7: Password protection word 7 (msw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   473      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   474      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   475          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x120: Reserved (0x120 - 0x12F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   476          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x130: Reserved (0x130 - 0x13F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   477          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x140: Reserved (0x140 - 0x14F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   478          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x150: Reserved (0x150 - 0x15F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   479          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x160: Reserved (0x160 - 0x16F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   480          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x170: Reserved (0x170 - 0x17F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   481          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x180: Reserved (0x180 - 0x18F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   482          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x190: Reserved (0x190 - 0x19F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   483          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1A0: Reserved (0x1A0 - 0x1AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   484          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1B0: Reserved (0x1B0 - 0x1BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   485          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1C0: Reserved (0x1C0 - 0x1CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   486          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1D0: Reserved (0x1D0 - 0x1DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   487          0x00000000, 0x00000000, 0x00000000, 0x00000000         /* 0x1E0: Reserved (0x1E0 - 0x1EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   488      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   489      0x43211234      /* 0x1F0: .confirmation: 32-bit CODE, (always same)                                 */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   490  };
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   491  
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   492  #if defined(__HIGHTEC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   493  #pragma section
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   494  #pragma section ".bmhd_3_copy" a
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   495  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   496  #if defined(__TASKING__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   497  #pragma section farrom "bmhd_3_copy"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   498  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   499  #if defined(__DCC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   500  #pragma section CONST ".bmhd_3_copy" far-absolute R
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   501  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   502  #if defined(__ghs__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   503  #pragma ghs section rodata= ".bmhd_3_copy"
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   504  #endif
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   505  const Ifx_Ssw_Bmhd bmhd_3_copy =
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   506  {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   507      0x00FE,         /* 0x000: .bmi: Boot Mode Index (BMI)                                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   508      0xB359,         /* 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H                               */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   509      0xA0000000,     /* 0x004: .stad: User Code start address                                            */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   510      0x31795570,     /* 0x008: .crc: Check Result for the BMI Header (offset 000H - 007H)                */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   511      0xCE86AA8F,     /* 0x00C: .crcInv: Inverted Check Result for the BMI Header (offset 000H - 007H)    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   512      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   513          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x010: Reserved (0x010 - 0x01F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   514          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x020: Reserved (0x020 - 0x02F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   515          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x030: Reserved (0x030 - 0x03F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   516          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x040: Reserved (0x040 - 0x04F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   517          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x050: Reserved (0x050 - 0x05F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   518          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x060: Reserved (0x060 - 0x06F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   519          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x070: Reserved (0x070 - 0x07F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   520          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x080: Reserved (0x080 - 0x08F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   521          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x090: Reserved (0x090 - 0x09F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   522          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0A0: Reserved (0x0A0 - 0x0AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   523          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0B0: Reserved (0x0B0 - 0x0BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   524          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0C0: Reserved (0x0C0 - 0x0CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   525          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0D0: Reserved (0x0D0 - 0x0DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   526          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x0E0: Reserved (0x0E0 - 0x0EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   527          0x00000000, 0x00000000, 0x00000000, 0x00000000         /* 0x0F0: Reserved (0x0F0 - 0x0FF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   528      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   529      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   530          0x00000000, /* 0x100: .pw0: Password protection word 0 (lsw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   531          0x00000000, /* 0x104: .pw1: Password protection word 1                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   532          0x00000000, /* 0x108: .pw2: Password protection word 2                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   533          0x00000000, /* 0x10C: .pw3: Password protection word 3                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   534          0x00000000, /* 0x110: .pw4: Password protection word 4                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   535          0x00000000, /* 0x114: .pw5: Password protection word 5                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   536          0x00000000, /* 0x118: .pw6: Password protection word 6                                          */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   537          0x00000000, /* 0x11C: .pw7: Password protection word 7 (msw)                                    */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   538      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   539      {
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   540          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x120: Reserved (0x120 - 0x12F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   541          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x130: Reserved (0x120 - 0x13F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   542          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x140: Reserved (0x120 - 0x14F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   543          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x150: Reserved (0x120 - 0x15F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   544          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x160: Reserved (0x120 - 0x16F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   545          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x170: Reserved (0x120 - 0x17F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   546          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x180: Reserved (0x120 - 0x18F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   547          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x190: Reserved (0x120 - 0x19F)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   548          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1A0: Reserved (0x120 - 0x1AF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   549          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1B0: Reserved (0x120 - 0x1BF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   550          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1C0: Reserved (0x120 - 0x1CF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   551          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1D0: Reserved (0x120 - 0x1DF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   552          0x00000000, 0x00000000, 0x00000000, 0x00000000,        /* 0x1E0: Reserved (0x120 - 0x1EF)       */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   553      },
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   554      0x43211234      /* 0x1F0: .confirmation: 32-bit CODE, (always same)                                 */
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   555  };
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   556  
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   557  #if defined(__HIGHTEC__)
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   558  #pragma section
+; ..\0_Src\0_AppSw\Config\Common\Ifx_Cfg_SswBmhd.c	   559  #endif
+
+	; Module end

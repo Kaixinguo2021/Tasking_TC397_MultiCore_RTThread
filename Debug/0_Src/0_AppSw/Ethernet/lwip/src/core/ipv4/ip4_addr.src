@@ -1,0 +1,2378 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\.ip4_addr.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Rtl8211f -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.src ..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c'
+
+	
+$TC162
+	.sdecl	'.zrodata.ip4_addr..4.cnt',data,rom
+	.sect	'.zrodata.ip4_addr..4.cnt'
+	.align	2
+.4.cnt:	.type	object
+	.size	.4.cnt,4
+	.word	16777215
+	
+	.sdecl	'.text.ip4_addr.ip4_addr_isbroadcast_u32',code,cluster('ip4_addr_isbroadcast_u32')
+	.sect	'.text.ip4_addr.ip4_addr_isbroadcast_u32'
+	.align	2
+	
+	.global	ip4_addr_isbroadcast_u32
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	     1  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	     2   * @file
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	     3   * This is the IPv4 address tools implementation.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	     4   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	     5   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	     6  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	     7  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	     8   * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	     9   * All rights reserved.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    10   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    11   * Redistribution and use in source and binary forms, with or without modification,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    12   * are permitted provided that the following conditions are met:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    13   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    14   * 1. Redistributions of source code must retain the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    15   *    this list of conditions and the following disclaimer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    16   * 2. Redistributions in binary form must reproduce the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    17   *    this list of conditions and the following disclaimer in the documentation
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    18   *    and/or other materials provided with the distribution.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    19   * 3. The name of the author may not be used to endorse or promote products
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    20   *    derived from this software without specific prior written permission.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    21   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    22   * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    23   * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    24   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    25   * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    26   * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    27   * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    28   * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    29   * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    30   * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    31   * OF SUCH DAMAGE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    32   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    33   * This file is part of the lwIP TCP/IP stack.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    34   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    35   * Author: Adam Dunkels <adam@sics.se>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    36   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    37   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    38  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    39  #include "lwip/opt.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    40  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    41  #if LWIP_IPV4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    42  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    43  #include "lwip/ip_addr.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    44  #include "lwip/netif.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    45  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    46  /* used by IP4_ADDR_ANY and IP_ADDR_BROADCAST in ip_addr.h */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    47  const ip_addr_t ip_addr_any = IPADDR4_INIT(IPADDR_ANY);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    48  const ip_addr_t ip_addr_broadcast = IPADDR4_INIT(IPADDR_BROADCAST);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    49  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    50  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    51   * Determine if an address is a broadcast address on a network interface
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    52   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    53   * @param addr address to be checked
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    54   * @param netif the network interface against which the address is checked
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    55   * @return returns non-zero if the address is a broadcast address
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    56   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    57  u8_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    58  ip4_addr_isbroadcast_u32(u32_t addr, const struct netif *netif)
+; Function ip4_addr_isbroadcast_u32
+.L67:
+ip4_addr_isbroadcast_u32:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    59  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    60    ip4_addr_t ipaddr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    61    ip4_addr_set_u32(&ipaddr, addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    62  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    63    /* all ones (broadcast) or all zeroes (old skool broadcast) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    64    if ((~addr == IPADDR_ANY) ||
+	mov	d0,#-1
+	xor	d15,d4,d0
+.L204:
+	jeq	d15,#0,.L2
+.L205:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    65        (addr == IPADDR_ANY)) {
+	jeq	d4,#0,.L3
+.L206:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    66      return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    67      /* no broadcast support on this network interface? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    68    } else if ((netif->flags & NETIF_FLAG_BROADCAST) == 0) {
+	ld.bu	d15,[a4]41
+.L207:
+	jz.t	d15:1,.L4
+.L208:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    69      /* the given address cannot be a broadcast address
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    70       * nor can we check against any broadcast addresses */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    71      return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    72      /* address matches network interface address exactly? => no broadcast */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    73    } else if (addr == ip4_addr_get_u32(netif_ip4_addr(netif))) {
+	ld.w	d15,[a4]4
+.L209:
+	jeq	d15,d4,.L5
+.L210:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    74      return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    75      /*  on the same (sub) network... */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    76    } else if (ip4_addr_netcmp(&ipaddr, netif_ip4_addr(netif), netif_ip4_netmask(netif))
+	ld.w	d1,[a4]8
+	and	d2,d4,d1
+	and	d15,d1
+	jne	d15,d2,.L6
+.L211:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    77               /* ...and host identifier bits are all ones? =>... */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    78               && ((addr & ~ip4_addr_get_u32(netif_ip4_netmask(netif))) ==
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    79                   (IPADDR_BROADCAST & ~ip4_addr_get_u32(netif_ip4_netmask(netif))))) {
+	xor	d0,d1
+.L212:
+	and	d4,d0
+.L166:
+	jne	d4,d0,.L7
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    80      /* => network broadcast address */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    81      return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    82    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    83      return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    84    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    85  }
+.L3:
+.L2:
+	mov	d2,#1
+	ret
+.L7:
+.L6:
+.L5:
+.L4:
+	mov	d2,#0
+	ret
+.L117:
+	
+__ip4_addr_isbroadcast_u32_function_end:
+	.size	ip4_addr_isbroadcast_u32,__ip4_addr_isbroadcast_u32_function_end-ip4_addr_isbroadcast_u32
+.L86:
+	; End of function
+	
+	.sdecl	'.text.ip4_addr.ip4_addr_netmask_valid',code,cluster('ip4_addr_netmask_valid')
+	.sect	'.text.ip4_addr.ip4_addr_netmask_valid'
+	.align	2
+	
+	.global	ip4_addr_netmask_valid
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    86  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    87  /** Checks if a netmask is valid (starting with ones, then only zeros)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    88   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    89   * @param netmask the IPv4 netmask to check (in network byte order!)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    90   * @return 1 if the netmask is valid, 0 if it is not
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    91   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    92  u8_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    93  ip4_addr_netmask_valid(u32_t netmask)
+; Function ip4_addr_netmask_valid
+.L69:
+ip4_addr_netmask_valid:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    94  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    95    u32_t mask;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    96    u32_t nm_hostorder = lwip_htonl(netmask);
+	call	lwip_htonl
+.L167:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    97  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    98    /* first, check for the first zero */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	    99    for (mask = 1UL << 31 ; mask != 0; mask >>= 1) {
+	movh	d15,#32768
+.L10:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   100      if ((nm_hostorder & mask) == 0) {
+	and	d0,d2,d15
+.L217:
+	jeq	d0,#0,.L12
+.L218:
+	sh	d15,#-1
+.L219:
+	jne	d15,#0,.L10
+.L220:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   101        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   102      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   103    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   104    /* then check that there is no one */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   105    for (; mask != 0; mask >>= 1) {
+	j	.L12
+.L13:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   106      if ((nm_hostorder & mask) != 0) {
+	and	d0,d2,d15
+.L221:
+	jeq	d0,#0,.L14
+.L222:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   107        /* there is a one after the first zero -> invalid */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   108        return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   109      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   110    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   111    /* no one after the first zero -> valid */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   112    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   113  }
+	mov	d2,#0
+	ret
+.L14:
+	sh	d15,#-1
+.L12:
+	jne	d15,#0,.L13
+.L223:
+	mov	d2,#1
+	ret
+.L124:
+	
+__ip4_addr_netmask_valid_function_end:
+	.size	ip4_addr_netmask_valid,__ip4_addr_netmask_valid_function_end-ip4_addr_netmask_valid
+.L91:
+	; End of function
+	
+	.sdecl	'.text.ip4_addr.ipaddr_addr',code,cluster('ipaddr_addr')
+	.sect	'.text.ip4_addr.ipaddr_addr'
+	.align	2
+	
+	.global	ipaddr_addr
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   114  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   115  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   116   * Ascii internet address interpretation routine.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   117   * The value returned is in network order.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   118   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   119   * @param cp IP address in ascii representation (e.g. "127.0.0.1")
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   120   * @return ip address in network order
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   121   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   122  u32_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   123  ipaddr_addr(const char *cp)
+; Function ipaddr_addr
+.L71:
+ipaddr_addr:	.type	func
+	sub.a	a10,#8
+.L168:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   124  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   125    ip4_addr_t val;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   126  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   127    if (ip4addr_aton(cp, &val)) {
+	mov.aa	a5,a10
+	call	ip4addr_aton
+.L169:
+	jeq	d2,#0,.L17
+.L228:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   128      return ip4_addr_get_u32(&val);
+	ld.w	d2,[a10]
+.L229:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   129    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   130    return (IPADDR_NONE);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   131  }
+	ret
+.L17:
+	mov	d2,#-1
+	ret
+.L128:
+	
+__ipaddr_addr_function_end:
+	.size	ipaddr_addr,__ipaddr_addr_function_end-ipaddr_addr
+.L96:
+	; End of function
+	
+	.sdecl	'.text.ip4_addr.ip4addr_aton',code,cluster('ip4addr_aton')
+	.sect	'.text.ip4_addr.ip4addr_aton'
+	.align	2
+	
+	.global	ip4addr_aton
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   132  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   133  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   134   * Check whether "cp" is a valid ascii representation
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   135   * of an Internet address and convert to a binary address.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   136   * Returns 1 if the address is valid, 0 if not.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   137   * This replaces inet_addr, the return value from which
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   138   * cannot distinguish between failure and a local broadcast address.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   139   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   140   * @param cp IP address in ascii representation (e.g. "127.0.0.1")
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   141   * @param addr pointer to which to save the ip address in network order
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   142   * @return 1 if cp could be converted to addr, 0 on failure
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   143   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   144  int
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   145  ip4addr_aton(const char *cp, ip4_addr_t *addr)
+; Function ip4addr_aton
+.L73:
+ip4addr_aton:	.type	func
+	sub.a	a10,#32
+.L170:
+	mov.aa	a12,a5
+.L172:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   146  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   147    u32_t val;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   148    u8_t base;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   149    char c;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   150    u32_t parts[4];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   151    u32_t *pp = parts;
+	lea	a15,[a10]12
+.L173:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   152  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   153    c = *cp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   154    for (;;) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   155      /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   156       * Collect number up to ``.''.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   157       * Values are specified as for C:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   158       * 0x=hex, 0=octal, 1-9=decimal.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   159       */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   160      if (!lwip_isdigit(c)) {
+	movh.a	a2,#@his(__ctype)
+	lea	a2,[a2]@los(__ctype)
+	add.a	a2,#1
+.L234:
+	j	.L20
+.L21:
+	extr.u	d15,d0,#0,#8
+	addsc.a	a5,a2,d15,#0
+	ld.bu	d15,[a5]
+	jz.t	d15:5,.L22
+.L235:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   161        return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   162      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   163      val = 0;
+	mov	d8,#0
+.L175:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   164      base = 10;
+	mov	d1,#10
+.L177:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   165      if (c == '0') {
+	mov	d15,#48
+.L236:
+	jne	d15,d0,.L23
+.L237:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   166        c = *++cp;
+	ld.b	d0,[+a4]1
+.L238:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   167        if (c == 'x' || c == 'X') {
+	mov	d15,#120
+.L239:
+	jeq	d15,d0,.L24
+.L240:
+	mov	d15,#88
+.L241:
+	jne	d15,d0,.L25
+.L24:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   168          base = 16;
+	mov	d1,#16
+	j	.L26
+.L25:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   169          c = *++cp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   170        } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   171          base = 8;
+	mov	d1,#8
+.L23:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   172        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   173      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   174      for (;;) {
+.L27:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   175        if (lwip_isdigit(c)) {
+	extr.u	d15,d0,#0,#8
+	addsc.a	a5,a2,d15,#0
+	ld.bu	d15,[a5]
+.L242:
+	jz.t	d15:5,.L28
+.L243:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   176          val = (val * base) + (u32_t)(c - '0');
+	add	d15,d0,#-48
+.L244:
+	madd	d8,d15,d8,d1
+	j	.L29
+.L28:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   177          c = *++cp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   178        } else if (base == 16 && lwip_isxdigit(c)) {
+	mov	d2,#16
+.L245:
+	jne	d1,d2,.L30
+.L246:
+	and	d2,d15,#160
+	jeq	d2,#0,.L31
+.L247:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   179          val = (val << 4) | (u32_t)(c + 10 - (lwip_islower(c) ? 'a' : 'A'));
+	sh	d8,#4
+.L176:
+	and	d15,#16
+.L248:
+	cadd	d15,d15,d0,#-32
+	add	d15,d15,#-55
+.L179:
+	or	d8,d15
+.L29:
+.L26:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   180          c = *++cp;
+	ld.b	d0,[+a4]1
+.L249:
+	j	.L27
+.L31:
+.L30:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   181        } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   182          break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   183        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   184      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   185      if (c == '.') {
+	mov	d1,#46
+.L178:
+	jne	d0,d1,.L32
+.L250:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   186        /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   187         * Internet format:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   188         *  a.b.c.d
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   189         *  a.b.c   (with c treated as 16 bits)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   190         *  a.b (with b treated as 24 bits)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   191         */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   192        if (pp >= parts + 3) {
+	lea	a5,[a10]24
+.L251:
+	ge.a	d15,a15,a5
+.L252:
+	jne	d15,#0,.L33
+.L253:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   193          return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   194        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   195        *pp++ = val;
+	st.w	[a15+],d8
+.L254:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   196        c = *++cp;
+	add.a	a4,#1
+.L20:
+	ld.b	d0,[a4]0
+.L180:
+	j	.L21
+.L32:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   197      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   198        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   199      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   200    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   201    /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   202     * Check for trailing characters.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   203     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   204    if (c != '\0' && !lwip_isspace(c)) {
+	jeq	d0,#0,.L34
+.L255:
+	and	d15,#5
+	jeq	d15,#0,.L35
+.L34:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   205      return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   206    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   207    /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   208     * Concoct the address according to
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   209     * the number of parts specified.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   210     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   211    switch (pp - parts + 1) {
+	lea	a2,[a10]12
+.L256:
+	sub.a	a15,a15,a2
+.L174:
+	mov.d	d15,a15
+	sha	d15,#-2
+.L257:
+	add	d15,#1
+.L258:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   212  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   213      case 0:
+	jeq	d15,#0,.L36
+.L259:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   214        return 0;       /* initial nondigit */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   215  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   216      case 1:             /* a -- 32 bits */
+	jeq	d15,#1,.L37
+.L260:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   217        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   218  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   219      case 2:             /* a.b -- 8.24 bits */
+	jeq	d15,#2,.L38
+.L261:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   220        if (val > 0xffffffUL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   221          return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   222        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   223        if (parts[0] > 0xff) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   224          return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   225        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   226        val |= parts[0] << 24;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   227        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   228  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   229      case 3:             /* a.b.c -- 8.8.16 bits */
+	jeq	d15,#3,.L39
+.L262:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   230        if (val > 0xffff) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   231          return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   232        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   233        if ((parts[0] > 0xff) || (parts[1] > 0xff)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   234          return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   235        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   236        val |= (parts[0] << 24) | (parts[1] << 16);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   237        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   238  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   239      case 4:             /* a.b.c.d -- 8.8.8.8 bits */
+	jeq	d15,#4,.L40
+.L263:
+	j	.L41
+.L38:
+	ld.w	d15,.4.cnt
+.L264:
+	jlt.u	d15,d8,.L42
+.L265:
+	ld.w	d0,[a10]12
+.L181:
+	mov	d15,#255
+.L266:
+	jlt.u	d15,d0,.L43
+.L267:
+	sh	d15,d0,#24
+	j	.L44
+.L39:
+	mov.u	d15,#65535
+.L268:
+	jlt.u	d15,d8,.L45
+.L269:
+	ld.w	d0,[a10]12
+.L182:
+	mov	d15,#255
+.L270:
+	jlt.u	d15,d0,.L46
+.L271:
+	ld.w	d1,[a10]16
+.L272:
+	jlt.u	d15,d1,.L47
+.L273:
+	sh	d15,d0,#24
+.L274:
+	sh	d0,d1,#16
+	j	.L48
+.L40:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   240        if (val > 0xff) {
+	mov	d15,#255
+.L275:
+	jlt.u	d15,d8,.L49
+.L276:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   241          return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   242        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   243        if ((parts[0] > 0xff) || (parts[1] > 0xff) || (parts[2] > 0xff)) {
+	ld.w	d0,[a10]12
+.L183:
+	jlt.u	d15,d0,.L50
+.L277:
+	ld.w	d1,[a10]16
+.L278:
+	jlt.u	d15,d1,.L51
+.L279:
+	ld.w	d2,[a10]20
+.L280:
+	jge.u	d15,d2,.L52
+.L51:
+.L50:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   244          return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   245        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   246        val |= (parts[0] << 24) | (parts[1] << 16) | (parts[2] << 8);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   247        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   248      default:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   249        LWIP_ASSERT("unhandled", 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   250        break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   251    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   252    if (addr) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   253      ip4_addr_set_u32(addr, lwip_htonl(val));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   254    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   255    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   256  }
+.L49:
+.L47:
+.L46:
+.L45:
+.L43:
+.L42:
+.L36:
+.L35:
+.L33:
+.L22:
+	mov	d2,#0
+	ret
+.L52:
+	sh	d15,d0,#24
+.L281:
+	sh	d0,d1,#16
+.L282:
+	or	d15,d0
+.L283:
+	sh	d0,d2,#8
+.L48:
+	or	d15,d0
+.L44:
+	or	d8,d15
+	j	.L54
+.L41:
+	movh.a	a15,#@his(.2.str)
+	lea	a15,[a15]@los(.2.str)
+	st.a	[a10],a15
+	mov	d15,#249
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+.L171:
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L54:
+.L37:
+	jz.a	a12,.L55
+.L284:
+	mov	d4,d8
+	call	lwip_htonl
+	st.w	[a12],d2
+.L55:
+	mov	d2,#1
+	ret
+.L133:
+	
+__ip4addr_aton_function_end:
+	.size	ip4addr_aton,__ip4addr_aton_function_end-ip4addr_aton
+.L101:
+	; End of function
+	
+	.sdecl	'.text.ip4_addr.ip4addr_ntoa',code,cluster('ip4addr_ntoa')
+	.sect	'.text.ip4_addr.ip4addr_ntoa'
+	.align	2
+	
+	.global	ip4addr_ntoa
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   257  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   258  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   259   * Convert numeric IP address into decimal dotted ASCII representation.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   260   * returns ptr to static buffer; not reentrant!
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   261   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   262   * @param addr ip address in network order to convert
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   263   * @return pointer to a global static (!) buffer that holds the ASCII
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   264   *         representation of addr
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   265   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   266  char *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   267  ip4addr_ntoa(const ip4_addr_t *addr)
+; Function ip4addr_ntoa
+.L75:
+ip4addr_ntoa:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   268  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   269    static char str[IP4ADDR_STRLEN_MAX];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   270    return ip4addr_ntoa_r(addr, str, IP4ADDR_STRLEN_MAX);
+	mov	d4,#16
+	movh.a	a5,#@his(_999001_str)
+	lea	a5,[a5]@los(_999001_str)
+.L289:
+	j	ip4addr_ntoa_r
+.L146:
+	
+__ip4addr_ntoa_function_end:
+	.size	ip4addr_ntoa,__ip4addr_ntoa_function_end-ip4addr_ntoa
+.L106:
+	; End of function
+	
+	.sdecl	'.text.ip4_addr.ip4addr_ntoa_r',code,cluster('ip4addr_ntoa_r')
+	.sect	'.text.ip4_addr.ip4addr_ntoa_r'
+	.align	2
+	
+	.global	ip4addr_ntoa_r
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   271  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   272  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   273  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   274   * Same as ip4addr_ntoa, but reentrant since a user-supplied buffer is used.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   275   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   276   * @param addr ip address in network order to convert
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   277   * @param buf target buffer where the string is stored
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   278   * @param buflen length of buf
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   279   * @return either pointer to buf which now holds the ASCII
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   280   *         representation of addr or NULL if buf was too small
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   281   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   282  char *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   283  ip4addr_ntoa_r(const ip4_addr_t *addr, char *buf, int buflen)
+; Function ip4addr_ntoa_r
+.L77:
+ip4addr_ntoa_r:	.type	func
+	sub.a	a10,#8
+.L184:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   284  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   285    u32_t s_addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   286    char inv[3];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   287    char *rp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   288    u8_t *ap;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   289    u8_t rem;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   290    u8_t n;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   291    u8_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   292    int len = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   293  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   294    s_addr = ip4_addr_get_u32(addr);
+	mov	d0,#0
+	ld.w	d15,[a4]
+.L185:
+	st.w	[a10],d15
+.L294:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   295  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   296    rp = buf;
+	mov.aa	a15,a5
+.L186:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   297    ap = (u8_t *)&s_addr;
+	mov.aa	a2,a10
+.L187:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   298    for (n = 0; n < 4; n++) {
+	mov	d1,d0
+	mov.a	a4,#3
+.L58:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   299      i = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   300      do {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   301        rem = *ap % (u8_t)10;
+	ld.bu	d8,[a2]
+.L295:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   302        *ap /= (u8_t)10;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   303        inv[i++] = (char)('0' + rem);
+	mov	d15,#0
+	lea	a6,[a10]4
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   304      } while (*ap);
+.L59:
+	mov	d2,#10
+.L296:
+	div.u	e6,d8,d2
+.L190:
+	div.u	e8,d8,d2
+.L297:
+	add	d15,#1
+.L189:
+	add	d2,d7,#48
+	st.b	[a6+],d2
+.L298:
+	extr.u	d15,d15,#0,#8
+.L191:
+	jne	d8,#0,.L59
+.L299:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   305      while (i--) {
+	st.b	[a2],d1
+	j	.L60
+.L61:
+	add	d15,#-1
+.L300:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   306        if (len++ >= buflen) {
+	mov	d2,d0
+	add	d0,#1
+.L301:
+	jge	d2,d4,.L62
+.L302:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   307          return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   308        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   309        *rp++ = inv[i];
+	addsc.a	a6,a10,d15,#0
+	ld.b	d2,[a6]4
+.L303:
+	st.b	[a15+],d2
+.L60:
+	jne	d15,#0,.L61
+.L304:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   310      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   311      if (len++ >= buflen) {
+	mov	d15,d0
+.L192:
+	add	d0,#1
+.L305:
+	jlt	d15,d4,.L63
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   312        return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   313      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   314      *rp++ = '.';
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   315      ap++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   316    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   317    *--rp = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   318    return buf;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   319  }
+.L62:
+	mov.a	a2,#0
+.L188:
+	ret
+.L63:
+	mov	d15,#46
+	st.b	[a15+],d15
+.L306:
+	add.a	a2,#1
+	loop	a4,.L58
+.L307:
+	mov	d15,#0
+	st.b	[+a15]-1,d15
+.L308:
+	mov.aa	a2,a5
+.L193:
+	ret
+.L150:
+	
+__ip4addr_ntoa_r_function_end:
+	.size	ip4addr_ntoa_r,__ip4addr_ntoa_r_function_end-ip4addr_ntoa_r
+.L111:
+	; End of function
+	
+	.sdecl	'.zrodata.ip4_addr.ip_addr_any',data,rom,cluster('ip_addr_any')
+	.sect	'.zrodata.ip4_addr.ip_addr_any'
+	.global	ip_addr_any
+	.align	2
+ip_addr_any:	.type	object
+	.size	ip_addr_any,4
+	.space	4
+	.sdecl	'.zrodata.ip4_addr.ip_addr_broadcast',data,rom,cluster('ip_addr_broadcast')
+	.sect	'.zrodata.ip4_addr.ip_addr_broadcast'
+	.global	ip_addr_broadcast
+	.align	2
+ip_addr_broadcast:	.type	object
+	.size	ip_addr_broadcast,4
+	.word	-1
+	.sdecl	'.rodata.ip4_addr..1.str',data,rom
+	.sect	'.rodata.ip4_addr..1.str'
+.1.str:	.type	object
+	.size	.1.str,40
+	.byte	65,115,115,101
+	.byte	114,116,105,111
+	.byte	110,32,34,37
+	.byte	115,34,32,102
+	.byte	97,105,108,101
+	.byte	100,32,97,116
+	.byte	32,108,105,110
+	.byte	101,32,37,100
+	.byte	32,105,110,32
+	.byte	37,115,10
+	.space	1
+	.sdecl	'.rodata.ip4_addr..2.str',data,rom
+	.sect	'.rodata.ip4_addr..2.str'
+.2.str:	.type	object
+	.size	.2.str,10
+	.byte	117,110,104,97
+	.byte	110,100,108,101
+	.byte	100
+	.space	1
+	.sdecl	'.rodata.ip4_addr..3.str',data,rom
+	.sect	'.rodata.ip4_addr..3.str'
+.3.str:	.type	object
+	.size	.3.str,56
+	.byte	46,46,92,48
+	.byte	95,83,114,99
+	.byte	92,48,95,65
+	.byte	112,112,83,119
+	.byte	92,69,116,104
+	.byte	101,114,110,101
+	.byte	116,92,108,119
+	.byte	105,112,92,115
+	.byte	114,99,92,99
+	.byte	111,114,101,92
+	.byte	105,112,118,52
+	.byte	92,105,112,52
+	.byte	95,97,100,100
+	.byte	114,46,99
+	.space	1
+	.sdecl	'.bss.ip4_addr._999001_str',data,cluster('_999001_str')
+	.sect	'.bss.ip4_addr._999001_str'
+_999001_str:	.type	object
+	.size	_999001_str,16
+	.space	16
+	.calls	'ip4_addr_netmask_valid','lwip_htonl'
+	.calls	'ipaddr_addr','ip4addr_aton'
+	.calls	'ip4addr_aton','Ifx_Lwip_printf'
+	.calls	'ip4addr_aton','lwip_htonl'
+	.calls	'ip4addr_ntoa','ip4addr_ntoa_r'
+	.calls	'ip4_addr_isbroadcast_u32','',0
+	.calls	'ip4_addr_netmask_valid','',0
+	.calls	'ipaddr_addr','',8
+	.calls	'ip4addr_aton','',32
+	.calls	'ip4addr_ntoa','',0
+	.extern	Ifx_Lwip_printf
+	.extern	__ctype
+	.extern	lwip_htonl
+	.calls	'ip4addr_ntoa_r','',8
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L79:
+	.word	2225
+	.half	3
+	.word	.L80
+	.byte	4
+.L78:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L81
+.L132:
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	175
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	182
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	224
+	.byte	7
+	.word	224
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	240
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	245
+	.byte	9
+	.byte	'value',0
+	.word	224
+	.byte	9
+	.byte	'compare',0
+	.word	224
+	.byte	0,2
+	.byte	'char',0,1,6
+.L139:
+	.byte	2
+	.byte	'char',0,1,6,3
+	.word	310
+.L129:
+	.byte	7
+	.word	318
+	.byte	10
+	.byte	'Ifx_Lwip_printf',0,1,123,6
+	.word	302
+	.byte	1,1,1,1,11
+	.byte	's',0,1,123,34
+	.word	323
+	.byte	12,1,123,37,0
+.L118:
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'lwip_htonl',0,2,101,7
+	.word	371
+	.byte	1,1,1,1,11
+	.byte	'x',0,2,101,24
+	.word	371
+	.byte	0
+.L116:
+	.byte	2
+	.byte	'unsigned char',0,1,8,7
+	.word	.L194-.L79
+.L122:
+	.byte	13
+	.byte	'ip4_addr',0,4,51,8,4,14
+	.byte	'addr',0
+	.word	371
+	.byte	4,2,35,0,0,15
+	.byte	'void',0,7
+	.word	477
+	.byte	2
+	.byte	'unsigned short int',0,2,7,13
+	.byte	'pbuf',0,5,186,1,8,16,14
+	.byte	'next',0
+	.word	.L195-.L79
+	.byte	4,2,35,0,14
+	.byte	'payload',0
+	.word	483
+	.byte	4,2,35,4,14
+	.byte	'tot_len',0
+	.word	488
+	.byte	2,2,35,8,14
+	.byte	'len',0
+	.word	488
+	.byte	2,2,35,10,14
+	.byte	'type_internal',0
+	.word	426
+	.byte	1,2,35,12,14
+	.byte	'flags',0
+	.word	426
+	.byte	1,2,35,13,14
+	.byte	'ref',0
+	.word	426
+	.byte	1,2,35,14,14
+	.byte	'if_idx',0
+	.word	426
+	.byte	1,2,35,15,0
+.L195:
+	.byte	7
+	.word	510
+	.byte	16
+	.word	302
+	.byte	1,1,5
+	.word	650
+	.byte	5
+	.word	443
+	.byte	0,7
+	.word	655
+	.byte	17
+	.byte	'netif_input_fn',0,3,178,1,17
+	.word	673
+	.byte	3
+	.word	448
+	.byte	7
+	.word	702
+	.byte	16
+	.word	302
+	.byte	1,1,5
+	.word	443
+	.byte	5
+	.word	650
+	.byte	5
+	.word	707
+	.byte	0,7
+	.word	712
+	.byte	17
+	.byte	'netif_output_fn',0,3,189,1,17
+	.word	735
+	.byte	16
+	.word	302
+	.byte	1,1,5
+	.word	443
+	.byte	5
+	.word	650
+	.byte	0,7
+	.word	765
+	.byte	17
+	.byte	'netif_linkoutput_fn',0,3,212,1,17
+	.word	783
+	.byte	18,6
+	.word	426
+	.byte	19,5,0,18,2
+	.word	310
+	.byte	19,1,0
+.L194:
+	.byte	13
+	.byte	'netif',0,3,132,2,8,48,14
+	.byte	'next',0
+	.word	443
+	.byte	4,2,35,0,14
+	.byte	'ip_addr',0
+	.word	448
+	.byte	4,2,35,4,14
+	.byte	'netmask',0
+	.word	448
+	.byte	4,2,35,8,14
+	.byte	'gw',0
+	.word	448
+	.byte	4,2,35,12,14
+	.byte	'input',0
+	.word	678
+	.byte	4,2,35,16,14
+	.byte	'output',0
+	.word	740
+	.byte	4,2,35,20,14
+	.byte	'linkoutput',0
+	.word	788
+	.byte	4,2,35,24,14
+	.byte	'state',0
+	.word	483
+	.byte	4,2,35,28,14
+	.byte	'mtu',0
+	.word	488
+	.byte	2,2,35,32,14
+	.byte	'hwaddr',0
+	.word	817
+	.byte	6,2,35,34,14
+	.byte	'hwaddr_len',0
+	.word	426
+	.byte	1,2,35,40,14
+	.byte	'flags',0
+	.word	426
+	.byte	1,2,35,41,14
+	.byte	'name',0
+	.word	826
+	.byte	2,2,35,42,14
+	.byte	'num',0
+	.word	426
+	.byte	1,2,35,44,14
+	.byte	'rs_count',0
+	.word	426
+	.byte	1,2,35,45,0,3
+	.word	835
+.L120:
+	.byte	7
+	.word	1083
+	.byte	7
+	.word	655
+	.byte	7
+	.word	712
+	.byte	7
+	.word	765
+.L135:
+	.byte	7
+	.word	448
+.L141:
+	.byte	18,16
+	.word	371
+	.byte	19,3,0
+.L143:
+	.byte	7
+	.word	371
+.L145:
+	.byte	7
+	.word	310
+	.byte	3
+	.word	448
+.L147:
+	.byte	7
+	.word	1132
+.L149:
+	.byte	18,16
+	.word	310
+	.byte	19,15,0
+.L155:
+	.byte	18,3
+	.word	310
+	.byte	19,2,0
+.L158:
+	.byte	7
+	.word	426
+	.byte	2
+	.byte	'short int',0,2,5,17
+	.byte	'__wchar_t',0,6,1,1
+	.word	1165
+	.byte	17
+	.byte	'__size_t',0,6,1,1
+	.word	224
+	.byte	17
+	.byte	'__ptrdiff_t',0,6,1,1
+	.word	175
+	.byte	20,1,7
+	.word	1233
+	.byte	17
+	.byte	'__codeptr',0,6,1,1
+	.word	1235
+	.byte	17
+	.byte	'__intptr_t',0,6,1,1
+	.word	175
+	.byte	17
+	.byte	'__uintptr_t',0,6,1,1
+	.word	224
+	.byte	17
+	.byte	'uint8',0,7,108,29
+	.word	426
+	.byte	17
+	.byte	'uint16',0,7,112,29
+	.word	488
+	.byte	17
+	.byte	'uint32',0,7,116,29
+	.word	371
+	.byte	17
+	.byte	'sint8',0,7,125,29
+	.word	302
+	.byte	17
+	.byte	'sint16',0,7,129,1,29
+	.word	1165
+	.byte	2
+	.byte	'long int',0,4,5,17
+	.byte	'sint32',0,7,134,1,29
+	.word	1371
+	.byte	2
+	.byte	'long long int',0,8,5,17
+	.byte	'sint64',0,7,141,1,29
+	.word	1399
+	.byte	2
+	.byte	'float',0,4,4,17
+	.byte	'float32',0,7,170,1,29
+	.word	1432
+	.byte	17
+	.byte	'pvoid',0,8,54,28
+	.word	483
+	.byte	17
+	.byte	'Ifx_TickTime',0,8,76,28
+	.word	1399
+	.byte	17
+	.byte	'u8_t',0,1,85,16
+	.word	426
+	.byte	17
+	.byte	'u16_t',0,1,86,16
+	.word	488
+	.byte	17
+	.byte	'u32_t',0,1,87,16
+	.word	371
+	.byte	17
+	.byte	's8_t',0,1,88,16
+	.word	302
+	.byte	17
+	.byte	'intmax_t',0,9,198,2,41
+	.word	1399
+	.byte	18,129,2
+	.word	426
+	.byte	19,128,2,0,3
+	.word	1565
+	.byte	21
+	.byte	'__ctype',0,10,41,39
+	.word	1576
+	.byte	1,1,17
+	.byte	'ip4_addr_t',0,4,57,25
+	.word	448
+	.byte	17
+	.byte	'ip_addr_t',0,11,142,2,20
+	.word	448
+.L164:
+	.byte	3
+	.word	448
+.L165:
+	.byte	3
+	.word	448
+	.byte	17
+	.byte	'err_t',0,12,96,14
+	.word	302
+	.byte	22,1,1,5
+	.word	650
+	.byte	0,7
+	.word	1661
+	.byte	17
+	.byte	'pbuf_free_custom_fn',0,5,242,1,16
+	.word	1670
+	.byte	17
+	.byte	'mem_size_t',0,13,67,15
+	.word	488
+	.byte	13
+	.byte	'link_changed_s',0,3,213,4,10,1,14
+	.byte	'state',0
+	.word	426
+	.byte	1,2,35,0,0,13
+	.byte	'status_changed_s',0,3,219,4,10,1,14
+	.byte	'state',0
+	.word	426
+	.byte	1,2,35,0,0,3
+	.word	448
+	.byte	7
+	.word	1799
+	.byte	13
+	.byte	'ipv4_changed_s',0,3,225,4,10,12,14
+	.byte	'old_address',0
+	.word	1804
+	.byte	4,2,35,0,14
+	.byte	'old_netmask',0
+	.word	1804
+	.byte	4,2,35,4,14
+	.byte	'old_gw',0
+	.word	1804
+	.byte	4,2,35,8,0,13
+	.byte	'ipv6_set_s',0,3,233,4,10,8,14
+	.byte	'addr_index',0
+	.word	302
+	.byte	1,2,35,0,14
+	.byte	'old_address',0
+	.word	1804
+	.byte	4,2,35,4,0,13
+	.byte	'ipv6_addr_state_changed_s',0,3,241,4,10,8,14
+	.byte	'addr_index',0
+	.word	302
+	.byte	1,2,35,0,14
+	.byte	'old_state',0
+	.word	426
+	.byte	1,2,35,1,14
+	.byte	'address',0
+	.word	1804
+	.byte	4,2,35,4,0,23,3,210,4,9,12,14
+	.byte	'link_changed',0
+	.word	1723
+	.byte	1,2,35,0,14
+	.byte	'status_changed',0
+	.word	1760
+	.byte	1,2,35,0,14
+	.byte	'ipv4_changed',0
+	.word	1809
+	.byte	12,2,35,0,14
+	.byte	'ipv6_set',0
+	.word	1889
+	.byte	8,2,35,0,14
+	.byte	'ipv6_addr_state_changed',0
+	.word	1948
+	.byte	8,2,35,0,0,3
+	.word	2037
+	.byte	7
+	.word	2163
+	.byte	22,1,1,5
+	.word	443
+	.byte	5
+	.word	488
+	.byte	5
+	.word	2168
+	.byte	0,7
+	.word	2173
+	.byte	17
+	.byte	'netif_ext_callback_fn',0,3,132,5,16
+	.word	2192
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L80:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,11
+	.byte	5,0,3,8,58,15,59,15,57,15,73,19,0,0,12,24,0,58,15,59,15,57,15,0,0,13,19,1,3,8,58,15,59,15,57,15,11,15
+	.byte	0,0,14,13,0,3,8,73,19,11,15,56,9,0,0,15,59,0,3,8,0,0,16,21,1,73,19,54,15,39,12,0,0,17,22,0,3,8,58,15,59
+	.byte	15,57,15,73,19,0,0,18,1,1,11,15,73,19,0,0,19,33,0,47,15,0,0,20,21,0,54,15,0,0,21,52,0,3,8,58,15,59,15
+	.byte	57,15,73,19,63,12,60,12,0,0,22,21,1,54,15,39,12,0,0,23,23,1,58,15,59,15,57,15,11,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L81:
+	.word	.L197-.L196
+.L196:
+	.half	3
+	.word	.L199-.L198
+.L198:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0,0
+	.byte	'cc.h',0,1,0,0
+	.byte	'def.h',0,2,0,0
+	.byte	'netif.h',0,2,0,0
+	.byte	'ip4_addr.h',0,2,0,0
+	.byte	'pbuf.h',0,2,0,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0,0,0,0
+	.byte	'Platform_Types.h',0,3,0,0
+	.byte	'Ifx_Types.h',0,3,0,0
+	.byte	'stdint.h',0,4,0,0
+	.byte	'ctype.h',0,4,0,0
+	.byte	'ip_addr.h',0,2,0,0
+	.byte	'err.h',0,2,0,0
+	.byte	'mem.h',0,2,0,0,0
+.L199:
+.L197:
+	.sdecl	'.debug_info',debug,cluster('ip4_addr_isbroadcast_u32')
+	.sect	'.debug_info'
+.L82:
+	.word	294
+	.half	3
+	.word	.L83
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L85,.L84
+	.byte	2
+	.word	.L78
+	.byte	3
+	.byte	'ip4_addr_isbroadcast_u32',0,1,58,1
+	.word	.L116
+	.byte	1,1,1
+	.word	.L67,.L117,.L66
+	.byte	4
+	.byte	'addr',0,1,58,32
+	.word	.L118,.L119
+	.byte	4
+	.byte	'netif',0,1,58,58
+	.word	.L120,.L121
+	.byte	5
+	.word	.L67,.L117
+	.byte	6
+	.byte	'ipaddr',0,1,60,14
+	.word	.L122,.L123
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ip4_addr_isbroadcast_u32')
+	.sect	'.debug_abbrev'
+.L83:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ip4_addr_isbroadcast_u32')
+	.sect	'.debug_line'
+.L84:
+	.word	.L201-.L200
+.L200:
+	.half	3
+	.word	.L203-.L202
+.L202:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0,0,0,0,0
+.L203:
+	.byte	5,8,7,0,5,2
+	.word	.L67
+	.byte	3,63,1,5,7,9
+	.half	.L204-.L67
+	.byte	1,5,13,7,9
+	.half	.L205-.L204
+	.byte	3,1,1,5,20,7,9
+	.half	.L206-.L205
+	.byte	3,3,1,5,10,9
+	.half	.L207-.L206
+	.byte	1,5,22,7,9
+	.half	.L208-.L207
+	.byte	3,5,1,5,10,9
+	.half	.L209-.L208
+	.byte	1,5,14,7,9
+	.half	.L210-.L209
+	.byte	3,3,1,5,38,9
+	.half	.L211-.L210
+	.byte	3,3,1,5,24,9
+	.half	.L212-.L211
+	.byte	3,127,1,5,71,9
+	.half	.L166-.L212
+	.byte	1,5,12,7,9
+	.half	.L2-.L166
+	.byte	3,3,1,5,1,3,4,1,5,12,7,9
+	.half	.L4-.L2
+	.byte	3,126,1,5,1,3,2,1,7,9
+	.half	.L86-.L4
+	.byte	0,1,1
+.L201:
+	.sdecl	'.debug_ranges',debug,cluster('ip4_addr_isbroadcast_u32')
+	.sect	'.debug_ranges'
+.L85:
+	.word	-1,.L67,0,.L86-.L67,0,0
+	.sdecl	'.debug_info',debug,cluster('ip4_addr_netmask_valid')
+	.sect	'.debug_info'
+.L87:
+	.word	300
+	.half	3
+	.word	.L88
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L90,.L89
+	.byte	2
+	.word	.L78
+	.byte	3
+	.byte	'ip4_addr_netmask_valid',0,1,93,1
+	.word	.L116
+	.byte	1,1,1
+	.word	.L69,.L124,.L68
+	.byte	4
+	.byte	'netmask',0,1,93,30
+	.word	.L118,.L125
+	.byte	5
+	.word	.L69,.L124
+	.byte	6
+	.byte	'mask',0,1,95,9
+	.word	.L118,.L126
+	.byte	6
+	.byte	'nm_hostorder',0,1,96,9
+	.word	.L118,.L127
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ip4_addr_netmask_valid')
+	.sect	'.debug_abbrev'
+.L88:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ip4_addr_netmask_valid')
+	.sect	'.debug_line'
+.L89:
+	.word	.L214-.L213
+.L213:
+	.half	3
+	.word	.L216-.L215
+.L215:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0,0,0,0,0
+.L216:
+	.byte	5,35,7,0,5,2
+	.word	.L69
+	.byte	3,223,0,1,5,19,9
+	.half	.L167-.L69
+	.byte	3,3,1,5,23,9
+	.half	.L10-.L167
+	.byte	3,1,1,5,5,9
+	.half	.L217-.L10
+	.byte	1,5,43,7,9
+	.half	.L218-.L217
+	.byte	3,127,1,5,36,9
+	.half	.L219-.L218
+	.byte	1,5,19,7,9
+	.half	.L220-.L219
+	.byte	3,6,1,5,23,9
+	.half	.L13-.L220
+	.byte	3,1,1,5,5,9
+	.half	.L221-.L13
+	.byte	1,5,14,7,9
+	.half	.L222-.L221
+	.byte	3,2,1,5,1,3,5,1,5,26,7,9
+	.half	.L14-.L222
+	.byte	3,120,1,5,19,9
+	.half	.L12-.L14
+	.byte	1,5,10,7,9
+	.half	.L223-.L12
+	.byte	3,7,1,5,1,3,1,1,7,9
+	.half	.L91-.L223
+	.byte	0,1,1
+.L214:
+	.sdecl	'.debug_ranges',debug,cluster('ip4_addr_netmask_valid')
+	.sect	'.debug_ranges'
+.L90:
+	.word	-1,.L69,0,.L91-.L69,0,0
+	.sdecl	'.debug_info',debug,cluster('ipaddr_addr')
+	.sect	'.debug_info'
+.L92:
+	.word	258
+	.half	3
+	.word	.L93
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L95,.L94
+	.byte	2
+	.word	.L78
+	.byte	3
+	.byte	'ipaddr_addr',0,1,123,1
+	.word	.L118
+	.byte	1,1,1
+	.word	.L71,.L128,.L70
+	.byte	4
+	.byte	'cp',0,1,123,25
+	.word	.L129,.L130
+	.byte	5
+	.word	.L71,.L128
+	.byte	6
+	.byte	'val',0,1,125,14
+	.word	.L122,.L131
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ipaddr_addr')
+	.sect	'.debug_abbrev'
+.L93:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ipaddr_addr')
+	.sect	'.debug_line'
+.L94:
+	.word	.L225-.L224
+.L224:
+	.half	3
+	.word	.L227-.L226
+.L226:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0,0,0,0,0
+.L227:
+	.byte	5,1,7,0,5,2
+	.word	.L71
+	.byte	3,250,0,1,5,25,9
+	.half	.L168-.L71
+	.byte	3,4,1,5,3,9
+	.half	.L169-.L168
+	.byte	1,5,12,7,9
+	.half	.L228-.L169
+	.byte	3,1,1,5,1,9
+	.half	.L229-.L228
+	.byte	3,3,1,5,11,7,9
+	.half	.L17-.L229
+	.byte	3,127,1,5,1,3,1,1,7,9
+	.half	.L96-.L17
+	.byte	0,1,1
+.L225:
+	.sdecl	'.debug_ranges',debug,cluster('ipaddr_addr')
+	.sect	'.debug_ranges'
+.L95:
+	.word	-1,.L71,0,.L96-.L71,0,0
+	.sdecl	'.debug_info',debug,cluster('ip4addr_aton')
+	.sect	'.debug_info'
+.L97:
+	.word	348
+	.half	3
+	.word	.L98
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L100,.L99
+	.byte	2
+	.word	.L78
+	.byte	3
+	.byte	'ip4addr_aton',0,1,145,1,1
+	.word	.L132
+	.byte	1,1,1
+	.word	.L73,.L133,.L72
+	.byte	4
+	.byte	'cp',0,1,145,1,26
+	.word	.L129,.L134
+	.byte	4
+	.byte	'addr',0,1,145,1,42
+	.word	.L135,.L136
+	.byte	5
+	.word	.L73,.L133
+	.byte	6
+	.byte	'val',0,1,147,1,9
+	.word	.L118,.L137
+	.byte	6
+	.byte	'base',0,1,148,1,8
+	.word	.L116,.L138
+	.byte	6
+	.byte	'c',0,1,149,1,8
+	.word	.L139,.L140
+	.byte	6
+	.byte	'parts',0,1,150,1,9
+	.word	.L141,.L142
+	.byte	6
+	.byte	'pp',0,1,151,1,10
+	.word	.L143,.L144
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ip4addr_aton')
+	.sect	'.debug_abbrev'
+.L98:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ip4addr_aton')
+	.sect	'.debug_line'
+.L99:
+	.word	.L231-.L230
+.L230:
+	.half	3
+	.word	.L233-.L232
+.L232:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0,0,0,0,0
+.L233:
+	.byte	5,1,7,0,5,2
+	.word	.L73
+	.byte	3,144,1,1,5,15,9
+	.half	.L172-.L73
+	.byte	3,6,1,5,10,9
+	.half	.L173-.L172
+	.byte	3,9,1,5,9,9
+	.half	.L234-.L173
+	.byte	3,122,1,5,10,9
+	.half	.L21-.L234
+	.byte	3,6,1,5,9,9
+	.half	.L235-.L21
+	.byte	3,3,1,5,10,9
+	.half	.L175-.L235
+	.byte	3,1,1,5,14,9
+	.half	.L177-.L175
+	.byte	3,1,1,5,5,9
+	.half	.L236-.L177
+	.byte	1,5,11,7,9
+	.half	.L237-.L236
+	.byte	3,1,1,5,16,9
+	.half	.L238-.L237
+	.byte	3,1,1,5,11,9
+	.half	.L239-.L238
+	.byte	1,5,28,7,9
+	.half	.L240-.L239
+	.byte	1,5,25,9
+	.half	.L241-.L240
+	.byte	1,5,14,7,9
+	.half	.L24-.L241
+	.byte	3,1,1,5,18,1,5,14,9
+	.half	.L25-.L24
+	.byte	3,3,1,5,11,9
+	.half	.L27-.L25
+	.byte	3,4,1,5,7,9
+	.half	.L242-.L27
+	.byte	1,5,40,7,9
+	.half	.L243-.L242
+	.byte	3,1,1,5,28,9
+	.half	.L244-.L243
+	.byte	1,5,46,1,5,26,9
+	.half	.L28-.L244
+	.byte	3,2,1,5,18,9
+	.half	.L245-.L28
+	.byte	1,5,32,7,9
+	.half	.L246-.L245
+	.byte	1,5,20,9
+	.half	.L247-.L246
+	.byte	3,1,1,5,46,9
+	.half	.L176-.L247
+	.byte	1,5,36,9
+	.half	.L248-.L176
+	.byte	1,5,26,9
+	.half	.L179-.L248
+	.byte	1,5,13,9
+	.half	.L26-.L179
+	.byte	3,1,1,5,11,9
+	.half	.L249-.L26
+	.byte	3,122,1,5,14,9
+	.half	.L30-.L249
+	.byte	3,11,1,5,5,9
+	.half	.L178-.L30
+	.byte	1,5,23,7,9
+	.half	.L250-.L178
+	.byte	3,7,1,5,14,9
+	.half	.L251-.L250
+	.byte	1,5,7,9
+	.half	.L252-.L251
+	.byte	1,5,13,7,9
+	.half	.L253-.L252
+	.byte	3,3,1,5,12,9
+	.half	.L254-.L253
+	.byte	3,1,1,5,11,9
+	.half	.L20-.L254
+	.byte	1,5,9,9
+	.half	.L180-.L20
+	.byte	3,86,1,5,7,9
+	.half	.L32-.L180
+	.byte	3,50,1,5,21,7,9
+	.half	.L255-.L32
+	.byte	1,5,16,9
+	.half	.L34-.L255
+	.byte	3,7,1,5,14,9
+	.half	.L256-.L34
+	.byte	1,5,22,9
+	.half	.L257-.L256
+	.byte	1,5,10,9
+	.half	.L258-.L257
+	.byte	3,2,1,7,9
+	.half	.L259-.L258
+	.byte	3,3,1,7,9
+	.half	.L260-.L259
+	.byte	3,3,1,7,9
+	.half	.L261-.L260
+	.byte	3,10,1,7,9
+	.half	.L262-.L261
+	.byte	3,10,1,7,9
+	.half	.L263-.L262
+	.byte	1,5,17,9
+	.half	.L38-.L263
+	.byte	3,109,1,5,7,9
+	.half	.L264-.L38
+	.byte	1,5,16,7,9
+	.half	.L265-.L264
+	.byte	3,3,1,5,22,9
+	.half	.L181-.L265
+	.byte	1,5,7,9
+	.half	.L266-.L181
+	.byte	1,5,23,7,9
+	.half	.L267-.L266
+	.byte	3,3,1,5,7,3,1,1,5,17,9
+	.half	.L39-.L267
+	.byte	3,3,1,5,7,9
+	.half	.L268-.L39
+	.byte	1,5,17,7,9
+	.half	.L269-.L268
+	.byte	3,3,1,5,23,9
+	.half	.L182-.L269
+	.byte	1,5,11,9
+	.half	.L270-.L182
+	.byte	1,5,38,7,9
+	.half	.L271-.L270
+	.byte	1,5,42,9
+	.half	.L272-.L271
+	.byte	1,5,24,7,9
+	.half	.L273-.L272
+	.byte	3,3,1,5,43,9
+	.half	.L274-.L273
+	.byte	1,5,7,3,1,1,5,17,9
+	.half	.L40-.L274
+	.byte	3,3,1,5,7,9
+	.half	.L275-.L40
+	.byte	1,5,17,7,9
+	.half	.L276-.L275
+	.byte	3,3,1,5,11,9
+	.half	.L183-.L276
+	.byte	1,5,38,7,9
+	.half	.L277-.L183
+	.byte	1,5,42,9
+	.half	.L278-.L277
+	.byte	1,5,59,7,9
+	.half	.L279-.L278
+	.byte	1,5,63,9
+	.half	.L280-.L279
+	.byte	1,5,16,7,9
+	.half	.L22-.L280
+	.byte	3,1,1,5,1,3,12,1,5,24,7,9
+	.half	.L52-.L22
+	.byte	3,118,1,5,43,9
+	.half	.L281-.L52
+	.byte	1,5,31,9
+	.half	.L282-.L281
+	.byte	1,5,62,9
+	.half	.L283-.L282
+	.byte	1,5,50,9
+	.half	.L48-.L283
+	.byte	1,5,11,9
+	.half	.L44-.L48
+	.byte	1,5,7,3,1,1,9
+	.half	.L41-.L44
+	.byte	3,2,1,5,3,9
+	.half	.L37-.L41
+	.byte	3,3,1,5,5,7,9
+	.half	.L284-.L37
+	.byte	3,1,1,5,10,9
+	.half	.L55-.L284
+	.byte	3,2,1,5,1,3,1,1,7,9
+	.half	.L101-.L55
+	.byte	0,1,1
+.L231:
+	.sdecl	'.debug_ranges',debug,cluster('ip4addr_aton')
+	.sect	'.debug_ranges'
+.L100:
+	.word	-1,.L73,0,.L101-.L73,0,0
+	.sdecl	'.debug_info',debug,cluster('ip4addr_ntoa')
+	.sect	'.debug_info'
+.L102:
+	.word	266
+	.half	3
+	.word	.L103
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L105,.L104
+	.byte	2
+	.word	.L78
+	.byte	3
+	.byte	'ip4addr_ntoa',0,1,139,2,1
+	.word	.L145
+	.byte	1,1,1
+	.word	.L75,.L146,.L74
+	.byte	4
+	.byte	'addr',0,1,139,2,32
+	.word	.L147,.L148
+	.byte	5
+	.word	.L75,.L146
+	.byte	6
+	.byte	'str',0,1,141,2,15
+	.word	.L149
+	.byte	5,3
+	.word	_999001_str
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ip4addr_ntoa')
+	.sect	'.debug_abbrev'
+.L103:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ip4addr_ntoa')
+	.sect	'.debug_line'
+.L104:
+	.word	.L286-.L285
+.L285:
+	.half	3
+	.word	.L288-.L287
+.L287:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0,0,0,0,0
+.L288:
+	.byte	5,36,7,0,5,2
+	.word	.L75
+	.byte	3,141,2,1,5,31,1,5,36,9
+	.half	.L289-.L75
+	.byte	1,5,1,7,9
+	.half	.L106-.L289
+	.byte	3,1,0,1,1
+.L286:
+	.sdecl	'.debug_ranges',debug,cluster('ip4addr_ntoa')
+	.sect	'.debug_ranges'
+.L105:
+	.word	-1,.L75,0,.L106-.L75,0,0
+	.sdecl	'.debug_info',debug,cluster('ip4addr_ntoa_r')
+	.sect	'.debug_info'
+.L107:
+	.word	419
+	.half	3
+	.word	.L108
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L110,.L109
+	.byte	2
+	.word	.L78
+	.byte	3
+	.byte	'ip4addr_ntoa_r',0,1,155,2,1
+	.word	.L145
+	.byte	1,1,1
+	.word	.L77,.L150,.L76
+	.byte	4
+	.byte	'addr',0,1,155,2,34
+	.word	.L147,.L151
+	.byte	4
+	.byte	'buf',0,1,155,2,46
+	.word	.L145,.L152
+	.byte	4
+	.byte	'buflen',0,1,155,2,55
+	.word	.L132,.L153
+	.byte	5
+	.word	.L77,.L150
+	.byte	6
+	.byte	's_addr',0,1,157,2,9
+	.word	.L118,.L154
+	.byte	6
+	.byte	'inv',0,1,158,2,8
+	.word	.L155,.L156
+	.byte	6
+	.byte	'rp',0,1,159,2,9
+	.word	.L145,.L157
+	.byte	6
+	.byte	'ap',0,1,160,2,9
+	.word	.L158,.L159
+	.byte	6
+	.byte	'rem',0,1,161,2,8
+	.word	.L116,.L160
+	.byte	6
+	.byte	'n',0,1,162,2,8
+	.word	.L116,.L161
+	.byte	6
+	.byte	'i',0,1,163,2,8
+	.word	.L116,.L162
+	.byte	6
+	.byte	'len',0,1,164,2,7
+	.word	.L132,.L163
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ip4addr_ntoa_r')
+	.sect	'.debug_abbrev'
+.L108:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ip4addr_ntoa_r')
+	.sect	'.debug_line'
+.L109:
+	.word	.L291-.L290
+.L290:
+	.half	3
+	.word	.L293-.L292
+.L292:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0,0,0,0,0
+.L293:
+	.byte	5,1,7,0,5,2
+	.word	.L77
+	.byte	3,154,2,1,5,11,9
+	.half	.L184-.L77
+	.byte	3,9,1,5,12,3,2,1,5,10,9
+	.half	.L185-.L184
+	.byte	1,5,6,9
+	.half	.L294-.L185
+	.byte	3,2,1,5,17,9
+	.half	.L186-.L294
+	.byte	3,1,1,5,12,9
+	.half	.L187-.L186
+	.byte	3,1,1,5,20,1,5,14,9
+	.half	.L58-.L187
+	.byte	3,3,1,5,7,9
+	.half	.L295-.L58
+	.byte	3,126,1,3,4,1,5,19,9
+	.half	.L59-.L295
+	.byte	3,126,1,5,17,9
+	.half	.L296-.L59
+	.byte	1,5,11,9
+	.half	.L190-.L296
+	.byte	3,1,1,5,12,9
+	.half	.L297-.L190
+	.byte	3,1,1,5,29,9
+	.half	.L189-.L297
+	.byte	1,5,16,1,5,12,9
+	.half	.L298-.L189
+	.byte	1,5,18,9
+	.half	.L191-.L298
+	.byte	3,1,1,5,15,7,9
+	.half	.L299-.L191
+	.byte	3,1,1,5,13,9
+	.half	.L61-.L299
+	.byte	1,5,14,9
+	.half	.L300-.L61
+	.byte	3,1,1,5,7,9
+	.half	.L301-.L300
+	.byte	1,5,18,7,9
+	.half	.L302-.L301
+	.byte	3,3,1,5,13,9
+	.half	.L303-.L302
+	.byte	1,5,15,9
+	.half	.L60-.L303
+	.byte	3,124,1,5,12,7,9
+	.half	.L304-.L60
+	.byte	3,6,1,5,5,9
+	.half	.L305-.L304
+	.byte	1,5,14,7,9
+	.half	.L62-.L305
+	.byte	3,1,1,5,1,9
+	.half	.L188-.L62
+	.byte	3,7,1,5,13,7,9
+	.half	.L63-.L188
+	.byte	3,123,1,5,11,1,5,7,9
+	.half	.L306-.L63
+	.byte	3,1,1,5,20,3,111,1,5,11,7,9
+	.half	.L307-.L306
+	.byte	3,19,1,5,9,1,5,3,9
+	.half	.L308-.L307
+	.byte	3,1,1,5,1,9
+	.half	.L193-.L308
+	.byte	3,1,1,7,9
+	.half	.L111-.L193
+	.byte	0,1,1
+.L291:
+	.sdecl	'.debug_ranges',debug,cluster('ip4addr_ntoa_r')
+	.sect	'.debug_ranges'
+.L110:
+	.word	-1,.L77,0,.L111-.L77,0,0
+	.sdecl	'.debug_info',debug,cluster('ip_addr_any')
+	.sect	'.debug_info'
+.L112:
+	.word	200
+	.half	3
+	.word	.L113
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1,2
+	.word	.L78
+	.byte	3
+	.byte	'ip_addr_any',0,6,47,17
+	.word	.L164
+	.byte	1,5,3
+	.word	ip_addr_any
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('ip_addr_any')
+	.sect	'.debug_abbrev'
+.L113:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('ip_addr_broadcast')
+	.sect	'.debug_info'
+.L114:
+	.word	206
+	.half	3
+	.word	.L115
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4\\ip4_addr.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1,2
+	.word	.L78
+	.byte	3
+	.byte	'ip_addr_broadcast',0,6,48,17
+	.word	.L165
+	.byte	1,5,3
+	.word	ip_addr_broadcast
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('ip_addr_broadcast')
+	.sect	'.debug_abbrev'
+.L115:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_loc',debug,cluster('ip4_addr_isbroadcast_u32')
+	.sect	'.debug_loc'
+.L119:
+	.word	-1,.L67,0,.L166-.L67
+	.half	1
+	.byte	84
+	.word	0,0
+.L66:
+	.word	-1,.L67,0,.L117-.L67
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L123:
+	.word	0,0
+.L121:
+	.word	-1,.L67,0,.L117-.L67
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('ip4_addr_netmask_valid')
+	.sect	'.debug_loc'
+.L68:
+	.word	-1,.L69,0,.L124-.L69
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L126:
+	.word	-1,.L69,.L10-.L69,.L124-.L69
+	.half	1
+	.byte	95
+	.word	0,0
+.L125:
+	.word	-1,.L69,0,.L167-.L69
+	.half	1
+	.byte	84
+	.word	0,0
+.L127:
+	.word	-1,.L69,.L167-.L69,.L124-.L69
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('ip4addr_aton')
+	.sect	'.debug_loc'
+.L136:
+	.word	-1,.L73,0,.L21-.L73
+	.half	1
+	.byte	101
+	.word	.L172-.L73,.L133-.L73
+	.half	1
+	.byte	108
+	.word	0,0
+.L138:
+	.word	-1,.L73,.L177-.L73,.L178-.L73
+	.half	1
+	.byte	81
+	.word	0,0
+.L140:
+	.word	-1,.L73,.L21-.L73,.L20-.L73
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L180-.L73,.L181-.L73
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L39-.L73,.L182-.L73
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L40-.L73,.L183-.L73
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L41-.L73,.L37-.L73
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L134:
+	.word	-1,.L73,0,.L171-.L73
+	.half	1
+	.byte	100
+	.word	0,0
+.L72:
+	.word	-1,.L73,0,.L170-.L73
+	.half	2
+	.byte	138,0
+	.word	.L170-.L73,.L52-.L73
+	.half	2
+	.byte	138,32
+	.word	.L52-.L73,.L52-.L73
+	.half	2
+	.byte	138,0
+	.word	.L52-.L73,.L133-.L73
+	.half	2
+	.byte	138,32
+	.word	.L133-.L73,.L133-.L73
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L142:
+	.word	-1,.L73,0,.L133-.L73
+	.half	2
+	.byte	145,108
+	.word	0,0
+.L144:
+	.word	-1,.L73,.L173-.L73,.L174-.L73
+	.half	1
+	.byte	111
+	.word	0,0
+.L137:
+	.word	-1,.L73,.L175-.L73,.L176-.L73
+	.half	1
+	.byte	88
+	.word	.L179-.L73,.L20-.L73
+	.half	1
+	.byte	88
+	.word	.L32-.L73,.L22-.L73
+	.half	1
+	.byte	88
+	.word	.L52-.L73,.L133-.L73
+	.half	1
+	.byte	88
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('ip4addr_ntoa')
+	.sect	'.debug_loc'
+.L148:
+	.word	-1,.L75,0,.L146-.L75
+	.half	1
+	.byte	100
+	.word	0,0
+.L74:
+	.word	-1,.L75,0,.L146-.L75
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('ip4addr_ntoa_r')
+	.sect	'.debug_loc'
+.L151:
+	.word	-1,.L77,0,.L58-.L77
+	.half	1
+	.byte	100
+	.word	0,0
+.L159:
+	.word	-1,.L77,.L186-.L77,.L187-.L77
+	.half	1
+	.byte	106
+	.word	.L187-.L77,.L188-.L77
+	.half	1
+	.byte	98
+	.word	.L63-.L77,.L193-.L77
+	.half	1
+	.byte	98
+	.word	0,0
+.L152:
+	.word	-1,.L77,0,.L150-.L77
+	.half	1
+	.byte	101
+	.word	.L193-.L77,.L150-.L77
+	.half	1
+	.byte	98
+	.word	0,0
+.L153:
+	.word	-1,.L77,0,.L150-.L77
+	.half	1
+	.byte	84
+	.word	0,0
+.L162:
+	.word	-1,.L77,.L59-.L77,.L189-.L77
+	.half	1
+	.byte	95
+	.word	.L191-.L77,.L192-.L77
+	.half	1
+	.byte	95
+	.word	0,0
+.L156:
+	.word	-1,.L77,0,.L150-.L77
+	.half	2
+	.byte	145,124
+	.word	0,0
+.L76:
+	.word	-1,.L77,0,.L184-.L77
+	.half	2
+	.byte	138,0
+	.word	.L184-.L77,.L63-.L77
+	.half	2
+	.byte	138,8
+	.word	.L63-.L77,.L63-.L77
+	.half	2
+	.byte	138,0
+	.word	.L63-.L77,.L150-.L77
+	.half	2
+	.byte	138,8
+	.word	.L150-.L77,.L150-.L77
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L163:
+	.word	-1,.L77,.L185-.L77,.L150-.L77
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L161:
+	.word	0,0
+.L160:
+	.word	-1,.L77,.L190-.L77,.L150-.L77
+	.half	1
+	.byte	87
+	.word	0,0
+.L157:
+	.word	-1,.L77,.L186-.L77,.L150-.L77
+	.half	1
+	.byte	111
+	.word	0,0
+.L154:
+	.word	-1,.L77,0,.L150-.L77
+	.half	2
+	.byte	145,120
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('ipaddr_addr')
+	.sect	'.debug_loc'
+.L130:
+	.word	-1,.L71,0,.L169-.L71
+	.half	1
+	.byte	100
+	.word	0,0
+.L70:
+	.word	-1,.L71,0,.L168-.L71
+	.half	2
+	.byte	138,0
+	.word	.L168-.L71,.L17-.L71
+	.half	2
+	.byte	138,8
+	.word	.L17-.L71,.L17-.L71
+	.half	2
+	.byte	138,0
+	.word	.L17-.L71,.L128-.L71
+	.half	2
+	.byte	138,8
+	.word	.L128-.L71,.L128-.L71
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L131:
+	.word	-1,.L71,0,.L128-.L71
+	.half	2
+	.byte	145,120
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L309:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('ip4_addr_isbroadcast_u32')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L309,.L67,.L117-.L67
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('ip4_addr_netmask_valid')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L309,.L69,.L124-.L69
+	.sdecl	'.debug_frame',debug,cluster('ipaddr_addr')
+	.sect	'.debug_frame'
+	.word	52
+	.word	.L309,.L71,.L128-.L71
+	.byte	4
+	.word	(.L168-.L71)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L17-.L168)/2
+	.byte	19,0,8,26,19,8,22,26,3,19,138,8,4
+	.word	(.L128-.L17)/2
+	.byte	19,0,8,26,0
+	.sdecl	'.debug_frame',debug,cluster('ip4addr_aton')
+	.sect	'.debug_frame'
+	.word	52
+	.word	.L309,.L73,.L133-.L73
+	.byte	4
+	.word	(.L170-.L73)/2
+	.byte	19,32,22,26,3,19,138,32,4
+	.word	(.L52-.L170)/2
+	.byte	19,0,8,26,19,32,22,26,3,19,138,32,4
+	.word	(.L133-.L52)/2
+	.byte	19,0,8,26,0
+	.sdecl	'.debug_frame',debug,cluster('ip4addr_ntoa')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L309,.L75,.L146-.L75
+	.sdecl	'.debug_frame',debug,cluster('ip4addr_ntoa_r')
+	.sect	'.debug_frame'
+	.word	56
+	.word	.L309,.L77,.L150-.L77
+	.byte	8,19,8,23,4
+	.word	(.L184-.L77)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L63-.L184)/2
+	.byte	19,0,8,26,19,8,22,26,3,19,138,8,4
+	.word	(.L150-.L63)/2
+	.byte	19,0,8,26,0
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   320  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\ipv4\ip4_addr.c	   321  #endif /* LWIP_IPV4 */
+
+	; Module end

@@ -1,0 +1,983 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\.lowpan6_common.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Rtl8211f -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\lowpan6_common.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\lowpan6_common.src ..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\lowpan6_common.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\lowpan6_common.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	740
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\lowpan6_common.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	177
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	184
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	226
+	.byte	7
+	.word	226
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	242
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	247
+	.byte	9
+	.byte	'value',0
+	.word	226
+	.byte	9
+	.byte	'compare',0
+	.word	226
+	.byte	0,2
+	.byte	'short int',0,2,5,10
+	.byte	'__wchar_t',0,1,1,1
+	.word	304
+	.byte	10
+	.byte	'__size_t',0,1,1,1
+	.word	226
+	.byte	10
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	177
+	.byte	11,1,7
+	.word	372
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	374
+	.byte	10
+	.byte	'__intptr_t',0,1,1,1
+	.word	177
+	.byte	10
+	.byte	'__uintptr_t',0,1,1,1
+	.word	226
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,108,29
+	.word	436
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,112,29
+	.word	467
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,116,29
+	.word	504
+	.byte	2
+	.byte	'char',0,1,6,10
+	.byte	'sint8',0,2,125,29
+	.word	540
+	.byte	10
+	.byte	'sint16',0,2,129,1,29
+	.word	304
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'sint32',0,2,134,1,29
+	.word	578
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'sint64',0,2,141,1,29
+	.word	606
+	.byte	2
+	.byte	'float',0,4,4,10
+	.byte	'float32',0,2,170,1,29
+	.word	639
+	.byte	12
+	.byte	'void',0,7
+	.word	665
+	.byte	10
+	.byte	'pvoid',0,3,54,28
+	.word	671
+	.byte	10
+	.byte	'Ifx_TickTime',0,3,76,28
+	.word	606
+	.byte	10
+	.byte	'u32_t',0,4,87,16
+	.word	504
+	.byte	10
+	.byte	'intmax_t',0,5,198,2,41
+	.word	606
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,59,0
+	.byte	3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\lowpan6_common.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'cc.h',0,2,0,0
+	.byte	'stdint.h',0,3,0,0,0
+.L9:
+.L7:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	     1  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	     2   * @file
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	     3   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	     4   * Common 6LowPAN routines for IPv6. Uses ND tables for link-layer addressing. Fragments packets to 6LowPAN units.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	     5   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	     6   * This implementation aims to conform to IEEE 802.15.4(-2015), RFC 4944 and RFC 6282.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	     7   * @todo: RFC 6775.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	     8   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	     9  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    10  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    11   * Copyright (c) 2015 Inico Technologies Ltd.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    12   * All rights reserved.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    13   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    14   * Redistribution and use in source and binary forms, with or without modification,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    15   * are permitted provided that the following conditions are met:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    16   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    17   * 1. Redistributions of source code must retain the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    18   *    this list of conditions and the following disclaimer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    19   * 2. Redistributions in binary form must reproduce the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    20   *    this list of conditions and the following disclaimer in the documentation
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    21   *    and/or other materials provided with the distribution.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    22   * 3. The name of the author may not be used to endorse or promote products
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    23   *    derived from this software without specific prior written permission.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    24   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    25   * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    26   * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    27   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    28   * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    29   * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    30   * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    31   * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    32   * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    33   * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    34   * OF SUCH DAMAGE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    35   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    36   * This file is part of the lwIP TCP/IP stack.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    37   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    38   * Author: Ivan Delamer <delamer@inicotech.com>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    39   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    40   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    41   * Please coordinate changes and requests with Ivan Delamer
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    42   * <delamer@inicotech.com>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    43   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    44  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    45  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    46   * @defgroup sixlowpan 6LoWPAN (RFC4944)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    47   * @ingroup netifs
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    48   * 6LowPAN netif implementation
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    49   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    50  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    51  #include "netif/lowpan6_common.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    52  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    53  #if LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    54  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    55  #include "lwip/ip.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    56  #include "lwip/pbuf.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    57  #include "lwip/ip_addr.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    58  #include "lwip/netif.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    59  #include "lwip/udp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    60  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    61  #include <string.h>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    62  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    63  /* Determine compression mode for unicast address. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    64  s8_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    65  lowpan6_get_address_mode(const ip6_addr_t *ip6addr, const struct lowpan6_link_addr *mac_addr)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    66  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    67    if (mac_addr->addr_len == 2) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    68      if ((ip6addr->addr[2] == (u32_t)PP_HTONL(0x000000ff)) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    69          ((ip6addr->addr[3]  & PP_HTONL(0xffff0000)) == PP_NTOHL(0xfe000000))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    70        if ((ip6addr->addr[3]  & PP_HTONL(0x0000ffff)) == lwip_ntohl((mac_addr->addr[0] << 8) | mac_addr->addr[1])) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    71          return 3;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    72        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    73      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    74    } else if (mac_addr->addr_len == 8) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    75      if ((ip6addr->addr[2] == lwip_ntohl(((mac_addr->addr[0] ^ 2) << 24) | (mac_addr->addr[1] << 16) | mac_addr->addr[2] << 8 | mac_addr->addr[3])) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    76          (ip6addr->addr[3] == lwip_ntohl((mac_addr->addr[4] << 24) | (mac_addr->addr[5] << 16) | mac_addr->addr[6] << 8 | mac_addr->addr[7]))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    77        return 3;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    78      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    79    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    80  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    81    if ((ip6addr->addr[2] == PP_HTONL(0x000000ffUL)) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    82        ((ip6addr->addr[3]  & PP_HTONL(0xffff0000)) == PP_NTOHL(0xfe000000UL))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    83      return 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    84    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    85  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    86    return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    87  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    88  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    89  #if LWIP_6LOWPAN_IPHC
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    90  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    91  /* Determine compression mode for multicast address. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    92  static s8_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    93  lowpan6_get_address_mode_mc(const ip6_addr_t *ip6addr)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    94  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    95    if ((ip6addr->addr[0] == PP_HTONL(0xff020000)) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    96        (ip6addr->addr[1] == 0) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    97        (ip6addr->addr[2] == 0) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    98        ((ip6addr->addr[3]  & PP_HTONL(0xffffff00)) == 0)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	    99      return 3;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   100    } else if (((ip6addr->addr[0] & PP_HTONL(0xff00ffff)) == PP_HTONL(0xff000000)) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   101               (ip6addr->addr[1] == 0)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   102      if ((ip6addr->addr[2] == 0) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   103          ((ip6addr->addr[3]  & PP_HTONL(0xff000000)) == 0)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   104        return 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   105      } else if ((ip6addr->addr[2]  & PP_HTONL(0xffffff00)) == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   106        return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   107      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   108    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   109  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   110    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   111  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   112  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   113  #if LWIP_6LOWPAN_NUM_CONTEXTS > 0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   114  static s8_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   115  lowpan6_context_lookup(const ip6_addr_t *lowpan6_contexts, const ip6_addr_t *ip6addr)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   116  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   117    s8_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   118  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   119    for (i = 0; i < LWIP_6LOWPAN_NUM_CONTEXTS; i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   120      if (ip6_addr_netcmp(&lowpan6_contexts[i], ip6addr)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   121        return i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   122      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   123    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   124    return -1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   125  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   126  #endif /* LWIP_6LOWPAN_NUM_CONTEXTS > 0 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   127  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   128  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   129   * Compress IPv6 and/or UDP headers.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   130   * */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   131  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   132  lowpan6_compress_headers(struct netif *netif, u8_t *inbuf, size_t inbuf_size, u8_t *outbuf, size_t outbuf_size,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   133                           u8_t *lowpan6_header_len_out, u8_t *hidden_header_len_out, ip6_addr_t *lowpan6_contexts,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   134                           const struct lowpan6_link_addr *src, const struct lowpan6_link_addr *dst)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   135  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   136    u8_t *buffer, *inptr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   137    u8_t lowpan6_header_len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   138    u8_t hidden_header_len = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   139    s8_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   140    struct ip6_hdr *ip6hdr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   141    ip_addr_t ip6src, ip6dst;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   142  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   143    LWIP_ASSERT("netif != NULL", netif != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   144    LWIP_ASSERT("inbuf != NULL", inbuf != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   145    LWIP_ASSERT("outbuf != NULL", outbuf != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   146    LWIP_ASSERT("lowpan6_header_len_out != NULL", lowpan6_header_len_out != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   147    LWIP_ASSERT("hidden_header_len_out != NULL", hidden_header_len_out != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   148  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   149    /* Perform 6LowPAN IPv6 header compression according to RFC 6282 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   150    buffer = outbuf;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   151    inptr = inbuf;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   152  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   153    if (inbuf_size < IP6_HLEN) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   154      /* input buffer too short */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   155      return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   156    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   157    if (outbuf_size < IP6_HLEN) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   158      /* output buffer too short for worst case */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   159      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   160    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   161  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   162    /* Point to ip6 header and align copies of src/dest addresses. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   163    ip6hdr = (struct ip6_hdr *)inptr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   164    ip_addr_copy_from_ip6_packed(ip6dst, ip6hdr->dest);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   165    ip6_addr_assign_zone(ip_2_ip6(&ip6dst), IP6_UNKNOWN, netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   166    ip_addr_copy_from_ip6_packed(ip6src, ip6hdr->src);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   167    ip6_addr_assign_zone(ip_2_ip6(&ip6src), IP6_UNKNOWN, netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   168  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   169    /* Basic length of 6LowPAN header, set dispatch and clear fields. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   170    lowpan6_header_len = 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   171    buffer[0] = 0x60;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   172    buffer[1] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   173  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   174    /* Determine whether there will be a Context Identifier Extension byte or not.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   175     * If so, set it already. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   176  #if LWIP_6LOWPAN_NUM_CONTEXTS > 0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   177    buffer[2] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   178  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   179    i = lowpan6_context_lookup(lowpan6_contexts, ip_2_ip6(&ip6src));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   180    if (i >= 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   181      /* Stateful source address compression. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   182      buffer[1] |= 0x40;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   183      buffer[2] |= (i & 0x0f) << 4;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   184    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   185  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   186    i = lowpan6_context_lookup(lowpan6_contexts, ip_2_ip6(&ip6dst));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   187    if (i >= 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   188      /* Stateful destination address compression. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   189      buffer[1] |= 0x04;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   190      buffer[2] |= i & 0x0f;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   191    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   192  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   193    if (buffer[2] != 0x00) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   194      /* Context identifier extension byte is appended. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   195      buffer[1] |= 0x80;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   196      lowpan6_header_len++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   197    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   198  #else /* LWIP_6LOWPAN_NUM_CONTEXTS > 0 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   199    LWIP_UNUSED_ARG(lowpan6_contexts);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   200  #endif /* LWIP_6LOWPAN_NUM_CONTEXTS > 0 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   201  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   202    /* Determine TF field: Traffic Class, Flow Label */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   203    if (IP6H_FL(ip6hdr) == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   204      /* Flow label is elided. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   205      buffer[0] |= 0x10;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   206      if (IP6H_TC(ip6hdr) == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   207        /* Traffic class (ECN+DSCP) elided too. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   208        buffer[0] |= 0x08;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   209      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   210        /* Traffic class (ECN+DSCP) appended. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   211        buffer[lowpan6_header_len++] = IP6H_TC(ip6hdr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   212      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   213    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   214      if (((IP6H_TC(ip6hdr) & 0x3f) == 0)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   215        /* DSCP portion of Traffic Class is elided, ECN and FL are appended (3 bytes) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   216        buffer[0] |= 0x08;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   217  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   218        buffer[lowpan6_header_len] = IP6H_TC(ip6hdr) & 0xc0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   219        buffer[lowpan6_header_len++] |= (IP6H_FL(ip6hdr) >> 16) & 0x0f;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   220        buffer[lowpan6_header_len++] = (IP6H_FL(ip6hdr) >> 8) & 0xff;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   221        buffer[lowpan6_header_len++] = IP6H_FL(ip6hdr) & 0xff;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   222      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   223        /* Traffic class and flow label are appended (4 bytes) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   224        buffer[lowpan6_header_len++] = IP6H_TC(ip6hdr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   225        buffer[lowpan6_header_len++] = (IP6H_FL(ip6hdr) >> 16) & 0x0f;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   226        buffer[lowpan6_header_len++] = (IP6H_FL(ip6hdr) >> 8) & 0xff;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   227        buffer[lowpan6_header_len++] = IP6H_FL(ip6hdr) & 0xff;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   228      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   229    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   230  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   231    /* Compress NH?
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   232    * Only if UDP for now. @todo support other NH compression. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   233    if (IP6H_NEXTH(ip6hdr) == IP6_NEXTH_UDP) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   234      buffer[0] |= 0x04;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   235    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   236      /* append nexth. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   237      buffer[lowpan6_header_len++] = IP6H_NEXTH(ip6hdr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   238    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   239  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   240    /* Compress hop limit? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   241    if (IP6H_HOPLIM(ip6hdr) == 255) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   242      buffer[0] |= 0x03;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   243    } else if (IP6H_HOPLIM(ip6hdr) == 64) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   244      buffer[0] |= 0x02;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   245    } else if (IP6H_HOPLIM(ip6hdr) == 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   246      buffer[0] |= 0x01;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   247    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   248      /* append hop limit */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   249      buffer[lowpan6_header_len++] = IP6H_HOPLIM(ip6hdr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   250    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   251  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   252    /* Compress source address */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   253    if (((buffer[1] & 0x40) != 0) ||
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   254        (ip6_addr_islinklocal(ip_2_ip6(&ip6src)))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   255      /* Context-based or link-local source address compression. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   256      i = lowpan6_get_address_mode(ip_2_ip6(&ip6src), src);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   257      buffer[1] |= (i & 0x03) << 4;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   258      if (i == 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   259        MEMCPY(buffer + lowpan6_header_len, inptr + 16, 8);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   260        lowpan6_header_len += 8;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   261      } else if (i == 2) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   262        MEMCPY(buffer + lowpan6_header_len, inptr + 22, 2);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   263        lowpan6_header_len += 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   264      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   265    } else if (ip6_addr_isany(ip_2_ip6(&ip6src))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   266      /* Special case: mark SAC and leave SAM=0 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   267      buffer[1] |= 0x40;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   268    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   269      /* Append full address. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   270      MEMCPY(buffer + lowpan6_header_len, inptr + 8, 16);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   271      lowpan6_header_len += 16;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   272    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   273  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   274    /* Compress destination address */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   275    if (ip6_addr_ismulticast(ip_2_ip6(&ip6dst))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   276      /* @todo support stateful multicast address compression */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   277  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   278      buffer[1] |= 0x08;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   279  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   280      i = lowpan6_get_address_mode_mc(ip_2_ip6(&ip6dst));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   281      buffer[1] |= i & 0x03;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   282      if (i == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   283        MEMCPY(buffer + lowpan6_header_len, inptr + 24, 16);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   284        lowpan6_header_len += 16;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   285      } else if (i == 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   286        buffer[lowpan6_header_len++] = inptr[25];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   287        MEMCPY(buffer + lowpan6_header_len, inptr + 35, 5);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   288        lowpan6_header_len += 5;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   289      } else if (i == 2) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   290        buffer[lowpan6_header_len++] = inptr[25];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   291        MEMCPY(buffer + lowpan6_header_len, inptr + 37, 3);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   292        lowpan6_header_len += 3;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   293      } else if (i == 3) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   294        buffer[lowpan6_header_len++] = (inptr)[39];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   295      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   296    } else if (((buffer[1] & 0x04) != 0) ||
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   297                (ip6_addr_islinklocal(ip_2_ip6(&ip6dst)))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   298      /* Context-based or link-local destination address compression. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   299      i = lowpan6_get_address_mode(ip_2_ip6(&ip6dst), dst);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   300      buffer[1] |= i & 0x03;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   301      if (i == 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   302        MEMCPY(buffer + lowpan6_header_len, inptr + 32, 8);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   303        lowpan6_header_len += 8;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   304      } else if (i == 2) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   305        MEMCPY(buffer + lowpan6_header_len, inptr + 38, 2);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   306        lowpan6_header_len += 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   307      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   308    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   309      /* Append full address. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   310      MEMCPY(buffer + lowpan6_header_len, inptr + 24, 16);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   311      lowpan6_header_len += 16;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   312    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   313  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   314    /* Move to payload. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   315    inptr += IP6_HLEN;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   316    hidden_header_len += IP6_HLEN;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   317  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   318  #if LWIP_UDP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   319    /* Compress UDP header? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   320    if (IP6H_NEXTH(ip6hdr) == IP6_NEXTH_UDP) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   321      /* @todo support optional checksum compression */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   322  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   323      if (inbuf_size < IP6_HLEN + UDP_HLEN) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   324        /* input buffer too short */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   325        return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   326      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   327      if (outbuf_size < (size_t)(hidden_header_len + 7)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   328        /* output buffer too short for worst case */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   329        return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   330      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   331  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   332      buffer[lowpan6_header_len] = 0xf0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   333  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   334      /* determine port compression mode. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   335      if ((inptr[0] == 0xf0) && ((inptr[1] & 0xf0) == 0xb0) &&
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   336          (inptr[2] == 0xf0) && ((inptr[3] & 0xf0) == 0xb0)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   337        /* Compress source and dest ports. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   338        buffer[lowpan6_header_len++] |= 0x03;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   339        buffer[lowpan6_header_len++] = ((inptr[1] & 0x0f) << 4) | (inptr[3] & 0x0f);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   340      } else if (inptr[0] == 0xf0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   341        /* Compress source port. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   342        buffer[lowpan6_header_len++] |= 0x02;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   343        buffer[lowpan6_header_len++] = inptr[1];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   344        buffer[lowpan6_header_len++] = inptr[2];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   345        buffer[lowpan6_header_len++] = inptr[3];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   346      } else if (inptr[2] == 0xf0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   347        /* Compress dest port. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   348        buffer[lowpan6_header_len++] |= 0x01;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   349        buffer[lowpan6_header_len++] = inptr[0];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   350        buffer[lowpan6_header_len++] = inptr[1];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   351        buffer[lowpan6_header_len++] = inptr[3];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   352      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   353        /* append full ports. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   354        lowpan6_header_len++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   355        buffer[lowpan6_header_len++] = inptr[0];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   356        buffer[lowpan6_header_len++] = inptr[1];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   357        buffer[lowpan6_header_len++] = inptr[2];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   358        buffer[lowpan6_header_len++] = inptr[3];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   359      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   360  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   361      /* elide length and copy checksum */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   362      buffer[lowpan6_header_len++] = inptr[6];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   363      buffer[lowpan6_header_len++] = inptr[7];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   364  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   365      hidden_header_len += UDP_HLEN;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   366    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   367  #endif /* LWIP_UDP */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   368  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   369    *lowpan6_header_len_out = lowpan6_header_len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   370    *hidden_header_len_out = hidden_header_len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   371  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   372    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   373  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   374  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   375  /** Decompress IPv6 and UDP headers compressed according to RFC 6282
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   376   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   377   * @param lowpan6_buffer compressed headers, first byte is the dispatch byte
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   378   * @param lowpan6_bufsize size of lowpan6_buffer (may include data after headers)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   379   * @param decomp_buffer buffer where the decompressed headers are stored
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   380   * @param decomp_bufsize size of decomp_buffer
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   381   * @param hdr_size_comp returns the size of the compressed headers (skip to get to data)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   382   * @param hdr_size_decomp returns the size of the decompressed headers (IPv6 + UDP)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   383   * @param datagram_size datagram size from fragments or 0 if unfragmented
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   384   * @param compressed_size compressed datagram size (for unfragmented rx)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   385   * @param lowpan6_contexts context addresses
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   386   * @param src source address of the outer layer, used for address compression
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   387   * @param dest destination address of the outer layer, used for address compression
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   388   * @return ERR_OK if decompression succeeded, an error otherwise
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   389   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   390  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   391  lowpan6_decompress_hdr(u8_t *lowpan6_buffer, size_t lowpan6_bufsize,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   392                         u8_t *decomp_buffer, size_t decomp_bufsize,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   393                         u16_t *hdr_size_comp, u16_t *hdr_size_decomp,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   394                         u16_t datagram_size, u16_t compressed_size,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   395                         ip6_addr_t *lowpan6_contexts,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   396                         struct lowpan6_link_addr *src, struct lowpan6_link_addr *dest)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   397  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   398    u16_t lowpan6_offset;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   399    struct ip6_hdr *ip6hdr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   400    s8_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   401    u32_t header_temp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   402    u16_t ip6_offset = IP6_HLEN;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   403  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   404    LWIP_ASSERT("lowpan6_buffer != NULL", lowpan6_buffer != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   405    LWIP_ASSERT("decomp_buffer != NULL", decomp_buffer != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   406    LWIP_ASSERT("src != NULL", src != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   407    LWIP_ASSERT("dest != NULL", dest != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   408    LWIP_ASSERT("hdr_size_comp != NULL", hdr_size_comp != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   409    LWIP_ASSERT("dehdr_size_decompst != NULL", hdr_size_decomp != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   410  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   411    ip6hdr = (struct ip6_hdr *)decomp_buffer;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   412    if (decomp_bufsize < IP6_HLEN) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   413      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   414    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   415  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   416    /* output the full compressed packet, if set in @see lowpan6_opts.h */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   417  #if LWIP_LOWPAN6_IP_COMPRESSED_DEBUG
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   418    {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   419      u16_t j;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   420      LWIP_DEBUGF(LWIP_LOWPAN6_IP_COMPRESSED_DEBUG, ("lowpan6_decompress_hdr: IP6 payload (compressed): \n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   421      for (j = 0; j < lowpan6_bufsize; j++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   422        if ((j % 4) == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   423          LWIP_DEBUGF(LWIP_LOWPAN6_IP_COMPRESSED_DEBUG, ("\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   424        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   425        LWIP_DEBUGF(LWIP_LOWPAN6_IP_COMPRESSED_DEBUG, ("%2X ", lowpan6_buffer[j]));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   426      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   427      LWIP_DEBUGF(LWIP_LOWPAN6_IP_COMPRESSED_DEBUG, ("\np->len: %d", lowpan6_bufsize));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   428    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   429  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   430  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   431    /* offset for inline IP headers (RFC 6282 ch3)*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   432    lowpan6_offset = 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   433    /* if CID is set (context identifier), the context byte 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   434     * follows immediately after the header, so other IPHC fields are @+3 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   435    if (lowpan6_buffer[1] & 0x80) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   436      lowpan6_offset++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   437    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   438  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   439    /* Set IPv6 version, traffic class and flow label. (RFC6282, ch 3.1.1.)*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   440    if ((lowpan6_buffer[0] & 0x18) == 0x00) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   441      header_temp = ((lowpan6_buffer[lowpan6_offset+1] & 0x0f) << 16) | \ 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   442        (lowpan6_buffer[lowpan6_offset + 2] << 8) | lowpan6_buffer[lowpan6_offset+3];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   443      LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("TF: 00, ECN: 0x%2x, Flowlabel+DSCP: 0x%8X\n", \ 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   444        lowpan6_buffer[lowpan6_offset],header_temp));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   445      IP6H_VTCFL_SET(ip6hdr, 6, lowpan6_buffer[lowpan6_offset], header_temp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   446      /* increase offset, processed 4 bytes here:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   447       * TF=00:  ECN + DSCP + 4-bit Pad + Flow Label (4 bytes)*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   448      lowpan6_offset += 4;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   449    } else if ((lowpan6_buffer[0] & 0x18) == 0x08) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   450      header_temp = ((lowpan6_buffer[lowpan6_offset] & 0x0f) << 16) | (lowpan6_buffer[lowpan6_offset + 1] << 8) | lowpan6_buffer[lowpan6_offset+2];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   451      LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("TF: 01, ECN: 0x%2x, Flowlabel: 0x%2X, DSCP ignored\n", \ 
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   452        lowpan6_buffer[lowpan6_offset] & 0xc0,header_temp));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   453      IP6H_VTCFL_SET(ip6hdr, 6, lowpan6_buffer[lowpan6_offset] & 0xc0, header_temp);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   454      /* increase offset, processed 3 bytes here:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   455       * TF=01:  ECN + 2-bit Pad + Flow Label (3 bytes), DSCP is elided.*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   456      lowpan6_offset += 3;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   457    } else if ((lowpan6_buffer[0] & 0x18) == 0x10) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   458      LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("TF: 10, DCSP+ECN: 0x%2x, Flowlabel ignored\n", lowpan6_buffer[lowpan6_offset]));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   459      IP6H_VTCFL_SET(ip6hdr, 6, lowpan6_buffer[lowpan6_offset],0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   460      /* increase offset, processed 1 byte here:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   461       * ECN + DSCP (1 byte), Flow Label is elided.*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   462      lowpan6_offset += 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   463    } else if ((lowpan6_buffer[0] & 0x18) == 0x18) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   464      LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("TF: 11, DCSP/ECN & Flowlabel ignored\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   465      /* don't increase offset, no bytes processed here */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   466      IP6H_VTCFL_SET(ip6hdr, 6, 0, 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   467    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   468  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   469    /* Set Next Header (NH) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   470    if ((lowpan6_buffer[0] & 0x04) == 0x00) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   471      /* 0: full next header byte carried inline (increase offset)*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   472      LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("NH: 0x%2X\n", lowpan6_buffer[lowpan6_offset+1]));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   473      IP6H_NEXTH_SET(ip6hdr, lowpan6_buffer[lowpan6_offset++]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   474    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   475      /* 1: NH compression, LOWPAN_NHC (RFC6282, ch 4.1) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   476      /* We should fill this later with NHC decoding */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   477      LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("NH: skipped, later done with NHC\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   478      IP6H_NEXTH_SET(ip6hdr, 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   479    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   480  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   481    /* Set Hop Limit, either carried inline or 3 different hops (1,64,255) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   482    if ((lowpan6_buffer[0] & 0x03) == 0x00) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   483      LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("Hops: full value: %d\n", lowpan6_buffer[lowpan6_offset+1]));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   484      IP6H_HOPLIM_SET(ip6hdr, lowpan6_buffer[lowpan6_offset++]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   485    } else if ((lowpan6_buffer[0] & 0x03) == 0x01) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   486      LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("Hops: compressed: 1\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   487      IP6H_HOPLIM_SET(ip6hdr, 1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   488    } else if ((lowpan6_buffer[0] & 0x03) == 0x02) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   489      LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("Hops: compressed: 64\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   490      IP6H_HOPLIM_SET(ip6hdr, 64);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   491    } else if ((lowpan6_buffer[0] & 0x03) == 0x03) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   492      LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("Hops: compressed: 255\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   493      IP6H_HOPLIM_SET(ip6hdr, 255);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   494    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   495  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   496    /* Source address decoding. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   497    if ((lowpan6_buffer[1] & 0x40) == 0x00) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   498      /* Source address compression (SAC) = 0 -> stateless compression */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   499      LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("SAC == 0, no context byte\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   500      /* Stateless compression */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   501      if ((lowpan6_buffer[1] & 0x30) == 0x00) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   502        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("SAM == 00, no src compression, fetching 128bits inline\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   503        /* copy full address, increase offset by 16 Bytes */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   504        MEMCPY(&ip6hdr->src.addr[0], lowpan6_buffer + lowpan6_offset, 16);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   505        lowpan6_offset += 16;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   506      } else if ((lowpan6_buffer[1] & 0x30) == 0x10) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   507        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("SAM == 01, src compression, 64bits inline\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   508        /* set 64 bits to link local */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   509        ip6hdr->src.addr[0] = PP_HTONL(0xfe800000UL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   510        ip6hdr->src.addr[1] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   511        /* copy 8 Bytes, increase offset */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   512        MEMCPY(&ip6hdr->src.addr[2], lowpan6_buffer + lowpan6_offset, 8);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   513        lowpan6_offset += 8;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   514      } else if ((lowpan6_buffer[1] & 0x30) == 0x20) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   515        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("SAM == 10, src compression, 16bits inline\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   516        /* set 96 bits to link local */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   517        ip6hdr->src.addr[0] = PP_HTONL(0xfe800000UL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   518        ip6hdr->src.addr[1] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   519        ip6hdr->src.addr[2] = PP_HTONL(0x000000ffUL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   520        /* extract remaining 16bits from inline bytes, increase offset */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   521        ip6hdr->src.addr[3] = lwip_htonl(0xfe000000UL | (lowpan6_buffer[lowpan6_offset] << 8) |
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   522                                         lowpan6_buffer[lowpan6_offset + 1]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   523        lowpan6_offset += 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   524      } else if ((lowpan6_buffer[1] & 0x30) == 0x30) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   525        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("SAM == 11, src compression, 0bits inline, using other headers\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   526        /* no information avalaible, using other layers, see RFC6282 ch 3.2.2 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   527        ip6hdr->src.addr[0] = PP_HTONL(0xfe800000UL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   528        ip6hdr->src.addr[1] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   529        if (src->addr_len == 2) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   530          ip6hdr->src.addr[2] = PP_HTONL(0x000000ffUL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   531          ip6hdr->src.addr[3] = lwip_htonl(0xfe000000UL | (src->addr[0] << 8) | src->addr[1]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   532        } else if (src->addr_len == 8) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   533          ip6hdr->src.addr[2] = lwip_htonl(((src->addr[0] ^ 2) << 24) | (src->addr[1] << 16) |
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   534                                           (src->addr[2] << 8) | src->addr[3]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   535          ip6hdr->src.addr[3] = lwip_htonl((src->addr[4] << 24) | (src->addr[5] << 16) |
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   536                                           (src->addr[6] << 8) | src->addr[7]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   537        } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   538          /* invalid source address length */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   539          LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("Invalid source address length\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   540          return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   541        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   542      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   543    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   544      /* Source address compression (SAC) = 1 -> stateful/context-based compression */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   545      LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("SAC == 1, additional context byte\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   546      if ((lowpan6_buffer[1] & 0x30) == 0x00) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   547        /* SAM=00, address=> :: (ANY) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   548        ip6hdr->src.addr[0] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   549        ip6hdr->src.addr[1] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   550        ip6hdr->src.addr[2] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   551        ip6hdr->src.addr[3] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   552        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("SAM == 00, context compression, ANY (::)\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   553      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   554        /* Set prefix from context info */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   555        if (lowpan6_buffer[1] & 0x80) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   556          i = (lowpan6_buffer[2] >> 4) & 0x0f;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   557        } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   558          i = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   559        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   560        if (i >= LWIP_6LOWPAN_NUM_CONTEXTS) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   561          /* Error */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   562          return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   563        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   564  #if LWIP_6LOWPAN_NUM_CONTEXTS > 0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   565        ip6hdr->src.addr[0] = lowpan6_contexts[i].addr[0];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   566        ip6hdr->src.addr[1] = lowpan6_contexts[i].addr[1];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   567        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("SAM == xx, context compression found @%d: %8X, %8X\n", (int)i, ip6hdr->src.addr[0], ip6hdr->src.addr[1]));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   568  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   569        LWIP_UNUSED_ARG(lowpan6_contexts);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   570  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   571      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   572  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   573      /* determine further address bits */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   574      if ((lowpan6_buffer[1] & 0x30) == 0x10) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   575        /* SAM=01, load additional 64bits */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   576        MEMCPY(&ip6hdr->src.addr[2], lowpan6_buffer + lowpan6_offset, 8);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   577        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("SAM == 01, context compression, 64bits inline\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   578        lowpan6_offset += 8;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   579      } else if ((lowpan6_buffer[1] & 0x30) == 0x20) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   580        /* SAM=01, load additional 16bits */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   581        ip6hdr->src.addr[2] = PP_HTONL(0x000000ffUL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   582        ip6hdr->src.addr[3] = lwip_htonl(0xfe000000UL | (lowpan6_buffer[lowpan6_offset] << 8) | lowpan6_buffer[lowpan6_offset + 1]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   583        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("SAM == 10, context compression, 16bits inline\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   584        lowpan6_offset += 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   585      } else if ((lowpan6_buffer[1] & 0x30) == 0x30) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   586        /* SAM=11, address is fully elided, load from other layers */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   587        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("SAM == 11, context compression, 0bits inline, using other headers\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   588        if (src->addr_len == 2) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   589          ip6hdr->src.addr[2] = PP_HTONL(0x000000ffUL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   590          ip6hdr->src.addr[3] = lwip_htonl(0xfe000000UL | (src->addr[0] << 8) | src->addr[1]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   591        } else if (src->addr_len == 8) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   592          ip6hdr->src.addr[2] = lwip_htonl(((src->addr[0] ^ 2) << 24) | (src->addr[1] << 16) | (src->addr[2] << 8) | src->addr[3]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   593          ip6hdr->src.addr[3] = lwip_htonl((src->addr[4] << 24) | (src->addr[5] << 16) | (src->addr[6] << 8) | src->addr[7]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   594        } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   595          /* invalid source address length */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   596          LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("Invalid source address length\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   597          return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   598        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   599      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   600    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   601  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   602    /* Destination address decoding. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   603    if (lowpan6_buffer[1] & 0x08) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   604      LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("M=1: multicast\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   605      /* Multicast destination */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   606      if (lowpan6_buffer[1] & 0x04) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   607        LWIP_DEBUGF(LWIP_DBG_ON,("DAC == 1, context multicast: unsupported!!!\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   608        /* @todo support stateful multicast addressing */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   609        return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   610      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   611  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   612      if ((lowpan6_buffer[1] & 0x03) == 0x00) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   613        /* DAM = 00, copy full address (128bits) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   614        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("DAM == 00, no dst compression, fetching 128bits inline\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   615        MEMCPY(&ip6hdr->dest.addr[0], lowpan6_buffer + lowpan6_offset, 16);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   616        lowpan6_offset += 16;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   617      } else if ((lowpan6_buffer[1] & 0x03) == 0x01) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   618        /* DAM = 01, copy 4 bytes (32bits) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   619        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("DAM == 01, dst address form (48bits): ffXX::00XX:XXXX:XXXX\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   620        ip6hdr->dest.addr[0] = lwip_htonl(0xff000000UL | (lowpan6_buffer[lowpan6_offset++] << 16));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   621        ip6hdr->dest.addr[1] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   622        ip6hdr->dest.addr[2] = lwip_htonl(lowpan6_buffer[lowpan6_offset++]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   623        ip6hdr->dest.addr[3] = lwip_htonl((lowpan6_buffer[lowpan6_offset] << 24) | (lowpan6_buffer[lowpan6_offset + 1] << 16) | (lowpan6_buffer[lowpan6_offset + 2] << 8) | lowpan6_buffer[lowpan6_offset + 3]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   624        lowpan6_offset += 4;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   625      } else if ((lowpan6_buffer[1] & 0x03) == 0x02) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   626        /* DAM = 10, copy 3 bytes (24bits) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   627        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("DAM == 10, dst address form (32bits): ffXX::00XX:XXXX\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   628        ip6hdr->dest.addr[0] = lwip_htonl(0xff000000UL | (lowpan6_buffer[lowpan6_offset++] << 16));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   629        ip6hdr->dest.addr[1] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   630        ip6hdr->dest.addr[2] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   631        ip6hdr->dest.addr[3] = lwip_htonl((lowpan6_buffer[lowpan6_offset] << 16) | (lowpan6_buffer[lowpan6_offset + 1] << 8) | lowpan6_buffer[lowpan6_offset + 2]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   632        lowpan6_offset += 3;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   633      } else if ((lowpan6_buffer[1] & 0x03) == 0x03) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   634        /* DAM = 11, copy 1 byte (8bits) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   635        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("DAM == 11, dst address form (8bits): ff02::00XX\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   636        ip6hdr->dest.addr[0] = PP_HTONL(0xff020000UL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   637        ip6hdr->dest.addr[1] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   638        ip6hdr->dest.addr[2] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   639        ip6hdr->dest.addr[3] = lwip_htonl(lowpan6_buffer[lowpan6_offset++]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   640      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   641  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   642    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   643      /* no Multicast (M=0) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   644      if (lowpan6_buffer[1] & 0x04) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   645        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("DAC == 1, stateful compression\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   646        /* Stateful destination compression */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   647        /* Set prefix from context info */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   648        if (lowpan6_buffer[1] & 0x80) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   649          i = lowpan6_buffer[2] & 0x0f;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   650        } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   651          i = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   652        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   653        if (i >= LWIP_6LOWPAN_NUM_CONTEXTS) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   654          /* Error */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   655          return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   656        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   657  #if LWIP_6LOWPAN_NUM_CONTEXTS > 0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   658        ip6hdr->dest.addr[0] = lowpan6_contexts[i].addr[0];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   659        ip6hdr->dest.addr[1] = lowpan6_contexts[i].addr[1];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   660  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   661      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   662        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("DAC == 0, stateless compression, setting link local prefix\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   663        /* Link local address compression */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   664        ip6hdr->dest.addr[0] = PP_HTONL(0xfe800000UL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   665        ip6hdr->dest.addr[1] = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   666      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   667  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   668      /* M=0, DAC=0, determining destination address length via DAM=xx */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   669      if ((lowpan6_buffer[1] & 0x03) == 0x00) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   670        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("DAM == 00, no dst compression, fetching 128bits inline"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   671        /* DAM=00, copy full address */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   672        MEMCPY(&ip6hdr->dest.addr[0], lowpan6_buffer + lowpan6_offset, 16);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   673        lowpan6_offset += 16;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   674      } else if ((lowpan6_buffer[1] & 0x03) == 0x01) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   675        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("DAM == 01, dst compression, 64bits inline\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   676        /* DAM=01, copy 64 inline bits, increase offset */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   677        MEMCPY(&ip6hdr->dest.addr[2], lowpan6_buffer + lowpan6_offset, 8);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   678        lowpan6_offset += 8;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   679      } else if ((lowpan6_buffer[1] & 0x03) == 0x02) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   680        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("DAM == 01, dst compression, 16bits inline\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   681        /* DAM=10, copy 16 inline bits, increase offset */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   682        ip6hdr->dest.addr[2] = PP_HTONL(0x000000ffUL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   683        ip6hdr->dest.addr[3] = lwip_htonl(0xfe000000UL | (lowpan6_buffer[lowpan6_offset] << 8) | lowpan6_buffer[lowpan6_offset + 1]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   684        lowpan6_offset += 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   685      } else if ((lowpan6_buffer[1] & 0x03) == 0x03) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   686        /* DAM=11, no bits available, use other headers (not done here) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   687        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG,("DAM == 01, dst compression, 0bits inline, using other headers\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   688        if (dest->addr_len == 2) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   689          ip6hdr->dest.addr[2] = PP_HTONL(0x000000ffUL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   690          ip6hdr->dest.addr[3] = lwip_htonl(0xfe000000UL | (dest->addr[0] << 8) | dest->addr[1]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   691        } else if (dest->addr_len == 8) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   692          ip6hdr->dest.addr[2] = lwip_htonl(((dest->addr[0] ^ 2) << 24) | (dest->addr[1] << 16) | dest->addr[2] << 8 | dest->addr[3]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   693          ip6hdr->dest.addr[3] = lwip_htonl((dest->addr[4] << 24) | (dest->addr[5] << 16) | dest->addr[6] << 8 | dest->addr[7]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   694        } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   695          /* invalid destination address length */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   696          LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("Invalid destination address length\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   697          return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   698        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   699      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   700    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   701  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   702  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   703    /* Next Header Compression (NHC) decoding? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   704    if (lowpan6_buffer[0] & 0x04) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   705      LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("NHC decoding\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   706  #if LWIP_UDP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   707      if ((lowpan6_buffer[lowpan6_offset] & 0xf8) == 0xf0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   708        /* NHC: UDP */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   709        struct udp_hdr *udphdr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   710        LWIP_DEBUGF(LWIP_LOWPAN6_DECOMPRESSION_DEBUG, ("NHC: UDP\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   711  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   712        /* UDP compression */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   713        IP6H_NEXTH_SET(ip6hdr, IP6_NEXTH_UDP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   714        udphdr = (struct udp_hdr *)((u8_t *)decomp_buffer + ip6_offset);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   715        if (decomp_bufsize < IP6_HLEN + UDP_HLEN) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   716          return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   717        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   718  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   719        /* Checksum decompression */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   720        if (lowpan6_buffer[lowpan6_offset] & 0x04) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   721          /* @todo support checksum decompress */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   722          LWIP_DEBUGF(LWIP_DBG_ON, ("NHC: UDP chechsum decompression UNSUPPORTED\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   723          return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   724        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   725  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   726        /* Decompress ports, according to RFC4944 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   727        i = lowpan6_buffer[lowpan6_offset++] & 0x03;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   728        if (i == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   729          udphdr->src = lwip_htons(lowpan6_buffer[lowpan6_offset] << 8 | lowpan6_buffer[lowpan6_offset + 1]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   730          udphdr->dest = lwip_htons(lowpan6_buffer[lowpan6_offset + 2] << 8 | lowpan6_buffer[lowpan6_offset + 3]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   731          lowpan6_offset += 4;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   732        } else if (i == 0x01) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   733          udphdr->src = lwip_htons(lowpan6_buffer[lowpan6_offset] << 8 | lowpan6_buffer[lowpan6_offset + 1]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   734          udphdr->dest = lwip_htons(0xf000 | lowpan6_buffer[lowpan6_offset + 2]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   735          lowpan6_offset += 3;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   736        } else if (i == 0x02) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   737          udphdr->src = lwip_htons(0xf000 | lowpan6_buffer[lowpan6_offset]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   738          udphdr->dest = lwip_htons(lowpan6_buffer[lowpan6_offset + 1] << 8 | lowpan6_buffer[lowpan6_offset + 2]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   739          lowpan6_offset += 3;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   740        } else if (i == 0x03) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   741          udphdr->src = lwip_htons(0xf0b0 | ((lowpan6_buffer[lowpan6_offset] >> 4) & 0x0f));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   742          udphdr->dest = lwip_htons(0xf0b0 | (lowpan6_buffer[lowpan6_offset] & 0x0f));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   743          lowpan6_offset += 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   744        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   745  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   746        udphdr->chksum = lwip_htons(lowpan6_buffer[lowpan6_offset] << 8 | lowpan6_buffer[lowpan6_offset + 1]);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   747        lowpan6_offset += 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   748        ip6_offset += UDP_HLEN;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   749        if (datagram_size == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   750          datagram_size = compressed_size - lowpan6_offset + ip6_offset;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   751        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   752        udphdr->len = lwip_htons(datagram_size - IP6_HLEN);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   753  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   754      } else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   755  #endif /* LWIP_UDP */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   756      {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   757        LWIP_DEBUGF(LWIP_DBG_ON,("NHC: unsupported protocol!\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   758        /* @todo support NHC other than UDP */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   759        return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   760      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   761    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   762    if (datagram_size == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   763      datagram_size = compressed_size - lowpan6_offset + ip6_offset;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   764    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   765    /* Infer IPv6 payload length for header */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   766    IP6H_PLEN_SET(ip6hdr, datagram_size - IP6_HLEN);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   767  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   768    if (lowpan6_offset > lowpan6_bufsize) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   769      /* input buffer overflow */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   770      return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   771    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   772    *hdr_size_comp = lowpan6_offset;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   773    *hdr_size_decomp = ip6_offset;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   774  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   775    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   776  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   777  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   778  struct pbuf *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   779  lowpan6_decompress(struct pbuf *p, u16_t datagram_size, ip6_addr_t *lowpan6_contexts,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   780                     struct lowpan6_link_addr *src, struct lowpan6_link_addr *dest)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   781  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   782    struct pbuf *q;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   783    u16_t lowpan6_offset, ip6_offset;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   784    err_t err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   785  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   786  #if LWIP_UDP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   787  #define UDP_HLEN_ALLOC UDP_HLEN
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   788  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   789  #define UDP_HLEN_ALLOC 0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   790  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   791  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   792    /* Allocate a buffer for decompression. This buffer will be too big and will be
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   793       trimmed once the final size is known. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   794    q = pbuf_alloc(PBUF_IP, p->len + IP6_HLEN + UDP_HLEN_ALLOC, PBUF_POOL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   795    if (q == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   796      pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   797      return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   798    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   799    if (q->len < IP6_HLEN + UDP_HLEN_ALLOC) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   800      /* The headers need to fit into the first pbuf */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   801      pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   802      pbuf_free(q);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   803      return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   804    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   805  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   806    /* Decompress the IPv6 (and possibly UDP) header(s) into the new pbuf */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   807    err = lowpan6_decompress_hdr((u8_t *)p->payload, p->len, (u8_t *)q->payload, q->len,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   808      &lowpan6_offset, &ip6_offset, datagram_size, p->tot_len, lowpan6_contexts, src, dest);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   809    if (err != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   810      pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   811      pbuf_free(q);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   812      return NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   813    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   814  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   815    /* Now we copy leftover contents from p to q, so we have all L2 and L3 headers
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   816       (and L4?) in a single pbuf: */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   817  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   818    /* Hide the compressed headers in p */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   819    pbuf_remove_header(p, lowpan6_offset);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   820    /* Temporarily hide the headers in q... */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   821    pbuf_remove_header(q, ip6_offset);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   822    /* ... copy the rest of p into q... */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   823    pbuf_copy(q, p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   824    /* ... and reveal the headers again... */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   825    pbuf_add_header_force(q, ip6_offset);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   826    /* ... trim the pbuf to its correct size... */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   827    pbuf_realloc(q, ip6_offset + p->len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   828    /* ... and cat possibly remaining (data-only) pbufs */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   829    if (p->next != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   830      pbuf_cat(q, p->next);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   831    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   832    /* the original (first) pbuf can now be freed */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   833    p->next = NULL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   834    pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   835  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   836    /* all done */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   837    return q;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   838  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   839  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   840  #endif /* LWIP_6LOWPAN_IPHC */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\lowpan6_common.c	   841  #endif /* LWIP_IPV6 */
+
+	; Module end

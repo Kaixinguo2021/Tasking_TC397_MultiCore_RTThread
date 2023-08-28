@@ -1,0 +1,5584 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\1_SrvSw\\SysSe\\Math\\.Ifx_AngleTrkF32.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.src ..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c'
+
+	
+$TC162
+	.sdecl	'.zrodata.Ifx_AngleTrkF32..1.cnt',data,rom
+	.sect	'.zrodata.Ifx_AngleTrkF32..1.cnt'
+	.align	2
+.1.cnt:	.type	object
+	.size	.1.cnt,4
+	.word	1109144371
+	.sdecl	'.zrodata.Ifx_AngleTrkF32..2.cnt',data,rom
+	.sect	'.zrodata.Ifx_AngleTrkF32..2.cnt'
+	.align	2
+.2.cnt:	.type	object
+	.size	.2.cnt,4
+	.word	1014350479
+	.sdecl	'.zrodata.Ifx_AngleTrkF32..3.cnt',data,rom
+	.sect	'.zrodata.Ifx_AngleTrkF32..3.cnt'
+	.align	2
+.3.cnt:	.type	object
+	.size	.3.cnt,4
+	.word	1083624420
+	.sdecl	'.zrodata.Ifx_AngleTrkF32..4.cnt',data,rom
+	.sect	'.zrodata.Ifx_AngleTrkF32..4.cnt'
+	.align	2
+.4.cnt:	.type	object
+	.size	.4.cnt,4
+	.word	1035122883
+	.sdecl	'.zrodata.Ifx_AngleTrkF32..5.cnt',data,rom
+	.sect	'.zrodata.Ifx_AngleTrkF32..5.cnt'
+	.align	2
+.5.cnt:	.type	object
+	.size	.5.cnt,4
+	.word	1078530011
+	.sdecl	'.zrodata.Ifx_AngleTrkF32..6.cnt',data,rom
+	.sect	'.zrodata.Ifx_AngleTrkF32..6.cnt'
+	.align	2
+.6.cnt:	.type	object
+	.size	.6.cnt,4
+	.word	1086918619
+	.sdecl	'.zrodata.Ifx_AngleTrkF32..7.cnt',data,rom
+	.sect	'.zrodata.Ifx_AngleTrkF32..7.cnt'
+	.align	2
+.7.cnt:	.type	object
+	.size	.7.cnt,4
+	.word	-1068953637
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.round_f',code,cluster('round_f')
+	.sect	'.text.Ifx_AngleTrkF32.round_f'
+	.align	2
+	
+	.global	round_f
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	     2   * \file Ifx_AngleTrkF32.c
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	     3   * \brief Angle-tracking observer for sin/cos analog position sensor
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	     4   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	     6   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	     7   * \copyright Copyright (c) 2019 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	     8   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	     9   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    10   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    12   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    13   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    14   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    15   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    16   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    17   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    19   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    20   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    21   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    22   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    23   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    24   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    25   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    26   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    27   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    28   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    29   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    30   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    31   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    32   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    33   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    34   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    35   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    36   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    37   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    38   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    39   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    40   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    41   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    42  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    43  //________________________________________________________________________________________
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    44  // INCLUDES
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    45  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    46  #include "Ifx_AngleTrkF32.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    47  #include <math.h>
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    48  #include "string.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    49  #include "Ifx_LutAtan2F32.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    50  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    51  //________________________________________________________________________________________
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    52  // LOCAL DEFINITIONS
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    53  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    54  #define IFX_ANGLETRKF32_ATAN2F Ifx_LutAtan2F32_float32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    55  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    56  //________________________________________________________________________________________
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    57  // LOCAL FUNCTION PROTOTYPES
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    58  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    59  void Ifx_AngleTrkF32_setUserSampling(Ifx_AngleTrkF32 *aObsv, float32 Ts);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    60  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    61  //________________________________________________________________________________________
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    62  // GLOBAL VARIABLES
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    63  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    64  //________________________________________________________________________________________
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    65  // LOCAL VARIABLES
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    66  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    67  //________________________________________________________________________________________
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    68  // LOCAL FUNCTION IMPLEMENTATIONS
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    69  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    70  IFX_INLINE float32 Ifx_AngleTrkF32_bound(float32 angle, float32 periodPerRotation)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    71  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    72  	IFX_UNUSED_PARAMETER(periodPerRotation);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    73      float32 fullPeriod = 2 * IFX_PI;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    74  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    75      if (angle >= (fullPeriod / 2))
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    76      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    77          angle = angle - fullPeriod;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    78      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    79      else if (angle < (-fullPeriod / 2))
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    80      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    81          angle = angle + fullPeriod;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    82      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    83      else
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    84      {}
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    85  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    86      return angle;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    87  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    88  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    89  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    90  IFX_INLINE float32 Ifx_AngleTrkF32_boundInput(float32 input)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    91  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    92      return Ifx_AngleTrkF32_bound(input, 1);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    93  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    94  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    95  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    96  float32 round_f(float32 val)
+; Function round_f
+.L32:
+round_f:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    97  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    98      /*lint -e632 -e633 -e524*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    99      sint32 val_i = (sint32)val;
+	ftoiz	d0,d4
+.L339:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   100  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   101      /*lint +e632 +e633 +e524*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   102      if ((val - (float32)val_i) > 0.5)
+	itof	d2,d0
+.L341:
+	sub.f	d15,d4,d2
+.L338:
+	movh	d1,#16128
+.L673:
+	cmp.f	d15,d15,d1
+	jz.t	d15:2,.L3
+.L674:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   103      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   104          val = (float32)(val_i + 1);
+	add	d0,#1
+.L340:
+	itof	d2,d0
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   105      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   106      else
+.L3:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   107      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   108          val = (float32)val_i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   109      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   110  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   111      return val;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   112  }
+	ret
+.L329:
+	
+__round_f_function_end:
+	.size	round_f,__round_f_function_end-round_f
+.L208:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_setControlGains',code,cluster('Ifx_AngleTrkF32_setControlGains')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_setControlGains'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_setControlGains
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   113  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   114  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   115  //________________________________________________________________________________________
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   116  // PUBLIC FUNCTION IMPLEMENTATIONS
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   117  #define ATO_T   (15e-3f)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   118  #define ATO_K   (39.05f)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   119  #define ATO_PSI (1.5f * IFX_PI)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   120  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   121  void Ifx_AngleTrkF32_setControlGains(Ifx_AngleTrkF32_CfgData *cfgData, float32 K, float32 T, float32 psi)
+; Function Ifx_AngleTrkF32_setControlGains
+.L34:
+Ifx_AngleTrkF32_setControlGains:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   122  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   123      cfgData->kp = ((2 * K) + (psi * psi) + 1) / (T * T);
+	mul.f	d1,d6,d6
+.L679:
+	movh	d2,#16384
+.L680:
+	madd.f	d1,d1,d4,d2
+.L681:
+	movh	d0,#16256
+.L682:
+	mul.f	d15,d5,d5
+.L683:
+	add.f	d1,d1,d0
+.L684:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   124      cfgData->ki = K * ((psi * psi) + 1) / (T * T * T);
+	madd.f	d0,d0,d6,d6
+.L685:
+	div.f	d1,d1,d15
+	st.w	[a4],d1
+.L686:
+	mul.f	d15,d15,d5
+.L687:
+	mul.f	d0,d4,d0
+.L688:
+	div.f	d15,d0,d15
+	st.w	[a4]4,d15
+.L689:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   125      cfgData->kd = (K + 2) / T;
+	add.f	d15,d4,d2
+.L690:
+	div.f	d15,d15,d5
+	st.w	[a4]8,d15
+.L691:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   126  }
+	ret
+.L332:
+	
+__Ifx_AngleTrkF32_setControlGains_function_end:
+	.size	Ifx_AngleTrkF32_setControlGains,__Ifx_AngleTrkF32_setControlGains_function_end-Ifx_AngleTrkF32_setControlGains
+.L213:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_initConfig',code,cluster('Ifx_AngleTrkF32_initConfig')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_initConfig'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_initConfig
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   127  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   128  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   129  /** \brief Fill config with default values */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   130  void Ifx_AngleTrkF32_initConfig(Ifx_AngleTrkF32_Config *config, sint16 *sinIn, sint16 *cosIn)
+; Function Ifx_AngleTrkF32_initConfig
+.L36:
+Ifx_AngleTrkF32_initConfig:	.type	func
+	sub.a	a10,#24
+.L342:
+	mov.aa	a15,a4
+.L344:
+	mov.aa	a12,a5
+.L347:
+	mov.aa	a13,a6
+.L345:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   131  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   132      Ifx_AngleTrkF32_CfgData cfgData;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   133      Ifx_AngleTrkF32_setControlGains(&cfgData, ATO_K, ATO_T, ATO_PSI);
+	mov.aa	a4,a10
+.L439:
+	fcall	.cocofun_9
+.L343:
+	call	Ifx_AngleTrkF32_setControlGains
+.L346:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   134      config->kp                = cfgData.kp;
+	ld.w	d15,[a10]
+.L440:
+	st.w	[a15],d15
+.L441:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   135      config->ki                = cfgData.ki;
+	ld.w	d15,[a10]4
+.L442:
+	st.w	[a15]4,d15
+.L443:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   136      config->kd                = cfgData.kd;
+	ld.w	d15,[a10]8
+.L444:
+	st.w	[a15]8,d15
+.L445:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   137      config->sinIn             = sinIn;
+	st.a	[a15]40,a12
+.L446:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   138      config->cosIn             = cosIn;
+	st.a	[a15]44,a13
+.L447:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   139      config->errorThreshold    = 5.0f / 180 * IFX_PI;
+	ld.w	d15,.4.cnt
+.L448:
+	st.w	[a15]16,d15
+.L449:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   140      config->sqrAmplMax        = (sint32)((1.01f * 1.01f) * 2048);
+	mov	d15,#2089
+	st.w	[a15]20,d15
+.L450:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   141      config->sqrAmplMin        = (sint32)((0.99f * 0.99f) * 2048);
+	mov	d15,#2007
+	st.w	[a15]24,d15
+.L451:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   142      config->speedLpfFc        = 100;
+	movh	d15,#17096
+	st.w	[a15]12,d15
+.L452:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   143      config->periodPerRotation = 1;
+	mov	d15,#1
+	st.h	[a15]28,d15
+.L453:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   144      config->reversed          = FALSE;
+	mov	d15,#0
+	st.b	[a15]30,d15
+.L454:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   145      config->offset            = 0;
+	st.w	[a15]36,d15
+.L455:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   146      config->resolution        = (1UL << 12);/** \brief 12-bit default resolution */
+	mov	d15,#4096
+	st.w	[a15]32,d15
+.L456:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   147  }
+	ret
+.L234:
+	
+__Ifx_AngleTrkF32_initConfig_function_end:
+	.size	Ifx_AngleTrkF32_initConfig,__Ifx_AngleTrkF32_initConfig_function_end-Ifx_AngleTrkF32_initConfig
+.L98:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32..cocofun_9',code,cluster('.cocofun_9')
+	.sect	'.text.Ifx_AngleTrkF32..cocofun_9'
+	.align	2
+; Function .cocofun_9
+.L38:
+.cocofun_9:	.type	func
+; Function body .cocofun_9, coco_iter:0
+	ld.w	d4,.1.cnt
+.L350:
+	ld.w	d5,.2.cnt
+.L707:
+	ld.w	d6,.3.cnt
+.L708:
+	fret
+.L223:
+	; End of function
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_setUserSampling',code,cluster('Ifx_AngleTrkF32_setUserSampling')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_setUserSampling'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_setUserSampling
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   148  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   149  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   150  void Ifx_AngleTrkF32_setUserSampling(Ifx_AngleTrkF32 *aObsv, float32 Ts)
+; Function Ifx_AngleTrkF32_setUserSampling
+.L40:
+Ifx_AngleTrkF32_setUserSampling:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   151  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   152      aObsv->base.Ts = Ts;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   153      aObsv->halfTs  = aObsv->base.Ts / 2.0F;
+	movh	d15,#16128
+	st.w	[a4]26,d4
+.L667:
+	mul.f	d15,d4,d15
+	st.w	[a4]68,d15
+.L668:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   154  }
+	ret
+.L326:
+	
+__Ifx_AngleTrkF32_setUserSampling_function_end:
+	.size	Ifx_AngleTrkF32_setUserSampling,__Ifx_AngleTrkF32_setUserSampling_function_end-Ifx_AngleTrkF32_setUserSampling
+.L203:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_init',code,cluster('Ifx_AngleTrkF32_init')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_init'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_init
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   155  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   156  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   157  /** \brief Initialize the Angle Tracking object
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   158   * \param aObsv Pointer to the Ifx_AngleTrkF32 object
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   159   * \param config Pointer to the configuration data
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   160   * \param Ts sampling period in seconds
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   161   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   162  void Ifx_AngleTrkF32_init(Ifx_AngleTrkF32 *aObsv, const Ifx_AngleTrkF32_Config *config, float32 Ts)
+; Function Ifx_AngleTrkF32_init
+.L42:
+Ifx_AngleTrkF32_init:	.type	func
+	mov.aa	a15,a5
+.L352:
+	mov.aa	a12,a4
+.L351:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   163  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   164      aObsv->base.offset            = config->offset;
+	ld.w	d15,[a15]36
+.L382:
+	st.w	[a12]14,d15
+.L383:
+	mov	d8,d4
+	sub.a	a10,#16
+.L348:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   165      aObsv->base.resolution        = config->resolution;
+	ld.w	d15,[a15]32
+.L384:
+	st.w	[a12]22,d15
+.L385:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   166      aObsv->base.reversed          = config->reversed;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   167      aObsv->base.Ts                = Ts;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   168      aObsv->base.rawPosition       = 0;
+	mov	d9,#0
+.L386:
+	ld.bu	d0,[a15]30
+.L387:
+	st.b	[a12]18,d0
+.L388:
+	st.w	[a12]26,d8
+.L389:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   169      aObsv->base.direction         = IfxStdIf_Pos_Dir_unknown;
+	mov	d15,#2
+	st.w	[a12],d9
+.L390:
+	st.b	[a12]8,d15
+.L391:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   170      aObsv->base.turn              = 0;
+	st.w	[a12]4,d9
+.L392:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   171      aObsv->base.status.status     = 0;
+	st.w	[a12]10,d9
+.L393:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   172      aObsv->base.periodPerRotation = config->periodPerRotation;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   173      aObsv->base.positionConst     = 1.0 / (float32)aObsv->base.resolution * 2.0 * IFX_PI;
+	movh	d10,#16256
+.L394:
+	ld.hu	d15,[a15]28
+.L395:
+	st.h	[a12]20,d15
+.L396:
+	movh	d1,#16384
+.L397:
+	ld.w	d0,[a12]22
+.L398:
+	ld.w	d15,.5.cnt
+.L399:
+	itof	d0,d0
+.L400:
+	div.f	d0,d10,d0
+.L401:
+	mul.f	d0,d0,d1
+.L402:
+	mul.f	d15,d0,d15
+	st.w	[a12]30,d15
+.L403:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   174  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   175      aObsv->cfgData.kd             = config->kd;
+	ld.w	d15,[a15]8
+.L404:
+	st.w	[a12]44,d15
+.L405:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   176      aObsv->cfgData.ki             = config->ki;
+	ld.w	d15,[a15]4
+.L406:
+	st.w	[a12]40,d15
+.L407:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   177      aObsv->cfgData.kp             = config->kp;
+	ld.w	d15,[a15]
+.L408:
+	st.w	[a12]36,d15
+.L409:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   178      aObsv->cfgData.errorThreshold = config->errorThreshold;
+	ld.w	d15,[a15]16
+.L410:
+	st.w	[a12]48,d15
+.L411:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   179      aObsv->cfgData.sqrAmplMax     = config->sqrAmplMax;
+	ld.w	d15,[a15]20
+.L412:
+	st.w	[a12]52,d15
+.L413:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   180      aObsv->cfgData.sqrAmplMin     = config->sqrAmplMin;
+	ld.w	d15,[a15]24
+.L414:
+	st.w	[a12]56,d15
+.L415:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   181      aObsv->sinIn                  = config->sinIn;
+	ld.a	a2,[a15]40
+.L416:
+	st.a	[a12]60,a2
+.L417:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   182      aObsv->cosIn                  = config->cosIn;
+	ld.a	a2,[a15]44
+.L418:
+	st.a	[a12]64,a2
+.L419:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   183  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   184      if (!__neqf(config->kp, 0) && !__neqf(config->ki, 0) && !__neqf(config->kp, 0))
+	ld.w	d15,[a15]
+	cmp.f	d15,d15,d9
+	jnz.t	d15:2,.L5
+	jnz.t	d15:0,.L6
+.L420:
+	ld.w	d15,[a15]4
+	cmp.f	d15,d15,d9
+	jnz.t	d15:2,.L7
+	jnz.t	d15:0,.L8
+.L421:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   185      {   /* all gains are zero, use default */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   186          /* FIXME might not be requied as set by Ifx_AngleTrkF32_initConfig() */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   187          Ifx_AngleTrkF32_setControlGains(&aObsv->cfgData, ATO_K, ATO_T, ATO_PSI);
+	lea	a4,[a12]36
+.L422:
+	fcall	.cocofun_9
+.L349:
+	call	Ifx_AngleTrkF32_setControlGains
+.L8:
+.L7:
+.L6:
+.L5:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   188      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   189  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   190      Ifx_AngleTrkF32_setUserSampling(aObsv, Ts);
+	mov.aa	a4,a12
+.L353:
+	mov	d4,d8
+	call	Ifx_AngleTrkF32_setUserSampling
+.L354:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   191      aObsv->angleErr  = 0.0F;
+	st.w	[a12]96,d9
+.L423:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   192      aObsv->angleEst  = 0.0F;
+	st.w	[a12]80,d9
+.L424:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   193      aObsv->accelEst  = 0.0F;
+	st.w	[a12]92,d9
+.L425:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   194      aObsv->speedEstA = 0.0F;
+	st.w	[a12]84,d9
+.L426:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   195      aObsv->speedEstB = 0.0F;
+	st.w	[a12]88,d9
+.L427:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   196      aObsv->angleRef  = 0.0F;
+	st.w	[a12]76,d9
+.L231:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   197      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   198  #if IFX_CFG_ANGLETRKF32_SPEED_FILTER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   199          Ifx_LowPassPt1F32_Config lpfConfig;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   200          lpfConfig.gain            = 1.0F;
+	st.w	[a10]4,d10
+.L428:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   201          lpfConfig.cutOffFrequency = (2 * IFX_PI * config->speedLpfFc);
+	ld.w	d15,[a15]12
+.L429:
+	ld.w	d0,.6.cnt
+.L430:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   202          lpfConfig.samplingTime    = Ts;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   203          Ifx_LowPassPt1F32_init(&aObsv->speedLpf, &lpfConfig);
+	lea	a4,[a12]100
+.L431:
+	mul.f	d15,d15,d0
+	st.w	[a10],d15
+.L432:
+	mov.aa	a5,a10
+.L433:
+	st.w	[a10]8,d8
+.L434:
+	j	Ifx_LowPassPt1F32_init
+.L224:
+	
+__Ifx_AngleTrkF32_init_function_end:
+	.size	Ifx_AngleTrkF32_init,__Ifx_AngleTrkF32_init_function_end-Ifx_AngleTrkF32_init
+.L93:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_step',code,cluster('Ifx_AngleTrkF32_step')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_step'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_step
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   204  #endif
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   205      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   206  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   207  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   208  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   209  /** \brief Step function of Ifx_AngleTrkF32 should be called at every sampling period provided
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   210   * during initialisation (call to Ifx_AngleTrkF32_init()).
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   211   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   212   * \note This function is automatically called by Ifx_AngleTrkF32_update()
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   213   * \param aObsv Pointer to the Ifx_AngleTrkF32 object
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   214   * \param sinIn sine input signal. The offset shall be zero.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   215   * \param cosIn cosine input signal. The offset shall be zero.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   216   * \param phase phase of input signal.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   217   * \note This function returns the angular position in radians
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   218   * \note The amplitude of both sinIn and cosIn signal shall be the same.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   219   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   220  float32 Ifx_AngleTrkF32_step(Ifx_AngleTrkF32 *aObsv, sint16 sinIn, sint16 cosIn, float32 phase)
+; Function Ifx_AngleTrkF32_step
+.L44:
+Ifx_AngleTrkF32_step:	.type	func
+	mov.aa	a15,a4
+.L358:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   221  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   222      float32 angleRef, angleEst, dAccel, dSpeed, dAngle;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   223  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   224      if (aObsv->base.reversed != FALSE)
+	mov	d8,d6
+	ld.bu	d15,[a15]18
+.L359:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   225      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   226          angleRef = IFX_ANGLETRKF32_ATAN2F((float32)cosIn, (float32)sinIn);
+	itof	d0,d4
+.L461:
+	itof	d5,d5
+.L356:
+	jeq	d15,#0,.L9
+.L462:
+	mov	d4,d5
+.L357:
+	mov	d5,d0
+	j	.L10
+.L9:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   227      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   228      else
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   229      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   230          angleRef = IFX_ANGLETRKF32_ATAN2F((float32)sinIn, (float32)cosIn);
+	mov	d4,d0
+.L10:
+	call	Ifx_LutAtan2F32_float32
+.L355:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   231      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   232  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   233      aObsv->angleAtan = angleRef;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   234      angleRef         = angleRef + phase;
+	add.f	d15,d2,d8
+	st.w	[a15]72,d2
+.L360:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   235  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   236      aObsv->angleRef  = angleRef;
+	st.w	[a15]76,d15
+.L463:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   237  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   238      // Acceleration, zero-order-hold integrator:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   239      dAccel          = aObsv->cfgData.ki * aObsv->angleErr;
+	ld.w	d15,[a15]40
+.L361:
+	ld.w	d0,[a15]96
+.L464:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   240      aObsv->accelEst = aObsv->accelEst + (dAccel * aObsv->base.Ts);
+	ld.w	d1,[a15]92
+.L465:
+	mul.f	d15,d15,d0
+	ld.w	d0,[a15]26
+.L466:
+	madd.f	d0,d1,d15,d0
+	st.w	[a15]92,d0
+.L467:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   241  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   242      // Speed, zero-order-hold integrator:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   243      dSpeed           = ((aObsv->cfgData.kp * aObsv->angleErr) + aObsv->accelEst);
+	ld.w	d15,[a15]36
+.L468:
+	ld.w	d1,[a15]96
+.L469:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   244      aObsv->speedEstA = aObsv->speedEstA + (dSpeed * aObsv->base.Ts);
+	madd.f	d15,d0,d15,d1
+	ld.w	d0,[a15]26
+.L470:
+	ld.w	d1,[a15]84
+.L471:
+	madd.f	d0,d1,d15,d0
+	st.w	[a15]84,d0
+.L472:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   245  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   246      // Angle, first-order-hold integrator:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   247      dAngle           = ((aObsv->cfgData.kd * aObsv->angleErr) + aObsv->speedEstA);
+	ld.w	d15,[a15]44
+.L473:
+	ld.w	d1,[a15]96
+.L474:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   248      angleEst         = aObsv->angleEst + ((dAngle + aObsv->speedEstB) * aObsv->halfTs);
+	ld.w	d2,[a15]80
+.L475:
+	madd.f	d15,d0,d15,d1
+	ld.w	d0,[a15]88
+.L362:
+	ld.w	d1,[a15]68
+.L476:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   249      aObsv->speedEstB = dAngle;
+	st.w	[a15]88,d15
+.L477:
+	add.f	d0,d15,d0
+.L478:
+	madd.f	d0,d2,d0,d1
+	ld.w	d1,.5.cnt
+.L253:
+	fcall	.cocofun_8
+.L254:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   250  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   251      aObsv->angleEst  = Ifx_AngleTrkF32_boundInput(angleEst);
+	st.w	[a15]80,d0
+.L479:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   252  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   253      // Error, is calculated here to compensate one period delay
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   254      aObsv->angleErr       = Ifx_AngleTrkF32_boundInput(aObsv->angleRef - aObsv->angleEst);
+	ld.w	d15,[a15]76
+.L480:
+	sub.f	d0,d15,d0
+	fcall	.cocofun_8
+.L364:
+	st.w	[a15]96,d0
+.L481:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   255  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   256      aObsv->base.direction = aObsv->speedEstB > 0 ? IfxStdIf_Pos_Dir_forward : IfxStdIf_Pos_Dir_backward;
+	ld.w	d15,[a15]88
+.L482:
+	mov	d0,#0
+.L483:
+	cmp.f	d15,d15,d0
+	and	d15,#3
+.L484:
+	ne	d15,d15,#0
+	st.b	[a15]8,d15
+.L485:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   257  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   258  #if IFX_CFG_ANGLETRKF32_SPEED_FILTER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   259      // Filter speed:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   260      Ifx_LowPassPt1F32_do(&aObsv->speedLpf, aObsv->speedEstB);
+	lea	a4,[a15]100
+.L486:
+	ld.w	d4,[a15]88
+	call	Ifx_LowPassPt1F32_do
+.L487:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   261  #endif
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   262  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   263      return aObsv->angleEst;
+	ld.w	d2,[a15]80
+.L488:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   264  }
+	ret
+.L243:
+	
+__Ifx_AngleTrkF32_step_function_end:
+	.size	Ifx_AngleTrkF32_step,__Ifx_AngleTrkF32_step_function_end-Ifx_AngleTrkF32_step
+.L103:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32..cocofun_8',code,cluster('.cocofun_8')
+	.sect	'.text.Ifx_AngleTrkF32..cocofun_8'
+	.align	2
+; Function .cocofun_8
+.L46:
+.cocofun_8:	.type	func
+; Function body .cocofun_8, coco_iter:0
+	cmp.f	d15,d0,d1
+.L363:
+	and	d15,#6
+.L696:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    75      if (angle >= (fullPeriod / 2))      (inlined)
+	jeq	d15,#0,.L11
+.L697:
+	ld.w	d15,.6.cnt
+.L698:
+	sub.f	d0,d0,d15
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    77          angle = angle - fullPeriod;      (inlined)
+	j	.L12
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    75      if (angle >= (fullPeriod / 2))      (inlined)
+.L11:
+	ld.w	d15,.7.cnt
+.L699:
+	cmp.f	d15,d0,d15
+.L700:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    79      else if (angle < (-fullPeriod / 2))      (inlined)
+	jz.t	d15:0,.L13
+.L701:
+	ld.w	d15,.6.cnt
+.L702:
+	add.f	d0,d0,d15
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	    79      else if (angle < (-fullPeriod / 2))      (inlined)
+.L13:
+.L12:
+	fret
+.L218:
+	; End of function
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_setOffset',code,cluster('Ifx_AngleTrkF32_setOffset')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_setOffset'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_setOffset
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   265  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   266  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   267  /** \brief Set the position offset (in ticks)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   268   * \param aObsv Pointer to the Ifx_AngleTrkF32 object
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   269   * \param offset Position offset in ticks 
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   270   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   271  void Ifx_AngleTrkF32_setOffset(Ifx_AngleTrkF32 *aObsv, IfxStdIf_Pos_RawAngle offset)
+; Function Ifx_AngleTrkF32_setOffset
+.L48:
+Ifx_AngleTrkF32_setOffset:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   272  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   273      Ifx_AngleTrkF32_PosIf *base = &aObsv->base;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   274      base->offset = offset;
+	st.w	[a4]14,d4
+.L593:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   275  }
+	ret
+.L312:
+	
+__Ifx_AngleTrkF32_setOffset_function_end:
+	.size	Ifx_AngleTrkF32_setOffset,__Ifx_AngleTrkF32_setOffset_function_end-Ifx_AngleTrkF32_setOffset
+.L183:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_updateStatus',code,cluster('Ifx_AngleTrkF32_updateStatus')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_updateStatus'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_updateStatus
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   276  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   277  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   278  /** \brief Update the status flags.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   279   * \param aObsv Pointer to the Ifx_AngleTrkF32 object
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   280   * \param sinIn Sinus value
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   281   * \param cosIn Cosinus value
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   282   * \note This function is automatically called by Ifx_AngleTrkF32_update()
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   283   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   284  void Ifx_AngleTrkF32_updateStatus(Ifx_AngleTrkF32 *aObsv, sint16 sinIn, sint16 cosIn)
+; Function Ifx_AngleTrkF32_updateStatus
+.L50:
+Ifx_AngleTrkF32_updateStatus:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   285  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   286      Ifx_AngleTrkF32_PosIf *base    = &aObsv->base;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   287      sint32                  sqrAmpl = ((sint32)sinIn * (sint32)sinIn) + ((sint32)cosIn * (sint32)cosIn);
+	mul	d4,d4
+.L365:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   288      base->status.B.signalLoss        = (sqrAmpl < aObsv->cfgData.sqrAmplMin);
+	madd	d0,d4,d5,d5
+	ld.bu	d1,[a4]10
+.L366:
+	ld.w	d15,[a4]56
+.L493:
+	lt	d15,d0,d15
+.L494:
+	insert	d1,d1,d15,#1,#1
+	st.b	[a4]10,d1
+.L495:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   289      base->status.B.signalDegradation = (sqrAmpl > aObsv->cfgData.sqrAmplMax);
+	ld.w	d15,[a4]52
+.L496:
+	lt	d15,d15,d0
+.L497:
+	insert	d0,d1,d15,#2,#1
+	st.b	[a4]10,d0
+.L367:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   290      base->status.B.trackingLoss      = __absf(aObsv->angleErr) > aObsv->cfgData.errorThreshold;
+	ld.w	d15,[a4]96
+.L498:
+	insert	d1,d15,#0,#31,#1
+	ld.w	d15,[a4]48
+.L499:
+	cmp.f	d15,d1,d15
+	extr.u	d15,d15,#2,#1
+.L500:
+	insert	d15,d0,d15,#3,#1
+	st.b	[a4]10,d15
+.L501:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   291  }
+	ret
+.L266:
+	
+__Ifx_AngleTrkF32_updateStatus_function_end:
+	.size	Ifx_AngleTrkF32_updateStatus,__Ifx_AngleTrkF32_updateStatus_function_end-Ifx_AngleTrkF32_updateStatus
+.L108:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_update',code,cluster('Ifx_AngleTrkF32_update')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_update'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_update
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   292  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   293  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   294  /** \brief Update the object directly from its analog input
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   295   * \param aObsv Pointer to the Ifx_AngleTrkF32 object
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   296   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   297  void Ifx_AngleTrkF32_update(Ifx_AngleTrkF32 *aObsv)
+; Function Ifx_AngleTrkF32_update
+.L52:
+Ifx_AngleTrkF32_update:	.type	func
+	mov.aa	a15,a4
+.L369:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   298  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   299      Ifx_AngleTrkF32_PosIf *base        = &aObsv->base;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   300      float32                 angleEst    = Ifx_AngleTrkF32_step(aObsv, *aObsv->sinIn, *aObsv->cosIn, 0);
+	ld.a	a2,[a15]60
+.L603:
+	mov	d6,#0
+.L604:
+	ld.h	d4,[a2]
+.L605:
+	ld.a	a2,[a15]64
+.L606:
+	ld.h	d5,[a2]
+.L607:
+	call	Ifx_AngleTrkF32_step
+.L368:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   301  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   302      IfxStdIf_Pos_RawAngle   newPosition = (IfxStdIf_Pos_RawAngle)(angleEst * (aObsv->base.resolution / 2) / IFX_PI);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   303      newPosition       = newPosition & (aObsv->base.resolution - 1);
+	ld.w	d15,[a15]22
+.L608:
+	mov	d0,#2
+.L609:
+	div	e0,d15,d0
+	itof	d0,d0
+.L610:
+	mul.f	d0,d2,d0
+	ld.w	d1,.5.cnt
+.L611:
+	div.f	d0,d0,d1
+.L612:
+	ftoiz	d0,d0
+.L613:
+	add	d15,#-1
+.L614:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   304      base->rawPosition = newPosition;
+	and	d0,d15
+	st.w	[a15],d0
+.L615:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   305  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   306      Ifx_AngleTrkF32_updateStatus(aObsv, *aObsv->sinIn, *aObsv->cosIn);
+	ld.a	a2,[a15]60
+.L616:
+	ld.h	d4,[a2]
+.L617:
+	ld.a	a2,[a15]64
+.L618:
+	ld.h	d5,[a2]
+	mov.aa	a4,a15
+.L370:
+	j	Ifx_AngleTrkF32_updateStatus
+.L318:
+	
+__Ifx_AngleTrkF32_update_function_end:
+	.size	Ifx_AngleTrkF32_update,__Ifx_AngleTrkF32_update_function_end-Ifx_AngleTrkF32_update
+.L193:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getRawPosition',code,cluster('Ifx_AngleTrkF32_getRawPosition')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getRawPosition'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_getRawPosition
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   307  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   308  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   309  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   310  /** \brief Returns the actual position
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   311   * \param aObsv Pointer to the Ifx_AngleTrkF32 object
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   312   * \note This function returns the angular position in ticks [0 .. Ifx_AngleTrkF32.base.resolution-1] (represents 0..360 degree)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   313   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   314  IfxStdIf_Pos_RawAngle Ifx_AngleTrkF32_getRawPosition(Ifx_AngleTrkF32 *aObsv)
+; Function Ifx_AngleTrkF32_getRawPosition
+.L54:
+Ifx_AngleTrkF32_getRawPosition:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   315  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   316      Ifx_AngleTrkF32_PosIf *base = &aObsv->base;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   317      return base->rawPosition;
+	ld.w	d2,[a4]
+.L546:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   318  }
+	ret
+.L289:
+	
+__Ifx_AngleTrkF32_getRawPosition_function_end:
+	.size	Ifx_AngleTrkF32_getRawPosition,__Ifx_AngleTrkF32_getRawPosition_function_end-Ifx_AngleTrkF32_getRawPosition
+.L143:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getSpeed',code,cluster('Ifx_AngleTrkF32_getSpeed')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getSpeed'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_getSpeed
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   319  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   320  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   321  /** \brief Returns the Speed
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   322   * \param aObsv Pointer to the Ifx_AngleTrkF32 object
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   323   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   324  float32 Ifx_AngleTrkF32_getSpeed(Ifx_AngleTrkF32 *aObsv)
+; Function Ifx_AngleTrkF32_getSpeed
+.L56:
+Ifx_AngleTrkF32_getSpeed:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   325  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   326  #if !IFX_CFG_ANGLETRKF32_FILTERED_SPEED
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   327      return aObsv->speedEstB;   /* note: using speedEstB has better dynamic */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   328  #else
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   329      return aObsv->speedLpf.out; /* note: using filtered speed has less ripples */
+	ld.w	d2,[a4]108
+.L570:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   330  #endif
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   331  }
+	ret
+.L300:
+	
+__Ifx_AngleTrkF32_getSpeed_function_end:
+	.size	Ifx_AngleTrkF32_getSpeed,__Ifx_AngleTrkF32_getSpeed_function_end-Ifx_AngleTrkF32_getSpeed
+.L168:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getAbsolutePosition',code,cluster('Ifx_AngleTrkF32_getAbsolutePosition')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getAbsolutePosition'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_getAbsolutePosition
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   332  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   333  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   334  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   335  float32 Ifx_AngleTrkF32_getAbsolutePosition(Ifx_AngleTrkF32 *driver)
+; Function Ifx_AngleTrkF32_getAbsolutePosition
+.L58:
+Ifx_AngleTrkF32_getAbsolutePosition:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   336  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   337      return ((float32)driver->base.turn + (float32)driver->base.rawPosition / (float32)driver->base.resolution) * 2.0 * IFX_PI;
+	ld.w	d0,[a4]
+.L506:
+	ld.w	d1,[a4]22
+.L507:
+	itof	d0,d0
+	ld.w	d15,[a4]4
+.L508:
+	itof	d1,d1
+.L509:
+	itof	d15,d15
+.L510:
+	div.f	d0,d0,d1
+.L511:
+	add.f	d15,d15,d0
+.L512:
+	movh	d0,#16384
+.L513:
+	mul.f	d15,d15,d0
+	ld.w	d0,.5.cnt
+.L514:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   338  }
+	mul.f	d2,d15,d0
+	ret
+.L274:
+	
+__Ifx_AngleTrkF32_getAbsolutePosition_function_end:
+	.size	Ifx_AngleTrkF32_getAbsolutePosition,__Ifx_AngleTrkF32_getAbsolutePosition_function_end-Ifx_AngleTrkF32_getAbsolutePosition
+.L113:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getDirection',code,cluster('Ifx_AngleTrkF32_getDirection')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getDirection'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_getDirection
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   339  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   340  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   341  IfxStdIf_Pos_Dir Ifx_AngleTrkF32_getDirection(Ifx_AngleTrkF32 *driver)
+; Function Ifx_AngleTrkF32_getDirection
+.L60:
+Ifx_AngleTrkF32_getDirection:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   342  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   343      return driver->base.direction;
+	ld.bu	d2,[a4]8
+.L519:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   344  }
+	ret
+.L277:
+	
+__Ifx_AngleTrkF32_getDirection_function_end:
+	.size	Ifx_AngleTrkF32_getDirection,__Ifx_AngleTrkF32_getDirection_function_end-Ifx_AngleTrkF32_getDirection
+.L118:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getFault',code,cluster('Ifx_AngleTrkF32_getFault')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getFault'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_getFault
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   345  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   346  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   347  IfxStdIf_Pos_Status Ifx_AngleTrkF32_getFault(Ifx_AngleTrkF32 *driver)
+; Function Ifx_AngleTrkF32_getFault
+.L62:
+Ifx_AngleTrkF32_getFault:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   348  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   349      return driver->base.status;
+	ld.w	d2,[a4]10
+.L524:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   350  }
+	ret
+.L280:
+	
+__Ifx_AngleTrkF32_getFault_function_end:
+	.size	Ifx_AngleTrkF32_getFault,__Ifx_AngleTrkF32_getFault_function_end-Ifx_AngleTrkF32_getFault
+.L123:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getOffset',code,cluster('Ifx_AngleTrkF32_getOffset')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getOffset'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_getOffset
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   351  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   352  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   353  sint32 Ifx_AngleTrkF32_getOffset(Ifx_AngleTrkF32 *driver)
+; Function Ifx_AngleTrkF32_getOffset
+.L64:
+Ifx_AngleTrkF32_getOffset:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   354  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   355      return driver->base.offset;
+	ld.w	d2,[a4]14
+.L529:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   356  }
+	ret
+.L282:
+	
+__Ifx_AngleTrkF32_getOffset_function_end:
+	.size	Ifx_AngleTrkF32_getOffset,__Ifx_AngleTrkF32_getOffset_function_end-Ifx_AngleTrkF32_getOffset
+.L128:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getPeriodPerRotation',code,cluster('Ifx_AngleTrkF32_getPeriodPerRotation')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getPeriodPerRotation'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_getPeriodPerRotation
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   357  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   358  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   359  uint16 Ifx_AngleTrkF32_getPeriodPerRotation(Ifx_AngleTrkF32 *driver)
+; Function Ifx_AngleTrkF32_getPeriodPerRotation
+.L66:
+Ifx_AngleTrkF32_getPeriodPerRotation:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   360  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   361      return driver->base.periodPerRotation;
+	ld.hu	d2,[a4]20
+.L534:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   362  }
+	ret
+.L285:
+	
+__Ifx_AngleTrkF32_getPeriodPerRotation_function_end:
+	.size	Ifx_AngleTrkF32_getPeriodPerRotation,__Ifx_AngleTrkF32_getPeriodPerRotation_function_end-Ifx_AngleTrkF32_getPeriodPerRotation
+.L133:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getPosition',code,cluster('Ifx_AngleTrkF32_getPosition')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getPosition'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_getPosition
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   363  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   364  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   365  float32 Ifx_AngleTrkF32_getPosition(Ifx_AngleTrkF32 *driver)
+; Function Ifx_AngleTrkF32_getPosition
+.L68:
+Ifx_AngleTrkF32_getPosition:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   366  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   367      return (float32)driver->base.rawPosition * driver->base.positionConst;
+	ld.w	d15,[a4]
+.L539:
+	ld.w	d0,[a4]30
+.L540:
+	itof	d15,d15
+.L541:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   368  }
+	mul.f	d2,d15,d0
+	ret
+.L287:
+	
+__Ifx_AngleTrkF32_getPosition_function_end:
+	.size	Ifx_AngleTrkF32_getPosition,__Ifx_AngleTrkF32_getPosition_function_end-Ifx_AngleTrkF32_getPosition
+.L138:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getRefreshPeriod',code,cluster('Ifx_AngleTrkF32_getRefreshPeriod')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getRefreshPeriod'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_getRefreshPeriod
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   369  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   370  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   371  float32 Ifx_AngleTrkF32_getRefreshPeriod(Ifx_AngleTrkF32 *driver)
+; Function Ifx_AngleTrkF32_getRefreshPeriod
+.L70:
+Ifx_AngleTrkF32_getRefreshPeriod:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   372  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   373      return driver->base.Ts;
+	ld.w	d2,[a4]26
+.L551:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   374  }
+	ret
+.L291:
+	
+__Ifx_AngleTrkF32_getRefreshPeriod_function_end:
+	.size	Ifx_AngleTrkF32_getRefreshPeriod,__Ifx_AngleTrkF32_getRefreshPeriod_function_end-Ifx_AngleTrkF32_getRefreshPeriod
+.L148:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getResolution',code,cluster('Ifx_AngleTrkF32_getResolution')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getResolution'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_getResolution
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   375  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   376  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   377  sint32 Ifx_AngleTrkF32_getResolution(Ifx_AngleTrkF32 *driver)
+; Function Ifx_AngleTrkF32_getResolution
+.L72:
+Ifx_AngleTrkF32_getResolution:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   378  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   379      return driver->base.resolution;
+	ld.w	d2,[a4]22
+.L556:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   380  }
+	ret
+.L293:
+	
+__Ifx_AngleTrkF32_getResolution_function_end:
+	.size	Ifx_AngleTrkF32_getResolution,__Ifx_AngleTrkF32_getResolution_function_end-Ifx_AngleTrkF32_getResolution
+.L153:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getSensorType',code,cluster('Ifx_AngleTrkF32_getSensorType')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getSensorType'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_getSensorType
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   381  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   382  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   383  IfxStdIf_Pos_SensorType Ifx_AngleTrkF32_getSensorType(Ifx_AngleTrkF32 *driver)
+; Function Ifx_AngleTrkF32_getSensorType
+.L74:
+Ifx_AngleTrkF32_getSensorType:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   384  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   385  	IFX_UNUSED_PARAMETER(driver);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   386      return IfxStdIf_Pos_SensorType_angletrk;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   387  }
+	mov	d2,#3
+	ret
+.L298:
+	
+__Ifx_AngleTrkF32_getSensorType_function_end:
+	.size	Ifx_AngleTrkF32_getSensorType,__Ifx_AngleTrkF32_getSensorType_function_end-Ifx_AngleTrkF32_getSensorType
+.L163:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getTurn',code,cluster('Ifx_AngleTrkF32_getTurn')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_getTurn'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_getTurn
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   388  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   389  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   390  sint32 Ifx_AngleTrkF32_getTurn(Ifx_AngleTrkF32 *driver)
+; Function Ifx_AngleTrkF32_getTurn
+.L76:
+Ifx_AngleTrkF32_getTurn:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   391  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   392      return driver->base.turn;
+	ld.w	d2,[a4]4
+.L561:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   393  }
+	ret
+.L295:
+	
+__Ifx_AngleTrkF32_getTurn_function_end:
+	.size	Ifx_AngleTrkF32_getTurn,__Ifx_AngleTrkF32_getTurn_function_end-Ifx_AngleTrkF32_getTurn
+.L158:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_resetFaults',code,cluster('Ifx_AngleTrkF32_resetFaults')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_resetFaults'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_resetFaults
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   394  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   395  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   396  void Ifx_AngleTrkF32_resetFaults(Ifx_AngleTrkF32 *driver)
+; Function Ifx_AngleTrkF32_resetFaults
+.L78:
+Ifx_AngleTrkF32_resetFaults:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   397  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   398      driver->base.status.status = 0;
+	mov	d15,#0
+	st.w	[a4]10,d15
+.L588:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   399  }
+	ret
+.L310:
+	
+__Ifx_AngleTrkF32_resetFaults_function_end:
+	.size	Ifx_AngleTrkF32_resetFaults,__Ifx_AngleTrkF32_resetFaults_function_end-Ifx_AngleTrkF32_resetFaults
+.L178:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_setRefreshPeriod',code,cluster('Ifx_AngleTrkF32_setRefreshPeriod')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_setRefreshPeriod'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_setRefreshPeriod
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   400  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   401  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   402  void Ifx_AngleTrkF32_setRefreshPeriod(Ifx_AngleTrkF32 *driver, float32 updatePeriod)
+; Function Ifx_AngleTrkF32_setRefreshPeriod
+.L80:
+Ifx_AngleTrkF32_setRefreshPeriod:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   403  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   404      driver->base.Ts = updatePeriod;
+	st.w	[a4]26,d4
+.L598:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   405  }
+	ret
+.L315:
+	
+__Ifx_AngleTrkF32_setRefreshPeriod_function_end:
+	.size	Ifx_AngleTrkF32_setRefreshPeriod,__Ifx_AngleTrkF32_setRefreshPeriod_function_end-Ifx_AngleTrkF32_setRefreshPeriod
+.L188:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_reset',code,cluster('Ifx_AngleTrkF32_reset')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_reset'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_reset
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   406  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   407  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   408  void Ifx_AngleTrkF32_reset(Ifx_AngleTrkF32 *driver)
+; Function Ifx_AngleTrkF32_reset
+.L82:
+Ifx_AngleTrkF32_reset:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   409  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   410      driver->base.rawPosition = 0;
+	mov	d15,#0
+	st.w	[a4],d15
+.L575:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   411      driver->base.direction   = IfxStdIf_Pos_Dir_unknown;
+	mov	d0,#2
+	st.b	[a4]8,d0
+.L576:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   412      driver->base.turn        = 0;
+	st.w	[a4]4,d15
+.L577:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   413      driver->angleErr         = 0.0F;
+	st.w	[a4]96,d15
+.L578:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   414      driver->angleEst         = 0.0F;
+	st.w	[a4]80,d15
+.L579:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   415      driver->accelEst         = 0.0F;
+	st.w	[a4]92,d15
+.L580:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   416      driver->speedEstA        = 0.0F;
+	st.w	[a4]84,d15
+.L581:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   417      driver->speedEstB        = 0.0F;
+	st.w	[a4]88,d15
+.L582:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   418      driver->angleRef         = 0.0F;
+	st.w	[a4]76,d15
+.L305:
+
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	     1  /**
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	     2   * \file Ifx_LowPassPt1F32.h
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	     3   * \brief Low pass filter PT1
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	     4   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	     5   * \version disabled
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	     6   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	     7   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	     8   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	     9   *                                 IMPORTANT NOTICE
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    10   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    11   * Use of this file is subject to the terms of use agreed between (i) you or
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    12   * the company in which ordinary course of business you are acting and (ii)
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    13   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    14   * of use are agreed, use of this file is subject to following:
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    15   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    16   * Boost Software License - Version 1.0 - August 17th, 2003
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    17   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    18   * Permission is hereby granted, free of charge, to any person or organization
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    19   * obtaining a copy of the software and accompanying documentation covered by
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    20   * this license (the "Software") to use, reproduce, display, distribute,
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    21   * execute, and transmit the Software, and to prepare derivative works of the
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    22   * Software, and to permit third-parties to whom the Software is furnished to
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    23   * do so, all subject to the following:
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    24   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    25   * The copyright notices in the Software and this entire statement, including
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    26   * the above license grant, this restriction and the following disclaimer, must
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    27   * be included in all copies of the Software, in whole or in part, and all
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    28   * derivative works of the Software, unless such copies or derivative works are
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    29   * solely in the form of machine-executable object code generated by a source
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    30   * language processor.
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    31   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    32   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    33   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    34   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    35   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    36   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    37   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    38   * DEALINGS IN THE SOFTWARE.
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    39   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    40   * \defgroup library_srvsw_sysse_math_f32_lowpasspt1 Low-pass Filter: Type PT1
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    41   * This module implements a PT1 low pass filter.
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    42   * http://de.wikipedia.org/wiki/PT1-Glied
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    43   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    44   * Formula: \n
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    45   * \f$ y_k = y_{k-1} + a * x_k - b * y_{k-1} \f$ \n
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    46   * with \f$(T^* = \frac{T_s}{T+T_s})\f$, \f$(a = K*T^*)\f$, \f$(b = T^*)\f$
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    47   * with \f$(T_s: Sample time)\f$, \f$(K: Gain)\f$, \f$(T = \frac{1}{\omega_0})\f$
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    48   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    49   * \ingroup library_srvsw_sysse_math_f32
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    50   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    51   */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    52  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    53  #if !defined(IFX_LOWPASSPT1F32)
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    54  #define IFX_LOWPASSPT1F32
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    55  //------------------------------------------------------------------------------
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    56  #include "Cpu/Std/Ifx_Types.h"
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    57  //------------------------------------------------------------------------------
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    58  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    59  /** \brief PT1 object definition.
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    60   */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    61  typedef struct
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    62  {
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    63      float32 a;              /**< \brief a parameter */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    64      float32 b;              /**< \brief b parameter */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    65      float32 out;            /**< \brief last output */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    66  } Ifx_LowPassPt1F32;
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    67  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    68  /** \brief PT1 configuration */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    69  typedef struct
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    70  {
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    71      float32 cutOffFrequency; /**< \brief Cut off frequency */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    72      float32 gain;            /**< \brief Gain */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    73      float32 samplingTime;    /**< \brief Sampling time */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    74  } Ifx_LowPassPt1F32_Config;
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    75  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    76  //------------------------------------------------------------------------------
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    77  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    78  /** \addtogroup  library_srvsw_sysse_math_f32_lowpasspt1
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    79   * \{ */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    80  IFX_EXTERN void    Ifx_LowPassPt1F32_init(Ifx_LowPassPt1F32 *filter, const Ifx_LowPassPt1F32_Config *config);
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    81  IFX_INLINE void    Ifx_LowPassPt1F32_reset(Ifx_LowPassPt1F32 *filter);
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    82  IFX_EXTERN float32 Ifx_LowPassPt1F32_do(Ifx_LowPassPt1F32 *filter, float32 input);
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    83  /** \} */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    84  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    85  //------------------------------------------------------------------------------
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    86  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    87  /** \brief Reset the internal filter variable
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    88   * \param filter Specifies PT1 filter.
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    89   */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    90  IFX_INLINE void Ifx_LowPassPt1F32_reset(Ifx_LowPassPt1F32 *filter)
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    91  {
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\SysSe\Math\Ifx_LowPassPt1F32.h	    92      filter->out = 0.0;
+	st.w	[a4]108,d15
+.L306:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   419  #if IFX_CFG_ANGLETRKF32_SPEED_FILTER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   420      Ifx_LowPassPt1F32_reset(&driver->speedLpf);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   421  #endif
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   422  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   423      driver->base.status.status = 0;
+	st.w	[a4]10,d15
+.L583:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   424  }
+	ret
+.L302:
+	
+__Ifx_AngleTrkF32_reset_function_end:
+	.size	Ifx_AngleTrkF32_reset,__Ifx_AngleTrkF32_reset_function_end-Ifx_AngleTrkF32_reset
+.L173:
+	; End of function
+	
+	.sdecl	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_stdIfPosInit',code,cluster('Ifx_AngleTrkF32_stdIfPosInit')
+	.sect	'.text.Ifx_AngleTrkF32.Ifx_AngleTrkF32_stdIfPosInit'
+	.align	2
+	
+	.global	Ifx_AngleTrkF32_stdIfPosInit
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   425  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   426  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   427  boolean Ifx_AngleTrkF32_stdIfPosInit(IfxStdIf_Pos *stdif, Ifx_AngleTrkF32 *driver)
+; Function Ifx_AngleTrkF32_stdIfPosInit
+.L84:
+Ifx_AngleTrkF32_stdIfPosInit:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   428  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   429      /* Ensure the stdif is reset to zeros */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   430      memset(stdif, 0, sizeof(IfxStdIf_Pos));
+	mov	d4,#0
+	mov.aa	a15,a4
+.L372:
+	mov	d5,#92
+	mov.aa	a12,a5
+.L373:
+	call	memset
+.L371:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   431  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   432      /* Set the driver */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   433      stdif->driver = driver;
+	st.a	[a15],a12
+.L623:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   434  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   435      /* *INDENT-OFF* Note: this file was indented manually by the author. */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   436      /* Set the API link */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   437  	stdif->onZeroIrq          =(IfxStdIf_Pos_OnZeroIrq               )NULL_PTR;
+	mov.a	a4,#0
+.L624:
+	st.a	[a15]4,a4
+.L625:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   438  	stdif->getAbsolutePosition=(IfxStdIf_Pos_GetAbsolutePosition     )&Ifx_AngleTrkF32_getAbsolutePosition;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_getAbsolutePosition)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_getAbsolutePosition)
+.L626:
+	st.a	[a15]8,a2
+.L627:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   439  	stdif->getDirection		  =(IfxStdIf_Pos_GetDirection            )&Ifx_AngleTrkF32_getDirection;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_getDirection)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_getDirection)
+.L628:
+	st.a	[a15]20,a2
+.L629:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   440  	stdif->getFault           =(IfxStdIf_Pos_GetFault                )&Ifx_AngleTrkF32_getFault;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_getFault)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_getFault)
+.L630:
+	st.a	[a15]24,a2
+.L631:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   441  	stdif->getOffset		  =(IfxStdIf_Pos_GetOffset			     )&Ifx_AngleTrkF32_getOffset;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_getOffset)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_getOffset)
+.L632:
+	st.a	[a15]12,a2
+.L633:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   442  	stdif->getPeriodPerRotation  =(IfxStdIf_Pos_GetPeriodPerRotation )&Ifx_AngleTrkF32_getPeriodPerRotation;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_getPeriodPerRotation)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_getPeriodPerRotation)
+.L634:
+	st.a	[a15]32,a2
+.L635:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   443  	stdif->getPosition		  =(IfxStdIf_Pos_GetPosition			 )&Ifx_AngleTrkF32_getPosition;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_getPosition)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_getPosition)
+.L636:
+	st.a	[a15]16,a2
+.L637:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   444  	stdif->getRawPosition	  =(IfxStdIf_Pos_GetRawPosition          )&Ifx_AngleTrkF32_getRawPosition;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_getRawPosition)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_getRawPosition)
+.L638:
+	st.a	[a15]28,a2
+.L639:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   445  	stdif->getRefreshPeriod   =(IfxStdIf_Pos_GetRefreshPeriod        )&Ifx_AngleTrkF32_getRefreshPeriod;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_getRefreshPeriod)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_getRefreshPeriod)
+.L640:
+	st.a	[a15]36,a2
+.L641:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   446  	stdif->getResolution      =(IfxStdIf_Pos_GetResolution           )&Ifx_AngleTrkF32_getResolution;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_getResolution)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_getResolution)
+.L642:
+	st.a	[a15]40,a2
+.L643:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   447      stdif->getSensorType      =(IfxStdIf_Pos_GetSensorType           )&Ifx_AngleTrkF32_getSensorType;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_getSensorType)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_getSensorType)
+.L644:
+	st.a	[a15]44,a2
+.L645:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   448  	stdif->reset			  =(IfxStdIf_Pos_Reset				     )&Ifx_AngleTrkF32_reset;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_reset)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_reset)
+.L646:
+	st.a	[a15]56,a2
+.L647:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   449  	stdif->resetFaults		  =(IfxStdIf_Pos_ResetFaults			 )&Ifx_AngleTrkF32_resetFaults;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_resetFaults)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_resetFaults)
+.L648:
+	st.a	[a15]60,a2
+.L649:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   450  	stdif->getSpeed           =(IfxStdIf_Pos_GetSpeed                )&Ifx_AngleTrkF32_getSpeed;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_getSpeed)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_getSpeed)
+.L650:
+	st.a	[a15]64,a2
+.L651:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   451  	stdif->update			  =(IfxStdIf_Pos_Update				     )&Ifx_AngleTrkF32_update;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_update)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_update)
+.L652:
+	st.a	[a15]68,a2
+.L653:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   452  	stdif->setPosition		  =(IfxStdIf_Pos_SetPosition			 )NULL_PTR;
+	st.a	[a15]76,a4
+.L654:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   453  	stdif->setRawPosition	  =(IfxStdIf_Pos_SetRawPosition			 )NULL_PTR;
+	st.a	[a15]80,a4
+.L655:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   454  	stdif->setSpeed		      =(IfxStdIf_Pos_SetSpeed			     )NULL_PTR;
+	st.a	[a15]84,a4
+.L656:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   455  	stdif->setOffset		  =(IfxStdIf_Pos_SetOffset			     )&Ifx_AngleTrkF32_setOffset;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_setOffset)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_setOffset)
+.L657:
+	st.a	[a15]72,a2
+.L658:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   456  	stdif->setRefreshPeriod   =(IfxStdIf_Pos_SetRefreshPeriod        )&Ifx_AngleTrkF32_setRefreshPeriod;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_setRefreshPeriod)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_setRefreshPeriod)
+.L659:
+	st.a	[a15]88,a2
+.L660:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   457  	stdif->getTurn            =(IfxStdIf_Pos_GetTurn                 )&Ifx_AngleTrkF32_getTurn;
+	movh.a	a2,#@his(Ifx_AngleTrkF32_getTurn)
+	lea	a2,[a2]@los(Ifx_AngleTrkF32_getTurn)
+.L661:
+	st.a	[a15]48,a2
+.L662:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   458      /* *INDENT-ON* */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   459  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   460      return TRUE;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_AngleTrkF32.c	   461  }
+	mov	d2,#1
+	ret
+.L322:
+	
+__Ifx_AngleTrkF32_stdIfPosInit_function_end:
+	.size	Ifx_AngleTrkF32_stdIfPosInit,__Ifx_AngleTrkF32_stdIfPosInit_function_end-Ifx_AngleTrkF32_stdIfPosInit
+.L198:
+	; End of function
+	
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_getAbsolutePosition'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_getDirection'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_getFault'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_getOffset'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_getPeriodPerRotation'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_getPosition'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_getRawPosition'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_getRefreshPeriod'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_getResolution'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_getTurn'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_getSensorType'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_getSpeed'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_reset'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_resetFaults'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_setOffset'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_setRefreshPeriod'
+	.calls	'__INDIRECT__','Ifx_AngleTrkF32_update'
+	.calls	'Ifx_AngleTrkF32_initConfig','Ifx_AngleTrkF32_setControlGains'
+	.calls	'Ifx_AngleTrkF32_init','Ifx_AngleTrkF32_setControlGains'
+	.calls	'Ifx_AngleTrkF32_init','Ifx_AngleTrkF32_setUserSampling'
+	.calls	'Ifx_AngleTrkF32_init','Ifx_LowPassPt1F32_init'
+	.calls	'Ifx_AngleTrkF32_step','Ifx_LutAtan2F32_float32'
+	.calls	'Ifx_AngleTrkF32_step','Ifx_LowPassPt1F32_do'
+	.calls	'Ifx_AngleTrkF32_update','Ifx_AngleTrkF32_step'
+	.calls	'Ifx_AngleTrkF32_update','Ifx_AngleTrkF32_updateStatus'
+	.calls	'Ifx_AngleTrkF32_stdIfPosInit','memset'
+	.calls	'Ifx_AngleTrkF32_initConfig','.cocofun_9'
+	.calls	'Ifx_AngleTrkF32_init','.cocofun_9'
+	.calls	'Ifx_AngleTrkF32_step','.cocofun_8'
+	.calls	'round_f','',0
+	.calls	'Ifx_AngleTrkF32_setControlGains','',0
+	.calls	'Ifx_AngleTrkF32_initConfig','',24
+	.calls	'.cocofun_9','',0
+	.calls	'Ifx_AngleTrkF32_setUserSampling','',0
+	.calls	'Ifx_AngleTrkF32_init','',16
+	.calls	'Ifx_AngleTrkF32_step','',0
+	.calls	'.cocofun_8','',0
+	.calls	'Ifx_AngleTrkF32_setOffset','',0
+	.calls	'Ifx_AngleTrkF32_updateStatus','',0
+	.calls	'Ifx_AngleTrkF32_update','',0
+	.calls	'Ifx_AngleTrkF32_getRawPosition','',0
+	.calls	'Ifx_AngleTrkF32_getSpeed','',0
+	.calls	'Ifx_AngleTrkF32_getAbsolutePosition','',0
+	.calls	'Ifx_AngleTrkF32_getDirection','',0
+	.calls	'Ifx_AngleTrkF32_getFault','',0
+	.calls	'Ifx_AngleTrkF32_getOffset','',0
+	.calls	'Ifx_AngleTrkF32_getPeriodPerRotation','',0
+	.calls	'Ifx_AngleTrkF32_getPosition','',0
+	.calls	'Ifx_AngleTrkF32_getRefreshPeriod','',0
+	.calls	'Ifx_AngleTrkF32_getResolution','',0
+	.calls	'Ifx_AngleTrkF32_getSensorType','',0
+	.calls	'Ifx_AngleTrkF32_getTurn','',0
+	.calls	'Ifx_AngleTrkF32_resetFaults','',0
+	.calls	'Ifx_AngleTrkF32_setRefreshPeriod','',0
+	.calls	'Ifx_AngleTrkF32_reset','',0
+	.extern	Ifx_LowPassPt1F32_init
+	.extern	Ifx_LowPassPt1F32_do
+	.extern	memset
+	.extern	Ifx_LutAtan2F32_float32
+	.extern	__INDIRECT__
+	.calls	'Ifx_AngleTrkF32_stdIfPosInit','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L86:
+	.word	6290
+	.half	3
+	.word	.L87
+	.byte	4
+.L85:
+	.byte	1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L88
+	.byte	2
+	.byte	'unsigned long int',0,4,7
+.L321:
+	.byte	2
+	.byte	'unsigned char',0,1,8,3,1,103,5,1,4
+	.byte	'notSynchronised',0,1
+	.word	189
+	.byte	1,7,2,35,0,4
+	.byte	'signalLoss',0,1
+	.word	189
+	.byte	1,6,2,35,0,4
+	.byte	'signalDegradation',0,1
+	.word	189
+	.byte	1,5,2,35,0,4
+	.byte	'trackingLoss',0,1
+	.word	189
+	.byte	1,4,2,35,0,4
+	.byte	'commError',0,1
+	.word	189
+	.byte	1,3,2,35,0,0
+.L279:
+	.byte	5,1,100,9,4,6
+	.byte	'status',0
+	.word	168
+	.byte	4,2,35,0,6
+	.byte	'B',0
+	.word	206
+	.byte	1,2,35,0,0,7
+	.byte	'void',0,8
+	.word	368
+	.byte	9
+	.byte	'IfxStdIf_InterfaceDriver',0,2,115,15
+	.word	374
+	.byte	10,1,1,11
+	.word	374
+	.byte	0,8
+	.word	412
+	.byte	9
+	.byte	'IfxStdIf_Pos_OnZeroIrq',0,1,132,1,16
+	.word	421
+.L229:
+	.byte	2
+	.byte	'float',0,4,4,12
+	.word	458
+	.byte	1,1,11
+	.word	374
+	.byte	0,8
+	.word	467
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetAbsolutePosition',0,1,126,19
+	.word	480
+.L272:
+	.byte	2
+	.byte	'long int',0,4,5,12
+	.word	526
+	.byte	1,1,11
+	.word	374
+	.byte	0,8
+	.word	538
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetOffset',0,1,139,1,18
+	.word	551
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetPosition',0,1,149,1,19
+	.word	480
+.L276:
+	.byte	13,1,92,9,1,14
+	.byte	'IfxStdIf_Pos_Dir_forward',0,0,14
+	.byte	'IfxStdIf_Pos_Dir_backward',0,1,14
+	.byte	'IfxStdIf_Pos_Dir_unknown',0,2,0,12
+	.word	622
+	.byte	1,1,11
+	.word	374
+	.byte	0,8
+	.word	710
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetDirection',0,1,158,1,28
+	.word	723
+	.byte	12
+	.word	335
+	.byte	1,1,11
+	.word	374
+	.byte	0,8
+	.word	763
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetFault',0,1,165,1,31
+	.word	776
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetRawPosition',0,1,181,1,18
+	.word	551
+.L284:
+	.byte	2
+	.byte	'unsigned short int',0,2,7,12
+	.word	849
+	.byte	1,1,11
+	.word	374
+	.byte	0,8
+	.word	871
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetPeriodPerRotation',0,1,172,1,18
+	.word	884
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetRefreshPeriod',0,1,187,1,19
+	.word	480
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetResolution',0,1,193,1,18
+	.word	551
+.L297:
+	.byte	13,1,81,9,1,14
+	.byte	'IfxStdIf_Pos_SensorType_encoder',0,0,14
+	.byte	'IfxStdIf_Pos_SensorType_hall',0,1,14
+	.byte	'IfxStdIf_Pos_SensorType_resolver',0,2,14
+	.byte	'IfxStdIf_Pos_SensorType_angletrk',0,3,14
+	.byte	'IfxStdIf_Pos_SensorType_igmr',0,4,14
+	.byte	'IfxStdIf_Pos_SensorType_virtual',0,5,0,12
+	.word	1007
+	.byte	1,1,11
+	.word	374
+	.byte	0,8
+	.word	1213
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetSensorType',0,1,199,1,35
+	.word	1226
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetTurn',0,1,211,1,18
+	.word	551
+	.byte	9
+	.byte	'IfxStdIf_Pos_OnEventA',0,1,218,1,16
+	.word	421
+	.byte	9
+	.byte	'IfxStdIf_Pos_Reset',0,1,236,1,16
+	.word	421
+	.byte	9
+	.byte	'IfxStdIf_Pos_ResetFaults',0,1,245,1,16
+	.word	421
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetSpeed',0,1,205,1,19
+	.word	480
+	.byte	9
+	.byte	'IfxStdIf_Pos_Update',0,1,227,1,16
+	.word	421
+	.byte	10,1,1,11
+	.word	374
+	.byte	11
+	.word	526
+	.byte	0,8
+	.word	1450
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetOffset',0,1,252,1,16
+	.word	1464
+	.byte	10,1,1,11
+	.word	374
+	.byte	11
+	.word	458
+	.byte	0,8
+	.word	1501
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetPosition',0,1,131,2,16
+	.word	1515
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetRawPosition',0,1,137,2,16
+	.word	1464
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetSpeed',0,1,144,2,16
+	.word	1515
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetRefreshPeriod',0,1,151,2,16
+	.word	1515
+	.byte	15
+	.byte	'IfxStdIf_Pos_',0,1,155,2,8,92,6
+	.byte	'driver',0
+	.word	379
+	.byte	4,2,35,0,6
+	.byte	'onZeroIrq',0
+	.word	426
+	.byte	4,2,35,4,6
+	.byte	'getAbsolutePosition',0
+	.word	485
+	.byte	4,2,35,8,6
+	.byte	'getOffset',0
+	.word	556
+	.byte	4,2,35,12,6
+	.byte	'getPosition',0
+	.word	588
+	.byte	4,2,35,16,6
+	.byte	'getDirection',0
+	.word	728
+	.byte	4,2,35,20,6
+	.byte	'getFault',0
+	.word	781
+	.byte	4,2,35,24,6
+	.byte	'getRawPosition',0
+	.word	812
+	.byte	4,2,35,28,6
+	.byte	'getPeriodPerRotation',0
+	.word	889
+	.byte	4,2,35,32,6
+	.byte	'getRefreshPeriod',0
+	.word	932
+	.byte	4,2,35,36,6
+	.byte	'getResolution',0
+	.word	971
+	.byte	4,2,35,40,6
+	.byte	'getSensorType',0
+	.word	1231
+	.byte	4,2,35,44,6
+	.byte	'getTurn',0
+	.word	1267
+	.byte	4,2,35,48,6
+	.byte	'onEventA',0
+	.word	1297
+	.byte	4,2,35,52,6
+	.byte	'reset',0
+	.word	1328
+	.byte	4,2,35,56,6
+	.byte	'resetFaults',0
+	.word	1356
+	.byte	4,2,35,60,6
+	.byte	'getSpeed',0
+	.word	1390
+	.byte	4,2,35,64,6
+	.byte	'update',0
+	.word	1421
+	.byte	4,2,35,68,6
+	.byte	'setOffset',0
+	.word	1469
+	.byte	4,2,35,72,6
+	.byte	'setPosition',0
+	.word	1520
+	.byte	4,2,35,76,6
+	.byte	'setRawPosition',0
+	.word	1554
+	.byte	4,2,35,80,6
+	.byte	'setSpeed',0
+	.word	1591
+	.byte	4,2,35,84,6
+	.byte	'setRefreshPeriod',0
+	.word	1622
+	.byte	4,2,35,88,0
+.L323:
+	.byte	8
+	.word	1661
+	.byte	16
+	.byte	'IfxStdIf_Pos_getFault',0,3,1,222,2,32
+	.word	335
+	.byte	1,1,17
+	.byte	'stdIf',0,1,222,2,68
+	.word	2165
+	.byte	18,0,8
+	.word	368
+	.byte	8
+	.word	412
+	.byte	8
+	.word	467
+	.byte	8
+	.word	538
+	.byte	8
+	.word	467
+	.byte	8
+	.word	710
+	.byte	8
+	.word	763
+	.byte	8
+	.word	538
+	.byte	8
+	.word	871
+	.byte	8
+	.word	467
+	.byte	8
+	.word	538
+	.byte	8
+	.word	1213
+	.byte	8
+	.word	538
+	.byte	8
+	.word	412
+	.byte	8
+	.word	412
+	.byte	8
+	.word	412
+	.byte	8
+	.word	467
+	.byte	8
+	.word	412
+	.byte	8
+	.word	1450
+	.byte	8
+	.word	1501
+	.byte	8
+	.word	1450
+	.byte	8
+	.word	1501
+	.byte	8
+	.word	1501
+	.byte	3,3,61,9,12,6
+	.byte	'a',0
+	.word	458
+	.byte	4,2,35,0,6
+	.byte	'b',0
+	.word	458
+	.byte	4,2,35,4,6
+	.byte	'out',0
+	.word	458
+	.byte	4,2,35,8,0,8
+	.word	2336
+.L304:
+	.byte	19
+	.byte	'Ifx_LowPassPt1F32_reset',0,3,3,90,17,1,1
+.L307:
+	.byte	17
+	.byte	'filter',0,3,90,60
+	.word	2377
+.L309:
+	.byte	18,0,20,1,1,8
+	.word	2430
+	.byte	19
+	.byte	'Ifx__jump_and_link',0,3,4,58,17,1,1,17
+	.byte	'fun',0,4,58,43
+	.word	2433
+	.byte	18,0,2
+	.byte	'__fract',0,4,128,1,16
+	.byte	'Ifx__float_to_fract',0,3,4,149,2,18
+	.word	2478
+	.byte	1,1,17
+	.byte	'a',0,4,149,2,44
+	.word	458
+	.byte	18,0,2
+	.byte	'unsigned long long int',0,8,7,16
+	.byte	'__ld64',0,3,5,132,1,19
+	.word	2535
+	.byte	1,1,17
+	.byte	'addr',0,5,132,1,32
+	.word	374
+	.byte	18,0,19
+	.byte	'__st64',0,3,5,140,1,17,1,1,17
+	.byte	'addr',0,5,140,1,30
+	.word	374
+	.byte	17
+	.byte	'value',0,5,140,1,43
+	.word	2535
+	.byte	18,0
+.L258:
+	.byte	16
+	.byte	'Ifx_AngleTrkF32_bound',0,3,6,70,20
+	.word	458
+	.byte	1,1
+.L259:
+	.byte	17
+	.byte	'angle',0,6,70,50
+	.word	458
+.L261:
+	.byte	17
+	.byte	'periodPerRotation',0,6,70,65
+	.word	458
+.L263:
+	.byte	21
+.L264:
+	.byte	18,0,0
+.L252:
+	.byte	16
+	.byte	'Ifx_AngleTrkF32_boundInput',0,3,6,90,20
+	.word	458
+	.byte	1,1
+.L255:
+	.byte	17
+	.byte	'input',0,6,90,55
+	.word	458
+.L257:
+	.byte	21,18,0,0,2
+	.byte	'int',0,4,5,22
+	.word	2775
+	.byte	23
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,11
+	.word	2782
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,24
+	.word	2824
+	.byte	8
+	.word	2824
+	.byte	25
+	.byte	'__cmpswapw',0
+	.word	2840
+	.byte	1,1,1,1,26
+	.byte	'p',0
+	.word	2845
+	.byte	26
+	.byte	'value',0
+	.word	2824
+	.byte	26
+	.byte	'compare',0
+	.word	2824
+	.byte	0,27
+	.word	2170
+	.byte	28
+	.word	2204
+	.byte	18,0
+.L232:
+	.byte	3,3,69,9,12,6
+	.byte	'cutOffFrequency',0
+	.word	458
+	.byte	4,2,35,0,6
+	.byte	'gain',0
+	.word	458
+	.byte	4,2,35,4,6
+	.byte	'samplingTime',0
+	.word	458
+	.byte	4,2,35,8,0,22
+	.word	2914
+	.byte	8
+	.word	2981
+	.byte	29
+	.byte	'Ifx_LowPassPt1F32_init',0,3,80,20,1,1,1,1,17
+	.byte	'filter',0,3,80,62
+	.word	2377
+	.byte	17
+	.byte	'config',0,3,80,102
+	.word	2986
+	.byte	0,27
+	.word	2382
+	.byte	28
+	.word	2413
+	.byte	18,0,30
+	.byte	'Ifx_LowPassPt1F32_do',0,3,82,20
+	.word	458
+	.byte	1,1,1,1,17
+	.byte	'filter',0,3,82,60
+	.word	2377
+	.byte	17
+	.byte	'input',0,3,82,76
+	.word	458
+	.byte	0,3,7,100,9,36,6
+	.byte	'rawPosition',0
+	.word	526
+	.byte	4,2,35,0,6
+	.byte	'turn',0
+	.word	526
+	.byte	4,2,35,4,6
+	.byte	'direction',0
+	.word	622
+	.byte	1,2,35,8,6
+	.byte	'status',0
+	.word	335
+	.byte	4,2,35,10,6
+	.byte	'offset',0
+	.word	526
+	.byte	4,2,35,14,6
+	.byte	'reversed',0
+	.word	189
+	.byte	1,2,35,18,6
+	.byte	'periodPerRotation',0
+	.word	849
+	.byte	2,2,35,20,6
+	.byte	'resolution',0
+	.word	526
+	.byte	4,2,35,22,6
+	.byte	'Ts',0
+	.word	458
+	.byte	4,2,35,26,6
+	.byte	'positionConst',0
+	.word	458
+	.byte	4,2,35,30,0
+.L241:
+	.byte	3,7,90,9,24,6
+	.byte	'kp',0
+	.word	458
+	.byte	4,2,35,0,6
+	.byte	'ki',0
+	.word	458
+	.byte	4,2,35,4,6
+	.byte	'kd',0
+	.word	458
+	.byte	4,2,35,8,6
+	.byte	'errorThreshold',0
+	.word	458
+	.byte	4,2,35,12,6
+	.byte	'sqrAmplMax',0
+	.word	526
+	.byte	4,2,35,16,6
+	.byte	'sqrAmplMin',0
+	.word	526
+	.byte	4,2,35,20,0
+.L245:
+	.byte	2
+	.byte	'short int',0,2,5
+.L237:
+	.byte	8
+	.word	3426
+	.byte	3,7,116,9,112,6
+	.byte	'base',0
+	.word	3128
+	.byte	36,2,35,0,6
+	.byte	'cfgData',0
+	.word	3320
+	.byte	24,2,35,36,6
+	.byte	'sinIn',0
+	.word	3439
+	.byte	4,2,35,60,6
+	.byte	'cosIn',0
+	.word	3439
+	.byte	4,2,35,64,6
+	.byte	'halfTs',0
+	.word	458
+	.byte	4,2,35,68,6
+	.byte	'angleAtan',0
+	.word	458
+	.byte	4,2,35,72,6
+	.byte	'angleRef',0
+	.word	458
+	.byte	4,2,35,76,6
+	.byte	'angleEst',0
+	.word	458
+	.byte	4,2,35,80,6
+	.byte	'speedEstA',0
+	.word	458
+	.byte	4,2,35,84,6
+	.byte	'speedEstB',0
+	.word	458
+	.byte	4,2,35,88,6
+	.byte	'accelEst',0
+	.word	458
+	.byte	4,2,35,92,6
+	.byte	'angleErr',0
+	.word	458
+	.byte	4,2,35,96,6
+	.byte	'speedLpf',0
+	.word	2336
+	.byte	12,2,35,100,0
+.L225:
+	.byte	8
+	.word	3444
+	.byte	3,7,73,9,48,6
+	.byte	'kp',0
+	.word	458
+	.byte	4,2,35,0,6
+	.byte	'ki',0
+	.word	458
+	.byte	4,2,35,4,6
+	.byte	'kd',0
+	.word	458
+	.byte	4,2,35,8,6
+	.byte	'speedLpfFc',0
+	.word	458
+	.byte	4,2,35,12,6
+	.byte	'errorThreshold',0
+	.word	458
+	.byte	4,2,35,16,6
+	.byte	'sqrAmplMax',0
+	.word	526
+	.byte	4,2,35,20,6
+	.byte	'sqrAmplMin',0
+	.word	526
+	.byte	4,2,35,24,6
+	.byte	'periodPerRotation',0
+	.word	849
+	.byte	2,2,35,28,6
+	.byte	'reversed',0
+	.word	189
+	.byte	1,2,35,30,6
+	.byte	'resolution',0
+	.word	526
+	.byte	4,2,35,32,6
+	.byte	'offset',0
+	.word	526
+	.byte	4,2,35,36,6
+	.byte	'sinIn',0
+	.word	3439
+	.byte	4,2,35,40,6
+	.byte	'cosIn',0
+	.word	3439
+	.byte	4,2,35,44,0,22
+	.word	3679
+.L227:
+	.byte	8
+	.word	3916
+.L235:
+	.byte	8
+	.word	3679
+.L270:
+	.byte	8
+	.word	3128
+	.byte	30
+	.byte	'memset',0,8,56,17
+	.word	374
+	.byte	1,1,1,1,31,8,56,33
+	.word	374
+	.byte	31,8,56,36
+	.word	2775
+	.byte	31,8,56,41
+	.word	2824
+	.byte	0,27
+	.word	2438
+	.byte	28
+	.word	2464
+	.byte	18,0,27
+	.word	2490
+	.byte	28
+	.word	2522
+	.byte	18,0,27
+	.word	2561
+	.byte	28
+	.word	2580
+	.byte	18,0,27
+	.word	2596
+	.byte	28
+	.word	2611
+	.byte	28
+	.word	2625
+	.byte	18,0,30
+	.byte	'Ifx_LutAtan2F32_float32',0,9,71,29
+	.word	458
+	.byte	1,1,1,1,17
+	.byte	'y',0,9,71,61
+	.word	458
+	.byte	17
+	.byte	'x',0,9,71,72
+	.word	458
+	.byte	0,27
+	.word	2642
+	.byte	28
+	.word	2675
+	.byte	28
+	.word	2689
+	.byte	21,18,0,0,27
+	.word	2719
+	.byte	28
+	.word	2757
+	.byte	21,32
+	.word	2642
+	.byte	28
+	.word	2675
+	.byte	28
+	.word	2689
+	.byte	33
+	.word	2715
+	.byte	34
+	.word	2716
+	.byte	0,0,18,0,0
+.L333:
+	.byte	8
+	.word	3320
+	.byte	35
+	.byte	'__INDIRECT__',0,6,1,1,1,1,1,9
+	.byte	'__wchar_t',0,6,1,1
+	.word	3426
+	.byte	9
+	.byte	'__size_t',0,6,1,1
+	.word	2824
+	.byte	9
+	.byte	'__ptrdiff_t',0,6,1,1
+	.word	2775
+	.byte	36,1,8
+	.word	4230
+	.byte	9
+	.byte	'__codeptr',0,6,1,1
+	.word	4232
+	.byte	9
+	.byte	'size_t',0,10,24,25
+	.word	2824
+	.byte	9
+	.byte	'boolean',0,11,104,29
+	.word	189
+	.byte	9
+	.byte	'uint8',0,11,108,29
+	.word	189
+	.byte	9
+	.byte	'uint16',0,11,112,29
+	.word	849
+	.byte	9
+	.byte	'uint32',0,11,116,29
+	.word	168
+	.byte	9
+	.byte	'uint64',0,11,121,29
+	.word	2535
+	.byte	9
+	.byte	'sint16',0,11,129,1,29
+	.word	3426
+	.byte	9
+	.byte	'sint32',0,11,134,1,29
+	.word	526
+	.byte	2
+	.byte	'long long int',0,8,5,9
+	.byte	'sint64',0,11,141,1,29
+	.word	4377
+	.byte	9
+	.byte	'float32',0,11,170,1,29
+	.word	458
+	.byte	9
+	.byte	'pvoid',0,12,54,28
+	.word	374
+	.byte	9
+	.byte	'Ifx_TickTime',0,12,76,28
+	.word	4377
+	.byte	9
+	.byte	'Ifx_SizeT',0,12,89,16
+	.word	3426
+	.byte	8
+	.word	3426
+	.byte	12
+	.word	189
+	.byte	1,1,11
+	.word	374
+	.byte	11
+	.word	374
+	.byte	11
+	.word	4480
+	.byte	11
+	.word	4377
+	.byte	0,8
+	.word	4485
+	.byte	9
+	.byte	'IfxStdIf_DPipe_Write',0,13,89,19
+	.word	4513
+	.byte	9
+	.byte	'IfxStdIf_DPipe_Read',0,13,104,19
+	.word	4513
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetReadCount',0,13,112,18
+	.word	551
+	.byte	24
+	.word	189
+	.byte	8
+	.word	4611
+	.byte	12
+	.word	4616
+	.byte	1,1,11
+	.word	374
+	.byte	0,8
+	.word	4621
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetReadEvent',0,13,120,36
+	.word	4634
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetWriteCount',0,13,144,1,18
+	.word	551
+	.byte	8
+	.word	4621
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetWriteEvent',0,13,152,1,37
+	.word	4713
+	.byte	12
+	.word	189
+	.byte	1,1,11
+	.word	374
+	.byte	11
+	.word	3426
+	.byte	11
+	.word	4377
+	.byte	0,8
+	.word	4756
+	.byte	9
+	.byte	'IfxStdIf_DPipe_CanReadCount',0,13,163,1,19
+	.word	4779
+	.byte	9
+	.byte	'IfxStdIf_DPipe_CanWriteCount',0,13,174,1,19
+	.word	4779
+	.byte	12
+	.word	189
+	.byte	1,1,11
+	.word	374
+	.byte	11
+	.word	4377
+	.byte	0,8
+	.word	4859
+	.byte	9
+	.byte	'IfxStdIf_DPipe_FlushTx',0,13,183,1,19
+	.word	4877
+	.byte	9
+	.byte	'IfxStdIf_DPipe_ClearTx',0,13,197,1,16
+	.word	421
+	.byte	9
+	.byte	'IfxStdIf_DPipe_ClearRx',0,13,190,1,16
+	.word	421
+	.byte	9
+	.byte	'IfxStdIf_DPipe_OnReceive',0,13,205,1,16
+	.word	421
+	.byte	9
+	.byte	'IfxStdIf_DPipe_OnTransmit',0,13,212,1,16
+	.word	421
+	.byte	9
+	.byte	'IfxStdIf_DPipe_OnError',0,13,219,1,16
+	.word	421
+	.byte	12
+	.word	168
+	.byte	1,1,11
+	.word	374
+	.byte	0,8
+	.word	5079
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetSendCount',0,13,128,1,18
+	.word	5092
+	.byte	12
+	.word	4377
+	.byte	1,1,11
+	.word	374
+	.byte	0,8
+	.word	5134
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetTxTimeStamp',0,13,136,1,24
+	.word	5147
+	.byte	9
+	.byte	'IfxStdIf_DPipe_ResetSendCount',0,13,226,1,16
+	.word	421
+	.byte	15
+	.byte	'IfxStdIf_DPipe_',0,13,230,1,8,76,6
+	.byte	'driver',0
+	.word	379
+	.byte	4,2,35,0,6
+	.byte	'txDisabled',0
+	.word	189
+	.byte	1,2,35,4,6
+	.byte	'write',0
+	.word	4518
+	.byte	4,2,35,8,6
+	.byte	'read',0
+	.word	4547
+	.byte	4,2,35,12,6
+	.byte	'getReadCount',0
+	.word	4575
+	.byte	4,2,35,16,6
+	.byte	'getReadEvent',0
+	.word	4639
+	.byte	4,2,35,20,6
+	.byte	'getWriteCount',0
+	.word	4675
+	.byte	4,2,35,24,6
+	.byte	'getWriteEvent',0
+	.word	4718
+	.byte	4,2,35,28,6
+	.byte	'canReadCount',0
+	.word	4784
+	.byte	4,2,35,32,6
+	.byte	'canWriteCount',0
+	.word	4821
+	.byte	4,2,35,36,6
+	.byte	'flushTx',0
+	.word	4882
+	.byte	4,2,35,40,6
+	.byte	'clearTx',0
+	.word	4914
+	.byte	4,2,35,44,6
+	.byte	'clearRx',0
+	.word	4946
+	.byte	4,2,35,48,6
+	.byte	'onReceive',0
+	.word	4978
+	.byte	4,2,35,52,6
+	.byte	'onTransmit',0
+	.word	5012
+	.byte	4,2,35,56,6
+	.byte	'onError',0
+	.word	5047
+	.byte	4,2,35,60,6
+	.byte	'getSendCount',0
+	.word	5097
+	.byte	4,2,35,64,6
+	.byte	'getTxTimeStamp',0
+	.word	5152
+	.byte	4,2,35,68,6
+	.byte	'resetSendCount',0
+	.word	5191
+	.byte	4,2,35,72,0,9
+	.byte	'IfxStdIf_DPipe',0,13,68,32
+	.word	5230
+	.byte	8
+	.word	4485
+	.byte	8
+	.word	4485
+	.byte	8
+	.word	538
+	.byte	8
+	.word	4621
+	.byte	8
+	.word	538
+	.byte	8
+	.word	4621
+	.byte	8
+	.word	4756
+	.byte	8
+	.word	4756
+	.byte	8
+	.word	4859
+	.byte	8
+	.word	412
+	.byte	8
+	.word	412
+	.byte	8
+	.word	412
+	.byte	8
+	.word	412
+	.byte	8
+	.word	412
+	.byte	8
+	.word	5079
+	.byte	8
+	.word	5134
+	.byte	8
+	.word	412
+	.byte	24
+	.word	189
+	.byte	8
+	.word	5738
+	.byte	9
+	.byte	'IfxStdIf_DPipe_WriteEvent',0,13,70,32
+	.word	5743
+	.byte	9
+	.byte	'IfxStdIf_DPipe_ReadEvent',0,13,71,32
+	.word	5743
+	.byte	13,1,73,9,1,14
+	.byte	'IfxStdIf_Pos_ResolutionFactor_oneFold',0,1,14
+	.byte	'IfxStdIf_Pos_ResolutionFactor_twoFold',0,2,14
+	.byte	'IfxStdIf_Pos_ResolutionFactor_fourFold',0,4,0,9
+	.byte	'IfxStdIf_Pos_ResolutionFactor',0,1,78,3
+	.word	5815
+	.byte	9
+	.byte	'IfxStdIf_Pos_SensorType',0,1,89,3
+	.word	1007
+	.byte	9
+	.byte	'IfxStdIf_Pos_Dir',0,1,97,3
+	.word	622
+	.byte	9
+	.byte	'IfxStdIf_Pos_Status',0,1,111,3
+	.word	335
+	.byte	9
+	.byte	'IfxStdIf_Pos_RawAngle',0,1,113,16
+	.word	526
+	.byte	9
+	.byte	'IfxStdIf_Pos',0,1,116,30
+	.word	1661
+	.byte	9
+	.byte	'Ifx_LowPassPt1F32',0,3,66,3
+	.word	2336
+	.byte	9
+	.byte	'Ifx_LowPassPt1F32_Config',0,3,74,3
+	.word	2914
+	.byte	9
+	.byte	'Ifx_AngleTrkF32_Config',0,7,88,3
+	.word	3679
+	.byte	9
+	.byte	'Ifx_AngleTrkF32_CfgData',0,7,98,3
+	.word	3320
+	.byte	9
+	.byte	'Ifx_AngleTrkF32_PosIf',0,7,113,3
+	.word	3128
+	.byte	9
+	.byte	'Ifx_AngleTrkF32',0,7,131,1,3
+	.word	3444
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L87:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,19,1,58,15,59,15,57,15,11,15
+	.byte	0,0,4,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,5,23,1,58,15,59,15,57,15,11,15,0,0,6,13,0,3,8,73,19,11
+	.byte	15,56,9,0,0,7,59,0,3,8,0,0,8,15,0,73,19,0,0,9,22,0,3,8,58,15,59,15,57,15,73,19,0,0,10,21,1,54,15,39,12
+	.byte	0,0,11,5,0,73,19,0,0,12,21,1,73,19,54,15,39,12,0,0,13,4,1,58,15,59,15,57,15,11,15,0,0,14,40,0,3,8,28,13
+	.byte	0,0,15,19,1,3,8,58,15,59,15,57,15,11,15,0,0,16,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0
+	.byte	17,5,0,3,8,58,15,59,15,57,15,73,19,0,0,18,11,0,0,0,19,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0
+	.byte	20,21,0,54,15,39,12,0,0,21,11,1,0,0,22,38,0,73,19,0,0,23,46,1,3,8,54,15,39,12,63,12,60,12,0,0,24,53,0
+	.byte	73,19,0,0,25,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,26,5,0,3,8,73,19,0,0,27,46,1,49,19,0,0,28,5,0
+	.byte	49,19,0,0,29,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,30,46,1,3,8,58,15,59,15,57,15,73,19
+	.byte	54,15,39,12,63,12,60,12,0,0,31,5,0,58,15,59,15,57,15,73,19,0,0,32,29,1,49,19,0,0,33,11,1,49,19,0,0,34
+	.byte	11,0,49,19,0,0,35,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60,12,0,0,36,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L88:
+	.word	.L375-.L374
+.L374:
+	.half	3
+	.word	.L377-.L376
+.L376:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0,0
+	.byte	'IfxStdIf_Pos.h',0,1,0,0
+	.byte	'IfxStdIf.h',0,1,0,0
+	.byte	'Ifx_LowPassPt1F32.h',0,2,0,0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,3,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,3,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.h',0,0,0,0
+	.byte	'string.h',0,4,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_LutAtan2F32.h',0,0,0,0
+	.byte	'stddef.h',0,4,0,0
+	.byte	'Platform_Types.h',0,3,0,0
+	.byte	'Ifx_Types.h',0,3,0,0
+	.byte	'IfxStdIf_DPipe.h',0,1,0,0,0
+.L377:
+.L375:
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_init')
+	.sect	'.debug_info'
+.L89:
+	.word	314
+	.half	3
+	.word	.L90
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L92,.L91
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_init',0,1,162,1,6,1,1,1
+	.word	.L42,.L224,.L41
+	.byte	4
+	.byte	'aObsv',0,1,162,1,44
+	.word	.L225,.L226
+	.byte	4
+	.byte	'config',0,1,162,1,81
+	.word	.L227,.L228
+	.byte	4
+	.byte	'Ts',0,1,162,1,97
+	.word	.L229,.L230
+	.byte	5
+	.word	.L42,.L224
+	.byte	5
+	.word	.L231,.L224
+	.byte	6
+	.byte	'lpfConfig',0,1,199,1,34
+	.word	.L232,.L233
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_init')
+	.sect	'.debug_abbrev'
+.L90:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_init')
+	.sect	'.debug_line'
+.L91:
+	.word	.L379-.L378
+.L378:
+	.half	3
+	.word	.L381-.L380
+.L380:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L381:
+	.byte	5,6,7,0,5,2
+	.word	.L42
+	.byte	3,161,1,1,5,43,9
+	.half	.L351-.L42
+	.byte	3,2,1,5,35,9
+	.half	.L382-.L351
+	.byte	1,5,6,9
+	.half	.L383-.L382
+	.byte	3,126,1,5,43,9
+	.half	.L348-.L383
+	.byte	3,3,1,5,35,9
+	.half	.L384-.L348
+	.byte	1,5,37,9
+	.half	.L385-.L384
+	.byte	3,3,1,5,43,9
+	.half	.L386-.L385
+	.byte	3,126,1,5,35,9
+	.half	.L387-.L386
+	.byte	1,9
+	.half	.L388-.L387
+	.byte	3,1,1,5,37,9
+	.half	.L389-.L388
+	.byte	3,2,1,5,35,3,127,1,9
+	.half	.L390-.L389
+	.byte	3,1,1,9
+	.half	.L391-.L390
+	.byte	3,1,1,9
+	.half	.L392-.L391
+	.byte	3,1,1,5,37,9
+	.half	.L393-.L392
+	.byte	3,2,1,5,43,9
+	.half	.L394-.L393
+	.byte	3,127,1,5,35,9
+	.half	.L395-.L394
+	.byte	1,5,77,9
+	.half	.L396-.L395
+	.byte	3,1,1,5,63,9
+	.half	.L397-.L396
+	.byte	1,5,83,9
+	.half	.L398-.L397
+	.byte	1,5,43,9
+	.half	.L399-.L398
+	.byte	1,5,41,9
+	.half	.L400-.L399
+	.byte	1,5,75,9
+	.half	.L401-.L400
+	.byte	1,5,81,9
+	.half	.L402-.L401
+	.byte	1,5,35,1,5,43,9
+	.half	.L403-.L402
+	.byte	3,2,1,5,35,9
+	.half	.L404-.L403
+	.byte	1,5,43,9
+	.half	.L405-.L404
+	.byte	3,1,1,5,35,9
+	.half	.L406-.L405
+	.byte	1,5,43,9
+	.half	.L407-.L406
+	.byte	3,1,1,5,35,9
+	.half	.L408-.L407
+	.byte	1,5,43,9
+	.half	.L409-.L408
+	.byte	3,1,1,5,35,9
+	.half	.L410-.L409
+	.byte	1,5,43,9
+	.half	.L411-.L410
+	.byte	3,1,1,5,35,9
+	.half	.L412-.L411
+	.byte	1,5,43,9
+	.half	.L413-.L412
+	.byte	3,1,1,5,35,9
+	.half	.L414-.L413
+	.byte	1,5,43,9
+	.half	.L415-.L414
+	.byte	3,1,1,5,35,9
+	.half	.L416-.L415
+	.byte	1,5,43,9
+	.half	.L417-.L416
+	.byte	3,1,1,5,35,9
+	.half	.L418-.L417
+	.byte	1,5,10,9
+	.half	.L419-.L418
+	.byte	3,2,1,5,36,9
+	.half	.L420-.L419
+	.byte	1,5,47,9
+	.half	.L421-.L420
+	.byte	3,3,1,5,58,9
+	.half	.L422-.L421
+	.byte	1,5,72,9
+	.half	.L349-.L422
+	.byte	1,5,44,9
+	.half	.L5-.L349
+	.byte	3,3,1,5,22,9
+	.half	.L354-.L5
+	.byte	3,1,1,9
+	.half	.L423-.L354
+	.byte	3,1,1,9
+	.half	.L424-.L423
+	.byte	3,1,1,9
+	.half	.L425-.L424
+	.byte	3,1,1,9
+	.half	.L426-.L425
+	.byte	3,1,1,9
+	.half	.L427-.L426
+	.byte	3,1,1,5,35,9
+	.half	.L231-.L427
+	.byte	3,4,1,5,57,9
+	.half	.L428-.L231
+	.byte	3,1,1,5,40,9
+	.half	.L429-.L428
+	.byte	1,5,38,9
+	.half	.L430-.L429
+	.byte	3,2,1,5,57,9
+	.half	.L431-.L430
+	.byte	3,126,1,5,35,1,5,51,9
+	.half	.L432-.L431
+	.byte	3,2,1,5,35,9
+	.half	.L433-.L432
+	.byte	3,127,1,5,51,9
+	.half	.L434-.L433
+	.byte	3,1,1,5,1,7,9
+	.half	.L93-.L434
+	.byte	3,3,0,1,1
+.L379:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_init')
+	.sect	'.debug_ranges'
+.L92:
+	.word	-1,.L42,0,.L93-.L42,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_initConfig')
+	.sect	'.debug_info'
+.L94:
+	.word	307
+	.half	3
+	.word	.L95
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L97,.L96
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_initConfig',0,1,130,1,6,1,1,1
+	.word	.L36,.L234,.L35
+	.byte	4
+	.byte	'config',0,1,130,1,57
+	.word	.L235,.L236
+	.byte	4
+	.byte	'sinIn',0,1,130,1,73
+	.word	.L237,.L238
+	.byte	4
+	.byte	'cosIn',0,1,130,1,88
+	.word	.L237,.L239
+	.byte	5
+	.word	.L240
+	.byte	6
+	.byte	'cfgData',0,1,132,1,29
+	.word	.L241,.L242
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_initConfig')
+	.sect	'.debug_abbrev'
+.L95:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,85,6,0,0,6,52,0,3,8,58
+	.byte	15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_initConfig')
+	.sect	'.debug_line'
+.L96:
+	.word	.L436-.L435
+.L435:
+	.half	3
+	.word	.L438-.L437
+.L437:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L438:
+	.byte	5,6,7,0,5,2
+	.word	.L36
+	.byte	3,129,1,1,5,38,9
+	.half	.L345-.L36
+	.byte	3,3,1,5,47,9
+	.half	.L439-.L345
+	.byte	1,5,61,9
+	.half	.L343-.L439
+	.byte	1,5,40,9
+	.half	.L346-.L343
+	.byte	3,1,1,5,31,9
+	.half	.L440-.L346
+	.byte	1,5,40,9
+	.half	.L441-.L440
+	.byte	3,1,1,5,31,9
+	.half	.L442-.L441
+	.byte	1,5,40,9
+	.half	.L443-.L442
+	.byte	3,1,1,5,31,9
+	.half	.L444-.L443
+	.byte	1,9
+	.half	.L445-.L444
+	.byte	3,1,1,9
+	.half	.L446-.L445
+	.byte	3,1,1,5,44,9
+	.half	.L447-.L446
+	.byte	3,1,1,5,31,9
+	.half	.L448-.L447
+	.byte	1,5,33,9
+	.half	.L449-.L448
+	.byte	3,1,1,5,31,1,5,33,9
+	.half	.L450-.L449
+	.byte	3,1,1,5,31,1,5,33,9
+	.half	.L451-.L450
+	.byte	3,1,1,5,31,1,5,33,9
+	.half	.L452-.L451
+	.byte	3,1,1,5,31,1,5,33,9
+	.half	.L453-.L452
+	.byte	3,1,1,5,31,1,9
+	.half	.L454-.L453
+	.byte	3,1,1,5,38,9
+	.half	.L455-.L454
+	.byte	3,1,1,5,31,1,5,1,9
+	.half	.L456-.L455
+	.byte	3,1,1,7,9
+	.half	.L98-.L456
+	.byte	0,1,1
+.L436:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_initConfig')
+	.sect	'.debug_ranges'
+.L97:
+	.word	-1,.L36,0,.L98-.L36,0,0
+.L240:
+	.word	-1,.L36,0,.L234-.L36,-1,.L38,0,.L223-.L38,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_step')
+	.sect	'.debug_info'
+.L99:
+	.word	462
+	.half	3
+	.word	.L100
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L102,.L101
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_step',0,1,220,1,9
+	.word	.L229
+	.byte	1,1,1
+	.word	.L44,.L243,.L43
+	.byte	4
+	.byte	'aObsv',0,1,220,1,47
+	.word	.L225,.L244
+	.byte	4
+	.byte	'sinIn',0,1,220,1,61
+	.word	.L245,.L246
+	.byte	4
+	.byte	'cosIn',0,1,220,1,75
+	.word	.L245,.L247
+	.byte	4
+	.byte	'phase',0,1,220,1,90
+	.word	.L229,.L248
+	.byte	5
+	.word	.L44,.L243
+	.byte	6
+	.byte	'angleRef',0,1,222,1,13
+	.word	.L229,.L249
+	.byte	6
+	.byte	'angleEst',0,1,222,1,23
+	.word	.L229,.L250
+	.byte	6
+	.byte	'dAngle',0,1,222,1,49
+	.word	.L229,.L251
+	.byte	7
+	.word	.L252,.L253,.L254
+	.byte	8
+	.word	.L255,.L256
+	.byte	9
+	.word	.L257,.L253,.L254
+	.byte	7
+	.word	.L258,.L253,.L254
+	.byte	8
+	.word	.L259,.L260
+	.byte	8
+	.word	.L261,.L262
+	.byte	9
+	.word	.L263,.L253,.L254
+	.byte	10
+	.word	.L264,.L265
+	.byte	0,0,0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_step')
+	.sect	'.debug_abbrev'
+.L100:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,1,49,16,17
+	.byte	1,18,1,0,0,10,11,0,49,16,85,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_step')
+	.sect	'.debug_line'
+.L101:
+	.word	.L458-.L457
+.L457:
+	.half	3
+	.word	.L460-.L459
+.L459:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L460:
+	.byte	5,9,7,0,5,2
+	.word	.L44
+	.byte	3,219,1,1,5,20,9
+	.half	.L358-.L44
+	.byte	3,4,1,5,59,9
+	.half	.L359-.L358
+	.byte	3,2,1,5,43,9
+	.half	.L461-.L359
+	.byte	1,5,5,9
+	.half	.L356-.L461
+	.byte	3,126,1,5,59,7,9
+	.half	.L462-.L356
+	.byte	3,2,1,5,74,9
+	.half	.L357-.L462
+	.byte	1,5,59,9
+	.half	.L9-.L357
+	.byte	3,4,1,5,33,9
+	.half	.L355-.L9
+	.byte	3,4,1,5,22,3,127,1,9
+	.half	.L360-.L355
+	.byte	3,3,1,5,37,9
+	.half	.L463-.L360
+	.byte	3,3,1,5,48,9
+	.half	.L361-.L463
+	.byte	1,5,28,9
+	.half	.L464-.L361
+	.byte	3,1,1,5,41,9
+	.half	.L465-.L464
+	.byte	3,127,1,5,62,3,1,1,5,39,9
+	.half	.L466-.L465
+	.byte	1,5,21,1,5,40,9
+	.half	.L467-.L466
+	.byte	3,3,1,5,51,9
+	.half	.L468-.L467
+	.byte	1,5,63,9
+	.half	.L469-.L468
+	.byte	1,5,64,3,1,1,5,29,9
+	.half	.L470-.L469
+	.byte	1,5,41,9
+	.half	.L471-.L470
+	.byte	1,5,22,1,5,40,9
+	.half	.L472-.L471
+	.byte	3,3,1,5,51,9
+	.half	.L473-.L472
+	.byte	1,5,29,9
+	.half	.L474-.L473
+	.byte	3,1,1,5,63,9
+	.half	.L475-.L474
+	.byte	3,127,1,5,58,3,1,1,5,78,9
+	.half	.L362-.L475
+	.byte	1,5,22,9
+	.half	.L476-.L362
+	.byte	3,1,1,5,51,9
+	.half	.L477-.L476
+	.byte	3,127,1,5,40,9
+	.half	.L478-.L477
+	.byte	1,5,19,3,211,126,1,5,15,9
+	.half	.L253-.L478
+	.byte	1,5,22,9
+	.half	.L254-.L253
+	.byte	3,176,1,1,5,61,9
+	.half	.L479-.L254
+	.byte	3,3,1,5,72,9
+	.half	.L480-.L479
+	.byte	1,5,15,3,205,126,1,5,27,9
+	.half	.L364-.L480
+	.byte	3,179,1,1,5,34,9
+	.half	.L481-.L364
+	.byte	3,2,1,5,48,9
+	.half	.L482-.L481
+	.byte	1,5,34,9
+	.half	.L483-.L482
+	.byte	1,5,27,9
+	.half	.L484-.L483
+	.byte	1,5,32,9
+	.half	.L485-.L484
+	.byte	3,4,1,5,49,9
+	.half	.L486-.L485
+	.byte	1,5,17,9
+	.half	.L487-.L486
+	.byte	3,3,1,5,1,9
+	.half	.L488-.L487
+	.byte	3,1,1,7,9
+	.half	.L103-.L488
+	.byte	0,1,1
+.L458:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_step')
+	.sect	'.debug_ranges'
+.L102:
+	.word	-1,.L44,0,.L103-.L44,0,0
+.L265:
+	.word	-1,.L44,.L253-.L44,.L254-.L44,-1,.L46,0,.L218-.L46,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_updateStatus')
+	.sect	'.debug_info'
+.L104:
+	.word	330
+	.half	3
+	.word	.L105
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L107,.L106
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_updateStatus',0,1,156,2,6,1,1,1
+	.word	.L50,.L266,.L49
+	.byte	4
+	.byte	'aObsv',0,1,156,2,52
+	.word	.L225,.L267
+	.byte	4
+	.byte	'sinIn',0,1,156,2,66
+	.word	.L245,.L268
+	.byte	4
+	.byte	'cosIn',0,1,156,2,80
+	.word	.L245,.L269
+	.byte	5
+	.word	.L50,.L266
+	.byte	6
+	.byte	'base',0,1,158,2,28
+	.word	.L270,.L271
+	.byte	6
+	.byte	'sqrAmpl',0,1,159,2,29
+	.word	.L272,.L273
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_updateStatus')
+	.sect	'.debug_abbrev'
+.L105:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_updateStatus')
+	.sect	'.debug_line'
+.L106:
+	.word	.L490-.L489
+.L489:
+	.half	3
+	.word	.L492-.L491
+.L491:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L492:
+	.byte	5,54,7,0,5,2
+	.word	.L50
+	.byte	3,158,2,1,5,71,9
+	.half	.L365-.L50
+	.byte	1,5,19,3,1,1,5,65,9
+	.half	.L366-.L365
+	.byte	1,5,49,9
+	.half	.L493-.L366
+	.byte	1,5,38,9
+	.half	.L494-.L493
+	.byte	1,5,65,9
+	.half	.L495-.L494
+	.byte	3,1,1,5,49,9
+	.half	.L496-.L495
+	.byte	1,5,38,9
+	.half	.L497-.L496
+	.byte	1,5,40,9
+	.half	.L367-.L497
+	.byte	3,1,1,5,80,9
+	.half	.L498-.L367
+	.byte	1,5,64,9
+	.half	.L499-.L498
+	.byte	1,5,38,9
+	.half	.L500-.L499
+	.byte	1,5,1,9
+	.half	.L501-.L500
+	.byte	3,1,1,7,9
+	.half	.L108-.L501
+	.byte	0,1,1
+.L490:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_updateStatus')
+	.sect	'.debug_ranges'
+.L107:
+	.word	-1,.L50,0,.L108-.L50,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getAbsolutePosition')
+	.sect	'.debug_info'
+.L109:
+	.word	264
+	.half	3
+	.word	.L110
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L112,.L111
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_getAbsolutePosition',0,1,207,2,9
+	.word	.L229
+	.byte	1,1,1
+	.word	.L58,.L274,.L57
+	.byte	4
+	.byte	'driver',0,1,207,2,62
+	.word	.L225,.L275
+	.byte	5
+	.word	.L58,.L274
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_getAbsolutePosition')
+	.sect	'.debug_abbrev'
+.L110:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_getAbsolutePosition')
+	.sect	'.debug_line'
+.L111:
+	.word	.L503-.L502
+.L502:
+	.half	3
+	.word	.L505-.L504
+.L504:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L505:
+	.byte	5,63,7,0,5,2
+	.word	.L58
+	.byte	3,208,2,1,5,99,9
+	.half	.L506-.L58
+	.byte	1,5,42,9
+	.half	.L507-.L506
+	.byte	1,5,34,1,5,78,9
+	.half	.L508-.L507
+	.byte	1,5,13,9
+	.half	.L509-.L508
+	.byte	1,5,76,9
+	.half	.L510-.L509
+	.byte	1,5,40,9
+	.half	.L511-.L510
+	.byte	1,5,114,9
+	.half	.L512-.L511
+	.byte	1,5,112,9
+	.half	.L513-.L512
+	.byte	1,5,120,1,5,118,9
+	.half	.L514-.L513
+	.byte	1,5,1,3,1,1,7,9
+	.half	.L113-.L514
+	.byte	0,1,1
+.L503:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_getAbsolutePosition')
+	.sect	'.debug_ranges'
+.L112:
+	.word	-1,.L58,0,.L113-.L58,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getDirection')
+	.sect	'.debug_info'
+.L114:
+	.word	257
+	.half	3
+	.word	.L115
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L117,.L116
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_getDirection',0,1,213,2,18
+	.word	.L276
+	.byte	1,1,1
+	.word	.L60,.L277,.L59
+	.byte	4
+	.byte	'driver',0,1,213,2,64
+	.word	.L225,.L278
+	.byte	5
+	.word	.L60,.L277
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_getDirection')
+	.sect	'.debug_abbrev'
+.L115:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_getDirection')
+	.sect	'.debug_line'
+.L116:
+	.word	.L516-.L515
+.L515:
+	.half	3
+	.word	.L518-.L517
+.L517:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L518:
+	.byte	5,24,7,0,5,2
+	.word	.L60
+	.byte	3,214,2,1,5,1,9
+	.half	.L519-.L60
+	.byte	3,1,1,7,9
+	.half	.L118-.L519
+	.byte	0,1,1
+.L516:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_getDirection')
+	.sect	'.debug_ranges'
+.L117:
+	.word	-1,.L60,0,.L118-.L60,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getFault')
+	.sect	'.debug_info'
+.L119:
+	.word	253
+	.half	3
+	.word	.L120
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L122,.L121
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_getFault',0,1,219,2,21
+	.word	.L279
+	.byte	1,1,1
+	.word	.L62,.L280,.L61
+	.byte	4
+	.byte	'driver',0,1,219,2,63
+	.word	.L225,.L281
+	.byte	5
+	.word	.L62,.L280
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_getFault')
+	.sect	'.debug_abbrev'
+.L120:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_getFault')
+	.sect	'.debug_line'
+.L121:
+	.word	.L521-.L520
+.L520:
+	.half	3
+	.word	.L523-.L522
+.L522:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L523:
+	.byte	5,24,7,0,5,2
+	.word	.L62
+	.byte	3,220,2,1,5,1,9
+	.half	.L524-.L62
+	.byte	3,1,1,7,9
+	.half	.L123-.L524
+	.byte	0,1,1
+.L521:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_getFault')
+	.sect	'.debug_ranges'
+.L122:
+	.word	-1,.L62,0,.L123-.L62,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getOffset')
+	.sect	'.debug_info'
+.L124:
+	.word	254
+	.half	3
+	.word	.L125
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L127,.L126
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_getOffset',0,1,225,2,8
+	.word	.L272
+	.byte	1,1,1
+	.word	.L64,.L282,.L63
+	.byte	4
+	.byte	'driver',0,1,225,2,51
+	.word	.L225,.L283
+	.byte	5
+	.word	.L64,.L282
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_getOffset')
+	.sect	'.debug_abbrev'
+.L125:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_getOffset')
+	.sect	'.debug_line'
+.L126:
+	.word	.L526-.L525
+.L525:
+	.half	3
+	.word	.L528-.L527
+.L527:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L528:
+	.byte	5,24,7,0,5,2
+	.word	.L64
+	.byte	3,226,2,1,5,1,9
+	.half	.L529-.L64
+	.byte	3,1,1,7,9
+	.half	.L128-.L529
+	.byte	0,1,1
+.L526:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_getOffset')
+	.sect	'.debug_ranges'
+.L127:
+	.word	-1,.L64,0,.L128-.L64,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getPeriodPerRotation')
+	.sect	'.debug_info'
+.L129:
+	.word	265
+	.half	3
+	.word	.L130
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L132,.L131
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_getPeriodPerRotation',0,1,231,2,8
+	.word	.L284
+	.byte	1,1,1
+	.word	.L66,.L285,.L65
+	.byte	4
+	.byte	'driver',0,1,231,2,62
+	.word	.L225,.L286
+	.byte	5
+	.word	.L66,.L285
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_getPeriodPerRotation')
+	.sect	'.debug_abbrev'
+.L130:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_getPeriodPerRotation')
+	.sect	'.debug_line'
+.L131:
+	.word	.L531-.L530
+.L530:
+	.half	3
+	.word	.L533-.L532
+.L532:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L533:
+	.byte	5,24,7,0,5,2
+	.word	.L66
+	.byte	3,232,2,1,5,1,9
+	.half	.L534-.L66
+	.byte	3,1,1,7,9
+	.half	.L133-.L534
+	.byte	0,1,1
+.L531:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_getPeriodPerRotation')
+	.sect	'.debug_ranges'
+.L132:
+	.word	-1,.L66,0,.L133-.L66,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getPosition')
+	.sect	'.debug_info'
+.L134:
+	.word	256
+	.half	3
+	.word	.L135
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L137,.L136
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_getPosition',0,1,237,2,9
+	.word	.L229
+	.byte	1,1,1
+	.word	.L68,.L287,.L67
+	.byte	4
+	.byte	'driver',0,1,237,2,54
+	.word	.L225,.L288
+	.byte	5
+	.word	.L68,.L287
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_getPosition')
+	.sect	'.debug_abbrev'
+.L135:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_getPosition')
+	.sect	'.debug_line'
+.L136:
+	.word	.L536-.L535
+.L535:
+	.half	3
+	.word	.L538-.L537
+.L537:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L538:
+	.byte	5,33,7,0,5,2
+	.word	.L68
+	.byte	3,238,2,1,5,60,9
+	.half	.L539-.L68
+	.byte	1,5,12,9
+	.half	.L540-.L539
+	.byte	1,5,46,9
+	.half	.L541-.L540
+	.byte	1,5,1,3,1,1,7,9
+	.half	.L138-.L541
+	.byte	0,1,1
+.L536:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_getPosition')
+	.sect	'.debug_ranges'
+.L137:
+	.word	-1,.L68,0,.L138-.L68,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getRawPosition')
+	.sect	'.debug_info'
+.L139:
+	.word	258
+	.half	3
+	.word	.L140
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L142,.L141
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_getRawPosition',0,1,186,2,23
+	.word	.L272
+	.byte	1,1,1
+	.word	.L54,.L289,.L53
+	.byte	4
+	.byte	'aObsv',0,1,186,2,71
+	.word	.L225,.L290
+	.byte	5
+	.word	.L54,.L289
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_getRawPosition')
+	.sect	'.debug_abbrev'
+.L140:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_getRawPosition')
+	.sect	'.debug_line'
+.L141:
+	.word	.L543-.L542
+.L542:
+	.half	3
+	.word	.L545-.L544
+.L544:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L545:
+	.byte	5,16,7,0,5,2
+	.word	.L54
+	.byte	3,188,2,1,5,1,9
+	.half	.L546-.L54
+	.byte	3,1,1,7,9
+	.half	.L143-.L546
+	.byte	0,1,1
+.L543:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_getRawPosition')
+	.sect	'.debug_ranges'
+.L142:
+	.word	-1,.L54,0,.L143-.L54,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getRefreshPeriod')
+	.sect	'.debug_info'
+.L144:
+	.word	261
+	.half	3
+	.word	.L145
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L147,.L146
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_getRefreshPeriod',0,1,243,2,9
+	.word	.L229
+	.byte	1,1,1
+	.word	.L70,.L291,.L69
+	.byte	4
+	.byte	'driver',0,1,243,2,59
+	.word	.L225,.L292
+	.byte	5
+	.word	.L70,.L291
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_getRefreshPeriod')
+	.sect	'.debug_abbrev'
+.L145:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_getRefreshPeriod')
+	.sect	'.debug_line'
+.L146:
+	.word	.L548-.L547
+.L547:
+	.half	3
+	.word	.L550-.L549
+.L549:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L550:
+	.byte	5,24,7,0,5,2
+	.word	.L70
+	.byte	3,244,2,1,5,1,9
+	.half	.L551-.L70
+	.byte	3,1,1,7,9
+	.half	.L148-.L551
+	.byte	0,1,1
+.L548:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_getRefreshPeriod')
+	.sect	'.debug_ranges'
+.L147:
+	.word	-1,.L70,0,.L148-.L70,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getResolution')
+	.sect	'.debug_info'
+.L149:
+	.word	258
+	.half	3
+	.word	.L150
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L152,.L151
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_getResolution',0,1,249,2,8
+	.word	.L272
+	.byte	1,1,1
+	.word	.L72,.L293,.L71
+	.byte	4
+	.byte	'driver',0,1,249,2,55
+	.word	.L225,.L294
+	.byte	5
+	.word	.L72,.L293
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_getResolution')
+	.sect	'.debug_abbrev'
+.L150:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_getResolution')
+	.sect	'.debug_line'
+.L151:
+	.word	.L553-.L552
+.L552:
+	.half	3
+	.word	.L555-.L554
+.L554:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L555:
+	.byte	5,24,7,0,5,2
+	.word	.L72
+	.byte	3,250,2,1,5,1,9
+	.half	.L556-.L72
+	.byte	3,1,1,7,9
+	.half	.L153-.L556
+	.byte	0,1,1
+.L553:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_getResolution')
+	.sect	'.debug_ranges'
+.L152:
+	.word	-1,.L72,0,.L153-.L72,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getTurn')
+	.sect	'.debug_info'
+.L154:
+	.word	252
+	.half	3
+	.word	.L155
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L157,.L156
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_getTurn',0,1,134,3,8
+	.word	.L272
+	.byte	1,1,1
+	.word	.L76,.L295,.L75
+	.byte	4
+	.byte	'driver',0,1,134,3,49
+	.word	.L225,.L296
+	.byte	5
+	.word	.L76,.L295
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_getTurn')
+	.sect	'.debug_abbrev'
+.L155:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_getTurn')
+	.sect	'.debug_line'
+.L156:
+	.word	.L558-.L557
+.L557:
+	.half	3
+	.word	.L560-.L559
+.L559:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L560:
+	.byte	5,24,7,0,5,2
+	.word	.L76
+	.byte	3,135,3,1,5,1,9
+	.half	.L561-.L76
+	.byte	3,1,1,7,9
+	.half	.L158-.L561
+	.byte	0,1,1
+.L558:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_getTurn')
+	.sect	'.debug_ranges'
+.L157:
+	.word	-1,.L76,0,.L158-.L76,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getSensorType')
+	.sect	'.debug_info'
+.L159:
+	.word	258
+	.half	3
+	.word	.L160
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L162,.L161
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_getSensorType',0,1,255,2,25
+	.word	.L297
+	.byte	1,1,1
+	.word	.L74,.L298,.L73
+	.byte	4
+	.byte	'driver',0,1,255,2,72
+	.word	.L225,.L299
+	.byte	5
+	.word	.L74,.L298
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_getSensorType')
+	.sect	'.debug_abbrev'
+.L160:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_getSensorType')
+	.sect	'.debug_line'
+.L161:
+	.word	.L563-.L562
+.L562:
+	.half	3
+	.word	.L565-.L564
+.L564:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L565:
+	.byte	5,12,7,0,5,2
+	.word	.L74
+	.byte	3,129,3,1,5,1,3,1,1,7,9
+	.half	.L163-.L74
+	.byte	0,1,1
+.L563:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_getSensorType')
+	.sect	'.debug_ranges'
+.L162:
+	.word	-1,.L74,0,.L163-.L74,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getSpeed')
+	.sect	'.debug_info'
+.L164:
+	.word	252
+	.half	3
+	.word	.L165
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L167,.L166
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_getSpeed',0,1,196,2,9
+	.word	.L229
+	.byte	1,1,1
+	.word	.L56,.L300,.L55
+	.byte	4
+	.byte	'aObsv',0,1,196,2,51
+	.word	.L225,.L301
+	.byte	5
+	.word	.L56,.L300
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_getSpeed')
+	.sect	'.debug_abbrev'
+.L165:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_getSpeed')
+	.sect	'.debug_line'
+.L166:
+	.word	.L567-.L566
+.L566:
+	.half	3
+	.word	.L569-.L568
+.L568:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L569:
+	.byte	5,27,7,0,5,2
+	.word	.L56
+	.byte	3,200,2,1,5,1,9
+	.half	.L570-.L56
+	.byte	3,2,1,7,9
+	.half	.L168-.L570
+	.byte	0,1,1
+.L567:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_getSpeed')
+	.sect	'.debug_ranges'
+.L167:
+	.word	-1,.L56,0,.L168-.L56,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_reset')
+	.sect	'.debug_info'
+.L169:
+	.word	283
+	.half	3
+	.word	.L170
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L172,.L171
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_reset',0,1,152,3,6,1,1,1
+	.word	.L82,.L302,.L81
+	.byte	4
+	.byte	'driver',0,1,152,3,45
+	.word	.L225,.L303
+	.byte	5
+	.word	.L82,.L302
+	.byte	6
+	.word	.L304,.L305,.L306
+	.byte	7
+	.word	.L307,.L308
+	.byte	8
+	.word	.L309,.L305,.L306
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_reset')
+	.sect	'.debug_abbrev'
+.L170:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,29,1,49
+	.byte	16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,0,49,16,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_reset')
+	.sect	'.debug_line'
+.L171:
+	.word	.L572-.L571
+.L571:
+	.half	3
+	.word	.L574-.L573
+.L573:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math',0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0
+	.byte	'Ifx_LowPassPt1F32.h',0,1,0,0,0
+.L574:
+	.byte	5,32,7,0,5,2
+	.word	.L82
+	.byte	3,153,3,1,5,30,1,5,32,9
+	.half	.L575-.L82
+	.byte	3,1,1,5,30,1,9
+	.half	.L576-.L575
+	.byte	3,1,1,9
+	.half	.L577-.L576
+	.byte	3,1,1,9
+	.half	.L578-.L577
+	.byte	3,1,1,9
+	.half	.L579-.L578
+	.byte	3,1,1,9
+	.half	.L580-.L579
+	.byte	3,1,1,9
+	.half	.L581-.L580
+	.byte	3,1,1,9
+	.half	.L582-.L581
+	.byte	3,1,1,4,2,5,17,9
+	.half	.L305-.L582
+	.byte	3,186,125,1,4,1,5,32,9
+	.half	.L306-.L305
+	.byte	3,203,2,1,5,1,9
+	.half	.L583-.L306
+	.byte	3,1,1,7,9
+	.half	.L173-.L583
+	.byte	0,1,1
+.L572:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_reset')
+	.sect	'.debug_ranges'
+.L172:
+	.word	-1,.L82,0,.L173-.L82,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_resetFaults')
+	.sect	'.debug_info'
+.L174:
+	.word	252
+	.half	3
+	.word	.L175
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L177,.L176
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_resetFaults',0,1,140,3,6,1,1,1
+	.word	.L78,.L310,.L77
+	.byte	4
+	.byte	'driver',0,1,140,3,51
+	.word	.L225,.L311
+	.byte	5
+	.word	.L78,.L310
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_resetFaults')
+	.sect	'.debug_abbrev'
+.L175:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_resetFaults')
+	.sect	'.debug_line'
+.L176:
+	.word	.L585-.L584
+.L584:
+	.half	3
+	.word	.L587-.L586
+.L586:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L587:
+	.byte	5,34,7,0,5,2
+	.word	.L78
+	.byte	3,141,3,1,5,32,1,5,1,9
+	.half	.L588-.L78
+	.byte	3,1,1,7,9
+	.half	.L178-.L588
+	.byte	0,1,1
+.L585:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_resetFaults')
+	.sect	'.debug_ranges'
+.L177:
+	.word	-1,.L78,0,.L178-.L78,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_setOffset')
+	.sect	'.debug_info'
+.L179:
+	.word	269
+	.half	3
+	.word	.L180
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L182,.L181
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_setOffset',0,1,143,2,6,1,1,1
+	.word	.L48,.L312,.L47
+	.byte	4
+	.byte	'aObsv',0,1,143,2,49
+	.word	.L225,.L313
+	.byte	4
+	.byte	'offset',0,1,143,2,78
+	.word	.L272,.L314
+	.byte	5
+	.word	.L48,.L312
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_setOffset')
+	.sect	'.debug_abbrev'
+.L180:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_setOffset')
+	.sect	'.debug_line'
+.L181:
+	.word	.L590-.L589
+.L589:
+	.half	3
+	.word	.L592-.L591
+.L591:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L592:
+	.byte	5,18,7,0,5,2
+	.word	.L48
+	.byte	3,145,2,1,5,1,9
+	.half	.L593-.L48
+	.byte	3,1,1,7,9
+	.half	.L183-.L593
+	.byte	0,1,1
+.L590:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_setOffset')
+	.sect	'.debug_ranges'
+.L182:
+	.word	-1,.L48,0,.L183-.L48,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_setRefreshPeriod')
+	.sect	'.debug_info'
+.L184:
+	.word	283
+	.half	3
+	.word	.L185
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L187,.L186
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_setRefreshPeriod',0,1,146,3,6,1,1,1
+	.word	.L80,.L315,.L79
+	.byte	4
+	.byte	'driver',0,1,146,3,56
+	.word	.L225,.L316
+	.byte	4
+	.byte	'updatePeriod',0,1,146,3,72
+	.word	.L229,.L317
+	.byte	5
+	.word	.L80,.L315
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_setRefreshPeriod')
+	.sect	'.debug_abbrev'
+.L185:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_setRefreshPeriod')
+	.sect	'.debug_line'
+.L186:
+	.word	.L595-.L594
+.L594:
+	.half	3
+	.word	.L597-.L596
+.L596:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L597:
+	.byte	5,21,7,0,5,2
+	.word	.L80
+	.byte	3,147,3,1,5,1,9
+	.half	.L598-.L80
+	.byte	3,1,1,7,9
+	.half	.L188-.L598
+	.byte	0,1,1
+.L595:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_setRefreshPeriod')
+	.sect	'.debug_ranges'
+.L187:
+	.word	-1,.L80,0,.L188-.L80,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_update')
+	.sect	'.debug_info'
+.L189:
+	.word	269
+	.half	3
+	.word	.L190
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L192,.L191
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_update',0,1,169,2,6,1,1,1
+	.word	.L52,.L318,.L51
+	.byte	4
+	.byte	'aObsv',0,1,169,2,46
+	.word	.L225,.L319
+	.byte	5
+	.word	.L52,.L318
+	.byte	6
+	.byte	'angleEst',0,1,172,2,29
+	.word	.L229,.L320
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_update')
+	.sect	'.debug_abbrev'
+.L190:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_update')
+	.sect	'.debug_line'
+.L191:
+	.word	.L600-.L599
+.L599:
+	.half	3
+	.word	.L602-.L601
+.L601:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L602:
+	.byte	5,6,7,0,5,2
+	.word	.L52
+	.byte	3,168,2,1,5,77,9
+	.half	.L369-.L52
+	.byte	3,3,1,5,101,9
+	.half	.L603-.L369
+	.byte	1,5,71,9
+	.half	.L604-.L603
+	.byte	1,5,92,9
+	.half	.L605-.L604
+	.byte	1,5,86,9
+	.half	.L606-.L605
+	.byte	1,5,101,9
+	.half	.L607-.L606
+	.byte	1,5,51,9
+	.half	.L368-.L607
+	.byte	3,3,1,5,104,9
+	.half	.L608-.L368
+	.byte	3,127,1,5,102,9
+	.half	.L609-.L608
+	.byte	1,5,76,9
+	.half	.L610-.L609
+	.byte	1,5,109,1,5,107,9
+	.half	.L611-.L610
+	.byte	1,5,43,9
+	.half	.L612-.L611
+	.byte	1,5,63,9
+	.half	.L613-.L612
+	.byte	3,1,1,5,37,9
+	.half	.L614-.L613
+	.byte	1,5,23,3,1,1,5,47,9
+	.half	.L615-.L614
+	.byte	3,2,1,5,41,9
+	.half	.L616-.L615
+	.byte	1,5,62,9
+	.half	.L617-.L616
+	.byte	1,5,56,9
+	.half	.L618-.L617
+	.byte	1,5,1,9
+	.half	.L193-.L618
+	.byte	3,1,0,1,1
+.L600:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_update')
+	.sect	'.debug_ranges'
+.L192:
+	.word	-1,.L52,0,.L193-.L52,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_stdIfPosInit')
+	.sect	'.debug_info'
+.L194:
+	.word	276
+	.half	3
+	.word	.L195
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L197,.L196
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_stdIfPosInit',0,1,171,3,9
+	.word	.L321
+	.byte	1,1,1
+	.word	.L84,.L322,.L83
+	.byte	4
+	.byte	'stdif',0,1,171,3,52
+	.word	.L323,.L324
+	.byte	4
+	.byte	'driver',0,1,171,3,76
+	.word	.L225,.L325
+	.byte	5
+	.word	.L84,.L322
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_stdIfPosInit')
+	.sect	'.debug_abbrev'
+.L195:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_stdIfPosInit')
+	.sect	'.debug_line'
+.L196:
+	.word	.L620-.L619
+.L619:
+	.half	3
+	.word	.L622-.L621
+.L621:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L622:
+	.byte	5,19,7,0,5,2
+	.word	.L84
+	.byte	3,173,3,1,5,9,3,125,1,5,22,9
+	.half	.L372-.L84
+	.byte	3,3,1,5,9,3,125,1,5,22,9
+	.half	.L373-.L372
+	.byte	3,3,1,5,19,9
+	.half	.L371-.L373
+	.byte	3,3,1,5,29,9
+	.half	.L623-.L371
+	.byte	3,4,1,5,28,9
+	.half	.L624-.L623
+	.byte	1,5,29,9
+	.half	.L625-.L624
+	.byte	3,1,1,5,28,9
+	.half	.L626-.L625
+	.byte	1,5,26,9
+	.half	.L627-.L626
+	.byte	3,1,1,5,25,9
+	.half	.L628-.L627
+	.byte	1,5,29,9
+	.half	.L629-.L628
+	.byte	3,1,1,5,28,9
+	.half	.L630-.L629
+	.byte	1,5,23,9
+	.half	.L631-.L630
+	.byte	3,1,1,5,22,9
+	.half	.L632-.L631
+	.byte	1,5,32,9
+	.half	.L633-.L632
+	.byte	3,1,1,5,31,9
+	.half	.L634-.L633
+	.byte	1,5,25,9
+	.half	.L635-.L634
+	.byte	3,1,1,5,24,9
+	.half	.L636-.L635
+	.byte	1,5,27,9
+	.half	.L637-.L636
+	.byte	3,1,1,5,26,9
+	.half	.L638-.L637
+	.byte	1,5,29,9
+	.half	.L639-.L638
+	.byte	3,1,1,5,28,9
+	.half	.L640-.L639
+	.byte	1,5,29,9
+	.half	.L641-.L640
+	.byte	3,1,1,5,28,9
+	.half	.L642-.L641
+	.byte	1,5,32,9
+	.half	.L643-.L642
+	.byte	3,1,1,5,31,9
+	.half	.L644-.L643
+	.byte	1,5,20,9
+	.half	.L645-.L644
+	.byte	3,1,1,5,19,9
+	.half	.L646-.L645
+	.byte	1,5,25,9
+	.half	.L647-.L646
+	.byte	3,1,1,5,24,9
+	.half	.L648-.L647
+	.byte	1,5,29,9
+	.half	.L649-.L648
+	.byte	3,1,1,5,28,9
+	.half	.L650-.L649
+	.byte	1,5,21,9
+	.half	.L651-.L650
+	.byte	3,1,1,5,20,9
+	.half	.L652-.L651
+	.byte	1,5,24,9
+	.half	.L653-.L652
+	.byte	3,1,1,5,26,9
+	.half	.L654-.L653
+	.byte	3,1,1,5,25,9
+	.half	.L655-.L654
+	.byte	3,1,1,5,23,9
+	.half	.L656-.L655
+	.byte	3,1,1,5,22,9
+	.half	.L657-.L656
+	.byte	1,5,29,9
+	.half	.L658-.L657
+	.byte	3,1,1,5,28,9
+	.half	.L659-.L658
+	.byte	1,5,29,9
+	.half	.L660-.L659
+	.byte	3,1,1,5,28,9
+	.half	.L661-.L660
+	.byte	1,5,12,9
+	.half	.L662-.L661
+	.byte	3,3,1,5,1,3,1,1,7,9
+	.half	.L198-.L662
+	.byte	0,1,1
+.L620:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_stdIfPosInit')
+	.sect	'.debug_ranges'
+.L197:
+	.word	-1,.L84,0,.L198-.L84,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_setUserSampling')
+	.sect	'.debug_info'
+.L199:
+	.word	271
+	.half	3
+	.word	.L200
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L202,.L201
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_setUserSampling',0,1,150,1,6,1,1,1
+	.word	.L40,.L326,.L39
+	.byte	4
+	.byte	'aObsv',0,1,150,1,55
+	.word	.L225,.L327
+	.byte	4
+	.byte	'Ts',0,1,150,1,70
+	.word	.L229,.L328
+	.byte	5
+	.word	.L40,.L326
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_setUserSampling')
+	.sect	'.debug_abbrev'
+.L200:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_setUserSampling')
+	.sect	'.debug_line'
+.L201:
+	.word	.L664-.L663
+.L663:
+	.half	3
+	.word	.L666-.L665
+.L665:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L666:
+	.byte	5,39,7,0,5,2
+	.word	.L40
+	.byte	3,152,1,1,5,20,3,127,1,5,33,9
+	.half	.L667-.L40
+	.byte	3,1,1,5,20,1,5,1,9
+	.half	.L668-.L667
+	.byte	3,1,1,7,9
+	.half	.L203-.L668
+	.byte	0,1,1
+.L664:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_setUserSampling')
+	.sect	'.debug_ranges'
+.L202:
+	.word	-1,.L40,0,.L203-.L40,0,0
+	.sdecl	'.debug_info',debug,cluster('round_f')
+	.sect	'.debug_info'
+.L204:
+	.word	250
+	.half	3
+	.word	.L205
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L207,.L206
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'round_f',0,1,96,9
+	.word	.L229
+	.byte	1,1,1
+	.word	.L32,.L329,.L31
+	.byte	4
+	.byte	'val',0,1,96,25
+	.word	.L229,.L330
+	.byte	5
+	.word	.L32,.L329
+	.byte	6
+	.byte	'val_i',0,1,99,12
+	.word	.L272,.L331
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('round_f')
+	.sect	'.debug_abbrev'
+.L205:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('round_f')
+	.sect	'.debug_line'
+.L206:
+	.word	.L670-.L669
+.L669:
+	.half	3
+	.word	.L672-.L671
+.L671:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L672:
+	.byte	5,20,7,0,5,2
+	.word	.L32
+	.byte	3,226,0,1,5,16,9
+	.half	.L339-.L32
+	.byte	3,3,1,5,14,9
+	.half	.L341-.L339
+	.byte	1,5,34,9
+	.half	.L338-.L341
+	.byte	1,5,5,9
+	.half	.L673-.L338
+	.byte	1,5,31,9
+	.half	.L674-.L673
+	.byte	3,2,1,5,15,9
+	.half	.L340-.L674
+	.byte	1,5,1,9
+	.half	.L3-.L340
+	.byte	3,8,1,7,9
+	.half	.L208-.L3
+	.byte	0,1,1
+.L670:
+	.sdecl	'.debug_ranges',debug,cluster('round_f')
+	.sect	'.debug_ranges'
+.L207:
+	.word	-1,.L32,0,.L208-.L32,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_setControlGains')
+	.sect	'.debug_info'
+.L209:
+	.word	299
+	.half	3
+	.word	.L210
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L212,.L211
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'Ifx_AngleTrkF32_setControlGains',0,1,121,6,1,1,1
+	.word	.L34,.L332,.L33
+	.byte	4
+	.byte	'cfgData',0,1,121,63
+	.word	.L333,.L334
+	.byte	4
+	.byte	'K',0,1,121,80
+	.word	.L229,.L335
+	.byte	4
+	.byte	'T',0,1,121,91
+	.word	.L229,.L336
+	.byte	4
+	.byte	'psi',0,1,121,102
+	.word	.L229,.L337
+	.byte	5
+	.word	.L34,.L332
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_AngleTrkF32_setControlGains')
+	.sect	'.debug_abbrev'
+.L210:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_AngleTrkF32_setControlGains')
+	.sect	'.debug_line'
+.L211:
+	.word	.L676-.L675
+.L675:
+	.half	3
+	.word	.L678-.L677
+.L677:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L678:
+	.byte	5,35,7,0,5,2
+	.word	.L34
+	.byte	3,250,0,1,5,21,9
+	.half	.L679-.L34
+	.byte	1,5,28,9
+	.half	.L680-.L679
+	.byte	1,5,44,9
+	.half	.L681-.L680
+	.byte	1,5,52,9
+	.half	.L682-.L681
+	.byte	1,5,42,9
+	.half	.L683-.L682
+	.byte	1,5,36,9
+	.half	.L684-.L683
+	.byte	3,1,1,5,47,9
+	.half	.L685-.L684
+	.byte	3,127,1,5,17,1,5,50,9
+	.half	.L686-.L685
+	.byte	3,1,1,5,21,9
+	.half	.L687-.L686
+	.byte	1,5,41,9
+	.half	.L688-.L687
+	.byte	1,5,17,1,5,22,9
+	.half	.L689-.L688
+	.byte	3,1,1,5,27,9
+	.half	.L690-.L689
+	.byte	1,5,17,1,5,1,9
+	.half	.L691-.L690
+	.byte	3,1,1,7,9
+	.half	.L213-.L691
+	.byte	0,1,1
+.L676:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_AngleTrkF32_setControlGains')
+	.sect	'.debug_ranges'
+.L212:
+	.word	-1,.L34,0,.L213-.L34,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_8')
+	.sect	'.debug_info'
+.L214:
+	.word	203
+	.half	3
+	.word	.L215
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L217,.L216
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'.cocofun_8',0,1,220,1,9,1
+	.word	.L46,.L218,.L45
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_8')
+	.sect	'.debug_abbrev'
+.L215:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_8')
+	.sect	'.debug_line'
+.L216:
+	.word	.L693-.L692
+.L692:
+	.half	3
+	.word	.L695-.L694
+.L694:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L695:
+	.byte	5,15,7,0,5,2
+	.word	.L46
+	.byte	3,202,0,1,5,5,9
+	.half	.L696-.L46
+	.byte	1,5,25,7,9
+	.half	.L697-.L696
+	.byte	3,2,1,5,23,9
+	.half	.L698-.L697
+	.byte	1,5,35,1,5,23,9
+	.half	.L11-.L698
+	.byte	3,2,1,5,20,9
+	.half	.L699-.L11
+	.byte	1,5,10,9
+	.half	.L700-.L699
+	.byte	1,5,25,7,9
+	.half	.L701-.L700
+	.byte	3,2,1,5,23,9
+	.half	.L702-.L701
+	.byte	1,5,5,9
+	.half	.L12-.L702
+	.byte	3,126,1,7,9
+	.half	.L218-.L12
+	.byte	0,1,1,5,15,0,5,2
+	.word	.L46
+	.byte	3,202,0,1,5,5,9
+	.half	.L696-.L46
+	.byte	1,5,25,7,9
+	.half	.L697-.L696
+	.byte	3,2,1,5,23,9
+	.half	.L698-.L697
+	.byte	1,5,35,1,5,23,9
+	.half	.L11-.L698
+	.byte	3,2,1,5,20,9
+	.half	.L699-.L11
+	.byte	1,5,10,9
+	.half	.L700-.L699
+	.byte	1,5,25,7,9
+	.half	.L701-.L700
+	.byte	3,2,1,5,23,9
+	.half	.L702-.L701
+	.byte	1,5,5,9
+	.half	.L12-.L702
+	.byte	3,126,1,7,9
+	.half	.L218-.L12
+	.byte	0,1,1
+.L693:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_8')
+	.sect	'.debug_ranges'
+.L217:
+	.word	-1,.L46,0,.L218-.L46,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_9')
+	.sect	'.debug_info'
+.L219:
+	.word	203
+	.half	3
+	.word	.L220
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L222,.L221
+	.byte	2
+	.word	.L85
+	.byte	3
+	.byte	'.cocofun_9',0,1,130,1,6,1
+	.word	.L38,.L223,.L37
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_9')
+	.sect	'.debug_abbrev'
+.L220:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_9')
+	.sect	'.debug_line'
+.L221:
+	.word	.L704-.L703
+.L703:
+	.half	3
+	.word	.L706-.L705
+.L705:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_AngleTrkF32.c',0,0,0,0,0
+.L706:
+	.byte	5,47,7,0,5,2
+	.word	.L38
+	.byte	3,132,1,1,5,54,9
+	.half	.L350-.L38
+	.byte	1,5,61,9
+	.half	.L707-.L350
+	.byte	1,9
+	.half	.L223-.L707
+	.byte	0,1,1,5,58,0,5,2
+	.word	.L38
+	.byte	3,186,1,1,5,65,9
+	.half	.L350-.L38
+	.byte	1,5,72,9
+	.half	.L707-.L350
+	.byte	1,5,61,9
+	.half	.L708-.L707
+	.byte	3,74,1,7,9
+	.half	.L223-.L708
+	.byte	0,1,1
+.L704:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_9')
+	.sect	'.debug_ranges'
+.L222:
+	.word	-1,.L38,0,.L223-.L38,0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_8')
+	.sect	'.debug_loc'
+.L45:
+	.word	-1,.L46,0,.L218-.L46
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_9')
+	.sect	'.debug_loc'
+.L37:
+	.word	-1,.L38,0,.L223-.L38
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_getAbsolutePosition')
+	.sect	'.debug_loc'
+.L57:
+	.word	-1,.L58,0,.L274-.L58
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L275:
+	.word	-1,.L58,0,.L274-.L58
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_getDirection')
+	.sect	'.debug_loc'
+.L59:
+	.word	-1,.L60,0,.L277-.L60
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L278:
+	.word	-1,.L60,0,.L277-.L60
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_getFault')
+	.sect	'.debug_loc'
+.L61:
+	.word	-1,.L62,0,.L280-.L62
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L281:
+	.word	-1,.L62,0,.L280-.L62
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_getOffset')
+	.sect	'.debug_loc'
+.L63:
+	.word	-1,.L64,0,.L282-.L64
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L283:
+	.word	-1,.L64,0,.L282-.L64
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_getPeriodPerRotation')
+	.sect	'.debug_loc'
+.L65:
+	.word	-1,.L66,0,.L285-.L66
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L286:
+	.word	-1,.L66,0,.L285-.L66
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_getPosition')
+	.sect	'.debug_loc'
+.L67:
+	.word	-1,.L68,0,.L287-.L68
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L288:
+	.word	-1,.L68,0,.L287-.L68
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_getRawPosition')
+	.sect	'.debug_loc'
+.L53:
+	.word	-1,.L54,0,.L289-.L54
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L290:
+	.word	-1,.L54,0,.L289-.L54
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_getRefreshPeriod')
+	.sect	'.debug_loc'
+.L69:
+	.word	-1,.L70,0,.L291-.L70
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L292:
+	.word	-1,.L70,0,.L291-.L70
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_getResolution')
+	.sect	'.debug_loc'
+.L71:
+	.word	-1,.L72,0,.L293-.L72
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L294:
+	.word	-1,.L72,0,.L293-.L72
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_getSensorType')
+	.sect	'.debug_loc'
+.L73:
+	.word	-1,.L74,0,.L298-.L74
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L299:
+	.word	-1,.L74,0,.L298-.L74
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_getSpeed')
+	.sect	'.debug_loc'
+.L55:
+	.word	-1,.L56,0,.L300-.L56
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L301:
+	.word	-1,.L56,0,.L300-.L56
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_getTurn')
+	.sect	'.debug_loc'
+.L75:
+	.word	-1,.L76,0,.L295-.L76
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L296:
+	.word	-1,.L76,0,.L295-.L76
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_init')
+	.sect	'.debug_loc'
+.L41:
+	.word	-1,.L42,0,.L348-.L42
+	.half	2
+	.byte	138,0
+	.word	.L348-.L42,.L224-.L42
+	.half	2
+	.byte	138,16
+	.word	.L224-.L42,.L224-.L42
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L230:
+	.word	-1,.L42,0,.L349-.L42
+	.half	1
+	.byte	84
+	.word	.L38-.L42,.L223-.L42
+	.half	1
+	.byte	88
+	.word	.L38-.L42,.L350-.L42
+	.half	1
+	.byte	84
+	.word	.L348-.L42,.L224-.L42
+	.half	1
+	.byte	88
+	.word	0,0
+.L226:
+	.word	-1,.L42,0,.L349-.L42
+	.half	1
+	.byte	100
+	.word	.L38-.L42,.L223-.L42
+	.half	1
+	.byte	108
+	.word	.L351-.L42,.L224-.L42
+	.half	1
+	.byte	108
+	.word	.L353-.L42,.L354-.L42
+	.half	1
+	.byte	100
+	.word	0,0
+.L228:
+	.word	-1,.L42,.L38-.L42,.L223-.L42
+	.half	1
+	.byte	111
+	.word	.L38-.L42,.L223-.L42
+	.half	1
+	.byte	101
+	.word	.L352-.L42,.L224-.L42
+	.half	1
+	.byte	111
+	.word	0,.L5-.L42
+	.half	1
+	.byte	101
+	.word	0,0
+.L233:
+	.word	-1,.L42,.L38-.L42,.L223-.L42
+	.half	2
+	.byte	145,112
+	.word	0,.L224-.L42
+	.half	2
+	.byte	145,112
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_initConfig')
+	.sect	'.debug_loc'
+.L35:
+	.word	-1,.L36,0,.L342-.L36
+	.half	2
+	.byte	138,0
+	.word	.L342-.L36,.L234-.L36
+	.half	2
+	.byte	138,24
+	.word	.L234-.L36,.L234-.L36
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L242:
+	.word	-1,.L36,.L38-.L36,.L223-.L36
+	.half	2
+	.byte	145,104
+	.word	0,.L234-.L36
+	.half	2
+	.byte	145,104
+	.word	0,0
+.L236:
+	.word	-1,.L36,0,.L343-.L36
+	.half	1
+	.byte	100
+	.word	.L38-.L36,.L223-.L36
+	.half	1
+	.byte	111
+	.word	.L344-.L36,.L234-.L36
+	.half	1
+	.byte	111
+	.word	0,0
+.L239:
+	.word	-1,.L36,.L38-.L36,.L223-.L36
+	.half	1
+	.byte	109
+	.word	.L38-.L36,.L223-.L36
+	.half	1
+	.byte	102
+	.word	.L345-.L36,.L234-.L36
+	.half	1
+	.byte	109
+	.word	0,.L346-.L36
+	.half	1
+	.byte	102
+	.word	0,0
+.L238:
+	.word	-1,.L36,.L38-.L36,.L223-.L36
+	.half	1
+	.byte	108
+	.word	.L38-.L36,.L223-.L36
+	.half	1
+	.byte	101
+	.word	.L347-.L36,.L234-.L36
+	.half	1
+	.byte	108
+	.word	0,.L346-.L36
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_reset')
+	.sect	'.debug_loc'
+.L81:
+	.word	-1,.L82,0,.L302-.L82
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L303:
+	.word	-1,.L82,0,.L302-.L82
+	.half	1
+	.byte	100
+	.word	0,0
+.L308:
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_resetFaults')
+	.sect	'.debug_loc'
+.L77:
+	.word	-1,.L78,0,.L310-.L78
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L311:
+	.word	-1,.L78,0,.L310-.L78
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_setControlGains')
+	.sect	'.debug_loc'
+.L33:
+	.word	-1,.L34,0,.L332-.L34
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L335:
+	.word	-1,.L34,0,.L332-.L34
+	.half	1
+	.byte	84
+	.word	0,0
+.L336:
+	.word	-1,.L34,0,.L332-.L34
+	.half	1
+	.byte	85
+	.word	0,0
+.L334:
+	.word	-1,.L34,0,.L332-.L34
+	.half	1
+	.byte	100
+	.word	0,0
+.L337:
+	.word	-1,.L34,0,.L332-.L34
+	.half	1
+	.byte	86
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_setOffset')
+	.sect	'.debug_loc'
+.L47:
+	.word	-1,.L48,0,.L312-.L48
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L313:
+	.word	-1,.L48,0,.L312-.L48
+	.half	1
+	.byte	100
+	.word	0,0
+.L314:
+	.word	-1,.L48,0,.L312-.L48
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_setRefreshPeriod')
+	.sect	'.debug_loc'
+.L79:
+	.word	-1,.L80,0,.L315-.L80
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L316:
+	.word	-1,.L80,0,.L315-.L80
+	.half	1
+	.byte	100
+	.word	0,0
+.L317:
+	.word	-1,.L80,0,.L315-.L80
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_setUserSampling')
+	.sect	'.debug_loc'
+.L39:
+	.word	-1,.L40,0,.L326-.L40
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L328:
+	.word	-1,.L40,0,.L326-.L40
+	.half	1
+	.byte	84
+	.word	0,0
+.L327:
+	.word	-1,.L40,0,.L326-.L40
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_stdIfPosInit')
+	.sect	'.debug_loc'
+.L83:
+	.word	-1,.L84,0,.L322-.L84
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L325:
+	.word	-1,.L84,0,.L371-.L84
+	.half	1
+	.byte	101
+	.word	.L373-.L84,.L322-.L84
+	.half	1
+	.byte	108
+	.word	0,0
+.L324:
+	.word	-1,.L84,0,.L371-.L84
+	.half	1
+	.byte	100
+	.word	.L372-.L84,.L322-.L84
+	.half	1
+	.byte	111
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_step')
+	.sect	'.debug_loc'
+.L43:
+	.word	-1,.L44,0,.L243-.L44
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L244:
+	.word	-1,.L44,0,.L355-.L44
+	.half	1
+	.byte	100
+	.word	.L358-.L44,.L253-.L44
+	.half	1
+	.byte	111
+	.word	.L46-.L44,.L218-.L44
+	.half	1
+	.byte	111
+	.word	.L254-.L44,.L243-.L44
+	.half	1
+	.byte	111
+	.word	0,0
+.L260:
+	.word	0,0
+.L250:
+	.word	-1,.L44,.L46-.L44,.L218-.L44
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L254-.L44,.L364-.L44
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L249:
+	.word	-1,.L44,.L355-.L44,.L360-.L44
+	.half	1
+	.byte	82
+	.word	.L360-.L44,.L361-.L44
+	.half	1
+	.byte	95
+	.word	0,0
+.L247:
+	.word	-1,.L44,0,.L356-.L44
+	.half	1
+	.byte	85
+	.word	0,0
+.L251:
+	.word	-1,.L44,.L362-.L44,.L253-.L44
+	.half	1
+	.byte	95
+	.word	.L46-.L44,.L363-.L44
+	.half	1
+	.byte	95
+	.word	0,0
+.L256:
+	.word	0,0
+.L262:
+	.word	0,0
+.L248:
+	.word	-1,.L44,0,.L355-.L44
+	.half	1
+	.byte	86
+	.word	.L359-.L44,.L253-.L44
+	.half	1
+	.byte	88
+	.word	.L46-.L44,.L218-.L44
+	.half	1
+	.byte	88
+	.word	.L254-.L44,.L243-.L44
+	.half	1
+	.byte	88
+	.word	0,0
+.L246:
+	.word	-1,.L44,0,.L357-.L44
+	.half	1
+	.byte	84
+	.word	.L9-.L44,.L10-.L44
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_update')
+	.sect	'.debug_loc'
+.L51:
+	.word	-1,.L52,0,.L318-.L52
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L319:
+	.word	-1,.L52,0,.L368-.L52
+	.half	1
+	.byte	100
+	.word	.L369-.L52,.L318-.L52
+	.half	1
+	.byte	111
+	.word	.L370-.L52,.L318-.L52
+	.half	1
+	.byte	100
+	.word	0,0
+.L320:
+	.word	-1,.L52,.L368-.L52,.L318-.L52
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_AngleTrkF32_updateStatus')
+	.sect	'.debug_loc'
+.L49:
+	.word	-1,.L50,0,.L266-.L50
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L267:
+	.word	-1,.L50,0,.L266-.L50
+	.half	1
+	.byte	100
+	.word	0,0
+.L271:
+	.word	0,0
+.L269:
+	.word	-1,.L50,0,.L266-.L50
+	.half	1
+	.byte	85
+	.word	0,0
+.L268:
+	.word	-1,.L50,0,.L365-.L50
+	.half	1
+	.byte	84
+	.word	0,0
+.L273:
+	.word	-1,.L50,.L366-.L50,.L367-.L50
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('round_f')
+	.sect	'.debug_loc'
+.L31:
+	.word	-1,.L32,0,.L329-.L32
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L330:
+	.word	-1,.L32,0,.L338-.L32
+	.half	1
+	.byte	84
+	.word	.L341-.L32,.L329-.L32
+	.half	1
+	.byte	82
+	.word	0,0
+.L331:
+	.word	-1,.L32,.L339-.L32,.L340-.L32
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L709:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('round_f')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L32,.L329-.L32
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_setControlGains')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L34,.L332-.L34
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_initConfig')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L709,.L36,.L234-.L36
+	.byte	4
+	.word	(.L342-.L36)/2
+	.byte	19,24,22,26,3,19,138,24,4
+	.word	(.L234-.L342)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_setUserSampling')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L40,.L326-.L40
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_init')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L709,.L42,.L224-.L42
+	.byte	4
+	.word	(.L348-.L42)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L224-.L348)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_step')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L709,.L44,.L243-.L44
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_setOffset')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L48,.L312-.L48
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_updateStatus')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L50,.L266-.L50
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_update')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L709,.L52,.L318-.L52
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_getRawPosition')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L54,.L289-.L54
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_getSpeed')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L56,.L300-.L56
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_getAbsolutePosition')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L58,.L274-.L58
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_getDirection')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L60,.L277-.L60
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_getFault')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L62,.L280-.L62
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_getOffset')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L64,.L282-.L64
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_getPeriodPerRotation')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L66,.L285-.L66
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_getPosition')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L68,.L287-.L68
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_getRefreshPeriod')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L70,.L291-.L70
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_getResolution')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L72,.L293-.L72
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_getSensorType')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L74,.L298-.L74
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_getTurn')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L76,.L295-.L76
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_resetFaults')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L78,.L310-.L78
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_setRefreshPeriod')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L80,.L315-.L80
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_reset')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L709,.L82,.L302-.L82
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_AngleTrkF32_stdIfPosInit')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L709,.L84,.L322-.L84
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L710:
+	.word	52
+	.word	-1
+	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
+	.byte	8,37,8,38,8,39,0
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_9')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L710,.L38,.L223-.L38
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_8')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L710,.L46,.L218-.L46
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+
+	; Module end

@@ -1,0 +1,968 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\.bridgeif.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Rtl8211f -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\bridgeif.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\bridgeif.src ..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\bridgeif.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\bridgeif.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	2164
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\bridgeif.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	171
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	178
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	220
+	.byte	7
+	.word	220
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	236
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	241
+	.byte	9
+	.byte	'value',0
+	.word	220
+	.byte	9
+	.byte	'compare',0
+	.word	220
+	.byte	0,2
+	.byte	'short int',0,2,5,10
+	.byte	'__wchar_t',0,1,1,1
+	.word	298
+	.byte	10
+	.byte	'__size_t',0,1,1,1
+	.word	220
+	.byte	10
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	171
+	.byte	11,1,7
+	.word	366
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	368
+	.byte	10
+	.byte	'__intptr_t',0,1,1,1
+	.word	171
+	.byte	10
+	.byte	'__uintptr_t',0,1,1,1
+	.word	220
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,108,29
+	.word	430
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,112,29
+	.word	461
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,116,29
+	.word	498
+	.byte	2
+	.byte	'char',0,1,6,10
+	.byte	'sint8',0,2,125,29
+	.word	534
+	.byte	10
+	.byte	'sint16',0,2,129,1,29
+	.word	298
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'sint32',0,2,134,1,29
+	.word	572
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'sint64',0,2,141,1,29
+	.word	600
+	.byte	2
+	.byte	'float',0,4,4,10
+	.byte	'float32',0,2,170,1,29
+	.word	633
+	.byte	12
+	.byte	'void',0,7
+	.word	659
+	.byte	10
+	.byte	'pvoid',0,3,54,28
+	.word	665
+	.byte	10
+	.byte	'Ifx_TickTime',0,3,76,28
+	.word	600
+	.byte	10
+	.byte	'u8_t',0,4,85,16
+	.word	430
+	.byte	10
+	.byte	'u16_t',0,4,86,16
+	.word	461
+	.byte	10
+	.byte	'u32_t',0,4,87,16
+	.word	498
+	.byte	10
+	.byte	's8_t',0,4,88,16
+	.word	534
+	.byte	10
+	.byte	'intmax_t',0,5,198,2,41
+	.word	600
+	.byte	10
+	.byte	'err_t',0,6,96,14
+	.word	534
+	.byte	13
+	.byte	'ip4_addr',0,7,51,8,4,14
+	.byte	'addr',0
+	.word	498
+	.byte	4,2,35,0,0,10
+	.byte	'ip4_addr_t',0,7,57,25
+	.word	791
+	.byte	10
+	.byte	'ip_addr_t',0,8,142,2,20
+	.word	791
+	.byte	13
+	.byte	'pbuf',0,9,186,1,8,16,14
+	.byte	'next',0
+	.word	.L6-.L3
+	.byte	4,2,35,0,14
+	.byte	'payload',0
+	.word	665
+	.byte	4,2,35,4,14
+	.byte	'tot_len',0
+	.word	461
+	.byte	2,2,35,8,14
+	.byte	'len',0
+	.word	461
+	.byte	2,2,35,10,14
+	.byte	'type_internal',0
+	.word	430
+	.byte	1,2,35,12,14
+	.byte	'flags',0
+	.word	430
+	.byte	1,2,35,13,14
+	.byte	'ref',0
+	.word	430
+	.byte	1,2,35,14,14
+	.byte	'if_idx',0
+	.word	430
+	.byte	1,2,35,15,0
+.L6:
+	.byte	7
+	.word	858
+	.byte	15,1,1,5
+	.word	998
+	.byte	0,7
+	.word	1003
+	.byte	10
+	.byte	'pbuf_free_custom_fn',0,9,242,1,16
+	.word	1012
+	.byte	10
+	.byte	'mem_size_t',0,10,67,15
+	.word	461
+	.byte	3
+	.word	791
+	.byte	7
+	.word	1065
+	.byte	16
+	.word	534
+	.byte	1,1,5
+	.word	.L7-.L3
+	.byte	5
+	.word	998
+	.byte	5
+	.word	1070
+	.byte	0,7
+	.word	1075
+	.byte	10
+	.byte	'netif_output_fn',0,11,189,1,17
+	.word	1098
+	.byte	16
+	.word	534
+	.byte	1,1,5
+	.word	.L7-.L3
+	.byte	5
+	.word	998
+	.byte	0,7
+	.word	1128
+	.byte	10
+	.byte	'netif_linkoutput_fn',0,11,212,1,17
+	.word	1146
+	.byte	17,6
+	.word	430
+	.byte	18,5,0,2
+	.byte	'char',0,1,6,17,2
+	.word	1189
+	.byte	18,1,0,13
+	.byte	'netif',0,11,132,2,8,48,14
+	.byte	'next',0
+	.word	.L7-.L3
+	.byte	4,2,35,0,14
+	.byte	'ip_addr',0
+	.word	791
+	.byte	4,2,35,4,14
+	.byte	'netmask',0
+	.word	791
+	.byte	4,2,35,8,14
+	.byte	'gw',0
+	.word	791
+	.byte	4,2,35,12,14
+	.byte	'input',0
+	.word	.L8-.L3
+	.byte	4,2,35,16,14
+	.byte	'output',0
+	.word	1103
+	.byte	4,2,35,20,14
+	.byte	'linkoutput',0
+	.word	1151
+	.byte	4,2,35,24,14
+	.byte	'state',0
+	.word	665
+	.byte	4,2,35,28,14
+	.byte	'mtu',0
+	.word	461
+	.byte	2,2,35,32,14
+	.byte	'hwaddr',0
+	.word	1180
+	.byte	6,2,35,34,14
+	.byte	'hwaddr_len',0
+	.word	430
+	.byte	1,2,35,40,14
+	.byte	'flags',0
+	.word	430
+	.byte	1,2,35,41,14
+	.byte	'name',0
+	.word	1197
+	.byte	2,2,35,42,14
+	.byte	'num',0
+	.word	430
+	.byte	1,2,35,44,14
+	.byte	'rs_count',0
+	.word	430
+	.byte	1,2,35,45,0
+.L7:
+	.byte	7
+	.word	1206
+	.byte	16
+	.word	534
+	.byte	1,1,5
+	.word	998
+	.byte	5
+	.word	1454
+	.byte	0,7
+	.word	1459
+.L8:
+	.byte	10
+	.byte	'netif_input_fn',0,11,178,1,17
+	.word	1477
+	.byte	7
+	.word	1459
+	.byte	7
+	.word	1075
+	.byte	7
+	.word	1128
+	.byte	13
+	.byte	'link_changed_s',0,11,213,4,10,1,14
+	.byte	'state',0
+	.word	430
+	.byte	1,2,35,0,0,13
+	.byte	'status_changed_s',0,11,219,4,10,1,14
+	.byte	'state',0
+	.word	430
+	.byte	1,2,35,0,0,3
+	.word	791
+	.byte	7
+	.word	1597
+	.byte	13
+	.byte	'ipv4_changed_s',0,11,225,4,10,12,14
+	.byte	'old_address',0
+	.word	1602
+	.byte	4,2,35,0,14
+	.byte	'old_netmask',0
+	.word	1602
+	.byte	4,2,35,4,14
+	.byte	'old_gw',0
+	.word	1602
+	.byte	4,2,35,8,0,13
+	.byte	'ipv6_set_s',0,11,233,4,10,8,14
+	.byte	'addr_index',0
+	.word	534
+	.byte	1,2,35,0,14
+	.byte	'old_address',0
+	.word	1602
+	.byte	4,2,35,4,0,13
+	.byte	'ipv6_addr_state_changed_s',0,11,241,4,10,8,14
+	.byte	'addr_index',0
+	.word	534
+	.byte	1,2,35,0,14
+	.byte	'old_state',0
+	.word	430
+	.byte	1,2,35,1,14
+	.byte	'address',0
+	.word	1602
+	.byte	4,2,35,4,0,19,11,210,4,9,12,14
+	.byte	'link_changed',0
+	.word	1521
+	.byte	1,2,35,0,14
+	.byte	'status_changed',0
+	.word	1558
+	.byte	1,2,35,0,14
+	.byte	'ipv4_changed',0
+	.word	1607
+	.byte	12,2,35,0,14
+	.byte	'ipv6_set',0
+	.word	1687
+	.byte	8,2,35,0,14
+	.byte	'ipv6_addr_state_changed',0
+	.word	1746
+	.byte	8,2,35,0,0,3
+	.word	1835
+	.byte	7
+	.word	1961
+	.byte	15,1,1,5
+	.word	1454
+	.byte	5
+	.word	461
+	.byte	5
+	.word	1966
+	.byte	0,7
+	.word	1971
+	.byte	10
+	.byte	'netif_ext_callback_fn',0,11,132,5,16
+	.word	1990
+	.byte	13
+	.byte	'ip4_addr_packed',0,12,53,8,4,14
+	.byte	'addr',0
+	.word	498
+	.byte	4,2,35,0,0,10
+	.byte	'ip4_addr_p_t',0,12,61,32
+	.word	2026
+	.byte	20,1,1,7
+	.word	2083
+	.byte	10
+	.byte	'lwip_cyclic_timer_handler',0,13,66,17
+	.word	2086
+	.byte	15,1,1,5
+	.word	665
+	.byte	0,7
+	.word	2125
+	.byte	10
+	.byte	'sys_timeout_handler',0,13,91,17
+	.word	2134
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,59,0
+	.byte	3,8,0,0,13,19,1,3,8,58,15,59,15,57,15,11,15,0,0,14,13,0,3,8,73,19,11,15,56,9,0,0,15,21,1,54,15,39,12,0
+	.byte	0,16,21,1,73,19,54,15,39,12,0,0,17,1,1,11,15,73,19,0,0,18,33,0,47,15,0,0,19,23,1,58,15,59,15,57,15,11
+	.byte	15,0,0,20,21,0,54,15,39,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L10-.L9
+.L9:
+	.half	3
+	.word	.L12-.L11
+.L11:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot',0
+	.byte	0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\bridgeif.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'cc.h',0,2,0,0
+	.byte	'stdint.h',0,3,0,0
+	.byte	'err.h',0,4,0,0
+	.byte	'ip4_addr.h',0,4,0,0
+	.byte	'ip_addr.h',0,4,0,0
+	.byte	'pbuf.h',0,4,0,0
+	.byte	'mem.h',0,4,0,0
+	.byte	'netif.h',0,4,0,0
+	.byte	'ip4.h',0,5,0,0
+	.byte	'timeouts.h',0,4,0,0,0
+.L12:
+.L10:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	     1  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	     2   * @file
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	     3   * lwIP netif implementing an IEEE 802.1D MAC Bridge
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	     4   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	     5  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	     6  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	     7   * Copyright (c) 2017 Simon Goldschmidt.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	     8   * All rights reserved.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	     9   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    10   * Redistribution and use in source and binary forms, with or without modification,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    11   * are permitted provided that the following conditions are met:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    12   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    13   * 1. Redistributions of source code must retain the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    14   *    this list of conditions and the following disclaimer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    15   * 2. Redistributions in binary form must reproduce the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    16   *    this list of conditions and the following disclaimer in the documentation
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    17   *    and/or other materials provided with the distribution.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    18   * 3. The name of the author may not be used to endorse or promote products
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    19   *    derived from this software without specific prior written permission.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    20   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    21   * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    22   * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    23   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    24   * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    25   * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    26   * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    27   * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    28   * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    29   * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    30   * OF SUCH DAMAGE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    31   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    32   * This file is part of the lwIP TCP/IP stack.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    33   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    34   * Author: Simon Goldschmidt <goldsimon@gmx.de>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    35   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    36   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    37  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    38  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    39   * @defgroup bridgeif IEEE 802.1D bridge
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    40   * @ingroup netifs
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    41   * This file implements an IEEE 802.1D bridge by using a multilayer netif approach
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    42   * (one hardware-independent netif for the bridge that uses hardware netifs for its ports).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    43   * On transmit, the bridge selects the outgoing port(s).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    44   * On receive, the port netif calls into the bridge (via its netif->input function) and
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    45   * the bridge selects the port(s) (and/or its netif->input function) to pass the received pbuf to.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    46   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    47   * Usage:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    48   * - add the port netifs just like you would when using them as dedicated netif without a bridge
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    49   *   - only NETIF_FLAG_ETHARP/NETIF_FLAG_ETHERNET netifs are supported as bridge ports
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    50   *   - add the bridge port netifs without IPv4 addresses (i.e. pass 'NULL, NULL, NULL')
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    51   *   - don't add IPv6 addresses to the port netifs!
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    52   * - set up the bridge configuration in a global variable of type 'bridgeif_initdata_t' that contains
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    53   *   - the MAC address of the bridge
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    54   *   - some configuration options controlling the memory consumption (maximum number of ports
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    55   *     and FDB entries)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    56   *   - e.g. for a bridge MAC address 00-01-02-03-04-05, 2 bridge ports, 1024 FDB entries + 16 static MAC entries:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    57   *     bridgeif_initdata_t mybridge_initdata = BRIDGEIF_INITDATA1(2, 1024, 16, ETH_ADDR(0, 1, 2, 3, 4, 5));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    58   * - add the bridge netif (with IPv4 config):
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    59   *   struct netif bridge_netif;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    60   *   netif_add(&bridge_netif, &my_ip, &my_netmask, &my_gw, &mybridge_initdata, bridgeif_init, tcpip_input);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    61   *   NOTE: the passed 'input' function depends on BRIDGEIF_PORT_NETIFS_OUTPUT_DIRECT setting,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    62   *         which controls where the forwarding is done (netif low level input context vs. tcpip_thread)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    63   * - set up all ports netifs and the bridge netif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    64   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    65   * - When adding a port netif, NETIF_FLAG_ETHARP flag will be removed from a port
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    66   *   to prevent ETHARP working on that port netif (we only want one IP per bridge not per port).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    67   * - When adding a port netif, its input function is changed to call into the bridge.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    68   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    69   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    70   * @todo:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    71   * - compact static FDB entries (instead of walking the whole array)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    72   * - add FDB query/read access
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    73   * - add FDB change callback (when learning or dropping auto-learned entries)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    74   * - prefill FDB with MAC classes that should never be forwarded
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    75   * - multicast snooping? (and only forward group addresses to interested ports)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    76   * - support removing ports
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    77   * - check SNMP integration
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    78   * - VLAN handling / trunk ports
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    79   * - priority handling? (although that largely depends on TX queue limitations and lwIP doesn't provide tx-done handling)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    80   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    81  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    82  #include "netif/bridgeif.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    83  #include "lwip/netif.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    84  #include "lwip/sys.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    85  #include "lwip/etharp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    86  #include "lwip/ethip6.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    87  #include "lwip/snmp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    88  #include "lwip/timeouts.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    89  #include <string.h>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    90  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    91  #if LWIP_NUM_NETIF_CLIENT_DATA
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    92  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    93  /* Define those to better describe your network interface. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    94  #define IFNAME0 'b'
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    95  #define IFNAME1 'r'
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    96  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    97  struct bridgeif_private_s;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    98  typedef struct bridgeif_port_private_s {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	    99    struct bridgeif_private_s *bridge;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   100    struct netif *port_netif;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   101    u8_t port_num;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   102  } bridgeif_port_t;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   103  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   104  typedef struct bridgeif_fdb_static_entry_s {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   105    u8_t used;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   106    bridgeif_portmask_t dst_ports;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   107    struct eth_addr addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   108  } bridgeif_fdb_static_entry_t;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   109  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   110  typedef struct bridgeif_private_s {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   111    struct netif     *netif;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   112    struct eth_addr   ethaddr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   113    u8_t              max_ports;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   114    u8_t              num_ports;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   115    bridgeif_port_t  *ports;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   116    u16_t             max_fdbs_entries;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   117    bridgeif_fdb_static_entry_t *fdbs;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   118    u16_t             max_fdbd_entries;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   119    void             *fdbd;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   120  } bridgeif_private_t;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   121  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   122  /* netif data index to get the bridge on input */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   123  u8_t bridgeif_netif_client_id = 0xff;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   124  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   125  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   126   * @ingroup bridgeif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   127   * Add a static entry to the forwarding database.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   128   * A static entry marks where frames to a specific eth address (unicast or group address) are
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   129   * forwarded.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   130   * bits [0..(BRIDGEIF_MAX_PORTS-1)]: hw ports
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   131   * bit [BRIDGEIF_MAX_PORTS]: cpu port
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   132   * 0: drop
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   133   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   134  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   135  bridgeif_fdb_add(struct netif *bridgeif, const struct eth_addr *addr, bridgeif_portmask_t ports)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   136  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   137    int i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   138    bridgeif_private_t *br;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   139    BRIDGEIF_DECL_PROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   140    LWIP_ASSERT("invalid netif", bridgeif != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   141    br = (bridgeif_private_t *)bridgeif->state;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   142    LWIP_ASSERT("invalid state", br != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   143  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   144    BRIDGEIF_READ_PROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   145    for (i = 0; i < br->max_fdbs_entries; i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   146      if (!br->fdbs[i].used) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   147        BRIDGEIF_WRITE_PROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   148        if (!br->fdbs[i].used) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   149          br->fdbs[i].used = 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   150          br->fdbs[i].dst_ports = ports;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   151          memcpy(&br->fdbs[i].addr, addr, sizeof(struct eth_addr));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   152          BRIDGEIF_WRITE_UNPROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   153          BRIDGEIF_READ_UNPROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   154          return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   155        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   156        BRIDGEIF_WRITE_UNPROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   157      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   158    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   159    BRIDGEIF_READ_UNPROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   160    return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   161  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   162  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   163  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   164   * @ingroup bridgeif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   165   * Remove a static entry from the forwarding database
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   166   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   167  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   168  bridgeif_fdb_remove(struct netif *bridgeif, const struct eth_addr *addr)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   169  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   170    int i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   171    bridgeif_private_t *br;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   172    BRIDGEIF_DECL_PROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   173    LWIP_ASSERT("invalid netif", bridgeif != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   174    br = (bridgeif_private_t *)bridgeif->state;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   175    LWIP_ASSERT("invalid state", br != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   176  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   177    BRIDGEIF_READ_PROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   178    for (i = 0; i < br->max_fdbs_entries; i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   179      if (br->fdbs[i].used && !memcmp(&br->fdbs[i].addr, addr, sizeof(struct eth_addr))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   180        BRIDGEIF_WRITE_PROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   181        if (br->fdbs[i].used && !memcmp(&br->fdbs[i].addr, addr, sizeof(struct eth_addr))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   182          memset(&br->fdbs[i], 0, sizeof(bridgeif_fdb_static_entry_t));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   183          BRIDGEIF_WRITE_UNPROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   184          BRIDGEIF_READ_UNPROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   185          return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   186        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   187        BRIDGEIF_WRITE_UNPROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   188      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   189    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   190    BRIDGEIF_READ_UNPROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   191    return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   192  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   193  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   194  /** Get the forwarding port(s) (as bit mask) for the specified destination mac address */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   195  static bridgeif_portmask_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   196  bridgeif_find_dst_ports(bridgeif_private_t *br, struct eth_addr *dst_addr)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   197  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   198    int i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   199    BRIDGEIF_DECL_PROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   200    BRIDGEIF_READ_PROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   201    /* first check for static entries */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   202    for (i = 0; i < br->max_fdbs_entries; i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   203      if (br->fdbs[i].used) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   204        if (!memcmp(&br->fdbs[i].addr, dst_addr, sizeof(struct eth_addr))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   205          bridgeif_portmask_t ret = br->fdbs[i].dst_ports;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   206          BRIDGEIF_READ_UNPROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   207          return ret;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   208        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   209      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   210    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   211    if (dst_addr->addr[0] & 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   212      /* no match found: flood remaining group address */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   213      BRIDGEIF_READ_UNPROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   214      return BR_FLOOD;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   215    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   216    BRIDGEIF_READ_UNPROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   217    /* no match found: check dynamic fdb for port or fall back to flooding */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   218    return bridgeif_fdb_get_dst_ports(br->fdbd, dst_addr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   219  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   220  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   221  /** Helper function to see if a destination mac belongs to the bridge
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   222   * (bridge netif or one of the port netifs), in which case the frame
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   223   * is sent to the cpu only.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   224   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   225  static int
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   226  bridgeif_is_local_mac(bridgeif_private_t *br, struct eth_addr *addr)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   227  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   228    int i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   229    BRIDGEIF_DECL_PROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   230    if (!memcmp(br->netif->hwaddr, addr, sizeof(struct eth_addr))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   231      return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   232    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   233    BRIDGEIF_READ_PROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   234    for (i = 0; i < br->num_ports; i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   235      struct netif *portif = br->ports[i].port_netif;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   236      if (portif != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   237        if (!memcmp(portif->hwaddr, addr, sizeof(struct eth_addr))) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   238          BRIDGEIF_READ_UNPROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   239          return 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   240        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   241      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   242    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   243    BRIDGEIF_READ_UNPROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   244    return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   245  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   246  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   247  /* Output helper function */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   248  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   249  bridgeif_send_to_port(bridgeif_private_t *br, struct pbuf *p, u8_t dstport_idx)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   250  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   251    if (dstport_idx < BRIDGEIF_MAX_PORTS) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   252      /* possibly an external port */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   253      if (dstport_idx < br->max_ports) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   254        struct netif *portif = br->ports[dstport_idx].port_netif;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   255        if ((portif != NULL) && (portif->linkoutput != NULL)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   256          /* prevent sending out to rx port */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   257          if (netif_get_index(portif) != p->if_idx) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   258            if (netif_is_link_up(portif)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   259              LWIP_DEBUGF(BRIDGEIF_FW_DEBUG, ("br -> flood(%p:%d) -> %d\n", (void *)p, p->if_idx, netif_get_index(portif)));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   260              return portif->linkoutput(portif, p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   261            }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   262          }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   263        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   264      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   265    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   266      LWIP_ASSERT("invalid port index", dstport_idx == BRIDGEIF_MAX_PORTS);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   267    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   268    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   269  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   270  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   271  /** Helper function to pass a pbuf to all ports marked in 'dstports'
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   272   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   273  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   274  bridgeif_send_to_ports(bridgeif_private_t *br, struct pbuf *p, bridgeif_portmask_t dstports)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   275  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   276    err_t err, ret_err = ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   277    u8_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   278    bridgeif_portmask_t mask = 1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   279    BRIDGEIF_DECL_PROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   280    BRIDGEIF_READ_PROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   281    for (i = 0; i < BRIDGEIF_MAX_PORTS; i++, mask = (bridgeif_portmask_t)(mask << 1)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   282      if (dstports & mask) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   283        err = bridgeif_send_to_port(br, p, i);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   284        if (err != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   285          ret_err = err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   286        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   287      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   288    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   289    BRIDGEIF_READ_UNPROTECT(lev);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   290    return ret_err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   291  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   292  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   293  /** Output function of the application port of the bridge (the one with an ip address).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   294   * The forwarding port(s) where this pbuf is sent on is/are automatically selected
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   295   * from the FDB.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   296   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   297  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   298  bridgeif_output(struct netif *netif, struct pbuf *p)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   299  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   300    err_t err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   301    bridgeif_private_t *br = (bridgeif_private_t *)netif->state;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   302    struct eth_addr *dst = (struct eth_addr *)(p->payload);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   303  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   304    bridgeif_portmask_t dstports = bridgeif_find_dst_ports(br, dst);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   305    err = bridgeif_send_to_ports(br, p, dstports);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   306  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   307    MIB2_STATS_NETIF_ADD(netif, ifoutoctets, p->tot_len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   308    if (((u8_t *)p->payload)[0] & 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   309      /* broadcast or multicast packet*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   310      MIB2_STATS_NETIF_INC(netif, ifoutnucastpkts);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   311    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   312      /* unicast packet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   313      MIB2_STATS_NETIF_INC(netif, ifoutucastpkts);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   314    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   315    /* increase ifoutdiscards or ifouterrors on error */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   316  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   317    LINK_STATS_INC(link.xmit);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   318  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   319    return err;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   320  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   321  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   322  /** The actual bridge input function. Port netif's input is changed to call
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   323   * here. This function decides where the frame is forwarded.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   324   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   325  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   326  bridgeif_input(struct pbuf *p, struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   327  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   328    u8_t rx_idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   329    bridgeif_portmask_t dstports;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   330    struct eth_addr *src, *dst;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   331    bridgeif_private_t *br;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   332    bridgeif_port_t *port;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   333    if (p == NULL || netif == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   334      return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   335    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   336    port = (bridgeif_port_t *)netif_get_client_data(netif, bridgeif_netif_client_id);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   337    LWIP_ASSERT("port data not set", port != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   338    if (port == NULL || port->bridge == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   339      return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   340    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   341    br = (bridgeif_private_t *)port->bridge;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   342    rx_idx = netif_get_index(netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   343    /* store receive index in pbuf */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   344    p->if_idx = rx_idx;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   345  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   346    dst = (struct eth_addr *)p->payload;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   347    src = (struct eth_addr *)(((u8_t *)p->payload) + sizeof(struct eth_addr));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   348  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   349    if ((src->addr[0] & 1) == 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   350      /* update src for all non-group addresses */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   351      bridgeif_fdb_update_src(br->fdbd, src, port->port_num);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   352    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   353  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   354    if (dst->addr[0] & 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   355      /* group address -> flood + cpu? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   356      dstports = bridgeif_find_dst_ports(br, dst);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   357      bridgeif_send_to_ports(br, p, dstports);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   358      if (dstports & (1 << BRIDGEIF_MAX_PORTS)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   359        /* we pass the reference to ->input or have to free it */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   360        LWIP_DEBUGF(BRIDGEIF_FW_DEBUG, ("br -> input(%p)\n", (void *)p));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   361        if (br->netif->input(p, br->netif) != ERR_OK) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   362          pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   363        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   364      } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   365        /* all references done */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   366        pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   367      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   368      /* always return ERR_OK here to prevent the caller freeing the pbuf */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   369      return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   370    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   371      /* is this for one of the local ports? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   372      if (bridgeif_is_local_mac(br, dst)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   373        /* yes, send to cpu port only */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   374        LWIP_DEBUGF(BRIDGEIF_FW_DEBUG, ("br -> input(%p)\n", (void *)p));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   375        return br->netif->input(p, br->netif);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   376      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   377  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   378      /* get dst port */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   379      dstports = bridgeif_find_dst_ports(br, dst);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   380      bridgeif_send_to_ports(br, p, dstports);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   381      /* no need to send to cpu, flooding is for external ports only */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   382      /* by  this, we consumed the pbuf */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   383      pbuf_free(p);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   384      /* always return ERR_OK here to prevent the caller freeing the pbuf */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   385      return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   386    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   387  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   388  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   389  #if !BRIDGEIF_PORT_NETIFS_OUTPUT_DIRECT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   390  /** Input function for port netifs used to synchronize into tcpip_thread.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   391   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   392  static err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   393  bridgeif_tcpip_input(struct pbuf *p, struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   394  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   395    return tcpip_inpkt(p, netif, bridgeif_input);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   396  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   397  #endif /* BRIDGEIF_PORT_NETIFS_OUTPUT_DIRECT */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   398  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   399  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   400   * @ingroup bridgeif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   401   * Initialization function passed to netif_add().
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   402   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   403   * ATTENTION: A pointer to a @ref bridgeif_initdata_t must be passed as 'state'
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   404   *            to @ref netif_add when adding the bridge. I supplies MAC address
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   405   *            and controls memory allocation (number of ports, FDB size).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   406   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   407   * @param netif the lwip network interface structure for this ethernetif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   408   * @return ERR_OK if the loopif is initialized
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   409   *         ERR_MEM if private data couldn't be allocated
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   410   *         any other err_t on error
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   411   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   412  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   413  bridgeif_init(struct netif *netif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   414  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   415    bridgeif_initdata_t *init_data;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   416    bridgeif_private_t *br;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   417    size_t alloc_len_sizet;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   418    mem_size_t alloc_len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   419  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   420    LWIP_ASSERT("netif != NULL", (netif != NULL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   421    LWIP_ASSERT("bridgeif needs an input callback", (netif->input != NULL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   422  #if !BRIDGEIF_PORT_NETIFS_OUTPUT_DIRECT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   423    if (netif->input == tcpip_input) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   424      LWIP_DEBUGF(BRIDGEIF_DEBUG | LWIP_DBG_ON, ("bridgeif does not need tcpip_input, use netif_input/ethernet_input instead"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   425    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   426  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   427  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   428    if (bridgeif_netif_client_id == 0xFF) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   429      bridgeif_netif_client_id = netif_alloc_client_data_id();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   430    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   431  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   432    init_data = (bridgeif_initdata_t *)netif->state;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   433    LWIP_ASSERT("init_data != NULL", (init_data != NULL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   434    LWIP_ASSERT("init_data->max_ports <= BRIDGEIF_MAX_PORTS",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   435                init_data->max_ports <= BRIDGEIF_MAX_PORTS);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   436  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   437    alloc_len_sizet = sizeof(bridgeif_private_t) + (init_data->max_ports * sizeof(bridgeif_port_t) + (init_data->max_fdb_static_entries * sizeof(bridgeif_fdb_static_entry_t)));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   438    alloc_len = (mem_size_t)alloc_len_sizet;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   439    LWIP_ASSERT("alloc_len == alloc_len_sizet", alloc_len == alloc_len_sizet);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   440    LWIP_DEBUGF(BRIDGEIF_DEBUG, ("bridgeif_init: allocating %d bytes for private data\n", (int)alloc_len));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   441    br = (bridgeif_private_t *)mem_calloc(1, alloc_len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   442    if (br == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   443      LWIP_DEBUGF(NETIF_DEBUG, ("bridgeif_init: out of memory\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   444      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   445    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   446    memcpy(&br->ethaddr, &init_data->ethaddr, sizeof(br->ethaddr));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   447    br->netif = netif;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   448  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   449    br->max_ports = init_data->max_ports;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   450    br->ports = (bridgeif_port_t *)(br + 1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   451  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   452    br->max_fdbs_entries = init_data->max_fdb_static_entries;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   453    br->fdbs = (bridgeif_fdb_static_entry_t *)(((u8_t *)(br + 1)) + (init_data->max_ports * sizeof(bridgeif_port_t)));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   454  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   455    br->max_fdbd_entries = init_data->max_fdb_dynamic_entries;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   456    br->fdbd = bridgeif_fdb_init(init_data->max_fdb_dynamic_entries);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   457    if (br->fdbd == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   458      LWIP_DEBUGF(NETIF_DEBUG, ("bridgeif_init: out of memory in fdb_init\n"));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   459      mem_free(br);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   460      return ERR_MEM;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   461    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   462  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   463  #if LWIP_NETIF_HOSTNAME
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   464    /* Initialize interface hostname */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   465    netif->hostname = "lwip";
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   466  #endif /* LWIP_NETIF_HOSTNAME */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   467  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   468    /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   469     * Initialize the snmp variables and counters inside the struct netif.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   470     * The last argument should be replaced with your link speed, in units
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   471     * of bits per second.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   472     */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   473    MIB2_INIT_NETIF(netif, snmp_ifType_ethernet_csmacd, 0);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   474  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   475    netif->state = br;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   476    netif->name[0] = IFNAME0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   477    netif->name[1] = IFNAME1;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   478    /* We directly use etharp_output() here to save a function call.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   479     * You can instead declare your own function an call etharp_output()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   480     * from it if you have to do some checks before sending (e.g. if link
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   481     * is available...) */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   482  #if LWIP_IPV4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   483    netif->output = etharp_output;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   484  #endif /* LWIP_IPV4 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   485  #if LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   486    netif->output_ip6 = ethip6_output;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   487  #endif /* LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   488    netif->linkoutput = bridgeif_output;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   489  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   490    /* set MAC hardware address length */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   491    netif->hwaddr_len = ETH_HWADDR_LEN;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   492  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   493    /* set MAC hardware address */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   494    memcpy(netif->hwaddr, &br->ethaddr, ETH_HWADDR_LEN);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   495  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   496    /* maximum transfer unit */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   497    netif->mtu = 1500;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   498  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   499    /* device capabilities */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   500    /* don't set NETIF_FLAG_ETHARP if this device is not an ethernet one */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   501    netif->flags = NETIF_FLAG_BROADCAST | NETIF_FLAG_ETHARP | NETIF_FLAG_ETHERNET | NETIF_FLAG_IGMP | NETIF_FLAG_MLD6 | NETIF_FLAG_LINK_UP;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   502  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   503  #if LWIP_IPV6 && LWIP_IPV6_MLD
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   504    /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   505     * For hardware/netifs that implement MAC filtering.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   506     * All-nodes link-local is handled by default, so we must let the hardware know
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   507     * to allow multicast packets in.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   508     * Should set mld_mac_filter previously. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   509    if (netif->mld_mac_filter != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   510      ip6_addr_t ip6_allnodes_ll;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   511      ip6_addr_set_allnodes_linklocal(&ip6_allnodes_ll);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   512      netif->mld_mac_filter(netif, &ip6_allnodes_ll, NETIF_ADD_MAC_FILTER);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   513    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   514  #endif /* LWIP_IPV6 && LWIP_IPV6_MLD */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   515  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   516    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   517  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   518  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   519  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   520   * @ingroup bridgeif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   521   * Add a port to the bridge
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   522   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   523  err_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   524  bridgeif_add_port(struct netif *bridgeif, struct netif *portif)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   525  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   526    bridgeif_private_t *br;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   527    bridgeif_port_t *port;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   528  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   529    LWIP_ASSERT("bridgeif != NULL", bridgeif != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   530    LWIP_ASSERT("bridgeif->state != NULL", bridgeif->state != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   531    LWIP_ASSERT("portif != NULL", portif != NULL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   532  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   533    if (!(portif->flags & NETIF_FLAG_ETHARP) || !(portif->flags & NETIF_FLAG_ETHERNET)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   534      /* can only add ETHERNET/ETHARP interfaces */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   535      return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   536    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   537  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   538    br = (bridgeif_private_t *)bridgeif->state;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   539  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   540    if (br->num_ports >= br->max_ports) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   541      return ERR_VAL;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   542    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   543    port = &br->ports[br->num_ports];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   544    port->port_netif = portif;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   545    port->port_num = br->num_ports;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   546    port->bridge = br;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   547    br->num_ports++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   548  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   549    /* let the port call us on input */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   550  #if BRIDGEIF_PORT_NETIFS_OUTPUT_DIRECT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   551    portif->input = bridgeif_input;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   552  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   553    portif->input = bridgeif_tcpip_input;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   554  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   555    /* store pointer to bridge in netif */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   556    netif_set_client_data(portif, bridgeif_netif_client_id, port);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   557    /* remove ETHARP flag to prevent sending report events on netif-up */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   558    netif_clear_flags(portif, NETIF_FLAG_ETHARP);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   559  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   560    return ERR_OK;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   561  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   562  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\netif\bridgeif.c	   563  #endif /* LWIP_NUM_NETIF_CLIENT_DATA */
+
+	; Module end

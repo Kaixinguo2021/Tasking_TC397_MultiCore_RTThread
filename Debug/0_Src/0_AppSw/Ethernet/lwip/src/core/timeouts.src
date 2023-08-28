@@ -1,0 +1,3335 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\.timeouts.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Rtl8211f -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.src ..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c'
+
+	
+$TC162
+	.sdecl	'.zrodata.timeouts..6.cnt',data,rom
+	.sect	'.zrodata.timeouts..6.cnt'
+	.align	2
+.6.cnt:	.type	object
+	.size	.6.cnt,4
+	.word	2147483647
+	.sdecl	'.zrodata.timeouts..7.cnt',data,rom
+	.sect	'.zrodata.timeouts..7.cnt'
+	.align	2
+.7.cnt:	.type	object
+	.size	.7.cnt,4
+	.word	1073741823
+	
+	.sdecl	'.text.timeouts.tcpip_tcp_timer',code,cluster('tcpip_tcp_timer')
+	.sect	'.text.timeouts.tcpip_tcp_timer'
+	.align	2
+	
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	     1  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	     2   * @file
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	     3   * Stack-internal timers implementation.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	     4   * This file includes timer callbacks for stack-internal timers as well as
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	     5   * functions to set up or stop timers and check for expired timers.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	     6   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	     7   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	     8  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	     9  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    10   * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    11   * All rights reserved.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    12   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    13   * Redistribution and use in source and binary forms, with or without modification,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    14   * are permitted provided that the following conditions are met:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    15   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    16   * 1. Redistributions of source code must retain the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    17   *    this list of conditions and the following disclaimer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    18   * 2. Redistributions in binary form must reproduce the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    19   *    this list of conditions and the following disclaimer in the documentation
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    20   *    and/or other materials provided with the distribution.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    21   * 3. The name of the author may not be used to endorse or promote products
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    22   *    derived from this software without specific prior written permission.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    23   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    24   * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    25   * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    26   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    27   * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    28   * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    29   * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    30   * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    31   * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    32   * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    33   * OF SUCH DAMAGE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    34   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    35   * This file is part of the lwIP TCP/IP stack.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    36   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    37   * Author: Adam Dunkels <adam@sics.se>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    38   *         Simon Goldschmidt
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    39   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    40   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    41  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    42  #include "lwip/opt.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    43  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    44  #include "lwip/timeouts.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    45  #include "lwip/priv/tcp_priv.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    46  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    47  #include "lwip/def.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    48  #include "lwip/memp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    49  #include "lwip/priv/tcpip_priv.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    50  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    51  #include "lwip/ip4_frag.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    52  #include "lwip/etharp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    53  #include "lwip/dhcp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    54  #include "lwip/autoip.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    55  #include "lwip/igmp.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    56  #include "lwip/dns.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    57  #include "lwip/nd6.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    58  #include "lwip/ip6_frag.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    59  #include "lwip/mld6.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    60  #include "lwip/dhcp6.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    61  #include "lwip/sys.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    62  #include "lwip/pbuf.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    63  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    64  #if LWIP_DEBUG_TIMERNAMES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    65  #define HANDLER(x) x, #x
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    66  #else /* LWIP_DEBUG_TIMERNAMES */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    67  #define HANDLER(x) x
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    68  #endif /* LWIP_DEBUG_TIMERNAMES */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    69  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    70  #define LWIP_MAX_TIMEOUT  0x7fffffff
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    71  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    72  /* Check if timer's expiry time is greater than time and care about u32_t wraparounds */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    73  #define TIME_LESS_THAN(t, compare_to) ( (((u32_t)((t)-(compare_to))) > LWIP_MAX_TIMEOUT) ? 1 : 0 )
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    74  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    75  /** This array contains all stack-internal cyclic timers. To get the number of
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    76   * timers, use LWIP_ARRAYSIZE() */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    77  const struct lwip_cyclic_timer lwip_cyclic_timers[] = {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    78  #if LWIP_TCP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    79    /* The TCP timer is a special case: it does not have to run always and
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    80       is triggered to start from TCP using tcp_timer_needed() */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    81    {TCP_TMR_INTERVAL, HANDLER(tcp_tmr)},
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    82  #endif /* LWIP_TCP */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    83  #if LWIP_IPV4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    84  #if IP_REASSEMBLY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    85    {IP_TMR_INTERVAL, HANDLER(ip_reass_tmr)},
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    86  #endif /* IP_REASSEMBLY */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    87  #if LWIP_ARP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    88    {ARP_TMR_INTERVAL, HANDLER(etharp_tmr)},
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    89  #endif /* LWIP_ARP */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    90  #if LWIP_DHCP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    91    {DHCP_COARSE_TIMER_MSECS, HANDLER(dhcp_coarse_tmr)},
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    92    {DHCP_FINE_TIMER_MSECS, HANDLER(dhcp_fine_tmr)},
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    93  #endif /* LWIP_DHCP */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    94  #if LWIP_AUTOIP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    95    {AUTOIP_TMR_INTERVAL, HANDLER(autoip_tmr)},
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    96  #endif /* LWIP_AUTOIP */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    97  #if LWIP_IGMP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    98    {IGMP_TMR_INTERVAL, HANDLER(igmp_tmr)},
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	    99  #endif /* LWIP_IGMP */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   100  #endif /* LWIP_IPV4 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   101  #if LWIP_DNS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   102    {DNS_TMR_INTERVAL, HANDLER(dns_tmr)},
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   103  #endif /* LWIP_DNS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   104  #if LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   105    {ND6_TMR_INTERVAL, HANDLER(nd6_tmr)},
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   106  #if LWIP_IPV6_REASS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   107    {IP6_REASS_TMR_INTERVAL, HANDLER(ip6_reass_tmr)},
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   108  #endif /* LWIP_IPV6_REASS */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   109  #if LWIP_IPV6_MLD
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   110    {MLD6_TMR_INTERVAL, HANDLER(mld6_tmr)},
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   111  #endif /* LWIP_IPV6_MLD */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   112  #if LWIP_IPV6_DHCP6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   113    {DHCP6_TIMER_MSECS, HANDLER(dhcp6_tmr)},
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   114  #endif /* LWIP_IPV6_DHCP6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   115  #endif /* LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   116  };
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   117  const int lwip_num_cyclic_timers = LWIP_ARRAYSIZE(lwip_cyclic_timers);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   118  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   119  #if LWIP_TIMERS && !LWIP_TIMERS_CUSTOM
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   120  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   121  /** The one and only timeout list */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   122  static struct sys_timeo *next_timeout;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   123  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   124  static u32_t current_timeout_due_time;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   125  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   126  #if LWIP_TESTMODE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   127  struct sys_timeo**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   128  sys_timeouts_get_next_timeout(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   129  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   130    return &next_timeout;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   131  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   132  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   133  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   134  #if LWIP_TCP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   135  /** global variable that shows if the tcp timer is currently scheduled or not */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   136  static int tcpip_tcp_timer_active;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   137  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   138  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   139   * Timer callback function that calls tcp_tmr() and reschedules itself.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   140   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   141   * @param arg unused argument
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   142   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   143  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   144  tcpip_tcp_timer(void *arg)
+; Function tcpip_tcp_timer
+.L41:
+tcpip_tcp_timer:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   145  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   146    LWIP_UNUSED_ARG(arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   147  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   148    /* call TCP timer handler */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   149    tcp_tmr();
+	call	tcp_tmr
+.L179:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   150    /* timer still needed? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   151    if (tcp_active_pcbs || tcp_tw_pcbs) {
+	ld.w	d15,tcp_active_pcbs
+	jne	d15,#0,.L2
+.L295:
+	ld.w	d15,tcp_tw_pcbs
+	jeq	d15,#0,.L3
+.L2:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   152      /* restart timer */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   153      sys_timeout(TCP_TMR_INTERVAL, tcpip_tcp_timer, NULL);
+	fcall	.cocofun_8
+.L296:
+	j	sys_timeout
+.L3:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   154    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   155      /* disable timer */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   156      tcpip_tcp_timer_active = 0;
+	mov	d15,#0
+	st.w	tcpip_tcp_timer_active,d15
+.L297:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   157    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   158  }
+	ret
+.L161:
+	
+__tcpip_tcp_timer_function_end:
+	.size	tcpip_tcp_timer,__tcpip_tcp_timer_function_end-tcpip_tcp_timer
+.L105:
+	; End of function
+	
+	.sdecl	'.text.timeouts..cocofun_8',code,cluster('.cocofun_8')
+	.sect	'.text.timeouts..cocofun_8'
+	.align	2
+; Function .cocofun_8
+.L43:
+.cocofun_8:	.type	func
+; Function body .cocofun_8, coco_iter:0
+	mov	d4,#250
+	movh.a	a4,#@his(tcpip_tcp_timer)
+	lea	a4,[a4]@los(tcpip_tcp_timer)
+.L330:
+	mov.a	a5,#0
+.L331:
+	fret
+.L120:
+	; End of function
+	.sdecl	'.text.timeouts.tcp_timer_needed',code,cluster('tcp_timer_needed')
+	.sect	'.text.timeouts.tcp_timer_needed'
+	.align	2
+	
+	.global	tcp_timer_needed
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   159  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   160  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   161   * Called from TCP_REG when registering a new PCB:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   162   * the reason is to have the TCP timer only running when
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   163   * there are active (or time-wait) PCBs.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   164   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   165  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   166  tcp_timer_needed(void)
+; Function tcp_timer_needed
+.L45:
+tcp_timer_needed:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   167  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   168    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   169  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   170    /* timer is off but needed again? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   171    if (!tcpip_tcp_timer_active && (tcp_active_pcbs || tcp_tw_pcbs)) {
+	ld.w	d15,tcpip_tcp_timer_active
+	jne	d15,#0,.L5
+.L287:
+	ld.w	d15,tcp_active_pcbs
+	jne	d15,#0,.L6
+.L288:
+	ld.w	d15,tcp_tw_pcbs
+	jeq	d15,#0,.L7
+.L6:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   172      /* enable and start timer */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   173      tcpip_tcp_timer_active = 1;
+	mov	d15,#1
+	st.w	tcpip_tcp_timer_active,d15
+.L289:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   174      sys_timeout(TCP_TMR_INTERVAL, tcpip_tcp_timer, NULL);
+	fcall	.cocofun_8
+.L290:
+	j	sys_timeout
+.L7:
+.L5:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   175    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   176  }
+	ret
+.L160:
+	
+__tcp_timer_needed_function_end:
+	.size	tcp_timer_needed,__tcp_timer_needed_function_end-tcp_timer_needed
+.L100:
+	; End of function
+	
+	.sdecl	'.text.timeouts.sys_timeout_abs',code,cluster('sys_timeout_abs')
+	.sect	'.text.timeouts.sys_timeout_abs'
+	.align	2
+	
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   177  #endif /* LWIP_TCP */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   178  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   179  static void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   180  #if LWIP_DEBUG_TIMERNAMES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   181  sys_timeout_abs(u32_t abs_time, sys_timeout_handler handler, void *arg, const char *handler_name)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   182  #else /* LWIP_DEBUG_TIMERNAMES */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   183  sys_timeout_abs(u32_t abs_time, sys_timeout_handler handler, void *arg)
+; Function sys_timeout_abs
+.L47:
+sys_timeout_abs:	.type	func
+	sub.a	a10,#16
+.L180:
+	mov	d15,d4
+	mov.aa	a15,a4
+.L182:
+	mov.aa	a12,a5
+.L185:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   184  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   185  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   186    struct sys_timeo *timeout, *t;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   187  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   188    timeout = (struct sys_timeo *)memp_malloc(MEMP_SYS_TIMEOUT);
+	mov	d4,#6
+	call	memp_malloc
+.L181:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   189    if (timeout == NULL) {
+	jnz.a	a2,.L8
+.L302:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   190      LWIP_ASSERT("sys_timeout: timeout != NULL, pool MEMP_SYS_TIMEOUT is empty", timeout != NULL);
+	movh.a	a15,#@his(.2.str)
+.L184:
+	lea	a15,[a15]@los(.2.str)
+	st.a	[a10],a15
+	mov	d15,#190
+	st.w	[a10]4,d15
+.L183:
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+	lea	a4,[a4]@los(.1.str)
+	j	Ifx_Lwip_printf
+.L8:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   191      return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   192    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   193  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   194    timeout->next = NULL;
+	mov.a	a4,#0
+.L303:
+	st.a	[a2],a4
+.L304:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   195    timeout->h = handler;
+	st.a	[a2]8,a15
+.L305:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   196    timeout->arg = arg;
+	st.a	[a2]12,a12
+.L306:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   197    timeout->time = abs_time;
+	st.w	[a2]4,d15
+.L307:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   198  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   199  #if LWIP_DEBUG_TIMERNAMES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   200    timeout->handler_name = handler_name;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   201    LWIP_DEBUGF(TIMERS_DEBUG, ("sys_timeout: %p abs_time=%"U32_F" handler=%s arg=%p\n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   202                               (void *)timeout, abs_time, handler_name, (void *)arg));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   203  #endif /* LWIP_DEBUG_TIMERNAMES */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   204  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   205    if (next_timeout == NULL) {
+	ld.a	a15,next_timeout
+.L186:
+	jz.a	a15,.L10
+.L308:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   206      next_timeout = timeout;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   207      return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   208    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   209    if (TIME_LESS_THAN(timeout->time, next_timeout->time)) {
+	ld.w	d1,[a15]4
+	ld.w	d0,.6.cnt
+	sub	d1,d15,d1
+.L309:
+	jge.u	d0,d1,.L11
+.L310:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   210      timeout->next = next_timeout;
+	st.a	[a2],a15
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   211      next_timeout = timeout;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   212    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   213      for (t = next_timeout; t != NULL; t = t->next) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   214        if ((t->next == NULL) || TIME_LESS_THAN(timeout->time, t->next->time)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   215          timeout->next = t->next;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   216          t->next = timeout;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   217          break;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   218        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   219      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   220    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   221  }
+.L10:
+	st.a	next_timeout,a2
+.L311:
+	ret
+.L11:
+.L13:
+	ld.a	a4,[a15]
+.L312:
+	jz.a	a4,.L14
+.L313:
+	ld.w	d1,[a4]4
+	sub	d1,d15,d1
+	jge.u	d0,d1,.L15
+.L14:
+	st.a	[a2],a4
+.L314:
+	st.a	[a15],a2
+.L315:
+	ret
+.L15:
+	mov.aa	a15,a4
+.L316:
+	j	.L13
+.L164:
+	
+__sys_timeout_abs_function_end:
+	.size	sys_timeout_abs,__sys_timeout_abs_function_end-sys_timeout_abs
+.L110:
+	; End of function
+	
+	.sdecl	'.text.timeouts.lwip_cyclic_timer',code,cluster('lwip_cyclic_timer')
+	.sect	'.text.timeouts.lwip_cyclic_timer'
+	.align	2
+	
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   222  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   223  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   224   * Timer callback function that calls cyclic->handler() and reschedules itself.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   225   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   226   * @param arg unused argument
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   227   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   228  #if !LWIP_TESTMODE
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   229  static
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   230  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   231  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   232  lwip_cyclic_timer(void *arg)
+; Function lwip_cyclic_timer
+.L49:
+lwip_cyclic_timer:	.type	func
+	mov.aa	a15,a4
+.L188:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   233  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   234    u32_t now;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   235    u32_t next_timeout_time;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   236    const struct lwip_cyclic_timer *cyclic = (const struct lwip_cyclic_timer *)arg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   237  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   238  #if LWIP_DEBUG_TIMERNAMES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   239    LWIP_DEBUGF(TIMERS_DEBUG, ("tcpip: %s()\n", cyclic->handler_name));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   240  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   241    cyclic->handler();
+	ld.a	a2,[a15]4
+.L321:
+	calli	a2
+.L187:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   242  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   243    now = sys_now();
+	call	sys_now
+.L322:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   244    next_timeout_time = (u32_t)(current_timeout_due_time + cyclic->interval_ms);  /* overflow handled by TIME_LESS_THAN macro */ 
+	ld.w	d15,[a15]
+.L323:
+	ld.w	d4,current_timeout_due_time
+.L324:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   245    if (TIME_LESS_THAN(next_timeout_time, now)) {
+	ld.w	d1,.6.cnt
+.L189:
+	add	d4,d15
+.L190:
+	sub	d0,d4,d2
+.L191:
+	jge.u	d1,d0,.L17
+.L192:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   246      /* timer would immediately expire again -> "overload" -> restart without any correction */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   247  #if LWIP_DEBUG_TIMERNAMES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   248      sys_timeout_abs((u32_t)(now + cyclic->interval_ms), lwip_cyclic_timer, arg, cyclic->handler_name);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   249  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   250      sys_timeout_abs((u32_t)(now + cyclic->interval_ms), lwip_cyclic_timer, arg);
+	add	d4,d15,d2
+.L17:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   251  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   252  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   253    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   254      /* correct cyclic interval with handler execution delay and sys_check_timeouts jitter */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   255  #if LWIP_DEBUG_TIMERNAMES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   256      sys_timeout_abs(next_timeout_time, lwip_cyclic_timer, arg, cyclic->handler_name);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   257  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   258      sys_timeout_abs(next_timeout_time, lwip_cyclic_timer, arg);
+	movh.a	a4,#@his(lwip_cyclic_timer)
+	lea	a4,[a4]@los(lwip_cyclic_timer)
+.L325:
+	mov.aa	a5,a15
+.L193:
+	j	sys_timeout_abs
+.L170:
+	
+__lwip_cyclic_timer_function_end:
+	.size	lwip_cyclic_timer,__lwip_cyclic_timer_function_end-lwip_cyclic_timer
+.L115:
+	; End of function
+	
+	.sdecl	'.text.timeouts.sys_timeouts_init',code,cluster('sys_timeouts_init')
+	.sect	'.text.timeouts.sys_timeouts_init'
+	.align	2
+	
+	.global	sys_timeouts_init
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   259  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   260    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   261  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   262  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   263  /** Initialize this module */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   264  void sys_timeouts_init(void)
+; Function sys_timeouts_init
+.L51:
+sys_timeouts_init:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   265  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   266    size_t i;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   267    /* tcp_tmr() at index 0 is started on demand */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   268    for (i = (LWIP_TCP ? 1 : 0); i < LWIP_ARRAYSIZE(lwip_cyclic_timers); i++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   269      /* we have to cast via size_t to get rid of const warning
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   270        (this is OK as cyclic_timer() casts back to const* */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   271      sys_timeout(lwip_cyclic_timers[i].interval_ms, lwip_cyclic_timer, LWIP_CONST_CAST(void *, &lwip_cyclic_timers[i]));
+	movh.a	a15,#@his(lwip_cyclic_timers+8)
+	lea	a15,[a15]@los(lwip_cyclic_timers+8)
+.L229:
+	mov.a	a12,#1
+.L19:
+	ld.w	d4,[a15]
+.L230:
+	movh.a	a4,#@his(lwip_cyclic_timer)
+	lea	a4,[a4]@los(lwip_cyclic_timer)
+.L231:
+	mov.d	d15,a15
+	mov.a	a5,d15
+	call	sys_timeout
+.L232:
+	lea	a15,[a15]8
+	loop	a12,.L19
+.L233:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   272    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   273  }
+	ret
+.L131:
+	
+__sys_timeouts_init_function_end:
+	.size	sys_timeouts_init,__sys_timeouts_init_function_end-sys_timeouts_init
+.L70:
+	; End of function
+	
+	.sdecl	'.text.timeouts.sys_timeout',code,cluster('sys_timeout')
+	.sect	'.text.timeouts.sys_timeout'
+	.align	2
+	
+	.global	sys_timeout
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   274  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   275  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   276   * Create a one-shot timer (aka timeout). Timeouts are processed in the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   277   * following cases:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   278   * - while waiting for a message using sys_timeouts_mbox_fetch()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   279   * - by calling sys_check_timeouts() (NO_SYS==1 only)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   280   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   281   * @param msecs time in milliseconds after that the timer should expire
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   282   * @param handler callback function to call when msecs have elapsed
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   283   * @param arg argument to pass to the callback function
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   284   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   285  #if LWIP_DEBUG_TIMERNAMES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   286  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   287  sys_timeout_debug(u32_t msecs, sys_timeout_handler handler, void *arg, const char *handler_name)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   288  #else /* LWIP_DEBUG_TIMERNAMES */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   289  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   290  sys_timeout(u32_t msecs, sys_timeout_handler handler, void *arg)
+; Function sys_timeout
+.L53:
+sys_timeout:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   291  #endif /* LWIP_DEBUG_TIMERNAMES */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   292  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   293    u32_t next_timeout_time;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   294  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   295    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   296  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   297    LWIP_ASSERT("Timeout time too long, max is LWIP_UINT32_MAX/4 msecs", msecs <= (LWIP_UINT32_MAX / 4));
+	mov	d8,d4
+	ld.w	d15,.7.cnt
+.L196:
+	mov.aa	a12,a4
+.L197:
+	mov.aa	a13,a5
+.L198:
+	sub.a	a10,#16
+.L194:
+	jge.u	d15,d8,.L20
+.L238:
+	movh.a	a15,#@his(.4.str)
+	lea	a15,[a15]@los(.4.str)
+	st.a	[a10],a15
+	mov	d15,#297
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+.L195:
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L20:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   298  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   299    next_timeout_time = (u32_t)(sys_now() + msecs); /* overflow handled by TIME_LESS_THAN macro */ 
+	call	sys_now
+.L239:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   300  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   301  #if LWIP_DEBUG_TIMERNAMES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   302    sys_timeout_abs(next_timeout_time, handler, arg, handler_name);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   303  #else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   304    sys_timeout_abs(next_timeout_time, handler, arg);
+	add	d4,d8,d2
+	mov.aa	a4,a12
+.L199:
+	mov.aa	a5,a13
+.L200:
+	j	sys_timeout_abs
+.L134:
+	
+__sys_timeout_function_end:
+	.size	sys_timeout,__sys_timeout_function_end-sys_timeout
+.L75:
+	; End of function
+	
+	.sdecl	'.text.timeouts.sys_untimeout',code,cluster('sys_untimeout')
+	.sect	'.text.timeouts.sys_untimeout'
+	.align	2
+	
+	.global	sys_untimeout
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   305  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   306  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   307  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   308  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   309   * Go through timeout list (for this task only) and remove the first matching
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   310   * entry (subsequent entries remain untouched), even though the timeout has not
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   311   * triggered yet.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   312   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   313   * @param handler callback function that would be called by the timeout
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   314   * @param arg callback argument that would be passed to handler
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   315  */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   316  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   317  sys_untimeout(sys_timeout_handler handler, void *arg)
+; Function sys_untimeout
+.L55:
+sys_untimeout:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   318  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   319    struct sys_timeo *prev_t, *t;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   320  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   321    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   322  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   323    if (next_timeout == NULL) {
+	ld.a	a15,next_timeout
+.L202:
+	jz.a	a15,.L21
+.L244:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   324      return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   325    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   326  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   327    for (t = next_timeout, prev_t = NULL; t != NULL; prev_t = t, t = t->next) {
+	mov.a	a2,#0
+.L22:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   328      if ((t->h == handler) && (t->arg == arg)) {
+	ld.a	a7,[a15]8
+.L245:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   329        /* We have a match */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   330        /* Unlink from previous in list */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   331        if (prev_t == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   332          next_timeout = t->next;
+	ld.a	a6,[a15]
+.L246:
+	jne.a	a7,a4,.L23
+.L247:
+	ld.a	a7,[a15]12
+.L248:
+	jne.a	a7,a5,.L24
+.L249:
+	jnz.a	a2,.L25
+.L250:
+	st.a	next_timeout,a6
+.L251:
+	j	.L26
+.L25:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   333        } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   334          prev_t->next = t->next;
+	st.a	[a2],a6
+.L26:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   335        }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   336        memp_free(MEMP_SYS_TIMEOUT, t);
+	mov	d4,#6
+	mov.aa	a4,a15
+.L201:
+	j	memp_free
+.L24:
+.L23:
+	mov.aa	a2,a15
+.L252:
+	mov.aa	a15,a6
+.L253:
+	jnz.a	a6,.L22
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   337        return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   338      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   339    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   340    return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   341  }
+.L21:
+	ret
+.L142:
+	
+__sys_untimeout_function_end:
+	.size	sys_untimeout,__sys_untimeout_function_end-sys_untimeout
+.L80:
+	; End of function
+	
+	.sdecl	'.text.timeouts.sys_check_timeouts',code,cluster('sys_check_timeouts')
+	.sect	'.text.timeouts.sys_check_timeouts'
+	.align	2
+	
+	.global	sys_check_timeouts
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   342  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   343  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   344   * @ingroup lwip_nosys
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   345   * Handle timeouts for NO_SYS==1 (i.e. without using
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   346   * tcpip_thread/sys_timeouts_mbox_fetch(). Uses sys_now() to call timeout
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   347   * handler functions when timeouts expire.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   348   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   349   * Must be called periodically from your main loop.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   350   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   351  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   352  sys_check_timeouts(void)
+; Function sys_check_timeouts
+.L57:
+sys_check_timeouts:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   353  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   354    u32_t now;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   355  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   356    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   357  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   358    /* Process only timers expired at the start of the function. */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   359    now = sys_now();
+	call	sys_now
+.L203:
+	mov	d8,d2
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   360  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   361    do {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   362      struct sys_timeo *tmptimeout;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   363      sys_timeout_handler handler;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   364      void *arg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   365  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   366      PBUF_CHECK_FREE_OOSEQ();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   367  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   368      tmptimeout = next_timeout;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   369      if (tmptimeout == NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   370        return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   371      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   372  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   373      if (TIME_LESS_THAN(now, tmptimeout->time)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   374        return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   375      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   376  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   377      /* Timeout has expired */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   378      next_timeout = tmptimeout->next;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   379      handler = tmptimeout->h;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   380      arg = tmptimeout->arg;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   381      current_timeout_due_time = tmptimeout->time;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   382  #if LWIP_DEBUG_TIMERNAMES
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   383      if (handler != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   384        LWIP_DEBUGF(TIMERS_DEBUG, ("sct calling h=%s t=%"U32_F" arg=%p\n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   385                                   tmptimeout->handler_name, sys_now() - tmptimeout->time, arg));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   386      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   387  #endif /* LWIP_DEBUG_TIMERNAMES */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   388      memp_free(MEMP_SYS_TIMEOUT, tmptimeout);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   389      if (handler != NULL) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   390        handler(arg);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   391      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   392      LWIP_TCPIP_THREAD_ALIVE();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   393  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   394      /* Repeat until all expired timers have been called */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   395    } while (1);
+.L28:
+.L29:
+	ld.bu	d15,pbuf_free_ooseq_pending
+	jeq	d15,#0,.L30
+	call	pbuf_free_ooseq
+.L30:
+	ld.a	a4,next_timeout
+.L204:
+	jz.a	a4,.L31
+.L268:
+	ld.w	d15,[a4]4
+	ld.w	d1,.6.cnt
+	sub	d0,d8,d15
+.L269:
+	jlt.u	d1,d0,.L32
+.L270:
+	ld.a	a15,[a4]
+.L271:
+	st.a	next_timeout,a15
+.L272:
+	mov	d4,#6
+.L273:
+	ld.a	a15,[a4]8
+.L206:
+	ld.a	a12,[a4]12
+.L207:
+	st.w	current_timeout_due_time,d15
+.L274:
+	call	memp_free
+.L205:
+	jz.a	a15,.L29
+.L275:
+	mov.aa	a4,a12
+.L208:
+	calli	a15
+.L154:
+	j	.L28
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   396  }
+.L32:
+.L31:
+	ret
+.L152:
+	
+__sys_check_timeouts_function_end:
+	.size	sys_check_timeouts,__sys_check_timeouts_function_end-sys_check_timeouts
+.L90:
+	; End of function
+	
+	.sdecl	'.text.timeouts.sys_restart_timeouts',code,cluster('sys_restart_timeouts')
+	.sect	'.text.timeouts.sys_restart_timeouts'
+	.align	2
+	
+	.global	sys_restart_timeouts
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   397  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   398  /** Rebase the timeout times to the current time.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   399   * This is necessary if sys_check_timeouts() hasn't been called for a long
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   400   * time (e.g. while saving energy) to prevent all timer functions of that
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   401   * period being called.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   402   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   403  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   404  sys_restart_timeouts(void)
+; Function sys_restart_timeouts
+.L59:
+sys_restart_timeouts:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   405  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   406    u32_t now;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   407    u32_t base;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   408    struct sys_timeo *t;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   409  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   410    if (next_timeout == NULL) {
+	ld.w	d15,next_timeout
+.L258:
+	jeq	d15,#0,.L33
+.L259:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   411      return;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   412    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   413  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   414    now = sys_now();
+	call	sys_now
+.L209:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   415    base = next_timeout->time;
+	ld.a	a15,next_timeout
+.L210:
+	ld.w	d1,[a15]4
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   416  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   417    for (t = next_timeout; t != NULL; t = t->next) {
+.L34:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   418      t->time = (t->time - base) + now;
+	ld.w	d15,[a15]4
+.L260:
+	sub	d0,d15,d1
+.L261:
+	add	d0,d2
+	st.w	[a15]4,d0
+.L262:
+	ld.a	a15,[a15]
+.L263:
+	jnz.a	a15,.L34
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   419    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   420  }
+.L33:
+	ret
+.L148:
+	
+__sys_restart_timeouts_function_end:
+	.size	sys_restart_timeouts,__sys_restart_timeouts_function_end-sys_restart_timeouts
+.L85:
+	; End of function
+	
+	.sdecl	'.text.timeouts.sys_timeouts_sleeptime',code,cluster('sys_timeouts_sleeptime')
+	.sect	'.text.timeouts.sys_timeouts_sleeptime'
+	.align	2
+	
+	.global	sys_timeouts_sleeptime
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   421  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   422  /** Return the time left before the next timeout is due. If no timeouts are
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   423   * enqueued, returns 0xffffffff
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   424   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   425  u32_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   426  sys_timeouts_sleeptime(void)
+; Function sys_timeouts_sleeptime
+.L61:
+sys_timeouts_sleeptime:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   427  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   428    u32_t now;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   429  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   430    LWIP_ASSERT_CORE_LOCKED();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   431  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   432    if (next_timeout == NULL) {
+	ld.w	d15,next_timeout
+.L280:
+	jne	d15,#0,.L35
+.L281:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   433      return SYS_TIMEOUTS_SLEEPTIME_INFINITE;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   434    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   435    now = sys_now();
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   436    if (TIME_LESS_THAN(next_timeout->time, now)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   437      return 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   438    } else {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   439      u32_t ret = (u32_t)(next_timeout->time - now);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   440      LWIP_ASSERT("invalid sleeptime", ret <= LWIP_MAX_TIMEOUT);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   441      return ret;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   442    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   443  }
+	mov	d2,#-1
+	ret
+.L35:
+	call	sys_now
+.L211:
+	ld.a	a15,next_timeout
+	ld.w	d0,.6.cnt
+	ld.w	d15,[a15]4
+	sub	d2,d15,d2
+.L212:
+	ge.u	d15,d0,d2
+.L282:
+	cmovn	d2,d15,#0
+	ret
+.L158:
+	
+__sys_timeouts_sleeptime_function_end:
+	.size	sys_timeouts_sleeptime,__sys_timeouts_sleeptime_function_end-sys_timeouts_sleeptime
+.L95:
+	; End of function
+	
+	.sdecl	'.rodata.timeouts.lwip_cyclic_timers',data,rom,cluster('lwip_cyclic_timers')
+	.sect	'.rodata.timeouts.lwip_cyclic_timers'
+	.global	lwip_cyclic_timers
+	.align	4
+lwip_cyclic_timers:	.type	object
+	.size	lwip_cyclic_timers,24
+	.word	250,tcp_tmr,1000,ip_reass_tmr
+	.word	1000,etharp_tmr
+	.sdecl	'.zrodata.timeouts.lwip_num_cyclic_timers',data,rom,cluster('lwip_num_cyclic_timers')
+	.sect	'.zrodata.timeouts.lwip_num_cyclic_timers'
+	.global	lwip_num_cyclic_timers
+	.align	2
+lwip_num_cyclic_timers:	.type	object
+	.size	lwip_num_cyclic_timers,4
+	.word	3
+	.sdecl	'.zbss.timeouts.next_timeout',data,cluster('next_timeout')
+	.sect	'.zbss.timeouts.next_timeout'
+	.align	4
+next_timeout:	.type	object
+	.size	next_timeout,4
+	.space	4
+	.sdecl	'.zbss.timeouts.current_timeout_due_time',data,cluster('current_timeout_due_time')
+	.sect	'.zbss.timeouts.current_timeout_due_time'
+	.align	2
+current_timeout_due_time:	.type	object
+	.size	current_timeout_due_time,4
+	.space	4
+	.sdecl	'.zbss.timeouts.tcpip_tcp_timer_active',data,cluster('tcpip_tcp_timer_active')
+	.sect	'.zbss.timeouts.tcpip_tcp_timer_active'
+	.align	2
+tcpip_tcp_timer_active:	.type	object
+	.size	tcpip_tcp_timer_active,4
+	.space	4
+	.sdecl	'.rodata.timeouts..1.str',data,rom
+	.sect	'.rodata.timeouts..1.str'
+.1.str:	.type	object
+	.size	.1.str,40
+	.byte	65,115,115,101
+	.byte	114,116,105,111
+	.byte	110,32,34,37
+	.byte	115,34,32,102
+	.byte	97,105,108,101
+	.byte	100,32,97,116
+	.byte	32,108,105,110
+	.byte	101,32,37,100
+	.byte	32,105,110,32
+	.byte	37,115,10
+	.space	1
+	.sdecl	'.rodata.timeouts..2.str',data,rom
+	.sect	'.rodata.timeouts..2.str'
+.2.str:	.type	object
+	.size	.2.str,61
+	.byte	115,121,115,95
+	.byte	116,105,109,101
+	.byte	111,117,116,58
+	.byte	32,116,105,109
+	.byte	101,111,117,116
+	.byte	32,33,61,32
+	.byte	78,85,76,76
+	.byte	44,32,112,111
+	.byte	111,108,32,77
+	.byte	69,77,80,95
+	.byte	83,89,83,95
+	.byte	84,73,77,69
+	.byte	79,85,84,32
+	.byte	105,115,32,101
+	.byte	109,112,116,121
+	.space	1
+	.sdecl	'.rodata.timeouts..3.str',data,rom
+	.sect	'.rodata.timeouts..3.str'
+.3.str:	.type	object
+	.size	.3.str,51
+	.byte	46,46,92,48
+	.byte	95,83,114,99
+	.byte	92,48,95,65
+	.byte	112,112,83,119
+	.byte	92,69,116,104
+	.byte	101,114,110,101
+	.byte	116,92,108,119
+	.byte	105,112,92,115
+	.byte	114,99,92,99
+	.byte	111,114,101,92
+	.byte	116,105,109,101
+	.byte	111,117,116,115
+	.byte	46,99
+	.space	1
+	.sdecl	'.rodata.timeouts..4.str',data,rom
+	.sect	'.rodata.timeouts..4.str'
+.4.str:	.type	object
+	.size	.4.str,54
+	.byte	84,105,109,101
+	.byte	111,117,116,32
+	.byte	116,105,109,101
+	.byte	32,116,111,111
+	.byte	32,108,111,110
+	.byte	103,44,32,109
+	.byte	97,120,32,105
+	.byte	115,32,76,87
+	.byte	73,80,95,85
+	.byte	73,78,84,51
+	.byte	50,95,77,65
+	.byte	88,47,52,32
+	.byte	109,115,101,99
+	.byte	115
+	.space	1
+	.calls	'__INDIRECT__','tcp_tmr'
+	.calls	'__INDIRECT__','ip_reass_tmr'
+	.calls	'__INDIRECT__','etharp_tmr'
+	.calls	'__INDIRECT__','tcpip_tcp_timer'
+	.calls	'__INDIRECT__','lwip_cyclic_timer'
+	.calls	'tcpip_tcp_timer','tcp_tmr'
+	.calls	'tcpip_tcp_timer','sys_timeout'
+	.calls	'tcp_timer_needed','sys_timeout'
+	.calls	'sys_timeout_abs','memp_malloc'
+	.calls	'sys_timeout_abs','Ifx_Lwip_printf'
+	.calls	'lwip_cyclic_timer','__INDIRECT__'
+	.calls	'lwip_cyclic_timer','sys_now'
+	.calls	'lwip_cyclic_timer','sys_timeout_abs'
+	.calls	'sys_timeouts_init','sys_timeout'
+	.calls	'sys_timeout','Ifx_Lwip_printf'
+	.calls	'sys_timeout','sys_now'
+	.calls	'sys_timeout','sys_timeout_abs'
+	.calls	'sys_untimeout','memp_free'
+	.calls	'sys_check_timeouts','sys_now'
+	.calls	'sys_check_timeouts','pbuf_free_ooseq'
+	.calls	'sys_check_timeouts','memp_free'
+	.calls	'sys_check_timeouts','__INDIRECT__'
+	.calls	'sys_restart_timeouts','sys_now'
+	.calls	'sys_timeouts_sleeptime','sys_now'
+	.calls	'tcpip_tcp_timer','.cocofun_8'
+	.calls	'tcp_timer_needed','.cocofun_8'
+	.calls	'tcpip_tcp_timer','',0
+	.calls	'.cocofun_8','',0
+	.calls	'tcp_timer_needed','',0
+	.calls	'sys_timeout_abs','',16
+	.calls	'lwip_cyclic_timer','',0
+	.calls	'sys_timeouts_init','',0
+	.calls	'sys_timeout','',16
+	.calls	'sys_untimeout','',0
+	.calls	'sys_check_timeouts','',0
+	.calls	'sys_restart_timeouts','',0
+	.extern	Ifx_Lwip_printf
+	.extern	pbuf_free_ooseq_pending
+	.extern	pbuf_free_ooseq
+	.extern	memp_malloc
+	.extern	memp_free
+	.extern	tcp_tmr
+	.extern	tcp_active_pcbs
+	.extern	tcp_tw_pcbs
+	.extern	ip_reass_tmr
+	.extern	etharp_tmr
+	.extern	sys_now
+	.extern	__INDIRECT__
+	.calls	'sys_timeouts_sleeptime','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L63:
+	.word	5050
+	.half	3
+	.word	.L64
+	.byte	4
+.L62:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L65
+.L178:
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	170
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	177
+	.byte	0
+.L132:
+	.byte	2
+	.byte	'unsigned int',0,4,7,6
+	.word	219
+	.byte	7
+	.word	219
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	235
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	240
+	.byte	9
+	.byte	'value',0
+	.word	219
+	.byte	9
+	.byte	'compare',0
+	.word	219
+	.byte	0,2
+	.byte	'char',0,1,6,2
+	.byte	'char',0,1,6,3
+	.word	305
+	.byte	7
+	.word	313
+	.byte	10
+	.byte	'Ifx_Lwip_printf',0,1,123,6
+	.word	297
+	.byte	1,1,1,1,11
+	.byte	's',0,1,123,34
+	.word	318
+	.byte	12,1,123,37,0
+.L135:
+	.byte	2
+	.byte	'unsigned long int',0,4,7,13
+	.byte	'void',0
+.L139:
+	.byte	7
+	.word	387
+	.byte	14,1,1,5
+	.word	393
+	.byte	0,7
+	.word	398
+	.byte	7
+	.word	398
+.L137:
+	.byte	15
+	.byte	'sys_timeout_handler',0,2,91,17
+	.word	412
+	.byte	16
+	.byte	'sys_timeo',0,2,93,8,16,17
+	.byte	'next',0
+	.word	.L145-.L63
+	.byte	4,2,35,0,17
+	.byte	'time',0
+	.word	366
+	.byte	4,2,35,4,17
+	.byte	'h',0
+	.word	417
+	.byte	4,2,35,8,17
+	.byte	'arg',0
+	.word	393
+	.byte	4,2,35,12,0
+.L145:
+	.byte	7
+	.word	445
+	.byte	18
+	.byte	'pbuf_free_ooseq',0,3,131,2,6,1,1,1,1,19,4,52,9,1,20
+	.byte	'MEMP_UDP_PCB',0,0,20
+	.byte	'MEMP_TCP_PCB',0,1,20
+	.byte	'MEMP_TCP_PCB_LISTEN',0,2,20
+	.byte	'MEMP_TCP_SEG',0,3,20
+	.byte	'MEMP_REASSDATA',0,4,20
+	.byte	'MEMP_FRAG_PBUF',0,5,20
+	.byte	'MEMP_SYS_TIMEOUT',0,6,20
+	.byte	'MEMP_PBUF',0,7,20
+	.byte	'MEMP_PBUF_POOL',0,8,20
+	.byte	'MEMP_MAX',0,9,0,10
+	.byte	'memp_malloc',0,4,147,1,7
+	.word	393
+	.byte	1,1,1,1,11
+	.byte	'type',0,4,147,1,26
+	.word	543
+	.byte	0,21
+	.byte	'memp_free',0,4,149,1,7,1,1,1,1,11
+	.byte	'type',0,4,149,1,24
+	.word	543
+	.byte	11
+	.byte	'mem',0,4,149,1,36
+	.word	393
+	.byte	0,18
+	.byte	'tcp_tmr',0,5,62,18,1,1,1,1,18
+	.byte	'ip_reass_tmr',0,6,71,6,1,1,1,1,18
+	.byte	'etharp_tmr',0,7,77,6,1,1,1,1,22
+	.byte	'sys_now',0,8,190,3,7
+	.word	366
+	.byte	1,1,1,1,23,1,1,7
+	.word	873
+	.byte	15
+	.byte	'lwip_cyclic_timer_handler',0,2,66,17
+	.word	876
+	.byte	16
+	.byte	'lwip_cyclic_timer',0,2,70,8,8,17
+	.byte	'interval_ms',0
+	.word	366
+	.byte	4,2,35,0,17
+	.byte	'handler',0
+	.word	881
+	.byte	4,2,35,4,0,3
+	.word	915
+.L174:
+	.byte	7
+	.word	977
+	.byte	7
+	.word	873
+	.byte	24
+	.byte	'__INDIRECT__',0,9,1,1,1,1,1,2
+	.byte	'short int',0,2,5,15
+	.byte	'__wchar_t',0,9,1,1
+	.word	1012
+	.byte	15
+	.byte	'__size_t',0,9,1,1
+	.word	219
+	.byte	15
+	.byte	'__ptrdiff_t',0,9,1,1
+	.word	170
+	.byte	25,1,7
+	.word	1080
+	.byte	15
+	.byte	'__codeptr',0,9,1,1
+	.word	1082
+	.byte	15
+	.byte	'__intptr_t',0,9,1,1
+	.word	170
+	.byte	15
+	.byte	'__uintptr_t',0,9,1,1
+	.word	219
+	.byte	2
+	.byte	'unsigned char',0,1,8,15
+	.byte	'uint8',0,10,108,29
+	.word	1144
+	.byte	2
+	.byte	'unsigned short int',0,2,7,15
+	.byte	'uint16',0,10,112,29
+	.word	1175
+	.byte	15
+	.byte	'uint32',0,10,116,29
+	.word	366
+	.byte	15
+	.byte	'sint8',0,10,125,29
+	.word	297
+	.byte	15
+	.byte	'sint16',0,10,129,1,29
+	.word	1012
+	.byte	2
+	.byte	'long int',0,4,5,15
+	.byte	'sint32',0,10,134,1,29
+	.word	1257
+	.byte	2
+	.byte	'long long int',0,8,5,15
+	.byte	'sint64',0,10,141,1,29
+	.word	1285
+	.byte	2
+	.byte	'float',0,4,4,15
+	.byte	'float32',0,10,170,1,29
+	.word	1318
+	.byte	15
+	.byte	'pvoid',0,11,54,28
+	.word	393
+	.byte	15
+	.byte	'Ifx_TickTime',0,11,76,28
+	.word	1285
+	.byte	15
+	.byte	'u8_t',0,1,85,16
+	.word	1144
+	.byte	15
+	.byte	'u16_t',0,1,86,16
+	.word	1175
+	.byte	15
+	.byte	'u32_t',0,1,87,16
+	.word	366
+	.byte	15
+	.byte	's8_t',0,1,88,16
+	.word	297
+	.byte	15
+	.byte	's16_t',0,1,89,16
+	.word	1012
+	.byte	15
+	.byte	'intmax_t',0,12,198,2,41
+	.word	1285
+	.byte	15
+	.byte	'err_t',0,13,96,14
+	.word	297
+	.byte	26,24
+	.word	915
+	.byte	27,2,0
+.L176:
+	.byte	3
+	.word	1479
+.L177:
+	.byte	3
+	.word	170
+	.byte	15
+	.byte	'tcpwnd_size_t',0,14,53,15
+	.word	1175
+	.byte	15
+	.byte	'mem_size_t',0,15,67,15
+	.word	1175
+	.byte	16
+	.byte	'pbuf',0,3,186,1,8,16,17
+	.byte	'next',0
+	.word	.L213-.L63
+	.byte	4,2,35,0,17
+	.byte	'payload',0
+	.word	393
+	.byte	4,2,35,4,17
+	.byte	'tot_len',0
+	.word	1175
+	.byte	2,2,35,8,17
+	.byte	'len',0
+	.word	1175
+	.byte	2,2,35,10,17
+	.byte	'type_internal',0
+	.word	1144
+	.byte	1,2,35,12,17
+	.byte	'flags',0
+	.word	1144
+	.byte	1,2,35,13,17
+	.byte	'ref',0
+	.word	1144
+	.byte	1,2,35,14,17
+	.byte	'if_idx',0
+	.word	1144
+	.byte	1,2,35,15,0
+.L213:
+	.byte	7
+	.word	1539
+	.byte	14,1,1,5
+	.word	1679
+	.byte	0,7
+	.word	1684
+	.byte	15
+	.byte	'pbuf_free_custom_fn',0,3,242,1,16
+	.word	1693
+	.byte	6
+	.word	1144
+	.byte	28
+	.byte	'pbuf_free_ooseq_pending',0,3,130,2,22
+	.word	1727
+	.byte	1,1,16
+	.byte	'ip4_addr',0,16,51,8,4,17
+	.byte	'addr',0
+	.word	366
+	.byte	4,2,35,0,0,15
+	.byte	'ip4_addr_t',0,16,57,25
+	.word	1767
+	.byte	15
+	.byte	'ip_addr_t',0,17,142,2,20
+	.word	1767
+	.byte	15
+	.byte	'memp_t',0,4,56,3
+	.word	543
+	.byte	3
+	.word	1767
+	.byte	7
+	.word	1849
+	.byte	29
+	.word	297
+	.byte	1,1,5
+	.word	.L214-.L63
+	.byte	5
+	.word	1679
+	.byte	5
+	.word	1854
+	.byte	0,7
+	.word	1859
+	.byte	15
+	.byte	'netif_output_fn',0,18,189,1,17
+	.word	1882
+	.byte	29
+	.word	297
+	.byte	1,1,5
+	.word	.L214-.L63
+	.byte	5
+	.word	1679
+	.byte	0,7
+	.word	1912
+	.byte	15
+	.byte	'netif_linkoutput_fn',0,18,212,1,17
+	.word	1930
+	.byte	26,6
+	.word	1144
+	.byte	27,5,0,26,2
+	.word	305
+	.byte	27,1,0,16
+	.byte	'netif',0,18,132,2,8,48,17
+	.byte	'next',0
+	.word	.L214-.L63
+	.byte	4,2,35,0,17
+	.byte	'ip_addr',0
+	.word	1767
+	.byte	4,2,35,4,17
+	.byte	'netmask',0
+	.word	1767
+	.byte	4,2,35,8,17
+	.byte	'gw',0
+	.word	1767
+	.byte	4,2,35,12,17
+	.byte	'input',0
+	.word	.L215-.L63
+	.byte	4,2,35,16,17
+	.byte	'output',0
+	.word	1887
+	.byte	4,2,35,20,17
+	.byte	'linkoutput',0
+	.word	1935
+	.byte	4,2,35,24,17
+	.byte	'state',0
+	.word	393
+	.byte	4,2,35,28,17
+	.byte	'mtu',0
+	.word	1175
+	.byte	2,2,35,32,17
+	.byte	'hwaddr',0
+	.word	1964
+	.byte	6,2,35,34,17
+	.byte	'hwaddr_len',0
+	.word	1144
+	.byte	1,2,35,40,17
+	.byte	'flags',0
+	.word	1144
+	.byte	1,2,35,41,17
+	.byte	'name',0
+	.word	1973
+	.byte	2,2,35,42,17
+	.byte	'num',0
+	.word	1144
+	.byte	1,2,35,44,17
+	.byte	'rs_count',0
+	.word	1144
+	.byte	1,2,35,45,0
+.L214:
+	.byte	7
+	.word	1982
+	.byte	29
+	.word	297
+	.byte	1,1,5
+	.word	1679
+	.byte	5
+	.word	2230
+	.byte	0,7
+	.word	2235
+.L215:
+	.byte	15
+	.byte	'netif_input_fn',0,18,178,1,17
+	.word	2253
+	.byte	7
+	.word	2235
+	.byte	7
+	.word	1859
+	.byte	7
+	.word	1912
+	.byte	16
+	.byte	'link_changed_s',0,18,213,4,10,1,17
+	.byte	'state',0
+	.word	1144
+	.byte	1,2,35,0,0,16
+	.byte	'status_changed_s',0,18,219,4,10,1,17
+	.byte	'state',0
+	.word	1144
+	.byte	1,2,35,0,0,3
+	.word	1767
+	.byte	7
+	.word	2373
+	.byte	16
+	.byte	'ipv4_changed_s',0,18,225,4,10,12,17
+	.byte	'old_address',0
+	.word	2378
+	.byte	4,2,35,0,17
+	.byte	'old_netmask',0
+	.word	2378
+	.byte	4,2,35,4,17
+	.byte	'old_gw',0
+	.word	2378
+	.byte	4,2,35,8,0,16
+	.byte	'ipv6_set_s',0,18,233,4,10,8,17
+	.byte	'addr_index',0
+	.word	297
+	.byte	1,2,35,0,17
+	.byte	'old_address',0
+	.word	2378
+	.byte	4,2,35,4,0,16
+	.byte	'ipv6_addr_state_changed_s',0,18,241,4,10,8,17
+	.byte	'addr_index',0
+	.word	297
+	.byte	1,2,35,0,17
+	.byte	'old_state',0
+	.word	1144
+	.byte	1,2,35,1,17
+	.byte	'address',0
+	.word	2378
+	.byte	4,2,35,4,0,30,18,210,4,9,12,17
+	.byte	'link_changed',0
+	.word	2297
+	.byte	1,2,35,0,17
+	.byte	'status_changed',0
+	.word	2334
+	.byte	1,2,35,0,17
+	.byte	'ipv4_changed',0
+	.word	2383
+	.byte	12,2,35,0,17
+	.byte	'ipv6_set',0
+	.word	2463
+	.byte	8,2,35,0,17
+	.byte	'ipv6_addr_state_changed',0
+	.word	2522
+	.byte	8,2,35,0,0,3
+	.word	2611
+	.byte	7
+	.word	2737
+	.byte	14,1,1,5
+	.word	2230
+	.byte	5
+	.word	1175
+	.byte	5
+	.word	2742
+	.byte	0,7
+	.word	2747
+	.byte	15
+	.byte	'netif_ext_callback_fn',0,18,132,5,16
+	.word	2766
+	.byte	16
+	.byte	'ip4_addr_packed',0,19,53,8,4,17
+	.byte	'addr',0
+	.word	366
+	.byte	4,2,35,0,0,15
+	.byte	'ip4_addr_p_t',0,19,61,32
+	.word	2802
+	.byte	31
+	.byte	'tcp_state',0,14,56,6,1,20
+	.byte	'CLOSED',0,0,20
+	.byte	'LISTEN',0,1,20
+	.byte	'SYN_SENT',0,2,20
+	.byte	'SYN_RCVD',0,3,20
+	.byte	'ESTABLISHED',0,4,20
+	.byte	'FIN_WAIT_1',0,5,20
+	.byte	'FIN_WAIT_2',0,6,20
+	.byte	'CLOSE_WAIT',0,7,20
+	.byte	'CLOSING',0,8,20
+	.byte	'LAST_ACK',0,9,20
+	.byte	'TIME_WAIT',0,10,0,16
+	.byte	'tcp_hdr',0,21,56,8,20,17
+	.byte	'src',0
+	.word	1175
+	.byte	2,2,35,0,17
+	.byte	'dest',0
+	.word	1175
+	.byte	2,2,35,2,17
+	.byte	'seqno',0
+	.word	366
+	.byte	4,2,35,4,17
+	.byte	'ackno',0
+	.word	366
+	.byte	4,2,35,8,17
+	.byte	'_hdrlen_rsvd_flags',0
+	.word	1175
+	.byte	2,2,35,12,17
+	.byte	'wnd',0
+	.word	1175
+	.byte	2,2,35,14,17
+	.byte	'chksum',0
+	.word	1175
+	.byte	2,2,35,16,17
+	.byte	'urgp',0
+	.word	1175
+	.byte	2,2,35,18,0,7
+	.word	3001
+	.byte	16
+	.byte	'tcp_seg',0,5,253,1,8,20,17
+	.byte	'next',0
+	.word	.L216-.L63
+	.byte	4,2,35,0,17
+	.byte	'p',0
+	.word	1679
+	.byte	4,2,35,4,17
+	.byte	'len',0
+	.word	1175
+	.byte	2,2,35,8,17
+	.byte	'oversize_left',0
+	.word	1175
+	.byte	2,2,35,10,17
+	.byte	'flags',0
+	.word	1144
+	.byte	1,2,35,12,17
+	.byte	'tcphdr',0
+	.word	3143
+	.byte	4,2,35,16,0
+.L216:
+	.byte	7
+	.word	3148
+	.byte	16
+	.byte	'tcp_pcb_listen',0,20,223,1,8,28,17
+	.byte	'local_ip',0
+	.word	1767
+	.byte	4,2,35,0,17
+	.byte	'remote_ip',0
+	.word	1767
+	.byte	4,2,35,4,17
+	.byte	'netif_idx',0
+	.word	1144
+	.byte	1,2,35,8,17
+	.byte	'so_options',0
+	.word	1144
+	.byte	1,2,35,9,17
+	.byte	'tos',0
+	.word	1144
+	.byte	1,2,35,10,17
+	.byte	'ttl',0
+	.word	1144
+	.byte	1,2,35,11,17
+	.byte	'next',0
+	.word	.L217-.L63
+	.byte	4,2,35,12,17
+	.byte	'callback_arg',0
+	.word	393
+	.byte	4,2,35,16,17
+	.byte	'state',0
+	.word	2859
+	.byte	1,2,35,20,17
+	.byte	'prio',0
+	.word	1144
+	.byte	1,2,35,21,17
+	.byte	'local_port',0
+	.word	1175
+	.byte	2,2,35,22,17
+	.byte	'accept',0
+	.word	.L218-.L63
+	.byte	4,2,35,24,0
+.L217:
+	.byte	7
+	.word	3260
+	.byte	29
+	.word	297
+	.byte	1,1,5
+	.word	393
+	.byte	5
+	.word	.L219-.L63
+	.byte	5
+	.word	1175
+	.byte	0,7
+	.word	3490
+	.byte	15
+	.byte	'tcp_sent_fn',0,20,96,17
+	.word	3513
+	.byte	29
+	.word	297
+	.byte	1,1,5
+	.word	393
+	.byte	5
+	.word	.L219-.L63
+	.byte	5
+	.word	1679
+	.byte	5
+	.word	297
+	.byte	0,7
+	.word	3538
+	.byte	15
+	.byte	'tcp_recv_fn',0,20,82,17
+	.word	3566
+	.byte	15
+	.byte	'tcp_connected_fn',0,20,134,1,17
+	.word	.L220-.L63
+	.byte	29
+	.word	297
+	.byte	1,1,5
+	.word	393
+	.byte	5
+	.word	.L219-.L63
+	.byte	0,7
+	.word	3617
+	.byte	15
+	.byte	'tcp_poll_fn',0,20,108,17
+	.word	3635
+	.byte	14,1,1,5
+	.word	393
+	.byte	5
+	.word	297
+	.byte	0,7
+	.word	3660
+	.byte	15
+	.byte	'tcp_err_fn',0,20,120,17
+	.word	3674
+	.byte	16
+	.byte	'tcp_pcb',0,20,242,1,8,156,1,17
+	.byte	'local_ip',0
+	.word	1767
+	.byte	4,2,35,0,17
+	.byte	'remote_ip',0
+	.word	1767
+	.byte	4,2,35,4,17
+	.byte	'netif_idx',0
+	.word	1144
+	.byte	1,2,35,8,17
+	.byte	'so_options',0
+	.word	1144
+	.byte	1,2,35,9,17
+	.byte	'tos',0
+	.word	1144
+	.byte	1,2,35,10,17
+	.byte	'ttl',0
+	.word	1144
+	.byte	1,2,35,11,17
+	.byte	'next',0
+	.word	.L219-.L63
+	.byte	4,2,35,12,17
+	.byte	'callback_arg',0
+	.word	393
+	.byte	4,2,35,16,17
+	.byte	'state',0
+	.word	2859
+	.byte	1,2,35,20,17
+	.byte	'prio',0
+	.word	1144
+	.byte	1,2,35,21,17
+	.byte	'local_port',0
+	.word	1175
+	.byte	2,2,35,22,17
+	.byte	'remote_port',0
+	.word	1175
+	.byte	2,2,35,24,17
+	.byte	'flags',0
+	.word	1175
+	.byte	2,2,35,26,17
+	.byte	'polltmr',0
+	.word	1144
+	.byte	1,2,35,28,17
+	.byte	'pollinterval',0
+	.word	1144
+	.byte	1,2,35,29,17
+	.byte	'last_timer',0
+	.word	1144
+	.byte	1,2,35,30,17
+	.byte	'tmr',0
+	.word	366
+	.byte	4,2,35,32,17
+	.byte	'rcv_nxt',0
+	.word	366
+	.byte	4,2,35,36,17
+	.byte	'rcv_wnd',0
+	.word	1175
+	.byte	2,2,35,40,17
+	.byte	'rcv_ann_wnd',0
+	.word	1175
+	.byte	2,2,35,42,17
+	.byte	'rcv_ann_right_edge',0
+	.word	366
+	.byte	4,2,35,44,17
+	.byte	'rtime',0
+	.word	1012
+	.byte	2,2,35,48,17
+	.byte	'mss',0
+	.word	1175
+	.byte	2,2,35,50,17
+	.byte	'rttest',0
+	.word	366
+	.byte	4,2,35,52,17
+	.byte	'rtseq',0
+	.word	366
+	.byte	4,2,35,56,17
+	.byte	'sa',0
+	.word	1012
+	.byte	2,2,35,60,17
+	.byte	'sv',0
+	.word	1012
+	.byte	2,2,35,62,17
+	.byte	'rto',0
+	.word	1012
+	.byte	2,2,35,64,17
+	.byte	'nrtx',0
+	.word	1144
+	.byte	1,2,35,66,17
+	.byte	'dupacks',0
+	.word	1144
+	.byte	1,2,35,67,17
+	.byte	'lastack',0
+	.word	366
+	.byte	4,2,35,68,17
+	.byte	'cwnd',0
+	.word	1175
+	.byte	2,2,35,72,17
+	.byte	'ssthresh',0
+	.word	1175
+	.byte	2,2,35,74,17
+	.byte	'rto_end',0
+	.word	366
+	.byte	4,2,35,76,17
+	.byte	'snd_nxt',0
+	.word	366
+	.byte	4,2,35,80,17
+	.byte	'snd_wl1',0
+	.word	366
+	.byte	4,2,35,84,17
+	.byte	'snd_wl2',0
+	.word	366
+	.byte	4,2,35,88,17
+	.byte	'snd_lbb',0
+	.word	366
+	.byte	4,2,35,92,17
+	.byte	'snd_wnd',0
+	.word	1175
+	.byte	2,2,35,96,17
+	.byte	'snd_wnd_max',0
+	.word	1175
+	.byte	2,2,35,98,17
+	.byte	'snd_buf',0
+	.word	1175
+	.byte	2,2,35,100,17
+	.byte	'snd_queuelen',0
+	.word	1175
+	.byte	2,2,35,102,17
+	.byte	'unsent_oversize',0
+	.word	1175
+	.byte	2,2,35,104,17
+	.byte	'bytes_acked',0
+	.word	1175
+	.byte	2,2,35,106,17
+	.byte	'unsent',0
+	.word	3255
+	.byte	4,2,35,108,17
+	.byte	'unacked',0
+	.word	3255
+	.byte	4,2,35,112,17
+	.byte	'ooseq',0
+	.word	3255
+	.byte	4,2,35,116,17
+	.byte	'refused_data',0
+	.word	1679
+	.byte	4,2,35,120,17
+	.byte	'listener',0
+	.word	3485
+	.byte	4,2,35,124,17
+	.byte	'sent',0
+	.word	3518
+	.byte	4,3,35,128,1,17
+	.byte	'recv',0
+	.word	3571
+	.byte	4,3,35,132,1,17
+	.byte	'connected',0
+	.word	3591
+	.byte	4,3,35,136,1,17
+	.byte	'poll',0
+	.word	3640
+	.byte	4,3,35,140,1,17
+	.byte	'errf',0
+	.word	3679
+	.byte	4,3,35,144,1,17
+	.byte	'keep_idle',0
+	.word	366
+	.byte	4,3,35,148,1,17
+	.byte	'persist_cnt',0
+	.word	1144
+	.byte	1,3,35,152,1,17
+	.byte	'persist_backoff',0
+	.word	1144
+	.byte	1,3,35,153,1,17
+	.byte	'persist_probe',0
+	.word	1144
+	.byte	1,3,35,154,1,17
+	.byte	'keep_cnt_sent',0
+	.word	1144
+	.byte	1,3,35,155,1,0
+.L219:
+	.byte	7
+	.word	3698
+	.byte	29
+	.word	297
+	.byte	1,1,5
+	.word	393
+	.byte	5
+	.word	4760
+	.byte	5
+	.word	297
+	.byte	0
+.L220:
+	.byte	7
+	.word	4765
+.L218:
+	.byte	15
+	.byte	'tcp_accept_fn',0,20,70,17
+	.word	4788
+	.byte	7
+	.word	4765
+	.byte	7
+	.word	3490
+	.byte	7
+	.word	3538
+	.byte	7
+	.word	4765
+	.byte	7
+	.word	3617
+	.byte	7
+	.word	3660
+	.byte	14,1,1,5
+	.word	1144
+	.byte	5
+	.word	393
+	.byte	0,7
+	.word	4845
+	.byte	15
+	.byte	'tcp_extarg_callback_pcb_destroyed_fn',0,20,173,1,16
+	.word	4859
+	.byte	29
+	.word	297
+	.byte	1,1,5
+	.word	1144
+	.byte	5
+	.word	3485
+	.byte	5
+	.word	4760
+	.byte	0,7
+	.word	4910
+	.byte	15
+	.byte	'tcp_extarg_callback_passive_open_fn',0,20,182,1,17
+	.word	4933
+	.byte	15
+	.byte	'tcpflags_t',0,20,206,1,15
+	.word	1175
+	.byte	28
+	.byte	'tcp_active_pcbs',0,5,209,2,24
+	.word	4760
+	.byte	1,1,28
+	.byte	'tcp_tw_pcbs',0,5,212,2,24
+	.word	4760
+	.byte	1,1,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L64:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,11
+	.byte	5,0,3,8,58,15,59,15,57,15,73,19,0,0,12,24,0,58,15,59,15,57,15,0,0,13,59,0,3,8,0,0,14,21,1,54,15,39,12
+	.byte	0,0,15,22,0,3,8,58,15,59,15,57,15,73,19,0,0,16,19,1,3,8,58,15,59,15,57,15,11,15,0,0,17,13,0,3,8,73,19
+	.byte	11,15,56,9,0,0,18,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,19,4,1,58,15,59,15,57,15,11,15
+	.byte	0,0,20,40,0,3,8,28,13,0,0,21,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,22,46,0,3,8,58,15
+	.byte	59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,23,21,0,54,15,39,12,0,0,24,46,0,3,8,58,15,59,15,57,15,54
+	.byte	15,63,12,60,12,0,0,25,21,0,54,15,0,0,26,1,1,11,15,73,19,0,0,27,33,0,47,15,0,0,28,52,0,3,8,58,15,59,15
+	.byte	57,15,73,19,63,12,60,12,0,0,29,21,1,73,19,54,15,39,12,0,0,30,23,1,58,15,59,15,57,15,11,15,0,0,31,4,1,3
+	.byte	8,58,15,59,15,57,15,11,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L65:
+	.word	.L222-.L221
+.L221:
+	.half	3
+	.word	.L224-.L223
+.L223:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot',0
+	.byte	0
+	.byte	'cc.h',0,1,0,0
+	.byte	'timeouts.h',0,2,0,0
+	.byte	'pbuf.h',0,2,0,0
+	.byte	'memp.h',0,2,0,0
+	.byte	'tcp_priv.h',0,3,0,0
+	.byte	'ip4_frag.h',0,2,0,0
+	.byte	'etharp.h',0,2,0,0
+	.byte	'sys.h',0,2,0,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0,0,0,0
+	.byte	'Platform_Types.h',0,4,0,0
+	.byte	'Ifx_Types.h',0,4,0,0
+	.byte	'stdint.h',0,5,0,0
+	.byte	'err.h',0,2,0,0
+	.byte	'tcpbase.h',0,2,0,0
+	.byte	'mem.h',0,2,0,0
+	.byte	'ip4_addr.h',0,2,0,0
+	.byte	'ip_addr.h',0,2,0,0
+	.byte	'netif.h',0,2,0,0
+	.byte	'ip4.h',0,6,0,0
+	.byte	'tcp.h',0,2,0,0
+	.byte	'tcp.h',0,6,0,0,0
+.L224:
+.L222:
+	.sdecl	'.debug_info',debug,cluster('sys_timeouts_init')
+	.sect	'.debug_info'
+.L66:
+	.word	240
+	.half	3
+	.word	.L67
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L69,.L68
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'sys_timeouts_init',0,1,136,2,6,1,1,1
+	.word	.L51,.L131,.L50
+	.byte	4
+	.word	.L51,.L131
+	.byte	5
+	.byte	'i',0,1,138,2,10
+	.word	.L132,.L133
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_timeouts_init')
+	.sect	'.debug_abbrev'
+.L67:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_timeouts_init')
+	.sect	'.debug_line'
+.L68:
+	.word	.L226-.L225
+.L225:
+	.half	3
+	.word	.L228-.L227
+.L227:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0,0,0,0,0
+.L228:
+	.byte	5,71,7,0,5,2
+	.word	.L51
+	.byte	3,142,2,1,5,70,9
+	.half	.L229-.L51
+	.byte	3,125,1,5,38,9
+	.half	.L19-.L229
+	.byte	3,3,1,5,52,9
+	.half	.L230-.L19
+	.byte	1,5,71,9
+	.half	.L231-.L230
+	.byte	1,5,73,9
+	.half	.L232-.L231
+	.byte	3,125,1,5,70,1,5,1,7,9
+	.half	.L233-.L232
+	.byte	3,5,1,7,9
+	.half	.L70-.L233
+	.byte	0,1,1
+.L226:
+	.sdecl	'.debug_ranges',debug,cluster('sys_timeouts_init')
+	.sect	'.debug_ranges'
+.L69:
+	.word	-1,.L51,0,.L70-.L51,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_timeout')
+	.sect	'.debug_info'
+.L71:
+	.word	307
+	.half	3
+	.word	.L72
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L74,.L73
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'sys_timeout',0,1,162,2,1,1,1,1
+	.word	.L53,.L134,.L52
+	.byte	4
+	.byte	'msecs',0,1,162,2,19
+	.word	.L135,.L136
+	.byte	4
+	.byte	'handler',0,1,162,2,46
+	.word	.L137,.L138
+	.byte	4
+	.byte	'arg',0,1,162,2,61
+	.word	.L139,.L140
+	.byte	5
+	.word	.L53,.L134
+	.byte	6
+	.byte	'next_timeout_time',0,1,165,2,9
+	.word	.L135,.L141
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_timeout')
+	.sect	'.debug_abbrev'
+.L72:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_timeout')
+	.sect	'.debug_line'
+.L73:
+	.word	.L235-.L234
+.L234:
+	.half	3
+	.word	.L237-.L236
+.L236:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0,0,0,0,0
+.L237:
+	.byte	5,1,7,0,5,2
+	.word	.L53
+	.byte	3,161,2,1,5,3,3,7,1,5,1,9
+	.half	.L196-.L53
+	.byte	3,121,1,5,3,9
+	.half	.L194-.L196
+	.byte	3,7,1,7,9
+	.half	.L238-.L194
+	.byte	1,5,38,9
+	.half	.L20-.L238
+	.byte	3,2,1,5,41,9
+	.half	.L239-.L20
+	.byte	1,5,47,3,5,1,5,1,9
+	.half	.L75-.L239
+	.byte	3,2,0,1,1
+.L235:
+	.sdecl	'.debug_ranges',debug,cluster('sys_timeout')
+	.sect	'.debug_ranges'
+.L74:
+	.word	-1,.L53,0,.L75-.L53,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_untimeout')
+	.sect	'.debug_info'
+.L76:
+	.word	294
+	.half	3
+	.word	.L77
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L79,.L78
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'sys_untimeout',0,1,189,2,1,1,1,1
+	.word	.L55,.L142,.L54
+	.byte	4
+	.byte	'handler',0,1,189,2,35
+	.word	.L137,.L143
+	.byte	4
+	.byte	'arg',0,1,189,2,50
+	.word	.L139,.L144
+	.byte	5
+	.word	.L55,.L142
+	.byte	6
+	.byte	'prev_t',0,1,191,2,21
+	.word	.L145,.L146
+	.byte	6
+	.byte	't',0,1,191,2,30
+	.word	.L145,.L147
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_untimeout')
+	.sect	'.debug_abbrev'
+.L77:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_untimeout')
+	.sect	'.debug_line'
+.L78:
+	.word	.L241-.L240
+.L240:
+	.half	3
+	.word	.L243-.L242
+.L242:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0,0,0,0,0
+.L243:
+	.byte	5,7,7,0,5,2
+	.word	.L55
+	.byte	3,194,2,1,5,3,9
+	.half	.L202-.L55
+	.byte	1,5,33,7,9
+	.half	.L244-.L202
+	.byte	3,4,1,5,11,9
+	.half	.L22-.L244
+	.byte	3,1,1,5,25,9
+	.half	.L245-.L22
+	.byte	3,4,1,5,9,9
+	.half	.L246-.L245
+	.byte	3,124,1,5,32,7,9
+	.half	.L247-.L246
+	.byte	1,5,38,9
+	.half	.L248-.L247
+	.byte	1,5,7,7,9
+	.half	.L249-.L248
+	.byte	3,3,1,5,22,7,9
+	.half	.L250-.L249
+	.byte	3,1,1,5,31,9
+	.half	.L251-.L250
+	.byte	1,5,22,9
+	.half	.L25-.L251
+	.byte	3,2,1,5,17,9
+	.half	.L26-.L25
+	.byte	3,2,1,5,35,1,5,59,9
+	.half	.L23-.L26
+	.byte	3,119,1,5,66,9
+	.half	.L252-.L23
+	.byte	1,5,50,9
+	.half	.L253-.L252
+	.byte	1,5,1,7,9
+	.half	.L21-.L253
+	.byte	3,14,1,7,9
+	.half	.L80-.L21
+	.byte	0,1,1
+.L241:
+	.sdecl	'.debug_ranges',debug,cluster('sys_untimeout')
+	.sect	'.debug_ranges'
+.L79:
+	.word	-1,.L55,0,.L80-.L55,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_restart_timeouts')
+	.sect	'.debug_info'
+.L81:
+	.word	278
+	.half	3
+	.word	.L82
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L84,.L83
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'sys_restart_timeouts',0,1,148,3,1,1,1,1
+	.word	.L59,.L148,.L58
+	.byte	4
+	.word	.L59,.L148
+	.byte	5
+	.byte	'now',0,1,150,3,9
+	.word	.L135,.L149
+	.byte	5
+	.byte	'base',0,1,151,3,9
+	.word	.L135,.L150
+	.byte	5
+	.byte	't',0,1,152,3,21
+	.word	.L145,.L151
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_restart_timeouts')
+	.sect	'.debug_abbrev'
+.L82:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_restart_timeouts')
+	.sect	'.debug_line'
+.L83:
+	.word	.L255-.L254
+.L254:
+	.half	3
+	.word	.L257-.L256
+.L256:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0,0,0,0,0
+.L257:
+	.byte	5,7,7,0,5,2
+	.word	.L59
+	.byte	3,153,3,1,5,3,9
+	.half	.L258-.L59
+	.byte	1,5,16,7,9
+	.half	.L259-.L258
+	.byte	3,4,1,5,10,9
+	.half	.L209-.L259
+	.byte	3,1,1,5,22,9
+	.half	.L210-.L209
+	.byte	1,5,17,9
+	.half	.L34-.L210
+	.byte	3,3,1,5,24,9
+	.half	.L260-.L34
+	.byte	1,5,32,9
+	.half	.L261-.L260
+	.byte	1,5,13,1,5,42,9
+	.half	.L262-.L261
+	.byte	3,127,1,5,35,9
+	.half	.L263-.L262
+	.byte	1,5,1,7,9
+	.half	.L33-.L263
+	.byte	3,3,1,7,9
+	.half	.L85-.L33
+	.byte	0,1,1
+.L255:
+	.sdecl	'.debug_ranges',debug,cluster('sys_restart_timeouts')
+	.sect	'.debug_ranges'
+.L84:
+	.word	-1,.L59,0,.L85-.L59,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_check_timeouts')
+	.sect	'.debug_info'
+.L86:
+	.word	315
+	.half	3
+	.word	.L87
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L89,.L88
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'sys_check_timeouts',0,1,224,2,1,1,1,1
+	.word	.L57,.L152,.L56
+	.byte	4
+	.word	.L57,.L152
+	.byte	5
+	.byte	'now',0,1,226,2,9
+	.word	.L135,.L153
+	.byte	4
+	.word	.L29,.L154
+	.byte	5
+	.byte	'tmptimeout',0,1,234,2,23
+	.word	.L145,.L155
+	.byte	5
+	.byte	'handler',0,1,235,2,25
+	.word	.L137,.L156
+	.byte	5
+	.byte	'arg',0,1,236,2,11
+	.word	.L139,.L157
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_check_timeouts')
+	.sect	'.debug_abbrev'
+.L87:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_check_timeouts')
+	.sect	'.debug_line'
+.L88:
+	.word	.L265-.L264
+.L264:
+	.half	3
+	.word	.L267-.L266
+.L266:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0,0,0,0,0
+.L267:
+	.byte	5,16,7,0,5,2
+	.word	.L57
+	.byte	3,230,2,1,5,7,9
+	.half	.L203-.L57
+	.byte	1,5,5,9
+	.half	.L29-.L203
+	.byte	3,7,1,5,18,9
+	.half	.L30-.L29
+	.byte	3,2,1,5,5,9
+	.half	.L204-.L30
+	.byte	3,1,1,5,9,7,9
+	.half	.L268-.L204
+	.byte	3,4,1,5,5,9
+	.half	.L269-.L268
+	.byte	1,5,30,7,9
+	.half	.L270-.L269
+	.byte	3,5,1,5,18,9
+	.half	.L271-.L270
+	.byte	1,5,15,9
+	.half	.L272-.L271
+	.byte	3,10,1,5,25,9
+	.half	.L273-.L272
+	.byte	3,119,1,5,21,9
+	.half	.L206-.L273
+	.byte	3,1,1,5,30,9
+	.half	.L207-.L206
+	.byte	3,1,1,5,33,9
+	.half	.L274-.L207
+	.byte	3,7,1,5,5,9
+	.half	.L205-.L274
+	.byte	3,1,1,5,15,7,9
+	.half	.L275-.L205
+	.byte	3,1,1,5,14,9
+	.half	.L154-.L275
+	.byte	3,5,1,5,1,9
+	.half	.L31-.L154
+	.byte	3,1,1,7,9
+	.half	.L90-.L31
+	.byte	0,1,1
+.L265:
+	.sdecl	'.debug_ranges',debug,cluster('sys_check_timeouts')
+	.sect	'.debug_ranges'
+.L89:
+	.word	-1,.L57,0,.L90-.L57,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_timeouts_sleeptime')
+	.sect	'.debug_info'
+.L91:
+	.word	251
+	.half	3
+	.word	.L92
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L94,.L93
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'sys_timeouts_sleeptime',0,1,170,3,1
+	.word	.L135
+	.byte	1,1,1
+	.word	.L61,.L158,.L60
+	.byte	4
+	.word	.L61,.L158
+	.byte	5
+	.byte	'now',0,1,172,3,9
+	.word	.L135,.L159
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_timeouts_sleeptime')
+	.sect	'.debug_abbrev'
+.L92:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_timeouts_sleeptime')
+	.sect	'.debug_line'
+.L93:
+	.word	.L277-.L276
+.L276:
+	.half	3
+	.word	.L279-.L278
+.L278:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0,0,0,0,0
+.L279:
+	.byte	5,7,7,0,5,2
+	.word	.L61
+	.byte	3,175,3,1,5,3,9
+	.half	.L280-.L61
+	.byte	1,5,12,7,9
+	.half	.L281-.L280
+	.byte	3,1,1,5,1,3,10,1,5,16,7,9
+	.half	.L35-.L281
+	.byte	3,120,1,5,7,9
+	.half	.L211-.L35
+	.byte	3,1,1,5,3,9
+	.half	.L212-.L211
+	.byte	1,5,12,9
+	.half	.L282-.L212
+	.byte	3,1,1,5,1,3,6,1,7,9
+	.half	.L95-.L282
+	.byte	0,1,1
+.L277:
+	.sdecl	'.debug_ranges',debug,cluster('sys_timeouts_sleeptime')
+	.sect	'.debug_ranges'
+.L94:
+	.word	-1,.L61,0,.L95-.L61,0,0
+	.sdecl	'.debug_info',debug,cluster('tcp_timer_needed')
+	.sect	'.debug_info'
+.L96:
+	.word	223
+	.half	3
+	.word	.L97
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L99,.L98
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'tcp_timer_needed',0,1,166,1,1,1,1,1
+	.word	.L45,.L160,.L44
+	.byte	4
+	.word	.L45,.L160
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('tcp_timer_needed')
+	.sect	'.debug_abbrev'
+.L97:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('tcp_timer_needed')
+	.sect	'.debug_line'
+.L98:
+	.word	.L284-.L283
+.L283:
+	.half	3
+	.word	.L286-.L285
+.L285:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0,0,0,0,0
+.L286:
+	.byte	5,8,7,0,5,2
+	.word	.L45
+	.byte	3,170,1,1,5,35,9
+	.half	.L287-.L45
+	.byte	1,5,54,9
+	.half	.L288-.L287
+	.byte	1,5,30,9
+	.half	.L6-.L288
+	.byte	3,2,1,5,28,1,5,17,9
+	.half	.L289-.L6
+	.byte	3,1,1,5,52,9
+	.half	.L290-.L289
+	.byte	1,5,1,7,9
+	.half	.L5-.L290
+	.byte	3,2,1,7,9
+	.half	.L100-.L5
+	.byte	0,1,1
+.L284:
+	.sdecl	'.debug_ranges',debug,cluster('tcp_timer_needed')
+	.sect	'.debug_ranges'
+.L99:
+	.word	-1,.L45,0,.L100-.L45,0,0
+	.sdecl	'.debug_info',debug,cluster('tcpip_tcp_timer')
+	.sect	'.debug_info'
+.L101:
+	.word	234
+	.half	3
+	.word	.L102
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L104,.L103
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'tcpip_tcp_timer',0,1,144,1,1,1,1
+	.word	.L41,.L161,.L40
+	.byte	4
+	.byte	'arg',0,1,144,1,23
+	.word	.L139,.L162
+	.byte	5
+	.word	.L163
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('tcpip_tcp_timer')
+	.sect	'.debug_abbrev'
+.L102:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,85,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('tcpip_tcp_timer')
+	.sect	'.debug_line'
+.L103:
+	.word	.L292-.L291
+.L291:
+	.half	3
+	.word	.L294-.L293
+.L293:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0,0,0,0,0
+.L294:
+	.byte	5,10,7,0,5,2
+	.word	.L41
+	.byte	3,148,1,1,5,7,9
+	.half	.L179-.L41
+	.byte	3,2,1,5,26,9
+	.half	.L295-.L179
+	.byte	1,5,17,9
+	.half	.L2-.L295
+	.byte	3,2,1,5,52,9
+	.half	.L296-.L2
+	.byte	1,5,30,7,9
+	.half	.L3-.L296
+	.byte	3,3,1,5,28,1,5,1,9
+	.half	.L297-.L3
+	.byte	3,2,1,7,9
+	.half	.L105-.L297
+	.byte	0,1,1
+.L292:
+	.sdecl	'.debug_ranges',debug,cluster('tcpip_tcp_timer')
+	.sect	'.debug_ranges'
+.L104:
+	.word	-1,.L41,0,.L105-.L41,0,0
+.L163:
+	.word	-1,.L41,0,.L161-.L41,-1,.L43,0,.L120-.L43,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_timeout_abs')
+	.sect	'.debug_info'
+.L106:
+	.word	318
+	.half	3
+	.word	.L107
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L109,.L108
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'sys_timeout_abs',0,1,183,1,1,1,1
+	.word	.L47,.L164,.L46
+	.byte	4
+	.byte	'abs_time',0,1,183,1,23
+	.word	.L135,.L165
+	.byte	4
+	.byte	'handler',0,1,183,1,53
+	.word	.L137,.L166
+	.byte	4
+	.byte	'arg',0,1,183,1,68
+	.word	.L139,.L167
+	.byte	5
+	.word	.L47,.L164
+	.byte	6
+	.byte	'timeout',0,1,186,1,21
+	.word	.L145,.L168
+	.byte	6
+	.byte	't',0,1,186,1,31
+	.word	.L145,.L169
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_timeout_abs')
+	.sect	'.debug_abbrev'
+.L107:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3,8,58
+	.byte	15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_timeout_abs')
+	.sect	'.debug_line'
+.L108:
+	.word	.L299-.L298
+.L298:
+	.half	3
+	.word	.L301-.L300
+.L300:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0,0,0,0,0
+.L301:
+	.byte	5,1,7,0,5,2
+	.word	.L47
+	.byte	3,182,1,1,5,45,9
+	.half	.L185-.L47
+	.byte	3,5,1,5,3,9
+	.half	.L181-.L185
+	.byte	3,1,1,5,5,7,9
+	.half	.L302-.L181
+	.byte	3,1,1,5,19,9
+	.half	.L8-.L302
+	.byte	3,4,1,5,17,9
+	.half	.L303-.L8
+	.byte	1,5,14,9
+	.half	.L304-.L303
+	.byte	3,1,1,5,16,9
+	.half	.L305-.L304
+	.byte	3,1,1,5,17,9
+	.half	.L306-.L305
+	.byte	3,1,1,5,7,9
+	.half	.L307-.L306
+	.byte	3,8,1,5,3,9
+	.half	.L186-.L307
+	.byte	1,5,7,7,9
+	.half	.L308-.L186
+	.byte	3,4,1,5,3,9
+	.half	.L309-.L308
+	.byte	1,5,19,7,9
+	.half	.L310-.L309
+	.byte	3,1,1,5,18,9
+	.half	.L10-.L310
+	.byte	3,1,1,5,1,9
+	.half	.L311-.L10
+	.byte	3,10,1,5,13,7,9
+	.half	.L13-.L311
+	.byte	3,121,1,5,11,9
+	.half	.L312-.L13
+	.byte	1,5,32,7,9
+	.half	.L313-.L312
+	.byte	1,5,23,9
+	.half	.L14-.L313
+	.byte	3,1,1,5,5,9
+	.half	.L314-.L14
+	.byte	3,125,1,5,1,9
+	.half	.L315-.L314
+	.byte	3,9,1,5,41,7,9
+	.half	.L15-.L315
+	.byte	3,120,1,5,37,9
+	.half	.L316-.L15
+	.byte	1,5,1,9
+	.half	.L110-.L316
+	.byte	3,8,0,1,1
+.L299:
+	.sdecl	'.debug_ranges',debug,cluster('sys_timeout_abs')
+	.sect	'.debug_ranges'
+.L109:
+	.word	-1,.L47,0,.L110-.L47,0,0
+	.sdecl	'.debug_info',debug,cluster('lwip_cyclic_timer')
+	.sect	'.debug_info'
+.L111:
+	.word	309
+	.half	3
+	.word	.L112
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L114,.L113
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'lwip_cyclic_timer',0,1,232,1,1,1,1
+	.word	.L49,.L170,.L48
+	.byte	4
+	.byte	'arg',0,1,232,1,25
+	.word	.L139,.L171
+	.byte	5
+	.word	.L49,.L170
+	.byte	6
+	.byte	'now',0,1,234,1,9
+	.word	.L135,.L172
+	.byte	6
+	.byte	'next_timeout_time',0,1,235,1,9
+	.word	.L135,.L173
+	.byte	6
+	.byte	'cyclic',0,1,236,1,35
+	.word	.L174,.L175
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('lwip_cyclic_timer')
+	.sect	'.debug_abbrev'
+.L112:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3,8,58
+	.byte	15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('lwip_cyclic_timer')
+	.sect	'.debug_line'
+.L113:
+	.word	.L318-.L317
+.L317:
+	.half	3
+	.word	.L320-.L319
+.L319:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0,0,0,0,0
+.L320:
+	.byte	5,1,7,0,5,2
+	.word	.L49
+	.byte	3,231,1,1,5,9,9
+	.half	.L188-.L49
+	.byte	3,9,1,5,18,9
+	.half	.L321-.L188
+	.byte	1,5,16,9
+	.half	.L187-.L321
+	.byte	3,2,1,5,64,9
+	.half	.L322-.L187
+	.byte	3,1,1,5,31,9
+	.half	.L323-.L322
+	.byte	1,5,7,9
+	.half	.L324-.L323
+	.byte	3,1,1,5,56,9
+	.half	.L189-.L324
+	.byte	3,127,1,5,7,9
+	.half	.L190-.L189
+	.byte	3,1,1,5,3,9
+	.half	.L191-.L190
+	.byte	1,5,33,7,9
+	.half	.L192-.L191
+	.byte	3,5,1,5,40,9
+	.half	.L17-.L192
+	.byte	3,8,1,5,59,9
+	.half	.L325-.L17
+	.byte	1,5,1,9
+	.half	.L115-.L325
+	.byte	3,3,0,1,1
+.L318:
+	.sdecl	'.debug_ranges',debug,cluster('lwip_cyclic_timer')
+	.sect	'.debug_ranges'
+.L114:
+	.word	-1,.L49,0,.L115-.L49,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_8')
+	.sect	'.debug_info'
+.L116:
+	.word	205
+	.half	3
+	.word	.L117
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L119,.L118
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'.cocofun_8',0,1,144,1,1,1
+	.word	.L43,.L120,.L42
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_8')
+	.sect	'.debug_abbrev'
+.L117:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_8')
+	.sect	'.debug_line'
+.L118:
+	.word	.L327-.L326
+.L326:
+	.half	3
+	.word	.L329-.L328
+.L328:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0,0,0,0,0
+.L329:
+	.byte	5,17,7,0,5,2
+	.word	.L43
+	.byte	3,152,1,1,5,35,1,5,52,9
+	.half	.L330-.L43
+	.byte	1,9
+	.half	.L120-.L330
+	.byte	0,1,1,5,17,0,5,2
+	.word	.L43
+	.byte	3,173,1,1,5,35,1,5,52,9
+	.half	.L330-.L43
+	.byte	1,9
+	.half	.L331-.L330
+	.byte	3,107,1,7,9
+	.half	.L120-.L331
+	.byte	0,1,1
+.L327:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_8')
+	.sect	'.debug_ranges'
+.L119:
+	.word	-1,.L43,0,.L120-.L43,0,0
+	.sdecl	'.debug_info',debug,cluster('lwip_cyclic_timers')
+	.sect	'.debug_info'
+.L121:
+	.word	202
+	.half	3
+	.word	.L122
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1,2
+	.word	.L62
+	.byte	3
+	.byte	'lwip_cyclic_timers',0,9,77,32
+	.word	.L176
+	.byte	1,5,3
+	.word	lwip_cyclic_timers
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('lwip_cyclic_timers')
+	.sect	'.debug_abbrev'
+.L122:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('lwip_num_cyclic_timers')
+	.sect	'.debug_info'
+.L123:
+	.word	206
+	.half	3
+	.word	.L124
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1,2
+	.word	.L62
+	.byte	3
+	.byte	'lwip_num_cyclic_timers',0,9,117,11
+	.word	.L177
+	.byte	1,5,3
+	.word	lwip_num_cyclic_timers
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('lwip_num_cyclic_timers')
+	.sect	'.debug_abbrev'
+.L124:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('next_timeout')
+	.sect	'.debug_info'
+.L125:
+	.word	195
+	.half	3
+	.word	.L126
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1,2
+	.word	.L62
+	.byte	3
+	.byte	'next_timeout',0,9,122,26
+	.word	.L145
+	.byte	5,3
+	.word	next_timeout
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('next_timeout')
+	.sect	'.debug_abbrev'
+.L126:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('current_timeout_due_time')
+	.sect	'.debug_info'
+.L127:
+	.word	207
+	.half	3
+	.word	.L128
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1,2
+	.word	.L62
+	.byte	3
+	.byte	'current_timeout_due_time',0,9,124,14
+	.word	.L135
+	.byte	5,3
+	.word	current_timeout_due_time
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('current_timeout_due_time')
+	.sect	'.debug_abbrev'
+.L128:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('tcpip_tcp_timer_active')
+	.sect	'.debug_info'
+.L129:
+	.word	206
+	.half	3
+	.word	.L130
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\timeouts.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1,2
+	.word	.L62
+	.byte	3
+	.byte	'tcpip_tcp_timer_active',0,9,136,1,12
+	.word	.L178
+	.byte	5,3
+	.word	tcpip_tcp_timer_active
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('tcpip_tcp_timer_active')
+	.sect	'.debug_abbrev'
+.L130:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_8')
+	.sect	'.debug_loc'
+.L42:
+	.word	-1,.L43,0,.L120-.L43
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('lwip_cyclic_timer')
+	.sect	'.debug_loc'
+.L171:
+	.word	-1,.L49,0,.L187-.L49
+	.half	1
+	.byte	100
+	.word	.L188-.L49,.L170-.L49
+	.half	1
+	.byte	111
+	.word	.L193-.L49,.L170-.L49
+	.half	1
+	.byte	101
+	.word	0,0
+.L175:
+	.word	0,0
+.L48:
+	.word	-1,.L49,0,.L170-.L49
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L173:
+	.word	-1,.L49,.L189-.L49,.L17-.L49
+	.half	1
+	.byte	84
+	.word	.L193-.L49,.L170-.L49
+	.half	1
+	.byte	84
+	.word	0,0
+.L172:
+	.word	-1,.L49,.L190-.L49,.L191-.L49
+	.half	1
+	.byte	82
+	.word	.L192-.L49,.L17-.L49
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_check_timeouts')
+	.sect	'.debug_loc'
+.L157:
+	.word	-1,.L57,.L207-.L57,.L31-.L57
+	.half	1
+	.byte	108
+	.word	.L208-.L57,.L154-.L57
+	.half	1
+	.byte	100
+	.word	0,0
+.L156:
+	.word	-1,.L57,.L206-.L57,.L31-.L57
+	.half	1
+	.byte	111
+	.word	0,0
+.L153:
+	.word	-1,.L57,.L203-.L57,.L29-.L57
+	.half	1
+	.byte	82
+	.word	.L29-.L57,.L152-.L57
+	.half	1
+	.byte	88
+	.word	0,0
+.L56:
+	.word	-1,.L57,0,.L152-.L57
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L155:
+	.word	-1,.L57,.L204-.L57,.L205-.L57
+	.half	1
+	.byte	100
+	.word	.L31-.L57,.L152-.L57
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_restart_timeouts')
+	.sect	'.debug_loc'
+.L150:
+	.word	-1,.L59,.L34-.L59,.L33-.L59
+	.half	1
+	.byte	81
+	.word	0,0
+.L149:
+	.word	-1,.L59,.L209-.L59,.L33-.L59
+	.half	1
+	.byte	82
+	.word	0,0
+.L58:
+	.word	-1,.L59,0,.L148-.L59
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L151:
+	.word	-1,.L59,.L210-.L59,.L33-.L59
+	.half	1
+	.byte	111
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_timeout')
+	.sect	'.debug_loc'
+.L140:
+	.word	-1,.L53,0,.L20-.L53
+	.half	1
+	.byte	101
+	.word	.L198-.L53,.L134-.L53
+	.half	1
+	.byte	109
+	.word	.L200-.L53,.L134-.L53
+	.half	1
+	.byte	101
+	.word	0,0
+.L138:
+	.word	-1,.L53,0,.L195-.L53
+	.half	1
+	.byte	100
+	.word	.L197-.L53,.L134-.L53
+	.half	1
+	.byte	108
+	.word	.L199-.L53,.L134-.L53
+	.half	1
+	.byte	100
+	.word	0,0
+.L136:
+	.word	-1,.L53,0,.L20-.L53
+	.half	1
+	.byte	84
+	.word	.L196-.L53,.L134-.L53
+	.half	1
+	.byte	88
+	.word	0,0
+.L141:
+	.word	-1,.L53,.L199-.L53,.L134-.L53
+	.half	1
+	.byte	84
+	.word	0,0
+.L52:
+	.word	-1,.L53,0,.L194-.L53
+	.half	2
+	.byte	138,0
+	.word	.L194-.L53,.L134-.L53
+	.half	2
+	.byte	138,16
+	.word	.L134-.L53,.L134-.L53
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_timeout_abs')
+	.sect	'.debug_loc'
+.L165:
+	.word	-1,.L47,0,.L181-.L47
+	.half	1
+	.byte	84
+	.word	.L182-.L47,.L183-.L47
+	.half	1
+	.byte	95
+	.word	.L8-.L47,.L164-.L47
+	.half	1
+	.byte	95
+	.word	0,0
+.L167:
+	.word	-1,.L47,0,.L181-.L47
+	.half	1
+	.byte	101
+	.word	.L185-.L47,.L164-.L47
+	.half	1
+	.byte	108
+	.word	0,0
+.L166:
+	.word	-1,.L47,0,.L181-.L47
+	.half	1
+	.byte	100
+	.word	.L182-.L47,.L184-.L47
+	.half	1
+	.byte	111
+	.word	.L8-.L47,.L186-.L47
+	.half	1
+	.byte	111
+	.word	0,0
+.L46:
+	.word	-1,.L47,0,.L180-.L47
+	.half	2
+	.byte	138,0
+	.word	.L180-.L47,.L8-.L47
+	.half	2
+	.byte	138,16
+	.word	.L8-.L47,.L8-.L47
+	.half	2
+	.byte	138,0
+	.word	.L8-.L47,.L11-.L47
+	.half	2
+	.byte	138,16
+	.word	.L11-.L47,.L11-.L47
+	.half	2
+	.byte	138,0
+	.word	.L11-.L47,.L15-.L47
+	.half	2
+	.byte	138,16
+	.word	.L15-.L47,.L15-.L47
+	.half	2
+	.byte	138,0
+	.word	.L15-.L47,.L164-.L47
+	.half	2
+	.byte	138,16
+	.word	0,0
+.L169:
+	.word	-1,.L47,.L186-.L47,.L164-.L47
+	.half	1
+	.byte	111
+	.word	0,0
+.L168:
+	.word	-1,.L47,.L181-.L47,.L164-.L47
+	.half	1
+	.byte	98
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_timeouts_init')
+	.sect	'.debug_loc'
+.L133:
+	.word	0,0
+.L50:
+	.word	-1,.L51,0,.L131-.L51
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_timeouts_sleeptime')
+	.sect	'.debug_loc'
+.L159:
+	.word	-1,.L61,.L211-.L61,.L212-.L61
+	.half	1
+	.byte	82
+	.word	0,0
+.L60:
+	.word	-1,.L61,0,.L158-.L61
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_untimeout')
+	.sect	'.debug_loc'
+.L144:
+	.word	-1,.L55,0,.L142-.L55
+	.half	1
+	.byte	101
+	.word	0,0
+.L143:
+	.word	-1,.L55,0,.L201-.L55
+	.half	1
+	.byte	100
+	.word	.L23-.L55,.L142-.L55
+	.half	1
+	.byte	100
+	.word	0,0
+.L146:
+	.word	-1,.L55,.L22-.L55,.L21-.L55
+	.half	1
+	.byte	98
+	.word	0,0
+.L54:
+	.word	-1,.L55,0,.L142-.L55
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L147:
+	.word	-1,.L55,.L202-.L55,.L142-.L55
+	.half	1
+	.byte	111
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('tcp_timer_needed')
+	.sect	'.debug_loc'
+.L44:
+	.word	-1,.L45,0,.L160-.L45
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('tcpip_tcp_timer')
+	.sect	'.debug_loc'
+.L162:
+	.word	-1,.L41,0,.L179-.L41
+	.half	1
+	.byte	100
+	.word	0,0
+.L40:
+	.word	-1,.L41,0,.L161-.L41
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L332:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('tcpip_tcp_timer')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L332,.L41,.L161-.L41
+	.sdecl	'.debug_frame',debug,cluster('tcp_timer_needed')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L332,.L45,.L160-.L45
+	.sdecl	'.debug_frame',debug,cluster('sys_timeout_abs')
+	.sect	'.debug_frame'
+	.word	76
+	.word	.L332,.L47,.L164-.L47
+	.byte	4
+	.word	(.L180-.L47)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L8-.L180)/2
+	.byte	19,0,8,26,19,16,22,26,3,19,138,16,4
+	.word	(.L11-.L8)/2
+	.byte	19,0,8,26,19,16,22,26,3,19,138,16,4
+	.word	(.L15-.L11)/2
+	.byte	19,0,8,26,19,16,22,26,3,19,138,16
+	.sdecl	'.debug_frame',debug,cluster('lwip_cyclic_timer')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L332,.L49,.L170-.L49
+	.sdecl	'.debug_frame',debug,cluster('sys_timeouts_init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L332,.L51,.L131-.L51
+	.sdecl	'.debug_frame',debug,cluster('sys_timeout')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L332,.L53,.L134-.L53
+	.byte	4
+	.word	(.L194-.L53)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L134-.L194)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_untimeout')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L332,.L55,.L142-.L55
+	.sdecl	'.debug_frame',debug,cluster('sys_check_timeouts')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L332,.L57,.L152-.L57
+	.sdecl	'.debug_frame',debug,cluster('sys_restart_timeouts')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L332,.L59,.L148-.L59
+	.sdecl	'.debug_frame',debug,cluster('sys_timeouts_sleeptime')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L332,.L61,.L158-.L61
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L333:
+	.word	52
+	.word	-1
+	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
+	.byte	8,37,8,38,8,39,0
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_8')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L333,.L43,.L120-.L43
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   444  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   445  #else /* LWIP_TIMERS && !LWIP_TIMERS_CUSTOM */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   446  /* Satisfy the TCP code which calls this function */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   447  void
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   448  tcp_timer_needed(void)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   449  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   450  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\timeouts.c	   451  #endif /* LWIP_TIMERS && !LWIP_TIMERS_CUSTOM */
+
+	; Module end

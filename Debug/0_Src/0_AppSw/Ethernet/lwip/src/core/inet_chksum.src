@@ -1,0 +1,3173 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\.inet_chksum.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Rtl8211f -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\api -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv4 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\ipv6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\arpa -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\net -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\posix\\sys -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\compat\\stdc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\apps -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\priv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip\\prot -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\netif\\ppp\\polarssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\Phy_Dp83825i -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.src ..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.inet_chksum.lwip_standard_chksum',code,cluster('lwip_standard_chksum')
+	.sect	'.text.inet_chksum.lwip_standard_chksum'
+	.align	2
+	
+	.global	lwip_standard_chksum
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	     1  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	     2   * @file
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	     3   * Internet checksum functions.\n
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	     4   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	     5   * These are some reference implementations of the checksum algorithm, with the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	     6   * aim of being simple, correct and fully portable. Checksumming is the
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	     7   * first thing you would want to optimize for your platform. If you create
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	     8   * your own version, link it in and in your cc.h put:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	     9   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    10   * \#define LWIP_CHKSUM your_checksum_routine
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    11   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    12   * Or you can select from the implementations below by defining
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    13   * LWIP_CHKSUM_ALGORITHM to 1, 2 or 3.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    14   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    15  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    16  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    17   * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    18   * All rights reserved.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    19   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    20   * Redistribution and use in source and binary forms, with or without modification,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    21   * are permitted provided that the following conditions are met:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    22   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    23   * 1. Redistributions of source code must retain the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    24   *    this list of conditions and the following disclaimer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    25   * 2. Redistributions in binary form must reproduce the above copyright notice,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    26   *    this list of conditions and the following disclaimer in the documentation
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    27   *    and/or other materials provided with the distribution.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    28   * 3. The name of the author may not be used to endorse or promote products
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    29   *    derived from this software without specific prior written permission.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    30   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    31   * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    32   * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    33   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    34   * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    35   * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    36   * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    37   * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    38   * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    39   * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    40   * OF SUCH DAMAGE.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    41   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    42   * This file is part of the lwIP TCP/IP stack.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    43   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    44   * Author: Adam Dunkels <adam@sics.se>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    45   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    46   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    47  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    48  #include "lwip/opt.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    49  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    50  #include "lwip/inet_chksum.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    51  #include "lwip/def.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    52  #include "lwip/ip_addr.h"
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    53  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    54  #include <string.h>
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    55  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    56  #ifndef LWIP_CHKSUM
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    57  # define LWIP_CHKSUM lwip_standard_chksum
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    58  # ifndef LWIP_CHKSUM_ALGORITHM
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    59  #  define LWIP_CHKSUM_ALGORITHM 2
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    60  # endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    61  u16_t lwip_standard_chksum(const void *dataptr, int len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    62  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    63  /* If none set: */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    64  #ifndef LWIP_CHKSUM_ALGORITHM
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    65  # define LWIP_CHKSUM_ALGORITHM 0
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    66  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    67  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    68  #if (LWIP_CHKSUM_ALGORITHM == 1) /* Version #1 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    69  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    70   * lwip checksum
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    71   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    72   * @param dataptr points to start of data to be summed at any boundary
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    73   * @param len length of data to be summed
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    74   * @return host order (!) lwip checksum (non-inverted Internet sum)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    75   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    76   * @note accumulator size limits summable length to 64k
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    77   * @note host endianess is irrelevant (p3 RFC1071)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    78   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    79  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    80  lwip_standard_chksum(const void *dataptr, int len)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    81  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    82    u32_t acc;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    83    u16_t src;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    84    const u8_t *octetptr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    85  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    86    acc = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    87    /* dataptr may be at odd or even addresses */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    88    octetptr = (const u8_t *)dataptr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    89    while (len > 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    90      /* declare first octet as most significant
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    91         thus assume network order, ignoring host order */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    92      src = (*octetptr) << 8;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    93      octetptr++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    94      /* declare second octet as least significant */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    95      src |= (*octetptr);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    96      octetptr++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    97      acc += src;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    98      len -= 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	    99    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   100    if (len > 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   101      /* accumulate remaining octet */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   102      src = (*octetptr) << 8;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   103      acc += src;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   104    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   105    /* add deferred carry bits */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   106    acc = (acc >> 16) + (acc & 0x0000ffffUL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   107    if ((acc & 0xffff0000UL) != 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   108      acc = (acc >> 16) + (acc & 0x0000ffffUL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   109    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   110    /* This maybe a little confusing: reorder sum using lwip_htons()
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   111       instead of lwip_ntohs() since it has a little less call overhead.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   112       The caller must invert bits for Internet sum ! */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   113    return lwip_htons((u16_t)acc);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   114  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   115  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   116  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   117  #if (LWIP_CHKSUM_ALGORITHM == 2) /* Alternative version #2 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   118  /*
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   119   * Curt McDowell
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   120   * Broadcom Corp.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   121   * csm@broadcom.com
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   122   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   123   * IP checksum two bytes at a time with support for
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   124   * unaligned buffer.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   125   * Works for len up to and including 0x20000.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   126   * by Curt McDowell, Broadcom Corp. 12/08/2005
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   127   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   128   * @param dataptr points to start of data to be summed at any boundary
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   129   * @param len length of data to be summed
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   130   * @return host order (!) lwip checksum (non-inverted Internet sum)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   131   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   132  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   133  lwip_standard_chksum(const void *dataptr, int len)
+; Function lwip_standard_chksum
+.L32:
+lwip_standard_chksum:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   134  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   135    const u8_t *pb = (const u8_t *)dataptr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   136    const u16_t *ps;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   137    u16_t t = 0;
+	mov	d1,#0
+.L201:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   138    u32_t sum = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   139    int odd = ((mem_ptr_t)pb & 1);
+	mov	d0,d1
+	mov.d	d15,a4
+.L203:
+	and	d15,#1
+.L204:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   140  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   141    /* Get aligned to u16_t */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   142    if (odd && len > 0) {
+	jeq	d15,#0,.L4
+.L298:
+	jlt	d4,#1,.L4
+.L299:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   143      ((u8_t *)&t)[1] = *pb++;
+	ld.bu	d2,[a4+]
+.L300:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   144      len--;
+	add	d4,#-1
+.L301:
+	insert	d1,d1,d2,#8,#8
+.L302:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   145    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   146  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   147    /* Add the bulk of the data */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   148    ps = (const u16_t *)(const void *)pb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   149    while (len > 1) {
+	extr.u	d1,d1,#0,#16
+	j	.L4
+.L5:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   150      sum += *ps++;
+	ld.hu	d2,[a4+]2
+.L303:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   151      len -= 2;
+	add	d4,#-2
+.L304:
+	add	d0,d2
+.L4:
+	jge	d4,#2,.L5
+.L305:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   152    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   153  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   154    /* Consume left-over byte, if any */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   155    if (len > 0) {
+	jlt	d4,#1,.L6
+.L306:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   156      ((u8_t *)&t)[0] = *(const u8_t *)ps;
+	ld.bu	d2,[a4]
+.L307:
+	insert	d1,d1,d2,#0,#8
+.L6:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   157    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   158  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   159    /* Add end bytes */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   160    sum += t;
+	add	d0,d1
+.L308:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   161  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   162    /* Fold 32-bit sum to 16 bits
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   163       calling this twice is probably faster than if statements... */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   164    sum = FOLD_U32T(sum);
+	sh	d1,d0,#-16
+.L202:
+	insert	d0,d0,#0,#16,#16
+.L206:
+	add	d1,d0
+.L309:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   165    sum = FOLD_U32T(sum);
+	sh	d0,d1,#-16
+	insert	d1,d1,#0,#16,#16
+.L207:
+	add	d0,d1
+.L310:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   166  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   167    /* Swap if alignment was odd */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   168    if (odd) {
+	jeq	d15,#0,.L7
+.L311:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   169      sum = SWAP_BYTES_IN_WORD(sum);
+	and	d15,d0,#255
+.L205:
+	extr.u	d0,d0,#8,#8
+.L208:
+	sh	d15,d15,#8
+.L209:
+	or	d0,d15
+.L7:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   170    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   171  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   172    return (u16_t)sum;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   173  }
+	extr.u	d2,d0,#0,#16
+	ret
+.L173:
+	
+__lwip_standard_chksum_function_end:
+	.size	lwip_standard_chksum,__lwip_standard_chksum_function_end-lwip_standard_chksum
+.L95:
+	; End of function
+	
+	.sdecl	'.text.inet_chksum.inet_cksum_pseudo_base',code,cluster('inet_cksum_pseudo_base')
+	.sect	'.text.inet_chksum.inet_cksum_pseudo_base'
+	.align	2
+	
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   174  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   175  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   176  #if (LWIP_CHKSUM_ALGORITHM == 3) /* Alternative version #3 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   177  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   178   * An optimized checksum routine. Basically, it uses loop-unrolling on
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   179   * the checksum loop, treating the head and tail bytes specially, whereas
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   180   * the inner loop acts on 8 bytes at a time.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   181   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   182   * @arg start of buffer to be checksummed. May be an odd byte address.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   183   * @len number of bytes in the buffer to be checksummed.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   184   * @return host order (!) lwip checksum (non-inverted Internet sum)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   185   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   186   * by Curt McDowell, Broadcom Corp. December 8th, 2005
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   187   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   188  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   189  lwip_standard_chksum(const void *dataptr, int len)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   190  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   191    const u8_t *pb = (const u8_t *)dataptr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   192    const u16_t *ps;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   193    u16_t t = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   194    const u32_t *pl;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   195    u32_t sum = 0, tmp;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   196    /* starts at odd byte address? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   197    int odd = ((mem_ptr_t)pb & 1);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   198  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   199    if (odd && len > 0) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   200      ((u8_t *)&t)[1] = *pb++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   201      len--;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   202    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   203  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   204    ps = (const u16_t *)(const void *)pb;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   205  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   206    if (((mem_ptr_t)ps & 3) && len > 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   207      sum += *ps++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   208      len -= 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   209    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   210  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   211    pl = (const u32_t *)(const void *)ps;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   212  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   213    while (len > 7)  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   214      tmp = sum + *pl++;          /* ping */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   215      if (tmp < sum) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   216        tmp++;                    /* add back carry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   217      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   218  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   219      sum = tmp + *pl++;          /* pong */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   220      if (sum < tmp) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   221        sum++;                    /* add back carry */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   222      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   223  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   224      len -= 8;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   225    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   226  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   227    /* make room in upper bits */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   228    sum = FOLD_U32T(sum);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   229  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   230    ps = (const u16_t *)pl;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   231  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   232    /* 16-bit aligned word remaining? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   233    while (len > 1) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   234      sum += *ps++;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   235      len -= 2;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   236    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   237  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   238    /* dangling tail byte remaining? */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   239    if (len > 0) {                /* include odd byte */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   240      ((u8_t *)&t)[0] = *(const u8_t *)ps;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   241    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   242  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   243    sum += t;                     /* add end bytes */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   244  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   245    /* Fold 32-bit sum to 16 bits
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   246       calling this twice is probably faster than if statements... */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   247    sum = FOLD_U32T(sum);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   248    sum = FOLD_U32T(sum);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   249  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   250    if (odd) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   251      sum = SWAP_BYTES_IN_WORD(sum);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   252    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   253  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   254    return (u16_t)sum;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   255  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   256  #endif
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   257  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   258  /** Parts of the pseudo checksum which are common to IPv4 and IPv6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   259  static u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   260  inet_cksum_pseudo_base(struct pbuf *p, u8_t proto, u16_t proto_len, u32_t acc)
+; Function inet_cksum_pseudo_base
+.L34:
+inet_cksum_pseudo_base:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   261  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   262    struct pbuf *q;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   263    int swapped = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   264  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   265    /* iterate through all pbuf in chain */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   266    for (q = p; q != NULL; q = q->next) {
+	mov	e8,d5,d4
+	mov.aa	a15,a4
+.L219:
+	mov	d15,d6
+.L210:
+	mov	d10,#0
+	j	.L9
+.L10:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   267      LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): checksumming pbuf %p (has next %p) \n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   268                               (void *)q, (void *)q->next));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   269      acc += LWIP_CHKSUM(q->payload, q->len);
+	ld.a	a4,[a15]4
+.L316:
+	ld.hu	d4,[a15]10
+	call	lwip_standard_chksum
+.L212:
+	add	d2,d15
+.L211:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   270      /*LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): unwrapped lwip_chksum()=%"X32_F" \n", acc));*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   271      /* just executing this next line is probably faster that the if statement needed
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   272         to check whether we really need to execute it, and does no harm */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   273      acc = FOLD_U32T(acc);
+	insert	d1,d2,#0,#16,#16
+	sh	d0,d2,#-16
+.L317:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   274      if (q->len % 2 != 0) {
+	add	d15,d0,d1
+	ld.hu	d0,[a15]10
+.L213:
+	jz.t	d0:0,.L11
+.L318:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   275        swapped = !swapped;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   276        acc = SWAP_BYTES_IN_WORD(acc);
+	eq	d10,d10,#0
+	fcall	.cocofun_7
+.L11:
+	ld.a	a15,[a15]
+.L9:
+	jnz.a	a15,.L10
+.L319:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   277      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   278      /*LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): wrapped lwip_chksum()=%"X32_F" \n", acc));*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   279    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   280  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   281    if (swapped) {
+	jeq	d10,#0,.L12
+.L320:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   282      acc = SWAP_BYTES_IN_WORD(acc);
+	fcall	.cocofun_7
+.L12:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   283    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   284  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   285    acc += (u32_t)lwip_htons((u16_t)proto);
+	mov	d4,d8
+	call	lwip_htons
+.L218:
+	add	d15,d2
+.L220:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   286    acc += (u32_t)lwip_htons(proto_len);
+	mov	d4,d9
+	call	lwip_htons
+.L221:
+	add	d15,d2
+.L321:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   287  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   288    /* Fold 32-bit sum to 16 bits
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   289       calling this twice is probably faster than if statements... */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   290    acc = FOLD_U32T(acc);
+	fcall	.cocofun_9
+.L217:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   291    acc = FOLD_U32T(acc);
+	sh	d15,d0,#-16
+.L223:
+	insert	d0,d0,#0,#16,#16
+.L224:
+	add	d15,d0
+.L322:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   292    LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): pbuf chain lwip_chksum()=%"X32_F"\n", acc));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   293    return (u16_t)~(acc & 0xffffUL);
+	extr.u	d2,d15,#0,#16
+.L323:
+	mov.u	d15,#65535
+.L225:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   294  }
+	xor	d2,d15
+	ret
+.L183:
+	
+__inet_cksum_pseudo_base_function_end:
+	.size	inet_cksum_pseudo_base,__inet_cksum_pseudo_base_function_end-inet_cksum_pseudo_base
+.L100:
+	; End of function
+	
+	.sdecl	'.text.inet_chksum..cocofun_9',code,cluster('.cocofun_9')
+	.sect	'.text.inet_chksum..cocofun_9'
+	.align	2
+; Function .cocofun_9
+.L36:
+.cocofun_9:	.type	func
+; Function body .cocofun_9, coco_iter:1
+	sh	d0,d15,#-16
+	insert	d15,d15,#0,#16,#16
+.L222:
+	add	d0,d15
+	fret
+.L125:
+	; End of function
+	.sdecl	'.text.inet_chksum..cocofun_7',code,cluster('.cocofun_7')
+	.sect	'.text.inet_chksum..cocofun_7'
+	.align	2
+; Function .cocofun_7
+.L38:
+.cocofun_7:	.type	func
+; Function body .cocofun_7, coco_iter:0
+	and	d0,d15,#255
+.L214:
+	extr.u	d15,d15,#8,#8
+.L215:
+	sh	d0,d0,#8
+.L216:
+	or	d15,d0
+	fret
+.L115:
+	; End of function
+	.sdecl	'.text.inet_chksum.inet_chksum_pseudo',code,cluster('inet_chksum_pseudo')
+	.sect	'.text.inet_chksum.inet_chksum_pseudo'
+	.align	2
+	
+	.global	inet_chksum_pseudo
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   295  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   296  #if LWIP_IPV4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   297  /* inet_chksum_pseudo:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   298   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   299   * Calculates the IPv4 pseudo Internet checksum used by TCP and UDP for a pbuf chain.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   300   * IP addresses are expected to be in network byte order.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   301   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   302   * @param p chain of pbufs over that a checksum should be calculated (ip data part)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   303   * @param src source ip address (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   304   * @param dst destination ip address (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   305   * @param proto ip protocol (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   306   * @param proto_len length of the ip data part (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   307   * @return checksum (as u16_t) to be saved directly in the protocol header
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   308   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   309  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   310  inet_chksum_pseudo(struct pbuf *p, u8_t proto, u16_t proto_len,
+; Function inet_chksum_pseudo
+.L40:
+inet_chksum_pseudo:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   311                     const ip4_addr_t *src, const ip4_addr_t *dest)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   312  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   313    u32_t acc;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   314    u32_t addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   315  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   316    addr = ip4_addr_get_u32(src);
+	fcall	.cocofun_6
+.L231:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   317    acc = (addr & 0xffffUL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   318    acc = (u32_t)(acc + ((addr >> 16) & 0xffffUL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   319    addr = ip4_addr_get_u32(dest);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   320    acc = (u32_t)(acc + (addr & 0xffffUL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   321    acc = (u32_t)(acc + ((addr >> 16) & 0xffffUL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   322    /* fold down to 16 bits */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   323    acc = FOLD_U32T(acc);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   324    acc = FOLD_U32T(acc);
+	insert	d15,d0,#0,#16,#16
+	sh	d6,d0,#-16
+.L233:
+	add	d6,d15
+.L232:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   325  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   326    return inet_cksum_pseudo_base(p, proto, proto_len, acc);
+	j	inet_cksum_pseudo_base
+.L139:
+	
+__inet_chksum_pseudo_function_end:
+	.size	inet_chksum_pseudo,__inet_chksum_pseudo_function_end-inet_chksum_pseudo
+.L75:
+	; End of function
+	
+	.sdecl	'.text.inet_chksum..cocofun_6',code,cluster('.cocofun_6')
+	.sect	'.text.inet_chksum..cocofun_6'
+	.align	2
+; Function .cocofun_6
+.L42:
+.cocofun_6:	.type	func
+; Function body .cocofun_6, coco_iter:0
+	ld.w	d0,[a5]
+.L227:
+	insert	d15,d0,#0,#16,#16
+.L349:
+	sh	d0,d0,#-16
+.L228:
+	add	d15,d0
+	ld.w	d0,[a6]
+.L229:
+	insert	d1,d0,#0,#16,#16
+.L350:
+	sh	d0,d0,#-16
+.L230:
+	add	d15,d1
+.L351:
+	add	d15,d0
+.L352:
+	fcall	.cocofun_9
+.L226:
+	fret
+.L110:
+	; End of function
+	.sdecl	'.text.inet_chksum.ip_chksum_pseudo',code,cluster('ip_chksum_pseudo')
+	.sect	'.text.inet_chksum.ip_chksum_pseudo'
+	.align	2
+	
+	.global	ip_chksum_pseudo
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   327  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   328  #endif /* LWIP_IPV4 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   329  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   330  #if LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   331  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   332   * Calculates the checksum with IPv6 pseudo header used by TCP and UDP for a pbuf chain.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   333   * IPv6 addresses are expected to be in network byte order.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   334   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   335   * @param p chain of pbufs over that a checksum should be calculated (ip data part)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   336   * @param proto ipv6 protocol/next header (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   337   * @param proto_len length of the ipv6 payload (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   338   * @param src source ipv6 address (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   339   * @param dest destination ipv6 address (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   340   * @return checksum (as u16_t) to be saved directly in the protocol header
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   341   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   342  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   343  ip6_chksum_pseudo(struct pbuf *p, u8_t proto, u16_t proto_len,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   344                    const ip6_addr_t *src, const ip6_addr_t *dest)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   345  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   346    u32_t acc = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   347    u32_t addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   348    u8_t addr_part;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   349  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   350    for (addr_part = 0; addr_part < 4; addr_part++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   351      addr = src->addr[addr_part];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   352      acc = (u32_t)(acc + (addr & 0xffffUL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   353      acc = (u32_t)(acc + ((addr >> 16) & 0xffffUL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   354      addr = dest->addr[addr_part];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   355      acc = (u32_t)(acc + (addr & 0xffffUL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   356      acc = (u32_t)(acc + ((addr >> 16) & 0xffffUL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   357    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   358    /* fold down to 16 bits */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   359    acc = FOLD_U32T(acc);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   360    acc = FOLD_U32T(acc);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   361  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   362    return inet_cksum_pseudo_base(p, proto, proto_len, acc);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   363  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   364  #endif /* LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   365  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   366  /* ip_chksum_pseudo:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   367   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   368   * Calculates the IPv4 or IPv6 pseudo Internet checksum used by TCP and UDP for a pbuf chain.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   369   * IP addresses are expected to be in network byte order.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   370   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   371   * @param p chain of pbufs over that a checksum should be calculated (ip data part)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   372   * @param src source ip address (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   373   * @param dst destination ip address (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   374   * @param proto ip protocol (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   375   * @param proto_len length of the ip data part (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   376   * @return checksum (as u16_t) to be saved directly in the protocol header
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   377   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   378  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   379  ip_chksum_pseudo(struct pbuf *p, u8_t proto, u16_t proto_len,
+; Function ip_chksum_pseudo
+.L44:
+ip_chksum_pseudo:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   380                   const ip_addr_t *src, const ip_addr_t *dest)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   381  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   382  #if LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   383    if (IP_IS_V6(dest)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   384      return ip6_chksum_pseudo(p, proto, proto_len, ip_2_ip6(src), ip_2_ip6(dest));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   385    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   386  #endif /* LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   387  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   388    else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   389  #endif /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   390  #if LWIP_IPV4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   391    {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   392      return inet_chksum_pseudo(p, proto, proto_len, ip_2_ip4(src), ip_2_ip4(dest));
+	j	inet_chksum_pseudo
+.L159:
+	
+__ip_chksum_pseudo_function_end:
+	.size	ip_chksum_pseudo,__ip_chksum_pseudo_function_end-ip_chksum_pseudo
+.L85:
+	; End of function
+	
+	.sdecl	'.text.inet_chksum.inet_cksum_pseudo_partial_base',code,cluster('inet_cksum_pseudo_partial_base')
+	.sect	'.text.inet_chksum.inet_cksum_pseudo_partial_base'
+	.align	2
+	
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   393    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   394  #endif /* LWIP_IPV4 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   395  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   396  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   397  /** Parts of the pseudo checksum which are common to IPv4 and IPv6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   398  static u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   399  inet_cksum_pseudo_partial_base(struct pbuf *p, u8_t proto, u16_t proto_len,
+; Function inet_cksum_pseudo_partial_base
+.L46:
+inet_cksum_pseudo_partial_base:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   400                                 u16_t chksum_len, u32_t acc)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   401  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   402    struct pbuf *q;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   403    int swapped = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   404    u16_t chklen;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   405  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   406    /* iterate through all pbuf in chain */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   407    for (q = p; (q != NULL) && (chksum_len > 0); q = q->next) {
+	mov	e10,d5,d4
+	mov.aa	a12,a4
+.L245:
+	mov	d9,d6
+	sub.a	a10,#16
+.L234:
+	mov	d13,d7
+.L239:
+	mov	d12,#0
+	j	.L16
+.L17:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   408      LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): checksumming pbuf %p (has next %p) \n",
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   409                               (void *)q, (void *)q->next));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   410      chklen = q->len;
+	ld.hu	d0,[a12]10
+.L328:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   411      if (chklen > chksum_len) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   412        chklen = chksum_len;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   413      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   414      acc += LWIP_CHKSUM(q->payload, chklen);
+	ld.a	a4,[a12]4
+.L329:
+	min.u	d8,d0,d9
+.L238:
+	mov	d4,d8
+	call	lwip_standard_chksum
+.L330:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   415      chksum_len = (u16_t)(chksum_len - chklen);
+	sub	d0,d9,d8
+.L331:
+	extr.u	d9,d0,#0,#16
+.L332:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   416      LWIP_ASSERT("delete me", chksum_len < 0x7fff);
+	mov	d0,#32767
+.L333:
+	add	d13,d2
+.L334:
+	jlt.u	d9,d0,.L18
+.L335:
+	movh.a	a15,#@his(.4.str)
+	lea	a15,[a15]@los(.4.str)
+	st.a	[a10],a15
+	mov	d15,#416
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.5.str)
+	lea	a15,[a15]@los(.5.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.3.str)
+	lea	a4,[a4]@los(.3.str)
+	call	Ifx_Lwip_printf
+.L18:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   417      /*LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): unwrapped lwip_chksum()=%"X32_F" \n", acc));*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   418      /* fold the upper bit down */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   419      acc = FOLD_U32T(acc);
+	insert	d0,d13,#0,#16,#16
+	sh	d15,d13,#-16
+.L336:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   420      if (q->len % 2 != 0) {
+	add	d13,d15,d0
+	ld.hu	d15,[a12]10
+.L337:
+	jz.t	d15:0,.L19
+.L338:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   421        swapped = !swapped;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   422        acc = SWAP_BYTES_IN_WORD(acc);
+	eq	d12,d12,#0
+	fcall	.cocofun_8
+.L19:
+	ld.a	a12,[a12]
+.L16:
+	jz.a	a12,.L20
+.L339:
+	jne	d9,#0,.L17
+.L20:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   423      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   424      /*LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): wrapped lwip_chksum()=%"X32_F" \n", acc));*/
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   425    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   426  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   427    if (swapped) {
+	jeq	d12,#0,.L21
+.L340:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   428      acc = SWAP_BYTES_IN_WORD(acc);
+	fcall	.cocofun_8
+.L21:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   429    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   430  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   431    acc += (u32_t)lwip_htons((u16_t)proto);
+	mov	d4,d10
+	call	lwip_htons
+.L241:
+	add	d13,d2
+.L242:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   432    acc += (u32_t)lwip_htons(proto_len);
+	mov	d4,d11
+	call	lwip_htons
+.L243:
+	add	d13,d2
+.L341:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   433  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   434    /* Fold 32-bit sum to 16 bits
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   435       calling this twice is probably faster than if statements... */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   436    acc = FOLD_U32T(acc);
+	insert	d0,d13,#0,#16,#16
+	sh	d15,d13,#-16
+.L244:
+	add	d15,d0
+.L342:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   437    acc = FOLD_U32T(acc);
+	fcall	.cocofun_9
+.L240:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   438    LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): pbuf chain lwip_chksum()=%"X32_F"\n", acc));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   439    return (u16_t)~(acc & 0xffffUL);
+	extr.u	d2,d0,#0,#16
+.L343:
+	mov.u	d15,#65535
+.L344:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   440  }
+	xor	d2,d15
+	ret
+.L191:
+	
+__inet_cksum_pseudo_partial_base_function_end:
+	.size	inet_cksum_pseudo_partial_base,__inet_cksum_pseudo_partial_base_function_end-inet_cksum_pseudo_partial_base
+.L105:
+	; End of function
+	
+	.sdecl	'.text.inet_chksum..cocofun_8',code,cluster('.cocofun_8')
+	.sect	'.text.inet_chksum..cocofun_8'
+	.align	2
+; Function .cocofun_8
+.L48:
+.cocofun_8:	.type	func
+; Function body .cocofun_8, coco_iter:0
+	and	d15,d13,#255
+.L235:
+	extr.u	d13,d13,#8,#8
+.L236:
+	sh	d15,d15,#8
+.L237:
+	or	d13,d15
+	fret
+.L120:
+	; End of function
+	.sdecl	'.text.inet_chksum.inet_chksum_pseudo_partial',code,cluster('inet_chksum_pseudo_partial')
+	.sect	'.text.inet_chksum.inet_chksum_pseudo_partial'
+	.align	2
+	
+	.global	inet_chksum_pseudo_partial
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   441  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   442  #if LWIP_IPV4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   443  /* inet_chksum_pseudo_partial:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   444   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   445   * Calculates the IPv4 pseudo Internet checksum used by TCP and UDP for a pbuf chain.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   446   * IP addresses are expected to be in network byte order.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   447   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   448   * @param p chain of pbufs over that a checksum should be calculated (ip data part)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   449   * @param src source ip address (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   450   * @param dst destination ip address (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   451   * @param proto ip protocol (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   452   * @param proto_len length of the ip data part (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   453   * @return checksum (as u16_t) to be saved directly in the protocol header
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   454   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   455  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   456  inet_chksum_pseudo_partial(struct pbuf *p, u8_t proto, u16_t proto_len,
+; Function inet_chksum_pseudo_partial
+.L50:
+inet_chksum_pseudo_partial:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   457                             u16_t chksum_len, const ip4_addr_t *src, const ip4_addr_t *dest)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   458  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   459    u32_t acc;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   460    u32_t addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   461  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   462    addr = ip4_addr_get_u32(src);
+	fcall	.cocofun_6
+.L246:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   463    acc = (addr & 0xffffUL);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   464    acc = (u32_t)(acc + ((addr >> 16) & 0xffffUL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   465    addr = ip4_addr_get_u32(dest);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   466    acc = (u32_t)(acc + (addr & 0xffffUL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   467    acc = (u32_t)(acc + ((addr >> 16) & 0xffffUL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   468    /* fold down to 16 bits */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   469    acc = FOLD_U32T(acc);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   470    acc = FOLD_U32T(acc);
+	insert	d15,d0,#0,#16,#16
+	sh	d7,d0,#-16
+.L248:
+	add	d7,d15
+.L247:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   471  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   472    return inet_cksum_pseudo_partial_base(p, proto, proto_len, chksum_len, acc);
+	j	inet_cksum_pseudo_partial_base
+.L150:
+	
+__inet_chksum_pseudo_partial_function_end:
+	.size	inet_chksum_pseudo_partial,__inet_chksum_pseudo_partial_function_end-inet_chksum_pseudo_partial
+.L80:
+	; End of function
+	
+	.sdecl	'.text.inet_chksum.ip_chksum_pseudo_partial',code,cluster('ip_chksum_pseudo_partial')
+	.sect	'.text.inet_chksum.ip_chksum_pseudo_partial'
+	.align	2
+	
+	.global	ip_chksum_pseudo_partial
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   473  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   474  #endif /* LWIP_IPV4 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   475  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   476  #if LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   477  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   478   * Calculates the checksum with IPv6 pseudo header used by TCP and UDP for a pbuf chain.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   479   * IPv6 addresses are expected to be in network byte order. Will only compute for a
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   480   * portion of the payload.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   481   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   482   * @param p chain of pbufs over that a checksum should be calculated (ip data part)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   483   * @param proto ipv6 protocol/next header (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   484   * @param proto_len length of the ipv6 payload (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   485   * @param chksum_len number of payload bytes used to compute chksum
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   486   * @param src source ipv6 address (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   487   * @param dest destination ipv6 address (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   488   * @return checksum (as u16_t) to be saved directly in the protocol header
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   489   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   490  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   491  ip6_chksum_pseudo_partial(struct pbuf *p, u8_t proto, u16_t proto_len,
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   492                            u16_t chksum_len, const ip6_addr_t *src, const ip6_addr_t *dest)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   493  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   494    u32_t acc = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   495    u32_t addr;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   496    u8_t addr_part;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   497  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   498    for (addr_part = 0; addr_part < 4; addr_part++) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   499      addr = src->addr[addr_part];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   500      acc = (u32_t)(acc + (addr & 0xffffUL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   501      acc = (u32_t)(acc + ((addr >> 16) & 0xffffUL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   502      addr = dest->addr[addr_part];
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   503      acc = (u32_t)(acc + (addr & 0xffffUL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   504      acc = (u32_t)(acc + ((addr >> 16) & 0xffffUL));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   505    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   506    /* fold down to 16 bits */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   507    acc = FOLD_U32T(acc);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   508    acc = FOLD_U32T(acc);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   509  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   510    return inet_cksum_pseudo_partial_base(p, proto, proto_len, chksum_len, acc);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   511  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   512  #endif /* LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   513  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   514  /* ip_chksum_pseudo_partial:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   515   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   516   * Calculates the IPv4 or IPv6 pseudo Internet checksum used by TCP and UDP for a pbuf chain.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   517   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   518   * @param p chain of pbufs over that a checksum should be calculated (ip data part)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   519   * @param src source ip address (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   520   * @param dst destination ip address (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   521   * @param proto ip protocol (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   522   * @param proto_len length of the ip data part (used for checksum of pseudo header)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   523   * @return checksum (as u16_t) to be saved directly in the protocol header
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   524   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   525  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   526  ip_chksum_pseudo_partial(struct pbuf *p, u8_t proto, u16_t proto_len,
+; Function ip_chksum_pseudo_partial
+.L52:
+ip_chksum_pseudo_partial:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   527                           u16_t chksum_len, const ip_addr_t *src, const ip_addr_t *dest)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   528  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   529  #if LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   530    if (IP_IS_V6(dest)) {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   531      return ip6_chksum_pseudo_partial(p, proto, proto_len, chksum_len, ip_2_ip6(src), ip_2_ip6(dest));
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   532    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   533  #endif /* LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   534  #if LWIP_IPV4 && LWIP_IPV6
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   535    else
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   536  #endif /* LWIP_IPV4 && LWIP_IPV6 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   537  #if LWIP_IPV4
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   538    {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   539      return inet_chksum_pseudo_partial(p, proto, proto_len, chksum_len, ip_2_ip4(src), ip_2_ip4(dest));
+	j	inet_chksum_pseudo_partial
+.L166:
+	
+__ip_chksum_pseudo_partial_function_end:
+	.size	ip_chksum_pseudo_partial,__ip_chksum_pseudo_partial_function_end-ip_chksum_pseudo_partial
+.L90:
+	; End of function
+	
+	.sdecl	'.text.inet_chksum.inet_chksum',code,cluster('inet_chksum')
+	.sect	'.text.inet_chksum.inet_chksum'
+	.align	2
+	
+	.global	inet_chksum
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   540    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   541  #endif /* LWIP_IPV4 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   542  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   543  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   544  /* inet_chksum:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   545   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   546   * Calculates the Internet checksum over a portion of memory. Used primarily for IP
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   547   * and ICMP.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   548   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   549   * @param dataptr start of the buffer to calculate the checksum (no alignment needed)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   550   * @param len length of the buffer to calculate the checksum
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   551   * @return checksum (as u16_t) to be saved directly in the protocol header
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   552   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   553  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   554  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   555  inet_chksum(const void *dataptr, u16_t len)
+; Function inet_chksum
+.L54:
+inet_chksum:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   556  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   557    return (u16_t)~(unsigned int)LWIP_CHKSUM(dataptr, len);
+	call	lwip_standard_chksum
+.L249:
+	mov.u	d15,#65535
+.L263:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   558  }
+	xor	d2,d15
+	ret
+.L127:
+	
+__inet_chksum_function_end:
+	.size	inet_chksum,__inet_chksum_function_end-inet_chksum
+.L65:
+	; End of function
+	
+	.sdecl	'.text.inet_chksum.inet_chksum_pbuf',code,cluster('inet_chksum_pbuf')
+	.sect	'.text.inet_chksum.inet_chksum_pbuf'
+	.align	2
+	
+	.global	inet_chksum_pbuf
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   559  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   560  /**
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   561   * Calculate a checksum over a chain of pbufs (without pseudo-header, much like
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   562   * inet_chksum only pbufs are used).
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   563   *
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   564   * @param p pbuf chain over that the checksum should be calculated
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   565   * @return checksum (as u16_t) to be saved directly in the protocol header
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   566   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   567  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   568  inet_chksum_pbuf(struct pbuf *p)
+; Function inet_chksum_pbuf
+.L56:
+inet_chksum_pbuf:	.type	func
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   569  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   570    u32_t acc;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   571    struct pbuf *q;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   572    int swapped = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   573  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   574    acc = 0;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   575    for (q = p; q != NULL; q = q->next) {
+	mov	d9,#0
+	mov.aa	a15,a4
+.L250:
+	mov	d8,d9
+	j	.L26
+.L27:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   576      acc += LWIP_CHKSUM(q->payload, q->len);
+	ld.a	a4,[a15]4
+.L268:
+	ld.hu	d4,[a15]10
+	call	lwip_standard_chksum
+.L269:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   577      acc = FOLD_U32T(acc);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   578      if (q->len % 2 != 0) {
+	add	d8,d2
+	ld.hu	d15,[a15]10
+.L270:
+	sh	d0,d8,#-16
+	insert	d8,d8,#0,#16,#16
+	add	d8,d0
+.L271:
+	jz.t	d15:0,.L28
+.L272:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   579        swapped = !swapped;
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   580        acc = SWAP_BYTES_IN_WORD(acc);
+	and	d15,d8,#255
+	extr.u	d8,d8,#8,#8
+.L251:
+	sh	d0,d15,#8
+.L273:
+	eq	d9,d9,#0
+.L252:
+	or	d8,d0
+.L28:
+	ld.a	a15,[a15]
+.L26:
+	jnz.a	a15,.L27
+.L274:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   581      }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   582    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   583  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   584    if (swapped) {
+	jeq	d9,#0,.L29
+.L275:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   585      acc = SWAP_BYTES_IN_WORD(acc);
+	and	d15,d8,#255
+	extr.u	d8,d8,#8,#8
+.L253:
+	sh	d15,d15,#8
+.L254:
+	or	d8,d15
+.L29:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   586    }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   587    return (u16_t)~(acc & 0xffffUL);
+	extr.u	d2,d8,#0,#16
+.L276:
+	mov.u	d15,#65535
+.L277:
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   588  }
+	xor	d2,d15
+	ret
+.L131:
+	
+__inet_chksum_pbuf_function_end:
+	.size	inet_chksum_pbuf,__inet_chksum_pbuf_function_end-inet_chksum_pbuf
+.L70:
+	; End of function
+	
+	.sdecl	'.rodata.inet_chksum..3.str',data,rom
+	.sect	'.rodata.inet_chksum..3.str'
+.3.str:	.type	object
+	.size	.3.str,40
+	.byte	65,115,115,101
+	.byte	114,116,105,111
+	.byte	110,32,34,37
+	.byte	115,34,32,102
+	.byte	97,105,108,101
+	.byte	100,32,97,116
+	.byte	32,108,105,110
+	.byte	101,32,37,100
+	.byte	32,105,110,32
+	.byte	37,115,10
+	.space	1
+	.sdecl	'.rodata.inet_chksum..4.str',data,rom
+	.sect	'.rodata.inet_chksum..4.str'
+.4.str:	.type	object
+	.size	.4.str,10
+	.byte	100,101,108,101
+	.byte	116,101,32,109
+	.byte	101
+	.space	1
+	.sdecl	'.rodata.inet_chksum..5.str',data,rom
+	.sect	'.rodata.inet_chksum..5.str'
+.5.str:	.type	object
+	.size	.5.str,54
+	.byte	46,46,92,48
+	.byte	95,83,114,99
+	.byte	92,48,95,65
+	.byte	112,112,83,119
+	.byte	92,69,116,104
+	.byte	101,114,110,101
+	.byte	116,92,108,119
+	.byte	105,112,92,115
+	.byte	114,99,92,99
+	.byte	111,114,101,92
+	.byte	105,110,101,116
+	.byte	95,99,104,107
+	.byte	115,117,109,46
+	.byte	99
+	.space	1
+	.calls	'inet_cksum_pseudo_base','lwip_standard_chksum'
+	.calls	'inet_cksum_pseudo_base','lwip_htons'
+	.calls	'inet_chksum_pseudo','inet_cksum_pseudo_base'
+	.calls	'ip_chksum_pseudo','inet_chksum_pseudo'
+	.calls	'inet_cksum_pseudo_partial_base','lwip_standard_chksum'
+	.calls	'inet_cksum_pseudo_partial_base','Ifx_Lwip_printf'
+	.calls	'inet_cksum_pseudo_partial_base','lwip_htons'
+	.calls	'inet_chksum_pseudo_partial','inet_cksum_pseudo_partial_base'
+	.calls	'ip_chksum_pseudo_partial','inet_chksum_pseudo_partial'
+	.calls	'inet_chksum','lwip_standard_chksum'
+	.calls	'inet_chksum_pbuf','lwip_standard_chksum'
+	.calls	'inet_cksum_pseudo_base','.cocofun_7'
+	.calls	'inet_cksum_pseudo_base','.cocofun_9'
+	.calls	'inet_chksum_pseudo','.cocofun_6'
+	.calls	'.cocofun_6','.cocofun_9'
+	.calls	'inet_cksum_pseudo_partial_base','.cocofun_8'
+	.calls	'inet_cksum_pseudo_partial_base','.cocofun_9'
+	.calls	'inet_chksum_pseudo_partial','.cocofun_6'
+	.calls	'lwip_standard_chksum','',0
+	.calls	'inet_cksum_pseudo_base','',0
+	.calls	'.cocofun_9','',0
+	.calls	'.cocofun_7','',0
+	.calls	'inet_chksum_pseudo','',0
+	.calls	'.cocofun_6','',0
+	.calls	'ip_chksum_pseudo','',0
+	.calls	'inet_cksum_pseudo_partial_base','',16
+	.calls	'.cocofun_8','',0
+	.calls	'inet_chksum_pseudo_partial','',0
+	.calls	'ip_chksum_pseudo_partial','',0
+	.calls	'inet_chksum','',0
+	.extern	Ifx_Lwip_printf
+	.extern	lwip_htons
+	.calls	'inet_chksum_pbuf','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L58:
+	.word	1176
+	.half	3
+	.word	.L59
+	.byte	4
+.L57:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L60
+.L137:
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	173
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	180
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	222
+	.byte	7
+	.word	222
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	238
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	243
+	.byte	9
+	.byte	'value',0
+	.word	222
+	.byte	9
+	.byte	'compare',0
+	.word	222
+	.byte	0,2
+	.byte	'char',0,1,6,2
+	.byte	'char',0,1,6,3
+	.word	308
+	.byte	7
+	.word	316
+	.byte	10
+	.byte	'Ifx_Lwip_printf',0,1,123,6
+	.word	300
+	.byte	1,1,1,1,11
+	.byte	's',0,1,123,34
+	.word	321
+	.byte	12,1,123,37,0
+.L126:
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'lwip_htons',0,2,96,7
+	.word	369
+	.byte	1,1,1,1,11
+	.byte	'x',0,2,96,24
+	.word	369
+	.byte	0,13
+	.byte	'void',0,3
+	.word	425
+.L128:
+	.byte	7
+	.word	431
+	.byte	7
+	.word	425
+.L141:
+	.byte	2
+	.byte	'unsigned char',0,1,8,14
+	.byte	'pbuf',0,3,186,1,8,16,15
+	.byte	'next',0
+	.word	.L132-.L58
+	.byte	4,2,35,0,15
+	.byte	'payload',0
+	.word	441
+	.byte	4,2,35,4,15
+	.byte	'tot_len',0
+	.word	369
+	.byte	2,2,35,8,15
+	.byte	'len',0
+	.word	369
+	.byte	2,2,35,10,15
+	.byte	'type_internal',0
+	.word	446
+	.byte	1,2,35,12,15
+	.byte	'flags',0
+	.word	446
+	.byte	1,2,35,13,15
+	.byte	'ref',0
+	.word	446
+	.byte	1,2,35,14,15
+	.byte	'if_idx',0
+	.word	446
+	.byte	1,2,35,15,0
+.L132:
+	.byte	7
+	.word	463
+.L134:
+	.byte	2
+	.byte	'unsigned long int',0,4,7,14
+	.byte	'ip4_addr',0,4,51,8,4,15
+	.byte	'addr',0
+	.word	608
+	.byte	4,2,35,0,0,3
+	.word	629
+.L144:
+	.byte	7
+	.word	658
+	.byte	3
+	.word	629
+.L163:
+	.byte	7
+	.word	668
+	.byte	3
+	.word	446
+.L176:
+	.byte	7
+	.word	678
+	.byte	3
+	.word	369
+.L178:
+	.byte	7
+	.word	688
+	.byte	2
+	.byte	'short int',0,2,5,16
+	.byte	'__wchar_t',0,5,1,1
+	.word	698
+	.byte	16
+	.byte	'__size_t',0,5,1,1
+	.word	222
+	.byte	16
+	.byte	'__ptrdiff_t',0,5,1,1
+	.word	173
+	.byte	17,1,7
+	.word	766
+	.byte	16
+	.byte	'__codeptr',0,5,1,1
+	.word	768
+	.byte	16
+	.byte	'__intptr_t',0,5,1,1
+	.word	173
+	.byte	16
+	.byte	'__uintptr_t',0,5,1,1
+	.word	222
+	.byte	16
+	.byte	'uint8',0,6,108,29
+	.word	446
+	.byte	16
+	.byte	'uint16',0,6,112,29
+	.word	369
+	.byte	16
+	.byte	'uint32',0,6,116,29
+	.word	608
+	.byte	16
+	.byte	'sint8',0,6,125,29
+	.word	300
+	.byte	16
+	.byte	'sint16',0,6,129,1,29
+	.word	698
+	.byte	2
+	.byte	'long int',0,4,5,16
+	.byte	'sint32',0,6,134,1,29
+	.word	904
+	.byte	2
+	.byte	'long long int',0,8,5,16
+	.byte	'sint64',0,6,141,1,29
+	.word	932
+	.byte	2
+	.byte	'float',0,4,4,16
+	.byte	'float32',0,6,170,1,29
+	.word	965
+	.byte	16
+	.byte	'pvoid',0,7,54,28
+	.word	441
+	.byte	16
+	.byte	'Ifx_TickTime',0,7,76,28
+	.word	932
+	.byte	16
+	.byte	'u8_t',0,1,85,16
+	.word	446
+	.byte	16
+	.byte	'u16_t',0,1,86,16
+	.word	369
+	.byte	16
+	.byte	'u32_t',0,1,87,16
+	.word	608
+	.byte	16
+	.byte	's8_t',0,1,88,16
+	.word	300
+	.byte	16
+	.byte	'intmax_t',0,8,198,2,41
+	.word	932
+	.byte	18,1,1,5
+	.word	603
+	.byte	0,7
+	.word	1098
+	.byte	16
+	.byte	'pbuf_free_custom_fn',0,3,242,1,16
+	.word	1107
+	.byte	16
+	.byte	'ip4_addr_t',0,4,57,25
+	.word	629
+	.byte	16
+	.byte	'ip_addr_t',0,9,142,2,20
+	.word	629
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L59:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,11
+	.byte	5,0,3,8,58,15,59,15,57,15,73,19,0,0,12,24,0,58,15,59,15,57,15,0,0,13,59,0,3,8,0,0,14,19,1,3,8,58,15,59
+	.byte	15,57,15,11,15,0,0,15,13,0,3,8,73,19,11,15,56,9,0,0,16,22,0,3,8,58,15,59,15,57,15,73,19,0,0,17,21,0,54
+	.byte	15,0,0,18,21,1,54,15,39,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L60:
+	.word	.L256-.L255
+.L255:
+	.half	3
+	.word	.L258-.L257
+.L257:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\port\\include\\arch',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\include\\lwip',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0,0
+	.byte	'cc.h',0,1,0,0
+	.byte	'def.h',0,2,0,0
+	.byte	'pbuf.h',0,2,0,0
+	.byte	'ip4_addr.h',0,2,0,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0,0,0,0
+	.byte	'Platform_Types.h',0,3,0,0
+	.byte	'Ifx_Types.h',0,3,0,0
+	.byte	'stdint.h',0,4,0,0
+	.byte	'ip_addr.h',0,2,0,0,0
+.L258:
+.L256:
+	.sdecl	'.debug_info',debug,cluster('inet_chksum')
+	.sect	'.debug_info'
+.L61:
+	.word	263
+	.half	3
+	.word	.L62
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L64,.L63
+	.byte	2
+	.word	.L57
+	.byte	3
+	.byte	'inet_chksum',0,1,171,4,1
+	.word	.L126
+	.byte	1,1,1
+	.word	.L54,.L127,.L53
+	.byte	4
+	.byte	'dataptr',0,1,171,4,25
+	.word	.L128,.L129
+	.byte	4
+	.byte	'len',0,1,171,4,40
+	.word	.L126,.L130
+	.byte	5
+	.word	.L54,.L127
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('inet_chksum')
+	.sect	'.debug_abbrev'
+.L62:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('inet_chksum')
+	.sect	'.debug_line'
+.L63:
+	.word	.L260-.L259
+.L259:
+	.half	3
+	.word	.L262-.L261
+.L261:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0,0,0,0,0
+.L262:
+	.byte	5,53,7,0,5,2
+	.word	.L54
+	.byte	3,172,4,1,5,17,9
+	.half	.L249-.L54
+	.byte	1,5,1,9
+	.half	.L263-.L249
+	.byte	3,1,1,7,9
+	.half	.L65-.L263
+	.byte	0,1,1
+.L260:
+	.sdecl	'.debug_ranges',debug,cluster('inet_chksum')
+	.sect	'.debug_ranges'
+.L64:
+	.word	-1,.L54,0,.L65-.L54,0,0
+	.sdecl	'.debug_info',debug,cluster('inet_chksum_pbuf')
+	.sect	'.debug_info'
+.L66:
+	.word	299
+	.half	3
+	.word	.L67
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L69,.L68
+	.byte	2
+	.word	.L57
+	.byte	3
+	.byte	'inet_chksum_pbuf',0,1,184,4,1
+	.word	.L126
+	.byte	1,1,1
+	.word	.L56,.L131,.L55
+	.byte	4
+	.byte	'p',0,1,184,4,31
+	.word	.L132,.L133
+	.byte	5
+	.word	.L56,.L131
+	.byte	6
+	.byte	'acc',0,1,186,4,9
+	.word	.L134,.L135
+	.byte	6
+	.byte	'q',0,1,187,4,16
+	.word	.L132,.L136
+	.byte	6
+	.byte	'swapped',0,1,188,4,7
+	.word	.L137,.L138
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('inet_chksum_pbuf')
+	.sect	'.debug_abbrev'
+.L67:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('inet_chksum_pbuf')
+	.sect	'.debug_line'
+.L68:
+	.word	.L265-.L264
+.L264:
+	.half	3
+	.word	.L267-.L266
+.L266:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0,0,0,0,0
+.L267:
+	.byte	5,15,7,0,5,2
+	.word	.L56
+	.byte	3,187,4,1,5,10,3,3,1,5,7,9
+	.half	.L250-.L56
+	.byte	3,127,1,5,24,3,1,1,5,25,9
+	.half	.L27-.L250
+	.byte	3,1,1,5,37,9
+	.half	.L268-.L27
+	.byte	1,5,9,9
+	.half	.L269-.L268
+	.byte	1,5,10,3,2,1,5,11,9
+	.half	.L270-.L269
+	.byte	3,127,1,5,5,9
+	.half	.L271-.L270
+	.byte	3,1,1,5,13,7,9
+	.half	.L272-.L271
+	.byte	3,2,1,5,17,9
+	.half	.L273-.L272
+	.byte	3,127,1,5,13,9
+	.half	.L252-.L273
+	.byte	3,1,1,5,31,9
+	.half	.L28-.L252
+	.byte	3,123,1,5,24,9
+	.half	.L26-.L28
+	.byte	1,5,3,7,9
+	.half	.L274-.L26
+	.byte	3,9,1,5,11,7,9
+	.half	.L275-.L274
+	.byte	3,1,1,5,23,9
+	.half	.L29-.L275
+	.byte	3,2,1,5,17,9
+	.half	.L276-.L29
+	.byte	1,5,1,9
+	.half	.L277-.L276
+	.byte	3,1,1,7,9
+	.half	.L70-.L277
+	.byte	0,1,1
+.L265:
+	.sdecl	'.debug_ranges',debug,cluster('inet_chksum_pbuf')
+	.sect	'.debug_ranges'
+.L69:
+	.word	-1,.L56,0,.L70-.L56,0,0
+	.sdecl	'.debug_info',debug,cluster('inet_chksum_pseudo')
+	.sect	'.debug_info'
+.L71:
+	.word	356
+	.half	3
+	.word	.L72
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L74,.L73
+	.byte	2
+	.word	.L57
+	.byte	3
+	.byte	'inet_chksum_pseudo',0,1,182,2,1
+	.word	.L126
+	.byte	1,1,1
+	.word	.L40,.L139,.L39
+	.byte	4
+	.byte	'p',0,1,182,2,33
+	.word	.L132,.L140
+	.byte	4
+	.byte	'proto',0,1,182,2,41
+	.word	.L141,.L142
+	.byte	4
+	.byte	'proto_len',0,1,182,2,54
+	.word	.L126,.L143
+	.byte	4
+	.byte	'src',0,1,183,2,38
+	.word	.L144,.L145
+	.byte	4
+	.byte	'dest',0,1,183,2,61
+	.word	.L144,.L146
+	.byte	5
+	.word	.L147
+	.byte	6
+	.byte	'acc',0,1,185,2,9
+	.word	.L134,.L148
+	.byte	6
+	.byte	'addr',0,1,186,2,9
+	.word	.L134,.L149
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('inet_chksum_pseudo')
+	.sect	'.debug_abbrev'
+.L72:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,85,6,0,0,6,52,0
+	.byte	3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('inet_chksum_pseudo')
+	.sect	'.debug_line'
+.L73:
+	.word	.L279-.L278
+.L278:
+	.half	3
+	.word	.L281-.L280
+.L280:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0,0,0,0,0
+.L281:
+	.byte	5,10,7,0,5,2
+	.word	.L40
+	.byte	3,187,2,1,5,9,9
+	.half	.L231-.L40
+	.byte	3,8,1,5,54,9
+	.half	.L232-.L231
+	.byte	3,2,1,5,1,7,9
+	.half	.L75-.L232
+	.byte	3,1,0,1,1
+.L279:
+	.sdecl	'.debug_ranges',debug,cluster('inet_chksum_pseudo')
+	.sect	'.debug_ranges'
+.L74:
+	.word	-1,.L40,0,.L75-.L40,0,0
+.L147:
+	.word	-1,.L40,0,.L139-.L40,-1,.L42,0,.L110-.L42,0,0
+	.sdecl	'.debug_info',debug,cluster('inet_chksum_pseudo_partial')
+	.sect	'.debug_info'
+.L76:
+	.word	392
+	.half	3
+	.word	.L77
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L79,.L78
+	.byte	2
+	.word	.L57
+	.byte	3
+	.byte	'inet_chksum_pseudo_partial',0,1,200,3,1
+	.word	.L126
+	.byte	1,1,1
+	.word	.L50,.L150,.L49
+	.byte	4
+	.byte	'p',0,1,200,3,41
+	.word	.L132,.L151
+	.byte	4
+	.byte	'proto',0,1,200,3,49
+	.word	.L141,.L152
+	.byte	4
+	.byte	'proto_len',0,1,200,3,62
+	.word	.L126,.L153
+	.byte	4
+	.byte	'chksum_len',0,1,201,3,34
+	.word	.L126,.L154
+	.byte	4
+	.byte	'src',0,1,201,3,64
+	.word	.L144,.L155
+	.byte	4
+	.byte	'dest',0,1,201,3,87
+	.word	.L144,.L156
+	.byte	5
+	.word	.L50,.L150
+	.byte	6
+	.byte	'acc',0,1,203,3,9
+	.word	.L134,.L157
+	.byte	6
+	.byte	'addr',0,1,204,3,9
+	.word	.L134,.L158
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('inet_chksum_pseudo_partial')
+	.sect	'.debug_abbrev'
+.L77:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('inet_chksum_pseudo_partial')
+	.sect	'.debug_line'
+.L78:
+	.word	.L283-.L282
+.L282:
+	.half	3
+	.word	.L285-.L284
+.L284:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0,0,0,0,0
+.L285:
+	.byte	5,10,7,0,5,2
+	.word	.L50
+	.byte	3,205,3,1,5,9,9
+	.half	.L246-.L50
+	.byte	3,8,1,5,74,9
+	.half	.L247-.L246
+	.byte	3,2,1,5,1,7,9
+	.half	.L80-.L247
+	.byte	3,1,0,1,1
+.L283:
+	.sdecl	'.debug_ranges',debug,cluster('inet_chksum_pseudo_partial')
+	.sect	'.debug_ranges'
+.L79:
+	.word	-1,.L50,0,.L80-.L50,0,0
+	.sdecl	'.debug_info',debug,cluster('ip_chksum_pseudo')
+	.sect	'.debug_info'
+.L81:
+	.word	322
+	.half	3
+	.word	.L82
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L84,.L83
+	.byte	2
+	.word	.L57
+	.byte	3
+	.byte	'ip_chksum_pseudo',0,1,251,2,1
+	.word	.L126
+	.byte	1,1,1
+	.word	.L44,.L159,.L43
+	.byte	4
+	.byte	'p',0,1,251,2,31
+	.word	.L132,.L160
+	.byte	4
+	.byte	'proto',0,1,251,2,39
+	.word	.L141,.L161
+	.byte	4
+	.byte	'proto_len',0,1,251,2,52
+	.word	.L126,.L162
+	.byte	4
+	.byte	'src',0,1,252,2,35
+	.word	.L163,.L164
+	.byte	4
+	.byte	'dest',0,1,252,2,57
+	.word	.L163,.L165
+	.byte	5
+	.word	.L44,.L159
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ip_chksum_pseudo')
+	.sect	'.debug_abbrev'
+.L82:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ip_chksum_pseudo')
+	.sect	'.debug_line'
+.L83:
+	.word	.L287-.L286
+.L286:
+	.half	3
+	.word	.L289-.L288
+.L288:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0,0,0,0,0
+.L289:
+	.byte	5,67,7,0,5,2
+	.word	.L44
+	.byte	3,135,3,1,5,1,7,9
+	.half	.L85-.L44
+	.byte	3,3,0,1,1
+.L287:
+	.sdecl	'.debug_ranges',debug,cluster('ip_chksum_pseudo')
+	.sect	'.debug_ranges'
+.L84:
+	.word	-1,.L44,0,.L85-.L44,0,0
+	.sdecl	'.debug_info',debug,cluster('ip_chksum_pseudo_partial')
+	.sect	'.debug_info'
+.L86:
+	.word	354
+	.half	3
+	.word	.L87
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L89,.L88
+	.byte	2
+	.word	.L57
+	.byte	3
+	.byte	'ip_chksum_pseudo_partial',0,1,142,4,1
+	.word	.L126
+	.byte	1,1,1
+	.word	.L52,.L166,.L51
+	.byte	4
+	.byte	'p',0,1,142,4,39
+	.word	.L132,.L167
+	.byte	4
+	.byte	'proto',0,1,142,4,47
+	.word	.L141,.L168
+	.byte	4
+	.byte	'proto_len',0,1,142,4,60
+	.word	.L126,.L169
+	.byte	4
+	.byte	'chksum_len',0,1,143,4,32
+	.word	.L126,.L170
+	.byte	4
+	.byte	'src',0,1,143,4,61
+	.word	.L163,.L171
+	.byte	4
+	.byte	'dest',0,1,143,4,83
+	.word	.L163,.L172
+	.byte	5
+	.word	.L52,.L166
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ip_chksum_pseudo_partial')
+	.sect	'.debug_abbrev'
+.L87:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ip_chksum_pseudo_partial')
+	.sect	'.debug_line'
+.L88:
+	.word	.L291-.L290
+.L290:
+	.half	3
+	.word	.L293-.L292
+.L292:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0,0,0,0,0
+.L293:
+	.byte	5,87,7,0,5,2
+	.word	.L52
+	.byte	3,154,4,1,5,1,7,9
+	.half	.L90-.L52
+	.byte	3,3,0,1,1
+.L291:
+	.sdecl	'.debug_ranges',debug,cluster('ip_chksum_pseudo_partial')
+	.sect	'.debug_ranges'
+.L89:
+	.word	-1,.L52,0,.L90-.L52,0,0
+	.sdecl	'.debug_info',debug,cluster('lwip_standard_chksum')
+	.sect	'.debug_info'
+.L91:
+	.word	354
+	.half	3
+	.word	.L92
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L94,.L93
+	.byte	2
+	.word	.L57
+	.byte	3
+	.byte	'lwip_standard_chksum',0,1,133,1,1
+	.word	.L126
+	.byte	1,1,1
+	.word	.L32,.L173,.L31
+	.byte	4
+	.byte	'dataptr',0,1,133,1,34
+	.word	.L128,.L174
+	.byte	4
+	.byte	'len',0,1,133,1,47
+	.word	.L137,.L175
+	.byte	5
+	.word	.L32,.L173
+	.byte	6
+	.byte	'pb',0,1,135,1,15
+	.word	.L176,.L177
+	.byte	6
+	.byte	'ps',0,1,136,1,16
+	.word	.L178,.L179
+	.byte	6
+	.byte	't',0,1,137,1,9
+	.word	.L126,.L180
+	.byte	6
+	.byte	'sum',0,1,138,1,9
+	.word	.L134,.L181
+	.byte	6
+	.byte	'odd',0,1,139,1,7
+	.word	.L137,.L182
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('lwip_standard_chksum')
+	.sect	'.debug_abbrev'
+.L92:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('lwip_standard_chksum')
+	.sect	'.debug_line'
+.L93:
+	.word	.L295-.L294
+.L294:
+	.half	3
+	.word	.L297-.L296
+.L296:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0,0,0,0,0
+.L297:
+	.byte	5,11,7,0,5,2
+	.word	.L32
+	.byte	3,136,1,1,5,13,9
+	.half	.L201-.L32
+	.byte	3,1,1,5,25,3,1,1,5,28,9
+	.half	.L203-.L201
+	.byte	1,5,7,9
+	.half	.L204-.L203
+	.byte	3,3,1,5,18,7,9
+	.half	.L298-.L204
+	.byte	1,5,23,7,9
+	.half	.L299-.L298
+	.byte	3,1,1,5,8,9
+	.half	.L300-.L299
+	.byte	3,1,1,5,21,9
+	.half	.L301-.L300
+	.byte	3,127,1,5,17,9
+	.half	.L302-.L301
+	.byte	3,6,1,5,12,9
+	.half	.L5-.L302
+	.byte	3,1,1,5,9,9
+	.half	.L303-.L5
+	.byte	3,1,1,9
+	.half	.L304-.L303
+	.byte	3,127,1,5,17,9
+	.half	.L4-.L304
+	.byte	3,127,1,5,3,7,9
+	.half	.L305-.L4
+	.byte	3,6,1,5,23,7,9
+	.half	.L306-.L305
+	.byte	3,1,1,5,21,9
+	.half	.L307-.L306
+	.byte	1,5,7,9
+	.half	.L6-.L307
+	.byte	3,4,1,5,9,9
+	.half	.L308-.L6
+	.byte	3,4,1,9
+	.half	.L309-.L308
+	.byte	3,1,1,5,3,9
+	.half	.L310-.L309
+	.byte	3,3,1,5,11,7,9
+	.half	.L311-.L310
+	.byte	3,1,1,5,10,9
+	.half	.L7-.L311
+	.byte	3,3,1,5,1,3,1,1,7,9
+	.half	.L95-.L7
+	.byte	0,1,1
+.L295:
+	.sdecl	'.debug_ranges',debug,cluster('lwip_standard_chksum')
+	.sect	'.debug_ranges'
+.L94:
+	.word	-1,.L32,0,.L95-.L32,0,0
+	.sdecl	'.debug_info',debug,cluster('inet_cksum_pseudo_base')
+	.sect	'.debug_info'
+.L96:
+	.word	342
+	.half	3
+	.word	.L97
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L99,.L98
+	.byte	2
+	.word	.L57
+	.byte	3
+	.byte	'inet_cksum_pseudo_base',0,1,132,2,1
+	.word	.L126
+	.byte	1,1
+	.word	.L34,.L183,.L33
+	.byte	4
+	.byte	'p',0,1,132,2,37
+	.word	.L132,.L184
+	.byte	4
+	.byte	'proto',0,1,132,2,45
+	.word	.L141,.L185
+	.byte	4
+	.byte	'proto_len',0,1,132,2,58
+	.word	.L126,.L186
+	.byte	4
+	.byte	'acc',0,1,132,2,75
+	.word	.L134,.L187
+	.byte	5
+	.word	.L188
+	.byte	6
+	.byte	'q',0,1,134,2,16
+	.word	.L132,.L189
+	.byte	6
+	.byte	'swapped',0,1,135,2,7
+	.word	.L137,.L190
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('inet_cksum_pseudo_base')
+	.sect	'.debug_abbrev'
+.L97:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,85,6,0,0,6,52,0,3,8,58
+	.byte	15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('inet_cksum_pseudo_base')
+	.sect	'.debug_line'
+.L98:
+	.word	.L313-.L312
+.L312:
+	.half	3
+	.word	.L315-.L314
+.L314:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0,0,0,0,0
+.L315:
+	.byte	5,1,7,0,5,2
+	.word	.L34
+	.byte	3,131,2,1,5,10,3,6,1,5,1,9
+	.half	.L219-.L34
+	.byte	3,122,1,5,15,9
+	.half	.L210-.L219
+	.byte	3,3,1,5,24,3,3,1,5,25,9
+	.half	.L10-.L210
+	.byte	3,3,1,5,37,9
+	.half	.L316-.L10
+	.byte	1,5,9,9
+	.half	.L212-.L316
+	.byte	1,5,11,9
+	.half	.L211-.L212
+	.byte	3,4,1,5,10,9
+	.half	.L317-.L211
+	.byte	3,1,1,5,5,9
+	.half	.L213-.L317
+	.byte	1,5,17,7,9
+	.half	.L318-.L213
+	.byte	3,1,1,5,13,3,1,1,5,31,9
+	.half	.L11-.L318
+	.byte	3,118,1,5,24,9
+	.half	.L9-.L11
+	.byte	1,5,3,7,9
+	.half	.L319-.L9
+	.byte	3,15,1,5,11,7,9
+	.half	.L320-.L319
+	.byte	3,1,1,5,28,9
+	.half	.L12-.L320
+	.byte	3,3,1,5,7,9
+	.half	.L218-.L12
+	.byte	1,5,28,9
+	.half	.L220-.L218
+	.byte	3,1,1,5,7,9
+	.half	.L221-.L220
+	.byte	1,5,9,9
+	.half	.L321-.L221
+	.byte	3,4,1,9
+	.half	.L217-.L321
+	.byte	3,1,1,5,23,9
+	.half	.L322-.L217
+	.byte	3,2,1,5,17,9
+	.half	.L323-.L322
+	.byte	1,5,1,9
+	.half	.L225-.L323
+	.byte	3,1,1,7,9
+	.half	.L100-.L225
+	.byte	0,1,1
+.L313:
+	.sdecl	'.debug_ranges',debug,cluster('inet_cksum_pseudo_base')
+	.sect	'.debug_ranges'
+.L99:
+	.word	-1,.L34,0,.L100-.L34,0,0
+.L188:
+	.word	-1,.L34,0,.L183-.L34,-1,.L36,0,.L125-.L36,-1,.L38,0,.L115-.L38,0,0
+	.sdecl	'.debug_info',debug,cluster('inet_cksum_pseudo_partial_base')
+	.sect	'.debug_info'
+.L101:
+	.word	394
+	.half	3
+	.word	.L102
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L104,.L103
+	.byte	2
+	.word	.L57
+	.byte	3
+	.byte	'inet_cksum_pseudo_partial_base',0,1,143,3,1
+	.word	.L126
+	.byte	1,1
+	.word	.L46,.L191,.L45
+	.byte	4
+	.byte	'p',0,1,143,3,45
+	.word	.L132,.L192
+	.byte	4
+	.byte	'proto',0,1,143,3,53
+	.word	.L141,.L193
+	.byte	4
+	.byte	'proto_len',0,1,143,3,66
+	.word	.L126,.L194
+	.byte	4
+	.byte	'chksum_len',0,1,144,3,38
+	.word	.L126,.L195
+	.byte	4
+	.byte	'acc',0,1,144,3,56
+	.word	.L134,.L196
+	.byte	5
+	.word	.L197
+	.byte	6
+	.byte	'q',0,1,146,3,16
+	.word	.L132,.L198
+	.byte	6
+	.byte	'swapped',0,1,147,3,7
+	.word	.L137,.L199
+	.byte	6
+	.byte	'chklen',0,1,148,3,9
+	.word	.L126,.L200
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('inet_cksum_pseudo_partial_base')
+	.sect	'.debug_abbrev'
+.L102:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,85,6,0,0,6,52,0,3,8,58
+	.byte	15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('inet_cksum_pseudo_partial_base')
+	.sect	'.debug_line'
+.L103:
+	.word	.L325-.L324
+.L324:
+	.half	3
+	.word	.L327-.L326
+.L326:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0,0,0,0,0
+.L327:
+	.byte	5,1,7,0,5,2
+	.word	.L46
+	.byte	3,142,3,1,5,10,3,8,1,5,1,9
+	.half	.L245-.L46
+	.byte	3,120,1,5,15,9
+	.half	.L239-.L245
+	.byte	3,4,1,5,46,3,4,1,5,15,9
+	.half	.L17-.L239
+	.byte	3,3,1,5,25,9
+	.half	.L328-.L17
+	.byte	3,4,1,5,16,9
+	.half	.L329-.L328
+	.byte	3,125,1,5,36,9
+	.half	.L238-.L329
+	.byte	3,3,1,5,37,9
+	.half	.L330-.L238
+	.byte	3,1,1,5,18,9
+	.half	.L331-.L330
+	.byte	1,5,5,9
+	.half	.L332-.L331
+	.byte	3,1,1,5,9,9
+	.half	.L333-.L332
+	.byte	3,126,1,5,5,9
+	.half	.L334-.L333
+	.byte	3,2,1,7,9
+	.half	.L335-.L334
+	.byte	1,5,11,9
+	.half	.L18-.L335
+	.byte	3,3,1,5,10,9
+	.half	.L336-.L18
+	.byte	3,1,1,5,5,9
+	.half	.L337-.L336
+	.byte	1,5,17,7,9
+	.half	.L338-.L337
+	.byte	3,1,1,5,13,3,1,1,5,53,9
+	.half	.L19-.L338
+	.byte	3,113,1,5,15,9
+	.half	.L16-.L19
+	.byte	1,5,42,7,9
+	.half	.L339-.L16
+	.byte	1,5,3,7,9
+	.half	.L20-.L339
+	.byte	3,20,1,5,11,7,9
+	.half	.L340-.L20
+	.byte	3,1,1,5,28,9
+	.half	.L21-.L340
+	.byte	3,3,1,5,7,9
+	.half	.L241-.L21
+	.byte	1,5,28,9
+	.half	.L242-.L241
+	.byte	3,1,1,5,7,9
+	.half	.L243-.L242
+	.byte	1,5,9,9
+	.half	.L341-.L243
+	.byte	3,4,1,9
+	.half	.L342-.L341
+	.byte	3,1,1,5,23,9
+	.half	.L240-.L342
+	.byte	3,2,1,5,17,9
+	.half	.L343-.L240
+	.byte	1,5,1,9
+	.half	.L344-.L343
+	.byte	3,1,1,7,9
+	.half	.L105-.L344
+	.byte	0,1,1
+.L325:
+	.sdecl	'.debug_ranges',debug,cluster('inet_cksum_pseudo_partial_base')
+	.sect	'.debug_ranges'
+.L104:
+	.word	-1,.L46,0,.L105-.L46,0,0
+.L197:
+	.word	-1,.L46,0,.L191-.L46,-1,.L48,0,.L120-.L48,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_6')
+	.sect	'.debug_info'
+.L106:
+	.word	208
+	.half	3
+	.word	.L107
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L109,.L108
+	.byte	2
+	.word	.L57
+	.byte	3
+	.byte	'.cocofun_6',0,1,182,2,1,1
+	.word	.L42,.L110,.L41
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_6')
+	.sect	'.debug_abbrev'
+.L107:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_6')
+	.sect	'.debug_line'
+.L108:
+	.word	.L346-.L345
+.L345:
+	.half	3
+	.word	.L348-.L347
+.L347:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0,0,0,0,0
+.L348:
+	.byte	5,10,7,0,5,2
+	.word	.L42
+	.byte	3,187,2,1,5,15,9
+	.half	.L227-.L42
+	.byte	3,1,1,5,30,9
+	.half	.L349-.L227
+	.byte	3,1,1,5,21,9
+	.half	.L228-.L349
+	.byte	1,5,10,3,1,1,5,29,9
+	.half	.L229-.L228
+	.byte	3,1,1,5,30,9
+	.half	.L350-.L229
+	.byte	3,1,1,5,21,9
+	.half	.L230-.L350
+	.byte	3,127,1,9
+	.half	.L351-.L230
+	.byte	3,1,1,5,9,9
+	.half	.L352-.L351
+	.byte	3,2,1,9
+	.half	.L110-.L352
+	.byte	0,1,1,5,10,0,5,2
+	.word	.L42
+	.byte	3,205,3,1,5,15,9
+	.half	.L227-.L42
+	.byte	3,1,1,5,30,9
+	.half	.L349-.L227
+	.byte	3,1,1,5,21,9
+	.half	.L228-.L349
+	.byte	1,5,10,3,1,1,5,29,9
+	.half	.L229-.L228
+	.byte	3,1,1,5,30,9
+	.half	.L350-.L229
+	.byte	3,1,1,5,21,9
+	.half	.L230-.L350
+	.byte	3,127,1,9
+	.half	.L351-.L230
+	.byte	3,1,1,5,9,9
+	.half	.L352-.L351
+	.byte	3,240,126,1,9
+	.half	.L110-.L352
+	.byte	0,1,1
+.L346:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_6')
+	.sect	'.debug_ranges'
+.L109:
+	.word	-1,.L42,0,.L110-.L42,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_7')
+	.sect	'.debug_info'
+.L111:
+	.word	208
+	.half	3
+	.word	.L112
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L114,.L113
+	.byte	2
+	.word	.L57
+	.byte	3
+	.byte	'.cocofun_7',0,1,132,2,1,1
+	.word	.L38,.L115,.L37
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_7')
+	.sect	'.debug_abbrev'
+.L112:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_7')
+	.sect	'.debug_line'
+.L113:
+	.word	.L354-.L353
+.L353:
+	.half	3
+	.word	.L356-.L355
+.L355:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0,0,0,0,0
+.L356:
+	.byte	5,13,7,0,5,2
+	.word	.L38
+	.byte	3,147,2,1,9
+	.half	.L115-.L38
+	.byte	0,1,1,5,11,0,5,2
+	.word	.L38
+	.byte	3,153,2,1,5,13,9
+	.half	.L216-.L38
+	.byte	3,122,1,7,9
+	.half	.L115-.L216
+	.byte	0,1,1
+.L354:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_7')
+	.sect	'.debug_ranges'
+.L114:
+	.word	-1,.L38,0,.L115-.L38,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_8')
+	.sect	'.debug_info'
+.L116:
+	.word	208
+	.half	3
+	.word	.L117
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L119,.L118
+	.byte	2
+	.word	.L57
+	.byte	3
+	.byte	'.cocofun_8',0,1,143,3,1,1
+	.word	.L48,.L120,.L47
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_8')
+	.sect	'.debug_abbrev'
+.L117:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_8')
+	.sect	'.debug_line'
+.L118:
+	.word	.L358-.L357
+.L357:
+	.half	3
+	.word	.L360-.L359
+.L359:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0,0,0,0,0
+.L360:
+	.byte	5,13,7,0,5,2
+	.word	.L48
+	.byte	3,165,3,1,9
+	.half	.L120-.L48
+	.byte	0,1,1,5,11,0,5,2
+	.word	.L48
+	.byte	3,171,3,1,5,13,9
+	.half	.L237-.L48
+	.byte	3,122,1,7,9
+	.half	.L120-.L237
+	.byte	0,1,1
+.L358:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_8')
+	.sect	'.debug_ranges'
+.L119:
+	.word	-1,.L48,0,.L120-.L48,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_9')
+	.sect	'.debug_info'
+.L121:
+	.word	208
+	.half	3
+	.word	.L122
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_Client_Ethernet\\Debug\\',0,12,1
+	.word	.L124,.L123
+	.byte	2
+	.word	.L57
+	.byte	3
+	.byte	'.cocofun_9',0,1,132,2,1,1
+	.word	.L36,.L125,.L35
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_9')
+	.sect	'.debug_abbrev'
+.L122:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_9')
+	.sect	'.debug_line'
+.L123:
+	.word	.L362-.L361
+.L361:
+	.half	3
+	.word	.L364-.L363
+.L363:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Ethernet\\lwip\\src\\core\\inet_chksum.c',0,0,0,0,0
+.L364:
+	.byte	5,9,7,0,5,2
+	.word	.L36
+	.byte	3,161,2,1,9
+	.half	.L125-.L36
+	.byte	0,1,1,5,9,0,5,2
+	.word	.L36
+	.byte	3,194,2,1,9
+	.half	.L222-.L36
+	.byte	3,95,1,7,9
+	.half	.L125-.L222
+	.byte	0,1,1,5,9,0,5,2
+	.word	.L36
+	.byte	3,212,3,1,9
+	.half	.L222-.L36
+	.byte	3,205,126,1,7,9
+	.half	.L125-.L222
+	.byte	0,1,1,5,9,0,5,2
+	.word	.L36
+	.byte	3,180,3,1,9
+	.half	.L222-.L36
+	.byte	3,237,126,1,7,9
+	.half	.L125-.L222
+	.byte	0,1,1
+.L362:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_9')
+	.sect	'.debug_ranges'
+.L124:
+	.word	-1,.L36,0,.L125-.L36,0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_6')
+	.sect	'.debug_loc'
+.L41:
+	.word	-1,.L42,0,.L110-.L42
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_7')
+	.sect	'.debug_loc'
+.L37:
+	.word	-1,.L38,0,.L115-.L38
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_8')
+	.sect	'.debug_loc'
+.L47:
+	.word	-1,.L48,0,.L120-.L48
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_9')
+	.sect	'.debug_loc'
+.L35:
+	.word	-1,.L36,0,.L125-.L36
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('inet_chksum')
+	.sect	'.debug_loc'
+.L129:
+	.word	-1,.L54,0,.L249-.L54
+	.half	1
+	.byte	100
+	.word	0,0
+.L53:
+	.word	-1,.L54,0,.L127-.L54
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L130:
+	.word	-1,.L54,0,.L249-.L54
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('inet_chksum_pbuf')
+	.sect	'.debug_loc'
+.L135:
+	.word	-1,.L56,.L27-.L56,.L251-.L56
+	.half	1
+	.byte	88
+	.word	.L252-.L56,.L253-.L56
+	.half	1
+	.byte	88
+	.word	.L254-.L56,.L131-.L56
+	.half	1
+	.byte	88
+	.word	0,0
+.L55:
+	.word	-1,.L56,0,.L131-.L56
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L133:
+	.word	-1,.L56,0,.L27-.L56
+	.half	1
+	.byte	100
+	.word	0,0
+.L136:
+	.word	-1,.L56,.L250-.L56,.L131-.L56
+	.half	1
+	.byte	111
+	.word	0,0
+.L138:
+	.word	-1,.L56,.L250-.L56,.L131-.L56
+	.half	1
+	.byte	89
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('inet_chksum_pseudo')
+	.sect	'.debug_loc'
+.L148:
+	.word	-1,.L40,.L228-.L40,.L226-.L40
+	.half	1
+	.byte	95
+	.word	.L36-.L40,.L222-.L40
+	.half	1
+	.byte	95
+	.word	.L222-.L40,.L125-.L40
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L231-.L40,.L232-.L40
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L233-.L40,.L139-.L40
+	.half	1
+	.byte	86
+	.word	0,0
+.L149:
+	.word	-1,.L40,.L227-.L40,.L228-.L40
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L229-.L40,.L230-.L40
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L146:
+	.word	-1,.L40,.L42-.L40,.L226-.L40
+	.half	1
+	.byte	102
+	.word	.L36-.L40,.L125-.L40
+	.half	1
+	.byte	102
+	.word	.L231-.L40,.L139-.L40
+	.half	1
+	.byte	102
+	.word	0,0
+.L39:
+	.word	-1,.L40,0,.L139-.L40
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L140:
+	.word	-1,.L40,.L42-.L40,.L226-.L40
+	.half	1
+	.byte	100
+	.word	.L36-.L40,.L125-.L40
+	.half	1
+	.byte	100
+	.word	.L231-.L40,.L139-.L40
+	.half	1
+	.byte	100
+	.word	0,0
+.L142:
+	.word	-1,.L40,.L42-.L40,.L226-.L40
+	.half	1
+	.byte	84
+	.word	.L36-.L40,.L125-.L40
+	.half	1
+	.byte	84
+	.word	.L231-.L40,.L139-.L40
+	.half	1
+	.byte	84
+	.word	0,0
+.L143:
+	.word	-1,.L40,.L42-.L40,.L226-.L40
+	.half	1
+	.byte	85
+	.word	.L36-.L40,.L125-.L40
+	.half	1
+	.byte	85
+	.word	.L231-.L40,.L139-.L40
+	.half	1
+	.byte	85
+	.word	0,0
+.L145:
+	.word	-1,.L40,.L42-.L40,.L226-.L40
+	.half	1
+	.byte	101
+	.word	.L36-.L40,.L125-.L40
+	.half	1
+	.byte	101
+	.word	.L231-.L40,.L139-.L40
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('inet_chksum_pseudo_partial')
+	.sect	'.debug_loc'
+.L157:
+	.word	-1,.L50,.L228-.L50,.L226-.L50
+	.half	1
+	.byte	95
+	.word	.L36-.L50,.L222-.L50
+	.half	1
+	.byte	95
+	.word	.L222-.L50,.L125-.L50
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L246-.L50,.L247-.L50
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L248-.L50,.L150-.L50
+	.half	1
+	.byte	87
+	.word	0,0
+.L158:
+	.word	-1,.L50,.L227-.L50,.L228-.L50
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L229-.L50,.L230-.L50
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L154:
+	.word	-1,.L50,.L42-.L50,.L226-.L50
+	.half	1
+	.byte	86
+	.word	.L36-.L50,.L125-.L50
+	.half	1
+	.byte	86
+	.word	.L246-.L50,.L150-.L50
+	.half	1
+	.byte	86
+	.word	0,0
+.L156:
+	.word	-1,.L50,.L42-.L50,.L226-.L50
+	.half	1
+	.byte	102
+	.word	.L36-.L50,.L125-.L50
+	.half	1
+	.byte	102
+	.word	.L246-.L50,.L150-.L50
+	.half	1
+	.byte	102
+	.word	0,0
+.L49:
+	.word	-1,.L50,0,.L150-.L50
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L151:
+	.word	-1,.L50,.L42-.L50,.L226-.L50
+	.half	1
+	.byte	100
+	.word	.L36-.L50,.L125-.L50
+	.half	1
+	.byte	100
+	.word	.L246-.L50,.L150-.L50
+	.half	1
+	.byte	100
+	.word	0,0
+.L152:
+	.word	-1,.L50,.L42-.L50,.L226-.L50
+	.half	1
+	.byte	84
+	.word	.L36-.L50,.L125-.L50
+	.half	1
+	.byte	84
+	.word	.L246-.L50,.L150-.L50
+	.half	1
+	.byte	84
+	.word	0,0
+.L153:
+	.word	-1,.L50,.L42-.L50,.L226-.L50
+	.half	1
+	.byte	85
+	.word	.L36-.L50,.L125-.L50
+	.half	1
+	.byte	85
+	.word	.L246-.L50,.L150-.L50
+	.half	1
+	.byte	85
+	.word	0,0
+.L155:
+	.word	-1,.L50,.L42-.L50,.L226-.L50
+	.half	1
+	.byte	101
+	.word	.L36-.L50,.L125-.L50
+	.half	1
+	.byte	101
+	.word	.L246-.L50,.L150-.L50
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('inet_cksum_pseudo_base')
+	.sect	'.debug_loc'
+.L187:
+	.word	-1,.L34,0,.L10-.L34
+	.half	1
+	.byte	86
+	.word	.L210-.L34,.L211-.L34
+	.half	1
+	.byte	95
+	.word	.L212-.L34,.L213-.L34
+	.half	1
+	.byte	82
+	.word	.L214-.L34,.L215-.L34
+	.half	1
+	.byte	95
+	.word	.L216-.L34,.L115-.L34
+	.half	1
+	.byte	95
+	.word	.L213-.L34,.L217-.L34
+	.half	1
+	.byte	95
+	.word	.L36-.L34,.L222-.L34
+	.half	1
+	.byte	95
+	.word	.L222-.L34,.L125-.L34
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L223-.L34,.L224-.L34
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L224-.L34,.L225-.L34
+	.half	1
+	.byte	95
+	.word	0,0
+.L33:
+	.word	-1,.L34,0,.L183-.L34
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L184:
+	.word	-1,.L34,0,.L10-.L34
+	.half	1
+	.byte	100
+	.word	0,0
+.L185:
+	.word	-1,.L34,0,.L10-.L34
+	.half	1
+	.byte	84
+	.word	.L216-.L34,.L115-.L34
+	.half	1
+	.byte	88
+	.word	.L12-.L34,.L218-.L34
+	.half	1
+	.byte	88
+	.word	0,0
+.L186:
+	.word	-1,.L34,0,.L10-.L34
+	.half	1
+	.byte	85
+	.word	.L220-.L34,.L221-.L34
+	.half	1
+	.byte	89
+	.word	0,0
+.L189:
+	.word	-1,.L34,.L214-.L34,.L115-.L34
+	.half	1
+	.byte	111
+	.word	.L219-.L34,.L217-.L34
+	.half	1
+	.byte	111
+	.word	.L36-.L34,.L125-.L34
+	.half	1
+	.byte	111
+	.word	.L223-.L34,.L183-.L34
+	.half	1
+	.byte	111
+	.word	0,0
+.L190:
+	.word	-1,.L34,.L214-.L34,.L115-.L34
+	.half	1
+	.byte	90
+	.word	.L10-.L34,.L217-.L34
+	.half	1
+	.byte	90
+	.word	.L36-.L34,.L125-.L34
+	.half	1
+	.byte	90
+	.word	.L223-.L34,.L183-.L34
+	.half	1
+	.byte	90
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('inet_cksum_pseudo_partial_base')
+	.sect	'.debug_loc'
+.L196:
+	.word	-1,.L46,0,.L17-.L46
+	.half	1
+	.byte	87
+	.word	.L235-.L46,.L236-.L46
+	.half	1
+	.byte	93
+	.word	.L237-.L46,.L120-.L46
+	.half	1
+	.byte	93
+	.word	.L239-.L46,.L240-.L46
+	.half	1
+	.byte	93
+	.word	.L244-.L46,.L240-.L46
+	.half	1
+	.byte	95
+	.word	.L36-.L46,.L222-.L46
+	.half	1
+	.byte	95
+	.word	.L222-.L46,.L125-.L46
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L240-.L46,.L191-.L46
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L200:
+	.word	-1,.L46,.L235-.L46,.L120-.L46
+	.half	1
+	.byte	88
+	.word	.L238-.L46,.L16-.L46
+	.half	1
+	.byte	88
+	.word	0,0
+.L195:
+	.word	-1,.L46,0,.L17-.L46
+	.half	1
+	.byte	86
+	.word	.L235-.L46,.L120-.L46
+	.half	1
+	.byte	89
+	.word	.L36-.L46,.L125-.L46
+	.half	1
+	.byte	89
+	.word	.L234-.L46,.L191-.L46
+	.half	1
+	.byte	89
+	.word	0,0
+.L45:
+	.word	-1,.L46,0,.L234-.L46
+	.half	2
+	.byte	138,0
+	.word	.L234-.L46,.L191-.L46
+	.half	2
+	.byte	138,16
+	.word	.L191-.L46,.L191-.L46
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L192:
+	.word	-1,.L46,0,.L17-.L46
+	.half	1
+	.byte	100
+	.word	0,0
+.L193:
+	.word	-1,.L46,0,.L17-.L46
+	.half	1
+	.byte	84
+	.word	.L237-.L46,.L120-.L46
+	.half	1
+	.byte	90
+	.word	.L21-.L46,.L241-.L46
+	.half	1
+	.byte	90
+	.word	0,0
+.L194:
+	.word	-1,.L46,0,.L17-.L46
+	.half	1
+	.byte	85
+	.word	.L242-.L46,.L243-.L46
+	.half	1
+	.byte	91
+	.word	0,0
+.L198:
+	.word	-1,.L46,.L235-.L46,.L120-.L46
+	.half	1
+	.byte	108
+	.word	.L36-.L46,.L125-.L46
+	.half	1
+	.byte	108
+	.word	.L245-.L46,.L191-.L46
+	.half	1
+	.byte	108
+	.word	0,0
+.L199:
+	.word	-1,.L46,.L235-.L46,.L120-.L46
+	.half	1
+	.byte	92
+	.word	.L36-.L46,.L125-.L46
+	.half	1
+	.byte	92
+	.word	.L17-.L46,.L191-.L46
+	.half	1
+	.byte	92
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('ip_chksum_pseudo')
+	.sect	'.debug_loc'
+.L165:
+	.word	-1,.L44,0,.L159-.L44
+	.half	1
+	.byte	102
+	.word	0,0
+.L43:
+	.word	-1,.L44,0,.L159-.L44
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L160:
+	.word	-1,.L44,0,.L159-.L44
+	.half	1
+	.byte	100
+	.word	0,0
+.L161:
+	.word	-1,.L44,0,.L159-.L44
+	.half	1
+	.byte	84
+	.word	0,0
+.L162:
+	.word	-1,.L44,0,.L159-.L44
+	.half	1
+	.byte	85
+	.word	0,0
+.L164:
+	.word	-1,.L44,0,.L159-.L44
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('ip_chksum_pseudo_partial')
+	.sect	'.debug_loc'
+.L170:
+	.word	-1,.L52,0,.L166-.L52
+	.half	1
+	.byte	86
+	.word	0,0
+.L172:
+	.word	-1,.L52,0,.L166-.L52
+	.half	1
+	.byte	102
+	.word	0,0
+.L51:
+	.word	-1,.L52,0,.L166-.L52
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L167:
+	.word	-1,.L52,0,.L166-.L52
+	.half	1
+	.byte	100
+	.word	0,0
+.L168:
+	.word	-1,.L52,0,.L166-.L52
+	.half	1
+	.byte	84
+	.word	0,0
+.L169:
+	.word	-1,.L52,0,.L166-.L52
+	.half	1
+	.byte	85
+	.word	0,0
+.L171:
+	.word	-1,.L52,0,.L166-.L52
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('lwip_standard_chksum')
+	.sect	'.debug_loc'
+.L174:
+	.word	-1,.L32,0,.L173-.L32
+	.half	1
+	.byte	100
+	.word	.L203-.L32,.L204-.L32
+	.half	1
+	.byte	95
+	.word	0,0
+.L175:
+	.word	-1,.L32,0,.L173-.L32
+	.half	1
+	.byte	84
+	.word	0,0
+.L31:
+	.word	-1,.L32,0,.L173-.L32
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L182:
+	.word	-1,.L32,.L203-.L32,.L205-.L32
+	.half	1
+	.byte	95
+	.word	0,0
+.L177:
+	.word	-1,.L32,0,.L173-.L32
+	.half	1
+	.byte	100
+	.word	0,0
+.L179:
+	.word	-1,.L32,0,.L173-.L32
+	.half	1
+	.byte	100
+	.word	0,0
+.L181:
+	.word	-1,.L32,.L203-.L32,.L206-.L32
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L206-.L32,.L207-.L32
+	.half	1
+	.byte	81
+	.word	.L207-.L32,.L208-.L32
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L209-.L32,.L173-.L32
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L180:
+	.word	-1,.L32,.L201-.L32,.L202-.L32
+	.half	1
+	.byte	81
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L365:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('lwip_standard_chksum')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L365,.L32,.L173-.L32
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('inet_cksum_pseudo_base')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L365,.L34,.L183-.L34
+	.sdecl	'.debug_frame',debug,cluster('inet_chksum_pseudo')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L365,.L40,.L139-.L40
+	.sdecl	'.debug_frame',debug,cluster('ip_chksum_pseudo')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L365,.L44,.L159-.L44
+	.sdecl	'.debug_frame',debug,cluster('inet_cksum_pseudo_partial_base')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L365,.L46,.L191-.L46
+	.byte	4
+	.word	(.L234-.L46)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L191-.L234)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('inet_chksum_pseudo_partial')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L365,.L50,.L150-.L50
+	.sdecl	'.debug_frame',debug,cluster('ip_chksum_pseudo_partial')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L365,.L52,.L166-.L52
+	.sdecl	'.debug_frame',debug,cluster('inet_chksum')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L365,.L54,.L127-.L54
+	.sdecl	'.debug_frame',debug,cluster('inet_chksum_pbuf')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L365,.L56,.L131-.L56
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L366:
+	.word	52
+	.word	-1
+	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
+	.byte	8,37,8,38,8,39,0
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_9')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L366,.L36,.L125-.L36
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_7')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L366,.L38,.L115-.L38
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_6')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L366,.L42,.L110-.L42
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_8')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L366,.L48,.L120-.L48
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   589  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   590  /* These are some implementations for LWIP_CHKSUM_COPY, which copies data
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   591   * like MEMCPY but generates a checksum at the same time. Since this is a
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   592   * performance-sensitive function, you might want to create your own version
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   593   * in assembly targeted at your hardware by defining it in lwipopts.h:
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   594   *   #define LWIP_CHKSUM_COPY(dst, src, len) your_chksum_copy(dst, src, len)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   595   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   596  
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   597  #if (LWIP_CHKSUM_COPY_ALGORITHM == 1) /* Version #1 */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   598  /** Safe but slow: first call MEMCPY, then call LWIP_CHKSUM.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   599   * For architectures with big caches, data might still be in cache when
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   600   * generating the checksum after copying.
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   601   */
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   602  u16_t
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   603  lwip_chksum_copy(void *dst, const void *src, u16_t len)
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   604  {
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   605    MEMCPY(dst, src, len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   606    return LWIP_CHKSUM(dst, len);
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   607  }
+; ..\0_Src\0_AppSw\Ethernet\lwip\src\core\inet_chksum.c	   608  #endif /* (LWIP_CHKSUM_COPY_ALGORITHM == 1) */
+
+	; Module end

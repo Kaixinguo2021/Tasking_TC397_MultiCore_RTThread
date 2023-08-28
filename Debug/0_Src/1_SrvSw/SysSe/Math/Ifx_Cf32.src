@@ -1,0 +1,4213 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\1_SrvSw\\SysSe\\Math\\.Ifx_Cf32.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.src ..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c'
+
+	
+$TC162
+	.sdecl	'.zrodata.Ifx_Cf32..1.cnt',data,rom
+	.sect	'.zrodata.Ifx_Cf32..1.cnt'
+	.align	2
+.1.cnt:	.type	object
+	.size	.1.cnt,4
+	.word	2139095039
+	
+	.sdecl	'.text.Ifx_Cf32.CplxVecRst_f32',code,cluster('CplxVecRst_f32')
+	.sect	'.text.Ifx_Cf32.CplxVecRst_f32'
+	.align	2
+	
+	.global	CplxVecRst_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	     2   * \file Ifx_Cf32.c
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	     3   * \brief Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	     4   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	     6   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	     8   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	     9   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    10   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    12   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    13   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    14   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    15   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    16   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    17   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    19   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    20   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    21   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    22   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    23   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    24   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    25   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    26   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    27   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    28   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    29   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    30   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    31   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    32   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    33   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    34   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    35   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    36   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    37   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    38   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    39   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    40   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    41  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    42  #include "Ifx_Cf32.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    43  #include <float.h>
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    44  #include <stdio.h>
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    45  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    46  void CplxVecRst_f32(cfloat32 *X, short nX)
+; Function CplxVecRst_f32
+.L56:
+CplxVecRst_f32:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    47  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    48      for ( ; nX > 0; nX--)
+	mov	d15,#0
+	j	.L2
+.L3:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    49      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    50          X->real = X->imag = 0.0;
+	add	d4,#-1
+	st.w	[a4]4,d15
+.L372:
+	st.w	[a4+]8,d15
+.L2:
+	jge	d4,#1,.L3
+.L373:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    51          X++;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    52      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    53  }
+	ret
+.L207:
+	
+__CplxVecRst_f32_function_end:
+	.size	CplxVecRst_f32,__CplxVecRst_f32_function_end-CplxVecRst_f32
+.L108:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.CplxVecCpy_f32S',code,cluster('CplxVecCpy_f32S')
+	.sect	'.text.Ifx_Cf32.CplxVecCpy_f32S'
+	.align	2
+	
+	.global	CplxVecCpy_f32S
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    54  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    55  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    56  void CplxVecCpy_f32S(cfloat32 *X, short *S, short nS, short incrS)
+; Function CplxVecCpy_f32S
+.L58:
+CplxVecCpy_f32S:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    57  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    58      for ( ; nS > 0; nS--)
+	j	.L4
+.L5:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    59      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    60          (*X).imag = 0.0;
+	mov	d15,#0
+	st.w	[a4]4,d15
+.L363:
+	add	d4,#-1
+.L364:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    61          (*X).real = *(S);
+	ld.h	d15,[a5]
+.L365:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    62          X++; S   += incrS;
+	addsc.a	a5,a5,d5,#1
+.L366:
+	itof	d15,d15
+	st.w	[a4+]8,d15
+.L4:
+	jge	d4,#1,.L5
+.L367:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    63      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    64  }
+	ret
+.L199:
+	
+__CplxVecCpy_f32S_function_end:
+	.size	CplxVecCpy_f32S,__CplxVecCpy_f32S_function_end-CplxVecCpy_f32S
+.L103:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.CplxVecCpy_f32',code,cluster('CplxVecCpy_f32')
+	.sect	'.text.Ifx_Cf32.CplxVecCpy_f32'
+	.align	2
+	
+	.global	CplxVecCpy_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    65  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    66  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    67  void CplxVecCpy_f32(cfloat32 *X, cfloat32 *S, short nS)
+; Function CplxVecCpy_f32
+.L60:
+CplxVecCpy_f32:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    68  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    69      for ( ; nS > 0; nS--)
+	j	.L6
+.L7:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    70      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    71          *X = *S;
+	add	d4,#-1
+	ld.da	a2/a3,[a5+]8
+.L378:
+	st.da	[a4+]8,a2/a3
+.L6:
+	jge	d4,#1,.L7
+.L379:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    72          X++; S++;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    73      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    74  }
+	ret
+.L210:
+	
+__CplxVecCpy_f32_function_end:
+	.size	CplxVecCpy_f32,__CplxVecCpy_f32_function_end-CplxVecCpy_f32
+.L113:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.CplxVecPwr_f32',code,cluster('CplxVecPwr_f32')
+	.sect	'.text.Ifx_Cf32.CplxVecPwr_f32'
+	.align	2
+	
+	.global	CplxVecPwr_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    75  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    76  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    77  float32 *CplxVecPwr_f32(cfloat32 *X, short nX)
+; Function CplxVecPwr_f32
+.L62:
+CplxVecPwr_f32:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    78  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    79      unsigned short i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    80      float32       *r = (float32 *)X;
+	mov.aa	a15,a4
+.L321:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    81  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    82      for (i = 0; i < nX; i++)
+	mov	d0,#0
+	j	.L8
+.L9:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     2   * \file Ifx_Cf32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     3   * \brief Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     4   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     6   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     8   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     9   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    10   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    12   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    13   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    14   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    15   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    16   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    17   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    19   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    20   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    21   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    22   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    23   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    24   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    25   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    26   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    27   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    28   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    29   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    30   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    31   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    32   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    33   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    34   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    35   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    36   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    37   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    38   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    39   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    40   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    41   * \defgroup library_srvsw_sysse_math_cf32 Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    42   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    43   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    44  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    45  #ifndef IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    46  #define IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    47  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    48  #include "Cpu/Std/IfxCpu_Intrinsics.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    49  #include <math.h>
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    50  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    51  #define _DATAF(val) ((float32)(val))
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    52  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    53  /* Complex Arithmetic --------------------------------------------------------*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    54  IFX_INLINE cfloat32 IFX_Cf32_exp(const cfloat32 *c)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    55  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    56      float32  f = (float32)expf(c->real);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    57      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    58      R.real = f * (float32)cosf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    59      R.imag = f * (float32)sinf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    60      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    61  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    62  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    63  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    64  IFX_INLINE cfloat32 IFX_Cf32_mul(const cfloat32 *a, const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    65  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    66      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    67      R.real = (a->real * b->real) - (a->imag * b->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    68      R.imag = (a->imag * b->real) + (a->real * b->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    69      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    70  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    71  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    72  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    73  IFX_INLINE cfloat32 IFX_Cf32_amp(const cfloat32 *a, float32 gain)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    74  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    75      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    76      R.real = a->real * gain;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    77      R.imag = a->imag * gain;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    78      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    79  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    80  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    81  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    82  IFX_INLINE float32 IFX_Cf32_dot(const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    83  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    84      return (b->real * b->real) + (b->imag * b->imag);
+	ld.w	d15,[a4]4
+.L384:
+	ld.w	d1,[a4+]8
+.L385:
+	mul.f	d15,d15,d15
+.L386:
+	madd.f	d15,d15,d1,d1
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    83      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    84          *r = IFX_Cf32_dot(X);
+	st.w	[a15+],d15
+.L320:
+	fcall	.cocofun_2
+.L8:
+	jlt	d0,d4,.L9
+.L387:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    85          r++; X++;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    86      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    87  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    88      return &r[-nX];
+	rsub	d4,#0
+.L323:
+	addsc.a	a2,a15,d4,#2
+.L388:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    89  }
+	ret
+.L215:
+	
+__CplxVecPwr_f32_function_end:
+	.size	CplxVecPwr_f32,__CplxVecPwr_f32_function_end-CplxVecPwr_f32
+.L118:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32..cocofun_2',code,cluster('.cocofun_2')
+	.sect	'.text.Ifx_Cf32..cocofun_2'
+	.align	2
+; Function .cocofun_2
+.L64:
+.cocofun_2:	.type	func
+; Function body .cocofun_2, coco_iter:0
+	add	d0,#1
+.L322:
+	extr.u	d0,d0,#0,#16
+	fret
+.L193:
+	; End of function
+	.sdecl	'.text.Ifx_Cf32.CplxVecMag_f32',code,cluster('CplxVecMag_f32')
+	.sect	'.text.Ifx_Cf32.CplxVecMag_f32'
+	.align	2
+	
+	.global	CplxVecMag_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    90  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    91  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    92  float32 *CplxVecMag_f32(cfloat32 *X, short nX)
+; Function CplxVecMag_f32
+.L66:
+CplxVecMag_f32:	.type	func
+	mov.aa	a15,a4
+.L324:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    93  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    94      unsigned short i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    95      float32       *r = (float32 *)X;
+	mov	d8,d4
+	mov.aa	a12,a15
+.L325:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    96  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    97      for (i = 0; i < nX; i++)
+	mov	d9,#0
+	j	.L11
+.L12:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     2   * \file Ifx_Cf32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     3   * \brief Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     4   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     6   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     8   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     9   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    10   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    12   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    13   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    14   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    15   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    16   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    17   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    19   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    20   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    21   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    22   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    23   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    24   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    25   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    26   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    27   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    28   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    29   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    30   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    31   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    32   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    33   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    34   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    35   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    36   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    37   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    38   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    39   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    40   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    41   * \defgroup library_srvsw_sysse_math_cf32 Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    42   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    43   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    44  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    45  #ifndef IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    46  #define IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    47  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    48  #include "Cpu/Std/IfxCpu_Intrinsics.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    49  #include <math.h>
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    50  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    51  #define _DATAF(val) ((float32)(val))
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    52  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    53  /* Complex Arithmetic --------------------------------------------------------*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    54  IFX_INLINE cfloat32 IFX_Cf32_exp(const cfloat32 *c)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    55  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    56      float32  f = (float32)expf(c->real);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    57      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    58      R.real = f * (float32)cosf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    59      R.imag = f * (float32)sinf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    60      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    61  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    62  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    63  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    64  IFX_INLINE cfloat32 IFX_Cf32_mul(const cfloat32 *a, const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    65  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    66      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    67      R.real = (a->real * b->real) - (a->imag * b->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    68      R.imag = (a->imag * b->real) + (a->real * b->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    69      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    70  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    71  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    72  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    73  IFX_INLINE cfloat32 IFX_Cf32_amp(const cfloat32 *a, float32 gain)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    74  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    75      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    76      R.real = a->real * gain;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    77      R.imag = a->imag * gain;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    78      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    79  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    80  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    81  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    82  IFX_INLINE float32 IFX_Cf32_dot(const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    83  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    84      return (b->real * b->real) + (b->imag * b->imag);
+	ld.w	d15,[a15]4
+.L393:
+	ld.w	d0,[a15+]8
+.L394:
+	mul.f	d15,d15,d15
+.L395:
+	madd.f	d4,d15,d0,d0
+	call	sqrtf
+.L228:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    98      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	    99          *r = IFX_Cf32_mag(X);
+	add	d9,#1
+	st.w	[a12+],d2
+.L327:
+	extr.u	d9,d9,#0,#16
+.L11:
+	jlt	d9,d8,.L12
+.L396:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   100          r++; X++;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   101      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   102  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   103      return &r[-nX];
+	rsub	d8,#0
+.L326:
+	addsc.a	a2,a12,d8,#2
+.L397:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   104  }
+	ret
+.L222:
+	
+__CplxVecMag_f32_function_end:
+	.size	CplxVecMag_f32,__CplxVecMag_f32_function_end-CplxVecMag_f32
+.L123:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.CplxVecMul_f32',code,cluster('CplxVecMul_f32')
+	.sect	'.text.Ifx_Cf32.CplxVecMul_f32'
+	.align	2
+	
+	.global	CplxVecMul_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   105  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   106  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   107  void CplxVecMul_f32(cfloat32 *X, const cfloat32 *mul, short nX)
+; Function CplxVecMul_f32
+.L68:
+CplxVecMul_f32:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   108  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   109      for ( ; nX > 0; nX--)
+	j	.L14
+.L15:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     2   * \file Ifx_Cf32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     3   * \brief Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     4   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     6   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     8   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     9   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    10   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    12   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    13   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    14   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    15   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    16   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    17   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    19   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    20   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    21   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    22   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    23   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    24   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    25   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    26   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    27   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    28   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    29   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    30   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    31   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    32   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    33   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    34   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    35   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    36   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    37   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    38   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    39   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    40   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    41   * \defgroup library_srvsw_sysse_math_cf32 Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    42   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    43   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    44  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    45  #ifndef IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    46  #define IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    47  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    48  #include "Cpu/Std/IfxCpu_Intrinsics.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    49  #include <math.h>
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    50  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    51  #define _DATAF(val) ((float32)(val))
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    52  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    53  /* Complex Arithmetic --------------------------------------------------------*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    54  IFX_INLINE cfloat32 IFX_Cf32_exp(const cfloat32 *c)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    55  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    56      float32  f = (float32)expf(c->real);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    57      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    58      R.real = f * (float32)cosf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    59      R.imag = f * (float32)sinf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    60      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    61  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    62  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    63  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    64  IFX_INLINE cfloat32 IFX_Cf32_mul(const cfloat32 *a, const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    65  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    66      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    67      R.real = (a->real * b->real) - (a->imag * b->imag);
+	ld.w	d0,[a5]
+.L402:
+	ld.w	d1,[a4]
+.L403:
+	ld.w	d15,[a5]4
+.L404:
+	mul.f	d2,d1,d0
+	ld.w	d3,[a4]4
+.L238:
+	add	d4,#-1
+.L245:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     1  /**
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     2   * \file Ifx_Cf32.h
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     3   * \brief Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     4   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     5   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     6   * \version disabled
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     8   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	     9   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    10   *                                 IMPORTANT NOTICE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    11   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    12   * Use of this file is subject to the terms of use agreed between (i) you or
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    13   * the company in which ordinary course of business you are acting and (ii)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    14   * Infineon Technologies AG or its licensees. If and as long as no such terms
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    15   * of use are agreed, use of this file is subject to following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    16   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    17   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    18   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    19   * Permission is hereby granted, free of charge, to any person or organization
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    20   * obtaining a copy of the software and accompanying documentation covered by
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    21   * this license (the "Software") to use, reproduce, display, distribute,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    22   * execute, and transmit the Software, and to prepare derivative works of the
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    23   * Software, and to permit third-parties to whom the Software is furnished to
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    24   * do so, all subject to the following:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    25   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    26   * The copyright notices in the Software and this entire statement, including
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    27   * the above license grant, this restriction and the following disclaimer, must
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    28   * be included in all copies of the Software, in whole or in part, and all
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    29   * derivative works of the Software, unless such copies or derivative works are
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    30   * solely in the form of machine-executable object code generated by a source
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    31   * language processor.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    32   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    33   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    34   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    35   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    36   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    37   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    38   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    39   * DEALINGS IN THE SOFTWARE.
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    40   *
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    41   * \defgroup library_srvsw_sysse_math_cf32 Floating point signal, vector, and matrix library
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    42   * \ingroup library_srvsw_sysse_math_f32
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    43   */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    44  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    45  #ifndef IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    46  #define IFX_CF32_H
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    47  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    48  #include "Cpu/Std/IfxCpu_Intrinsics.h"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    49  #include <math.h>
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    50  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    51  #define _DATAF(val) ((float32)(val))
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    52  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    53  /* Complex Arithmetic --------------------------------------------------------*/
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    54  IFX_INLINE cfloat32 IFX_Cf32_exp(const cfloat32 *c)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    55  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    56      float32  f = (float32)expf(c->real);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    57      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    58      R.real = f * (float32)cosf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    59      R.imag = f * (float32)sinf(c->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    60      return R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    61  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    62  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    63  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    64  IFX_INLINE cfloat32 IFX_Cf32_mul(const cfloat32 *a, const cfloat32 *b)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    65  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    66      cfloat32 R;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    67      R.real = (a->real * b->real) - (a->imag * b->imag);
+	msub.f	d6,d2,d3,d15
+.L405:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.h	    68      R.imag = (a->imag * b->real) + (a->real * b->imag);
+	mul.f	d15,d1,d15
+.L406:
+	madd.f	d7,d15,d3,d0
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   110      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   111          *X = IFX_Cf32_mul(X, mul);
+	st.d	[a4+]8,e6
+.L14:
+	jge	d4,#1,.L15
+.L407:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   112          X++;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   113      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   114  }
+	ret
+.L232:
+	
+__CplxVecMul_f32_function_end:
+	.size	CplxVecMul_f32,__CplxVecMul_f32_function_end-CplxVecMul_f32
+.L128:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.VecPwrdB_f32',code,cluster('VecPwrdB_f32')
+	.sect	'.text.Ifx_Cf32.VecPwrdB_f32'
+	.align	2
+	
+	.global	VecPwrdB_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   115  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   116  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   117  void VecPwrdB_f32(float32 *X, short nX)
+; Function VecPwrdB_f32
+.L70:
+VecPwrdB_f32:	.type	func
+	mov	d8,d4
+	mov.aa	a15,a4
+.L328:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   118  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   119      unsigned short i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   120  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   121      for (i = 0; i < nX; i++)
+	mov	d15,#0
+	j	.L16
+.L17:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   122      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   123          *X = (float32)20.0 * log10f(*X);
+	ld.w	d4,[a15]
+	call	log10f
+.L428:
+	movh	d0,#16800
+.L429:
+	mul.f	d0,d2,d0
+	st.w	[a15+],d0
+.L329:
+	fcall	.cocofun_3
+.L16:
+	jlt	d15,d8,.L17
+.L430:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   124          X++;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   125      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   126  }
+	ret
+.L258:
+	
+__VecPwrdB_f32_function_end:
+	.size	VecPwrdB_f32,__VecPwrdB_f32_function_end-VecPwrdB_f32
+.L138:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32..cocofun_3',code,cluster('.cocofun_3')
+	.sect	'.text.Ifx_Cf32..cocofun_3'
+	.align	2
+; Function .cocofun_3
+.L72:
+.cocofun_3:	.type	func
+; Function body .cocofun_3, coco_iter:0
+	add	d15,#1
+.L330:
+	extr.u	d15,d15,#0,#16
+	fret
+.L198:
+	; End of function
+	.sdecl	'.text.Ifx_Cf32.VecPwrdB_SF',code,cluster('VecPwrdB_SF')
+	.sect	'.text.Ifx_Cf32.VecPwrdB_SF'
+	.align	2
+	
+	.global	VecPwrdB_SF
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   127  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   128  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   129  void VecPwrdB_SF(sint16 *R, float32 *X, short nX)
+; Function VecPwrdB_SF
+.L74:
+VecPwrdB_SF:	.type	func
+	mov	d8,d4
+	mov.aa	a15,a4
+.L331:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   130  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   131      unsigned short i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   132  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   133      for (i = 0; i < nX; i++)
+	mov	d15,#0
+	mov.aa	a12,a5
+.L332:
+	j	.L18
+.L19:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   134      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   135          *R = (sint16)(20.0 * log10f(*X));
+	ld.w	d4,[a12+]
+	call	log10f
+.L435:
+	movh	d0,#16800
+.L436:
+	mul.f	d4,d2,d0
+	call	__f_ftos
+.L437:
+	st.h	[a15+],d2
+.L438:
+	fcall	.cocofun_3
+.L18:
+	jlt	d15,d8,.L19
+.L439:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   136          R++; X++;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   137      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   138  }
+	ret
+.L263:
+	
+__VecPwrdB_SF_function_end:
+	.size	VecPwrdB_SF,__VecPwrdB_SF_function_end-VecPwrdB_SF
+.L143:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.VecMaxIdx_f32',code,cluster('VecMaxIdx_f32')
+	.sect	'.text.Ifx_Cf32.VecMaxIdx_f32'
+	.align	2
+	
+	.global	VecMaxIdx_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   139  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   140  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   141  float32 VecMaxIdx_f32(float32 *X, short nX, sint16 *minIdx, sint16 *maxIdx)
+; Function VecMaxIdx_f32
+.L76:
+VecMaxIdx_f32:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   142  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   143      float32        maxPeak = FLT_MIN;
+	movh	d2,#128
+.L333:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   144      unsigned short m;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   145  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   146      for (m = 0; m < nX; m++)
+	mov	d0,#0
+	j	.L20
+.L21:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   147      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   148          if (*X > maxPeak)
+	ld.w	d1,[a4]
+.L488:
+	cmp.f	d15,d1,d2
+.L489:
+	jz.t	d15:2,.L22
+.L490:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   149          {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   150              maxPeak = *X;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   151              *minIdx = m;
+	mov	d2,d1
+	st.h	[a5],d0
+.L22:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   152          }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   153  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   154          if (*X >= maxPeak)
+	cmp.f	d15,d1,d2
+	and	d15,#6
+.L491:
+	jeq	d15,#0,.L23
+.L492:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   155          {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   156              *maxIdx = m;
+	st.h	[a6],d0
+.L23:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   157          }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   158  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   159          X++;
+	add.a	a4,#4
+.L493:
+	fcall	.cocofun_2
+.L20:
+	jlt	d0,d4,.L21
+.L494:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   160      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   161  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   162      return maxPeak;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   163  }
+	ret
+.L305:
+	
+__VecMaxIdx_f32_function_end:
+	.size	VecMaxIdx_f32,__VecMaxIdx_f32_function_end-VecMaxIdx_f32
+.L183:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.VecMinIdx_f32',code,cluster('VecMinIdx_f32')
+	.sect	'.text.Ifx_Cf32.VecMinIdx_f32'
+	.align	2
+	
+	.global	VecMinIdx_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   164  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   165  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   166  float32 VecMinIdx_f32(float32 *X, short nX, sint16 *minIdx, sint16 *maxIdx)
+; Function VecMinIdx_f32
+.L78:
+VecMinIdx_f32:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   167  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   168      float32 minPeak = FLT_MAX;
+	ld.w	d2,.1.cnt
+.L334:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   169      short   m;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   170  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   171      for (m = 0; m < nX; m++)
+	mov	d0,#0
+	j	.L25
+.L26:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   172      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   173          if (*X < minPeak)
+	ld.w	d1,[a4]
+.L478:
+	cmp.f	d15,d1,d2
+.L479:
+	jz.t	d15:0,.L27
+.L480:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   174          {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   175              minPeak = *X;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   176              *minIdx = m;
+	mov	d2,d1
+	st.h	[a5],d0
+.L27:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   177          }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   178  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   179          if (*X <= minPeak)
+	cmp.f	d15,d1,d2
+	and	d15,#3
+.L481:
+	jeq	d15,#0,.L28
+.L482:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   180          {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   181              *maxIdx = m;
+	st.h	[a6],d0
+.L28:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   182          }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   183  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   184          X++;
+	add	d0,#1
+	add.a	a4,#4
+.L335:
+	extr	d0,d0,#0,#16
+.L25:
+	jlt	d0,d4,.L26
+.L483:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   185      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   186  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   187      return minPeak;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   188  }
+	ret
+.L298:
+	
+__VecMinIdx_f32_function_end:
+	.size	VecMinIdx_f32,__VecMinIdx_f32_function_end-VecMinIdx_f32
+.L178:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.VecOfs_f32',code,cluster('VecOfs_f32')
+	.sect	'.text.Ifx_Cf32.VecOfs_f32'
+	.align	2
+	
+	.global	VecOfs_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   189  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   190  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   191  void VecOfs_f32(float32 *X, float32 offset, short nX)
+; Function VecOfs_f32
+.L80:
+VecOfs_f32:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   192  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   193      unsigned short i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   194  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   195      for (i = 0; i < nX; i++)
+	mov	d15,#0
+	j	.L30
+.L31:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   196      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   197          *X -= offset;
+	ld.w	d0,[a4]
+.L450:
+	sub.f	d0,d0,d4
+	st.w	[a4+],d0
+.L336:
+	fcall	.cocofun_3
+.L30:
+	jlt	d15,d5,.L31
+.L451:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   198          X++;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   199      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   200  }
+	ret
+.L275:
+	
+__VecOfs_f32_function_end:
+	.size	VecOfs_f32,__VecOfs_f32_function_end-VecOfs_f32
+.L153:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.VecGain_f32',code,cluster('VecGain_f32')
+	.sect	'.text.Ifx_Cf32.VecGain_f32'
+	.align	2
+	
+	.global	VecGain_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   201  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   202  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   203  void VecGain_f32(float32 *X, float32 gain, short nX)
+; Function VecGain_f32
+.L82:
+VecGain_f32:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   204  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   205      unsigned short i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   206  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   207      for (i = 0; i < nX; i++)
+	mov	d15,#0
+	j	.L32
+.L33:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   208      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   209          *X = *X * gain;
+	ld.w	d0,[a4]
+.L444:
+	mul.f	d0,d0,d4
+	st.w	[a4+],d0
+.L337:
+	fcall	.cocofun_3
+.L32:
+	jlt	d15,d5,.L33
+.L445:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   210          X++;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   211      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   212  }
+	ret
+.L269:
+	
+__VecGain_f32_function_end:
+	.size	VecGain_f32,__VecGain_f32_function_end-VecGain_f32
+.L148:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.VecSum_f32',code,cluster('VecSum_f32')
+	.sect	'.text.Ifx_Cf32.VecSum_f32'
+	.align	2
+	
+	.global	VecSum_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   213  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   214  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   215  float32 VecSum_f32(float32 *X, short nX)
+; Function VecSum_f32
+.L84:
+VecSum_f32:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   216  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   217      float32        sumX = 0;
+	mov	d2,#0
+.L338:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   218      unsigned short i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   219  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   220      for (i = 0; i < nX; i++)
+	mov	d15,d2
+	j	.L34
+.L35:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   221      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   222          sumX += *X;
+	ld.w	d0,[a4+]
+.L456:
+	add.f	d2,d2,d0
+	fcall	.cocofun_3
+.L34:
+	jlt	d15,d4,.L35
+.L457:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   223          X++;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   224      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   225  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   226      return sumX;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   227  }
+	ret
+.L280:
+	
+__VecSum_f32_function_end:
+	.size	VecSum_f32,__VecSum_f32_function_end-VecSum_f32
+.L158:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.VecAvg_f32',code,cluster('VecAvg_f32')
+	.sect	'.text.Ifx_Cf32.VecAvg_f32'
+	.align	2
+	
+	.global	VecAvg_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   228  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   229  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   230  float32 VecAvg_f32(float32 *X, short nX)
+; Function VecAvg_f32
+.L86:
+VecAvg_f32:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   231  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   232      return VecSum_f32(X, nX) / nX;
+	mov	d15,d4
+	call	VecSum_f32
+.L339:
+	itof	d15,d15
+.L340:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   233  }
+	div.f	d2,d2,d15
+	ret
+.L285:
+	
+__VecAvg_f32_function_end:
+	.size	VecAvg_f32,__VecAvg_f32_function_end-VecAvg_f32
+.L163:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.VecMax_f32',code,cluster('VecMax_f32')
+	.sect	'.text.Ifx_Cf32.VecMax_f32'
+	.align	2
+	
+	.global	VecMax_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   234  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   235  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   236  float32 VecMax_f32(float32 *X, short nX)
+; Function VecMax_f32
+.L88:
+VecMax_f32:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   237  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   238      unsigned short i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   239      float32        r = FLT_MIN;
+	movh	d2,#128
+.L341:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   240  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   241      for (i = 0; i < nX; i++)
+	mov	d0,#0
+	j	.L38
+.L39:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   242      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   243          r = __maxf(r, *X);
+	ld.w	d1,[a4+]
+	cmp.f	d15,d1,d2
+	and	d15,#6
+.L466:
+	cmov	d2,d15,d1
+	fcall	.cocofun_2
+.L38:
+	jlt	d0,d4,.L39
+.L467:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   244          X++;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   245      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   246  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   247      return r;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   248  }
+	ret
+.L288:
+	
+__VecMax_f32_function_end:
+	.size	VecMax_f32,__VecMax_f32_function_end-VecMax_f32
+.L168:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.VecMin_f32',code,cluster('VecMin_f32')
+	.sect	'.text.Ifx_Cf32.VecMin_f32'
+	.align	2
+	
+	.global	VecMin_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   249  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   250  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   251  float32 VecMin_f32(float32 *X, short nX)
+; Function VecMin_f32
+.L90:
+VecMin_f32:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   252  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   253      unsigned short i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   254      float32        r = FLT_MAX;
+	ld.w	d2,.1.cnt
+.L342:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   255  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   256      for (i = 0; i < nX; i++)
+	mov	d0,#0
+	j	.L43
+.L44:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   257      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   258          r = __minf(r, *X);
+	ld.w	d1,[a4+]
+	cmp.f	d15,d2,d1
+	and	d15,#6
+.L472:
+	cmov	d2,d15,d1
+	fcall	.cocofun_2
+.L43:
+	jlt	d0,d4,.L44
+.L473:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   259          X++;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   260      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   261  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   262      return r;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   263  }
+	ret
+.L293:
+	
+__VecMin_f32_function_end:
+	.size	VecMin_f32,__VecMin_f32_function_end-VecMin_f32
+.L173:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.VecHalfSwap_f32',code,cluster('VecHalfSwap_f32')
+	.sect	'.text.Ifx_Cf32.VecHalfSwap_f32'
+	.align	2
+	
+	.global	VecHalfSwap_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   264  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   265  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   266  void VecHalfSwap_f32(float32 *X, short nX)
+; Function VecHalfSwap_f32
+.L92:
+VecHalfSwap_f32:	.type	func
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   267  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   268      unsigned short i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   269      unsigned short half = nX / 2;
+	mov	d15,#2
+.L499:
+	div	e0,d4,d15
+	extr.u	d15,d0,#0,#16
+.L345:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   270      float32       *F    = &X[half];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   271  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   272      for (i = 0; i < half; i++)
+	mov	d0,#0
+.L346:
+	addsc.a	a15,a4,d15,#2
+.L344:
+	j	.L48
+.L49:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   273      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   274          float32 tmp = *F;
+	ld.w	d1,[a15]
+.L343:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   275          *F = *X;
+	ld.w	d2,[a4]
+.L500:
+	st.w	[a15+],d2
+.L501:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   276          *X = tmp;
+	st.w	[a4+],d1
+.L318:
+	fcall	.cocofun_2
+.L48:
+	jlt.u	d0,d15,.L49
+.L502:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   277          F++; X++;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   278      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   279  }
+	ret
+.L312:
+	
+__VecHalfSwap_f32_function_end:
+	.size	VecHalfSwap_f32,__VecHalfSwap_f32_function_end-VecHalfSwap_f32
+.L188:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Cf32.VecWin_f32',code,cluster('VecWin_f32')
+	.sect	'.text.Ifx_Cf32.VecWin_f32'
+	.align	2
+	
+	.global	VecWin_f32
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   280  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   281  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   282  /* NOTE:
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   283   * (nX <= nW) && ((nW % nX) == 0) && ((nX % 2) == 0)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   284   * (symW != 0) when the window is symmetrical */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   285  void VecWin_f32(float32 *X, const float32 *W, short nX, short nW, short incrX, short symW)
+; Function VecWin_f32
+.L94:
+VecWin_f32:	.type	func
+	mov	d15,d7
+.L347:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   286  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   287      short step = nW / nX;
+	div	e2,d5,d4
+.L349:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   288      short i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   289  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   290      if (symW != 0)
+	jeq	d15,#0,.L50
+.L412:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   291      {   /* symmetrical window, using half of the length */
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   292          for (i = 0; i < nX / 2; i++)
+	mov	d15,#0
+.L348:
+	mov	d0,#2
+.L413:
+	div	e8,d4,d0
+	j	.L51
+.L52:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   293          {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   294              *X = *X * *W;
+	ld.w	d0,[a4]
+.L414:
+	ld.w	d1,[a5]
+.L415:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   295              X  = &X[incrX];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   296              W  = &W[step];
+	addsc.a	a5,a5,d2,#2
+.L416:
+	mul.f	d0,d0,d1
+	st.w	[a4],d0
+.L417:
+	addsc.a	a4,a4,d6,#2
+.L418:
+	add	d0,d15,#1
+	extr	d15,d0,#0,#16
+.L51:
+	jlt	d15,d8,.L52
+.L419:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   297          }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   298  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   299          W = &W[-step];
+	sha	d0,d2,#2
+	mov.d	d1,a5
+.L351:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   300  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   301          for ( ; i < nX; i++)
+	sub	d1,d0
+	j	.L53
+.L54:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   302          {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   303              *X = *X * *W;
+	ld.w	d1,[a4]
+.L420:
+	ld.w	d2,[a15]
+.L421:
+	add	d15,#1
+.L350:
+	mul.f	d1,d1,d2
+	st.w	[a4],d1
+.L422:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   304              X  = &X[incrX];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   305              W  = &W[-step];
+	mov.d	d1,a15
+.L353:
+	addsc.a	a4,a4,d6,#2
+.L423:
+	sub	d1,d0
+.L352:
+	extr	d15,d15,#0,#16
+.L53:
+	mov.a	a15,d1
+.L354:
+	jlt	d15,d4,.L54
+.L50:
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   306          }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   307      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   308  }
+	ret
+.L248:
+	
+__VecWin_f32_function_end:
+	.size	VecWin_f32,__VecWin_f32_function_end-VecWin_f32
+.L133:
+	; End of function
+	
+	.calls	'VecPwrdB_SF','__f_ftos'
+	.calls	'CplxVecMag_f32','sqrtf'
+	.calls	'VecPwrdB_f32','log10f'
+	.calls	'VecPwrdB_SF','log10f'
+	.calls	'VecAvg_f32','VecSum_f32'
+	.calls	'CplxVecPwr_f32','.cocofun_2'
+	.calls	'VecPwrdB_f32','.cocofun_3'
+	.calls	'VecPwrdB_SF','.cocofun_3'
+	.calls	'VecMaxIdx_f32','.cocofun_2'
+	.calls	'VecOfs_f32','.cocofun_3'
+	.calls	'VecGain_f32','.cocofun_3'
+	.calls	'VecSum_f32','.cocofun_3'
+	.calls	'VecMax_f32','.cocofun_2'
+	.calls	'VecMin_f32','.cocofun_2'
+	.calls	'VecHalfSwap_f32','.cocofun_2'
+	.calls	'CplxVecRst_f32','',0
+	.calls	'CplxVecCpy_f32S','',0
+	.calls	'CplxVecCpy_f32','',0
+	.calls	'CplxVecPwr_f32','',0
+	.calls	'.cocofun_2','',0
+	.calls	'CplxVecMag_f32','',0
+	.calls	'CplxVecMul_f32','',0
+	.calls	'VecPwrdB_f32','',0
+	.calls	'.cocofun_3','',0
+	.calls	'VecPwrdB_SF','',0
+	.calls	'VecMaxIdx_f32','',0
+	.calls	'VecMinIdx_f32','',0
+	.calls	'VecOfs_f32','',0
+	.calls	'VecGain_f32','',0
+	.calls	'VecSum_f32','',0
+	.calls	'VecAvg_f32','',0
+	.calls	'VecMax_f32','',0
+	.calls	'VecMin_f32','',0
+	.calls	'VecHalfSwap_f32','',0
+	.extern	log10f
+	.extern	sqrtf
+	.extern	__f_ftos
+	.calls	'VecWin_f32','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L96:
+	.word	1336
+	.half	3
+	.word	.L97
+	.byte	4
+.L95:
+	.byte	1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L98
+	.byte	2,1,1,3
+	.word	161
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,58,17,1,1,5
+	.byte	'fun',0,1,58,43
+	.word	164
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1
+.L271:
+	.byte	7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,149,2,18
+	.word	209
+	.byte	1,1,5
+	.byte	'a',0,1,149,2,44
+	.word	221
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	301
+	.byte	8
+	.byte	'__ld64',0,3,2,132,1,19
+	.word	275
+	.byte	1,1,5
+	.byte	'addr',0,2,132,1,32
+	.word	307
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,140,1,17,1,1,5
+	.byte	'addr',0,2,140,1,30
+	.word	307
+	.byte	5
+	.byte	'value',0,2,140,1,43
+	.word	275
+	.byte	6,0
+.L246:
+	.byte	10,4,58,9,8,11
+	.byte	'real',0
+	.word	221
+	.byte	4,2,35,0,11
+	.byte	'imag',0
+	.word	221
+	.byte	4,2,35,4,0,12
+	.word	393
+.L234:
+	.byte	3
+	.word	427
+.L237:
+	.byte	8
+	.byte	'IFX_Cf32_mul',0,3,3,64,21
+	.word	393
+	.byte	1,1
+.L239:
+	.byte	5
+	.byte	'a',0,3,64,50
+	.word	432
+.L241:
+	.byte	5
+	.byte	'b',0,3,64,69
+	.word	432
+.L243:
+	.byte	6,0,8
+	.byte	'IFX_Cf32_dot',0,3,3,82,20
+	.word	221
+	.byte	1,1,5
+	.byte	'b',0,3,82,49
+	.word	432
+	.byte	6,0
+.L227:
+	.byte	8
+	.byte	'IFX_Cf32_mag',0,3,3,88,20
+	.word	221
+	.byte	1,1
+.L229:
+	.byte	5
+	.byte	'c',0,3,88,49
+	.word	432
+.L231:
+	.byte	13,6,0,0
+.L200:
+	.byte	3
+	.word	393
+	.byte	4
+	.byte	'IFX_Cf32_set',0,3,3,122,17,1,1,5
+	.byte	'a',0,3,122,40
+	.word	557
+	.byte	5
+	.byte	're',0,3,122,51
+	.word	221
+	.byte	5
+	.byte	'im',0,3,122,63
+	.word	221
+	.byte	6,0,7
+	.byte	'int',0,4,5,12
+	.word	616
+	.byte	14
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,15
+	.word	623
+	.byte	0,7
+	.byte	'unsigned int',0,4,7,16
+	.word	665
+	.byte	3
+	.word	665
+	.byte	17
+	.byte	'__cmpswapw',0
+	.word	681
+	.byte	1,1,1,1,18
+	.byte	'p',0
+	.word	686
+	.byte	18
+	.byte	'value',0
+	.word	665
+	.byte	18
+	.byte	'compare',0
+	.word	665
+	.byte	0,19
+	.word	169
+	.byte	20
+	.word	195
+	.byte	6,0,19
+	.word	230
+	.byte	20
+	.word	262
+	.byte	6,0,19
+	.word	312
+	.byte	20
+	.word	331
+	.byte	6,0,19
+	.word	347
+	.byte	20
+	.word	362
+	.byte	20
+	.word	376
+	.byte	6,0,21
+	.byte	'log10f',0,5,149,1,25
+	.word	221
+	.byte	1,1,1,1,22,5,149,1,43
+	.word	221
+	.byte	0,21
+	.byte	'sqrtf',0,5,187,1,25
+	.word	221
+	.byte	1,1,1,1,22,5,187,1,43
+	.word	221
+	.byte	0,19
+	.word	437
+	.byte	20
+	.word	461
+	.byte	20
+	.word	471
+	.byte	6,0,19
+	.word	483
+	.byte	20
+	.word	507
+	.byte	6,0,19
+	.word	519
+	.byte	20
+	.word	543
+	.byte	13,23
+	.word	483
+	.byte	20
+	.word	507
+	.byte	24
+	.word	517
+	.byte	0,6,0,0,19
+	.word	562
+	.byte	20
+	.word	582
+	.byte	20
+	.word	592
+	.byte	20
+	.word	603
+	.byte	6,0
+.L204:
+	.byte	7
+	.byte	'short int',0,2,5
+.L202:
+	.byte	3
+	.word	936
+.L214:
+	.byte	3
+	.word	221
+.L219:
+	.byte	7
+	.byte	'unsigned short int',0,2,7,12
+	.word	221
+.L250:
+	.byte	3
+	.word	981
+.L264:
+	.byte	3
+	.word	936
+	.byte	25
+	.byte	'__wchar_t',0,6,1,1
+	.word	936
+	.byte	25
+	.byte	'__size_t',0,6,1,1
+	.word	665
+	.byte	25
+	.byte	'__ptrdiff_t',0,6,1,1
+	.word	616
+	.byte	26,1,3
+	.word	1051
+	.byte	25
+	.byte	'__codeptr',0,6,1,1
+	.word	1053
+	.byte	7
+	.byte	'unsigned char',0,1,8,25
+	.byte	'uint8',0,7,108,29
+	.word	1076
+	.byte	25
+	.byte	'uint16',0,7,112,29
+	.word	959
+	.byte	7
+	.byte	'unsigned long int',0,4,7,25
+	.byte	'uint32',0,7,116,29
+	.word	1122
+	.byte	25
+	.byte	'uint64',0,7,121,29
+	.word	275
+	.byte	25
+	.byte	'sint16',0,7,129,1,29
+	.word	936
+	.byte	7
+	.byte	'long int',0,4,5,25
+	.byte	'sint32',0,7,134,1,29
+	.word	1189
+	.byte	7
+	.byte	'long long int',0,8,5,25
+	.byte	'sint64',0,7,141,1,29
+	.word	1217
+	.byte	25
+	.byte	'float32',0,7,170,1,29
+	.word	221
+	.byte	25
+	.byte	'pvoid',0,4,54,28
+	.word	307
+	.byte	25
+	.byte	'cfloat32',0,4,62,3
+	.word	393
+	.byte	25
+	.byte	'Ifx_TickTime',0,4,76,28
+	.word	1217
+	.byte	25
+	.byte	'_iob_flag_t',0,8,82,25
+	.word	959
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L97:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,58,15,59,15,57
+	.byte	15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,38,0,73,19,0,0,13,11,1,0,0,14,46,1,3,8,54,15,39,12,63
+	.byte	12,60,12,0,0,15,5,0,73,19,0,0,16,53,0,73,19,0,0,17,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,18,5,0,3
+	.byte	8,73,19,0,0,19,46,1,49,19,0,0,20,5,0,49,19,0,0,21,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60
+	.byte	12,0,0,22,5,0,58,15,59,15,57,15,73,19,0,0,23,29,1,49,19,0,0,24,11,0,49,19,0,0,25,22,0,3,8,58,15,59,15
+	.byte	57,15,73,19,0,0,26,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L98:
+	.word	.L356-.L355
+.L355:
+	.half	3
+	.word	.L358-.L357
+.L357:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0,0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'math.h',0,2,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'stdio.h',0,2,0,0,0
+.L358:
+.L356:
+	.sdecl	'.debug_info',debug,cluster('CplxVecCpy_f32S')
+	.sect	'.debug_info'
+.L99:
+	.word	273
+	.half	3
+	.word	.L100
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L102,.L101
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'CplxVecCpy_f32S',0,1,56,6,1,1,1
+	.word	.L58,.L199,.L57
+	.byte	4
+	.byte	'X',0,1,56,32
+	.word	.L200,.L201
+	.byte	4
+	.byte	'S',0,1,56,42
+	.word	.L202,.L203
+	.byte	4
+	.byte	'nS',0,1,56,51
+	.word	.L204,.L205
+	.byte	4
+	.byte	'incrS',0,1,56,61
+	.word	.L204,.L206
+	.byte	5
+	.word	.L58,.L199
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('CplxVecCpy_f32S')
+	.sect	'.debug_abbrev'
+.L100:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('CplxVecCpy_f32S')
+	.sect	'.debug_line'
+.L101:
+	.word	.L360-.L359
+.L359:
+	.half	3
+	.word	.L362-.L361
+.L361:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L362:
+	.byte	5,19,7,0,5,2
+	.word	.L58
+	.byte	3,57,1,5,21,9
+	.half	.L5-.L58
+	.byte	3,2,1,5,19,1,5,23,9
+	.half	.L363-.L5
+	.byte	3,126,1,5,21,9
+	.half	.L364-.L363
+	.byte	3,3,1,5,18,9
+	.half	.L365-.L364
+	.byte	3,1,1,5,21,9
+	.half	.L366-.L365
+	.byte	3,127,1,5,19,1,9
+	.half	.L4-.L366
+	.byte	3,125,1,5,1,7,9
+	.half	.L367-.L4
+	.byte	3,6,1,7,9
+	.half	.L103-.L367
+	.byte	0,1,1
+.L360:
+	.sdecl	'.debug_ranges',debug,cluster('CplxVecCpy_f32S')
+	.sect	'.debug_ranges'
+.L102:
+	.word	-1,.L58,0,.L103-.L58,0,0
+	.sdecl	'.debug_info',debug,cluster('CplxVecRst_f32')
+	.sect	'.debug_info'
+.L104:
+	.word	240
+	.half	3
+	.word	.L105
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L107,.L106
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'CplxVecRst_f32',0,1,46,6,1,1,1
+	.word	.L56,.L207,.L55
+	.byte	4
+	.byte	'X',0,1,46,31
+	.word	.L200,.L208
+	.byte	4
+	.byte	'nX',0,1,46,40
+	.word	.L204,.L209
+	.byte	5
+	.word	.L56,.L207
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('CplxVecRst_f32')
+	.sect	'.debug_abbrev'
+.L105:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('CplxVecRst_f32')
+	.sect	'.debug_line'
+.L106:
+	.word	.L369-.L368
+.L368:
+	.half	3
+	.word	.L371-.L370
+.L370:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L371:
+	.byte	5,19,7,0,5,2
+	.word	.L56
+	.byte	3,47,1,5,23,9
+	.half	.L3-.L56
+	.byte	1,5,27,3,2,1,5,17,9
+	.half	.L372-.L3
+	.byte	1,5,19,9
+	.half	.L2-.L372
+	.byte	3,126,1,5,1,7,9
+	.half	.L373-.L2
+	.byte	3,5,1,7,9
+	.half	.L108-.L373
+	.byte	0,1,1
+.L369:
+	.sdecl	'.debug_ranges',debug,cluster('CplxVecRst_f32')
+	.sect	'.debug_ranges'
+.L107:
+	.word	-1,.L56,0,.L108-.L56,0,0
+	.sdecl	'.debug_info',debug,cluster('CplxVecCpy_f32')
+	.sect	'.debug_info'
+.L109:
+	.word	254
+	.half	3
+	.word	.L110
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L112,.L111
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'CplxVecCpy_f32',0,1,67,6,1,1,1
+	.word	.L60,.L210,.L59
+	.byte	4
+	.byte	'X',0,1,67,31
+	.word	.L200,.L211
+	.byte	4
+	.byte	'S',0,1,67,44
+	.word	.L200,.L212
+	.byte	4
+	.byte	'nS',0,1,67,53
+	.word	.L204,.L213
+	.byte	5
+	.word	.L60,.L210
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('CplxVecCpy_f32')
+	.sect	'.debug_abbrev'
+.L110:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('CplxVecCpy_f32')
+	.sect	'.debug_line'
+.L111:
+	.word	.L375-.L374
+.L374:
+	.half	3
+	.word	.L377-.L376
+.L376:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L377:
+	.byte	5,19,7,0,5,2
+	.word	.L60
+	.byte	3,196,0,1,5,23,9
+	.half	.L7-.L60
+	.byte	1,5,14,3,2,1,5,12,9
+	.half	.L378-.L7
+	.byte	1,5,19,9
+	.half	.L6-.L378
+	.byte	3,126,1,5,1,7,9
+	.half	.L379-.L6
+	.byte	3,5,1,7,9
+	.half	.L113-.L379
+	.byte	0,1,1
+.L375:
+	.sdecl	'.debug_ranges',debug,cluster('CplxVecCpy_f32')
+	.sect	'.debug_ranges'
+.L112:
+	.word	-1,.L60,0,.L113-.L60,0,0
+	.sdecl	'.debug_info',debug,cluster('CplxVecPwr_f32')
+	.sect	'.debug_info'
+.L114:
+	.word	269
+	.half	3
+	.word	.L115
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L117,.L116
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'CplxVecPwr_f32',0,1,77,10
+	.word	.L214
+	.byte	1,1,1
+	.word	.L62,.L215,.L61
+	.byte	4
+	.byte	'X',0,1,77,35
+	.word	.L200,.L216
+	.byte	4
+	.byte	'nX',0,1,77,44
+	.word	.L204,.L217
+	.byte	5
+	.word	.L218
+	.byte	6
+	.byte	'i',0,1,79,20
+	.word	.L219,.L220
+	.byte	6
+	.byte	'r',0,1,80,20
+	.word	.L214,.L221
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('CplxVecPwr_f32')
+	.sect	'.debug_abbrev'
+.L115:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,85,6,0,0,6,52,0
+	.byte	3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('CplxVecPwr_f32')
+	.sect	'.debug_line'
+.L116:
+	.word	.L381-.L380
+.L380:
+	.half	3
+	.word	.L383-.L382
+.L382:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0,0
+.L383:
+	.byte	5,22,7,0,5,2
+	.word	.L62
+	.byte	3,207,0,1,5,12,9
+	.half	.L321-.L62
+	.byte	3,2,1,5,23,1,4,2,5,46,9
+	.half	.L9-.L321
+	.byte	3,2,1,5,24,9
+	.half	.L384-.L9
+	.byte	1,5,43,9
+	.half	.L385-.L384
+	.byte	1,5,32,9
+	.half	.L386-.L385
+	.byte	1,4,1,5,12,1,5,26,9
+	.half	.L320-.L386
+	.byte	3,126,1,5,23,9
+	.half	.L8-.L320
+	.byte	1,5,15,7,9
+	.half	.L387-.L8
+	.byte	3,6,1,5,1,9
+	.half	.L388-.L387
+	.byte	3,1,1,7,9
+	.half	.L118-.L388
+	.byte	0,1,1
+.L381:
+	.sdecl	'.debug_ranges',debug,cluster('CplxVecPwr_f32')
+	.sect	'.debug_ranges'
+.L117:
+	.word	-1,.L62,0,.L118-.L62,0,0
+.L218:
+	.word	-1,.L62,0,.L215-.L62,-1,.L64,0,.L193-.L64,0,0
+	.sdecl	'.debug_info',debug,cluster('CplxVecMag_f32')
+	.sect	'.debug_info'
+.L119:
+	.word	309
+	.half	3
+	.word	.L120
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L122,.L121
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'CplxVecMag_f32',0,1,92,10
+	.word	.L214
+	.byte	1,1,1
+	.word	.L66,.L222,.L65
+	.byte	4
+	.byte	'X',0,1,92,35
+	.word	.L200,.L223
+	.byte	4
+	.byte	'nX',0,1,92,44
+	.word	.L204,.L224
+	.byte	5
+	.word	.L66,.L222
+	.byte	6
+	.byte	'i',0,1,94,20
+	.word	.L219,.L225
+	.byte	6
+	.byte	'r',0,1,95,20
+	.word	.L214,.L226
+	.byte	7
+	.word	.L227,.L12,.L228
+	.byte	8
+	.word	.L229,.L230
+	.byte	9
+	.word	.L231,.L12,.L228
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('CplxVecMag_f32')
+	.sect	'.debug_abbrev'
+.L120:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17
+	.byte	1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('CplxVecMag_f32')
+	.sect	'.debug_line'
+.L121:
+	.word	.L390-.L389
+.L389:
+	.half	3
+	.word	.L392-.L391
+.L391:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0,0
+.L392:
+	.byte	5,10,7,0,5,2
+	.word	.L66
+	.byte	3,219,0,1,5,22,9
+	.half	.L324-.L66
+	.byte	3,3,1,5,12,9
+	.half	.L325-.L324
+	.byte	3,2,1,5,23,1,4,2,5,46,9
+	.half	.L12-.L325
+	.byte	3,115,1,5,24,9
+	.half	.L393-.L12
+	.byte	1,5,43,9
+	.half	.L394-.L393
+	.byte	1,5,32,9
+	.half	.L395-.L394
+	.byte	1,4,1,5,26,9
+	.half	.L228-.L395
+	.byte	3,13,1,5,12,3,2,1,5,26,9
+	.half	.L327-.L228
+	.byte	3,126,1,5,23,9
+	.half	.L11-.L327
+	.byte	1,5,15,7,9
+	.half	.L396-.L11
+	.byte	3,6,1,5,1,9
+	.half	.L397-.L396
+	.byte	3,1,1,7,9
+	.half	.L123-.L397
+	.byte	0,1,1
+.L390:
+	.sdecl	'.debug_ranges',debug,cluster('CplxVecMag_f32')
+	.sect	'.debug_ranges'
+.L122:
+	.word	-1,.L66,0,.L123-.L66,0,0
+	.sdecl	'.debug_info',debug,cluster('CplxVecMul_f32')
+	.sect	'.debug_info'
+.L124:
+	.word	345
+	.half	3
+	.word	.L125
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L127,.L126
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'CplxVecMul_f32',0,1,107,6,1,1,1
+	.word	.L68,.L232,.L67
+	.byte	4
+	.byte	'X',0,1,107,31
+	.word	.L200,.L233
+	.byte	4
+	.byte	'mul',0,1,107,50
+	.word	.L234,.L235
+	.byte	4
+	.byte	'nX',0,1,107,61
+	.word	.L204,.L236
+	.byte	5
+	.word	.L68,.L232
+	.byte	6
+	.word	.L237,.L15,.L238
+	.byte	7
+	.word	.L239,.L240
+	.byte	7
+	.word	.L241,.L242
+	.byte	8
+	.word	.L243,.L244
+	.byte	9
+	.byte	'R',0,2,66,14
+	.word	.L246,.L247
+	.byte	0,0,6
+	.word	.L237,.L245,.L14
+	.byte	7
+	.word	.L239,.L240
+	.byte	7
+	.word	.L241,.L242
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('CplxVecMul_f32')
+	.sect	'.debug_abbrev'
+.L125:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,29,1,49
+	.byte	16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,1,49,16,85,6,0,0,9,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0
+	.byte	0
+	.sdecl	'.debug_line',debug,cluster('CplxVecMul_f32')
+	.sect	'.debug_line'
+.L126:
+	.word	.L399-.L398
+.L398:
+	.half	3
+	.word	.L401-.L400
+.L400:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0,0
+.L401:
+	.byte	5,19,7,0,5,2
+	.word	.L68
+	.byte	3,236,0,1,4,2,5,26,9
+	.half	.L15-.L68
+	.byte	3,86,1,5,16,9
+	.half	.L402-.L15
+	.byte	1,5,48,9
+	.half	.L403-.L402
+	.byte	1,5,23,9
+	.half	.L404-.L403
+	.byte	1,5,38,1,4,1,5,23,9
+	.half	.L238-.L404
+	.byte	3,42,1,4,2,5,34,9
+	.half	.L245-.L238
+	.byte	3,86,1,5,45,9
+	.half	.L405-.L245
+	.byte	3,1,1,5,34,9
+	.half	.L406-.L405
+	.byte	1,4,1,5,12,3,43,1,5,19,9
+	.half	.L14-.L406
+	.byte	3,126,1,5,1,7,9
+	.half	.L407-.L14
+	.byte	3,5,1,7,9
+	.half	.L128-.L407
+	.byte	0,1,1
+.L399:
+	.sdecl	'.debug_ranges',debug,cluster('CplxVecMul_f32')
+	.sect	'.debug_ranges'
+.L127:
+	.word	-1,.L68,0,.L128-.L68,0,0
+.L244:
+	.word	-1,.L68,.L15-.L68,.L238-.L68,.L245-.L68,.L14-.L68,0,0
+	.sdecl	'.debug_info',debug,cluster('VecWin_f32')
+	.sect	'.debug_info'
+.L129:
+	.word	341
+	.half	3
+	.word	.L130
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L132,.L131
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'VecWin_f32',0,1,157,2,6,1,1,1
+	.word	.L94,.L248,.L93
+	.byte	4
+	.byte	'X',0,1,157,2,26
+	.word	.L214,.L249
+	.byte	4
+	.byte	'W',0,1,157,2,44
+	.word	.L250,.L251
+	.byte	4
+	.byte	'nX',0,1,157,2,53
+	.word	.L204,.L252
+	.byte	4
+	.byte	'nW',0,1,157,2,63
+	.word	.L204,.L253
+	.byte	4
+	.byte	'incrX',0,1,157,2,73
+	.word	.L204,.L254
+	.byte	4
+	.byte	'symW',0,1,157,2,86
+	.word	.L204,.L255
+	.byte	5
+	.word	.L94,.L248
+	.byte	6
+	.byte	'step',0,1,159,2,11
+	.word	.L204,.L256
+	.byte	6
+	.byte	'i',0,1,160,2,11
+	.word	.L204,.L257
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('VecWin_f32')
+	.sect	'.debug_abbrev'
+.L130:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('VecWin_f32')
+	.sect	'.debug_line'
+.L131:
+	.word	.L409-.L408
+.L408:
+	.half	3
+	.word	.L411-.L410
+.L410:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L411:
+	.byte	5,6,7,0,5,2
+	.word	.L94
+	.byte	3,156,2,1,5,21,9
+	.half	.L347-.L94
+	.byte	3,2,1,5,5,9
+	.half	.L349-.L347
+	.byte	3,3,1,5,16,7,9
+	.half	.L412-.L349
+	.byte	3,2,1,5,30,9
+	.half	.L348-.L412
+	.byte	1,5,28,9
+	.half	.L413-.L348
+	.byte	1,5,31,1,5,18,9
+	.half	.L52-.L413
+	.byte	3,2,1,5,23,9
+	.half	.L414-.L52
+	.byte	1,5,20,9
+	.half	.L415-.L414
+	.byte	3,2,1,5,21,9
+	.half	.L416-.L415
+	.byte	3,126,1,5,16,1,5,20,9
+	.half	.L417-.L416
+	.byte	3,1,1,5,34,9
+	.half	.L418-.L417
+	.byte	3,125,1,5,31,9
+	.half	.L51-.L418
+	.byte	1,5,21,7,9
+	.half	.L419-.L51
+	.byte	3,4,1,5,14,3,3,1,5,16,9
+	.half	.L351-.L419
+	.byte	1,5,23,3,2,1,5,18,9
+	.half	.L54-.L351
+	.byte	3,2,1,5,23,9
+	.half	.L420-.L54
+	.byte	1,5,26,9
+	.half	.L421-.L420
+	.byte	3,126,1,5,21,9
+	.half	.L350-.L421
+	.byte	3,2,1,5,16,1,5,19,9
+	.half	.L422-.L350
+	.byte	3,2,1,5,20,9
+	.half	.L353-.L422
+	.byte	3,127,1,5,21,9
+	.half	.L423-.L353
+	.byte	3,1,1,5,26,9
+	.half	.L352-.L423
+	.byte	3,124,1,5,16,9
+	.half	.L53-.L352
+	.byte	3,4,1,5,23,9
+	.half	.L354-.L53
+	.byte	3,124,1,5,1,7,9
+	.half	.L50-.L354
+	.byte	3,7,1,7,9
+	.half	.L133-.L50
+	.byte	0,1,1
+.L409:
+	.sdecl	'.debug_ranges',debug,cluster('VecWin_f32')
+	.sect	'.debug_ranges'
+.L132:
+	.word	-1,.L94,0,.L133-.L94,0,0
+	.sdecl	'.debug_info',debug,cluster('VecPwrdB_f32')
+	.sect	'.debug_info'
+.L134:
+	.word	249
+	.half	3
+	.word	.L135
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L137,.L136
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'VecPwrdB_f32',0,1,117,6,1,1,1
+	.word	.L70,.L258,.L69
+	.byte	4
+	.byte	'X',0,1,117,28
+	.word	.L214,.L259
+	.byte	4
+	.byte	'nX',0,1,117,37
+	.word	.L204,.L260
+	.byte	5
+	.word	.L261
+	.byte	6
+	.byte	'i',0,1,119,20
+	.word	.L219,.L262
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('VecPwrdB_f32')
+	.sect	'.debug_abbrev'
+.L135:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,85,6,0,0,6,52,0,3,8,58
+	.byte	15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('VecPwrdB_f32')
+	.sect	'.debug_line'
+.L136:
+	.word	.L425-.L424
+.L424:
+	.half	3
+	.word	.L427-.L426
+.L426:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L427:
+	.byte	5,6,7,0,5,2
+	.word	.L70
+	.byte	3,244,0,1,5,12,9
+	.half	.L328-.L70
+	.byte	3,4,1,5,23,1,5,37,9
+	.half	.L17-.L328
+	.byte	3,2,1,5,23,9
+	.half	.L428-.L17
+	.byte	1,5,28,9
+	.half	.L429-.L428
+	.byte	1,5,12,1,5,26,9
+	.half	.L329-.L429
+	.byte	3,126,1,5,23,9
+	.half	.L16-.L329
+	.byte	1,5,1,7,9
+	.half	.L430-.L16
+	.byte	3,5,1,7,9
+	.half	.L138-.L430
+	.byte	0,1,1
+.L425:
+	.sdecl	'.debug_ranges',debug,cluster('VecPwrdB_f32')
+	.sect	'.debug_ranges'
+.L137:
+	.word	-1,.L70,0,.L138-.L70,0,0
+.L261:
+	.word	-1,.L70,0,.L258-.L70,-1,.L72,0,.L198-.L72,0,0
+	.sdecl	'.debug_info',debug,cluster('VecPwrdB_SF')
+	.sect	'.debug_info'
+.L139:
+	.word	271
+	.half	3
+	.word	.L140
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L142,.L141
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'VecPwrdB_SF',0,1,129,1,6,1,1,1
+	.word	.L74,.L263,.L73
+	.byte	4
+	.byte	'R',0,1,129,1,26
+	.word	.L264,.L265
+	.byte	4
+	.byte	'X',0,1,129,1,38
+	.word	.L214,.L266
+	.byte	4
+	.byte	'nX',0,1,129,1,47
+	.word	.L204,.L267
+	.byte	5
+	.word	.L74,.L263
+	.byte	6
+	.byte	'i',0,1,131,1,20
+	.word	.L219,.L268
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('VecPwrdB_SF')
+	.sect	'.debug_abbrev'
+.L140:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('VecPwrdB_SF')
+	.sect	'.debug_line'
+.L141:
+	.word	.L432-.L431
+.L431:
+	.half	3
+	.word	.L434-.L433
+.L433:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L434:
+	.byte	5,6,7,0,5,2
+	.word	.L74
+	.byte	3,128,1,1,5,12,9
+	.half	.L331-.L74
+	.byte	3,4,1,5,6,3,124,1,5,23,9
+	.half	.L332-.L331
+	.byte	3,4,1,5,37,9
+	.half	.L19-.L332
+	.byte	3,2,1,5,23,9
+	.half	.L435-.L19
+	.byte	1,5,28,9
+	.half	.L436-.L435
+	.byte	1,5,14,1,5,12,9
+	.half	.L437-.L436
+	.byte	1,5,26,9
+	.half	.L438-.L437
+	.byte	3,126,1,5,23,9
+	.half	.L18-.L438
+	.byte	1,5,1,7,9
+	.half	.L439-.L18
+	.byte	3,5,1,7,9
+	.half	.L143-.L439
+	.byte	0,1,1
+.L432:
+	.sdecl	'.debug_ranges',debug,cluster('VecPwrdB_SF')
+	.sect	'.debug_ranges'
+.L142:
+	.word	-1,.L74,0,.L143-.L74,0,0
+	.sdecl	'.debug_info',debug,cluster('VecGain_f32')
+	.sect	'.debug_info'
+.L144:
+	.word	274
+	.half	3
+	.word	.L145
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L147,.L146
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'VecGain_f32',0,1,203,1,6,1,1,1
+	.word	.L82,.L269,.L81
+	.byte	4
+	.byte	'X',0,1,203,1,27
+	.word	.L214,.L270
+	.byte	4
+	.byte	'gain',0,1,203,1,38
+	.word	.L271,.L272
+	.byte	4
+	.byte	'nX',0,1,203,1,50
+	.word	.L204,.L273
+	.byte	5
+	.word	.L82,.L269
+	.byte	6
+	.byte	'i',0,1,205,1,20
+	.word	.L219,.L274
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('VecGain_f32')
+	.sect	'.debug_abbrev'
+.L145:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('VecGain_f32')
+	.sect	'.debug_line'
+.L146:
+	.word	.L441-.L440
+.L440:
+	.half	3
+	.word	.L443-.L442
+.L442:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L443:
+	.byte	5,12,7,0,5,2
+	.word	.L82
+	.byte	3,206,1,1,5,23,1,5,14,9
+	.half	.L33-.L82
+	.byte	3,2,1,5,17,9
+	.half	.L444-.L33
+	.byte	1,5,12,1,5,26,9
+	.half	.L337-.L444
+	.byte	3,126,1,5,23,9
+	.half	.L32-.L337
+	.byte	1,5,1,7,9
+	.half	.L445-.L32
+	.byte	3,5,1,7,9
+	.half	.L148-.L445
+	.byte	0,1,1
+.L441:
+	.sdecl	'.debug_ranges',debug,cluster('VecGain_f32')
+	.sect	'.debug_ranges'
+.L147:
+	.word	-1,.L82,0,.L148-.L82,0,0
+	.sdecl	'.debug_info',debug,cluster('VecOfs_f32')
+	.sect	'.debug_info'
+.L149:
+	.word	275
+	.half	3
+	.word	.L150
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L152,.L151
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'VecOfs_f32',0,1,191,1,6,1,1,1
+	.word	.L80,.L275,.L79
+	.byte	4
+	.byte	'X',0,1,191,1,26
+	.word	.L214,.L276
+	.byte	4
+	.byte	'offset',0,1,191,1,37
+	.word	.L271,.L277
+	.byte	4
+	.byte	'nX',0,1,191,1,51
+	.word	.L204,.L278
+	.byte	5
+	.word	.L80,.L275
+	.byte	6
+	.byte	'i',0,1,193,1,20
+	.word	.L219,.L279
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('VecOfs_f32')
+	.sect	'.debug_abbrev'
+.L150:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('VecOfs_f32')
+	.sect	'.debug_line'
+.L151:
+	.word	.L447-.L446
+.L446:
+	.half	3
+	.word	.L449-.L448
+.L448:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L449:
+	.byte	5,12,7,0,5,2
+	.word	.L80
+	.byte	3,194,1,1,5,23,1,5,10,9
+	.half	.L31-.L80
+	.byte	3,2,1,5,12,9
+	.half	.L450-.L31
+	.byte	1,5,26,9
+	.half	.L336-.L450
+	.byte	3,126,1,5,23,9
+	.half	.L30-.L336
+	.byte	1,5,1,7,9
+	.half	.L451-.L30
+	.byte	3,5,1,7,9
+	.half	.L153-.L451
+	.byte	0,1,1
+.L447:
+	.sdecl	'.debug_ranges',debug,cluster('VecOfs_f32')
+	.sect	'.debug_ranges'
+.L152:
+	.word	-1,.L80,0,.L153-.L80,0,0
+	.sdecl	'.debug_info',debug,cluster('VecSum_f32')
+	.sect	'.debug_info'
+.L154:
+	.word	277
+	.half	3
+	.word	.L155
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L157,.L156
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'VecSum_f32',0,1,215,1,9
+	.word	.L271
+	.byte	1,1,1
+	.word	.L84,.L280,.L83
+	.byte	4
+	.byte	'X',0,1,215,1,29
+	.word	.L214,.L281
+	.byte	4
+	.byte	'nX',0,1,215,1,38
+	.word	.L204,.L282
+	.byte	5
+	.word	.L84,.L280
+	.byte	6
+	.byte	'sumX',0,1,217,1,20
+	.word	.L271,.L283
+	.byte	6
+	.byte	'i',0,1,218,1,20
+	.word	.L219,.L284
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('VecSum_f32')
+	.sect	'.debug_abbrev'
+.L155:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('VecSum_f32')
+	.sect	'.debug_line'
+.L156:
+	.word	.L453-.L452
+.L452:
+	.half	3
+	.word	.L455-.L454
+.L454:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L455:
+	.byte	5,25,7,0,5,2
+	.word	.L84
+	.byte	3,216,1,1,5,12,9
+	.half	.L338-.L84
+	.byte	3,3,1,5,23,1,5,17,9
+	.half	.L35-.L338
+	.byte	3,2,1,5,14,9
+	.half	.L456-.L35
+	.byte	1,5,26,3,126,1,5,23,9
+	.half	.L34-.L456
+	.byte	1,5,1,7,9
+	.half	.L457-.L34
+	.byte	3,7,1,7,9
+	.half	.L158-.L457
+	.byte	0,1,1
+.L453:
+	.sdecl	'.debug_ranges',debug,cluster('VecSum_f32')
+	.sect	'.debug_ranges'
+.L157:
+	.word	-1,.L84,0,.L158-.L84,0,0
+	.sdecl	'.debug_info',debug,cluster('VecAvg_f32')
+	.sect	'.debug_info'
+.L159:
+	.word	243
+	.half	3
+	.word	.L160
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L162,.L161
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'VecAvg_f32',0,1,230,1,9
+	.word	.L271
+	.byte	1,1,1
+	.word	.L86,.L285,.L85
+	.byte	4
+	.byte	'X',0,1,230,1,29
+	.word	.L214,.L286
+	.byte	4
+	.byte	'nX',0,1,230,1,38
+	.word	.L204,.L287
+	.byte	5
+	.word	.L86,.L285
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('VecAvg_f32')
+	.sect	'.debug_abbrev'
+.L160:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('VecAvg_f32')
+	.sect	'.debug_line'
+.L161:
+	.word	.L459-.L458
+.L458:
+	.half	3
+	.word	.L461-.L460
+.L460:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L461:
+	.byte	5,9,7,0,5,2
+	.word	.L86
+	.byte	3,229,1,1,5,26,3,2,1,5,32,9
+	.half	.L339-.L86
+	.byte	1,5,30,9
+	.half	.L340-.L339
+	.byte	1,5,1,3,1,1,7,9
+	.half	.L163-.L340
+	.byte	0,1,1
+.L459:
+	.sdecl	'.debug_ranges',debug,cluster('VecAvg_f32')
+	.sect	'.debug_ranges'
+.L162:
+	.word	-1,.L86,0,.L163-.L86,0,0
+	.sdecl	'.debug_info',debug,cluster('VecMax_f32')
+	.sect	'.debug_info'
+.L164:
+	.word	274
+	.half	3
+	.word	.L165
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L167,.L166
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'VecMax_f32',0,1,236,1,9
+	.word	.L271
+	.byte	1,1,1
+	.word	.L88,.L288,.L87
+	.byte	4
+	.byte	'X',0,1,236,1,29
+	.word	.L214,.L289
+	.byte	4
+	.byte	'nX',0,1,236,1,38
+	.word	.L204,.L290
+	.byte	5
+	.word	.L88,.L288
+	.byte	6
+	.byte	'i',0,1,238,1,20
+	.word	.L219,.L291
+	.byte	6
+	.byte	'r',0,1,239,1,20
+	.word	.L271,.L292
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('VecMax_f32')
+	.sect	'.debug_abbrev'
+.L165:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('VecMax_f32')
+	.sect	'.debug_line'
+.L166:
+	.word	.L463-.L462
+.L462:
+	.half	3
+	.word	.L465-.L464
+.L464:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L465:
+	.byte	5,24,7,0,5,2
+	.word	.L88
+	.byte	3,238,1,1,5,12,9
+	.half	.L341-.L88
+	.byte	3,2,1,5,23,1,5,13,9
+	.half	.L39-.L341
+	.byte	3,2,1,5,26,9
+	.half	.L466-.L39
+	.byte	3,126,1,5,23,9
+	.half	.L38-.L466
+	.byte	1,5,1,7,9
+	.half	.L467-.L38
+	.byte	3,7,1,7,9
+	.half	.L168-.L467
+	.byte	0,1,1
+.L463:
+	.sdecl	'.debug_ranges',debug,cluster('VecMax_f32')
+	.sect	'.debug_ranges'
+.L167:
+	.word	-1,.L88,0,.L168-.L88,0,0
+	.sdecl	'.debug_info',debug,cluster('VecMin_f32')
+	.sect	'.debug_info'
+.L169:
+	.word	274
+	.half	3
+	.word	.L170
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L172,.L171
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'VecMin_f32',0,1,251,1,9
+	.word	.L271
+	.byte	1,1,1
+	.word	.L90,.L293,.L89
+	.byte	4
+	.byte	'X',0,1,251,1,29
+	.word	.L214,.L294
+	.byte	4
+	.byte	'nX',0,1,251,1,38
+	.word	.L204,.L295
+	.byte	5
+	.word	.L90,.L293
+	.byte	6
+	.byte	'i',0,1,253,1,20
+	.word	.L219,.L296
+	.byte	6
+	.byte	'r',0,1,254,1,20
+	.word	.L271,.L297
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('VecMin_f32')
+	.sect	'.debug_abbrev'
+.L170:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('VecMin_f32')
+	.sect	'.debug_line'
+.L171:
+	.word	.L469-.L468
+.L468:
+	.half	3
+	.word	.L471-.L470
+.L470:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L471:
+	.byte	5,24,7,0,5,2
+	.word	.L90
+	.byte	3,253,1,1,5,12,9
+	.half	.L342-.L90
+	.byte	3,2,1,5,23,1,5,13,9
+	.half	.L44-.L342
+	.byte	3,2,1,5,26,9
+	.half	.L472-.L44
+	.byte	3,126,1,5,23,9
+	.half	.L43-.L472
+	.byte	1,5,1,7,9
+	.half	.L473-.L43
+	.byte	3,7,1,7,9
+	.half	.L173-.L473
+	.byte	0,1,1
+.L469:
+	.sdecl	'.debug_ranges',debug,cluster('VecMin_f32')
+	.sect	'.debug_ranges'
+.L172:
+	.word	-1,.L90,0,.L173-.L90,0,0
+	.sdecl	'.debug_info',debug,cluster('VecMinIdx_f32')
+	.sect	'.debug_info'
+.L174:
+	.word	323
+	.half	3
+	.word	.L175
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L177,.L176
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'VecMinIdx_f32',0,1,166,1,9
+	.word	.L271
+	.byte	1,1,1
+	.word	.L78,.L298,.L77
+	.byte	4
+	.byte	'X',0,1,166,1,32
+	.word	.L214,.L299
+	.byte	4
+	.byte	'nX',0,1,166,1,41
+	.word	.L204,.L300
+	.byte	4
+	.byte	'minIdx',0,1,166,1,53
+	.word	.L264,.L301
+	.byte	4
+	.byte	'maxIdx',0,1,166,1,69
+	.word	.L264,.L302
+	.byte	5
+	.word	.L78,.L298
+	.byte	6
+	.byte	'minPeak',0,1,168,1,13
+	.word	.L271,.L303
+	.byte	6
+	.byte	'm',0,1,169,1,13
+	.word	.L204,.L304
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('VecMinIdx_f32')
+	.sect	'.debug_abbrev'
+.L175:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('VecMinIdx_f32')
+	.sect	'.debug_line'
+.L176:
+	.word	.L475-.L474
+.L474:
+	.half	3
+	.word	.L477-.L476
+.L476:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L477:
+	.byte	5,23,7,0,5,2
+	.word	.L78
+	.byte	3,167,1,1,5,12,9
+	.half	.L334-.L78
+	.byte	3,3,1,5,23,1,5,13,9
+	.half	.L26-.L334
+	.byte	3,2,1,5,16,9
+	.half	.L478-.L26
+	.byte	1,5,9,9
+	.half	.L479-.L478
+	.byte	1,5,21,7,9
+	.half	.L480-.L479
+	.byte	3,2,1,3,1,1,5,16,9
+	.half	.L27-.L480
+	.byte	3,3,1,5,9,9
+	.half	.L481-.L27
+	.byte	1,5,21,7,9
+	.half	.L482-.L481
+	.byte	3,2,1,5,26,9
+	.half	.L28-.L482
+	.byte	3,118,1,5,10,3,13,1,5,26,9
+	.half	.L335-.L28
+	.byte	3,115,1,5,23,9
+	.half	.L25-.L335
+	.byte	1,5,1,7,9
+	.half	.L483-.L25
+	.byte	3,17,1,7,9
+	.half	.L178-.L483
+	.byte	0,1,1
+.L475:
+	.sdecl	'.debug_ranges',debug,cluster('VecMinIdx_f32')
+	.sect	'.debug_ranges'
+.L177:
+	.word	-1,.L78,0,.L178-.L78,0,0
+	.sdecl	'.debug_info',debug,cluster('VecMaxIdx_f32')
+	.sect	'.debug_info'
+.L179:
+	.word	323
+	.half	3
+	.word	.L180
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L182,.L181
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'VecMaxIdx_f32',0,1,141,1,9
+	.word	.L271
+	.byte	1,1,1
+	.word	.L76,.L305,.L75
+	.byte	4
+	.byte	'X',0,1,141,1,32
+	.word	.L214,.L306
+	.byte	4
+	.byte	'nX',0,1,141,1,41
+	.word	.L204,.L307
+	.byte	4
+	.byte	'minIdx',0,1,141,1,53
+	.word	.L264,.L308
+	.byte	4
+	.byte	'maxIdx',0,1,141,1,69
+	.word	.L264,.L309
+	.byte	5
+	.word	.L76,.L305
+	.byte	6
+	.byte	'maxPeak',0,1,143,1,20
+	.word	.L271,.L310
+	.byte	6
+	.byte	'm',0,1,144,1,20
+	.word	.L219,.L311
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('VecMaxIdx_f32')
+	.sect	'.debug_abbrev'
+.L180:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('VecMaxIdx_f32')
+	.sect	'.debug_line'
+.L181:
+	.word	.L485-.L484
+.L484:
+	.half	3
+	.word	.L487-.L486
+.L486:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L487:
+	.byte	5,30,7,0,5,2
+	.word	.L76
+	.byte	3,142,1,1,5,12,9
+	.half	.L333-.L76
+	.byte	3,3,1,5,23,1,5,13,9
+	.half	.L21-.L333
+	.byte	3,2,1,5,16,9
+	.half	.L488-.L21
+	.byte	1,5,9,9
+	.half	.L489-.L488
+	.byte	1,5,21,7,9
+	.half	.L490-.L489
+	.byte	3,2,1,3,1,1,5,16,9
+	.half	.L22-.L490
+	.byte	3,3,1,5,9,9
+	.half	.L491-.L22
+	.byte	1,5,21,7,9
+	.half	.L492-.L491
+	.byte	3,2,1,5,10,9
+	.half	.L23-.L492
+	.byte	3,3,1,5,26,9
+	.half	.L493-.L23
+	.byte	3,115,1,5,23,9
+	.half	.L20-.L493
+	.byte	1,5,1,7,9
+	.half	.L494-.L20
+	.byte	3,17,1,7,9
+	.half	.L183-.L494
+	.byte	0,1,1
+.L485:
+	.sdecl	'.debug_ranges',debug,cluster('VecMaxIdx_f32')
+	.sect	'.debug_ranges'
+.L182:
+	.word	-1,.L76,0,.L183-.L76,0,0
+	.sdecl	'.debug_info',debug,cluster('VecHalfSwap_f32')
+	.sect	'.debug_info'
+.L184:
+	.word	320
+	.half	3
+	.word	.L185
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L187,.L186
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'VecHalfSwap_f32',0,1,138,2,6,1,1,1
+	.word	.L92,.L312,.L91
+	.byte	4
+	.byte	'X',0,1,138,2,31
+	.word	.L214,.L313
+	.byte	4
+	.byte	'nX',0,1,138,2,40
+	.word	.L204,.L314
+	.byte	5
+	.word	.L92,.L312
+	.byte	6
+	.byte	'i',0,1,140,2,20
+	.word	.L219,.L315
+	.byte	6
+	.byte	'half',0,1,141,2,20
+	.word	.L219,.L316
+	.byte	6
+	.byte	'F',0,1,142,2,20
+	.word	.L214,.L317
+	.byte	5
+	.word	.L49,.L318
+	.byte	6
+	.byte	'tmp',0,1,146,2,17
+	.word	.L271,.L319
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('VecHalfSwap_f32')
+	.sect	'.debug_abbrev'
+.L185:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('VecHalfSwap_f32')
+	.sect	'.debug_line'
+.L186:
+	.word	.L496-.L495
+.L495:
+	.half	3
+	.word	.L498-.L497
+.L497:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L498:
+	.byte	5,32,7,0,5,2
+	.word	.L92
+	.byte	3,140,2,1,5,30,9
+	.half	.L499-.L92
+	.byte	1,5,12,9
+	.half	.L345-.L499
+	.byte	3,3,1,5,29,9
+	.half	.L346-.L345
+	.byte	3,126,1,5,25,9
+	.half	.L344-.L346
+	.byte	3,2,1,5,23,9
+	.half	.L49-.L344
+	.byte	3,2,1,5,14,9
+	.half	.L343-.L49
+	.byte	3,1,1,5,12,9
+	.half	.L500-.L343
+	.byte	1,9
+	.half	.L501-.L500
+	.byte	3,1,1,5,28,9
+	.half	.L318-.L501
+	.byte	3,124,1,5,25,9
+	.half	.L48-.L318
+	.byte	1,5,1,7,9
+	.half	.L502-.L48
+	.byte	3,7,1,7,9
+	.half	.L188-.L502
+	.byte	0,1,1
+.L496:
+	.sdecl	'.debug_ranges',debug,cluster('VecHalfSwap_f32')
+	.sect	'.debug_ranges'
+.L187:
+	.word	-1,.L92,0,.L188-.L92,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_2')
+	.sect	'.debug_info'
+.L189:
+	.word	195
+	.half	3
+	.word	.L190
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L192,.L191
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'.cocofun_2',0,1,77,10,1
+	.word	.L64,.L193,.L63
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_2')
+	.sect	'.debug_abbrev'
+.L190:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_2')
+	.sect	'.debug_line'
+.L191:
+	.word	.L504-.L503
+.L503:
+	.half	3
+	.word	.L506-.L505
+.L505:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L506:
+	.byte	5,26,7,0,5,2
+	.word	.L64
+	.byte	3,209,0,1,9
+	.half	.L193-.L64
+	.byte	0,1,1,5,26,0,5,2
+	.word	.L64
+	.byte	3,145,1,1,9
+	.half	.L322-.L64
+	.byte	3,64,1,7,9
+	.half	.L193-.L322
+	.byte	0,1,1,5,26,0,5,2
+	.word	.L64
+	.byte	3,240,1,1,9
+	.half	.L322-.L64
+	.byte	3,225,126,1,7,9
+	.half	.L193-.L322
+	.byte	0,1,1,5,26,0,5,2
+	.word	.L64
+	.byte	3,255,1,1,9
+	.half	.L322-.L64
+	.byte	3,210,126,1,7,9
+	.half	.L193-.L322
+	.byte	0,1,1,5,28,0,5,2
+	.word	.L64
+	.byte	3,143,2,1,5,26,9
+	.half	.L322-.L64
+	.byte	3,194,126,1,7,9
+	.half	.L193-.L322
+	.byte	0,1,1
+.L504:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_2')
+	.sect	'.debug_ranges'
+.L192:
+	.word	-1,.L64,0,.L193-.L64,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_3')
+	.sect	'.debug_info'
+.L194:
+	.word	195
+	.half	3
+	.word	.L195
+	.byte	4,1
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L197,.L196
+	.byte	2
+	.word	.L95
+	.byte	3
+	.byte	'.cocofun_3',0,1,117,6,1
+	.word	.L72,.L198,.L71
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_3')
+	.sect	'.debug_abbrev'
+.L195:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_3')
+	.sect	'.debug_line'
+.L196:
+	.word	.L508-.L507
+.L507:
+	.half	3
+	.word	.L510-.L509
+.L509:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\1_SrvSw\\SysSe\\Math\\Ifx_Cf32.c',0,0,0,0,0
+.L510:
+	.byte	5,26,7,0,5,2
+	.word	.L72
+	.byte	3,248,0,1,9
+	.half	.L198-.L72
+	.byte	0,1,1,5,26,0,5,2
+	.word	.L72
+	.byte	3,132,1,1,9
+	.half	.L330-.L72
+	.byte	3,116,1,7,9
+	.half	.L198-.L330
+	.byte	0,1,1,5,26,0,5,2
+	.word	.L72
+	.byte	3,194,1,1,9
+	.half	.L330-.L72
+	.byte	3,182,127,1,7,9
+	.half	.L198-.L330
+	.byte	0,1,1,5,26,0,5,2
+	.word	.L72
+	.byte	3,206,1,1,9
+	.half	.L330-.L72
+	.byte	3,170,127,1,7,9
+	.half	.L198-.L330
+	.byte	0,1,1,5,26,0,5,2
+	.word	.L72
+	.byte	3,219,1,1,9
+	.half	.L330-.L72
+	.byte	3,157,127,1,7,9
+	.half	.L198-.L330
+	.byte	0,1,1
+.L508:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_3')
+	.sect	'.debug_ranges'
+.L197:
+	.word	-1,.L72,0,.L198-.L72,0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_2')
+	.sect	'.debug_loc'
+.L63:
+	.word	-1,.L64,0,.L193-.L64
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_3')
+	.sect	'.debug_loc'
+.L71:
+	.word	-1,.L72,0,.L198-.L72
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('CplxVecCpy_f32')
+	.sect	'.debug_loc'
+.L59:
+	.word	-1,.L60,0,.L210-.L60
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L212:
+	.word	-1,.L60,0,.L210-.L60
+	.half	1
+	.byte	101
+	.word	0,0
+.L211:
+	.word	-1,.L60,0,.L210-.L60
+	.half	1
+	.byte	100
+	.word	0,0
+.L213:
+	.word	-1,.L60,0,.L210-.L60
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('CplxVecCpy_f32S')
+	.sect	'.debug_loc'
+.L57:
+	.word	-1,.L58,0,.L199-.L58
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L203:
+	.word	-1,.L58,0,.L199-.L58
+	.half	1
+	.byte	101
+	.word	0,0
+.L201:
+	.word	-1,.L58,0,.L199-.L58
+	.half	1
+	.byte	100
+	.word	0,0
+.L206:
+	.word	-1,.L58,0,.L199-.L58
+	.half	1
+	.byte	85
+	.word	0,0
+.L205:
+	.word	-1,.L58,0,.L199-.L58
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('CplxVecMag_f32')
+	.sect	'.debug_loc'
+.L65:
+	.word	-1,.L66,0,.L222-.L66
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L223:
+	.word	-1,.L66,0,.L12-.L66
+	.half	1
+	.byte	100
+	.word	.L324-.L66,.L222-.L66
+	.half	1
+	.byte	111
+	.word	0,0
+.L230:
+	.word	0,0
+.L225:
+	.word	-1,.L66,.L12-.L66,.L327-.L66
+	.half	1
+	.byte	89
+	.word	.L11-.L66,.L222-.L66
+	.half	1
+	.byte	89
+	.word	0,0
+.L224:
+	.word	-1,.L66,0,.L12-.L66
+	.half	1
+	.byte	84
+	.word	.L325-.L66,.L326-.L66
+	.half	1
+	.byte	88
+	.word	0,0
+.L226:
+	.word	-1,.L66,.L325-.L66,.L222-.L66
+	.half	1
+	.byte	108
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('CplxVecMul_f32')
+	.sect	'.debug_loc'
+.L67:
+	.word	-1,.L68,0,.L232-.L68
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L247:
+	.word	0,0
+.L233:
+	.word	-1,.L68,0,.L232-.L68
+	.half	1
+	.byte	100
+	.word	0,0
+.L240:
+	.word	0,0
+.L242:
+	.word	0,0
+.L235:
+	.word	-1,.L68,0,.L232-.L68
+	.half	1
+	.byte	101
+	.word	0,0
+.L236:
+	.word	-1,.L68,0,.L232-.L68
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('CplxVecPwr_f32')
+	.sect	'.debug_loc'
+.L61:
+	.word	-1,.L62,0,.L215-.L62
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L216:
+	.word	-1,.L62,0,.L320-.L62
+	.half	1
+	.byte	100
+	.word	.L64-.L62,.L193-.L62
+	.half	1
+	.byte	100
+	.word	.L8-.L62,.L215-.L62
+	.half	1
+	.byte	100
+	.word	0,0
+.L220:
+	.word	-1,.L62,.L9-.L62,.L320-.L62
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L64-.L62,.L322-.L62
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L322-.L62,.L193-.L62
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L8-.L62,.L215-.L62
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L217:
+	.word	-1,.L62,0,.L320-.L62
+	.half	1
+	.byte	84
+	.word	.L64-.L62,.L193-.L62
+	.half	1
+	.byte	84
+	.word	.L8-.L62,.L323-.L62
+	.half	1
+	.byte	84
+	.word	0,0
+.L221:
+	.word	-1,.L62,.L321-.L62,.L320-.L62
+	.half	1
+	.byte	111
+	.word	.L64-.L62,.L193-.L62
+	.half	1
+	.byte	111
+	.word	.L8-.L62,.L215-.L62
+	.half	1
+	.byte	111
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('CplxVecRst_f32')
+	.sect	'.debug_loc'
+.L55:
+	.word	-1,.L56,0,.L207-.L56
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L208:
+	.word	-1,.L56,0,.L207-.L56
+	.half	1
+	.byte	100
+	.word	0,0
+.L209:
+	.word	-1,.L56,0,.L207-.L56
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('VecAvg_f32')
+	.sect	'.debug_loc'
+.L85:
+	.word	-1,.L86,0,.L285-.L86
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L286:
+	.word	-1,.L86,0,.L339-.L86
+	.half	1
+	.byte	100
+	.word	0,0
+.L287:
+	.word	-1,.L86,0,.L339-.L86
+	.half	1
+	.byte	84
+	.word	.L339-.L86,.L340-.L86
+	.half	1
+	.byte	95
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('VecGain_f32')
+	.sect	'.debug_loc'
+.L81:
+	.word	-1,.L82,0,.L269-.L82
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L270:
+	.word	-1,.L82,0,.L337-.L82
+	.half	1
+	.byte	100
+	.word	.L72-.L82,.L198-.L82
+	.half	1
+	.byte	100
+	.word	.L32-.L82,.L269-.L82
+	.half	1
+	.byte	100
+	.word	0,0
+.L272:
+	.word	-1,.L82,0,.L337-.L82
+	.half	1
+	.byte	84
+	.word	.L72-.L82,.L198-.L82
+	.half	1
+	.byte	84
+	.word	.L32-.L82,.L269-.L82
+	.half	1
+	.byte	84
+	.word	0,0
+.L274:
+	.word	-1,.L82,.L33-.L82,.L337-.L82
+	.half	1
+	.byte	95
+	.word	.L72-.L82,.L330-.L82
+	.half	1
+	.byte	95
+	.word	.L330-.L82,.L198-.L82
+	.half	1
+	.byte	95
+	.word	.L32-.L82,.L269-.L82
+	.half	1
+	.byte	95
+	.word	0,0
+.L273:
+	.word	-1,.L82,0,.L337-.L82
+	.half	1
+	.byte	85
+	.word	.L72-.L82,.L198-.L82
+	.half	1
+	.byte	85
+	.word	.L32-.L82,.L269-.L82
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('VecHalfSwap_f32')
+	.sect	'.debug_loc'
+.L317:
+	.word	-1,.L92,.L64-.L92,.L193-.L92
+	.half	1
+	.byte	111
+	.word	.L344-.L92,.L312-.L92
+	.half	1
+	.byte	111
+	.word	0,0
+.L91:
+	.word	-1,.L92,0,.L312-.L92
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L313:
+	.word	-1,.L92,.L64-.L92,.L193-.L92
+	.half	1
+	.byte	100
+	.word	0,.L312-.L92
+	.half	1
+	.byte	100
+	.word	0,0
+.L316:
+	.word	-1,.L92,.L64-.L92,.L193-.L92
+	.half	1
+	.byte	95
+	.word	.L345-.L92,.L312-.L92
+	.half	1
+	.byte	95
+	.word	0,0
+.L315:
+	.word	-1,.L92,.L64-.L92,.L322-.L92
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L322-.L92,.L193-.L92
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L346-.L92,.L312-.L92
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L314:
+	.word	-1,.L92,.L64-.L92,.L193-.L92
+	.half	1
+	.byte	84
+	.word	0,.L312-.L92
+	.half	1
+	.byte	84
+	.word	0,0
+.L319:
+	.word	-1,.L92,.L343-.L92,.L48-.L92
+	.half	1
+	.byte	81
+	.word	.L64-.L92,.L193-.L92
+	.half	1
+	.byte	81
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('VecMaxIdx_f32')
+	.sect	'.debug_loc'
+.L75:
+	.word	-1,.L76,0,.L305-.L76
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L306:
+	.word	-1,.L76,.L64-.L76,.L193-.L76
+	.half	1
+	.byte	100
+	.word	0,.L305-.L76
+	.half	1
+	.byte	100
+	.word	0,0
+.L311:
+	.word	-1,.L76,.L64-.L76,.L322-.L76
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L322-.L76,.L193-.L76
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L21-.L76,.L305-.L76
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L309:
+	.word	-1,.L76,.L64-.L76,.L193-.L76
+	.half	1
+	.byte	102
+	.word	0,.L305-.L76
+	.half	1
+	.byte	102
+	.word	0,0
+.L310:
+	.word	-1,.L76,.L64-.L76,.L193-.L76
+	.half	1
+	.byte	82
+	.word	.L333-.L76,.L305-.L76
+	.half	1
+	.byte	82
+	.word	0,0
+.L308:
+	.word	-1,.L76,.L64-.L76,.L193-.L76
+	.half	1
+	.byte	101
+	.word	0,.L305-.L76
+	.half	1
+	.byte	101
+	.word	0,0
+.L307:
+	.word	-1,.L76,.L64-.L76,.L193-.L76
+	.half	1
+	.byte	84
+	.word	0,.L305-.L76
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('VecMax_f32')
+	.sect	'.debug_loc'
+.L87:
+	.word	-1,.L88,0,.L288-.L88
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L289:
+	.word	-1,.L88,.L322-.L88,.L193-.L88
+	.half	1
+	.byte	100
+	.word	0,.L288-.L88
+	.half	1
+	.byte	100
+	.word	0,0
+.L291:
+	.word	-1,.L88,.L322-.L88,.L193-.L88
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L39-.L88,.L288-.L88
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L290:
+	.word	-1,.L88,.L322-.L88,.L193-.L88
+	.half	1
+	.byte	84
+	.word	0,.L288-.L88
+	.half	1
+	.byte	84
+	.word	0,0
+.L292:
+	.word	-1,.L88,.L322-.L88,.L193-.L88
+	.half	1
+	.byte	82
+	.word	.L341-.L88,.L288-.L88
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('VecMinIdx_f32')
+	.sect	'.debug_loc'
+.L77:
+	.word	-1,.L78,0,.L298-.L78
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L299:
+	.word	-1,.L78,0,.L298-.L78
+	.half	1
+	.byte	100
+	.word	0,0
+.L304:
+	.word	-1,.L78,.L26-.L78,.L335-.L78
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L25-.L78,.L298-.L78
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L302:
+	.word	-1,.L78,0,.L298-.L78
+	.half	1
+	.byte	102
+	.word	0,0
+.L301:
+	.word	-1,.L78,0,.L298-.L78
+	.half	1
+	.byte	101
+	.word	0,0
+.L303:
+	.word	-1,.L78,.L334-.L78,.L298-.L78
+	.half	1
+	.byte	82
+	.word	0,0
+.L300:
+	.word	-1,.L78,0,.L298-.L78
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('VecMin_f32')
+	.sect	'.debug_loc'
+.L89:
+	.word	-1,.L90,0,.L293-.L90
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L294:
+	.word	-1,.L90,.L322-.L90,.L193-.L90
+	.half	1
+	.byte	100
+	.word	0,.L293-.L90
+	.half	1
+	.byte	100
+	.word	0,0
+.L296:
+	.word	-1,.L90,.L322-.L90,.L193-.L90
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L44-.L90,.L293-.L90
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L295:
+	.word	-1,.L90,.L322-.L90,.L193-.L90
+	.half	1
+	.byte	84
+	.word	0,.L293-.L90
+	.half	1
+	.byte	84
+	.word	0,0
+.L297:
+	.word	-1,.L90,.L322-.L90,.L193-.L90
+	.half	1
+	.byte	82
+	.word	.L342-.L90,.L293-.L90
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('VecOfs_f32')
+	.sect	'.debug_loc'
+.L79:
+	.word	-1,.L80,0,.L275-.L80
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L276:
+	.word	-1,.L80,0,.L336-.L80
+	.half	1
+	.byte	100
+	.word	.L72-.L80,.L198-.L80
+	.half	1
+	.byte	100
+	.word	.L30-.L80,.L275-.L80
+	.half	1
+	.byte	100
+	.word	0,0
+.L279:
+	.word	-1,.L80,.L31-.L80,.L336-.L80
+	.half	1
+	.byte	95
+	.word	.L72-.L80,.L330-.L80
+	.half	1
+	.byte	95
+	.word	.L330-.L80,.L198-.L80
+	.half	1
+	.byte	95
+	.word	.L30-.L80,.L275-.L80
+	.half	1
+	.byte	95
+	.word	0,0
+.L278:
+	.word	-1,.L80,0,.L336-.L80
+	.half	1
+	.byte	85
+	.word	.L72-.L80,.L198-.L80
+	.half	1
+	.byte	85
+	.word	.L30-.L80,.L275-.L80
+	.half	1
+	.byte	85
+	.word	0,0
+.L277:
+	.word	-1,.L80,0,.L336-.L80
+	.half	1
+	.byte	84
+	.word	.L72-.L80,.L198-.L80
+	.half	1
+	.byte	84
+	.word	.L30-.L80,.L275-.L80
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('VecPwrdB_SF')
+	.sect	'.debug_loc'
+.L265:
+	.word	-1,.L74,0,.L19-.L74
+	.half	1
+	.byte	100
+	.word	.L72-.L74,.L198-.L74
+	.half	1
+	.byte	111
+	.word	.L331-.L74,.L263-.L74
+	.half	1
+	.byte	111
+	.word	0,0
+.L73:
+	.word	-1,.L74,0,.L263-.L74
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L266:
+	.word	-1,.L74,0,.L19-.L74
+	.half	1
+	.byte	101
+	.word	.L72-.L74,.L198-.L74
+	.half	1
+	.byte	108
+	.word	.L332-.L74,.L263-.L74
+	.half	1
+	.byte	108
+	.word	0,0
+.L268:
+	.word	-1,.L74,.L72-.L74,.L330-.L74
+	.half	1
+	.byte	95
+	.word	.L330-.L74,.L198-.L74
+	.half	1
+	.byte	95
+	.word	.L332-.L74,.L263-.L74
+	.half	1
+	.byte	95
+	.word	0,0
+.L267:
+	.word	-1,.L74,0,.L19-.L74
+	.half	1
+	.byte	84
+	.word	.L72-.L74,.L198-.L74
+	.half	1
+	.byte	88
+	.word	.L331-.L74,.L263-.L74
+	.half	1
+	.byte	88
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('VecPwrdB_f32')
+	.sect	'.debug_loc'
+.L69:
+	.word	-1,.L70,0,.L258-.L70
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L259:
+	.word	-1,.L70,0,.L17-.L70
+	.half	1
+	.byte	100
+	.word	.L328-.L70,.L329-.L70
+	.half	1
+	.byte	111
+	.word	.L72-.L70,.L198-.L70
+	.half	1
+	.byte	111
+	.word	.L16-.L70,.L258-.L70
+	.half	1
+	.byte	111
+	.word	0,0
+.L262:
+	.word	-1,.L70,.L17-.L70,.L329-.L70
+	.half	1
+	.byte	95
+	.word	.L72-.L70,.L330-.L70
+	.half	1
+	.byte	95
+	.word	.L330-.L70,.L198-.L70
+	.half	1
+	.byte	95
+	.word	.L16-.L70,.L258-.L70
+	.half	1
+	.byte	95
+	.word	0,0
+.L260:
+	.word	-1,.L70,0,.L17-.L70
+	.half	1
+	.byte	84
+	.word	.L328-.L70,.L329-.L70
+	.half	1
+	.byte	88
+	.word	.L72-.L70,.L198-.L70
+	.half	1
+	.byte	88
+	.word	.L16-.L70,.L258-.L70
+	.half	1
+	.byte	88
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('VecSum_f32')
+	.sect	'.debug_loc'
+.L83:
+	.word	-1,.L84,0,.L280-.L84
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L281:
+	.word	-1,.L84,.L330-.L84,.L198-.L84
+	.half	1
+	.byte	100
+	.word	0,.L280-.L84
+	.half	1
+	.byte	100
+	.word	0,0
+.L284:
+	.word	-1,.L84,.L330-.L84,.L198-.L84
+	.half	1
+	.byte	95
+	.word	.L35-.L84,.L280-.L84
+	.half	1
+	.byte	95
+	.word	0,0
+.L282:
+	.word	-1,.L84,.L330-.L84,.L198-.L84
+	.half	1
+	.byte	84
+	.word	0,.L280-.L84
+	.half	1
+	.byte	84
+	.word	0,0
+.L283:
+	.word	-1,.L84,.L330-.L84,.L198-.L84
+	.half	1
+	.byte	82
+	.word	.L338-.L84,.L280-.L84
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('VecWin_f32')
+	.sect	'.debug_loc'
+.L93:
+	.word	-1,.L94,0,.L248-.L94
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L251:
+	.word	-1,.L94,0,.L54-.L94
+	.half	1
+	.byte	101
+	.word	.L351-.L94,.L54-.L94
+	.half	1
+	.byte	81
+	.word	.L54-.L94,.L352-.L94
+	.half	1
+	.byte	111
+	.word	.L353-.L94,.L354-.L94
+	.half	1
+	.byte	81
+	.word	.L354-.L94,.L50-.L94
+	.half	1
+	.byte	111
+	.word	0,0
+.L249:
+	.word	-1,.L94,0,.L248-.L94
+	.half	1
+	.byte	100
+	.word	0,0
+.L257:
+	.word	-1,.L94,.L348-.L94,.L350-.L94
+	.half	1
+	.byte	95
+	.word	.L53-.L94,.L50-.L94
+	.half	1
+	.byte	95
+	.word	0,0
+.L254:
+	.word	-1,.L94,0,.L248-.L94
+	.half	1
+	.byte	86
+	.word	0,0
+.L253:
+	.word	-1,.L94,0,.L248-.L94
+	.half	1
+	.byte	85
+	.word	0,0
+.L252:
+	.word	-1,.L94,0,.L248-.L94
+	.half	1
+	.byte	84
+	.word	0,0
+.L256:
+	.word	-1,.L94,.L349-.L94,.L54-.L94
+	.half	1
+	.byte	82
+	.word	0,0
+.L255:
+	.word	-1,.L94,0,.L248-.L94
+	.half	1
+	.byte	87
+	.word	.L347-.L94,.L348-.L94
+	.half	1
+	.byte	95
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L511:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('CplxVecRst_f32')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L511,.L56,.L207-.L56
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('CplxVecCpy_f32S')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L511,.L58,.L199-.L58
+	.byte	8,18,8,19,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('CplxVecCpy_f32')
+	.sect	'.debug_frame'
+	.word	16
+	.word	.L511,.L60,.L210-.L60
+	.byte	8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('CplxVecPwr_f32')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L511,.L62,.L215-.L62
+	.byte	8,19,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('CplxVecMag_f32')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L511,.L66,.L222-.L66
+	.sdecl	'.debug_frame',debug,cluster('CplxVecMul_f32')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L511,.L68,.L232-.L68
+	.byte	8,18,8,19,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('VecPwrdB_f32')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L511,.L70,.L258-.L70
+	.sdecl	'.debug_frame',debug,cluster('VecPwrdB_SF')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L511,.L74,.L263-.L74
+	.sdecl	'.debug_frame',debug,cluster('VecMaxIdx_f32')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L511,.L76,.L305-.L76
+	.byte	8,18,8,19,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('VecMinIdx_f32')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L511,.L78,.L298-.L78
+	.byte	8,18,8,19,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('VecOfs_f32')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L511,.L80,.L275-.L80
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('VecGain_f32')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L511,.L82,.L269-.L82
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('VecSum_f32')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L511,.L84,.L280-.L84
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('VecAvg_f32')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L511,.L86,.L285-.L86
+	.sdecl	'.debug_frame',debug,cluster('VecMax_f32')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L511,.L88,.L288-.L88
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('VecMin_f32')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L511,.L90,.L293-.L90
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('VecHalfSwap_f32')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L511,.L92,.L312-.L92
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('VecWin_f32')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L511,.L94,.L248-.L94
+	.byte	8,18,8,19,8,22,8,23
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L512:
+	.word	52
+	.word	-1
+	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
+	.byte	8,37,8,38,8,39,0
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_2')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L512,.L64,.L193-.L64
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_3')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L512,.L72,.L198-.L72
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   309  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   310  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   311  #ifdef __WIN32__
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   312  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   313  #define ENDL "\r\n"
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   314  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   315  void DataF_printf(FILE *fp, pchar fileName, float32 *data, long nX, int enclosed)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   316  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   317      long i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   318  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   319      if (fileName != NULL)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   320      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   321          fp = fopen(fileName, "w+");
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   322      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   323  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   324      if (fp != NULL)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   325      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   326          if (enclosed)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   327          {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   328              for (i = 0; i < nX; i++)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   329              {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   330                  fprintf(fp, "_DATAF(%10.20f),"ENDL, *data);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   331                  data = &data[1];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   332              }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   333          }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   334          else
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   335          {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   336              for (i = 0; i < nX; i++)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   337              {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   338                  fprintf(fp, "%10.20f,"ENDL, *data);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   339                  data = &data[1];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   340              }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   341          }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   342      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   343  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   344      if (fileName != NULL)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   345      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   346          fclose(fp);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   347      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   348  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   349  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   350  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   351  void Cplx_f32_printf(FILE *fp, pchar fileName, cfloat32 *data, long nX, int encloseData)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   352  {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   353      long i;
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   354  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   355      if (fileName != NULL)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   356      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   357          fp = fopen(fileName, "w+");
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   358      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   359  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   360      if (fp != NULL)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   361      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   362          if (encloseData)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   363          {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   364              for (i = 0; i < nX; i++)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   365              {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   366                  fprintf(fp, "{_DATAF(%10.20f), _DATAF(%10.20f)},"ENDL, data->real, data->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   367                  data = &data[1];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   368              }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   369          }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   370          else
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   371          {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   372              for (i = 0; i < nX; i++)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   373              {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   374                  fprintf(fp, "%10.20f, %10.20f"ENDL, data->real, data->imag);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   375                  data = &data[1];
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   376              }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   377          }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   378      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   379  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   380      if (fileName != NULL)
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   381      {
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   382          fclose(fp);
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   383      }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   384  }
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   385  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   386  
+; ..\0_Src\1_SrvSw\SysSe\Math\Ifx_Cf32.c	   387  #endif
+
+	; Module end

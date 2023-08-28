@@ -1,0 +1,1492 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 09003382"
+	.compiler_invocation	"ctc --dep-file=0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\.idle.o.d --fp-model=c,l,f,z,n,r,S,T -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.2 --iso=99 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\UART -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Asc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Icu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmBc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6\\TPwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSpansion -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\BFlashSt -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Dram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Sram -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ebu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Adc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Crc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\IncrEnc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Atom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\In -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tim\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Dtm_PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Pwm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Tom\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm\\Trig -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hspdm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Driver -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiMaster -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\SpiSlave -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Rif -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Rif\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Emmc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Sd -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sdmmc\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Spu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Lin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Spi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Eth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Config\\Common -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\_Utilities -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If\\Ccu6If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Bsp -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Comm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\General -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Math -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe\\Time -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\2_CDrv -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Build -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\DataHandling -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib\\InternalMux -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Asclin -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Can -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Can\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Ccu6 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Convctrl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\CStart -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Irq -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Cpu\\Trap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dma -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Dts -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Edsadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Emem -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Eray -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Evadc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Fce -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Flash -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Geth -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gpt12 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Gtm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Hssl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\I2c -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Iom -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Msc -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Mtu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Pms -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Io -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Port\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5 -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Psi5s -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Qspi -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Scu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Sent -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Smu -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Timer -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\Main -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\If -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\StdIf -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\SysSe -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\1_SrvSw\\Tricore\\Compilers -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Impl -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Lib -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_PinMap -ID:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\_Reg -g2 --make-target=0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o 0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.src ..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c"
+	.compiler_name		"ctc"
+	;source	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.idle.rt_thread_idle_sethook',code,cluster('rt_thread_idle_sethook')
+	.sect	'.text.idle.rt_thread_idle_sethook'
+	.align	2
+	
+	.global	rt_thread_idle_sethook
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	     1  /*
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	     3   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	     4   * SPDX-License-Identifier: Apache-2.0
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	     5   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	     6   * Change Logs:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	     7   * Date           Author       Notes
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	     8   * 2006-03-23     Bernard      the first version
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	     9   * 2010-11-10     Bernard      add cleanup callback function in thread exit.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    10   * 2012-12-29     Bernard      fix compiling warning.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    11   * 2013-12-21     Grissiom     let rt_thread_idle_excute loop until there is no
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    12   *                             dead thread.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    13   * 2016-08-09     ArdaFu       add method to get the handler of the idle thread.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    14   * 2018-02-07     Bernard      lock scheduler to protect tid->cleanup.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    15   * 2018-07-14     armink       add idle hook list
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    16   * 2018-11-22     Jesven       add per cpu idle task
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    17   *                             combine the code of primary and secondary cpu
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    18   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    19  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    20  #include <rthw.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    21  #include <rtthread.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    22  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    23  #ifdef RT_USING_MODULE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    24  #include <dlmodule.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    25  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    26  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    27  #if defined (RT_USING_HOOK)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    28  #ifndef RT_USING_IDLE_HOOK
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    29  #define RT_USING_IDLE_HOOK
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    30  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    31  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    32  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    33  #ifndef IDLE_THREAD_STACK_SIZE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    34  #if defined (RT_USING_IDLE_HOOK) || defined(RT_USING_HEAP)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    35  #define IDLE_THREAD_STACK_SIZE  (2048)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    36  #else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    37  #define IDLE_THREAD_STACK_SIZE  128
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    38  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    39  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    40  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    41  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    42  #define _CPUS_NR                RT_CPUS_NR
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    43  #else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    44  #define _CPUS_NR                1
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    45  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    46  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    47  extern rt_list_t rt_thread_defunct;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    48  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    49  static struct rt_thread idle[_CPUS_NR];
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    50  ALIGN(RT_ALIGN_SIZE)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    51  static rt_uint8_t rt_thread_stack[_CPUS_NR][IDLE_THREAD_STACK_SIZE];
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    52  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    53  #ifdef RT_USING_IDLE_HOOK
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    54  #ifndef RT_IDLE_HOOK_LIST_SIZE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    55  #define RT_IDLE_HOOK_LIST_SIZE  4
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    56  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    57  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    58  static void (*idle_hook_list[RT_IDLE_HOOK_LIST_SIZE])(void);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    59  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    60  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    61   * @ingroup Hook
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    62   * This function sets a hook function to idle thread loop. When the system performs
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    63   * idle loop, this hook function should be invoked.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    64   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    65   * @param hook the specified hook function
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    66   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    67   * @return RT_EOK: set OK
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    68   *         -RT_EFULL: hook list is full
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    69   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    70   * @note the hook function must be simple and never be blocked or suspend.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    71   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    72  rt_err_t rt_thread_idle_sethook(void (*hook)(void))
+; Function rt_thread_idle_sethook
+.L15:
+rt_thread_idle_sethook:	.type	func
+	mov.aa	a15,a4
+.L91:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    73  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    74      rt_size_t i;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    75      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    76      rt_err_t ret = -RT_EFULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    77  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    78      /* disable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    79      level = rt_hw_interrupt_disable();
+	mov	d8,#-3
+	call	rt_hw_interrupt_disable
+.L90:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    80  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    81      for (i = 0; i < RT_IDLE_HOOK_LIST_SIZE; i++)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    82      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    83          if (idle_hook_list[i] == RT_NULL)
+	movh.a	a2,#@his(idle_hook_list)
+	lea	a2,[a2]@los(idle_hook_list)
+.L124:
+	mov.a	a4,#3
+.L2:
+	ld.w	d15,[a2]
+.L125:
+	jne	d15,#0,.L3
+.L126:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    84          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    85              idle_hook_list[i] = hook;
+	st.a	[a2],a15
+.L127:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    86              ret = RT_EOK;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    87              break;
+	mov	d8,#0
+	j	.L4
+.L3:
+	add.a	a2,#4
+	loop	a4,.L2
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    88          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    89      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    90      /* enable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    91      rt_hw_interrupt_enable(level);
+.L4:
+	mov	d4,d2
+	call	rt_hw_interrupt_enable
+.L92:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    92  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    93      return ret;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    94  }
+	mov	d2,d8
+	ret
+.L67:
+	
+__rt_thread_idle_sethook_function_end:
+	.size	rt_thread_idle_sethook,__rt_thread_idle_sethook_function_end-rt_thread_idle_sethook
+.L38:
+	; End of function
+	
+	.sdecl	'.text.idle.rt_thread_idle_delhook',code,cluster('rt_thread_idle_delhook')
+	.sect	'.text.idle.rt_thread_idle_delhook'
+	.align	2
+	
+	.global	rt_thread_idle_delhook
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    95  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    96  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    97   * delete the idle hook on hook list
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    98   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	    99   * @param hook the specified hook function
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   100   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   101   * @return RT_EOK: delete OK
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   102   *         -RT_ENOSYS: hook was not found
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   103   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   104  rt_err_t rt_thread_idle_delhook(void (*hook)(void))
+; Function rt_thread_idle_delhook
+.L17:
+rt_thread_idle_delhook:	.type	func
+	mov.aa	a15,a4
+.L94:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   105  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   106      rt_size_t i;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   107      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   108      rt_err_t ret = -RT_ENOSYS;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   109  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   110      /* disable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   111      level = rt_hw_interrupt_disable();
+	mov	d15,#-6
+	call	rt_hw_interrupt_disable
+.L93:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   112  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   113      for (i = 0; i < RT_IDLE_HOOK_LIST_SIZE; i++)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   114      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   115          if (idle_hook_list[i] == hook)
+	movh.a	a2,#@his(idle_hook_list)
+	lea	a2,[a2]@los(idle_hook_list)
+.L132:
+	mov.a	a4,#3
+.L6:
+	ld.a	a5,[a2]
+.L133:
+	jne.a	a5,a15,.L7
+.L134:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   116          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   117              idle_hook_list[i] = RT_NULL;
+	mov.a	a15,#0
+.L95:
+	st.a	[a2],a15
+.L135:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   118              ret = RT_EOK;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   119              break;
+	mov	d15,#0
+	j	.L8
+.L7:
+	add.a	a2,#4
+	loop	a4,.L6
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   120          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   121      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   122      /* enable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   123      rt_hw_interrupt_enable(level);
+.L8:
+	mov	d4,d2
+	call	rt_hw_interrupt_enable
+.L96:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   124  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   125      return ret;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   126  }
+	mov	d2,d15
+	ret
+.L74:
+	
+__rt_thread_idle_delhook_function_end:
+	.size	rt_thread_idle_delhook,__rt_thread_idle_delhook_function_end-rt_thread_idle_delhook
+.L43:
+	; End of function
+	
+	.sdecl	'.text.idle.rt_thread_idle_excute',code,cluster('rt_thread_idle_excute')
+	.sect	'.text.idle.rt_thread_idle_excute'
+	.align	2
+	
+	.global	rt_thread_idle_excute
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   127  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   128  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   129  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   130  /* Return whether there is defunctional thread to be deleted. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   131  rt_inline int _has_defunct_thread(void)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   132  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   133      /* The rt_list_isempty has prototype of "int rt_list_isempty(const rt_list_t *l)".
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   134       * So the compiler has a good reason that the rt_thread_defunct list does
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   135       * not change within rt_thread_idle_excute thus optimize the "while" loop
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   136       * into a "if".
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   137       *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   138       * So add the volatile qualifier here. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   139      const volatile rt_list_t *l = (const volatile rt_list_t *)&rt_thread_defunct;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   140  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   141      return l->next != l;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   142  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   143  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   144  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   145   * @ingroup Thread
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   146   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   147   * This function will perform system background job when system idle.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   148   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   149  void rt_thread_idle_excute(void)
+; Function rt_thread_idle_excute
+.L19:
+rt_thread_idle_excute:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   150  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   151      /* Loop until there is no dead thread. So one call to rt_thread_idle_excute
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   152       * will do all the cleanups. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   153      /* disable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   154  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   155      RT_DEBUG_NOT_IN_INTERRUPT;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   156  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   157  #ifdef RT_USING_HEAP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   158      while (1)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   159      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   160          rt_base_t lock;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   161          rt_thread_t thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   162  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   163          lock = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   164  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   165          /* check whether list is empty */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   166          if (!_has_defunct_thread())
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   167          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   168              rt_hw_interrupt_enable(lock);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   169              break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   170          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   171          /* get defunct thread */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   172          thread = rt_list_entry(rt_thread_defunct.next,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   173                  struct rt_thread,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   174                  tlist);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   175          /* remove defunct thread */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   176          rt_list_remove(&(thread->tlist));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   177  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   178          /* remove thread tcb */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   179  //        thread->sp
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   180  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   181          /* release thread's stack */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   182          RT_KERNEL_FREE(thread->stack_addr);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   183          /* delete thread object */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   184          rt_object_delete((rt_object_t)thread);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   185          rt_hw_interrupt_enable(lock);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   186      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   187  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   188  }
+	ret
+.L79:
+	
+__rt_thread_idle_excute_function_end:
+	.size	rt_thread_idle_excute,__rt_thread_idle_excute_function_end-rt_thread_idle_excute
+.L48:
+	; End of function
+	
+	.sdecl	'.text.idle.rt_thread_idle_entry',code,cluster('rt_thread_idle_entry')
+	.sect	'.text.idle.rt_thread_idle_entry'
+	.align	2
+	
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   189  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   190  extern void rt_system_power_manager(void);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   191  static void rt_thread_idle_entry(void *parameter)
+; Function rt_thread_idle_entry
+rt_thread_idle_entry:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   192  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   193  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   194      if (rt_hw_cpu_id() != 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   195      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   196          while (1)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   197          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   198              rt_hw_secondary_cpu_idle_exec();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   199          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   200      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   201  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   202  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   203      while (1)
+.L10:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   204      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   205  #ifdef RT_USING_IDLE_HOOK
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   206          rt_size_t i;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   207  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   208           for (i = 0; i < RT_IDLE_HOOK_LIST_SIZE; i++)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   209          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   210              if (idle_hook_list[i] != RT_NULL)
+	movh.a	a15,#@his(idle_hook_list)
+	lea	a15,[a15]@los(idle_hook_list)
+.L149:
+	mov.a	a12,#3
+.L11:
+	ld.a	a2,[a15]
+.L150:
+	jz.a	a2,.L12
+.L151:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   211              {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   212                  idle_hook_list[i]();
+	calli	a2
+.L12:
+	add.a	a15,#4
+	loop	a12,.L11
+.L152:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   213              }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   214          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   215  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   216          rt_thread_idle_excute();
+	call	rt_thread_idle_excute
+.L85:
+	j	.L10
+.L82:
+	
+__rt_thread_idle_entry_function_end:
+	.size	rt_thread_idle_entry,__rt_thread_idle_entry_function_end-rt_thread_idle_entry
+.L58:
+	; End of function
+	
+	.sdecl	'.text.idle.rt_thread_idle_init',code,cluster('rt_thread_idle_init')
+	.sect	'.text.idle.rt_thread_idle_init'
+	.align	2
+	
+	.global	rt_thread_idle_init
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   217  #ifdef RT_USING_PM
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   218          rt_system_power_manager();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   219  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   220      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   221  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   222  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   223  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   224   * @ingroup SystemInit
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   225   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   226   * This function will initialize idle thread, then start it.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   227   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   228   * @note this function must be invoked when system init.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   229   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   230  void rt_thread_idle_init(void)
+; Function rt_thread_idle_init
+.L22:
+rt_thread_idle_init:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   231  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   232      rt_ubase_t i;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   233  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   234      for (i = 0; i < _CPUS_NR; i++)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   235      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   236  //        rt_sprintf(tidle_name, "tidle%d", i);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   237          rt_thread_init(&idle[i],
+	movh.a	a15,#@his(idle)
+.L109:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   238                  "idle",
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   239                  rt_thread_idle_entry,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   240                  RT_NULL,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   241                  &rt_thread_stack[i][0],
+	movh.a	a2,#@his(rt_thread_stack)
+.L110:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   242                  sizeof(rt_thread_stack[i]),
+	mov	d4,#2048
+	lea	a15,[a15]@los(idle)
+.L111:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   243                  RT_THREAD_PRIORITY_MAX - 1,
+	mov	d5,#31
+	lea	a2,[a2]@los(rt_thread_stack)
+.L112:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   244                  32);
+	mov	d6,#32
+	sub.a	a10,#8
+.L97:
+	movh.a	a6,#@his(rt_thread_idle_entry)
+.L113:
+	st.a	[a10],a2
+.L114:
+	lea	a6,[a6]@los(rt_thread_idle_entry)
+.L115:
+	mov.aa	a4,a15
+.L116:
+	lea	a5,.1.str
+.L117:
+	mov.a	a7,#0
+.L118:
+	call	rt_thread_init
+.L119:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   245  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   246          rt_thread_control(&idle[i], RT_THREAD_CTRL_BIND_CPU, (void*)i);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   247  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   248          /* startup */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   249          rt_thread_startup(&idle[i]);
+	mov.aa	a4,a15
+	j	rt_thread_startup
+.L65:
+	
+__rt_thread_idle_init_function_end:
+	.size	rt_thread_idle_init,__rt_thread_idle_init_function_end-rt_thread_idle_init
+.L33:
+	; End of function
+	
+	.sdecl	'.text.idle.rt_thread_idle_gethandler',code,cluster('rt_thread_idle_gethandler')
+	.sect	'.text.idle.rt_thread_idle_gethandler'
+	.align	2
+	
+	.global	rt_thread_idle_gethandler
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   250      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   251  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   252  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   253  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   254   * @ingroup Thread
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   255   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   256   * This function will get the handler of the idle thread.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   257   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   258   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   259  rt_thread_t rt_thread_idle_gethandler(void)
+; Function rt_thread_idle_gethandler
+.L24:
+rt_thread_idle_gethandler:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   260  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   261  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   262      register int id = rt_hw_cpu_id();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   263  #else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   264      register int id = 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   265  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   266  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   267      return (rt_thread_t)(&idle[id]);
+	movh.a	a2,#@his(idle)
+	lea	a2,[a2]@los(idle)
+.L144:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   268  }
+	ret
+.L81:
+	
+__rt_thread_idle_gethandler_function_end:
+	.size	rt_thread_idle_gethandler,__rt_thread_idle_gethandler_function_end-rt_thread_idle_gethandler
+.L53:
+	; End of function
+	
+	.sdecl	'.bss.idle.idle',data,cluster('idle')
+	.sect	'.bss.idle.idle'
+	.align	4
+idle:	.type	object
+	.size	idle,128
+	.space	128
+	.sdecl	'.bss.idle.rt_thread_stack',data,cluster('rt_thread_stack')
+	.sect	'.bss.idle.rt_thread_stack'
+	.align	4
+rt_thread_stack:	.type	object
+	.size	rt_thread_stack,2048
+	.space	2048
+	.sdecl	'.bss.idle.idle_hook_list',data,cluster('idle_hook_list')
+	.sect	'.bss.idle.idle_hook_list'
+	.align	4
+idle_hook_list:	.type	object
+	.size	idle_hook_list,16
+	.space	16
+	.sdecl	'.zrodata.idle..1.str',data,rom
+	.sect	'.zrodata.idle..1.str'
+.1.str:	.type	object
+	.size	.1.str,5
+	.byte	105,100,108,101
+	.space	1
+	.calls	'__INDIRECT__','rt_thread_idle_entry'
+	.calls	'rt_thread_idle_sethook','rt_hw_interrupt_disable'
+	.calls	'rt_thread_idle_sethook','rt_hw_interrupt_enable'
+	.calls	'rt_thread_idle_delhook','rt_hw_interrupt_disable'
+	.calls	'rt_thread_idle_delhook','rt_hw_interrupt_enable'
+	.calls	'rt_thread_idle_entry','__INDIRECT__'
+	.calls	'rt_thread_idle_entry','rt_thread_idle_excute'
+	.calls	'rt_thread_idle_init','rt_thread_init'
+	.calls	'rt_thread_idle_init','rt_thread_startup'
+	.calls	'rt_thread_idle_sethook','',0
+	.calls	'rt_thread_idle_delhook','',0
+	.calls	'rt_thread_idle_excute','',0
+	.calls	'rt_thread_idle_entry','',0
+	.calls	'rt_thread_idle_init','',8
+	.extern	rt_thread_init
+	.extern	rt_thread_startup
+	.extern	rt_hw_interrupt_disable
+	.extern	rt_hw_interrupt_enable
+	.extern	__INDIRECT__
+	.calls	'rt_thread_idle_gethandler','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L26:
+	.word	1915
+	.half	3
+	.word	.L27
+	.byte	4
+.L25:
+	.byte	1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L28
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	168
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	175
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	217
+	.byte	7
+	.word	217
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	233
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	238
+	.byte	9
+	.byte	'value',0
+	.word	217
+	.byte	9
+	.byte	'compare',0
+	.word	217
+	.byte	0
+.L66:
+	.byte	2
+	.byte	'long int',0,4,5,2
+	.byte	'char',0,1,6,10,8
+	.word	307
+	.byte	11,7,0,2
+	.byte	'unsigned char',0,1,8,7
+	.word	.L98-.L26
+.L98:
+	.byte	12
+	.byte	'rt_list_node',0,2,229,2,8,8,13
+	.byte	'next',0
+	.word	341
+	.byte	4,2,35,0,13
+	.byte	'prev',0
+	.word	341
+	.byte	4,2,35,4,0,14
+	.byte	'void',0
+.L83:
+	.byte	7
+	.word	394
+.L70:
+	.byte	2
+	.byte	'unsigned long int',0,4,7,12
+	.byte	'rt_object',0,2,131,3,8,20,13
+	.byte	'name',0
+	.word	315
+	.byte	8,2,35,0,13
+	.byte	'type',0
+	.word	324
+	.byte	1,2,35,8,13
+	.byte	'flag',0
+	.word	324
+	.byte	1,2,35,9,13
+	.byte	'list',0
+	.word	346
+	.byte	8,2,35,12,0,10,8
+	.word	346
+	.byte	11,0,0,15,1,1,5
+	.word	400
+	.byte	0,7
+	.word	508
+	.byte	12
+	.byte	'rt_timer',0,2,236,3,8,44,13
+	.byte	'parent',0
+	.word	426
+	.byte	20,2,35,0,13
+	.byte	'row',0
+	.word	499
+	.byte	8,2,35,20,13
+	.byte	'timeout_func',0
+	.word	517
+	.byte	4,2,35,28,13
+	.byte	'parameter',0
+	.word	400
+	.byte	4,2,35,32,13
+	.byte	'init_tick',0
+	.word	217
+	.byte	4,2,35,36,13
+	.byte	'timeout_tick',0
+	.word	217
+	.byte	4,2,35,40,0,15,1,1,5
+	.word	.L99-.L26
+	.byte	0,7
+	.word	649
+	.byte	12
+	.byte	'rt_thread',0,2,213,4,8,128,1,13
+	.byte	'name',0
+	.word	315
+	.byte	8,2,35,0,13
+	.byte	'type',0
+	.word	324
+	.byte	1,2,35,8,13
+	.byte	'flags',0
+	.word	324
+	.byte	1,2,35,9,13
+	.byte	'list',0
+	.word	346
+	.byte	8,2,35,12,13
+	.byte	'tlist',0
+	.word	346
+	.byte	8,2,35,20,13
+	.byte	'sp',0
+	.word	400
+	.byte	4,2,35,28,13
+	.byte	'entry',0
+	.word	400
+	.byte	4,2,35,32,13
+	.byte	'parameter',0
+	.word	400
+	.byte	4,2,35,36,13
+	.byte	'stack_addr',0
+	.word	400
+	.byte	4,2,35,40,13
+	.byte	'stack_size',0
+	.word	217
+	.byte	4,2,35,44,13
+	.byte	'error',0
+	.word	295
+	.byte	4,2,35,48,13
+	.byte	'stat',0
+	.word	324
+	.byte	1,2,35,52,13
+	.byte	'current_priority',0
+	.word	324
+	.byte	1,2,35,53,13
+	.byte	'init_priority',0
+	.word	324
+	.byte	1,2,35,54,13
+	.byte	'number_mask',0
+	.word	217
+	.byte	4,2,35,56,13
+	.byte	'event_set',0
+	.word	217
+	.byte	4,2,35,60,13
+	.byte	'event_info',0
+	.word	324
+	.byte	1,2,35,64,13
+	.byte	'init_tick',0
+	.word	405
+	.byte	4,2,35,66,13
+	.byte	'remaining_tick',0
+	.word	405
+	.byte	4,2,35,70,13
+	.byte	'thread_timer',0
+	.word	522
+	.byte	44,2,35,76,13
+	.byte	'cleanup',0
+	.word	658
+	.byte	4,2,35,120,13
+	.byte	'user_data',0
+	.word	405
+	.byte	4,2,35,124,0
+.L99:
+	.byte	7
+	.word	663
+	.byte	3
+	.word	307
+	.byte	7
+	.word	1083
+	.byte	16
+	.byte	'rt_thread_init',0,1,122,10
+	.word	295
+	.byte	1,1,1,1,17
+	.byte	'thread',0,1,122,43
+	.word	1078
+	.byte	17
+	.byte	'name',0,1,123,43
+	.word	1088
+	.byte	17
+	.byte	'entry',0,1,124,32
+	.word	517
+	.byte	17
+	.byte	'parameter',0,1,125,43
+	.word	400
+	.byte	17
+	.byte	'stack_start',0,1,126,43
+	.word	400
+	.byte	17
+	.byte	'stack_size',0,1,127,43
+	.word	217
+	.byte	17
+	.byte	'priority',0,1,128,1,43
+	.word	324
+	.byte	17
+	.byte	'tick',0,1,129,1,43
+	.word	217
+	.byte	0
+.L80:
+	.byte	18
+	.byte	'rt_thread_t',0,2,160,5,27
+	.word	1078
+	.byte	16
+	.byte	'rt_thread_startup',0,1,139,1,10
+	.word	295
+	.byte	1,1,1,1,17
+	.byte	'thread',0,1,139,1,40
+	.word	1252
+	.byte	0,7
+	.word	663
+	.byte	19,1,1
+.L68:
+	.byte	7
+	.word	1326
+	.byte	20
+	.byte	'rt_hw_interrupt_disable',0,3,105,11
+	.word	295
+	.byte	1,1,1,1,21
+	.byte	'rt_hw_interrupt_enable',0,3,106,6,1,1,1,1,17
+	.byte	'level',0,3,106,39
+	.word	295
+	.byte	0,22
+	.byte	'__INDIRECT__',0,4,1,1,1,1,1,18
+	.byte	'__size_t',0,4,1,1
+	.word	217
+	.byte	23,1,7
+	.word	1453
+	.byte	18
+	.byte	'__codeptr',0,4,1,1
+	.word	1455
+	.byte	18
+	.byte	'__intptr_t',0,4,1,1
+	.word	168
+	.byte	18
+	.byte	'__uintptr_t',0,4,1,1
+	.word	217
+	.byte	18
+	.byte	'rt_uint8_t',0,2,69,41
+	.word	324
+	.byte	2
+	.byte	'unsigned short int',0,2,7,18
+	.byte	'rt_uint16_t',0,2,70,41
+	.word	1536
+	.byte	18
+	.byte	'rt_uint32_t',0,2,71,41
+	.word	217
+	.byte	18
+	.byte	'rt_base_t',0,2,83,41
+	.word	295
+	.byte	18
+	.byte	'rt_ubase_t',0,2,84,41
+	.word	405
+	.byte	18
+	.byte	'rt_err_t',0,2,86,41
+	.word	295
+	.byte	18
+	.byte	'rt_tick_t',0,2,88,41
+	.word	217
+	.byte	18
+	.byte	'rt_size_t',0,2,90,41
+	.word	405
+	.byte	18
+	.byte	'rt_list_t',0,2,234,2,29
+	.word	346
+	.byte	7
+	.word	.L100-.L26
+.L100:
+	.byte	12
+	.byte	'rt_slist_node',0,2,239,2,8,4,13
+	.byte	'next',0
+	.word	1707
+	.byte	4,2,35,0,0,18
+	.byte	'rt_slist_t',0,2,243,2,30
+	.word	1712
+	.byte	18
+	.byte	'uint16_t',0,5,246,1,41
+	.word	1536
+	.byte	18
+	.byte	'uint32_t',0,5,254,1,41
+	.word	217
+	.byte	18
+	.byte	'time_t',0,6,44,25
+	.word	405
+	.byte	18
+	.byte	'fd_mask',0,7,39,17
+	.word	295
+	.byte	15,1,1,5
+	.word	168
+	.byte	5
+	.word	400
+	.byte	0,7
+	.word	1834
+	.byte	18
+	.byte	'rt_isr_handler_t',0,3,73,16
+	.word	1848
+.L87:
+	.byte	10,128,1
+	.word	663
+	.byte	11,0,0,10,128,16
+	.word	324
+	.byte	11,255,15,0
+.L88:
+	.byte	10,128,16
+	.word	1888
+	.byte	11,0,0
+.L89:
+	.byte	10,16
+	.word	1329
+	.byte	11,3,0,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L27:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,1,1,11,15,73,19,0,0,11,33,0,47,15,0,0,12,19,1,3,8,58,15,59,15,57
+	.byte	15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,14,59,0,3,8,0,0,15,21,1,54,15,39,12,0,0,16,46,1,3,8,58,15
+	.byte	59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,17,5,0,3,8,58,15,59,15,57,15,73,19,0,0,18,22,0,3,8,58,15
+	.byte	59,15,57,15,73,19,0,0,19,21,0,54,15,39,12,0,0,20,46,0,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60
+	.byte	12,0,0,21,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,22,46,0,3,8,58,15,59,15,57,15,54,15,63
+	.byte	12,60,12,0,0,23,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L28:
+	.word	.L102-.L101
+.L101:
+	.half	3
+	.word	.L104-.L103
+.L103:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include',0
+	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc',0
+	.byte	0
+	.byte	'rtthread.h',0,1,0,0
+	.byte	'rtdef.h',0,1,0,0
+	.byte	'rthw.h',0,1,0,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0,0,0,0
+	.byte	'stdint.h',0,2,0,0
+	.byte	'time.h',0,2,0,0
+	.byte	'libc_fdset.h',0,3,0,0,0
+.L104:
+.L102:
+	.sdecl	'.debug_info',debug,cluster('rt_thread_idle_init')
+	.sect	'.debug_info'
+.L29:
+	.word	224
+	.half	3
+	.word	.L30
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L32,.L31
+	.byte	2
+	.word	.L25
+	.byte	3
+	.byte	'rt_thread_idle_init',0,1,230,1,6,1,1,1
+	.word	.L22,.L65,.L21
+	.byte	4
+	.word	.L22,.L65
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_idle_init')
+	.sect	'.debug_abbrev'
+.L30:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_thread_idle_init')
+	.sect	'.debug_line'
+.L31:
+	.word	.L106-.L105
+.L105:
+	.half	3
+	.word	.L108-.L107
+.L107:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0,0,0,0,0
+.L108:
+	.byte	5,25,7,0,5,2
+	.word	.L22
+	.byte	3,236,1,1,5,18,9
+	.half	.L109-.L22
+	.byte	3,4,1,5,17,9
+	.half	.L110-.L109
+	.byte	3,1,1,5,25,3,123,1,5,40,9
+	.half	.L111-.L110
+	.byte	3,6,1,5,18,3,126,1,5,17,9
+	.half	.L112-.L111
+	.byte	3,3,1,5,6,3,114,1,5,17,9
+	.half	.L97-.L112
+	.byte	3,9,1,5,36,9
+	.half	.L113-.L97
+	.byte	3,2,1,5,17,9
+	.half	.L114-.L113
+	.byte	3,126,1,9
+	.half	.L115-.L114
+	.byte	3,5,1,9
+	.half	.L116-.L115
+	.byte	3,122,1,9
+	.half	.L117-.L116
+	.byte	3,2,1,9
+	.half	.L118-.L117
+	.byte	3,4,1,5,28,9
+	.half	.L119-.L118
+	.byte	3,5,1,5,1,9
+	.half	.L33-.L119
+	.byte	3,2,0,1,1
+.L106:
+	.sdecl	'.debug_ranges',debug,cluster('rt_thread_idle_init')
+	.sect	'.debug_ranges'
+.L32:
+	.word	-1,.L22,0,.L33-.L22,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_thread_idle_sethook')
+	.sect	'.debug_info'
+.L34:
+	.word	296
+	.half	3
+	.word	.L35
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L37,.L36
+	.byte	2
+	.word	.L25
+	.byte	3
+	.byte	'rt_thread_idle_sethook',0,1,72,10
+	.word	.L66
+	.byte	1,1,1
+	.word	.L15,.L67,.L14
+	.byte	4
+	.byte	'hook',0,1,72,40
+	.word	.L68,.L69
+	.byte	5
+	.word	.L15,.L67
+	.byte	6
+	.byte	'i',0,1,74,15
+	.word	.L70,.L71
+	.byte	6
+	.byte	'level',0,1,75,15
+	.word	.L66,.L72
+	.byte	6
+	.byte	'ret',0,1,76,14
+	.word	.L66,.L73
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_idle_sethook')
+	.sect	'.debug_abbrev'
+.L35:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_thread_idle_sethook')
+	.sect	'.debug_line'
+.L36:
+	.word	.L121-.L120
+.L120:
+	.half	3
+	.word	.L123-.L122
+.L122:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0,0,0,0,0
+.L123:
+	.byte	5,10,7,0,5,2
+	.word	.L15
+	.byte	3,199,0,1,5,18,9
+	.half	.L91-.L15
+	.byte	3,4,1,5,36,3,3,1,5,13,9
+	.half	.L90-.L91
+	.byte	3,4,1,5,43,9
+	.half	.L124-.L90
+	.byte	3,126,1,5,27,9
+	.half	.L2-.L124
+	.byte	3,2,1,5,9,9
+	.half	.L125-.L2
+	.byte	1,5,31,7,9
+	.half	.L126-.L125
+	.byte	3,2,1,5,17,9
+	.half	.L127-.L126
+	.byte	3,1,1,5,13,3,1,1,5,46,9
+	.half	.L3-.L127
+	.byte	3,122,1,5,43,1,5,28,7,9
+	.half	.L4-.L3
+	.byte	3,10,1,5,5,9
+	.half	.L92-.L4
+	.byte	3,2,1,5,1,3,1,1,7,9
+	.half	.L38-.L92
+	.byte	0,1,1
+.L121:
+	.sdecl	'.debug_ranges',debug,cluster('rt_thread_idle_sethook')
+	.sect	'.debug_ranges'
+.L37:
+	.word	-1,.L15,0,.L38-.L15,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_thread_idle_delhook')
+	.sect	'.debug_info'
+.L39:
+	.word	296
+	.half	3
+	.word	.L40
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L42,.L41
+	.byte	2
+	.word	.L25
+	.byte	3
+	.byte	'rt_thread_idle_delhook',0,1,104,10
+	.word	.L66
+	.byte	1,1,1
+	.word	.L17,.L74,.L16
+	.byte	4
+	.byte	'hook',0,1,104,40
+	.word	.L68,.L75
+	.byte	5
+	.word	.L17,.L74
+	.byte	6
+	.byte	'i',0,1,106,15
+	.word	.L70,.L76
+	.byte	6
+	.byte	'level',0,1,107,15
+	.word	.L66,.L77
+	.byte	6
+	.byte	'ret',0,1,108,14
+	.word	.L66,.L78
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_idle_delhook')
+	.sect	'.debug_abbrev'
+.L40:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_thread_idle_delhook')
+	.sect	'.debug_line'
+.L41:
+	.word	.L129-.L128
+.L128:
+	.half	3
+	.word	.L131-.L130
+.L130:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0,0,0,0,0
+.L131:
+	.byte	5,10,7,0,5,2
+	.word	.L17
+	.byte	3,231,0,1,5,18,9
+	.half	.L94-.L17
+	.byte	3,4,1,5,36,3,3,1,5,13,9
+	.half	.L93-.L94
+	.byte	3,4,1,5,43,9
+	.half	.L132-.L93
+	.byte	3,126,1,5,27,9
+	.half	.L6-.L132
+	.byte	3,2,1,5,9,9
+	.half	.L133-.L6
+	.byte	1,5,33,7,9
+	.half	.L134-.L133
+	.byte	3,2,1,5,31,9
+	.half	.L95-.L134
+	.byte	1,5,17,9
+	.half	.L135-.L95
+	.byte	3,1,1,5,13,3,1,1,5,46,9
+	.half	.L7-.L135
+	.byte	3,122,1,5,43,1,5,28,7,9
+	.half	.L8-.L7
+	.byte	3,10,1,5,5,9
+	.half	.L96-.L8
+	.byte	3,2,1,5,1,3,1,1,7,9
+	.half	.L43-.L96
+	.byte	0,1,1
+.L129:
+	.sdecl	'.debug_ranges',debug,cluster('rt_thread_idle_delhook')
+	.sect	'.debug_ranges'
+.L42:
+	.word	-1,.L17,0,.L43-.L17,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_thread_idle_excute')
+	.sect	'.debug_info'
+.L44:
+	.word	226
+	.half	3
+	.word	.L45
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L47,.L46
+	.byte	2
+	.word	.L25
+	.byte	3
+	.byte	'rt_thread_idle_excute',0,1,149,1,6,1,1,1
+	.word	.L19,.L79,.L18
+	.byte	4
+	.word	.L19,.L79
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_idle_excute')
+	.sect	'.debug_abbrev'
+.L45:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_thread_idle_excute')
+	.sect	'.debug_line'
+.L46:
+	.word	.L137-.L136
+.L136:
+	.half	3
+	.word	.L139-.L138
+.L138:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0,0,0,0,0
+.L139:
+	.byte	5,1,7,0,5,2
+	.word	.L19
+	.byte	3,187,1,1,7,9
+	.half	.L48-.L19
+	.byte	0,1,1
+.L137:
+	.sdecl	'.debug_ranges',debug,cluster('rt_thread_idle_excute')
+	.sect	'.debug_ranges'
+.L47:
+	.word	-1,.L19,0,.L48-.L19,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_thread_idle_gethandler')
+	.sect	'.debug_info'
+.L49:
+	.word	234
+	.half	3
+	.word	.L50
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L52,.L51
+	.byte	2
+	.word	.L25
+	.byte	3
+	.byte	'rt_thread_idle_gethandler',0,1,131,2,13
+	.word	.L80
+	.byte	1,1,1
+	.word	.L24,.L81,.L23
+	.byte	4
+	.word	.L24,.L81
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_idle_gethandler')
+	.sect	'.debug_abbrev'
+.L50:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_thread_idle_gethandler')
+	.sect	'.debug_line'
+.L51:
+	.word	.L141-.L140
+.L140:
+	.half	3
+	.word	.L143-.L142
+.L142:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0,0,0,0,0
+.L143:
+	.byte	5,27,7,0,5,2
+	.word	.L24
+	.byte	3,138,2,1,5,1,9
+	.half	.L144-.L24
+	.byte	3,1,1,7,9
+	.half	.L53-.L144
+	.byte	0,1,1
+.L141:
+	.sdecl	'.debug_ranges',debug,cluster('rt_thread_idle_gethandler')
+	.sect	'.debug_ranges'
+.L52:
+	.word	-1,.L24,0,.L53-.L24,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_thread_idle_entry')
+	.sect	'.debug_info'
+.L54:
+	.word	273
+	.half	3
+	.word	.L55
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L57,.L56
+	.byte	2
+	.word	.L25
+	.byte	3
+	.byte	'rt_thread_idle_entry',0,1,191,1,13,1,1
+	.word	.L10,.L82,.L20
+	.byte	4
+	.byte	'parameter',0,1,191,1,40
+	.word	.L83,.L84
+	.byte	5
+	.word	.L10,.L82
+	.byte	5
+	.word	.L10,.L85
+	.byte	6
+	.byte	'i',0,1,206,1,19
+	.word	.L70,.L86
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_idle_entry')
+	.sect	'.debug_abbrev'
+.L55:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3,8,58
+	.byte	15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_thread_idle_entry')
+	.sect	'.debug_line'
+.L56:
+	.word	.L146-.L145
+.L145:
+	.half	3
+	.word	.L148-.L147
+.L147:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0,0,0,0,0
+.L148:
+	.byte	5,17,7,0,5,2
+	.word	.L10
+	.byte	3,209,1,1,5,48,9
+	.half	.L149-.L10
+	.byte	3,126,1,5,31,9
+	.half	.L11-.L149
+	.byte	3,2,1,5,13,9
+	.half	.L150-.L11
+	.byte	1,5,34,7,9
+	.half	.L151-.L150
+	.byte	3,2,1,5,51,9
+	.half	.L12-.L151
+	.byte	3,124,1,5,48,1,5,30,7,9
+	.half	.L152-.L12
+	.byte	3,8,1,5,13,9
+	.half	.L85-.L152
+	.byte	3,115,1,5,1,9
+	.half	.L58-.L85
+	.byte	3,18,0,1,1
+.L146:
+	.sdecl	'.debug_ranges',debug,cluster('rt_thread_idle_entry')
+	.sect	'.debug_ranges'
+.L57:
+	.word	-1,.L10,0,.L58-.L10,0,0
+	.sdecl	'.debug_info',debug,cluster('idle')
+	.sect	'.debug_info'
+.L59:
+	.word	185
+	.half	3
+	.word	.L60
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L25
+	.byte	3
+	.byte	'idle',0,4,49,25
+	.word	.L87
+	.byte	5,3
+	.word	idle
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('idle')
+	.sect	'.debug_abbrev'
+.L60:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_thread_stack')
+	.sect	'.debug_info'
+.L61:
+	.word	196
+	.half	3
+	.word	.L62
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L25
+	.byte	3
+	.byte	'rt_thread_stack',0,4,51,19
+	.word	.L88
+	.byte	5,3
+	.word	rt_thread_stack
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_stack')
+	.sect	'.debug_abbrev'
+.L62:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('idle_hook_list')
+	.sect	'.debug_info'
+.L63:
+	.word	195
+	.half	3
+	.word	.L64
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\idle.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L25
+	.byte	3
+	.byte	'idle_hook_list',0,4,58,15
+	.word	.L89
+	.byte	5,3
+	.word	idle_hook_list
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('idle_hook_list')
+	.sect	'.debug_abbrev'
+.L64:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_thread_idle_delhook')
+	.sect	'.debug_loc'
+.L75:
+	.word	-1,.L17,0,.L93-.L17
+	.half	1
+	.byte	100
+	.word	.L94-.L17,.L95-.L17
+	.half	1
+	.byte	111
+	.word	.L7-.L17,.L8-.L17
+	.half	1
+	.byte	111
+	.word	0,0
+.L76:
+	.word	0,0
+.L77:
+	.word	-1,.L17,.L93-.L17,.L96-.L17
+	.half	1
+	.byte	82
+	.word	0,0
+.L78:
+	.word	-1,.L17,.L93-.L17,.L74-.L17
+	.half	1
+	.byte	95
+	.word	0,0
+.L16:
+	.word	-1,.L17,0,.L74-.L17
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_thread_idle_entry')
+	.sect	'.debug_loc'
+.L86:
+	.word	0,0
+.L84:
+	.word	-1,.L10,0,.L11-.L10
+	.half	1
+	.byte	100
+	.word	0,0
+.L20:
+	.word	-1,.L10,0,.L82-.L10
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_thread_idle_excute')
+	.sect	'.debug_loc'
+.L18:
+	.word	-1,.L19,0,.L79-.L19
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_thread_idle_gethandler')
+	.sect	'.debug_loc'
+.L23:
+	.word	-1,.L24,0,.L81-.L24
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_thread_idle_init')
+	.sect	'.debug_loc'
+.L21:
+	.word	-1,.L22,0,.L97-.L22
+	.half	2
+	.byte	138,0
+	.word	.L97-.L22,.L65-.L22
+	.half	2
+	.byte	138,8
+	.word	.L65-.L22,.L65-.L22
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_thread_idle_sethook')
+	.sect	'.debug_loc'
+.L69:
+	.word	-1,.L15,0,.L90-.L15
+	.half	1
+	.byte	100
+	.word	.L91-.L15,.L67-.L15
+	.half	1
+	.byte	111
+	.word	0,0
+.L71:
+	.word	0,0
+.L72:
+	.word	-1,.L15,.L90-.L15,.L92-.L15
+	.half	1
+	.byte	82
+	.word	0,0
+.L73:
+	.word	-1,.L15,.L90-.L15,.L67-.L15
+	.half	1
+	.byte	88
+	.word	0,0
+.L14:
+	.word	-1,.L15,0,.L67-.L15
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L153:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('rt_thread_idle_sethook')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L153,.L15,.L67-.L15
+	.sdecl	'.debug_frame',debug,cluster('rt_thread_idle_delhook')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L153,.L17,.L74-.L17
+	.sdecl	'.debug_frame',debug,cluster('rt_thread_idle_excute')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L153,.L19,.L79-.L19
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('rt_thread_idle_entry')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L153,.L10,.L82-.L10
+	.sdecl	'.debug_frame',debug,cluster('rt_thread_idle_init')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L153,.L22,.L65-.L22
+	.byte	4
+	.word	(.L97-.L22)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L65-.L97)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('rt_thread_idle_gethandler')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L153,.L24,.L81-.L24
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+
+
+	; Module end
