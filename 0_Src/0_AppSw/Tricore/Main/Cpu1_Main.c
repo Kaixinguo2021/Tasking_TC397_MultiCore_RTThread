@@ -28,8 +28,16 @@
 #include "IfxCpu.h"
 #include "IfxScuWdt.h"
 #include "Multicore.h"
+#include "cpuport.h"
+#include "rtthread.h"
+#include "UART_Logging.h"
 
 extern IfxCpu_syncEvent g_cpuSyncEvent;
+static rt_uint32_t core1_CNT = 0x00;
+static rt_uint8_t core1_thread_stack[512];
+static struct rt_thread core1_thread_1;
+
+static void core1_thread_entry(void *parameter);
 
 void core1_main(void)
 {
@@ -41,11 +49,35 @@ void core1_main(void)
     IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());
     
     /* Wait for CPU sync event */
+    // IfxCpu_emitEvent(&g_cpuSyncEvent);
+    // IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
+
+#ifdef RT_USING_SMP
+    Core1_init();
+    /* Wait for CPU sync event */
     IfxCpu_emitEvent(&g_cpuSyncEvent);
     IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
-    
+
+    rt_thread_init(&core1_thread_1, "core1", core1_thread_entry, RT_NULL,&core1_thread_stack[0], \
+    sizeof(core1_thread_stack), RT_MAIN_THREAD_PRIORITY, 20);
+    rt_thread_control(&core1_thread_1, RT_THREAD_CTRL_BIND_CPU, 1);
+
+    rt_thread_startup(&core1_thread_1);
+    /* start scheduler */
+    rt_system_scheduler_start();
+#endif
     while(1)
     {
-        turnLEDoff(); /* If the global variable g_turnLEDon is FALSE, turn off the LED */
+        
+    }
+}
+
+static void core1_thread_entry(void *parameter)
+{
+    while(1)
+    {
+        sendUARTMessage("core1_thread_entry\r\n",sizeof("core1_thread_entry")+2);
+        core1_CNT++; 
+        rt_thread_mdelay(30);
     }
 }

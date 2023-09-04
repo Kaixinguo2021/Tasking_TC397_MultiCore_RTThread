@@ -376,7 +376,7 @@ void rt_schedule(void)
     }
 
     /* enable interrupt */
-    rt_hw_interrupt_enable(level);
+    // rt_hw_interrupt_enable(level);
 
 #ifdef RT_USING_SIGNALS
     /* check stat of thread for signal */

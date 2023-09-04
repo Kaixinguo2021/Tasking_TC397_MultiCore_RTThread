@@ -28,7 +28,6 @@
 #define TRICORE_RESTORE_PSW_MASK                    ( ~( 0x000000FFUL ) )
 #define TRICORE_CPU_ID                              (__mfcr(CPU_CORE_ID) & 0x0f)
 
-// extern inline void trigger_scheduling(void);
-// inline void trigger_scheduling(void);
+void Core1_init(void);
 void get_clk(void);
 #endif

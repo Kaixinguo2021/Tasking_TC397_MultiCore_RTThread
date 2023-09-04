@@ -64,21 +64,21 @@ $TC162
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    49   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    50  void rt_thread_suspend_sethook(void (*hook)(rt_thread_t thread))
 ; Function rt_thread_suspend_sethook
-.L45:
+.L48:
 rt_thread_suspend_sethook:	.type	func
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    51  {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    52      rt_thread_suspend_hook = hook;
 	st.a	rt_thread_suspend_hook,a4
-.L537:
+.L552:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    53  }
 	ret
-.L268:
+.L273:
 	
 __rt_thread_suspend_sethook_function_end:
 	.size	rt_thread_suspend_sethook,__rt_thread_suspend_sethook_function_end-rt_thread_suspend_sethook
-.L157:
+.L160:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_resume_sethook',code,cluster('rt_thread_resume_sethook')
@@ -98,21 +98,21 @@ __rt_thread_suspend_sethook_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    62   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    63  void rt_thread_resume_sethook(void (*hook)(rt_thread_t thread))
 ; Function rt_thread_resume_sethook
-.L47:
+.L50:
 rt_thread_resume_sethook:	.type	func
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    64  {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    65      rt_thread_resume_hook = hook;
 	st.a	rt_thread_resume_hook,a4
-.L542:
+.L557:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    66  }
 	ret
-.L271:
+.L276:
 	
 __rt_thread_resume_sethook_function_end:
 	.size	rt_thread_resume_sethook,__rt_thread_resume_sethook_function_end-rt_thread_resume_sethook
-.L162:
+.L165:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_inited_sethook',code,cluster('rt_thread_inited_sethook')
@@ -130,21 +130,21 @@ __rt_thread_resume_sethook_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    73   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    74  void rt_thread_inited_sethook(void (*hook)(rt_thread_t thread))
 ; Function rt_thread_inited_sethook
-.L49:
+.L52:
 rt_thread_inited_sethook:	.type	func
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    75  {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    76      rt_thread_inited_hook = hook;
 	st.a	rt_thread_inited_hook,a4
-.L547:
+.L562:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    77  }
 	ret
-.L273:
+.L278:
 	
 __rt_thread_inited_sethook_function_end:
 	.size	rt_thread_inited_sethook,__rt_thread_inited_sethook_function_end-rt_thread_inited_sethook
-.L167:
+.L170:
 	; End of function
 	
 	.sdecl	'.text.thread._thread_cleanup_execute',code,cluster('_thread_cleanup_execute')
@@ -158,10 +158,10 @@ __rt_thread_inited_sethook_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    81  /* must be invoke witch rt_hw_interrupt_disable */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    82  static void _thread_cleanup_execute(rt_thread_t thread)
 ; Function _thread_cleanup_execute
-.L51:
+.L54:
 _thread_cleanup_execute:	.type	func
 	mov.aa	a15,a4
-.L313:
+.L318:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    83  {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    84      register rt_base_t level;
@@ -169,8 +169,8 @@ _thread_cleanup_execute:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    86      struct rt_dlmodule *module = RT_NULL;
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    87  #endif
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    88      level = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
-.L312:
+	call	rt_cpus_lock
+.L317:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    89  #ifdef RT_USING_MODULE
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    90      module = (struct rt_dlmodule*)thread->module_id;
@@ -181,16 +181,16 @@ _thread_cleanup_execute:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    95  #endif
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    96      /* invoke thread cleanup */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    97      if (thread->cleanup != RT_NULL)
-	ld.a	a2,[a15]120
-.L552:
+	ld.a	a2,[a15]128
+.L567:
 	mov	d15,d2
-.L314:
+.L319:
 	jz.a	a2,.L2
-.L553:
+.L568:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	    98          thread->cleanup(thread);
 	mov.aa	a4,a15
-.L315:
+.L320:
 	calli	a2
 .L2:
 
@@ -200,13 +200,13 @@ _thread_cleanup_execute:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   102  #endif
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   103      rt_hw_interrupt_enable(level);
 	mov	d4,d15
-.L316:
-	j	rt_hw_interrupt_enable
-.L275:
+.L321:
+	j	rt_cpus_unlock
+.L280:
 	
 ___thread_cleanup_execute_function_end:
 	.size	_thread_cleanup_execute,___thread_cleanup_execute_function_end-_thread_cleanup_execute
-.L172:
+.L175:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_exit',code,cluster('rt_thread_exit')
@@ -219,7 +219,7 @@ ___thread_cleanup_execute_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   105  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   106  void rt_thread_exit(void)
 ; Function rt_thread_exit
-.L53:
+.L56:
 rt_thread_exit:	.type	func
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   107  {
@@ -229,60 +229,60 @@ rt_thread_exit:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   111      /* get current thread */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   112      thread = rt_thread_self();
 	call	rt_thread_self
-.L317:
+.L322:
 	mov.aa	a12,a2
-.L319:
+.L324:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   113  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   114      /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   115      level = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
-.L318:
+	call	rt_cpus_lock
+.L323:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   116  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   117      _thread_cleanup_execute(thread);
 	mov	d15,d2
 	mov.aa	a4,a12
-.L321:
+.L326:
 	call	_thread_cleanup_execute
-.L320:
+.L325:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   118  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   119      /* remove from schedule */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   120      rt_schedule_remove_thread(thread);
 	mov.aa	a4,a12
-.L322:
+.L327:
 	call	rt_schedule_remove_thread
-.L323:
+.L328:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   121      /* change stat */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   122      thread->stat = RT_THREAD_CLOSE;
 	mov	d0,#4
 	st.b	[a12]52,d0
-.L558:
+.L573:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   123  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   124      /* remove it from timer list */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   125      rt_timer_detach(&thread->thread_timer);
-	lea	a4,[a12]76
+	lea	a4,[a12]84
 	call	rt_timer_detach
-.L559:
+.L574:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   126  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   127      if (rt_object_is_systemobject((rt_object_t)thread) == RT_TRUE)
 	mov.aa	a4,a12
-.L324:
+.L329:
 	call	rt_object_is_systemobject
-.L325:
+.L330:
 	jne	d2,#1,.L3
-.L560:
+.L575:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   128      {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   129          rt_object_detach((rt_object_t)thread);
 	mov.aa	a4,a12
-.L326:
+.L331:
 	call	rt_object_detach
-.L327:
+.L332:
 	j	.L4
 .L3:
 
@@ -292,7 +292,7 @@ rt_thread_exit:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   133          /* insert to defunct thread list */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   134          rt_list_insert_after(&rt_thread_defunct, &(thread->tlist));
 	lea	a4,rt_thread_defunct
-.L561:
+.L576:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     1  /*
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
@@ -355,9 +355,9 @@ rt_thread_exit:	.type	func
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    59  {
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    60      l->next->prev = n;
 	ld.a	a15,[a4]
-.L282:
+.L287:
 	lea	a2,[a12]20
-.L289:
+.L294:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     1  /*
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
@@ -420,18 +420,18 @@ rt_thread_exit:	.type	func
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    59  {
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    60      l->next->prev = n;
 	st.a	[a15]4,a2
-.L562:
+.L577:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    61      n->next = l->next;
 	ld.a	a15,[a4]
-.L563:
+.L578:
 	st.a	[a2],a15
-.L564:
+.L579:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    62  
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    63      l->next = n;
 	st.a	[a4],a2
-.L565:
+.L580:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    64      n->prev = l;
 	st.a	[a12]24,a4
@@ -442,19 +442,19 @@ rt_thread_exit:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   137      /* switch to next task */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   138      rt_schedule();
 	call	rt_schedule
-.L566:
+.L581:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   139  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   140      /* enable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   141      rt_hw_interrupt_enable(level);
 	mov	d4,d15
-.L328:
-	j	rt_hw_interrupt_enable
-.L278:
+.L333:
+	j	rt_cpus_unlock
+.L283:
 	
 __rt_thread_exit_function_end:
 	.size	rt_thread_exit,__rt_thread_exit_function_end-rt_thread_exit
-.L177:
+.L180:
 	; End of function
 	
 	.sdecl	'.text.thread._rt_thread_init',code,cluster('_rt_thread_init')
@@ -466,10 +466,10 @@ __rt_thread_exit_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   143  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   144  static rt_err_t _rt_thread_init(struct rt_thread *thread,
 ; Function _rt_thread_init
-.L55:
+.L58:
 _rt_thread_init:	.type	func
 	mov.aa	a15,a4
-.L331:
+.L336:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   145                                  const char       *name,
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   146                                  void (*entry)(void *parameter),
@@ -482,7 +482,7 @@ _rt_thread_init:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   153      /* init thread list */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   154      rt_list_init(&(thread->tlist));
 	lea	a2,[a15]20
-.L300:
+.L305:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     1  /*
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
@@ -534,9 +534,9 @@ _rt_thread_init:	.type	func
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    48  {
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    49      l->next = l->prev = l;
 	st.a	[a15]24,a2
-.L301:
-	ld.a	a4,[a10]
 .L306:
+	ld.a	a4,[a10]
+.L311:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     1  /*
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
@@ -588,17 +588,17 @@ _rt_thread_init:	.type	func
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    48  {
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    49      l->next = l->prev = l;
 	st.a	[a2],a2
-.L307:
+.L312:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   155  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   156      thread->entry = (void *)entry;
 	st.a	[a15]32,a6
-.L571:
+.L586:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   157      thread->parameter = parameter;
 	mov	d15,d4
 	st.a	[a15]36,a7
-.L332:
+.L337:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   158  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   159      /* stack init */
@@ -609,13 +609,13 @@ _rt_thread_init:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   164      rt_memset(thread->stack_addr, '#', thread->stack_size);
 	mov	d4,#35
 	st.a	[a15]40,a4
-.L330:
+.L335:
 	mov	e8,d6,d5
 	st.w	[a15]44,d15
-.L572:
+.L587:
 	mov	d5,d15
 	call	rt_memset
-.L329:
+.L334:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   165  #ifdef ARCH_CPU_STACK_GROWS_UPWARD
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   166      thread->sp = (void *)rt_hw_stack_init(thread->entry, thread->parameter,
@@ -625,45 +625,45 @@ _rt_thread_init:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   170      thread->sp = (void *)rt_hw_stack_init(thread->entry, thread->parameter,
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   171                                            (rt_uint8_t *)((char *)thread->stack_addr + thread->stack_size - sizeof(rt_ubase_t)),
 	ld.a	a2,[a15]40
-.L573:
+.L588:
 	ld.w	d15,[a15]44
-.L333:
+.L338:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   172                                            (void *)rt_thread_exit);
 	movh.a	a7,#@his(rt_thread_exit)
-.L574:
+.L589:
 	addsc.a	a6,a2,d15,#0
-.L575:
+.L590:
 	lea	a7,[a7]@los(rt_thread_exit)
-.L576:
+.L591:
 	add.a	a6,#-4
-.L577:
+.L592:
 	ld.a	a4,[a15]32
-.L578:
+.L593:
 	ld.a	a5,[a15]36
-.L579:
+.L594:
 	call	rt_hw_stack_init
-.L580:
+.L595:
 	st.a	[a15]28,a2
-.L334:
+.L339:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   173  #endif
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   174  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   175      /* priority init */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   176      RT_ASSERT(priority < RT_THREAD_PRIORITY_MAX);
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   177      thread->init_priority    = priority;
-	st.b	[a15]54,d8
-.L581:
+	st.b	[a15]63,d8
+.L596:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   178      thread->current_priority = priority;
-	st.b	[a15]53,d8
-.L335:
+	st.b	[a15]62,d8
+.L340:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   179  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   180      thread->number_mask = 0;
 	mov	d4,#0
-	st.w	[a15]56,d4
-.L336:
+	st.w	[a15]64,d4
+.L341:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   181  #if RT_THREAD_PRIORITY_MAX > 32
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   182      thread->number = 0;
@@ -672,68 +672,84 @@ _rt_thread_init:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   185  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   186      /* tick init */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   187      thread->init_tick      = tick;
-	st.w	[a15]66,d9
-.L582:
+	st.w	[a15]74,d9
+.L597:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   188      thread->remaining_tick = tick;
-	st.w	[a15]70,d9
-.L337:
+	st.w	[a15]78,d9
+.L342:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   189  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   190      /* error and flags */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   191      thread->error = RT_EOK;
 	st.w	[a15]48,d4
-.L583:
+.L598:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   192      thread->stat  = RT_THREAD_INIT;
 	st.b	[a15]52,d4
-.L584:
+.L599:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   193  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   194  #ifdef RT_USING_SMP
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   195      /* not bind on any cpu */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   196      thread->bind_cpu = RT_CPUS_NR;
+	mov	d15,#2
+	st.b	[a15]53,d15
+.L600:
+
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   197      thread->oncpu = RT_CPU_DETACHED;
+	st.b	[a15]54,d15
+.L601:
+
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   198  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   199      /* lock init */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   200      thread->scheduler_lock_nest = 0;
+	st.h	[a15]56,d4
+.L602:
+
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   201      thread->cpus_lock_nest = 0;
+	st.h	[a15]58,d4
+.L603:
+
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   202      thread->critical_lock_nest = 0;
+	st.h	[a15]60,d4
+.L604:
+
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   203  #endif /*RT_USING_SMP*/
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   204  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   205      /* initialize cleanup function and user data */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   206      thread->cleanup   = 0;
 	mov.a	a2,#0
-.L585:
-	st.a	[a15]120,a2
-.L586:
+.L605:
+	st.a	[a15]128,a2
+.L606:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   207      thread->user_data = 0;
-	st.w	[a15]124,d4
-.L587:
+	st.w	[a15]132,d4
+.L607:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   208  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   209      /* initialize thread timer */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   210      rt_timer_init(&(thread->thread_timer),
-	lea	a4,[a15]76
-.L588:
+	lea	a4,[a15]84
+.L608:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   211                    thread->name,
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   212                    rt_thread_timeout,
 	movh.a	a6,#@his(rt_thread_timeout)
 	lea	a6,[a6]@los(rt_thread_timeout)
-.L589:
+.L609:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   213                    thread,
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   214                    0,
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   215                    RT_TIMER_FLAG_ONE_SHOT);
 	mov	d5,d4
 	mov.aa	a5,a15
-.L338:
+.L343:
 	mov.aa	a7,a15
-.L340:
+.L345:
 	call	rt_timer_init
-.L339:
+.L344:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   216  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   217      /* initialize signal */
@@ -756,7 +772,7 @@ _rt_thread_init:	.type	func
 	ld.a	a2,rt_thread_inited_hook
 	jz.a	a2,.L5
 	mov.aa	a4,a15
-.L341:
+.L346:
 	calli	a2
 .L5:
 
@@ -765,11 +781,11 @@ _rt_thread_init:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   236  }
 	mov	d2,#0
 	ret
-.L290:
+.L295:
 	
 ___rt_thread_init_function_end:
 	.size	_rt_thread_init,___rt_thread_init_function_end-_rt_thread_init
-.L182:
+.L185:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_init',code,cluster('rt_thread_init')
@@ -802,11 +818,11 @@ ___rt_thread_init_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   258   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   259  rt_err_t rt_thread_init(struct rt_thread *thread,
 ; Function rt_thread_init
-.L57:
+.L60:
 rt_thread_init:	.type	func
 	mov	d15,d4
 	sub.a	a10,#8
-.L342:
+.L347:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   260                          const char       *name,
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   261                          void (*entry)(void *parameter),
@@ -824,16 +840,16 @@ rt_thread_init:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   273      rt_object_init((rt_object_t)thread, RT_Object_Class_Thread, name);
 	mov	d4,#1
 	mov.aa	a15,a4
-.L344:
+.L349:
 	mov	e8,d6,d5
 	mov.aa	a12,a5
-.L345:
+.L350:
 	mov.aa	a13,a6
-.L346:
+.L351:
 	mov.aa	a14,a7
-.L347:
+.L352:
 	call	rt_object_init
-.L343:
+.L348:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   274  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   275      return _rt_thread_init(thread,
@@ -846,24 +862,24 @@ rt_thread_init:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   282                             tick);
 	mov	e4,d8,d15
 	mov.aa	a4,a15
-.L348:
+.L353:
 	mov	d6,d9
 	mov.aa	a5,a12
-.L349:
+.L354:
 	mov.aa	a6,a13
-.L350:
+.L355:
 	mov.aa	a7,a14
-.L351:
+.L356:
 	ld.a	a2,[a10]8
-.L352:
+.L357:
 	st.a	[a10],a2
-.L417:
+.L428:
 	j	_rt_thread_init
-.L195:
+.L198:
 	
 __rt_thread_init_function_end:
 	.size	rt_thread_init,__rt_thread_init_function_end-rt_thread_init
-.L92:
+.L95:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_self',code,cluster('rt_thread_self')
@@ -882,7 +898,7 @@ __rt_thread_init_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   290   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   291  rt_thread_t rt_thread_self(void)
 ; Function rt_thread_self
-.L59:
+.L62:
 rt_thread_self:	.type	func
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   292  {
@@ -891,24 +907,37 @@ rt_thread_self:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   295      rt_thread_t self;
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   296  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   297      lock = rt_hw_local_irq_disable();
+	call	rt_hw_local_irq_disable
+.L358:
+
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   298      self = rt_cpu_self()->current_thread;
+	mov	d15,d2
+	call	rt_cpu_self
+.L359:
+	ld.a	a15,[a2]
+.L360:
+
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   299      rt_hw_local_irq_enable(lock);
+	mov	d4,d15
+	call	rt_hw_local_irq_enable
+.L443:
+
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   300      return self;
+	mov.aa	a2,a15
+.L361:
+
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   301  #else
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   302      extern rt_thread_t rt_current_thread;
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   303  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   304      return rt_current_thread;
-	ld.a	a2,rt_current_thread
-.L432:
-
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   305  #endif
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   306  }
 	ret
-.L213:
+.L216:
 	
 __rt_thread_self_function_end:
 	.size	rt_thread_self,__rt_thread_self_function_end-rt_thread_self
-.L102:
+.L105:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_startup',code,cluster('rt_thread_startup')
@@ -928,7 +957,7 @@ __rt_thread_self_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   315   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   316  rt_err_t rt_thread_startup(rt_thread_t thread)
 ; Function rt_thread_startup
-.L61:
+.L64:
 rt_thread_startup:	.type	func
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   317  {
@@ -948,13 +977,13 @@ rt_thread_startup:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   331  #else
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   332      thread->number_mask = 1L << thread->current_priority;
 	mov	d15,#1
-	ld.bu	d0,[a4]54
-.L441:
-	st.b	[a4]53,d0
-.L442:
+	ld.bu	d0,[a4]63
+.L452:
+	st.b	[a4]62,d0
+.L453:
 	sha	d15,d15,d0
-	st.w	[a4]56,d15
-.L443:
+	st.w	[a4]64,d15
+.L454:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   333  #endif
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   334  
@@ -964,18 +993,18 @@ rt_thread_startup:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   338      thread->stat = RT_THREAD_SUSPEND;
 	mov	d15,#2
 	st.b	[a4]52,d15
-.L444:
+.L455:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   339      /* then resume it */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   340      rt_thread_resume(thread);
 	call	rt_thread_resume
-.L353:
+.L362:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   341      if (rt_thread_self() != RT_NULL)
 	call	rt_thread_self
-.L445:
+.L456:
 	jz.a	a2,.L9
-.L446:
+.L457:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   342      {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   343          /* do a scheduling */
@@ -989,11 +1018,11 @@ rt_thread_startup:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   348  }
 	mov	d2,#0
 	ret
-.L217:
+.L222:
 	
 __rt_thread_startup_function_end:
 	.size	rt_thread_startup,__rt_thread_startup_function_end-rt_thread_startup
-.L112:
+.L115:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_detach',code,cluster('rt_thread_detach')
@@ -1014,10 +1043,10 @@ __rt_thread_startup_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   358   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   359  rt_err_t rt_thread_detach(rt_thread_t thread)
 ; Function rt_thread_detach
-.L63:
+.L66:
 rt_thread_detach:	.type	func
 	mov.aa	a15,a4
-.L354:
+.L363:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   360  {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   361      /* thread check */
@@ -1027,17 +1056,17 @@ rt_thread_detach:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   365  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   366      if ((thread->stat & RT_THREAD_STAT_MASK) == RT_THREAD_CLOSE)
 	ld.bu	d15,[a15]52
-.L422:
+.L433:
 	and	d15,#7
-.L423:
+.L434:
 	jeq	d15,#4,.L11
-.L424:
+.L435:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   367          return RT_EOK;
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   368  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   369      if ((thread->stat & RT_THREAD_STAT_MASK) != RT_THREAD_INIT)
 	jeq	d15,#0,.L12
-.L425:
+.L436:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   370      {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   371          /* remove from schedule */
@@ -1049,29 +1078,29 @@ rt_thread_detach:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   374  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   375      _thread_cleanup_execute(thread);
 	mov.aa	a4,a15
-.L355:
+.L364:
 	call	_thread_cleanup_execute
-.L356:
+.L365:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   376  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   377      /* release thread timer */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   378      rt_timer_detach(&(thread->thread_timer));
-	lea	a4,[a15]76
+	lea	a4,[a15]84
 	call	rt_timer_detach
-.L426:
+.L437:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   379  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   380      /* change stat */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   381      thread->stat = RT_THREAD_CLOSE;
 	mov	d15,#4
 	st.b	[a15]52,d15
-.L427:
+.L438:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   382  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   383      /* detach thread object */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   384      rt_object_detach((rt_object_t)thread);
 	mov.aa	a4,a15
-.L357:
+.L366:
 	call	rt_object_detach
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   385  
@@ -1080,11 +1109,11 @@ rt_thread_detach:	.type	func
 .L11:
 	mov	d2,#0
 	ret
-.L210:
+.L213:
 	
 __rt_thread_detach_function_end:
 	.size	rt_thread_detach,__rt_thread_detach_function_end-rt_thread_detach
-.L97:
+.L100:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_yield',code,cluster('rt_thread_yield')
@@ -1203,7 +1232,7 @@ __rt_thread_detach_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   495   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   496  rt_err_t rt_thread_yield(void)
 ; Function rt_thread_yield
-.L65:
+.L68:
 rt_thread_yield:	.type	func
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   497  {
@@ -1212,48 +1241,48 @@ rt_thread_yield:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   500  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   501      thread = rt_thread_self();
 	call	rt_thread_self
-.L358:
+.L367:
 	mov.aa	a15,a2
-.L360:
+.L369:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   502      lock = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
-.L359:
+	call	rt_cpus_lock
+.L368:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   503      thread->remaining_tick = thread->init_tick;
-	ld.w	d15,[a15]66
-.L451:
-	st.w	[a15]70,d15
-.L452:
+	ld.w	d15,[a15]74
+.L462:
+	st.w	[a15]78,d15
+.L463:
 	mov	d8,d2
-.L362:
+.L371:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   504      thread->stat |= RT_THREAD_STAT_YIELD;
 	ld.bu	d15,[a15]52
-.L453:
+.L464:
 	or	d15,#8
 	st.b	[a15]52,d15
-.L454:
+.L465:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   505      rt_schedule();
 	call	rt_schedule
-.L361:
+.L370:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   506      rt_hw_interrupt_enable(lock);
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
-.L455:
+	call	rt_cpus_unlock
+.L466:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   507  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   508      return RT_EOK;
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   509  }
 	mov	d2,#0
 	ret
-.L219:
+.L224:
 	
 __rt_thread_yield_function_end:
 	.size	rt_thread_yield,__rt_thread_yield_function_end-rt_thread_yield
-.L117:
+.L120:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_sleep',code,cluster('rt_thread_sleep')
@@ -1273,12 +1302,12 @@ __rt_thread_yield_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   518   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   519  rt_err_t rt_thread_sleep(rt_tick_t tick)
 ; Function rt_thread_sleep
-.L67:
+.L70:
 rt_thread_sleep:	.type	func
 	sub.a	a10,#8
-.L363:
+.L372:
 	st.w	[a10],d4
-.L594:
+.L614:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   520  {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   521      register rt_base_t temp;
@@ -1287,61 +1316,61 @@ rt_thread_sleep:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   524      /* set to current thread */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   525      thread = rt_thread_self();
 	call	rt_thread_self
-.L364:
+.L373:
 	mov.aa	a15,a2
-.L366:
+.L375:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   526      RT_ASSERT(thread != RT_NULL);
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   527      RT_ASSERT(rt_object_get_type((rt_object_t)thread) == RT_Object_Class_Thread);
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   528  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   529      /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   530      temp = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
-.L365:
+	call	rt_cpus_lock
+.L374:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   531  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   532      /* suspend thread */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   533      rt_thread_suspend(thread);
 	mov	d15,d2
 	mov.aa	a4,a15
-.L368:
+.L377:
 	call	rt_thread_suspend
-.L367:
+.L376:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   534  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   535      /* reset the timeout of thread timer and start it */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   536      rt_timer_control(&(thread->thread_timer), RT_TIMER_CTRL_SET_TIME, &tick);
-	lea	a4,[a15]76
-.L595:
+	lea	a4,[a15]84
+.L615:
 	mov	d4,#0
 	mov.aa	a5,a10
 	call	rt_timer_control
-.L596:
+.L616:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   537      rt_timer_start(&(thread->thread_timer));
-	lea	a4,[a15]76
+	lea	a4,[a15]84
 	call	rt_timer_start
-.L597:
+.L617:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   538  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   539      /* enable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   540      rt_hw_interrupt_enable(temp);
 	mov	d4,d15
-	call	rt_hw_interrupt_enable
-.L598:
+	call	rt_cpus_unlock
+.L618:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   541  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   542      rt_schedule();
 	call	rt_schedule
-.L599:
+.L619:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   543  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   544      /* clear error number of this thread to RT_EOK */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   545      if (thread->error == -RT_ETIMEOUT)
 	ld.w	d15,[a15]48
-.L369:
+.L378:
 	jne	d15,#-2,.L15
-.L600:
+.L620:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   546          thread->error = RT_EOK;
 	mov	d15,#0
@@ -1353,11 +1382,11 @@ rt_thread_sleep:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   549  }
 	mov	d2,#0
 	ret
-.L308:
+.L313:
 	
 __rt_thread_sleep_function_end:
 	.size	rt_thread_sleep,__rt_thread_sleep_function_end-rt_thread_sleep
-.L187:
+.L190:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_delay',code,cluster('rt_thread_delay')
@@ -1376,17 +1405,17 @@ __rt_thread_sleep_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   557   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   558  rt_err_t rt_thread_delay(rt_tick_t tick)
 ; Function rt_thread_delay
-.L69:
+.L72:
 rt_thread_delay:	.type	func
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   559  {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   560      return rt_thread_sleep(tick);
 	j	rt_thread_sleep
-.L222:
+.L227:
 	
 __rt_thread_delay_function_end:
 	.size	rt_thread_delay,__rt_thread_delay_function_end-rt_thread_delay
-.L122:
+.L125:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_delay_until',code,cluster('rt_thread_delay_until')
@@ -1408,12 +1437,12 @@ __rt_thread_delay_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   571   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   572  rt_err_t rt_thread_delay_until(rt_tick_t *tick, rt_tick_t inc_tick)
 ; Function rt_thread_delay_until
-.L71:
+.L74:
 rt_thread_delay_until:	.type	func
 	sub.a	a10,#8
-.L370:
+.L379:
 	mov.aa	a12,a4
-.L372:
+.L381:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   573  {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   574      register rt_base_t level;
@@ -1426,31 +1455,31 @@ rt_thread_delay_until:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   581      thread = rt_thread_self();
 	mov	d15,d4
 	call	rt_thread_self
-.L371:
+.L380:
 	mov.aa	a15,a2
-.L375:
+.L384:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   582      RT_ASSERT(thread != RT_NULL);
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   583      RT_ASSERT(rt_object_get_type((rt_object_t)thread) == RT_Object_Class_Thread);
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   584  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   585      /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   586      level = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
-.L374:
+	call	rt_cpus_lock
+.L383:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   587  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   588      cur_tick = rt_tick_get();
 	mov	d8,d2
 	call	rt_tick_get
-.L376:
+.L385:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   589      if (cur_tick - *tick < inc_tick)
 	ld.w	d0,[a12]
-.L464:
+.L475:
 	sub	d1,d2,d0
-.L465:
+.L476:
 	jge.u	d1,d15,.L18
-.L231:
+.L236:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   590      {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   591          rt_tick_t left_tick;
@@ -1458,61 +1487,61 @@ rt_thread_delay_until:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   593          *tick += inc_tick;
 	add	d0,d15
 	st.w	[a12],d0
-.L466:
+.L477:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   594          left_tick = *tick - cur_tick;
 	sub	d0,d2
 	st.w	[a10],d0
-.L467:
+.L478:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   595  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   596          /* suspend thread */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   597          rt_thread_suspend(thread);
 	mov.aa	a4,a15
-.L378:
+.L387:
 	call	rt_thread_suspend
-.L377:
+.L386:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   598  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   599          /* reset the timeout of thread timer and start it */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   600          rt_timer_control(&(thread->thread_timer), RT_TIMER_CTRL_SET_TIME, &left_tick);
-	lea	a4,[a15]76
-.L468:
+	lea	a4,[a15]84
+.L479:
 	mov	d4,#0
 	mov.aa	a5,a10
 	call	rt_timer_control
-.L469:
+.L480:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   601          rt_timer_start(&(thread->thread_timer));
-	lea	a4,[a15]76
+	lea	a4,[a15]84
 	call	rt_timer_start
-.L470:
+.L481:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   602  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   603          /* enable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   604          rt_hw_interrupt_enable(level);
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
-.L471:
+	call	rt_cpus_unlock
+.L482:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   605  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   606          rt_schedule();
 	call	rt_schedule
-.L472:
+.L483:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   607  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   608          /* clear error number of this thread to RT_EOK */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   609          if (thread->error == -RT_ETIMEOUT)
 	ld.w	d15,[a15]48
-.L373:
+.L382:
 	jne	d15,#-2,.L19
-.L473:
+.L484:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   610          {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   611              thread->error = RT_EOK;
 	mov	d15,#0
 	st.w	[a15]48,d15
-.L232:
+.L237:
 	j	.L20
 .L18:
 
@@ -1522,11 +1551,11 @@ rt_thread_delay_until:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   615      {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   616          *tick = cur_tick;
 	st.w	[a12],d2
-.L474:
+.L485:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   617          rt_hw_interrupt_enable(level);
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L20:
 .L19:
 
@@ -1536,11 +1565,11 @@ rt_thread_delay_until:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   621  }
 	mov	d2,#0
 	ret
-.L224:
+.L229:
 	
 __rt_thread_delay_until_function_end:
 	.size	rt_thread_delay_until,__rt_thread_delay_until_function_end-rt_thread_delay_until
-.L127:
+.L130:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_mdelay',code,cluster('rt_thread_mdelay')
@@ -1560,7 +1589,7 @@ __rt_thread_delay_until_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   630   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   631  rt_err_t rt_thread_mdelay(rt_int32_t ms)
 ; Function rt_thread_mdelay
-.L73:
+.L76:
 rt_thread_mdelay:	.type	func
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   632  {
@@ -1568,18 +1597,18 @@ rt_thread_mdelay:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   634  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   635      tick = rt_tick_from_millisecond(ms);
 	call	rt_tick_from_millisecond
-.L379:
+.L388:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   636  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   637      return rt_thread_sleep(tick);
 	mov	d4,d2
-.L380:
+.L389:
 	j	rt_thread_sleep
-.L234:
+.L239:
 	
 __rt_thread_mdelay_function_end:
 	.size	rt_thread_mdelay,__rt_thread_mdelay_function_end-rt_thread_mdelay
-.L132:
+.L135:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_control',code,cluster('rt_thread_control')
@@ -1606,12 +1635,12 @@ __rt_thread_mdelay_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   653   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   654  rt_err_t rt_thread_control(rt_thread_t thread, int cmd, void *arg)
 ; Function rt_thread_control
-.L75:
+.L78:
 rt_thread_control:	.type	func
 	mov.aa	a15,a4
-.L382:
+.L391:
 	mov.aa	a12,a5
-.L383:
+.L392:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   655  {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   656      register rt_base_t temp;
@@ -1669,7 +1698,7 @@ rt_thread_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   708  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   709          case RT_THREAD_CTRL_STARTUP:
 	jeq	d4,#0,.L23
-.L483:
+.L494:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   710          {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   711              return rt_thread_startup(thread);
@@ -1677,70 +1706,16 @@ rt_thread_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   713  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   714          case RT_THREAD_CTRL_CLOSE:
 	jeq	d4,#1,.L24
-.L484:
-	jne	d4,#2,.L26
-.L485:
-	call	rt_hw_interrupt_disable
-.L381:
-	ld.bu	d15,[a15]52
-.L486:
-	mov	d8,d2
-.L385:
-	and	d15,#7
-.L487:
-	jne	d15,#1,.L27
-.L488:
-	mov.aa	a4,a15
-.L386:
-	call	rt_schedule_remove_thread
-.L384:
-	ld.bu	d0,[a12]
-.L489:
-	st.b	[a15]53,d0
-.L490:
-	sha	d15,d15,d0
-	st.w	[a15]56,d15
-.L491:
-	mov.aa	a4,a15
-.L387:
-	call	rt_schedule_insert_thread
-.L388:
-	j	.L28
-.L27:
-	mov	d15,#1
-	ld.bu	d0,[a12]
-.L492:
-	st.b	[a15]53,d0
-.L493:
-	sha	d15,d15,d0
-	st.w	[a15]56,d15
-.L28:
-	mov	d4,d8
-	call	rt_hw_interrupt_enable
-.L494:
-	j	.L29
-.L23:
-	j	rt_thread_startup
-.L24:
+.L495:
+	jeq	d4,#2,.L25
+.L496:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   715          {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   716              rt_err_t rt_err;
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   717  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   718              if (rt_object_is_systemobject((rt_object_t)thread) == RT_TRUE)
-	call	rt_object_is_systemobject
-.L389:
-	jne	d2,#1,.L31
-.L495:
-
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   719              {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   720                  rt_err = rt_thread_detach(thread);
-	mov.aa	a4,a15
-.L390:
-	call	rt_thread_detach
-.L391:
-	mov	d15,d2
-.L31:
-
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   721              }
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   722      #ifdef RT_USING_HEAP
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   723              else
@@ -1749,14 +1724,70 @@ rt_thread_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   726              }
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   727      #endif
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   728              rt_schedule();
-	call	rt_schedule
-.L392:
-
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   729              return rt_err;
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   730          }
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   731  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   732      #ifdef RT_USING_SMP
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   733          case RT_THREAD_CTRL_BIND_CPU:
+	jeq	d4,#4,.L26
+.L497:
+	j	.L27
+.L25:
+	call	rt_cpus_lock
+.L390:
+	ld.bu	d15,[a15]52
+.L498:
+	mov	d8,d2
+.L394:
+	and	d15,#7
+.L499:
+	jne	d15,#1,.L28
+.L500:
+	mov.aa	a4,a15
+.L395:
+	call	rt_schedule_remove_thread
+.L393:
+	ld.bu	d0,[a12]
+.L501:
+	st.b	[a15]62,d0
+.L502:
+	sha	d15,d15,d0
+	st.w	[a15]64,d15
+.L503:
+	mov.aa	a4,a15
+.L396:
+	call	rt_schedule_insert_thread
+.L397:
+	j	.L29
+.L28:
+	mov	d15,#1
+	ld.bu	d0,[a12]
+.L504:
+	st.b	[a15]62,d0
+.L505:
+	sha	d15,d15,d0
+	st.w	[a15]64,d15
+.L29:
+	mov	d4,d8
+	call	rt_cpus_unlock
+.L506:
+	j	.L30
+.L23:
+	j	rt_thread_startup
+.L24:
+	call	rt_object_is_systemobject
+.L398:
+	jne	d2,#1,.L32
+.L507:
+	mov.aa	a4,a15
+.L399:
+	call	rt_thread_detach
+.L400:
+	mov	d15,d2
+.L32:
+	call	rt_schedule
+.L401:
+
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   734          {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   735              rt_uint8_t cpu;
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   736  
@@ -1780,15 +1811,31 @@ rt_thread_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   754  }
 	mov	d2,d15
 	ret
-.L29:
 .L26:
+	ld.bu	d15,[a15]52
+.L508:
+	and	d15,#7
+.L509:
+	jeq	d15,#0,.L34
+.L510:
+	mov	d2,#1
+	ret
+.L34:
+	mov.d	d15,a12
+.L402:
+	extr.u	d15,d15,#0,#8
+.L403:
+	min.u	d15,d15,#2
+	st.b	[a15]53,d15
+.L30:
+.L27:
 	mov	d2,#0
 	ret
-.L238:
+.L243:
 	
 __rt_thread_control_function_end:
 	.size	rt_thread_control,__rt_thread_control_function_end-rt_thread_control
-.L137:
+.L140:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_suspend',code,cluster('rt_thread_suspend')
@@ -1811,10 +1858,10 @@ __rt_thread_control_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   766   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   767  rt_err_t rt_thread_suspend(rt_thread_t thread)
 ; Function rt_thread_suspend
-.L77:
+.L80:
 rt_thread_suspend:	.type	func
 	mov.aa	a15,a4
-.L394:
+.L405:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   768  {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   769      register rt_base_t stat;
@@ -1828,15 +1875,15 @@ rt_thread_suspend:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   777  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   778      stat = thread->stat & RT_THREAD_STAT_MASK;
 	ld.bu	d15,[a15]52
-.L395:
+.L406:
 	and	d15,#7
-.L500:
+.L515:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   779      if ((stat != RT_THREAD_READY) && (stat != RT_THREAD_RUNNING))
-	jeq	d15,#1,.L34
-.L501:
-	jeq	d15,#3,.L35
-.L502:
+	jeq	d15,#1,.L37
+.L516:
+	jeq	d15,#3,.L38
+.L517:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   780      {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   781          RT_DEBUG_LOG(RT_DEBUG_THREAD, ("thread suspend: thread disorder, 0x%2x\n",
@@ -1867,42 +1914,42 @@ rt_thread_suspend:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   806  }
 	mov	d2,#-1
 	ret
-.L35:
-.L34:
-	call	rt_hw_interrupt_disable
-.L393:
+.L38:
+.L37:
+	call	rt_cpus_lock
+.L404:
 	mov	d8,d2
 	mov.aa	a4,a15
-.L398:
+.L409:
 	call	rt_schedule_remove_thread
-.L397:
+.L408:
 	ld.bu	d15,[a15]52
-.L396:
-	lea	a4,[a15]76
-.L503:
+.L407:
+	lea	a4,[a15]84
+.L518:
 	and	d15,#248
-.L504:
+.L519:
 	or	d15,#2
 	st.b	[a15]52,d15
-.L505:
+.L520:
 	call	rt_timer_stop
-.L506:
+.L521:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
-.L507:
+	call	rt_cpus_unlock
+.L522:
 	ld.a	a2,rt_thread_suspend_hook
-	jz.a	a2,.L37
+	jz.a	a2,.L40
 	mov.aa	a4,a15
-.L399:
+.L410:
 	calli	a2
-.L37:
+.L40:
 	mov	d2,#0
 	ret
-.L244:
+.L249:
 	
 __rt_thread_suspend_function_end:
 	.size	rt_thread_suspend,__rt_thread_suspend_function_end-rt_thread_suspend
-.L142:
+.L145:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_resume',code,cluster('rt_thread_resume')
@@ -1922,10 +1969,10 @@ __rt_thread_suspend_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   815   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   816  rt_err_t rt_thread_resume(rt_thread_t thread)
 ; Function rt_thread_resume
-.L79:
+.L82:
 rt_thread_resume:	.type	func
 	mov.aa	a12,a4
-.L401:
+.L412:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   817  {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   818      register rt_base_t temp;
@@ -1938,11 +1985,11 @@ rt_thread_resume:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   825  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   826      if ((thread->stat & RT_THREAD_STAT_MASK) != RT_THREAD_SUSPEND)
 	ld.bu	d15,[a12]52
-.L512:
+.L527:
 	and	d15,#7
-.L513:
-	jeq	d15,#2,.L39
-.L514:
+.L528:
+	jeq	d15,#2,.L42
+.L529:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   827      {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   828          RT_DEBUG_LOG(RT_DEBUG_THREAD, ("thread resume: thread disorder, %d\n",
@@ -1970,11 +2017,11 @@ rt_thread_resume:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   850  }
 	mov	d2,#-1
 	ret
-.L39:
-	call	rt_hw_interrupt_disable
-.L400:
+.L42:
+	call	rt_cpus_lock
+.L411:
 	lea	a2,[a12]20
-.L252:
+.L257:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     1  /*
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
@@ -2065,11 +2112,11 @@ rt_thread_resume:	.type	func
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    87  {
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    88      n->next->prev = n->prev;
 	ld.a	a4,[a2]
-.L515:
+.L530:
 	ld.a	a15,[a12]24
-.L253:
-	mov	d15,d2
 .L258:
+	mov	d15,d2
+.L263:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     1  /*
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
@@ -2160,179 +2207,21 @@ rt_thread_resume:	.type	func
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    87  {
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    88      n->next->prev = n->prev;
 	st.a	[a4]4,a15
-.L516:
+.L531:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    89      n->prev->next = n->next;
 	ld.a	a15,[a12]24
-.L517:
+.L532:
 	ld.a	a4,[a2]
-.L518:
+.L533:
 	st.a	[a15],a4
-.L519:
+.L534:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    90  
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    91      n->next = n->prev = n;
 	st.a	[a12]24,a2
-.L259:
-	lea	a4,[a12]76
-.L260:
-
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     1  /*
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     3   *
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     4   * SPDX-License-Identifier: Apache-2.0
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     5   *
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     6   * Change Logs:
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     7   * Date           Author       Notes
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     8   * 2006-03-16     Bernard      the first version
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     9   * 2006-09-07     Bernard      move the kservice APIs to rtthread.h
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    10   * 2007-06-27     Bernard      fix the rt_list_remove bug
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    11   * 2012-03-22     Bernard      rename kservice.h to rtservice.h
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    12   * 2017-11-15     JasonJia     Modify rt_slist_foreach to rt_slist_for_each_entry.
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    13   *                             Make code cleanup.
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    14   */
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    15  
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    16  #ifndef __RT_SERVICE_H__
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    17  #define __RT_SERVICE_H__
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    18  
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    19  #ifdef __cplusplus
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    20  extern "C" {
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    21  #endif
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    22  
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    23  /**
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    24   * @addtogroup KernelService
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    25   */
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    26  
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    27  /**@{*/
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    28  
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    29  /**
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    30   * rt_container_of - return the member address of ptr, if the type of ptr is the
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    31   * struct type.
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    32   */
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    33  #define rt_container_of(ptr, type, member) \ 
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    34      ((type *)((char *)(ptr) - (unsigned long)(&((type *)0)->member)))
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    35  
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    36  
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    37  /**
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    38   * @brief initialize a list object
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    39   */
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    40  #define RT_LIST_OBJECT_INIT(object) { &(object), &(object) }
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    41  
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    42  /**
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    43   * @brief initialize a list
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    44   *
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    45   * @param l list to be initialized
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    46   */
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    47  rt_inline void rt_list_init(rt_list_t *l)
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    48  {
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    49      l->next = l->prev = l;
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    50  }
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    51  
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    52  /**
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    53   * @brief insert a node after a list
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    54   *
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    55   * @param l list to insert it
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    56   * @param n new node to be inserted
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    57   */
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    58  rt_inline void rt_list_insert_after(rt_list_t *l, rt_list_t *n)
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    59  {
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    60      l->next->prev = n;
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    61      n->next = l->next;
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    62  
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    63      l->next = n;
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    64      n->prev = l;
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    65  }
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    66  
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    67  /**
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    68   * @brief insert a node before a list
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    69   *
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    70   * @param n new node to be inserted
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    71   * @param l list to insert it
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    72   */
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    73  rt_inline void rt_list_insert_before(rt_list_t *l, rt_list_t *n)
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    74  {
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    75      l->prev->next = n;
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    76      n->prev = l->prev;
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    77  
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    78      l->prev = n;
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    79      n->next = l;
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    80  }
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    81  
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    82  /**
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    83   * @brief remove node from list.
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    84   * @param n the node to remove from the list.
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    85   */
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    86  rt_inline void rt_list_remove(rt_list_t *n)
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    87  {
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    88      n->next->prev = n->prev;
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    89      n->prev->next = n->next;
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    90  
-; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    91      n->next = n->prev = n;
-	st.a	[a2],a2
-.L261:
-	call	rt_timer_stop
-.L402:
-	mov	d4,d15
-	call	rt_hw_interrupt_enable
-.L520:
-	mov.aa	a4,a12
-.L403:
-	call	rt_schedule_insert_thread
-.L404:
-	ld.a	a15,rt_thread_resume_hook
-	jz.a	a15,.L41
-	mov.aa	a4,a12
-.L405:
-	calli	a15
-.L41:
-	mov	d2,#0
-	ret
-.L248:
-	
-__rt_thread_resume_function_end:
-	.size	rt_thread_resume,__rt_thread_resume_function_end-rt_thread_resume
-.L147:
-	; End of function
-	
-	.sdecl	'.text.thread.rt_thread_timeout',code,cluster('rt_thread_timeout')
-	.sect	'.text.thread.rt_thread_timeout'
-	.align	2
-	
-	.global	rt_thread_timeout
-
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   851  RTM_EXPORT(rt_thread_resume);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   852  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   853  /**
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   854   * This function is the timeout function for thread, normally which is invoked
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   855   * when thread is timeout to wait some resource.
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   856   *
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   857   * @param parameter the parameter of thread timeout function
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   858   */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   859  void rt_thread_timeout(void *parameter)
-; Function rt_thread_timeout
-.L81:
-rt_thread_timeout:	.type	func
-
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   860  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   861      struct rt_thread *thread;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   862  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   863      thread = (struct rt_thread *)parameter;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   864  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   865      /* thread check */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   866      RT_ASSERT(thread != RT_NULL);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   867      RT_ASSERT((thread->stat & RT_THREAD_STAT_MASK) == RT_THREAD_SUSPEND);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   868      RT_ASSERT(rt_object_get_type((rt_object_t)thread) == RT_Object_Class_Thread);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   869  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   870      /* set error number */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   871      thread->error = -RT_ETIMEOUT;
-	mov	d15,#-2
-	st.w	[a4]48,d15
-.L525:
-
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   872  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   873      /* remove from suspend list */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   874      rt_list_remove(&(thread->tlist));
-	lea	a2,[a4]20
+.L264:
+	lea	a4,[a12]84
 .L265:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     1  /*
@@ -2423,43 +2312,201 @@ rt_thread_timeout:	.type	func
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    86  rt_inline void rt_list_remove(rt_list_t *n)
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    87  {
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    88      n->next->prev = n->prev;
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    89      n->prev->next = n->next;
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    90  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    91      n->next = n->prev = n;
+	st.a	[a2],a2
+.L266:
+	call	rt_timer_stop
+.L413:
+	mov	d4,d15
+	call	rt_cpus_unlock
+.L535:
+	mov.aa	a4,a12
+.L414:
+	call	rt_schedule_insert_thread
+.L415:
+	ld.a	a15,rt_thread_resume_hook
+	jz.a	a15,.L44
+	mov.aa	a4,a12
+.L416:
+	calli	a15
+.L44:
+	mov	d2,#0
+	ret
+.L253:
+	
+__rt_thread_resume_function_end:
+	.size	rt_thread_resume,__rt_thread_resume_function_end-rt_thread_resume
+.L150:
+	; End of function
+	
+	.sdecl	'.text.thread.rt_thread_timeout',code,cluster('rt_thread_timeout')
+	.sect	'.text.thread.rt_thread_timeout'
+	.align	2
+	
+	.global	rt_thread_timeout
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   851  RTM_EXPORT(rt_thread_resume);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   852  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   853  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   854   * This function is the timeout function for thread, normally which is invoked
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   855   * when thread is timeout to wait some resource.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   856   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   857   * @param parameter the parameter of thread timeout function
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   858   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   859  void rt_thread_timeout(void *parameter)
+; Function rt_thread_timeout
+.L84:
+rt_thread_timeout:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   860  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   861      struct rt_thread *thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   862  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   863      thread = (struct rt_thread *)parameter;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   864  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   865      /* thread check */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   866      RT_ASSERT(thread != RT_NULL);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   867      RT_ASSERT((thread->stat & RT_THREAD_STAT_MASK) == RT_THREAD_SUSPEND);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   868      RT_ASSERT(rt_object_get_type((rt_object_t)thread) == RT_Object_Class_Thread);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   869  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   870      /* set error number */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   871      thread->error = -RT_ETIMEOUT;
+	mov	d15,#-2
+	st.w	[a4]48,d15
+.L540:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   872  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   873      /* remove from suspend list */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   874      rt_list_remove(&(thread->tlist));
+	lea	a2,[a4]20
+.L270:
+
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     1  /*
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     3   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     4   * SPDX-License-Identifier: Apache-2.0
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     5   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     6   * Change Logs:
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     7   * Date           Author       Notes
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     8   * 2006-03-16     Bernard      the first version
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	     9   * 2006-09-07     Bernard      move the kservice APIs to rtthread.h
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    10   * 2007-06-27     Bernard      fix the rt_list_remove bug
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    11   * 2012-03-22     Bernard      rename kservice.h to rtservice.h
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    12   * 2017-11-15     JasonJia     Modify rt_slist_foreach to rt_slist_for_each_entry.
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    13   *                             Make code cleanup.
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    14   */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    15  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    16  #ifndef __RT_SERVICE_H__
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    17  #define __RT_SERVICE_H__
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    18  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    19  #ifdef __cplusplus
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    20  extern "C" {
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    21  #endif
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    22  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    23  /**
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    24   * @addtogroup KernelService
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    25   */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    26  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    27  /**@{*/
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    28  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    29  /**
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    30   * rt_container_of - return the member address of ptr, if the type of ptr is the
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    31   * struct type.
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    32   */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    33  #define rt_container_of(ptr, type, member) \ 
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    34      ((type *)((char *)(ptr) - (unsigned long)(&((type *)0)->member)))
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    35  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    36  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    37  /**
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    38   * @brief initialize a list object
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    39   */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    40  #define RT_LIST_OBJECT_INIT(object) { &(object), &(object) }
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    41  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    42  /**
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    43   * @brief initialize a list
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    44   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    45   * @param l list to be initialized
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    46   */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    47  rt_inline void rt_list_init(rt_list_t *l)
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    48  {
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    49      l->next = l->prev = l;
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    50  }
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    51  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    52  /**
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    53   * @brief insert a node after a list
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    54   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    55   * @param l list to insert it
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    56   * @param n new node to be inserted
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    57   */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    58  rt_inline void rt_list_insert_after(rt_list_t *l, rt_list_t *n)
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    59  {
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    60      l->next->prev = n;
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    61      n->next = l->next;
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    62  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    63      l->next = n;
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    64      n->prev = l;
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    65  }
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    66  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    67  /**
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    68   * @brief insert a node before a list
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    69   *
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    70   * @param n new node to be inserted
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    71   * @param l list to insert it
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    72   */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    73  rt_inline void rt_list_insert_before(rt_list_t *l, rt_list_t *n)
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    74  {
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    75      l->prev->next = n;
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    76      n->prev = l->prev;
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    77  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    78      l->prev = n;
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    79      n->next = l;
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    80  }
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    81  
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    82  /**
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    83   * @brief remove node from list.
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    84   * @param n the node to remove from the list.
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    85   */
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    86  rt_inline void rt_list_remove(rt_list_t *n)
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    87  {
+; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    88      n->next->prev = n->prev;
 	ld.a	a5,[a2]
-.L526:
+.L541:
 	ld.a	a15,[a4]24
-.L527:
+.L542:
 	st.a	[a5]4,a15
-.L528:
+.L543:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    89      n->prev->next = n->next;
 	ld.a	a15,[a4]24
-.L529:
+.L544:
 	ld.a	a5,[a2]
-.L530:
+.L545:
 	st.a	[a15],a5
-.L531:
+.L546:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    90  
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    91      n->next = n->prev = n;
 	st.a	[a4]24,a2
-.L532:
+.L547:
 	st.a	[a2],a2
-.L266:
+.L271:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   875  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   876      /* insert to schedule ready list */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   877      rt_schedule_insert_thread(thread);
 	call	rt_schedule_insert_thread
-.L406:
+.L417:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   878  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   879      /* do schedule */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   880      rt_schedule();
 	j	rt_schedule
-.L262:
+.L267:
 	
 __rt_thread_timeout_function_end:
 	.size	rt_thread_timeout,__rt_thread_timeout_function_end-rt_thread_timeout
-.L152:
+.L155:
 	; End of function
 	
 	.sdecl	'.text.thread.rt_thread_find',code,cluster('rt_thread_find')
@@ -2482,18 +2529,18 @@ __rt_thread_timeout_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   892   */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   893  rt_thread_t rt_thread_find(char *name)
 ; Function rt_thread_find
-.L83:
+.L86:
 rt_thread_find:	.type	func
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   894  {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   895      return (rt_thread_t)rt_object_find(name, RT_Object_Class_Thread);
 	mov	d4,#1
 	j	rt_object_find
-.L214:
+.L219:
 	
 __rt_thread_find_function_end:
 	.size	rt_thread_find,__rt_thread_find_function_end-rt_thread_find
-.L107:
+.L110:
 	; End of function
 	
 	.sdecl	'.zbss.thread.rt_thread_suspend_hook',data,cluster('rt_thread_suspend_hook')
@@ -2516,24 +2563,27 @@ rt_thread_inited_hook:	.type	object
 	.space	4
 	.calls	'__INDIRECT__','rt_thread_timeout'
 	.calls	'__INDIRECT__','rt_thread_exit'
-	.calls	'_thread_cleanup_execute','rt_hw_interrupt_disable'
+	.calls	'_thread_cleanup_execute','rt_cpus_lock'
 	.calls	'_thread_cleanup_execute','__INDIRECT__'
-	.calls	'_thread_cleanup_execute','rt_hw_interrupt_enable'
+	.calls	'_thread_cleanup_execute','rt_cpus_unlock'
 	.calls	'rt_thread_exit','rt_thread_self'
-	.calls	'rt_thread_exit','rt_hw_interrupt_disable'
+	.calls	'rt_thread_exit','rt_cpus_lock'
 	.calls	'rt_thread_exit','_thread_cleanup_execute'
 	.calls	'rt_thread_exit','rt_schedule_remove_thread'
 	.calls	'rt_thread_exit','rt_timer_detach'
 	.calls	'rt_thread_exit','rt_object_is_systemobject'
 	.calls	'rt_thread_exit','rt_object_detach'
 	.calls	'rt_thread_exit','rt_schedule'
-	.calls	'rt_thread_exit','rt_hw_interrupt_enable'
+	.calls	'rt_thread_exit','rt_cpus_unlock'
 	.calls	'_rt_thread_init','rt_memset'
 	.calls	'_rt_thread_init','rt_hw_stack_init'
 	.calls	'_rt_thread_init','rt_timer_init'
 	.calls	'_rt_thread_init','__INDIRECT__'
 	.calls	'rt_thread_init','rt_object_init'
 	.calls	'rt_thread_init','_rt_thread_init'
+	.calls	'rt_thread_self','rt_hw_local_irq_disable'
+	.calls	'rt_thread_self','rt_cpu_self'
+	.calls	'rt_thread_self','rt_hw_local_irq_enable'
 	.calls	'rt_thread_startup','rt_thread_resume'
 	.calls	'rt_thread_startup','rt_thread_self'
 	.calls	'rt_thread_startup','rt_schedule'
@@ -2542,43 +2592,43 @@ rt_thread_inited_hook:	.type	object
 	.calls	'rt_thread_detach','rt_timer_detach'
 	.calls	'rt_thread_detach','rt_object_detach'
 	.calls	'rt_thread_yield','rt_thread_self'
-	.calls	'rt_thread_yield','rt_hw_interrupt_disable'
+	.calls	'rt_thread_yield','rt_cpus_lock'
 	.calls	'rt_thread_yield','rt_schedule'
-	.calls	'rt_thread_yield','rt_hw_interrupt_enable'
+	.calls	'rt_thread_yield','rt_cpus_unlock'
 	.calls	'rt_thread_sleep','rt_thread_self'
-	.calls	'rt_thread_sleep','rt_hw_interrupt_disable'
+	.calls	'rt_thread_sleep','rt_cpus_lock'
 	.calls	'rt_thread_sleep','rt_thread_suspend'
 	.calls	'rt_thread_sleep','rt_timer_control'
 	.calls	'rt_thread_sleep','rt_timer_start'
-	.calls	'rt_thread_sleep','rt_hw_interrupt_enable'
+	.calls	'rt_thread_sleep','rt_cpus_unlock'
 	.calls	'rt_thread_sleep','rt_schedule'
 	.calls	'rt_thread_delay','rt_thread_sleep'
 	.calls	'rt_thread_delay_until','rt_thread_self'
-	.calls	'rt_thread_delay_until','rt_hw_interrupt_disable'
+	.calls	'rt_thread_delay_until','rt_cpus_lock'
 	.calls	'rt_thread_delay_until','rt_tick_get'
 	.calls	'rt_thread_delay_until','rt_thread_suspend'
 	.calls	'rt_thread_delay_until','rt_timer_control'
 	.calls	'rt_thread_delay_until','rt_timer_start'
-	.calls	'rt_thread_delay_until','rt_hw_interrupt_enable'
+	.calls	'rt_thread_delay_until','rt_cpus_unlock'
 	.calls	'rt_thread_delay_until','rt_schedule'
 	.calls	'rt_thread_mdelay','rt_tick_from_millisecond'
 	.calls	'rt_thread_mdelay','rt_thread_sleep'
-	.calls	'rt_thread_control','rt_hw_interrupt_disable'
+	.calls	'rt_thread_control','rt_cpus_lock'
 	.calls	'rt_thread_control','rt_schedule_remove_thread'
 	.calls	'rt_thread_control','rt_schedule_insert_thread'
-	.calls	'rt_thread_control','rt_hw_interrupt_enable'
+	.calls	'rt_thread_control','rt_cpus_unlock'
 	.calls	'rt_thread_control','rt_thread_startup'
 	.calls	'rt_thread_control','rt_object_is_systemobject'
 	.calls	'rt_thread_control','rt_thread_detach'
 	.calls	'rt_thread_control','rt_schedule'
-	.calls	'rt_thread_suspend','rt_hw_interrupt_disable'
+	.calls	'rt_thread_suspend','rt_cpus_lock'
 	.calls	'rt_thread_suspend','rt_schedule_remove_thread'
 	.calls	'rt_thread_suspend','rt_timer_stop'
-	.calls	'rt_thread_suspend','rt_hw_interrupt_enable'
+	.calls	'rt_thread_suspend','rt_cpus_unlock'
 	.calls	'rt_thread_suspend','__INDIRECT__'
-	.calls	'rt_thread_resume','rt_hw_interrupt_disable'
+	.calls	'rt_thread_resume','rt_cpus_lock'
 	.calls	'rt_thread_resume','rt_timer_stop'
-	.calls	'rt_thread_resume','rt_hw_interrupt_enable'
+	.calls	'rt_thread_resume','rt_cpus_unlock'
 	.calls	'rt_thread_resume','rt_schedule_insert_thread'
 	.calls	'rt_thread_resume','__INDIRECT__'
 	.calls	'rt_thread_timeout','rt_schedule_insert_thread'
@@ -2617,30 +2667,32 @@ rt_thread_inited_hook:	.type	object
 	.extern	rt_schedule
 	.extern	rt_schedule_insert_thread
 	.extern	rt_schedule_remove_thread
+	.extern	rt_cpus_lock
+	.extern	rt_cpus_unlock
+	.extern	rt_cpu_self
 	.extern	rt_memset
 	.extern	rt_hw_stack_init
-	.extern	rt_hw_interrupt_disable
-	.extern	rt_hw_interrupt_enable
+	.extern	rt_hw_local_irq_disable
+	.extern	rt_hw_local_irq_enable
 	.extern	rt_thread_defunct
-	.extern	rt_current_thread
 	.extern	__INDIRECT__
 	.calls	'rt_thread_find','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L85:
-	.word	3250
+.L88:
+	.word	3731
 	.half	3
-	.word	.L86
+	.word	.L89
 	.byte	4
-.L84:
+.L87:
 	.byte	1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L87
+	.word	.L90
 	.byte	2
-	.word	.L407-.L85
-.L407:
+	.word	.L418-.L88
+.L418:
 	.byte	3
 	.byte	'rt_list_node',0,2,229,2,8,8,4
 	.byte	'next',0
@@ -2650,38 +2702,38 @@ rt_thread_inited_hook:	.type	object
 	.word	170
 	.byte	4,2,35,4,0,2
 	.word	175
-.L299:
+.L304:
 	.byte	5
 	.byte	'rt_list_init',0,3,1,47,16,1,1
-.L302:
+.L307:
 	.byte	6
 	.byte	'l',0,1,47,40
 	.word	223
-.L304:
+.L309:
 	.byte	7,0
-.L281:
+.L286:
 	.byte	5
 	.byte	'rt_list_insert_after',0,3,1,58,16,1,1
-.L283:
+.L288:
 	.byte	6
 	.byte	'l',0,1,58,48
 	.word	223
-.L285:
+.L290:
 	.byte	6
 	.byte	'n',0,1,58,62
 	.word	223
-.L287:
+.L292:
 	.byte	7,0
-.L251:
+.L256:
 	.byte	5
 	.byte	'rt_list_remove',0,3,1,86,16,1,1
-.L254:
+.L259:
 	.byte	6
 	.byte	'n',0,1,86,42
 	.word	223
-.L256:
+.L261:
 	.byte	7,0
-.L235:
+.L240:
 	.byte	8
 	.byte	'int',0,4,5,9
 	.word	344
@@ -2689,7 +2741,7 @@ rt_thread_inited_hook:	.type	object
 	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,11
 	.word	351
 	.byte	0
-.L205:
+.L208:
 	.byte	8
 	.byte	'unsigned int',0,4,7,12
 	.word	393
@@ -2725,7 +2777,7 @@ rt_thread_inited_hook:	.type	object
 	.byte	'char',0,1,6,17,8
 	.word	512
 	.byte	18,7,0
-.L207:
+.L210:
 	.byte	8
 	.byte	'unsigned char',0,1,8,3
 	.byte	'rt_object',0,2,131,3,8,20,4
@@ -2759,7 +2811,7 @@ rt_thread_inited_hook:	.type	object
 	.byte	'RT_Object_Class_Unknown',0,12,20
 	.byte	'RT_Object_Class_Static',0,128,1,0,9
 	.word	512
-.L198:
+.L201:
 	.byte	2
 	.word	1011
 	.byte	21
@@ -2809,13 +2861,13 @@ rt_thread_inited_hook:	.type	object
 	.word	175
 	.byte	18,0,0,25
 	.byte	'void',0
-.L202:
+.L205:
 	.byte	2
 	.word	1343
 	.byte	26,1,1,11
 	.word	1349
 	.byte	0
-.L200:
+.L203:
 	.byte	2
 	.word	1354
 	.byte	3
@@ -2863,7 +2915,7 @@ rt_thread_inited_hook:	.type	object
 	.word	529
 	.byte	0,2
 	.word	1368
-.L194:
+.L197:
 	.byte	8
 	.byte	'long int',0,4,5,23
 	.byte	'rt_timer_detach',0,3,92,10
@@ -2896,14 +2948,15 @@ rt_thread_inited_hook:	.type	object
 	.byte	'arg',0,3,101,60
 	.word	1349
 	.byte	0,8
+	.byte	'unsigned short int',0,2,7,8
 	.byte	'unsigned long int',0,4,7,26,1,1,11
-	.word	.L196-.L85
+	.word	.L199-.L88
 	.byte	0
-.L269:
+.L274:
 	.byte	2
-	.word	1862
+	.word	1884
 	.byte	3
-	.byte	'rt_thread',0,2,213,4,8,128,1,4
+	.byte	'rt_thread',0,2,213,4,8,136,1,4
 	.byte	'name',0
 	.word	520
 	.byte	8,2,35,0,4
@@ -2940,61 +2993,112 @@ rt_thread_inited_hook:	.type	object
 	.byte	'stat',0
 	.word	529
 	.byte	1,2,35,52,4
-	.byte	'current_priority',0
+	.byte	'bind_cpu',0
 	.word	529
 	.byte	1,2,35,53,4
-	.byte	'init_priority',0
+	.byte	'oncpu',0
 	.word	529
 	.byte	1,2,35,54,4
+	.byte	'scheduler_lock_nest',0
+	.word	1841
+	.byte	2,2,35,56,4
+	.byte	'cpus_lock_nest',0
+	.word	1841
+	.byte	2,2,35,58,4
+	.byte	'critical_lock_nest',0
+	.word	1841
+	.byte	2,2,35,60,4
+	.byte	'current_priority',0
+	.word	529
+	.byte	1,2,35,62,4
+	.byte	'init_priority',0
+	.word	529
+	.byte	1,2,35,63,4
 	.byte	'number_mask',0
 	.word	393
-	.byte	4,2,35,56,4
+	.byte	4,2,35,64,4
 	.byte	'event_set',0
 	.word	393
-	.byte	4,2,35,60,4
+	.byte	4,2,35,68,4
 	.byte	'event_info',0
 	.word	529
-	.byte	1,2,35,64,4
+	.byte	1,2,35,72,4
 	.byte	'init_tick',0
-	.word	1841
-	.byte	4,2,35,66,4
+	.word	1863
+	.byte	4,2,35,74,4
 	.byte	'remaining_tick',0
-	.word	1841
-	.byte	4,2,35,70,4
+	.word	1863
+	.byte	4,2,35,78,4
 	.byte	'thread_timer',0
 	.word	1368
-	.byte	44,2,35,76,4
+	.byte	44,2,35,84,4
 	.byte	'cleanup',0
-	.word	1871
-	.byte	4,2,35,120,4
+	.word	1893
+	.byte	4,3,35,128,1,4
 	.byte	'user_data',0
-	.word	1841
-	.byte	4,2,35,124,0
-.L196:
+	.word	1863
+	.byte	4,3,35,132,1,0
+.L199:
 	.byte	2
-	.word	1876
+	.word	1898
 	.byte	2
-	.word	1876
-.L211:
+	.word	1898
+.L214:
 	.byte	22
 	.byte	'rt_thread_t',0,2,160,5,27
-	.word	2291
-.L215:
+	.word	2429
+.L220:
 	.byte	2
 	.word	512
-.L225:
+.L230:
 	.byte	2
 	.word	393
 	.byte	27
 	.byte	'rt_schedule',0,3,180,1,6,1,1,1,1,21
 	.byte	'rt_schedule_insert_thread',0,3,181,1,6,1,1,1,1,6
 	.byte	'thread',0,3,181,1,50
-	.word	2291
+	.word	2429
 	.byte	0,21
 	.byte	'rt_schedule_remove_thread',0,3,182,1,6,1,1,1,1,6
 	.byte	'thread',0,3,182,1,50
-	.word	2291
-	.byte	0,23
+	.word	2429
+	.byte	0,24
+	.byte	'rt_cpus_lock',0,3,224,3,11
+	.word	1635
+	.byte	1,1,1,1,21
+	.byte	'rt_cpus_unlock',0,3,225,3,6,1,1,1,1,6
+	.byte	'level',0,3,225,3,31
+	.word	1635
+	.byte	0,17,128,2
+	.word	175
+	.byte	18,31,0,3
+	.byte	'rt_cpu',0,2,189,4,8,144,2,4
+	.byte	'current_thread',0
+	.word	2429
+	.byte	4,2,35,0,4
+	.byte	'irq_nest',0
+	.word	1841
+	.byte	2,2,35,4,4
+	.byte	'irq_switch_flag',0
+	.word	529
+	.byte	1,2,35,6,4
+	.byte	'current_priority',0
+	.word	529
+	.byte	1,2,35,7,4
+	.byte	'priority_table',0
+	.word	2661
+	.byte	128,2,2,35,8,4
+	.byte	'priority_group',0
+	.word	393
+	.byte	4,3,35,136,2,4
+	.byte	'tick',0
+	.word	393
+	.byte	4,3,35,140,2,0,2
+	.word	2671
+	.byte	24
+	.byte	'rt_cpu_self',0,3,227,3,16
+	.word	2844
+	.byte	1,1,1,1,23
 	.byte	'rt_memset',0,3,158,4,7
 	.word	1349
 	.byte	1,1,1,1,6
@@ -3005,12 +3109,12 @@ rt_thread_inited_hook:	.type	object
 	.word	344
 	.byte	6
 	.byte	'n',0,3,158,4,46
-	.word	1841
+	.word	1863
 	.byte	0,2
 	.word	529
 	.byte	23
 	.byte	'rt_hw_stack_init',0,4,65,13
-	.word	2516
+	.word	2933
 	.byte	1,1,1,1,6
 	.byte	'entry',0,4,65,42
 	.word	1349
@@ -3019,26 +3123,26 @@ rt_thread_inited_hook:	.type	object
 	.word	1349
 	.byte	6
 	.byte	'stack_addr',0,4,67,42
-	.word	2516
+	.word	2933
 	.byte	6
 	.byte	'exit',0,4,68,42
 	.word	1349
-	.byte	0,24
-	.byte	'rt_hw_interrupt_disable',0,4,105,11
-	.word	1635
-	.byte	1,1,1,1,21
-	.byte	'rt_hw_interrupt_enable',0,4,106,6,1,1,1,1,6
-	.byte	'level',0,4,106,39
-	.word	1635
 	.byte	0,28
+	.byte	'rt_hw_local_irq_disable',0,4,98,11
+	.word	1635
+	.byte	1,1,1,21
+	.byte	'rt_hw_local_irq_enable',0,4,99,6,1,1,1,1,6
+	.byte	'level',0,4,99,39
+	.word	1635
+	.byte	0,29
 	.byte	'__INDIRECT__',0,5,1,1,1,1,1,22
 	.byte	'__size_t',0,5,1,1
 	.word	393
-	.byte	29,1,2
-	.word	2734
+	.byte	30,1,2
+	.word	3150
 	.byte	22
 	.byte	'__codeptr',0,5,1,1
-	.word	2736
+	.word	3152
 	.byte	22
 	.byte	'__intptr_t',0,5,1,1
 	.word	344
@@ -3051,10 +3155,9 @@ rt_thread_inited_hook:	.type	object
 	.byte	22
 	.byte	'rt_uint8_t',0,2,69,41
 	.word	529
-	.byte	8
-	.byte	'unsigned short int',0,2,7,22
+	.byte	22
 	.byte	'rt_uint16_t',0,2,70,41
-	.word	2836
+	.word	1841
 	.byte	22
 	.byte	'rt_uint32_t',0,2,71,41
 	.word	393
@@ -3066,7 +3169,7 @@ rt_thread_inited_hook:	.type	object
 	.word	1635
 	.byte	22
 	.byte	'rt_ubase_t',0,2,84,41
-	.word	1841
+	.word	1863
 	.byte	22
 	.byte	'rt_err_t',0,2,86,41
 	.word	1635
@@ -3075,29 +3178,29 @@ rt_thread_inited_hook:	.type	object
 	.word	393
 	.byte	22
 	.byte	'rt_size_t',0,2,90,41
-	.word	1841
+	.word	1863
 	.byte	22
 	.byte	'rt_list_t',0,2,234,2,29
 	.word	175
 	.byte	2
-	.word	.L408-.L85
-.L408:
+	.word	.L419-.L88
+.L419:
 	.byte	3
 	.byte	'rt_slist_node',0,2,239,2,8,4,4
 	.byte	'next',0
-	.word	3025
+	.word	3419
 	.byte	4,2,35,0,0,22
 	.byte	'rt_slist_t',0,2,243,2,30
-	.word	3030
+	.word	3424
 	.byte	22
 	.byte	'uint16_t',0,6,246,1,41
-	.word	2836
+	.word	1841
 	.byte	22
 	.byte	'uint32_t',0,6,254,1,41
 	.word	393
 	.byte	22
 	.byte	'time_t',0,7,44,25
-	.word	1841
+	.word	1863
 	.byte	22
 	.byte	'fd_mask',0,8,39,17
 	.word	1635
@@ -3106,20 +3209,33 @@ rt_thread_inited_hook:	.type	object
 	.byte	11
 	.word	1349
 	.byte	0,2
-	.word	3152
+	.word	3546
 	.byte	22
 	.byte	'rt_isr_handler_t',0,4,73,16
-	.word	3166
-	.byte	30
+	.word	3560
+	.byte	3
+	.byte	'__arch_tickets',0,4,140,1,12,4,4
+	.byte	'owner',0
+	.word	1841
+	.byte	2,2,35,0,4
+	.byte	'next',0
+	.word	1841
+	.byte	2,2,35,2,0,31,4,138,1,9,4,4
+	.byte	'slock',0
+	.word	1863
+	.byte	4,2,35,0,4
+	.byte	'tickets',0
+	.word	3590
+	.byte	4,2,35,0,0,22
+	.byte	'rt_hw_spinlock_t',0,4,144,1,3
+	.word	3641
+	.byte	32
 	.byte	'rt_thread_defunct',0,5,35,18
 	.word	175
-	.byte	1,1,30
-	.byte	'rt_current_thread',0,5,174,2,24
-	.word	2301
 	.byte	1,1,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L86:
+.L89:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,15,0,73,19,0,0,3,19,1,3,8,58,15,59,15,57,15,11,15,0,0
 	.byte	4,13,0,3,8,73,19,11,15,56,9,0,0,5,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,6,5,0,3,8,58,15,59
 	.byte	15,57,15,73,19,0,0,7,11,0,0,0,8,36,0,3,8,11,15,62,15,0,0,9,38,0,73,19,0,0,10,46,1,3,8,54,15,39,12,63,12
@@ -3128,16 +3244,17 @@ rt_thread_inited_hook:	.type	object
 	.byte	59,15,57,15,11,15,0,0,20,40,0,3,8,28,13,0,0,21,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0
 	.byte	22,22,0,3,8,58,15,59,15,57,15,73,19,0,0,23,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0
 	.byte	0,24,46,0,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,25,59,0,3,8,0,0,26,21,1,54,15,39,12
-	.byte	0,0,27,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,28,46,0,3,8,58,15,59,15,57,15,54,15,63,12
-	.byte	60,12,0,0,29,21,0,54,15,0,0,30,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,0
+	.byte	0,0,27,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,28,46,0,3,8,58,15,59,15,57,15,73,19,54,15
+	.byte	63,12,60,12,0,0,29,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60,12,0,0,30,21,0,54,15,0,0,31,23,1,58,15,59
+	.byte	15,57,15,11,15,0,0,32,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L87:
-	.word	.L410-.L409
-.L409:
+.L90:
+	.word	.L421-.L420
+.L420:
 	.half	3
-	.word	.L412-.L411
-.L411:
+	.word	.L423-.L422
+.L422:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include',0
 	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0
@@ -3151,1205 +3268,1085 @@ rt_thread_inited_hook:	.type	object
 	.byte	'stdint.h',0,2,0,0
 	.byte	'time.h',0,2,0,0
 	.byte	'libc_fdset.h',0,3,0,0,0
-.L412:
-.L410:
+.L423:
+.L421:
 	.sdecl	'.debug_info',debug,cluster('rt_thread_init')
 	.sect	'.debug_info'
-.L88:
+.L91:
 	.word	394
 	.half	3
-	.word	.L89
+	.word	.L92
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L91,.L90
+	.word	.L94,.L93
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_init',0,1,131,2,10
-	.word	.L194
+	.word	.L197
 	.byte	1,1,1
-	.word	.L57,.L195,.L56
+	.word	.L60,.L198,.L59
 	.byte	4
 	.byte	'thread',0,1,131,2,43
-	.word	.L196,.L197
+	.word	.L199,.L200
 	.byte	4
 	.byte	'name',0,1,132,2,43
-	.word	.L198,.L199
+	.word	.L201,.L202
 	.byte	4
 	.byte	'entry',0,1,133,2,32
-	.word	.L200,.L201
+	.word	.L203,.L204
 	.byte	4
 	.byte	'parameter',0,1,134,2,43
-	.word	.L202,.L203
-	.byte	4
-	.byte	'stack_start',0,1,135,2,43
-	.word	.L202,.L204
-	.byte	4
-	.byte	'stack_size',0,1,136,2,43
 	.word	.L205,.L206
 	.byte	4
+	.byte	'stack_start',0,1,135,2,43
+	.word	.L205,.L207
+	.byte	4
+	.byte	'stack_size',0,1,136,2,43
+	.word	.L208,.L209
+	.byte	4
 	.byte	'priority',0,1,137,2,43
-	.word	.L207,.L208
+	.word	.L210,.L211
 	.byte	4
 	.byte	'tick',0,1,138,2,43
-	.word	.L205,.L209
+	.word	.L208,.L212
 	.byte	5
-	.word	.L57,.L195
+	.word	.L60,.L198
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_init')
 	.sect	'.debug_abbrev'
-.L89:
+.L92:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_init')
 	.sect	'.debug_line'
-.L90:
-	.word	.L414-.L413
-.L413:
+.L93:
+	.word	.L425-.L424
+.L424:
 	.half	3
-	.word	.L416-.L415
-.L415:
+	.word	.L427-.L426
+.L426:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L416:
+.L427:
 	.byte	5,10,7,0,5,2
-	.word	.L57
+	.word	.L60
 	.byte	3,130,2,1,5,41,9
-	.half	.L342-.L57
+	.half	.L347-.L60
 	.byte	3,14,1,5,10,3,114,1,5,65,9
-	.half	.L347-.L342
+	.half	.L352-.L347
 	.byte	3,14,1,5,28,9
-	.half	.L343-.L347
+	.half	.L348-.L352
 	.byte	3,9,1,9
-	.half	.L351-.L343
+	.half	.L356-.L348
 	.byte	3,125,1,9
-	.half	.L417-.L351
+	.half	.L428-.L356
 	.byte	3,3,1,5,1,7,9
-	.half	.L92-.L417
+	.half	.L95-.L428
 	.byte	3,1,0,1,1
-.L414:
+.L425:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_init')
 	.sect	'.debug_ranges'
-.L91:
-	.word	-1,.L57,0,.L92-.L57,0,0
+.L94:
+	.word	-1,.L60,0,.L95-.L60,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_detach')
 	.sect	'.debug_info'
-.L93:
+.L96:
 	.word	247
 	.half	3
-	.word	.L94
+	.word	.L97
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L96,.L95
+	.word	.L99,.L98
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_detach',0,1,231,2,10
-	.word	.L194
+	.word	.L197
 	.byte	1,1,1
-	.word	.L63,.L210,.L62
+	.word	.L66,.L213,.L65
 	.byte	4
 	.byte	'thread',0,1,231,2,39
-	.word	.L211,.L212
+	.word	.L214,.L215
 	.byte	5
-	.word	.L63,.L210
+	.word	.L66,.L213
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_detach')
 	.sect	'.debug_abbrev'
-.L94:
+.L97:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_detach')
 	.sect	'.debug_line'
-.L95:
-	.word	.L419-.L418
-.L418:
+.L98:
+	.word	.L430-.L429
+.L429:
 	.half	3
-	.word	.L421-.L420
-.L420:
+	.word	.L432-.L431
+.L431:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L421:
+.L432:
 	.byte	5,10,7,0,5,2
-	.word	.L63
+	.word	.L66
 	.byte	3,230,2,1,5,16,9
-	.half	.L354-.L63
+	.half	.L363-.L66
 	.byte	3,7,1,5,23,9
-	.half	.L422-.L354
+	.half	.L433-.L363
 	.byte	1,5,5,9
-	.half	.L423-.L422
+	.half	.L434-.L433
 	.byte	1,7,9
-	.half	.L424-.L423
+	.half	.L435-.L434
 	.byte	3,3,1,5,35,7,9
-	.half	.L425-.L424
+	.half	.L436-.L435
 	.byte	3,3,1,5,29,9
-	.half	.L12-.L425
+	.half	.L12-.L436
 	.byte	3,3,1,9
-	.half	.L356-.L12
+	.half	.L365-.L12
 	.byte	3,3,1,5,20,9
-	.half	.L426-.L356
+	.half	.L437-.L365
 	.byte	3,3,1,5,18,1,5,22,9
-	.half	.L427-.L426
+	.half	.L438-.L437
 	.byte	3,3,1,5,12,9
-	.half	.L11-.L427
+	.half	.L11-.L438
 	.byte	3,2,1,5,1,3,1,1,7,9
-	.half	.L97-.L11
+	.half	.L100-.L11
 	.byte	0,1,1
-.L419:
+.L430:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_detach')
 	.sect	'.debug_ranges'
-.L96:
-	.word	-1,.L63,0,.L97-.L63,0,0
+.L99:
+	.word	-1,.L66,0,.L100-.L66,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_self')
 	.sect	'.debug_info'
-.L98:
-	.word	225
+.L101:
+	.word	262
 	.half	3
-	.word	.L99
+	.word	.L102
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L101,.L100
+	.word	.L104,.L103
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_self',0,1,163,2,13
-	.word	.L211
+	.word	.L214
 	.byte	1,1,1
-	.word	.L59,.L213,.L58
+	.word	.L62,.L216,.L61
 	.byte	4
-	.word	.L59,.L213
-	.byte	0,0
+	.word	.L62,.L216
+	.byte	5
+	.byte	'lock',0,1,166,2,15
+	.word	.L197,.L217
+	.byte	5
+	.byte	'self',0,1,167,2,17
+	.word	.L214,.L218
+	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_self')
 	.sect	'.debug_abbrev'
-.L99:
+.L102:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_self')
 	.sect	'.debug_line'
-.L100:
-	.word	.L429-.L428
-.L428:
+.L103:
+	.word	.L440-.L439
+.L439:
 	.half	3
-	.word	.L431-.L430
-.L430:
+	.word	.L442-.L441
+.L441:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L431:
-	.byte	5,12,7,0,5,2
-	.word	.L59
-	.byte	3,175,2,1,5,1,9
-	.half	.L432-.L59
-	.byte	3,2,1,7,9
-	.half	.L102-.L432
+.L442:
+	.byte	5,35,7,0,5,2
+	.word	.L62
+	.byte	3,168,2,1,5,10,9
+	.half	.L358-.L62
+	.byte	1,5,23,3,1,1,5,25,9
+	.half	.L359-.L358
+	.byte	1,5,28,9
+	.half	.L360-.L359
+	.byte	3,1,1,5,5,9
+	.half	.L443-.L360
+	.byte	3,1,1,5,1,9
+	.half	.L361-.L443
+	.byte	3,6,1,7,9
+	.half	.L105-.L361
 	.byte	0,1,1
-.L429:
+.L440:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_self')
 	.sect	'.debug_ranges'
-.L101:
-	.word	-1,.L59,0,.L102-.L59,0,0
+.L104:
+	.word	-1,.L62,0,.L105-.L62,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_find')
 	.sect	'.debug_info'
-.L103:
+.L106:
 	.word	243
 	.half	3
-	.word	.L104
+	.word	.L107
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L106,.L105
+	.word	.L109,.L108
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_find',0,1,253,6,13
-	.word	.L211
+	.word	.L214
 	.byte	1,1,1
-	.word	.L83,.L214,.L82
+	.word	.L86,.L219,.L85
 	.byte	4
 	.byte	'name',0,1,253,6,34
-	.word	.L215,.L216
+	.word	.L220,.L221
 	.byte	5
-	.word	.L83,.L214
+	.word	.L86,.L219
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_find')
 	.sect	'.debug_abbrev'
-.L104:
+.L107:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_find')
 	.sect	'.debug_line'
-.L105:
-	.word	.L434-.L433
-.L433:
+.L108:
+	.word	.L445-.L444
+.L444:
 	.half	3
-	.word	.L436-.L435
-.L435:
+	.word	.L447-.L446
+.L446:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L436:
+.L447:
 	.byte	5,46,7,0,5,2
-	.word	.L83
+	.word	.L86
 	.byte	3,254,6,1,5,1,9
-	.half	.L107-.L83
+	.half	.L110-.L86
 	.byte	3,1,0,1,1
-.L434:
+.L445:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_find')
 	.sect	'.debug_ranges'
-.L106:
-	.word	-1,.L83,0,.L107-.L83,0,0
+.L109:
+	.word	-1,.L86,0,.L110-.L86,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_startup')
 	.sect	'.debug_info'
-.L108:
+.L111:
 	.word	248
 	.half	3
-	.word	.L109
+	.word	.L112
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L111,.L110
+	.word	.L114,.L113
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_startup',0,1,188,2,10
-	.word	.L194
+	.word	.L197
 	.byte	1,1,1
-	.word	.L61,.L217,.L60
+	.word	.L64,.L222,.L63
 	.byte	4
 	.byte	'thread',0,1,188,2,40
-	.word	.L211,.L218
+	.word	.L214,.L223
 	.byte	5
-	.word	.L61,.L217
+	.word	.L64,.L222
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_startup')
 	.sect	'.debug_abbrev'
-.L109:
+.L112:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_startup')
 	.sect	'.debug_line'
-.L110:
-	.word	.L438-.L437
-.L437:
+.L113:
+	.word	.L449-.L448
+.L448:
 	.half	3
-	.word	.L440-.L439
-.L439:
+	.word	.L451-.L450
+.L450:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L440:
+.L451:
 	.byte	5,27,7,0,5,2
-	.word	.L61
+	.word	.L64
 	.byte	3,203,2,1,5,38,3,120,1,5,30,9
-	.half	.L441-.L61
+	.half	.L452-.L64
 	.byte	1,9
-	.half	.L442-.L441
+	.half	.L453-.L452
 	.byte	3,8,1,5,25,1,5,20,9
-	.half	.L443-.L442
+	.half	.L454-.L453
 	.byte	3,6,1,5,18,1,5,22,9
-	.half	.L444-.L443
+	.half	.L455-.L454
 	.byte	3,2,1,5,23,9
-	.half	.L353-.L444
+	.half	.L362-.L455
 	.byte	3,1,1,5,5,9
-	.half	.L445-.L353
+	.half	.L456-.L362
 	.byte	1,5,20,7,9
-	.half	.L446-.L445
+	.half	.L457-.L456
 	.byte	3,3,1,5,12,9
-	.half	.L9-.L446
+	.half	.L9-.L457
 	.byte	3,3,1,5,1,3,1,1,7,9
-	.half	.L112-.L9
+	.half	.L115-.L9
 	.byte	0,1,1
-.L438:
+.L449:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_startup')
 	.sect	'.debug_ranges'
-.L111:
-	.word	-1,.L61,0,.L112-.L61,0,0
+.L114:
+	.word	-1,.L64,0,.L115-.L64,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_yield')
 	.sect	'.debug_info'
-.L113:
+.L116:
 	.word	265
 	.half	3
-	.word	.L114
+	.word	.L117
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L116,.L115
+	.word	.L119,.L118
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_yield',0,1,240,3,10
-	.word	.L194
+	.word	.L197
 	.byte	1,1,1
-	.word	.L65,.L219,.L64
+	.word	.L68,.L224,.L67
 	.byte	4
-	.word	.L65,.L219
+	.word	.L68,.L224
 	.byte	5
 	.byte	'thread',0,1,242,3,23
-	.word	.L196,.L220
+	.word	.L199,.L225
 	.byte	5
 	.byte	'lock',0,1,243,3,15
-	.word	.L194,.L221
+	.word	.L197,.L226
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_yield')
 	.sect	'.debug_abbrev'
-.L114:
+.L117:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_yield')
 	.sect	'.debug_line'
-.L115:
-	.word	.L448-.L447
-.L447:
+.L118:
+	.word	.L459-.L458
+.L458:
 	.half	3
-	.word	.L450-.L449
-.L449:
+	.word	.L461-.L460
+.L460:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L450:
+.L461:
 	.byte	5,28,7,0,5,2
-	.word	.L65
+	.word	.L68
 	.byte	3,244,3,1,5,12,9
-	.half	.L358-.L65
+	.half	.L367-.L68
 	.byte	1,5,35,9
-	.half	.L360-.L358
+	.half	.L369-.L367
 	.byte	3,1,1,5,36,9
-	.half	.L359-.L360
+	.half	.L368-.L369
 	.byte	3,1,1,5,28,9
-	.half	.L451-.L359
+	.half	.L462-.L368
 	.byte	1,5,10,9
-	.half	.L452-.L451
+	.half	.L463-.L462
 	.byte	3,127,1,5,11,9
-	.half	.L362-.L452
+	.half	.L371-.L463
 	.byte	3,2,1,5,18,9
-	.half	.L453-.L362
+	.half	.L464-.L371
 	.byte	1,5,16,9
-	.half	.L454-.L453
+	.half	.L465-.L464
 	.byte	3,1,1,5,28,9
-	.half	.L361-.L454
+	.half	.L370-.L465
 	.byte	3,1,1,5,12,9
-	.half	.L455-.L361
+	.half	.L466-.L370
 	.byte	3,2,1,5,1,3,1,1,7,9
-	.half	.L117-.L455
+	.half	.L120-.L466
 	.byte	0,1,1
-.L448:
+.L459:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_yield')
 	.sect	'.debug_ranges'
-.L116:
-	.word	-1,.L65,0,.L117-.L65,0,0
+.L119:
+	.word	-1,.L68,0,.L120-.L68,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_delay')
 	.sect	'.debug_info'
-.L118:
+.L121:
 	.word	244
 	.half	3
-	.word	.L119
+	.word	.L122
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L121,.L120
+	.word	.L124,.L123
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_delay',0,1,174,4,10
-	.word	.L194
+	.word	.L197
 	.byte	1,1,1
-	.word	.L69,.L222,.L68
+	.word	.L72,.L227,.L71
 	.byte	4
 	.byte	'tick',0,1,174,4,36
-	.word	.L205,.L223
+	.word	.L208,.L228
 	.byte	5
-	.word	.L69,.L222
+	.word	.L72,.L227
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_delay')
 	.sect	'.debug_abbrev'
-.L119:
+.L122:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_delay')
 	.sect	'.debug_line'
-.L120:
-	.word	.L457-.L456
-.L456:
+.L123:
+	.word	.L468-.L467
+.L467:
 	.half	3
-	.word	.L459-.L458
-.L458:
+	.word	.L470-.L469
+.L469:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L459:
+.L470:
 	.byte	5,28,7,0,5,2
-	.word	.L69
+	.word	.L72
 	.byte	3,175,4,1,5,1,7,9
-	.half	.L122-.L69
+	.half	.L125-.L72
 	.byte	3,1,0,1,1
-.L457:
+.L468:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_delay')
 	.sect	'.debug_ranges'
-.L121:
-	.word	-1,.L69,0,.L122-.L69,0,0
+.L124:
+	.word	-1,.L72,0,.L125-.L72,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_delay_until')
 	.sect	'.debug_info'
-.L123:
+.L126:
 	.word	367
 	.half	3
-	.word	.L124
+	.word	.L127
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L126,.L125
+	.word	.L129,.L128
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_delay_until',0,1,188,4,10
-	.word	.L194
+	.word	.L197
 	.byte	1,1,1
-	.word	.L71,.L224,.L70
+	.word	.L74,.L229,.L73
 	.byte	4
 	.byte	'tick',0,1,188,4,43
-	.word	.L225,.L226
+	.word	.L230,.L231
 	.byte	4
 	.byte	'inc_tick',0,1,188,4,59
-	.word	.L205,.L227
+	.word	.L208,.L232
 	.byte	5
-	.word	.L71,.L224
+	.word	.L74,.L229
 	.byte	6
 	.byte	'level',0,1,190,4,24
-	.word	.L194,.L228
+	.word	.L197,.L233
 	.byte	6
 	.byte	'thread',0,1,191,4,23
-	.word	.L196,.L229
+	.word	.L199,.L234
 	.byte	6
 	.byte	'cur_tick',0,1,192,4,15
-	.word	.L205,.L230
+	.word	.L208,.L235
 	.byte	5
-	.word	.L231,.L232
+	.word	.L236,.L237
 	.byte	6
 	.byte	'left_tick',0,1,207,4,19
-	.word	.L205,.L233
+	.word	.L208,.L238
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_delay_until')
 	.sect	'.debug_abbrev'
-.L124:
+.L127:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
 	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_delay_until')
 	.sect	'.debug_line'
-.L125:
-	.word	.L461-.L460
-.L460:
+.L128:
+	.word	.L472-.L471
+.L471:
 	.half	3
-	.word	.L463-.L462
-.L462:
+	.word	.L474-.L473
+.L473:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L463:
+.L474:
 	.byte	5,10,7,0,5,2
-	.word	.L71
+	.word	.L74
 	.byte	3,187,4,1,5,28,9
-	.half	.L372-.L71
+	.half	.L381-.L74
 	.byte	3,9,1,5,12,9
-	.half	.L371-.L372
+	.half	.L380-.L381
 	.byte	1,5,36,9
-	.half	.L375-.L371
+	.half	.L384-.L380
 	.byte	3,5,1,5,11,9
-	.half	.L374-.L375
+	.half	.L383-.L384
 	.byte	1,5,27,3,2,1,5,20,9
-	.half	.L376-.L374
+	.half	.L385-.L383
 	.byte	3,1,1,5,18,9
-	.half	.L464-.L376
+	.half	.L475-.L385
 	.byte	1,5,5,9
-	.half	.L465-.L464
+	.half	.L476-.L475
 	.byte	1,5,15,7,9
-	.half	.L231-.L465
+	.half	.L236-.L476
 	.byte	3,4,1,5,27,9
-	.half	.L466-.L231
+	.half	.L477-.L236
 	.byte	3,1,1,5,19,1,5,27,9
-	.half	.L467-.L466
+	.half	.L478-.L477
 	.byte	3,3,1,5,34,9
-	.half	.L377-.L467
+	.half	.L386-.L478
 	.byte	3,3,1,5,51,9
-	.half	.L468-.L377
+	.half	.L479-.L386
 	.byte	1,5,76,1,5,32,9
-	.half	.L469-.L468
+	.half	.L480-.L479
 	.byte	3,1,1,9
-	.half	.L470-.L469
+	.half	.L481-.L480
 	.byte	3,3,1,5,20,9
-	.half	.L471-.L470
+	.half	.L482-.L481
 	.byte	3,2,1,5,19,9
-	.half	.L472-.L471
+	.half	.L483-.L482
 	.byte	3,3,1,5,9,9
-	.half	.L373-.L472
+	.half	.L382-.L483
 	.byte	1,5,29,7,9
-	.half	.L473-.L373
+	.half	.L484-.L382
 	.byte	3,2,1,5,27,1,5,9,9
-	.half	.L232-.L473
+	.half	.L237-.L484
 	.byte	3,126,1,5,15,9
-	.half	.L18-.L232
+	.half	.L18-.L237
 	.byte	3,7,1,5,32,9
-	.half	.L474-.L18
+	.half	.L485-.L18
 	.byte	3,1,1,5,12,9
-	.half	.L19-.L474
+	.half	.L19-.L485
 	.byte	3,3,1,5,1,3,1,1,7,9
-	.half	.L127-.L19
+	.half	.L130-.L19
 	.byte	0,1,1
-.L461:
+.L472:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_delay_until')
 	.sect	'.debug_ranges'
-.L126:
-	.word	-1,.L71,0,.L127-.L71,0,0
+.L129:
+	.word	-1,.L74,0,.L130-.L74,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_mdelay')
 	.sect	'.debug_info'
-.L128:
+.L131:
 	.word	262
 	.half	3
-	.word	.L129
+	.word	.L132
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L131,.L130
+	.word	.L134,.L133
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_mdelay',0,1,247,4,10
-	.word	.L194
+	.word	.L197
 	.byte	1,1,1
-	.word	.L73,.L234,.L72
+	.word	.L76,.L239,.L75
 	.byte	4
 	.byte	'ms',0,1,247,4,38
-	.word	.L235,.L236
+	.word	.L240,.L241
 	.byte	5
-	.word	.L73,.L234
+	.word	.L76,.L239
 	.byte	6
 	.byte	'tick',0,1,249,4,15
-	.word	.L205,.L237
+	.word	.L208,.L242
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_mdelay')
 	.sect	'.debug_abbrev'
-.L129:
+.L132:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
 	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_mdelay')
 	.sect	'.debug_line'
-.L130:
-	.word	.L476-.L475
-.L475:
+.L133:
+	.word	.L487-.L486
+.L486:
 	.half	3
-	.word	.L478-.L477
-.L477:
+	.word	.L489-.L488
+.L488:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L478:
+.L489:
 	.byte	5,37,7,0,5,2
-	.word	.L73
+	.word	.L76
 	.byte	3,250,4,1,5,28,9
-	.half	.L379-.L73
+	.half	.L388-.L76
 	.byte	3,2,1,5,1,9
-	.half	.L132-.L379
+	.half	.L135-.L388
 	.byte	3,1,0,1,1
-.L476:
+.L487:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_mdelay')
 	.sect	'.debug_ranges'
-.L131:
-	.word	-1,.L73,0,.L132-.L73,0,0
+.L134:
+	.word	-1,.L76,0,.L135-.L76,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_control')
 	.sect	'.debug_info'
-.L133:
-	.word	331
+.L136:
+	.word	340
 	.half	3
-	.word	.L134
+	.word	.L137
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L136,.L135
+	.word	.L139,.L138
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_control',0,1,142,5,10
-	.word	.L194
+	.word	.L197
 	.byte	1,1,1
-	.word	.L75,.L238,.L74
+	.word	.L78,.L243,.L77
 	.byte	4
 	.byte	'thread',0,1,142,5,40
-	.word	.L211,.L239
+	.word	.L214,.L244
 	.byte	4
 	.byte	'cmd',0,1,142,5,52
-	.word	.L235,.L240
+	.word	.L240,.L245
 	.byte	4
 	.byte	'arg',0,1,142,5,63
-	.word	.L202,.L241
+	.word	.L205,.L246
 	.byte	5
-	.word	.L75,.L238
+	.word	.L78,.L243
 	.byte	6
 	.byte	'temp',0,1,144,5,24
-	.word	.L194,.L242
+	.word	.L197,.L247
 	.byte	5
 	.word	.L24,.L26
 	.byte	6
 	.byte	'rt_err',0,1,204,5,22
-	.word	.L194,.L243
-	.byte	0,0,0,0
+	.word	.L197,.L248
+	.byte	0,7
+	.word	.L26,.L27
+	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_control')
 	.sect	'.debug_abbrev'
-.L134:
+.L137:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
-	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_control')
 	.sect	'.debug_line'
-.L135:
-	.word	.L480-.L479
-.L479:
+.L138:
+	.word	.L491-.L490
+.L490:
 	.half	3
-	.word	.L482-.L481
-.L481:
+	.word	.L493-.L492
+.L492:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L482:
+.L493:
 	.byte	5,10,7,0,5,2
-	.word	.L75
+	.word	.L78
 	.byte	3,141,5,1,5,14,9
-	.half	.L383-.L75
+	.half	.L392-.L78
 	.byte	3,55,1,7,9
-	.half	.L483-.L383
+	.half	.L494-.L392
 	.byte	3,5,1,7,9
-	.half	.L484-.L483
-	.byte	3,78,1,5,43,7,9
-	.half	.L485-.L484
-	.byte	3,3,1,5,24,9
-	.half	.L381-.L485
+	.half	.L495-.L494
+	.byte	3,78,1,7,9
+	.half	.L496-.L495
+	.byte	3,197,0,1,7,9
+	.half	.L497-.L496
+	.byte	1,5,43,9
+	.half	.L25-.L497
+	.byte	3,190,127,1,5,24,9
+	.half	.L390-.L25
 	.byte	3,3,1,5,18,9
-	.half	.L486-.L381
+	.half	.L498-.L390
 	.byte	3,125,1,5,31,9
-	.half	.L385-.L486
+	.half	.L394-.L498
 	.byte	3,3,1,5,13,9
-	.half	.L487-.L385
+	.half	.L499-.L394
 	.byte	1,5,43,7,9
-	.half	.L488-.L487
+	.half	.L500-.L499
 	.byte	3,3,1,5,44,9
-	.half	.L384-.L488
+	.half	.L393-.L500
 	.byte	3,3,1,5,42,9
-	.half	.L489-.L384
+	.half	.L501-.L393
 	.byte	1,5,41,9
-	.half	.L490-.L489
+	.half	.L502-.L501
 	.byte	3,8,1,5,37,1,5,43,9
-	.half	.L491-.L490
+	.half	.L503-.L502
 	.byte	3,4,1,5,50,9
-	.half	.L388-.L491
+	.half	.L397-.L503
 	.byte	3,113,1,5,39,9
-	.half	.L27-.L388
+	.half	.L28-.L397
 	.byte	3,27,1,5,44,3,120,1,5,42,9
-	.half	.L492-.L27
+	.half	.L504-.L28
 	.byte	1,5,41,9
-	.half	.L493-.L492
+	.half	.L505-.L504
 	.byte	3,8,1,5,37,1,5,36,9
-	.half	.L28-.L493
+	.half	.L29-.L505
 	.byte	3,5,1,5,13,9
-	.half	.L494-.L28
+	.half	.L506-.L29
 	.byte	3,1,1,5,38,9
-	.half	.L23-.L494
+	.half	.L23-.L506
 	.byte	3,5,1,5,43,7,9
 	.half	.L24-.L23
 	.byte	3,7,1,5,13,9
-	.half	.L389-.L24
+	.half	.L398-.L24
 	.byte	1,5,43,7,9
-	.half	.L495-.L389
+	.half	.L507-.L398
 	.byte	3,2,1,5,24,9
-	.half	.L391-.L495
+	.half	.L400-.L507
 	.byte	1,9
-	.half	.L31-.L391
+	.half	.L32-.L400
 	.byte	3,8,1,5,13,9
-	.half	.L392-.L31
-	.byte	3,1,1,5,1,3,25,1,5,12,7,9
-	.half	.L26-.L392
-	.byte	3,127,1,5,1,3,1,1,7,9
-	.half	.L137-.L26
+	.half	.L401-.L32
+	.byte	3,1,1,5,1,3,25,1,5,24,7,9
+	.half	.L26-.L401
+	.byte	3,111,1,5,31,9
+	.half	.L508-.L26
+	.byte	1,5,13,9
+	.half	.L509-.L508
+	.byte	1,5,24,7,9
+	.half	.L510-.L509
+	.byte	3,3,1,5,1,3,14,1,5,39,7,9
+	.half	.L34-.L510
+	.byte	3,117,1,5,19,9
+	.half	.L402-.L34
+	.byte	1,5,36,9
+	.half	.L403-.L402
+	.byte	3,1,1,5,30,1,5,12,9
+	.half	.L27-.L403
+	.byte	3,9,1,5,1,3,1,1,7,9
+	.half	.L140-.L27
 	.byte	0,1,1
-.L480:
+.L491:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_control')
 	.sect	'.debug_ranges'
-.L136:
-	.word	-1,.L75,0,.L137-.L75,0,0
+.L139:
+	.word	-1,.L78,0,.L140-.L78,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_suspend')
 	.sect	'.debug_info'
-.L138:
+.L141:
 	.word	285
 	.half	3
-	.word	.L139
+	.word	.L142
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L141,.L140
+	.word	.L144,.L143
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_suspend',0,1,255,5,10
-	.word	.L194
+	.word	.L197
 	.byte	1,1,1
-	.word	.L77,.L244,.L76
+	.word	.L80,.L249,.L79
 	.byte	4
 	.byte	'thread',0,1,255,5,40
-	.word	.L211,.L245
+	.word	.L214,.L250
 	.byte	5
-	.word	.L77,.L244
+	.word	.L80,.L249
 	.byte	6
 	.byte	'stat',0,1,129,6,24
-	.word	.L194,.L246
+	.word	.L197,.L251
 	.byte	6
 	.byte	'temp',0,1,130,6,24
-	.word	.L194,.L247
+	.word	.L197,.L252
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_suspend')
 	.sect	'.debug_abbrev'
-.L139:
+.L142:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
 	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_suspend')
 	.sect	'.debug_line'
-.L140:
-	.word	.L497-.L496
-.L496:
+.L143:
+	.word	.L512-.L511
+.L511:
 	.half	3
-	.word	.L499-.L498
-.L498:
+	.word	.L514-.L513
+.L513:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L499:
+.L514:
 	.byte	5,10,7,0,5,2
-	.word	.L77
+	.word	.L80
 	.byte	3,254,5,1,5,18,9
-	.half	.L394-.L77
+	.half	.L405-.L80
 	.byte	3,11,1,5,25,9
-	.half	.L395-.L394
+	.half	.L406-.L405
 	.byte	1,5,9,9
-	.half	.L500-.L395
+	.half	.L515-.L406
 	.byte	3,1,1,5,44,7,9
-	.half	.L501-.L500
+	.half	.L516-.L515
 	.byte	1,5,16,7,9
-	.half	.L502-.L501
+	.half	.L517-.L516
 	.byte	3,4,1,5,1,3,23,1,5,35,7,9
-	.half	.L34-.L502
+	.half	.L37-.L517
 	.byte	3,109,1,5,10,9
-	.half	.L393-.L34
+	.half	.L404-.L37
 	.byte	1,5,31,3,8,1,5,47,9
-	.half	.L397-.L393
+	.half	.L408-.L404
 	.byte	3,1,1,5,27,9
-	.half	.L396-.L397
+	.half	.L407-.L408
 	.byte	3,3,1,5,54,9
-	.half	.L503-.L396
+	.half	.L518-.L407
 	.byte	3,125,1,5,38,9
-	.half	.L504-.L503
+	.half	.L519-.L518
 	.byte	1,5,18,1,5,27,9
-	.half	.L505-.L504
+	.half	.L520-.L519
 	.byte	3,3,1,5,28,9
-	.half	.L506-.L505
+	.half	.L521-.L520
 	.byte	3,3,1,5,5,9
-	.half	.L507-.L506
+	.half	.L522-.L521
 	.byte	3,2,1,5,12,9
-	.half	.L37-.L507
+	.half	.L40-.L522
 	.byte	3,1,1,5,1,3,1,1,7,9
-	.half	.L142-.L37
+	.half	.L145-.L40
 	.byte	0,1,1
-.L497:
+.L512:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_suspend')
 	.sect	'.debug_ranges'
-.L141:
-	.word	-1,.L77,0,.L142-.L77,0,0
+.L144:
+	.word	-1,.L80,0,.L145-.L80,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_resume')
 	.sect	'.debug_info'
-.L143:
+.L146:
 	.word	344
 	.half	3
-	.word	.L144
+	.word	.L147
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L146,.L145
+	.word	.L149,.L148
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_resume',0,1,176,6,10
-	.word	.L194
+	.word	.L197
 	.byte	1,1,1
-	.word	.L79,.L248,.L78
+	.word	.L82,.L253,.L81
 	.byte	4
 	.byte	'thread',0,1,176,6,39
-	.word	.L211,.L249
+	.word	.L214,.L254
 	.byte	5
-	.word	.L79,.L248
+	.word	.L82,.L253
 	.byte	6
 	.byte	'temp',0,1,178,6,24
-	.word	.L194,.L250
+	.word	.L197,.L255
 	.byte	7
-	.word	.L251,.L252,.L253
+	.word	.L256,.L257,.L258
 	.byte	8
-	.word	.L254,.L255
+	.word	.L259,.L260
 	.byte	9
-	.word	.L256,.L257
+	.word	.L261,.L262
 	.byte	0,7
-	.word	.L251,.L258,.L259
+	.word	.L256,.L263,.L264
 	.byte	8
-	.word	.L254,.L255
+	.word	.L259,.L260
 	.byte	0,7
-	.word	.L251,.L260,.L261
+	.word	.L256,.L265,.L266
 	.byte	8
-	.word	.L254,.L255
+	.word	.L259,.L260
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_resume')
 	.sect	'.debug_abbrev'
-.L144:
+.L147:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
 	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,85
 	.byte	6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_resume')
 	.sect	'.debug_line'
-.L145:
-	.word	.L509-.L508
-.L508:
+.L148:
+	.word	.L524-.L523
+.L523:
 	.half	3
-	.word	.L511-.L510
-.L510:
+	.word	.L526-.L525
+.L525:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include',0
 	.byte	0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0
 	.byte	'rtservice.h',0,1,0,0,0
-.L511:
+.L526:
 	.byte	5,10,7,0,5,2
-	.word	.L79
+	.word	.L82
 	.byte	3,175,6,1,5,16,9
-	.half	.L401-.L79
+	.half	.L412-.L82
 	.byte	3,10,1,5,23,9
-	.half	.L512-.L401
+	.half	.L527-.L412
 	.byte	1,5,5,9
-	.half	.L513-.L512
+	.half	.L528-.L527
 	.byte	1,5,16,7,9
-	.half	.L514-.L513
+	.half	.L529-.L528
 	.byte	3,5,1,5,1,3,19,1,5,35,7,9
-	.half	.L39-.L514
+	.half	.L42-.L529
 	.byte	3,113,1,5,28,9
-	.half	.L400-.L39
+	.half	.L411-.L42
 	.byte	3,3,1,4,2,5,6,9
-	.half	.L252-.L400
+	.half	.L257-.L411
 	.byte	3,146,122,1,5,22,9
-	.half	.L515-.L252
+	.half	.L530-.L257
 	.byte	1,4,1,5,10,9
-	.half	.L253-.L515
+	.half	.L258-.L530
 	.byte	3,235,5,1,4,2,5,19,9
-	.half	.L258-.L253
+	.half	.L263-.L258
 	.byte	3,149,122,1,5,6,9
-	.half	.L516-.L258
+	.half	.L531-.L263
 	.byte	3,1,1,5,22,9
-	.half	.L517-.L516
+	.half	.L532-.L531
 	.byte	1,5,19,9
-	.half	.L518-.L517
+	.half	.L533-.L532
 	.byte	1,5,23,9
-	.half	.L519-.L518
+	.half	.L534-.L533
 	.byte	3,2,1,4,1,5,26,9
-	.half	.L259-.L519
+	.half	.L264-.L534
 	.byte	3,237,5,1,4,2,5,13,9
-	.half	.L260-.L259
+	.half	.L265-.L264
 	.byte	3,147,122,1,4,1,5,26,9
-	.half	.L261-.L260
+	.half	.L266-.L265
 	.byte	3,237,5,1,5,28,9
-	.half	.L402-.L261
+	.half	.L413-.L266
 	.byte	3,3,1,5,31,9
-	.half	.L520-.L402
+	.half	.L535-.L413
 	.byte	3,3,1,5,5,9
-	.half	.L404-.L520
+	.half	.L415-.L535
 	.byte	3,2,1,5,12,9
-	.half	.L41-.L404
+	.half	.L44-.L415
 	.byte	3,1,1,5,1,3,1,1,7,9
-	.half	.L147-.L41
+	.half	.L150-.L44
 	.byte	0,1,1
-.L509:
+.L524:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_resume')
 	.sect	'.debug_ranges'
-.L146:
-	.word	-1,.L79,0,.L147-.L79,0,0
-.L257:
-	.word	-1,.L79,.L252-.L79,.L253-.L79,.L258-.L79,.L259-.L79,.L260-.L79,.L261-.L79,0,0
+.L149:
+	.word	-1,.L82,0,.L150-.L82,0,0
+.L262:
+	.word	-1,.L82,.L257-.L82,.L258-.L82,.L263-.L82,.L264-.L82,.L265-.L82,.L266-.L82,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_timeout')
 	.sect	'.debug_info'
-.L148:
+.L151:
 	.word	304
 	.half	3
-	.word	.L149
+	.word	.L152
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L151,.L150
+	.word	.L154,.L153
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_timeout',0,1,219,6,6,1,1,1
-	.word	.L81,.L262,.L80
+	.word	.L84,.L267,.L83
 	.byte	4
 	.byte	'parameter',0,1,219,6,30
-	.word	.L202,.L263
+	.word	.L205,.L268
 	.byte	5
-	.word	.L81,.L262
+	.word	.L84,.L267
 	.byte	6
 	.byte	'thread',0,1,221,6,23
-	.word	.L196,.L264
+	.word	.L199,.L269
 	.byte	7
-	.word	.L251,.L265,.L266
+	.word	.L256,.L270,.L271
 	.byte	8
-	.word	.L254,.L267
+	.word	.L259,.L272
 	.byte	9
-	.word	.L256,.L265,.L266
+	.word	.L261,.L270,.L271
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_timeout')
 	.sect	'.debug_abbrev'
-.L149:
+.L152:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
 	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17,1,18
 	.byte	1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_timeout')
 	.sect	'.debug_line'
-.L150:
-	.word	.L522-.L521
-.L521:
+.L153:
+	.word	.L537-.L536
+.L536:
 	.half	3
-	.word	.L524-.L523
-.L523:
+	.word	.L539-.L538
+.L538:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include',0
 	.byte	0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0
 	.byte	'rtservice.h',0,1,0,0,0
-.L524:
+.L539:
 	.byte	5,21,7,0,5,2
-	.word	.L81
+	.word	.L84
 	.byte	3,230,6,1,5,19,1,5,28,9
-	.half	.L525-.L81
+	.half	.L540-.L84
 	.byte	3,3,1,4,2,5,6,9
-	.half	.L265-.L525
+	.half	.L270-.L540
 	.byte	3,238,121,1,5,22,9
-	.half	.L526-.L265
+	.half	.L541-.L270
 	.byte	1,5,19,9
-	.half	.L527-.L526
+	.half	.L542-.L541
 	.byte	1,5,6,9
-	.half	.L528-.L527
+	.half	.L543-.L542
 	.byte	3,1,1,5,22,9
-	.half	.L529-.L528
+	.half	.L544-.L543
 	.byte	1,5,19,9
-	.half	.L530-.L529
+	.half	.L545-.L544
 	.byte	1,5,23,9
-	.half	.L531-.L530
+	.half	.L546-.L545
 	.byte	3,2,1,5,13,9
-	.half	.L532-.L531
+	.half	.L547-.L546
 	.byte	1,4,1,5,31,9
-	.half	.L266-.L532
+	.half	.L271-.L547
 	.byte	3,146,6,1,5,16,9
-	.half	.L406-.L266
+	.half	.L417-.L271
 	.byte	3,3,1,5,1,7,9
-	.half	.L152-.L406
+	.half	.L155-.L417
 	.byte	3,1,0,1,1
-.L522:
+.L537:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_timeout')
 	.sect	'.debug_ranges'
-.L151:
-	.word	-1,.L81,0,.L152-.L81,0,0
+.L154:
+	.word	-1,.L84,0,.L155-.L84,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_suspend_sethook')
 	.sect	'.debug_info'
-.L153:
+.L156:
 	.word	248
 	.half	3
-	.word	.L154
+	.word	.L157
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L156,.L155
+	.word	.L159,.L158
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_suspend_sethook',0,1,50,6,1,1,1
-	.word	.L45,.L268,.L44
+	.word	.L48,.L273,.L47
 	.byte	4
 	.byte	'hook',0,1,50,39
-	.word	.L269,.L270
+	.word	.L274,.L275
 	.byte	5
-	.word	.L45,.L268
+	.word	.L48,.L273
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_suspend_sethook')
 	.sect	'.debug_abbrev'
-.L154:
+.L157:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_suspend_sethook')
 	.sect	'.debug_line'
-.L155:
-	.word	.L534-.L533
-.L533:
-	.half	3
-	.word	.L536-.L535
-.L535:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L536:
-	.byte	5,28,7,0,5,2
-	.word	.L45
-	.byte	3,51,1,5,1,9
-	.half	.L537-.L45
-	.byte	3,1,1,7,9
-	.half	.L157-.L537
-	.byte	0,1,1
-.L534:
-	.sdecl	'.debug_ranges',debug,cluster('rt_thread_suspend_sethook')
-	.sect	'.debug_ranges'
-.L156:
-	.word	-1,.L45,0,.L157-.L45,0,0
-	.sdecl	'.debug_info',debug,cluster('rt_thread_resume_sethook')
-	.sect	'.debug_info'
 .L158:
-	.word	247
-	.half	3
-	.word	.L159
-	.byte	4,1
-	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
-	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L161,.L160
-	.byte	2
-	.word	.L84
-	.byte	3
-	.byte	'rt_thread_resume_sethook',0,1,63,6,1,1,1
-	.word	.L47,.L271,.L46
-	.byte	4
-	.byte	'hook',0,1,63,38
-	.word	.L269,.L272
-	.byte	5
-	.word	.L47,.L271
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_resume_sethook')
-	.sect	'.debug_abbrev'
-.L159:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('rt_thread_resume_sethook')
-	.sect	'.debug_line'
-.L160:
-	.word	.L539-.L538
-.L538:
-	.half	3
-	.word	.L541-.L540
-.L540:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L541:
-	.byte	5,27,7,0,5,2
-	.word	.L47
-	.byte	3,192,0,1,5,1,9
-	.half	.L542-.L47
-	.byte	3,1,1,7,9
-	.half	.L162-.L542
-	.byte	0,1,1
-.L539:
-	.sdecl	'.debug_ranges',debug,cluster('rt_thread_resume_sethook')
-	.sect	'.debug_ranges'
-.L161:
-	.word	-1,.L47,0,.L162-.L47,0,0
-	.sdecl	'.debug_info',debug,cluster('rt_thread_inited_sethook')
-	.sect	'.debug_info'
-.L163:
-	.word	247
-	.half	3
-	.word	.L164
-	.byte	4,1
-	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
-	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L166,.L165
-	.byte	2
-	.word	.L84
-	.byte	3
-	.byte	'rt_thread_inited_sethook',0,1,74,6,1,1,1
-	.word	.L49,.L273,.L48
-	.byte	4
-	.byte	'hook',0,1,74,38
-	.word	.L269,.L274
-	.byte	5
-	.word	.L49,.L273
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_inited_sethook')
-	.sect	'.debug_abbrev'
-.L164:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('rt_thread_inited_sethook')
-	.sect	'.debug_line'
-.L165:
-	.word	.L544-.L543
-.L543:
-	.half	3
-	.word	.L546-.L545
-.L545:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L546:
-	.byte	5,27,7,0,5,2
-	.word	.L49
-	.byte	3,203,0,1,5,1,9
-	.half	.L547-.L49
-	.byte	3,1,1,7,9
-	.half	.L167-.L547
-	.byte	0,1,1
-.L544:
-	.sdecl	'.debug_ranges',debug,cluster('rt_thread_inited_sethook')
-	.sect	'.debug_ranges'
-.L166:
-	.word	-1,.L49,0,.L167-.L49,0,0
-	.sdecl	'.debug_info',debug,cluster('_thread_cleanup_execute')
-	.sect	'.debug_info'
-.L168:
-	.word	266
-	.half	3
-	.word	.L169
-	.byte	4,1
-	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
-	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L171,.L170
-	.byte	2
-	.word	.L84
-	.byte	3
-	.byte	'_thread_cleanup_execute',0,1,82,13,1,1
-	.word	.L51,.L275,.L50
-	.byte	4
-	.byte	'thread',0,1,82,49
-	.word	.L211,.L276
-	.byte	5
-	.word	.L51,.L275
-	.byte	6
-	.byte	'level',0,1,84,24
-	.word	.L194,.L277
-	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('_thread_cleanup_execute')
-	.sect	'.debug_abbrev'
-.L169:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3,8,58
-	.byte	15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('_thread_cleanup_execute')
-	.sect	'.debug_line'
-.L170:
 	.word	.L549-.L548
 .L548:
 	.half	3
@@ -4358,1078 +4355,1270 @@ rt_thread_inited_hook:	.type	object
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
 .L551:
-	.byte	5,13,7,0,5,2
-	.word	.L51
-	.byte	3,209,0,1,5,36,9
-	.half	.L313-.L51
-	.byte	3,6,1,5,15,9
-	.half	.L312-.L313
-	.byte	3,9,1,5,11,9
-	.half	.L552-.L312
-	.byte	3,119,1,5,5,9
-	.half	.L314-.L552
-	.byte	3,9,1,5,25,7,9
-	.half	.L553-.L314
-	.byte	3,1,1,5,28,9
-	.half	.L2-.L553
-	.byte	3,5,1,5,1,9
-	.half	.L172-.L2
-	.byte	3,1,0,1,1
+	.byte	5,28,7,0,5,2
+	.word	.L48
+	.byte	3,51,1,5,1,9
+	.half	.L552-.L48
+	.byte	3,1,1,7,9
+	.half	.L160-.L552
+	.byte	0,1,1
 .L549:
-	.sdecl	'.debug_ranges',debug,cluster('_thread_cleanup_execute')
+	.sdecl	'.debug_ranges',debug,cluster('rt_thread_suspend_sethook')
 	.sect	'.debug_ranges'
-.L171:
-	.word	-1,.L51,0,.L172-.L51,0,0
-	.sdecl	'.debug_info',debug,cluster('rt_thread_exit')
+.L159:
+	.word	-1,.L48,0,.L160-.L48,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_thread_resume_sethook')
 	.sect	'.debug_info'
-.L173:
-	.word	331
+.L161:
+	.word	247
 	.half	3
-	.word	.L174
+	.word	.L162
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L176,.L175
+	.word	.L164,.L163
 	.byte	2
-	.word	.L84
+	.word	.L87
+	.byte	3
+	.byte	'rt_thread_resume_sethook',0,1,63,6,1,1,1
+	.word	.L50,.L276,.L49
+	.byte	4
+	.byte	'hook',0,1,63,38
+	.word	.L274,.L277
+	.byte	5
+	.word	.L50,.L276
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_resume_sethook')
+	.sect	'.debug_abbrev'
+.L162:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_thread_resume_sethook')
+	.sect	'.debug_line'
+.L163:
+	.word	.L554-.L553
+.L553:
+	.half	3
+	.word	.L556-.L555
+.L555:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
+.L556:
+	.byte	5,27,7,0,5,2
+	.word	.L50
+	.byte	3,192,0,1,5,1,9
+	.half	.L557-.L50
+	.byte	3,1,1,7,9
+	.half	.L165-.L557
+	.byte	0,1,1
+.L554:
+	.sdecl	'.debug_ranges',debug,cluster('rt_thread_resume_sethook')
+	.sect	'.debug_ranges'
+.L164:
+	.word	-1,.L50,0,.L165-.L50,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_thread_inited_sethook')
+	.sect	'.debug_info'
+.L166:
+	.word	247
+	.half	3
+	.word	.L167
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L169,.L168
+	.byte	2
+	.word	.L87
+	.byte	3
+	.byte	'rt_thread_inited_sethook',0,1,74,6,1,1,1
+	.word	.L52,.L278,.L51
+	.byte	4
+	.byte	'hook',0,1,74,38
+	.word	.L274,.L279
+	.byte	5
+	.word	.L52,.L278
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_inited_sethook')
+	.sect	'.debug_abbrev'
+.L167:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_thread_inited_sethook')
+	.sect	'.debug_line'
+.L168:
+	.word	.L559-.L558
+.L558:
+	.half	3
+	.word	.L561-.L560
+.L560:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
+.L561:
+	.byte	5,27,7,0,5,2
+	.word	.L52
+	.byte	3,203,0,1,5,1,9
+	.half	.L562-.L52
+	.byte	3,1,1,7,9
+	.half	.L170-.L562
+	.byte	0,1,1
+.L559:
+	.sdecl	'.debug_ranges',debug,cluster('rt_thread_inited_sethook')
+	.sect	'.debug_ranges'
+.L169:
+	.word	-1,.L52,0,.L170-.L52,0,0
+	.sdecl	'.debug_info',debug,cluster('_thread_cleanup_execute')
+	.sect	'.debug_info'
+.L171:
+	.word	266
+	.half	3
+	.word	.L172
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L174,.L173
+	.byte	2
+	.word	.L87
+	.byte	3
+	.byte	'_thread_cleanup_execute',0,1,82,13,1,1
+	.word	.L54,.L280,.L53
+	.byte	4
+	.byte	'thread',0,1,82,49
+	.word	.L214,.L281
+	.byte	5
+	.word	.L54,.L280
+	.byte	6
+	.byte	'level',0,1,84,24
+	.word	.L197,.L282
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('_thread_cleanup_execute')
+	.sect	'.debug_abbrev'
+.L172:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3,8,58
+	.byte	15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('_thread_cleanup_execute')
+	.sect	'.debug_line'
+.L173:
+	.word	.L564-.L563
+.L563:
+	.half	3
+	.word	.L566-.L565
+.L565:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
+.L566:
+	.byte	5,13,7,0,5,2
+	.word	.L54
+	.byte	3,209,0,1,5,36,9
+	.half	.L318-.L54
+	.byte	3,6,1,5,15,9
+	.half	.L317-.L318
+	.byte	3,9,1,5,11,9
+	.half	.L567-.L317
+	.byte	3,119,1,5,5,9
+	.half	.L319-.L567
+	.byte	3,9,1,5,25,7,9
+	.half	.L568-.L319
+	.byte	3,1,1,5,28,9
+	.half	.L2-.L568
+	.byte	3,5,1,5,1,9
+	.half	.L175-.L2
+	.byte	3,1,0,1,1
+.L564:
+	.sdecl	'.debug_ranges',debug,cluster('_thread_cleanup_execute')
+	.sect	'.debug_ranges'
+.L174:
+	.word	-1,.L54,0,.L175-.L54,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_thread_exit')
+	.sect	'.debug_info'
+.L176:
+	.word	331
+	.half	3
+	.word	.L177
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L179,.L178
+	.byte	2
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_exit',0,1,106,6,1,1,1
-	.word	.L53,.L278,.L52
+	.word	.L56,.L283,.L55
 	.byte	4
-	.word	.L53,.L278
+	.word	.L56,.L283
 	.byte	5
 	.byte	'thread',0,1,108,23
-	.word	.L196,.L279
+	.word	.L199,.L284
 	.byte	5
 	.byte	'level',0,1,109,24
-	.word	.L194,.L280
+	.word	.L197,.L285
 	.byte	6
-	.word	.L281,.L3,.L282
+	.word	.L286,.L3,.L287
 	.byte	7
-	.word	.L283,.L284
+	.word	.L288,.L289
 	.byte	7
-	.word	.L285,.L286
+	.word	.L290,.L291
 	.byte	8
-	.word	.L287,.L288
+	.word	.L292,.L293
 	.byte	0,6
-	.word	.L281,.L289,.L4
+	.word	.L286,.L294,.L4
 	.byte	7
-	.word	.L283,.L284
+	.word	.L288,.L289
 	.byte	7
-	.word	.L285,.L286
+	.word	.L290,.L291
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_exit')
 	.sect	'.debug_abbrev'
-.L174:
+.L177:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,6,29,1
 	.byte	49,16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,0,49,16,85,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_exit')
 	.sect	'.debug_line'
-.L175:
-	.word	.L555-.L554
-.L554:
+.L178:
+	.word	.L570-.L569
+.L569:
 	.half	3
-	.word	.L557-.L556
-.L556:
+	.word	.L572-.L571
+.L571:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include',0
 	.byte	0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0
 	.byte	'rtservice.h',0,1,0,0,0
-.L557:
+.L572:
 	.byte	5,28,7,0,5,2
-	.word	.L53
+	.word	.L56
 	.byte	3,239,0,1,5,12,9
-	.half	.L317-.L53
+	.half	.L322-.L56
 	.byte	1,5,36,9
-	.half	.L319-.L317
+	.half	.L324-.L322
 	.byte	3,3,1,5,11,9
-	.half	.L318-.L319
+	.half	.L323-.L324
 	.byte	1,5,29,3,2,1,5,31,9
-	.half	.L320-.L318
+	.half	.L325-.L323
 	.byte	3,3,1,5,20,9
-	.half	.L323-.L320
+	.half	.L328-.L325
 	.byte	3,2,1,5,18,1,5,28,9
-	.half	.L558-.L323
+	.half	.L573-.L328
 	.byte	3,3,1,5,35,9
-	.half	.L559-.L558
+	.half	.L574-.L573
 	.byte	3,2,1,5,5,9
-	.half	.L325-.L559
+	.half	.L330-.L574
 	.byte	1,5,26,7,9
-	.half	.L560-.L325
+	.half	.L575-.L330
 	.byte	3,2,1,5,46,9
-	.half	.L327-.L560
+	.half	.L332-.L575
 	.byte	1,5,31,9
-	.half	.L3-.L327
+	.half	.L3-.L332
 	.byte	3,5,1,4,2,5,6,9
-	.half	.L561-.L3
+	.half	.L576-.L3
 	.byte	3,182,127,1,4,1,5,58,9
-	.half	.L282-.L561
+	.half	.L287-.L576
 	.byte	3,202,0,1,4,2,5,19,9
-	.half	.L289-.L282
+	.half	.L294-.L287
 	.byte	3,182,127,1,5,16,9
-	.half	.L562-.L289
+	.half	.L577-.L294
 	.byte	3,1,1,5,13,9
-	.half	.L563-.L562
+	.half	.L578-.L577
 	.byte	1,9
-	.half	.L564-.L563
+	.half	.L579-.L578
 	.byte	3,2,1,9
-	.half	.L565-.L564
+	.half	.L580-.L579
 	.byte	3,1,1,4,1,5,16,9
-	.half	.L4-.L565
+	.half	.L4-.L580
 	.byte	3,202,0,1,5,28,9
-	.half	.L566-.L4
+	.half	.L581-.L4
 	.byte	3,3,1,5,1,9
-	.half	.L177-.L566
+	.half	.L180-.L581
 	.byte	3,1,0,1,1
-.L555:
+.L570:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_exit')
 	.sect	'.debug_ranges'
-.L176:
-	.word	-1,.L53,0,.L177-.L53,0,0
-.L288:
-	.word	-1,.L53,.L3-.L53,.L282-.L53,.L289-.L53,.L4-.L53,0,0
+.L179:
+	.word	-1,.L56,0,.L180-.L56,0,0
+.L293:
+	.word	-1,.L56,.L3-.L56,.L287-.L56,.L294-.L56,.L4-.L56,0,0
 	.sdecl	'.debug_info',debug,cluster('_rt_thread_init')
 	.sect	'.debug_info'
-.L178:
+.L181:
 	.word	450
 	.half	3
-	.word	.L179
+	.word	.L182
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L181,.L180
+	.word	.L184,.L183
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'_rt_thread_init',0,1,144,1,17
-	.word	.L194
+	.word	.L197
 	.byte	1,1
-	.word	.L55,.L290,.L54
+	.word	.L58,.L295,.L57
 	.byte	4
 	.byte	'thread',0,1,144,1,51
-	.word	.L196,.L291
+	.word	.L199,.L296
 	.byte	4
 	.byte	'name',0,1,145,1,51
-	.word	.L198,.L292
+	.word	.L201,.L297
 	.byte	4
 	.byte	'entry',0,1,146,1,40
-	.word	.L200,.L293
+	.word	.L203,.L298
 	.byte	4
 	.byte	'parameter',0,1,147,1,51
-	.word	.L202,.L294
+	.word	.L205,.L299
 	.byte	4
 	.byte	'stack_start',0,1,148,1,51
-	.word	.L202,.L295
+	.word	.L205,.L300
 	.byte	4
 	.byte	'stack_size',0,1,149,1,51
-	.word	.L205,.L296
+	.word	.L208,.L301
 	.byte	4
 	.byte	'priority',0,1,150,1,51
-	.word	.L207,.L297
+	.word	.L210,.L302
 	.byte	4
 	.byte	'tick',0,1,151,1,51
-	.word	.L205,.L298
+	.word	.L208,.L303
 	.byte	5
-	.word	.L55,.L290
+	.word	.L58,.L295
 	.byte	6
-	.word	.L299,.L300,.L301
+	.word	.L304,.L305,.L306
 	.byte	7
-	.word	.L302,.L303
+	.word	.L307,.L308
 	.byte	8
-	.word	.L304,.L305
+	.word	.L309,.L310
 	.byte	0,6
-	.word	.L299,.L306,.L307
+	.word	.L304,.L311,.L312
 	.byte	7
-	.word	.L302,.L303
+	.word	.L307,.L308
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('_rt_thread_init')
 	.sect	'.debug_abbrev'
-.L179:
+.L182:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,29,1,49
 	.byte	16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,0,49,16,85,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('_rt_thread_init')
 	.sect	'.debug_line'
-.L180:
-	.word	.L568-.L567
-.L567:
+.L183:
+	.word	.L583-.L582
+.L582:
 	.half	3
-	.word	.L570-.L569
-.L569:
+	.word	.L585-.L584
+.L584:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include',0
 	.byte	0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0
 	.byte	'rtservice.h',0,1,0,0,0
-.L570:
+.L585:
 	.byte	5,17,7,0,5,2
-	.word	.L55
+	.word	.L58
 	.byte	3,143,1,1,5,26,9
-	.half	.L331-.L55
+	.half	.L336-.L58
 	.byte	3,10,1,4,2,5,23,9
-	.half	.L300-.L331
+	.half	.L305-.L336
 	.byte	3,151,127,1,4,1,5,17,9
-	.half	.L301-.L300
+	.half	.L306-.L305
 	.byte	3,223,0,1,4,2,5,13,9
-	.half	.L306-.L301
+	.half	.L311-.L306
 	.byte	3,161,127,1,4,1,5,19,9
-	.half	.L307-.L306
+	.half	.L312-.L311
 	.byte	3,235,0,1,5,17,9
-	.half	.L571-.L307
+	.half	.L586-.L312
 	.byte	3,116,1,5,23,3,13,1,5,35,9
-	.half	.L332-.L571
+	.half	.L337-.L586
 	.byte	3,7,1,5,24,3,124,1,5,17,9
-	.half	.L330-.L332
+	.half	.L335-.L337
 	.byte	3,112,1,5,24,3,17,1,5,46,9
-	.half	.L572-.L330
+	.half	.L587-.L335
 	.byte	3,3,1,5,72,9
-	.half	.L329-.L572
+	.half	.L334-.L587
 	.byte	3,7,1,5,93,9
-	.half	.L573-.L329
+	.half	.L588-.L334
 	.byte	1,5,43,9
-	.half	.L333-.L573
+	.half	.L338-.L588
 	.byte	3,1,1,5,85,9
-	.half	.L574-.L333
+	.half	.L589-.L338
 	.byte	3,127,1,5,43,9
-	.half	.L575-.L574
+	.half	.L590-.L589
 	.byte	3,1,1,5,106,9
-	.half	.L576-.L575
+	.half	.L591-.L590
 	.byte	3,127,1,5,49,9
-	.half	.L577-.L576
+	.half	.L592-.L591
 	.byte	3,127,1,5,64,9
-	.half	.L578-.L577
+	.half	.L593-.L592
 	.byte	1,5,43,9
-	.half	.L579-.L578
+	.half	.L594-.L593
 	.byte	3,2,1,5,16,9
-	.half	.L580-.L579
+	.half	.L595-.L594
 	.byte	3,126,1,5,30,9
-	.half	.L334-.L580
+	.half	.L339-.L595
 	.byte	3,7,1,9
-	.half	.L581-.L334
+	.half	.L596-.L339
 	.byte	3,1,1,5,27,9
-	.half	.L335-.L581
+	.half	.L340-.L596
 	.byte	3,2,1,5,25,1,5,28,9
-	.half	.L336-.L335
+	.half	.L341-.L340
 	.byte	3,7,1,9
-	.half	.L582-.L336
+	.half	.L597-.L341
 	.byte	3,1,1,5,19,9
-	.half	.L337-.L582
+	.half	.L342-.L597
 	.byte	3,3,1,9
-	.half	.L583-.L337
+	.half	.L598-.L342
+	.byte	3,1,1,5,24,9
+	.half	.L599-.L598
+	.byte	3,4,1,5,22,1,5,19,9
+	.half	.L600-.L599
+	.byte	3,1,1,5,33,9
+	.half	.L601-.L600
+	.byte	3,3,1,5,28,9
+	.half	.L602-.L601
+	.byte	3,1,1,5,32,9
+	.half	.L603-.L602
 	.byte	3,1,1,5,25,9
-	.half	.L584-.L583
-	.byte	3,14,1,5,23,9
-	.half	.L585-.L584
+	.half	.L604-.L603
+	.byte	3,4,1,5,23,9
+	.half	.L605-.L604
 	.byte	1,9
-	.half	.L586-.L585
+	.half	.L606-.L605
 	.byte	3,1,1,5,27,9
-	.half	.L587-.L586
+	.half	.L607-.L606
 	.byte	3,3,1,5,19,9
-	.half	.L588-.L587
+	.half	.L608-.L607
 	.byte	3,2,1,9
-	.half	.L589-.L588
+	.half	.L609-.L608
 	.byte	3,3,1,5,5,9
-	.half	.L339-.L589
+	.half	.L344-.L609
 	.byte	3,18,1,5,12,9
-	.half	.L5-.L339
+	.half	.L5-.L344
 	.byte	3,2,1,5,1,3,1,1,7,9
-	.half	.L182-.L5
+	.half	.L185-.L5
 	.byte	0,1,1
-.L568:
+.L583:
 	.sdecl	'.debug_ranges',debug,cluster('_rt_thread_init')
 	.sect	'.debug_ranges'
-.L181:
-	.word	-1,.L55,0,.L182-.L55,0,0
-.L305:
-	.word	-1,.L55,.L300-.L55,.L301-.L55,.L306-.L55,.L307-.L55,0,0
+.L184:
+	.word	-1,.L58,0,.L185-.L58,0,0
+.L310:
+	.word	-1,.L58,.L305-.L58,.L306-.L58,.L311-.L58,.L312-.L58,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_sleep')
 	.sect	'.debug_info'
-.L183:
+.L186:
 	.word	283
 	.half	3
-	.word	.L184
+	.word	.L187
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L186,.L185
+	.word	.L189,.L188
 	.byte	2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_sleep',0,1,135,4,10
-	.word	.L194
+	.word	.L197
 	.byte	1,1,1
-	.word	.L67,.L308,.L66
+	.word	.L70,.L313,.L69
 	.byte	4
 	.byte	'tick',0,1,135,4,36
-	.word	.L205,.L309
+	.word	.L208,.L314
 	.byte	5
-	.word	.L67,.L308
+	.word	.L70,.L313
 	.byte	6
 	.byte	'temp',0,1,137,4,24
-	.word	.L194,.L310
+	.word	.L197,.L315
 	.byte	6
 	.byte	'thread',0,1,138,4,23
-	.word	.L196,.L311
+	.word	.L199,.L316
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_sleep')
 	.sect	'.debug_abbrev'
-.L184:
+.L187:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
 	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('rt_thread_sleep')
 	.sect	'.debug_line'
-.L185:
-	.word	.L591-.L590
-.L590:
+.L188:
+	.word	.L611-.L610
+.L610:
 	.half	3
-	.word	.L593-.L592
-.L592:
+	.word	.L613-.L612
+.L612:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0,0,0,0,0
-.L593:
+.L613:
 	.byte	5,10,7,0,5,2
-	.word	.L67
+	.word	.L70
 	.byte	3,134,4,1,5,28,9
-	.half	.L594-.L67
+	.half	.L614-.L70
 	.byte	3,6,1,5,12,9
-	.half	.L364-.L594
+	.half	.L373-.L614
 	.byte	1,5,35,9
-	.half	.L366-.L364
+	.half	.L375-.L373
 	.byte	3,5,1,5,10,9
-	.half	.L365-.L366
+	.half	.L374-.L375
 	.byte	1,5,23,3,3,1,5,30,9
-	.half	.L367-.L365
+	.half	.L376-.L374
 	.byte	3,3,1,5,47,9
-	.half	.L595-.L367
+	.half	.L615-.L376
 	.byte	1,5,72,1,5,28,9
-	.half	.L596-.L595
+	.half	.L616-.L615
 	.byte	3,1,1,9
-	.half	.L597-.L596
+	.half	.L617-.L616
 	.byte	3,3,1,5,16,9
-	.half	.L598-.L597
+	.half	.L618-.L617
 	.byte	3,2,1,5,15,9
-	.half	.L599-.L598
+	.half	.L619-.L618
 	.byte	3,3,1,5,5,9
-	.half	.L369-.L599
+	.half	.L378-.L619
 	.byte	1,5,25,7,9
-	.half	.L600-.L369
+	.half	.L620-.L378
 	.byte	3,1,1,5,23,1,5,12,9
-	.half	.L15-.L600
+	.half	.L15-.L620
 	.byte	3,2,1,5,1,3,1,1,7,9
-	.half	.L187-.L15
+	.half	.L190-.L15
 	.byte	0,1,1
-.L591:
+.L611:
 	.sdecl	'.debug_ranges',debug,cluster('rt_thread_sleep')
 	.sect	'.debug_ranges'
-.L186:
-	.word	-1,.L67,0,.L187-.L67,0,0
+.L189:
+	.word	-1,.L70,0,.L190-.L70,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_suspend_hook')
 	.sect	'.debug_info'
-.L188:
+.L191:
 	.word	205
 	.half	3
-	.word	.L189
+	.word	.L192
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_suspend_hook',0,5,38,15
-	.word	.L269
+	.word	.L274
 	.byte	5,3
 	.word	rt_thread_suspend_hook
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_suspend_hook')
 	.sect	'.debug_abbrev'
-.L189:
+.L192:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_resume_hook')
 	.sect	'.debug_info'
-.L190:
+.L193:
 	.word	204
 	.half	3
-	.word	.L191
+	.word	.L194
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_resume_hook',0,5,39,15
-	.word	.L269
+	.word	.L274
 	.byte	5,3
 	.word	rt_thread_resume_hook
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_resume_hook')
 	.sect	'.debug_abbrev'
-.L191:
+.L194:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
 	.sdecl	'.debug_info',debug,cluster('rt_thread_inited_hook')
 	.sect	'.debug_info'
-.L192:
+.L195:
 	.word	204
 	.half	3
-	.word	.L193
+	.word	.L196
 	.byte	4,1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\thread.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
-	.word	.L84
+	.word	.L87
 	.byte	3
 	.byte	'rt_thread_inited_hook',0,5,40,15
-	.word	.L269
+	.word	.L274
 	.byte	5,3
 	.word	rt_thread_inited_hook
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_inited_hook')
 	.sect	'.debug_abbrev'
-.L193:
+.L196:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
 	.sdecl	'.debug_loc',debug,cluster('_rt_thread_init')
 	.sect	'.debug_loc'
-.L54:
-	.word	-1,.L55,0,.L290-.L55
+.L57:
+	.word	-1,.L58,0,.L295-.L58
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L293:
-	.word	-1,.L55,0,.L329-.L55
+.L298:
+	.word	-1,.L58,0,.L334-.L58
 	.half	1
 	.byte	102
 	.word	0,0
-.L303:
+.L308:
 	.word	0,0
-.L292:
-	.word	-1,.L55,0,.L329-.L55
+.L297:
+	.word	-1,.L58,0,.L334-.L58
 	.half	1
 	.byte	101
 	.word	0,0
-.L294:
-	.word	-1,.L55,0,.L329-.L55
+.L299:
+	.word	-1,.L58,0,.L334-.L58
 	.half	1
 	.byte	103
 	.word	0,0
-.L297:
-	.word	-1,.L55,0,.L329-.L55
+.L302:
+	.word	-1,.L58,0,.L334-.L58
 	.half	1
 	.byte	85
-	.word	.L334-.L55,.L335-.L55
+	.word	.L339-.L58,.L340-.L58
 	.half	1
 	.byte	88
 	.word	0,0
-.L296:
-	.word	-1,.L55,0,.L330-.L55
+.L301:
+	.word	-1,.L58,0,.L335-.L58
 	.half	1
 	.byte	84
-	.word	.L332-.L55,.L333-.L55
+	.word	.L337-.L58,.L338-.L58
 	.half	1
 	.byte	95
 	.word	0,0
-.L295:
-	.word	-1,.L55,0,.L290-.L55
+.L300:
+	.word	-1,.L58,0,.L295-.L58
 	.half	2
 	.byte	145,0
-	.word	0,.L290-.L55
+	.word	0,.L295-.L58
 	.half	2
 	.byte	145,0
-	.word	.L306-.L55,.L329-.L55
+	.word	.L311-.L58,.L334-.L58
 	.half	1
 	.byte	100
 	.word	0,0
-.L291:
-	.word	-1,.L55,0,.L306-.L55
+.L296:
+	.word	-1,.L58,0,.L311-.L58
 	.half	1
 	.byte	100
-	.word	.L331-.L55,.L290-.L55
+	.word	.L336-.L58,.L295-.L58
 	.half	1
 	.byte	111
-	.word	.L338-.L55,.L339-.L55
+	.word	.L343-.L58,.L344-.L58
 	.half	1
 	.byte	101
-	.word	.L340-.L55,.L339-.L55
+	.word	.L345-.L58,.L344-.L58
 	.half	1
 	.byte	103
-	.word	.L341-.L55,.L5-.L55
+	.word	.L346-.L58,.L5-.L58
 	.half	1
 	.byte	100
 	.word	0,0
-.L298:
-	.word	-1,.L55,0,.L329-.L55
+.L303:
+	.word	-1,.L58,0,.L334-.L58
 	.half	1
 	.byte	86
-	.word	.L336-.L55,.L337-.L55
+	.word	.L341-.L58,.L342-.L58
 	.half	1
 	.byte	89
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('_thread_cleanup_execute')
 	.sect	'.debug_loc'
-.L50:
-	.word	-1,.L51,0,.L275-.L51
+.L53:
+	.word	-1,.L54,0,.L280-.L54
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L277:
-	.word	-1,.L51,.L312-.L51,.L2-.L51
+.L282:
+	.word	-1,.L54,.L317-.L54,.L2-.L54
 	.half	1
 	.byte	82
-	.word	.L314-.L51,.L275-.L51
+	.word	.L319-.L54,.L280-.L54
 	.half	1
 	.byte	95
-	.word	.L316-.L51,.L275-.L51
+	.word	.L321-.L54,.L280-.L54
 	.half	1
 	.byte	84
 	.word	0,0
-.L276:
-	.word	-1,.L51,0,.L312-.L51
+.L281:
+	.word	-1,.L54,0,.L317-.L54
 	.half	1
 	.byte	100
-	.word	.L313-.L51,.L275-.L51
+	.word	.L318-.L54,.L280-.L54
 	.half	1
 	.byte	111
-	.word	.L315-.L51,.L2-.L51
+	.word	.L320-.L54,.L2-.L54
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_control')
 	.sect	'.debug_loc'
-.L241:
-	.word	-1,.L75,0,.L381-.L75
+.L246:
+	.word	-1,.L78,0,.L390-.L78
 	.half	1
 	.byte	101
-	.word	.L383-.L75,.L238-.L75
+	.word	.L392-.L78,.L243-.L78
 	.half	1
 	.byte	108
-	.word	.L23-.L75,.L389-.L75
+	.word	.L23-.L78,.L398-.L78
 	.half	1
 	.byte	101
-	.word	0,0
-.L240:
-	.word	-1,.L75,0,.L381-.L75
+	.word	.L26-.L78,.L402-.L78
 	.half	1
-	.byte	84
-	.word	.L23-.L75,.L389-.L75
-	.half	1
-	.byte	84
-	.word	0,0
-.L243:
-	.word	-1,.L75,.L391-.L75,.L31-.L75
-	.half	1
-	.byte	82
-	.word	.L392-.L75,.L26-.L75
+	.byte	101
+	.word	.L402-.L78,.L403-.L78
 	.half	1
 	.byte	95
 	.word	0,0
-.L74:
-	.word	-1,.L75,0,.L238-.L75
+.L245:
+	.word	-1,.L78,0,.L390-.L78
+	.half	1
+	.byte	84
+	.word	.L23-.L78,.L398-.L78
+	.half	1
+	.byte	84
+	.word	.L26-.L78,.L27-.L78
+	.half	1
+	.byte	84
+	.word	0,0
+.L248:
+	.word	-1,.L78,.L400-.L78,.L32-.L78
+	.half	1
+	.byte	82
+	.word	.L401-.L78,.L26-.L78
+	.half	1
+	.byte	95
+	.word	0,0
+.L77:
+	.word	-1,.L78,0,.L243-.L78
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L242:
-	.word	-1,.L75,.L381-.L75,.L384-.L75
+.L247:
+	.word	-1,.L78,.L390-.L78,.L393-.L78
 	.half	1
 	.byte	82
-	.word	.L385-.L75,.L23-.L75
+	.word	.L394-.L78,.L23-.L78
 	.half	1
 	.byte	88
-	.word	.L27-.L75,.L28-.L75
+	.word	.L28-.L78,.L29-.L78
 	.half	1
 	.byte	82
 	.word	0,0
-.L239:
-	.word	-1,.L75,0,.L381-.L75
+.L244:
+	.word	-1,.L78,0,.L390-.L78
 	.half	1
 	.byte	100
-	.word	.L382-.L75,.L238-.L75
+	.word	.L391-.L78,.L243-.L78
 	.half	1
 	.byte	111
-	.word	.L386-.L75,.L384-.L75
+	.word	.L395-.L78,.L393-.L78
 	.half	1
 	.byte	100
-	.word	.L387-.L75,.L388-.L75
+	.word	.L396-.L78,.L397-.L78
 	.half	1
 	.byte	100
-	.word	.L23-.L75,.L389-.L75
+	.word	.L23-.L78,.L398-.L78
 	.half	1
 	.byte	100
-	.word	.L390-.L75,.L391-.L75
+	.word	.L399-.L78,.L400-.L78
+	.half	1
+	.byte	100
+	.word	.L26-.L78,.L27-.L78
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_delay')
 	.sect	'.debug_loc'
-.L68:
-	.word	-1,.L69,0,.L222-.L69
+.L71:
+	.word	-1,.L72,0,.L227-.L72
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L223:
-	.word	-1,.L69,0,.L222-.L69
+.L228:
+	.word	-1,.L72,0,.L227-.L72
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_delay_until')
 	.sect	'.debug_loc'
-.L230:
-	.word	-1,.L71,.L376-.L71,.L377-.L71
+.L235:
+	.word	-1,.L74,.L385-.L74,.L386-.L74
 	.half	1
 	.byte	82
-	.word	.L18-.L71,.L19-.L71
+	.word	.L18-.L74,.L19-.L74
 	.half	1
 	.byte	82
 	.word	0,0
-.L227:
-	.word	-1,.L71,0,.L371-.L71
+.L232:
+	.word	-1,.L74,0,.L380-.L74
 	.half	1
 	.byte	84
-	.word	.L371-.L71,.L373-.L71
+	.word	.L380-.L74,.L382-.L74
 	.half	1
 	.byte	95
-	.word	.L18-.L71,.L19-.L71
+	.word	.L18-.L74,.L19-.L74
 	.half	1
 	.byte	95
 	.word	0,0
-.L233:
-	.word	-1,.L71,0,.L224-.L71
+.L238:
+	.word	-1,.L74,0,.L229-.L74
 	.half	2
 	.byte	145,120
 	.word	0,0
-.L228:
-	.word	-1,.L71,.L374-.L71,.L376-.L71
+.L233:
+	.word	-1,.L74,.L383-.L74,.L385-.L74
 	.half	1
 	.byte	82
-	.word	.L376-.L71,.L224-.L71
+	.word	.L385-.L74,.L229-.L74
 	.half	1
 	.byte	88
 	.word	0,0
-.L70:
-	.word	-1,.L71,0,.L370-.L71
+.L73:
+	.word	-1,.L74,0,.L379-.L74
 	.half	2
 	.byte	138,0
-	.word	.L370-.L71,.L224-.L71
+	.word	.L379-.L74,.L229-.L74
 	.half	2
 	.byte	138,8
-	.word	.L224-.L71,.L224-.L71
+	.word	.L229-.L74,.L229-.L74
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L229:
-	.word	-1,.L71,.L371-.L71,.L374-.L71
+.L234:
+	.word	-1,.L74,.L380-.L74,.L383-.L74
 	.half	1
 	.byte	98
-	.word	.L375-.L71,.L224-.L71
+	.word	.L384-.L74,.L229-.L74
 	.half	1
 	.byte	111
-	.word	.L378-.L71,.L377-.L71
+	.word	.L387-.L74,.L386-.L74
 	.half	1
 	.byte	100
 	.word	0,0
-.L226:
-	.word	-1,.L71,0,.L371-.L71
+.L231:
+	.word	-1,.L74,0,.L380-.L74
 	.half	1
 	.byte	100
-	.word	.L372-.L71,.L224-.L71
+	.word	.L381-.L74,.L229-.L74
 	.half	1
 	.byte	108
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_detach')
 	.sect	'.debug_loc'
-.L62:
-	.word	-1,.L63,0,.L210-.L63
+.L65:
+	.word	-1,.L66,0,.L213-.L66
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L212:
-	.word	-1,.L63,0,.L12-.L63
+.L215:
+	.word	-1,.L66,0,.L12-.L66
 	.half	1
 	.byte	100
-	.word	.L354-.L63,.L210-.L63
+	.word	.L363-.L66,.L213-.L66
 	.half	1
 	.byte	111
-	.word	.L355-.L63,.L356-.L63
+	.word	.L364-.L66,.L365-.L66
 	.half	1
 	.byte	100
-	.word	.L357-.L63,.L11-.L63
+	.word	.L366-.L66,.L11-.L66
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_exit')
 	.sect	'.debug_loc'
-.L284:
+.L289:
 	.word	0,0
-.L280:
-	.word	-1,.L53,.L318-.L53,.L320-.L53
+.L285:
+	.word	-1,.L56,.L323-.L56,.L325-.L56
 	.half	1
 	.byte	82
-	.word	.L321-.L53,.L278-.L53
+	.word	.L326-.L56,.L283-.L56
 	.half	1
 	.byte	95
-	.word	.L328-.L53,.L278-.L53
+	.word	.L333-.L56,.L283-.L56
 	.half	1
 	.byte	84
 	.word	0,0
-.L286:
+.L291:
 	.word	0,0
-.L52:
-	.word	-1,.L53,0,.L278-.L53
+.L55:
+	.word	-1,.L56,0,.L283-.L56
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L279:
-	.word	-1,.L53,.L317-.L53,.L318-.L53
+.L284:
+	.word	-1,.L56,.L322-.L56,.L323-.L56
 	.half	1
 	.byte	98
-	.word	.L319-.L53,.L278-.L53
+	.word	.L324-.L56,.L283-.L56
 	.half	1
 	.byte	108
-	.word	.L321-.L53,.L320-.L53
+	.word	.L326-.L56,.L325-.L56
 	.half	1
 	.byte	100
-	.word	.L322-.L53,.L323-.L53
+	.word	.L327-.L56,.L328-.L56
 	.half	1
 	.byte	100
-	.word	.L324-.L53,.L325-.L53
+	.word	.L329-.L56,.L330-.L56
 	.half	1
 	.byte	100
-	.word	.L326-.L53,.L327-.L53
+	.word	.L331-.L56,.L332-.L56
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_find')
 	.sect	'.debug_loc'
-.L216:
-	.word	-1,.L83,0,.L214-.L83
+.L221:
+	.word	-1,.L86,0,.L219-.L86
 	.half	1
 	.byte	100
 	.word	0,0
-.L82:
-	.word	-1,.L83,0,.L214-.L83
+.L85:
+	.word	-1,.L86,0,.L219-.L86
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_init')
 	.sect	'.debug_loc'
-.L201:
-	.word	-1,.L57,0,.L343-.L57
+.L204:
+	.word	-1,.L60,0,.L348-.L60
 	.half	1
 	.byte	102
-	.word	.L346-.L57,.L195-.L57
+	.word	.L351-.L60,.L198-.L60
 	.half	1
 	.byte	109
-	.word	.L350-.L57,.L195-.L57
+	.word	.L355-.L60,.L198-.L60
 	.half	1
 	.byte	102
 	.word	0,0
-.L199:
-	.word	-1,.L57,0,.L343-.L57
+.L202:
+	.word	-1,.L60,0,.L348-.L60
 	.half	1
 	.byte	101
-	.word	.L345-.L57,.L195-.L57
+	.word	.L350-.L60,.L198-.L60
 	.half	1
 	.byte	108
-	.word	.L349-.L57,.L195-.L57
+	.word	.L354-.L60,.L198-.L60
 	.half	1
 	.byte	101
 	.word	0,0
-.L203:
-	.word	-1,.L57,0,.L343-.L57
+.L206:
+	.word	-1,.L60,0,.L348-.L60
 	.half	1
 	.byte	103
-	.word	.L347-.L57,.L195-.L57
+	.word	.L352-.L60,.L198-.L60
 	.half	1
 	.byte	110
-	.word	.L351-.L57,.L195-.L57
+	.word	.L356-.L60,.L198-.L60
 	.half	1
 	.byte	103
 	.word	0,0
-.L208:
-	.word	-1,.L57,0,.L343-.L57
+.L211:
+	.word	-1,.L60,0,.L348-.L60
 	.half	1
 	.byte	85
-	.word	.L343-.L57,.L348-.L57
+	.word	.L348-.L60,.L353-.L60
 	.half	1
 	.byte	88
 	.word	0,0
-.L56:
-	.word	-1,.L57,0,.L342-.L57
+.L59:
+	.word	-1,.L60,0,.L347-.L60
 	.half	2
 	.byte	138,0
-	.word	.L342-.L57,.L195-.L57
+	.word	.L347-.L60,.L198-.L60
 	.half	2
 	.byte	138,8
-	.word	.L195-.L57,.L195-.L57
+	.word	.L198-.L60,.L198-.L60
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L206:
-	.word	-1,.L57,0,.L344-.L57
+.L209:
+	.word	-1,.L60,0,.L349-.L60
 	.half	1
 	.byte	84
-	.word	.L342-.L57,.L195-.L57
+	.word	.L347-.L60,.L198-.L60
 	.half	1
 	.byte	95
 	.word	0,0
-.L204:
-	.word	-1,.L57,0,.L195-.L57
+.L207:
+	.word	-1,.L60,0,.L198-.L60
 	.half	2
 	.byte	145,0
-	.word	.L352-.L57,.L195-.L57
+	.word	.L357-.L60,.L198-.L60
 	.half	1
 	.byte	98
 	.word	0,0
-.L197:
-	.word	-1,.L57,0,.L343-.L57
+.L200:
+	.word	-1,.L60,0,.L348-.L60
 	.half	1
 	.byte	100
-	.word	.L344-.L57,.L195-.L57
+	.word	.L349-.L60,.L198-.L60
 	.half	1
 	.byte	111
-	.word	.L348-.L57,.L195-.L57
+	.word	.L353-.L60,.L198-.L60
 	.half	1
 	.byte	100
 	.word	0,0
-.L209:
-	.word	-1,.L57,0,.L343-.L57
+.L212:
+	.word	-1,.L60,0,.L348-.L60
 	.half	1
 	.byte	86
-	.word	.L348-.L57,.L349-.L57
+	.word	.L353-.L60,.L354-.L60
 	.half	1
 	.byte	89
-	.word	.L349-.L57,.L195-.L57
+	.word	.L354-.L60,.L198-.L60
 	.half	1
 	.byte	86
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_inited_sethook')
 	.sect	'.debug_loc'
-.L274:
-	.word	-1,.L49,0,.L273-.L49
+.L279:
+	.word	-1,.L52,0,.L278-.L52
 	.half	1
 	.byte	100
 	.word	0,0
-.L48:
-	.word	-1,.L49,0,.L273-.L49
+.L51:
+	.word	-1,.L52,0,.L278-.L52
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_mdelay')
 	.sect	'.debug_loc'
-.L236:
-	.word	-1,.L73,0,.L379-.L73
+.L241:
+	.word	-1,.L76,0,.L388-.L76
 	.half	1
 	.byte	84
 	.word	0,0
-.L72:
-	.word	-1,.L73,0,.L234-.L73
+.L75:
+	.word	-1,.L76,0,.L239-.L76
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L237:
-	.word	-1,.L73,.L379-.L73,.L234-.L73
+.L242:
+	.word	-1,.L76,.L388-.L76,.L239-.L76
 	.half	1
 	.byte	82
-	.word	.L380-.L73,.L234-.L73
+	.word	.L389-.L76,.L239-.L76
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_resume')
 	.sect	'.debug_loc'
-.L255:
+.L260:
 	.word	0,0
-.L78:
-	.word	-1,.L79,0,.L248-.L79
+.L81:
+	.word	-1,.L82,0,.L253-.L82
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L250:
-	.word	-1,.L79,.L400-.L79,.L402-.L79
+.L255:
+	.word	-1,.L82,.L411-.L82,.L413-.L82
 	.half	1
 	.byte	82
-	.word	.L258-.L79,.L248-.L79
+	.word	.L263-.L82,.L253-.L82
 	.half	1
 	.byte	95
 	.word	0,0
-.L249:
-	.word	-1,.L79,0,.L400-.L79
+.L254:
+	.word	-1,.L82,0,.L411-.L82
 	.half	1
 	.byte	100
-	.word	.L401-.L79,.L248-.L79
+	.word	.L412-.L82,.L253-.L82
 	.half	1
 	.byte	108
-	.word	.L403-.L79,.L404-.L79
+	.word	.L414-.L82,.L415-.L82
 	.half	1
 	.byte	100
-	.word	.L405-.L79,.L41-.L79
+	.word	.L416-.L82,.L44-.L82
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_resume_sethook')
 	.sect	'.debug_loc'
-.L272:
-	.word	-1,.L47,0,.L271-.L47
+.L277:
+	.word	-1,.L50,0,.L276-.L50
 	.half	1
 	.byte	100
 	.word	0,0
-.L46:
-	.word	-1,.L47,0,.L271-.L47
+.L49:
+	.word	-1,.L50,0,.L276-.L50
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_self')
 	.sect	'.debug_loc'
-.L58:
-	.word	-1,.L59,0,.L213-.L59
-	.half	2
-	.byte	138,0
-	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('rt_thread_sleep')
-	.sect	'.debug_loc'
-.L66:
-	.word	-1,.L67,0,.L363-.L67
-	.half	2
-	.byte	138,0
-	.word	.L363-.L67,.L308-.L67
-	.half	2
-	.byte	138,8
-	.word	.L308-.L67,.L308-.L67
-	.half	2
-	.byte	138,0
-	.word	0,0
-.L310:
-	.word	-1,.L67,.L365-.L67,.L367-.L67
+.L217:
+	.word	-1,.L62,.L358-.L62,.L359-.L62
 	.half	1
 	.byte	82
-	.word	.L368-.L67,.L369-.L67
+	.word	.L359-.L62,.L216-.L62
 	.half	1
 	.byte	95
 	.word	0,0
-.L311:
-	.word	-1,.L67,.L364-.L67,.L365-.L67
-	.half	1
-	.byte	98
-	.word	.L366-.L67,.L308-.L67
+.L61:
+	.word	-1,.L62,0,.L216-.L62
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L218:
+	.word	-1,.L62,.L360-.L62,.L216-.L62
 	.half	1
 	.byte	111
-	.word	.L368-.L67,.L367-.L67
+	.word	.L361-.L62,.L216-.L62
+	.half	1
+	.byte	98
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_thread_sleep')
+	.sect	'.debug_loc'
+.L69:
+	.word	-1,.L70,0,.L372-.L70
+	.half	2
+	.byte	138,0
+	.word	.L372-.L70,.L313-.L70
+	.half	2
+	.byte	138,8
+	.word	.L313-.L70,.L313-.L70
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L315:
+	.word	-1,.L70,.L374-.L70,.L376-.L70
+	.half	1
+	.byte	82
+	.word	.L377-.L70,.L378-.L70
+	.half	1
+	.byte	95
+	.word	0,0
+.L316:
+	.word	-1,.L70,.L373-.L70,.L374-.L70
+	.half	1
+	.byte	98
+	.word	.L375-.L70,.L313-.L70
+	.half	1
+	.byte	111
+	.word	.L377-.L70,.L376-.L70
 	.half	1
 	.byte	100
 	.word	0,0
-.L309:
-	.word	-1,.L67,0,.L308-.L67
+.L314:
+	.word	-1,.L70,0,.L313-.L70
 	.half	2
 	.byte	145,120
-	.word	0,.L364-.L67
+	.word	0,.L373-.L70
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_startup')
 	.sect	'.debug_loc'
-.L60:
-	.word	-1,.L61,0,.L217-.L61
+.L63:
+	.word	-1,.L64,0,.L222-.L64
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L218:
-	.word	-1,.L61,0,.L353-.L61
+.L223:
+	.word	-1,.L64,0,.L362-.L64
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_suspend')
 	.sect	'.debug_loc'
-.L76:
-	.word	-1,.L77,0,.L244-.L77
+.L79:
+	.word	-1,.L80,0,.L249-.L80
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L246:
-	.word	-1,.L77,.L395-.L77,.L396-.L77
+.L251:
+	.word	-1,.L80,.L406-.L80,.L407-.L80
 	.half	1
 	.byte	95
 	.word	0,0
-.L247:
-	.word	-1,.L77,.L393-.L77,.L397-.L77
+.L252:
+	.word	-1,.L80,.L404-.L80,.L408-.L80
 	.half	1
 	.byte	82
-	.word	.L398-.L77,.L244-.L77
+	.word	.L409-.L80,.L249-.L80
 	.half	1
 	.byte	88
 	.word	0,0
-.L245:
-	.word	-1,.L77,0,.L393-.L77
+.L250:
+	.word	-1,.L80,0,.L404-.L80
 	.half	1
 	.byte	100
-	.word	.L394-.L77,.L244-.L77
+	.word	.L405-.L80,.L249-.L80
 	.half	1
 	.byte	111
-	.word	.L398-.L77,.L397-.L77
+	.word	.L409-.L80,.L408-.L80
 	.half	1
 	.byte	100
-	.word	.L399-.L77,.L37-.L77
+	.word	.L410-.L80,.L40-.L80
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_suspend_sethook')
 	.sect	'.debug_loc'
-.L270:
-	.word	-1,.L45,0,.L268-.L45
+.L275:
+	.word	-1,.L48,0,.L273-.L48
 	.half	1
 	.byte	100
 	.word	0,0
-.L44:
-	.word	-1,.L45,0,.L268-.L45
+.L47:
+	.word	-1,.L48,0,.L273-.L48
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_timeout')
 	.sect	'.debug_loc'
-.L267:
+.L272:
 	.word	0,0
-.L263:
-	.word	-1,.L81,0,.L406-.L81
+.L268:
+	.word	-1,.L84,0,.L417-.L84
 	.half	1
 	.byte	100
 	.word	0,0
-.L80:
-	.word	-1,.L81,0,.L262-.L81
+.L83:
+	.word	-1,.L84,0,.L267-.L84
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L264:
-	.word	-1,.L81,0,.L406-.L81
+.L269:
+	.word	-1,.L84,0,.L417-.L84
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('rt_thread_yield')
 	.sect	'.debug_loc'
-.L221:
-	.word	-1,.L65,.L359-.L65,.L361-.L65
+.L226:
+	.word	-1,.L68,.L368-.L68,.L370-.L68
 	.half	1
 	.byte	82
-	.word	.L362-.L65,.L219-.L65
+	.word	.L371-.L68,.L224-.L68
 	.half	1
 	.byte	88
 	.word	0,0
-.L64:
-	.word	-1,.L65,0,.L219-.L65
+.L67:
+	.word	-1,.L68,0,.L224-.L68
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L220:
-	.word	-1,.L65,.L358-.L65,.L359-.L65
+.L225:
+	.word	-1,.L68,.L367-.L68,.L368-.L68
 	.half	1
 	.byte	98
-	.word	.L360-.L65,.L219-.L65
+	.word	.L369-.L68,.L224-.L68
 	.half	1
 	.byte	111
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L601:
+.L621:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
@@ -5437,102 +5626,101 @@ rt_thread_inited_hook:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_suspend_sethook')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L601,.L45,.L268-.L45
+	.word	.L621,.L48,.L273-.L48
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_resume_sethook')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L601,.L47,.L271-.L47
+	.word	.L621,.L50,.L276-.L50
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_inited_sethook')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L601,.L49,.L273-.L49
+	.word	.L621,.L52,.L278-.L52
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('_thread_cleanup_execute')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L601,.L51,.L275-.L51
+	.word	.L621,.L54,.L280-.L54
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_exit')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L601,.L53,.L278-.L53
+	.word	.L621,.L56,.L283-.L56
 	.sdecl	'.debug_frame',debug,cluster('_rt_thread_init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L601,.L55,.L290-.L55
+	.word	.L621,.L58,.L295-.L58
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_init')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L601,.L57,.L195-.L57
+	.word	.L621,.L60,.L198-.L60
 	.byte	4
-	.word	(.L342-.L57)/2
+	.word	(.L347-.L60)/2
 	.byte	19,8,22,26,3,19,138,8,4
-	.word	(.L195-.L342)/2
+	.word	(.L198-.L347)/2
 	.byte	19,0,8,26,0,0
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_self')
 	.sect	'.debug_frame'
-	.word	24
-	.word	.L601,.L59,.L213-.L59
-	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.word	12
+	.word	.L621,.L62,.L216-.L62
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_startup')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L601,.L61,.L217-.L61
+	.word	.L621,.L64,.L222-.L64
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_detach')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L601,.L63,.L210-.L63
+	.word	.L621,.L66,.L213-.L66
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_yield')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L601,.L65,.L219-.L65
+	.word	.L621,.L68,.L224-.L68
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_sleep')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L601,.L67,.L308-.L67
+	.word	.L621,.L70,.L313-.L70
 	.byte	4
-	.word	(.L363-.L67)/2
+	.word	(.L372-.L70)/2
 	.byte	19,8,22,26,3,19,138,8,4
-	.word	(.L308-.L363)/2
+	.word	(.L313-.L372)/2
 	.byte	19,0,8,26,0,0
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_delay')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L601,.L69,.L222-.L69
+	.word	.L621,.L72,.L227-.L72
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_delay_until')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L601,.L71,.L224-.L71
+	.word	.L621,.L74,.L229-.L74
 	.byte	4
-	.word	(.L370-.L71)/2
+	.word	(.L379-.L74)/2
 	.byte	19,8,22,26,3,19,138,8,4
-	.word	(.L224-.L370)/2
+	.word	(.L229-.L379)/2
 	.byte	19,0,8,26,0,0
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_mdelay')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L601,.L73,.L234-.L73
+	.word	.L621,.L76,.L239-.L76
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_control')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L601,.L75,.L238-.L75
+	.word	.L621,.L78,.L243-.L78
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_suspend')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L601,.L77,.L244-.L77
+	.word	.L621,.L80,.L249-.L80
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_resume')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L601,.L79,.L248-.L79
+	.word	.L621,.L82,.L253-.L82
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_timeout')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L601,.L81,.L262-.L81
+	.word	.L621,.L84,.L267-.L84
 	.sdecl	'.debug_frame',debug,cluster('rt_thread_find')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L601,.L83,.L214-.L83
+	.word	.L621,.L86,.L219-.L86
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   896  }
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\thread.c	   897  RTM_EXPORT(rt_thread_find);

@@ -41,12 +41,12 @@
  */
 
 #include "IfxStdIf_Timer.h"
+#include "IfxCpu_reg.h"
 
 void IfxStdIf_Timer_initConfig(IfxStdIf_Timer_Config *config)
 {
     config->frequency                  = 1000;
     config->isrPriority                = 0;
-    config->isrProvider                = IfxSrc_Tos_cpu0;
     config->minResolution              = 0;
     config->trigger.outputMode         = IfxPort_OutputMode_pushPull;
     config->trigger.outputDriver       = IfxPort_PadDriver_cmosAutomotiveSpeed1;
@@ -55,9 +55,21 @@ void IfxStdIf_Timer_initConfig(IfxStdIf_Timer_Config *config)
     config->trigger.enabled            = FALSE;
     config->trigger.triggerPoint       = 0;
     config->trigger.isrPriority        = 0;
-    config->trigger.isrProvider        = IfxSrc_Tos_cpu0;
     config->countDir                   = IfxStdIf_Timer_CountDir_up;
-    config->startOffset 					   = 0.0;
+    config->startOffset 			   = 0.0;
+    switch ((__mfcr(CPU_CORE_ID) & 0x0f))
+    {
+    case 0:
+        config->isrProvider                = IfxSrc_Tos_cpu0;
+        config->trigger.isrProvider        = IfxSrc_Tos_cpu0;
+        break;
+    case 1:
+        config->isrProvider                = IfxSrc_Tos_cpu1;
+        config->trigger.isrProvider        = IfxSrc_Tos_cpu1;
+        break;
+    default:
+        break;
+    }
 }
 
 

@@ -414,7 +414,7 @@ rt_object_get_length:	.type	func
 	mov	d2,#0
 	ret
 .L6:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L219:
 	ld.a	a2,[a15]4
 .L222:
@@ -427,7 +427,7 @@ rt_object_get_length:	.type	func
 	jne.a	a2,a4,.L9
 .L274:
 	mov	d4,d2
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L221:
 	mov	d2,d15
 	ret
@@ -510,7 +510,7 @@ rt_object_get_pointers:	.type	func
 	mov	d2,#0
 	ret
 .L12:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L227:
 	ld.a	a2,[a15]4
 .L229:
@@ -529,7 +529,7 @@ rt_object_get_pointers:	.type	func
 	jne.a	a2,a4,.L15
 .L16:
 	mov	d4,d2
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L228:
 	mov	d2,d8
 	ret
@@ -653,7 +653,7 @@ rt_object_init:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\object.c	   341  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\object.c	   342      /* lock interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\object.c	   343      temp = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L242:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\object.c	   344  
@@ -820,7 +820,7 @@ rt_object_init:	.type	func
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\rt-thread\include\rtservice.h	    64      n->prev = l;
 	st.a	[a12]16,a2
 .L181:
-	j	rt_hw_interrupt_enable
+	j	rt_cpus_unlock
 .L161:
 	
 __rt_object_init_function_end:
@@ -873,7 +873,7 @@ rt_object_detach:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\object.c	   379  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\object.c	   380      /* lock interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\object.c	   381      temp = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L244:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\object.c	   382  
@@ -1086,7 +1086,7 @@ rt_object_detach:	.type	func
 .L306:
 	st.a	[a2],a2
 .L194:
-	j	rt_hw_interrupt_enable
+	j	rt_cpus_unlock
 .L182:
 	
 __rt_object_detach_function_end:
@@ -1403,7 +1403,7 @@ rt_object_container:	.type	object
 	.size	rt_object_container,144
 	.byte	1
 	.space	3
-	.word	rt_object_container+4,rt_object_container+4,128
+	.word	rt_object_container+4,rt_object_container+4,136
 	.byte	2
 	.space	3
 	.word	rt_object_container+20,rt_object_container+20,32
@@ -1462,21 +1462,21 @@ rt_object_put_hook:	.type	object
 	.size	rt_object_put_hook,4
 	.space	4
 	.calls	'rt_object_get_length','rt_object_get_information'
-	.calls	'rt_object_get_length','rt_hw_interrupt_disable'
-	.calls	'rt_object_get_length','rt_hw_interrupt_enable'
+	.calls	'rt_object_get_length','rt_cpus_lock'
+	.calls	'rt_object_get_length','rt_cpus_unlock'
 	.calls	'rt_object_get_pointers','rt_object_get_information'
-	.calls	'rt_object_get_pointers','rt_hw_interrupt_disable'
-	.calls	'rt_object_get_pointers','rt_hw_interrupt_enable'
+	.calls	'rt_object_get_pointers','rt_cpus_lock'
+	.calls	'rt_object_get_pointers','rt_cpus_unlock'
 	.calls	'rt_object_init','rt_object_get_information'
 	.calls	'rt_object_init','rt_enter_critical'
 	.calls	'rt_object_init','rt_exit_critical'
 	.calls	'rt_object_init','rt_strncpy'
 	.calls	'rt_object_init','__INDIRECT__'
-	.calls	'rt_object_init','rt_hw_interrupt_disable'
-	.calls	'rt_object_init','rt_hw_interrupt_enable'
+	.calls	'rt_object_init','rt_cpus_lock'
+	.calls	'rt_object_init','rt_cpus_unlock'
 	.calls	'rt_object_detach','__INDIRECT__'
-	.calls	'rt_object_detach','rt_hw_interrupt_disable'
-	.calls	'rt_object_detach','rt_hw_interrupt_enable'
+	.calls	'rt_object_detach','rt_cpus_lock'
+	.calls	'rt_object_detach','rt_cpus_unlock'
 	.calls	'rt_object_find','rt_object_get_information'
 	.calls	'rt_object_find','rt_enter_critical'
 	.calls	'rt_object_find','rt_strncmp'
@@ -1495,16 +1495,16 @@ rt_object_put_hook:	.type	object
 	.calls	'rt_object_get_type','',0
 	.extern	rt_enter_critical
 	.extern	rt_exit_critical
+	.extern	rt_cpus_lock
+	.extern	rt_cpus_unlock
 	.extern	rt_strncpy
 	.extern	rt_strncmp
-	.extern	rt_hw_interrupt_disable
-	.extern	rt_hw_interrupt_enable
 	.extern	__INDIRECT__
 	.calls	'rt_object_find','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L58:
-	.word	1929
+	.word	2029
 	.half	3
 	.word	.L59
 	.byte	4
@@ -1664,21 +1664,28 @@ rt_object_put_hook:	.type	object
 	.word	1131
 	.byte	23
 	.byte	'rt_enter_critical',0,3,184,1,6,1,1,1,1,23
-	.byte	'rt_exit_critical',0,3,185,1,6,1,1,1,1,2
+	.byte	'rt_exit_critical',0,3,185,1,6,1,1,1,1,24
+	.byte	'rt_cpus_lock',0,3,224,3,11
+	.word	1119
+	.byte	1,1,1,1,25
+	.byte	'rt_cpus_unlock',0,3,225,3,6,1,1,1,1,6
+	.byte	'level',0,3,225,3,31
+	.word	1119
+	.byte	0,2
 	.word	966
-	.byte	24
+	.byte	26
 	.byte	'rt_strncpy',0,3,166,4,7
-	.word	1198
+	.word	1264
 	.byte	1,1,1,1,6
 	.byte	'dest',0,3,166,4,24
-	.word	1198
+	.word	1264
 	.byte	6
 	.byte	'src',0,3,166,4,42
 	.word	1114
 	.byte	6
 	.byte	'n',0,3,166,4,58
 	.word	855
-	.byte	0,24
+	.byte	0,26
 	.byte	'rt_strncmp',0,3,167,4,12
 	.word	312
 	.byte	1,1,1,1,6
@@ -1690,27 +1697,20 @@ rt_object_put_hook:	.type	object
 	.byte	6
 	.byte	'count',0,3,167,4,66
 	.word	855
-	.byte	0,25
-	.byte	'rt_hw_interrupt_disable',0,4,105,11
-	.word	1119
-	.byte	1,1,1,1,26
-	.byte	'rt_hw_interrupt_enable',0,4,106,6,1,1,1,1,6
-	.byte	'level',0,4,106,39
-	.word	1119
 	.byte	0,27
-	.byte	'__INDIRECT__',0,5,1,1,1,1,1,21
-	.byte	'__size_t',0,5,1,1
+	.byte	'__INDIRECT__',0,4,1,1,1,1,1,21
+	.byte	'__size_t',0,4,1,1
 	.word	361
 	.byte	28,1,2
-	.word	1449
+	.word	1433
 	.byte	21
-	.byte	'__codeptr',0,5,1,1
-	.word	1451
+	.byte	'__codeptr',0,4,1,1
+	.word	1435
 	.byte	21
-	.byte	'__intptr_t',0,5,1,1
+	.byte	'__intptr_t',0,4,1,1
 	.word	312
 	.byte	21
-	.byte	'__uintptr_t',0,5,1,1
+	.byte	'__uintptr_t',0,4,1,1
 	.word	361
 	.byte	21
 	.byte	'rt_int32_t',0,2,68,41
@@ -1721,7 +1721,7 @@ rt_object_put_hook:	.type	object
 	.byte	8
 	.byte	'unsigned short int',0,2,7,21
 	.byte	'rt_uint16_t',0,2,70,41
-	.word	1551
+	.word	1535
 	.byte	21
 	.byte	'rt_uint32_t',0,2,71,41
 	.word	361
@@ -1752,34 +1752,50 @@ rt_object_put_hook:	.type	object
 	.byte	3
 	.byte	'rt_slist_node',0,2,239,2,8,4,4
 	.byte	'next',0
-	.word	1740
+	.word	1724
 	.byte	4,2,35,0,0,21
 	.byte	'rt_slist_t',0,2,243,2,30
-	.word	1745
+	.word	1729
 	.byte	21
-	.byte	'uint16_t',0,6,246,1,41
-	.word	1551
+	.byte	'uint16_t',0,5,246,1,41
+	.word	1535
 	.byte	21
-	.byte	'uint32_t',0,6,254,1,41
+	.byte	'uint32_t',0,5,254,1,41
 	.word	361
 	.byte	21
-	.byte	'time_t',0,7,44,25
+	.byte	'time_t',0,6,44,25
 	.word	855
 	.byte	21
-	.byte	'fd_mask',0,8,39,17
+	.byte	'fd_mask',0,7,39,17
 	.word	1119
 	.byte	29
 	.byte	'void',0,2
-	.word	1867
+	.word	1851
 	.byte	22,1,1,11
 	.word	312
 	.byte	11
-	.word	1873
+	.word	1857
 	.byte	0,2
-	.word	1878
+	.word	1862
 	.byte	21
-	.byte	'rt_isr_handler_t',0,4,73,16
-	.word	1892
+	.byte	'rt_isr_handler_t',0,8,73,16
+	.word	1876
+	.byte	3
+	.byte	'__arch_tickets',0,8,140,1,12,4,4
+	.byte	'owner',0
+	.word	1535
+	.byte	2,2,35,0,4
+	.byte	'next',0
+	.word	1535
+	.byte	2,2,35,2,0,30,8,138,1,9,4,4
+	.byte	'slock',0
+	.word	855
+	.byte	4,2,35,0,4
+	.byte	'tickets',0
+	.word	1906
+	.byte	4,2,35,0,0,21
+	.byte	'rt_hw_spinlock_t',0,8,144,1,3
+	.word	1957
 .L217:
 	.byte	19,144,1
 	.word	876
@@ -1793,10 +1809,10 @@ rt_object_put_hook:	.type	object
 	.byte	60,12,0,0,11,5,0,73,19,0,0,12,53,0,73,19,0,0,13,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,14,5,0,3,8
 	.byte	73,19,0,0,15,46,1,49,19,0,0,16,5,0,49,19,0,0,17,4,1,3,8,58,15,59,15,57,15,11,15,0,0,18,40,0,3,8,28,13
 	.byte	0,0,19,1,1,11,15,73,19,0,0,20,33,0,47,15,0,0,21,22,0,3,8,58,15,59,15,57,15,73,19,0,0,22,21,1,54,15,39
-	.byte	12,0,0,23,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,24,46,1,3,8,58,15,59,15,57,15,73,19,54
-	.byte	15,39,12,63,12,60,12,0,0,25,46,0,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,26,46,1,3,8,58
-	.byte	15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,27,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60,12,0,0,28,21,0
-	.byte	54,15,0,0,29,59,0,3,8,0,0,0
+	.byte	12,0,0,23,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,24,46,0,3,8,58,15,59,15,57,15,73,19,54
+	.byte	15,39,12,63,12,60,12,0,0,25,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,26,46,1,3,8,58,15,59
+	.byte	15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,27,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60,12,0,0,28,21,0
+	.byte	54,15,0,0,29,59,0,3,8,0,0,30,23,1,58,15,59,15,57,15,11,15,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
 .L60:
@@ -1813,11 +1829,11 @@ rt_object_put_hook:	.type	object
 	.byte	'rtservice.h',0,1,0,0
 	.byte	'rtdef.h',0,1,0,0
 	.byte	'rtthread.h',0,1,0,0
-	.byte	'rthw.h',0,1,0,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\object.c',0,0,0,0
 	.byte	'stdint.h',0,2,0,0
 	.byte	'time.h',0,2,0,0
-	.byte	'libc_fdset.h',0,3,0,0,0
+	.byte	'libc_fdset.h',0,3,0,0
+	.byte	'rthw.h',0,1,0,0,0
 .L260:
 .L258:
 	.sdecl	'.debug_info',debug,cluster('rt_object_get_information')
@@ -2755,7 +2771,7 @@ rt_object_put_hook:	.type	object
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
 	.word	.L57
 	.byte	3
-	.byte	'rt_object_container',0,5,64,37
+	.byte	'rt_object_container',0,4,64,37
 	.word	.L217
 	.byte	5,3
 	.word	rt_object_container
@@ -2776,7 +2792,7 @@ rt_object_put_hook:	.type	object
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
 	.word	.L57
 	.byte	3
-	.byte	'rt_object_attach_hook',0,5,109,15
+	.byte	'rt_object_attach_hook',0,4,109,15
 	.word	.L207
 	.byte	5,3
 	.word	rt_object_attach_hook
@@ -2797,7 +2813,7 @@ rt_object_put_hook:	.type	object
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
 	.word	.L57
 	.byte	3
-	.byte	'rt_object_detach_hook',0,5,110,15
+	.byte	'rt_object_detach_hook',0,4,110,15
 	.word	.L207
 	.byte	5,3
 	.word	rt_object_detach_hook
@@ -2818,7 +2834,7 @@ rt_object_put_hook:	.type	object
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
 	.word	.L57
 	.byte	3
-	.byte	'rt_object_trytake_hook',0,5,111,8
+	.byte	'rt_object_trytake_hook',0,4,111,8
 	.word	.L207
 	.byte	1,5,3
 	.word	rt_object_trytake_hook
@@ -2840,7 +2856,7 @@ rt_object_put_hook:	.type	object
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
 	.word	.L57
 	.byte	3
-	.byte	'rt_object_take_hook',0,5,112,8
+	.byte	'rt_object_take_hook',0,4,112,8
 	.word	.L207
 	.byte	1,5,3
 	.word	rt_object_take_hook
@@ -2862,7 +2878,7 @@ rt_object_put_hook:	.type	object
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
 	.word	.L57
 	.byte	3
-	.byte	'rt_object_put_hook',0,5,113,8
+	.byte	'rt_object_put_hook',0,4,113,8
 	.word	.L207
 	.byte	1,5,3
 	.word	rt_object_put_hook

@@ -56,17 +56,17 @@ void core0_main(void)
      */
     IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());
     IfxScuWdt_disableSafetyWatchdog(IfxScuWdt_getSafetyWatchdogPassword());
+    /* Wait for CPU sync event: wait until all CPUs are in CpuX_Main to avoid variables' initialization problems */
 	get_clk();
     
 	rtthread_startup();
-    sendUARTMessage("core0_main\r\n",sizeof("core0_main")+2);
     while(1)
     {
 
     }
 }
 
-rt_uint32_t Led_CNT = 0x00;
+static rt_uint32_t Led_CNT = 0x00;
 static void led_thread_entry(void *parameter)
 {
     while(1)
@@ -77,25 +77,20 @@ static void led_thread_entry(void *parameter)
     }
 }
 
-//add by song
 static rt_uint8_t led_thread_stack[512];
 static struct rt_thread led_thread_thread;
 
 uint32 Main_CNT = 0x00;
-extern struct rt_thread main_thread;
-extern rt_uint8_t Flag_10ms;
 int main(void)
 {
-    #define EVENT_FLAG3 (1 << 3)
-    #define EVENT_FLAG5 (1 << 5)
-
-    /* Wait for CPU sync event: wait until all CPUs are in CpuX_Main to avoid variables' initialization problems */
     IfxCpu_emitEvent(&g_cpuSyncEvent);
     IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
-
+    
     rt_thread_init(&led_thread_thread, "led", led_thread_entry, RT_NULL,\
     &led_thread_stack[0], sizeof(led_thread_stack), RT_MAIN_THREAD_PRIORITY+1, 20);
-    
+#ifdef RT_USING_SMP
+    rt_thread_control(&led_thread_thread, RT_THREAD_CTRL_BIND_CPU, 0);
+#endif
     rt_thread_startup(&led_thread_thread);
 
     for(;;)

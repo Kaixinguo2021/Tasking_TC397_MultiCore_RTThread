@@ -54,9 +54,11 @@
 #endif
 
 
-void tricore_trap_yield_for_task( int iTrapIdentification );
+void tricore0_trap_yield_for_task( int iTrapIdentification );
+void tricore1_trap_yield_for_task( int iTrapIdentification );
 
-#define IFX_CFG_CPU_TRAP_SYSCALL_CPU0_HOOK(trapInfo) tricore_trap_yield_for_task((trapInfo).tId)
+#define IFX_CFG_CPU_TRAP_SYSCALL_CPU0_HOOK(trapInfo) tricore0_trap_yield_for_task((trapInfo).tId)
+#define IFX_CFG_CPU_TRAP_SYSCALL_CPU1_HOOK(trapInfo) tricore1_trap_yield_for_task((trapInfo).tId)
 
 /******************************************************************************/
 /*                           Macros                                           */

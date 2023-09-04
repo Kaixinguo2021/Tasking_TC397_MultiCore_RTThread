@@ -3255,8 +3255,8 @@ _console_device:	.type	object
 	.sect	'.rodata.kservice..4.str'
 .4.str:	.type	object
 	.size	.4.str,12
-	.byte	65,117,103,32
-	.byte	50,52,32,50
+	.byte	83,101,112,32
+	.byte	32,49,32,50
 	.byte	48,50,51
 	.space	1
 	.sdecl	'.rodata.kservice..5.str',data,rom
@@ -3638,7 +3638,7 @@ __lowest_bit_bitmap:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L269:
-	.word	3519
+	.word	3751
 	.half	3
 	.word	.L270
 	.byte	4
@@ -3738,7 +3738,8 @@ __lowest_bit_bitmap:	.type	object
 	.byte	4,2,35,0,18
 	.byte	'prev',0
 	.word	480
-	.byte	4,2,35,4,0
+	.byte	4,2,35,4,0,2
+	.byte	'unsigned short int',0,2,7
 .L423:
 	.byte	2
 	.byte	'unsigned long int',0,4,7,17
@@ -3759,17 +3760,17 @@ __lowest_bit_bitmap:	.type	object
 	.byte	16,0,0,19,1,1,9
 	.word	426
 	.byte	0,3
-	.word	636
+	.word	658
 	.byte	17
 	.byte	'rt_timer',0,3,236,3,8,44,18
 	.byte	'parent',0
-	.word	554
+	.word	576
 	.byte	20,2,35,0,18
 	.byte	'row',0
-	.word	627
+	.word	649
 	.byte	8,2,35,20,18
 	.byte	'timeout_func',0
-	.word	645
+	.word	667
 	.byte	4,2,35,28,18
 	.byte	'parameter',0
 	.word	426
@@ -3782,9 +3783,9 @@ __lowest_bit_bitmap:	.type	object
 	.byte	4,2,35,40,0,19,1,1,9
 	.word	.L731-.L269
 	.byte	0,3
-	.word	777
+	.word	799
 	.byte	17
-	.byte	'rt_thread',0,3,213,4,8,128,1,18
+	.byte	'rt_thread',0,3,213,4,8,136,1,18
 	.byte	'name',0
 	.word	454
 	.byte	8,2,35,0,18
@@ -3821,48 +3822,63 @@ __lowest_bit_bitmap:	.type	object
 	.byte	'stat',0
 	.word	463
 	.byte	1,2,35,52,18
-	.byte	'current_priority',0
+	.byte	'bind_cpu',0
 	.word	463
 	.byte	1,2,35,53,18
-	.byte	'init_priority',0
+	.byte	'oncpu',0
 	.word	463
 	.byte	1,2,35,54,18
+	.byte	'scheduler_lock_nest',0
+	.word	533
+	.byte	2,2,35,56,18
+	.byte	'cpus_lock_nest',0
+	.word	533
+	.byte	2,2,35,58,18
+	.byte	'critical_lock_nest',0
+	.word	533
+	.byte	2,2,35,60,18
+	.byte	'current_priority',0
+	.word	463
+	.byte	1,2,35,62,18
+	.byte	'init_priority',0
+	.word	463
+	.byte	1,2,35,63,18
 	.byte	'number_mask',0
 	.word	342
-	.byte	4,2,35,56,18
+	.byte	4,2,35,64,18
 	.byte	'event_set',0
 	.word	342
-	.byte	4,2,35,60,18
+	.byte	4,2,35,68,18
 	.byte	'event_info',0
 	.word	463
-	.byte	1,2,35,64,18
+	.byte	1,2,35,72,18
 	.byte	'init_tick',0
-	.word	533
-	.byte	4,2,35,66,18
+	.word	555
+	.byte	4,2,35,74,18
 	.byte	'remaining_tick',0
-	.word	533
-	.byte	4,2,35,70,18
+	.word	555
+	.byte	4,2,35,78,18
 	.byte	'thread_timer',0
-	.word	650
-	.byte	44,2,35,76,18
+	.word	672
+	.byte	44,2,35,84,18
 	.byte	'cleanup',0
-	.word	786
-	.byte	4,2,35,120,18
+	.word	808
+	.byte	4,3,35,128,1,18
 	.byte	'user_data',0
-	.word	533
-	.byte	4,2,35,124,0
+	.word	555
+	.byte	4,3,35,132,1,0
 .L731:
 	.byte	3
-	.word	791
+	.word	813
 .L502:
 	.byte	20
 	.byte	'rt_thread_t',0,3,160,5,27
-	.word	1206
+	.word	1344
 	.byte	21
 	.byte	'rt_thread_self',0,2,137,1,13
-	.word	1211
+	.word	1349
 	.byte	1,1,1,1,3
-	.word	791
+	.word	813
 	.byte	22
 	.byte	'rt_device_class_type',0,3,249,6,6,1,23
 	.byte	'RT_Device_Class_Char',0,0,23
@@ -3887,15 +3903,14 @@ __lowest_bit_bitmap:	.type	object
 	.byte	'RT_Device_Class_Sensor',0,19,23
 	.byte	'RT_Device_Class_Touch',0,20,23
 	.byte	'RT_Device_Class_PHY',0,21,23
-	.byte	'RT_Device_Class_Unknown',0,22,0,2
-	.byte	'unsigned short int',0,2,7,24
+	.byte	'RT_Device_Class_Unknown',0,22,0,24
 	.word	179
 	.byte	1,1,9
 	.word	.L732-.L269
 	.byte	9
-	.word	533
+	.word	555
 	.byte	0,3
-	.word	1879
+	.word	1995
 	.byte	24
 	.word	179
 	.byte	1,1,9
@@ -3903,23 +3918,23 @@ __lowest_bit_bitmap:	.type	object
 	.byte	9
 	.word	426
 	.byte	0,3
-	.word	1902
+	.word	2018
 	.byte	24
 	.word	179
 	.byte	1,1,9
 	.word	.L732-.L269
 	.byte	0,3
-	.word	1925
+	.word	2041
 	.byte	24
 	.word	179
 	.byte	1,1,9
 	.word	.L732-.L269
 	.byte	9
-	.word	1857
-	.byte	0,3
-	.word	1943
-	.byte	24
 	.word	533
+	.byte	0,3
+	.word	2059
+	.byte	24
+	.word	555
 	.byte	1,1,9
 	.word	.L732-.L269
 	.byte	9
@@ -3927,26 +3942,26 @@ __lowest_bit_bitmap:	.type	object
 	.byte	9
 	.word	426
 	.byte	9
-	.word	533
+	.word	555
 	.byte	0,3
-	.word	1966
+	.word	2082
 	.byte	7
 	.word	420
 .L524:
 	.byte	3
-	.word	1999
+	.word	2115
 	.byte	24
-	.word	533
+	.word	555
 	.byte	1,1,9
 	.word	.L732-.L269
 	.byte	9
 	.word	179
 	.byte	9
-	.word	2004
+	.word	2120
 	.byte	9
-	.word	533
+	.word	555
 	.byte	0,3
-	.word	2009
+	.word	2125
 	.byte	24
 	.word	179
 	.byte	1,1,9
@@ -3956,20 +3971,20 @@ __lowest_bit_bitmap:	.type	object
 	.byte	9
 	.word	426
 	.byte	0,3
-	.word	2042
+	.word	2158
 	.byte	17
 	.byte	'rt_device',0,3,235,7,8,64,18
 	.byte	'parent',0
-	.word	554
+	.word	576
 	.byte	20,2,35,0,18
 	.byte	'type',0
-	.word	1265
+	.word	1403
 	.byte	1,2,35,20,18
 	.byte	'flag',0
-	.word	1857
+	.word	533
 	.byte	2,2,35,22,18
 	.byte	'open_flag',0
-	.word	1857
+	.word	533
 	.byte	2,2,35,24,18
 	.byte	'ref_count',0
 	.word	463
@@ -3978,77 +3993,77 @@ __lowest_bit_bitmap:	.type	object
 	.word	463
 	.byte	1,2,35,27,18
 	.byte	'rx_indicate',0
-	.word	1897
+	.word	2013
 	.byte	4,2,35,28,18
 	.byte	'tx_complete',0
-	.word	1920
+	.word	2036
 	.byte	4,2,35,32,18
 	.byte	'init',0
-	.word	1938
+	.word	2054
 	.byte	4,2,35,36,18
 	.byte	'open',0
-	.word	1961
+	.word	2077
 	.byte	4,2,35,40,18
 	.byte	'close',0
-	.word	1938
+	.word	2054
 	.byte	4,2,35,44,18
 	.byte	'read',0
-	.word	1994
+	.word	2110
 	.byte	4,2,35,48,18
 	.byte	'write',0
-	.word	2037
+	.word	2153
 	.byte	4,2,35,52,18
 	.byte	'control',0
-	.word	2065
+	.word	2181
 	.byte	4,2,35,56,18
 	.byte	'user_data',0
 	.word	426
 	.byte	4,2,35,60,0
 .L732:
 	.byte	3
-	.word	2070
+	.word	2186
 .L494:
 	.byte	20
 	.byte	'rt_device_t',0,3,204,7,27
-	.word	2338
+	.word	2454
 	.byte	25
 	.byte	'rt_device_find',0,2,175,3,13
-	.word	2343
+	.word	2459
 	.byte	1,1,1,1,5
 	.byte	'name',0,2,175,3,40
 	.word	255
 	.byte	0,3
-	.word	2070
+	.word	2186
 	.byte	25
 	.byte	'rt_device_open',0,2,193,3,11
 	.word	179
 	.byte	1,1,1,1,5
 	.byte	'dev',0,2,193,3,39
-	.word	2343
+	.word	2459
 	.byte	5
 	.byte	'oflag',0,2,193,3,56
-	.word	1857
+	.word	533
 	.byte	0,25
 	.byte	'rt_device_close',0,2,194,3,11
 	.word	179
 	.byte	1,1,1,1,5
 	.byte	'dev',0,2,194,3,39
-	.word	2343
+	.word	2459
 	.byte	0,25
 	.byte	'rt_device_write',0,2,199,3,11
-	.word	533
+	.word	555
 	.byte	1,1,1,1,5
 	.byte	'dev',0,2,199,3,39
-	.word	2343
+	.word	2459
 	.byte	5
 	.byte	'pos',0,2,200,3,39
 	.word	179
 	.byte	5
 	.byte	'buffer',0,2,201,3,39
-	.word	2004
+	.word	2120
 	.byte	5
 	.byte	'size',0,2,202,3,39
-	.word	533
+	.word	555
 	.byte	0,21
 	.byte	'rt_interrupt_get_nest',0,2,235,3,12
 	.word	463
@@ -4065,28 +4080,28 @@ __lowest_bit_bitmap:	.type	object
 .L433:
 	.byte	20
 	.byte	'va_list',0,4,24,16
-	.word	2644
+	.word	2760
 .L507:
 	.byte	3
 	.word	172
 .L519:
 	.byte	3
-	.word	533
+	.word	555
 	.byte	7
 	.word	463
 .L543:
 	.byte	3
-	.word	2680
+	.word	2796
 .L568:
 	.byte	2
 	.byte	'char',0,1,6,2
 	.byte	'short int',0,2,5,26
 	.byte	'sendUARTMessage',0,5,42,6,1,1,1,1,5
 	.byte	'msg',0,5,42,29
-	.word	2644
+	.word	2760
 	.byte	5
 	.byte	'count',0,5,42,44
-	.word	2698
+	.word	2814
 	.byte	0,27
 	.word	196
 	.byte	28
@@ -4106,13 +4121,13 @@ __lowest_bit_bitmap:	.type	object
 	.byte	16,16,0
 .L595:
 	.byte	7
-	.word	2800
+	.word	2916
 .L596:
 	.byte	7
-	.word	2800
+	.word	2916
 	.byte	20
 	.byte	'__wchar_t',0,1,1,1
-	.word	2698
+	.word	2814
 	.byte	20
 	.byte	'__size_t',0,1,1,1
 	.word	342
@@ -4120,10 +4135,10 @@ __lowest_bit_bitmap:	.type	object
 	.byte	'__ptrdiff_t',0,1,1,1
 	.word	172
 	.byte	29,1,3
-	.word	2874
+	.word	2990
 	.byte	20
 	.byte	'__codeptr',0,1,1,1
-	.word	2876
+	.word	2992
 	.byte	20
 	.byte	'__intptr_t',0,1,1,1
 	.word	172
@@ -4138,7 +4153,7 @@ __lowest_bit_bitmap:	.type	object
 	.word	463
 	.byte	20
 	.byte	'rt_uint16_t',0,3,70,41
-	.word	1857
+	.word	533
 	.byte	20
 	.byte	'rt_uint32_t',0,3,71,41
 	.word	342
@@ -4147,7 +4162,7 @@ __lowest_bit_bitmap:	.type	object
 	.word	179
 	.byte	20
 	.byte	'rt_ubase_t',0,3,84,41
-	.word	533
+	.word	555
 	.byte	20
 	.byte	'rt_err_t',0,3,86,41
 	.word	179
@@ -4156,7 +4171,7 @@ __lowest_bit_bitmap:	.type	object
 	.word	342
 	.byte	20
 	.byte	'rt_size_t',0,3,90,41
-	.word	533
+	.word	555
 	.byte	20
 	.byte	'rt_off_t',0,3,92,41
 	.word	179
@@ -4169,19 +4184,19 @@ __lowest_bit_bitmap:	.type	object
 	.byte	17
 	.byte	'rt_slist_node',0,3,239,2,8,4,18
 	.byte	'next',0
-	.word	3142
+	.word	3258
 	.byte	4,2,35,0,0,20
 	.byte	'rt_slist_t',0,3,243,2,30
-	.word	3147
+	.word	3263
 	.byte	20
 	.byte	'uint16_t',0,6,246,1,41
-	.word	1857
+	.word	533
 	.byte	20
 	.byte	'uint32_t',0,6,254,1,41
 	.word	342
 	.byte	20
 	.byte	'time_t',0,7,44,25
-	.word	533
+	.word	555
 	.byte	20
 	.byte	'fd_mask',0,8,39,17
 	.word	179
@@ -4190,42 +4205,58 @@ __lowest_bit_bitmap:	.type	object
 	.byte	9
 	.word	426
 	.byte	0,3
-	.word	3269
+	.word	3385
 	.byte	20
 	.byte	'rt_isr_handler_t',0,9,73,16
-	.word	3283
+	.word	3399
+	.byte	17
+	.byte	'__arch_tickets',0,9,140,1,12,4,18
+	.byte	'owner',0
+	.word	533
+	.byte	2,2,35,0,18
+	.byte	'next',0
+	.word	533
+	.byte	2,2,35,2,0,30,9,138,1,9,4,18
+	.byte	'slock',0
+	.word	555
+	.byte	4,2,35,0,18
+	.byte	'tickets',0
+	.word	3429
+	.byte	4,2,35,0,0,20
+	.byte	'rt_hw_spinlock_t',0,9,144,1,3
+	.word	3480
 	.byte	20
 	.byte	'uint8',0,10,108,29
 	.word	463
 	.byte	20
 	.byte	'uint16',0,10,112,29
-	.word	1857
-	.byte	20
-	.byte	'uint32',0,10,116,29
 	.word	533
 	.byte	20
+	.byte	'uint32',0,10,116,29
+	.word	555
+	.byte	20
 	.byte	'sint16',0,10,129,1,29
-	.word	2698
+	.word	2814
 	.byte	20
 	.byte	'sint32',0,10,134,1,29
 	.word	179
 	.byte	2
 	.byte	'long long int',0,8,5,20
 	.byte	'sint64',0,10,141,1,29
-	.word	3389
+	.word	3621
 	.byte	2
 	.byte	'float',0,4,4,20
 	.byte	'float32',0,10,170,1,29
-	.word	3422
+	.word	3654
 	.byte	20
 	.byte	'pvoid',0,11,54,28
 	.word	426
 	.byte	20
 	.byte	'Ifx_TickTime',0,11,76,28
-	.word	3389
+	.word	3621
 	.byte	20
 	.byte	'Ifx_SizeT',0,11,89,16
-	.word	2698
+	.word	2814
 .L607:
 	.byte	10
 	.word	172
@@ -4234,7 +4265,7 @@ __lowest_bit_bitmap:	.type	object
 	.byte	16,255,1,0
 .L608:
 	.byte	7
-	.word	3506
+	.word	3738
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -4247,7 +4278,8 @@ __lowest_bit_bitmap:	.type	object
 	.byte	15,56,9,0,0,19,21,1,54,15,39,12,0,0,20,22,0,3,8,58,15,59,15,57,15,73,19,0,0,21,46,0,3,8,58,15,59,15,57
 	.byte	15,73,19,54,15,39,12,63,12,60,12,0,0,22,4,1,3,8,58,15,59,15,57,15,11,15,0,0,23,40,0,3,8,28,13,0,0,24,21
 	.byte	1,73,19,54,15,39,12,0,0,25,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,26,46,1,3,8,58
-	.byte	15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,27,46,1,49,19,0,0,28,5,0,49,19,0,0,29,21,0,54,15,0,0,0
+	.byte	15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,27,46,1,49,19,0,0,28,5,0,49,19,0,0,29,21,0,54,15,0,0,30,23
+	.byte	1,58,15,59,15,57,15,11,15,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
 .L271:

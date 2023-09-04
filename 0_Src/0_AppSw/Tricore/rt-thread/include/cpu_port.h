@@ -34,8 +34,11 @@
 *********************************************************************************************************
 */
 void rt_hw_board_init(void);
+#ifdef RT_USING_SMP
+#else
 rt_base_t rt_hw_interrupt_disable(void);
 void rt_hw_interrupt_enable(rt_base_t level);
+#endif
 rt_uint8_t *rt_hw_stack_init(void *tentry,void *parameter,rt_uint8_t *stack_addr,void *texit);
 void rt_hw_systick_init(void);
 #endif /* _CPU_PORT_H_ */

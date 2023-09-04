@@ -23,6 +23,12 @@
 #define RT_USING_MAILBOX
 #define RT_USING_MESSAGEQUEUE
 
+/* multi core ，default signal core */
+#define  RT_USING_SMP
+
+#ifdef RT_USING_SMP
+#define  RT_CPUS_NR    2
+#endif
 /* Memory Management */
 
 #define RT_USING_MEMHEAP

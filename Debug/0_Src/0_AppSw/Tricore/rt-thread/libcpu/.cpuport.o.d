@@ -194,3 +194,5 @@
 "D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\Cpu\Std\Ifx_Types.h" :
 0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.o :	"D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\UART\UART_Logging.h"
 "D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\0_AppSw\Tricore\UART\UART_Logging.h" :
+0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.o :	"D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\_Impl\IfxSrc_cfg.h"
+"D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\_Impl\IfxSrc_cfg.h" :

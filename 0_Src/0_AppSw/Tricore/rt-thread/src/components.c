@@ -196,7 +196,6 @@ void main_thread_entry(void *parameter)
 
 static struct rt_timer  timer1;
 rt_uint8_t Flag_10ms;
-/* ??? 1 ???? */
 static void timeout1(void *parameter)
 {
     // Flag_10ms = 1;
@@ -218,6 +217,11 @@ void rt_application_init(void)
     /* if not define RT_USING_HEAP, using to eliminate the warning */
     (void)result;
 #endif
+
+#ifdef RT_USING_SMP
+    rt_thread_control(&main_thread, RT_THREAD_CTRL_BIND_CPU, 0);
+#endif
+
 #ifdef RT_USING_HEAP
     /* 如果获得线程控制块，启动这个线程 */
     if (tid != RT_NULL)
@@ -265,7 +269,7 @@ int rtthread_startup(void)
     rt_thread_idle_init();
 
 #ifdef RT_USING_SMP
-    rt_hw_spin_lock(&_cpus_lock);
+    // rt_hw_spin_lock(&_cpus_lock);
 #endif /*RT_USING_SMP*/
 
     /* start scheduler */

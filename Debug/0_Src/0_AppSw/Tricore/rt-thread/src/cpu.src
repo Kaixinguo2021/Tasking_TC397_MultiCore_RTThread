@@ -7,19 +7,662 @@
 	
 $TC162
 	
+	.sdecl	'.text.cpu.rt_preempt_disable',code,cluster('rt_preempt_disable')
+	.sect	'.text.cpu.rt_preempt_disable'
+	.align	2
+	
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     1  /*
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     3   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     4   * SPDX-License-Identifier: Apache-2.0
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     5   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     6   * Change Logs:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     7   * Date           Author       Notes
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     8   * 2018-10-30     Bernard      The first version
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     9   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    10  #include <rthw.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    11  #include <rtthread.h>
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    12  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    13  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    14  static struct rt_cpu rt_cpus[RT_CPUS_NR];
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    15  rt_hw_spinlock_t _cpus_lock;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    16  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    17  /*
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    18   * disable scheduler
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    19   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    20  static void rt_preempt_disable(void)
+; Function rt_preempt_disable
+.L14:
+rt_preempt_disable:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    21  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    22      register rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    23      struct rt_thread *current_thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    24  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    25      /* disable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    26      level = rt_hw_local_irq_disable();
+	call	rt_hw_local_irq_disable
+.L144:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    27  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    28      current_thread = rt_thread_self();
+	mov	d8,d2
+	call	rt_thread_self
+.L145:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    29      if (!current_thread)
+	jz.a	a2,.L2
+.L239:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    30      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    31          rt_hw_local_irq_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    32          return;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    33      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    34  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    35      /* lock scheduler for local cpu */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    36      current_thread->scheduler_lock_nest ++;
+	ld.hu	d15,[a2]56
+.L240:
+	add	d15,#1
+	st.h	[a2]56,d15
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    37  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    38      /* enable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    39      rt_hw_local_irq_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    40  }
+.L2:
+	mov	d4,d8
+.L146:
+	j	rt_hw_local_irq_enable
+.L132:
+	
+__rt_preempt_disable_function_end:
+	.size	rt_preempt_disable,__rt_preempt_disable_function_end-rt_preempt_disable
+.L90:
+	; End of function
+	
+	.sdecl	'.text.cpu.rt_preempt_enable',code,cluster('rt_preempt_enable')
+	.sect	'.text.cpu.rt_preempt_enable'
+	.align	2
+	
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    41  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    42  /*
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    43   * enable scheduler
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    44   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    45  static void rt_preempt_enable(void)
+; Function rt_preempt_enable
+.L16:
+rt_preempt_enable:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    46  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    47      register rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    48      struct rt_thread *current_thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    49  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    50      /* disable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    51      level = rt_hw_local_irq_disable();
+	call	rt_hw_local_irq_disable
+.L147:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    52  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    53      current_thread = rt_thread_self();
+	mov	d8,d2
+	call	rt_thread_self
+.L148:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    54      if (!current_thread)
+	jz.a	a2,.L3
+.L245:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    55      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    56          rt_hw_local_irq_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    57          return;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    58      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    59  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    60      /* unlock scheduler for local cpu */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    61      current_thread->scheduler_lock_nest --;
+	ld.hu	d15,[a2]56
+.L246:
+	add	d15,#-1
+	st.h	[a2]56,d15
+.L247:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    62  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    63      rt_schedule();
+	call	rt_schedule
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    64      /* enable interrupt */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    65      rt_hw_local_irq_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    66  }
+.L3:
+	mov	d4,d8
+.L149:
+	j	rt_hw_local_irq_enable
+.L136:
+	
+__rt_preempt_enable_function_end:
+	.size	rt_preempt_enable,__rt_preempt_enable_function_end-rt_preempt_enable
+.L95:
+	; End of function
+	
+	.sdecl	'.text.cpu.rt_spin_lock_init',code,cluster('rt_spin_lock_init')
+	.sect	'.text.cpu.rt_spin_lock_init'
+	.align	2
+	
+	.global	rt_spin_lock_init
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    67  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    68  void rt_spin_lock_init(struct rt_spinlock *lock)
+; Function rt_spin_lock_init
+.L18:
+rt_spin_lock_init:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    69  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    70      rt_hw_spin_lock_init(&lock->lock);
+	j	rt_hw_spin_lock_init
+.L105:
+	
+__rt_spin_lock_init_function_end:
+	.size	rt_spin_lock_init,__rt_spin_lock_init_function_end-rt_spin_lock_init
+.L45:
+	; End of function
+	
+	.sdecl	'.text.cpu.rt_spin_lock',code,cluster('rt_spin_lock')
+	.sect	'.text.cpu.rt_spin_lock'
+	.align	2
+	
+	.global	rt_spin_lock
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    71  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    72  RTM_EXPORT(rt_spin_lock_init)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    73  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    74  void rt_spin_lock(struct rt_spinlock *lock)
+; Function rt_spin_lock
+.L20:
+rt_spin_lock:	.type	func
+	mov.aa	a15,a4
+.L151:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    75  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    76      rt_preempt_disable();
+	call	rt_preempt_disable
+.L150:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    77      rt_hw_spin_lock(&lock->lock);
+	mov.aa	a4,a15
+.L152:
+	j	rt_hw_spin_lock
+.L108:
+	
+__rt_spin_lock_function_end:
+	.size	rt_spin_lock,__rt_spin_lock_function_end-rt_spin_lock
+.L50:
+	; End of function
+	
+	.sdecl	'.text.cpu.rt_spin_unlock',code,cluster('rt_spin_unlock')
+	.sect	'.text.cpu.rt_spin_unlock'
+	.align	2
+	
+	.global	rt_spin_unlock
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    78  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    79  RTM_EXPORT(rt_spin_lock)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    80  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    81  void rt_spin_unlock(struct rt_spinlock *lock)
+; Function rt_spin_unlock
+.L22:
+rt_spin_unlock:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    82  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    83      rt_hw_spin_unlock(&lock->lock);
+	call	rt_hw_spin_unlock
+.L153:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    84      rt_preempt_enable();
+	j	rt_preempt_enable
+.L110:
+	
+__rt_spin_unlock_function_end:
+	.size	rt_spin_unlock,__rt_spin_unlock_function_end-rt_spin_unlock
+.L55:
+	; End of function
+	
+	.sdecl	'.text.cpu.rt_spin_lock_irqsave',code,cluster('rt_spin_lock_irqsave')
+	.sect	'.text.cpu.rt_spin_lock_irqsave'
+	.align	2
+	
+	.global	rt_spin_lock_irqsave
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    85  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    86  RTM_EXPORT(rt_spin_unlock)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    87  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    88  rt_base_t rt_spin_lock_irqsave(struct rt_spinlock *lock)
+; Function rt_spin_lock_irqsave
+.L24:
+rt_spin_lock_irqsave:	.type	func
+	mov.aa	a15,a4
+.L155:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    89  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    90      unsigned long level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    91  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    92      rt_preempt_disable();
+	call	rt_preempt_disable
+.L154:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    93  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    94      level = rt_hw_local_irq_disable();
+	call	rt_hw_local_irq_disable
+.L156:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    95      rt_hw_spin_lock(&lock->lock);
+	mov	d15,d2
+	mov.aa	a4,a15
+.L157:
+	call	rt_hw_spin_lock
+.L158:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    96  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    97      return level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    98  }
+	mov	d2,d15
+	ret
+.L113:
+	
+__rt_spin_lock_irqsave_function_end:
+	.size	rt_spin_lock_irqsave,__rt_spin_lock_irqsave_function_end-rt_spin_lock_irqsave
+.L60:
+	; End of function
+	
+	.sdecl	'.text.cpu.rt_spin_unlock_irqrestore',code,cluster('rt_spin_unlock_irqrestore')
+	.sect	'.text.cpu.rt_spin_unlock_irqrestore'
+	.align	2
+	
+	.global	rt_spin_unlock_irqrestore
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    99  RTM_EXPORT(rt_spin_lock_irqsave)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   100  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   101  void rt_spin_unlock_irqrestore(struct rt_spinlock *lock, rt_base_t level)
+; Function rt_spin_unlock_irqrestore
+.L26:
+rt_spin_unlock_irqrestore:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   102  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   103      rt_hw_spin_unlock(&lock->lock);
+	mov	d15,d4
+	call	rt_hw_spin_unlock
+.L159:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   104      rt_hw_local_irq_enable(level);
+	mov	d4,d15
+	call	rt_hw_local_irq_enable
+.L193:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   105  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   106      rt_preempt_enable();
+	j	rt_preempt_enable
+.L117:
+	
+__rt_spin_unlock_irqrestore_function_end:
+	.size	rt_spin_unlock_irqrestore,__rt_spin_unlock_irqrestore_function_end-rt_spin_unlock_irqrestore
+.L65:
+	; End of function
+	
+	.sdecl	'.text.cpu.rt_cpu_self',code,cluster('rt_cpu_self')
+	.sect	'.text.cpu.rt_cpu_self'
+	.align	2
+	
+	.global	rt_cpu_self
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   107  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   108  RTM_EXPORT(rt_spin_unlock_irqrestore)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   109  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   110  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   111   * This fucntion will return current cpu.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   112   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   113  struct rt_cpu *rt_cpu_self(void)
+; Function rt_cpu_self
+.L28:
+rt_cpu_self:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   114  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   115      return &rt_cpus[rt_hw_cpu_id()];
+	call	rt_hw_cpu_id
+.L224:
+	mov	d15,#272
+.L225:
+	mul	d2,d15
+	movh.a	a15,#@his(rt_cpus)
+	lea	a15,[a15]@los(rt_cpus)
+.L226:
+	addsc.a	a2,a15,d2,#0
+.L227:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   116  }
+	ret
+.L128:
+	
+__rt_cpu_self_function_end:
+	.size	rt_cpu_self,__rt_cpu_self_function_end-rt_cpu_self
+.L80:
+	; End of function
+	
+	.sdecl	'.text.cpu.rt_cpu_index',code,cluster('rt_cpu_index')
+	.sect	'.text.cpu.rt_cpu_index'
+	.align	2
+	
+	.global	rt_cpu_index
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   117  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   118  struct rt_cpu *rt_cpu_index(int index)
+; Function rt_cpu_index
+.L30:
+rt_cpu_index:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   119  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   120      return &rt_cpus[index];
+	mov	d15,#272
+.L232:
+	mul	d4,d15
+	movh.a	a15,#@his(rt_cpus)
+.L160:
+	lea	a15,[a15]@los(rt_cpus)
+.L233:
+	addsc.a	a2,a15,d4,#0
+.L234:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   121  }
+	ret
+.L129:
+	
+__rt_cpu_index_function_end:
+	.size	rt_cpu_index,__rt_cpu_index_function_end-rt_cpu_index
+.L85:
+	; End of function
+	
+	.sdecl	'.text.cpu.rt_cpus_lock',code,cluster('rt_cpus_lock')
+	.sect	'.text.cpu.rt_cpus_lock'
+	.align	2
+	
+	.global	rt_cpus_lock
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   122  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   123  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   124   * This function will lock all cpus's scheduler and disable local irq.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   125   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   126  rt_base_t rt_cpus_lock(void)
+; Function rt_cpus_lock
+.L32:
+rt_cpus_lock:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   127  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   128      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   129      struct rt_cpu* pcpu;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   130  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   131      level = rt_hw_local_irq_disable();
+	call	rt_hw_local_irq_disable
+.L161:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   132  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   133      pcpu = rt_cpu_self();
+	mov	d8,d2
+	call	rt_cpu_self
+.L162:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   134      if (pcpu->current_thread != RT_NULL)
+	ld.a	a15,[a2]
+.L198:
+	jz.a	a15,.L7
+.L124:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   135      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   136          register rt_ubase_t lock_nest = pcpu->current_thread->cpus_lock_nest;
+	ld.hu	d15,[a15]58
+.L199:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   137  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   138          pcpu->current_thread->cpus_lock_nest++;
+	add	d0,d15,#1
+	st.h	[a15]58,d0
+.L200:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   139          if (lock_nest == 0)
+	jne	d15,#0,.L8
+.L201:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   140          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   141              pcpu->current_thread->scheduler_lock_nest++;
+	ld.a	a15,[a2]
+.L202:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   142              rt_hw_spin_lock(&_cpus_lock);
+	lea	a4,_cpus_lock
+.L203:
+	ld.hu	d15,[a15]56
+.L204:
+	add	d15,#1
+	st.h	[a15]56,d15
+.L205:
+	call	rt_hw_spin_lock
+.L8:
+.L7:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   143          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   144      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   145  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   146      return level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   147  }
+	mov	d2,d8
+	ret
+.L120:
+	
+__rt_cpus_lock_function_end:
+	.size	rt_cpus_lock,__rt_cpus_lock_function_end-rt_cpus_lock
+.L70:
+	; End of function
+	
+	.sdecl	'.text.cpu.rt_cpus_unlock',code,cluster('rt_cpus_unlock')
+	.sect	'.text.cpu.rt_cpus_unlock'
+	.align	2
+	
+	.global	rt_cpus_unlock
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   148  RTM_EXPORT(rt_cpus_lock);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   149  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   150  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   151   * This function will restore all cpus's scheduler and restore local irq.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   152   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   153  void rt_cpus_unlock(rt_base_t level)
+; Function rt_cpus_unlock
+.L34:
+rt_cpus_unlock:	.type	func
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   154  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   155      struct rt_cpu* pcpu = rt_cpu_self();
+	mov	d8,d4
+	call	rt_cpu_self
+.L163:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   156  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   157      if (pcpu->current_thread != RT_NULL)
+	ld.a	a15,[a2]
+.L210:
+	jz.a	a15,.L10
+.L211:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   158      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   159          pcpu->current_thread->cpus_lock_nest--;
+	ld.hu	d15,[a15]58
+.L212:
+	add	d15,#-1
+	st.h	[a15]58,d15
+.L213:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   160  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   161          if (pcpu->current_thread->cpus_lock_nest == 0)
+	ld.a	a15,[a2]
+.L214:
+	ld.hu	d15,[a15]58
+.L215:
+	jne	d15,#0,.L11
+.L216:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   162          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   163              pcpu->current_thread->scheduler_lock_nest--;
+	ld.hu	d15,[a15]56
+.L217:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   164              rt_hw_spin_unlock(&_cpus_lock);
+	lea	a4,_cpus_lock
+.L218:
+	add	d15,#-1
+	st.h	[a15]56,d15
+.L219:
+	call	rt_hw_spin_unlock
+.L11:
+.L10:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   165          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   166      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   167      rt_hw_local_irq_enable(level);
+	mov	d4,d8
+.L164:
+	j	rt_hw_local_irq_enable
+.L125:
+	
+__rt_cpus_unlock_function_end:
+	.size	rt_cpus_unlock,__rt_cpus_unlock_function_end-rt_cpus_unlock
+.L75:
+	; End of function
+	
+	.sdecl	'.text.cpu.rt_cpus_lock_status_restore',code,cluster('rt_cpus_lock_status_restore')
+	.sect	'.text.cpu.rt_cpus_lock_status_restore'
+	.align	2
+	
+	.global	rt_cpus_lock_status_restore
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   168  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   169  RTM_EXPORT(rt_cpus_unlock);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   170  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   171  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   172   * This function is invoked by scheduler.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   173   * It will restore the lock state to whatever the thread's counter expects.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   174   * If target thread not locked the cpus then unlock the cpus lock.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   175   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   176  void rt_cpus_lock_status_restore(struct rt_thread *thread)
+; Function rt_cpus_lock_status_restore
+.L36:
+rt_cpus_lock_status_restore:	.type	func
+	mov.aa	a15,a4
+.L166:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   177  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   178      struct rt_cpu* pcpu = rt_cpu_self();
+	call	rt_cpu_self
+.L165:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   179  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   180      pcpu->current_thread = thread;
+	st.a	[a2],a15
+.L252:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   181      if (!thread->cpus_lock_nest)
+	ld.hu	d15,[a15]58
+.L253:
+	jne	d15,#0,.L12
+.L254:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   182      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   183          rt_hw_spin_unlock(&_cpus_lock);
+	lea	a4,_cpus_lock
+	j	rt_hw_spin_unlock
+.L12:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   184      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   185  }
+	ret
+.L139:
+	
+__rt_cpus_lock_status_restore_function_end:
+	.size	rt_cpus_lock_status_restore,__rt_cpus_lock_status_restore_function_end-rt_cpus_lock_status_restore
+.L100:
+	; End of function
+	
+	.sdecl	'.bss.cpu.rt_cpus',data,cluster('rt_cpus')
+	.sect	'.bss.cpu.rt_cpus'
+	.align	4
+rt_cpus:	.type	object
+	.size	rt_cpus,544
+	.space	544
+	.sdecl	'.zbss.cpu._cpus_lock',data,cluster('_cpus_lock')
+	.sect	'.zbss.cpu._cpus_lock'
+	.global	_cpus_lock
+	.align	2
+_cpus_lock:	.type	object
+	.size	_cpus_lock,4
+	.space	4
+	.calls	'rt_preempt_disable','rt_hw_local_irq_disable'
+	.calls	'rt_preempt_disable','rt_thread_self'
+	.calls	'rt_preempt_disable','rt_hw_local_irq_enable'
+	.calls	'rt_preempt_enable','rt_hw_local_irq_disable'
+	.calls	'rt_preempt_enable','rt_thread_self'
+	.calls	'rt_preempt_enable','rt_schedule'
+	.calls	'rt_preempt_enable','rt_hw_local_irq_enable'
+	.calls	'rt_spin_lock_init','rt_hw_spin_lock_init'
+	.calls	'rt_spin_lock','rt_preempt_disable'
+	.calls	'rt_spin_lock','rt_hw_spin_lock'
+	.calls	'rt_spin_unlock','rt_hw_spin_unlock'
+	.calls	'rt_spin_unlock','rt_preempt_enable'
+	.calls	'rt_spin_lock_irqsave','rt_preempt_disable'
+	.calls	'rt_spin_lock_irqsave','rt_hw_local_irq_disable'
+	.calls	'rt_spin_lock_irqsave','rt_hw_spin_lock'
+	.calls	'rt_spin_unlock_irqrestore','rt_hw_spin_unlock'
+	.calls	'rt_spin_unlock_irqrestore','rt_hw_local_irq_enable'
+	.calls	'rt_spin_unlock_irqrestore','rt_preempt_enable'
+	.calls	'rt_cpu_self','rt_hw_cpu_id'
+	.calls	'rt_cpus_lock','rt_hw_local_irq_disable'
+	.calls	'rt_cpus_lock','rt_cpu_self'
+	.calls	'rt_cpus_lock','rt_hw_spin_lock'
+	.calls	'rt_cpus_unlock','rt_cpu_self'
+	.calls	'rt_cpus_unlock','rt_hw_spin_unlock'
+	.calls	'rt_cpus_unlock','rt_hw_local_irq_enable'
+	.calls	'rt_cpus_lock_status_restore','rt_cpu_self'
+	.calls	'rt_cpus_lock_status_restore','rt_hw_spin_unlock'
+	.calls	'rt_preempt_disable','',0
+	.calls	'rt_preempt_enable','',0
+	.calls	'rt_spin_lock_init','',0
+	.calls	'rt_spin_lock','',0
+	.calls	'rt_spin_unlock','',0
+	.calls	'rt_spin_lock_irqsave','',0
+	.calls	'rt_spin_unlock_irqrestore','',0
+	.calls	'rt_cpu_self','',0
+	.calls	'rt_cpu_index','',0
+	.calls	'rt_cpus_lock','',0
+	.calls	'rt_cpus_unlock','',0
+	.extern	rt_thread_self
+	.extern	rt_schedule
+	.extern	rt_hw_local_irq_disable
+	.extern	rt_hw_local_irq_enable
+	.extern	rt_hw_spin_lock_init
+	.extern	rt_hw_spin_lock
+	.extern	rt_hw_spin_unlock
+	.extern	rt_hw_cpu_id
+	.calls	'rt_cpus_lock_status_restore','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L3:
-	.word	847
+.L38:
+	.word	2303
 	.half	3
-	.word	.L4
+	.word	.L39
 	.byte	4
-.L2:
+.L37:
 	.byte	1
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
-	.word	.L5
+	.word	.L40
+.L130:
 	.byte	2
 	.byte	'int',0,4,5,3
 	.word	167
@@ -43,311 +686,1391 @@ $TC162
 	.byte	9
 	.byte	'compare',0
 	.word	216
-	.byte	0,10
-	.byte	'__size_t',0,1,1,1
-	.word	216
-	.byte	11,1,7
-	.word	311
-	.byte	10
-	.byte	'__codeptr',0,1,1,1
-	.word	313
-	.byte	10
-	.byte	'__intptr_t',0,1,1,1
-	.word	167
-	.byte	10
-	.byte	'__uintptr_t',0,1,1,1
-	.word	216
-	.byte	2
-	.byte	'unsigned char',0,1,8,10
-	.byte	'rt_uint8_t',0,2,69,41
-	.word	375
-	.byte	2
-	.byte	'unsigned short int',0,2,7,10
-	.byte	'rt_uint16_t',0,2,70,41
-	.word	411
-	.byte	10
-	.byte	'rt_uint32_t',0,2,71,41
-	.word	216
-	.byte	2
-	.byte	'long int',0,4,5,10
-	.byte	'rt_base_t',0,2,83,41
-	.word	473
-	.byte	2
-	.byte	'unsigned long int',0,4,7,10
-	.byte	'rt_ubase_t',0,2,84,41
-	.word	503
-	.byte	10
-	.byte	'rt_err_t',0,2,86,41
-	.word	473
-	.byte	10
-	.byte	'rt_tick_t',0,2,88,41
-	.word	216
-	.byte	10
-	.byte	'rt_size_t',0,2,90,41
-	.word	503
-	.byte	7
-	.word	.L6-.L3
-.L6:
+	.byte	0,2
+	.byte	'char',0,1,6,10,8
+	.word	294
+	.byte	11,7,0,2
+	.byte	'unsigned char',0,1,8,7
+	.word	.L167-.L38
+.L167:
 	.byte	12
 	.byte	'rt_list_node',0,2,229,2,8,8,13
 	.byte	'next',0
-	.word	596
+	.word	328
 	.byte	4,2,35,0,13
 	.byte	'prev',0
-	.word	596
-	.byte	4,2,35,4,0,10
-	.byte	'rt_list_t',0,2,234,2,29
-	.word	601
+	.word	328
+	.byte	4,2,35,4,0,14
+	.byte	'void',0,7
+	.word	381
+.L112:
+	.byte	2
+	.byte	'long int',0,4,5,2
+	.byte	'unsigned short int',0,2,7
+.L115:
+	.byte	2
+	.byte	'unsigned long int',0,4,7,12
+	.byte	'rt_object',0,2,131,3,8,20,13
+	.byte	'name',0
+	.word	302
+	.byte	8,2,35,0,13
+	.byte	'type',0
+	.word	311
+	.byte	1,2,35,8,13
+	.byte	'flag',0
+	.word	311
+	.byte	1,2,35,9,13
+	.byte	'list',0
+	.word	333
+	.byte	8,2,35,12,0,10,8
+	.word	333
+	.byte	11,0,0,15,1,1,5
+	.word	387
+	.byte	0,7
+	.word	529
+	.byte	12
+	.byte	'rt_timer',0,2,236,3,8,44,13
+	.byte	'parent',0
+	.word	447
+	.byte	20,2,35,0,13
+	.byte	'row',0
+	.word	520
+	.byte	8,2,35,20,13
+	.byte	'timeout_func',0
+	.word	538
+	.byte	4,2,35,28,13
+	.byte	'parameter',0
+	.word	387
+	.byte	4,2,35,32,13
+	.byte	'init_tick',0
+	.word	216
+	.byte	4,2,35,36,13
+	.byte	'timeout_tick',0
+	.word	216
+	.byte	4,2,35,40,0,15,1,1,5
+	.word	.L134-.L38
+	.byte	0,7
+	.word	670
+	.byte	12
+	.byte	'rt_thread',0,2,213,4,8,136,1,13
+	.byte	'name',0
+	.word	302
+	.byte	8,2,35,0,13
+	.byte	'type',0
+	.word	311
+	.byte	1,2,35,8,13
+	.byte	'flags',0
+	.word	311
+	.byte	1,2,35,9,13
+	.byte	'list',0
+	.word	333
+	.byte	8,2,35,12,13
+	.byte	'tlist',0
+	.word	333
+	.byte	8,2,35,20,13
+	.byte	'sp',0
+	.word	387
+	.byte	4,2,35,28,13
+	.byte	'entry',0
+	.word	387
+	.byte	4,2,35,32,13
+	.byte	'parameter',0
+	.word	387
+	.byte	4,2,35,36,13
+	.byte	'stack_addr',0
+	.word	387
+	.byte	4,2,35,40,13
+	.byte	'stack_size',0
+	.word	216
+	.byte	4,2,35,44,13
+	.byte	'error',0
+	.word	392
+	.byte	4,2,35,48,13
+	.byte	'stat',0
+	.word	311
+	.byte	1,2,35,52,13
+	.byte	'bind_cpu',0
+	.word	311
+	.byte	1,2,35,53,13
+	.byte	'oncpu',0
+	.word	311
+	.byte	1,2,35,54,13
+	.byte	'scheduler_lock_nest',0
+	.word	404
+	.byte	2,2,35,56,13
+	.byte	'cpus_lock_nest',0
+	.word	404
+	.byte	2,2,35,58,13
+	.byte	'critical_lock_nest',0
+	.word	404
+	.byte	2,2,35,60,13
+	.byte	'current_priority',0
+	.word	311
+	.byte	1,2,35,62,13
+	.byte	'init_priority',0
+	.word	311
+	.byte	1,2,35,63,13
+	.byte	'number_mask',0
+	.word	216
+	.byte	4,2,35,64,13
+	.byte	'event_set',0
+	.word	216
+	.byte	4,2,35,68,13
+	.byte	'event_info',0
+	.word	311
+	.byte	1,2,35,72,13
+	.byte	'init_tick',0
+	.word	426
+	.byte	4,2,35,74,13
+	.byte	'remaining_tick',0
+	.word	426
+	.byte	4,2,35,78,13
+	.byte	'thread_timer',0
+	.word	543
+	.byte	44,2,35,84,13
+	.byte	'cleanup',0
+	.word	679
+	.byte	4,3,35,128,1,13
+	.byte	'user_data',0
+	.word	426
+	.byte	4,3,35,132,1,0
+.L134:
 	.byte	7
-	.word	.L7-.L3
-.L7:
+	.word	684
+	.byte	16
+	.byte	'rt_thread_t',0,2,160,5,27
+	.word	1215
+	.byte	17
+	.byte	'rt_thread_self',0,1,137,1,13
+	.word	1220
+	.byte	1,1,1,1,7
+	.word	684
+	.byte	18
+	.byte	'rt_schedule',0,1,180,1,6,1,1,1,1,12
+	.byte	'__arch_tickets',0,3,140,1,12,4,13
+	.byte	'owner',0
+	.word	404
+	.byte	2,2,35,0,13
+	.byte	'next',0
+	.word	404
+	.byte	2,2,35,2,0
+.L142:
+	.byte	19,3,138,1,9,4,13
+	.byte	'slock',0
+	.word	426
+	.byte	4,2,35,0,13
+	.byte	'tickets',0
+	.word	1295
+	.byte	4,2,35,0,0,12
+	.byte	'rt_spinlock',0,3,146,1,8,4,13
+	.byte	'lock',0
+	.word	1346
+	.byte	4,2,35,0,0
+.L106:
+	.byte	7
+	.word	1385
+	.byte	10,128,2
+	.word	333
+	.byte	11,31,0,12
+	.byte	'rt_cpu',0,2,189,4,8,144,2,13
+	.byte	'current_thread',0
+	.word	1215
+	.byte	4,2,35,0,13
+	.byte	'irq_nest',0
+	.word	404
+	.byte	2,2,35,4,13
+	.byte	'irq_switch_flag',0
+	.word	311
+	.byte	1,2,35,6,13
+	.byte	'current_priority',0
+	.word	311
+	.byte	1,2,35,7,13
+	.byte	'priority_table',0
+	.word	1423
+	.byte	128,2,2,35,8,13
+	.byte	'priority_group',0
+	.word	216
+	.byte	4,3,35,136,2,13
+	.byte	'tick',0
+	.word	216
+	.byte	4,3,35,140,2,0
+.L122:
+	.byte	7
+	.word	1433
+	.byte	20
+	.byte	'rt_hw_local_irq_disable',0,3,98,11
+	.word	392
+	.byte	1,1,1,21
+	.byte	'rt_hw_local_irq_enable',0,3,99,6,1,1,1,1,22
+	.byte	'level',0,3,99,39
+	.word	392
+	.byte	0,7
+	.word	1346
+	.byte	21
+	.byte	'rt_hw_spin_lock_init',0,3,151,1,6,1,1,1,1,22
+	.byte	'lock',0,3,151,1,45
+	.word	1692
+	.byte	0,21
+	.byte	'rt_hw_spin_lock',0,3,152,1,6,1,1,1,1,22
+	.byte	'lock',0,3,152,1,40
+	.word	1692
+	.byte	0,21
+	.byte	'rt_hw_spin_unlock',0,3,153,1,6,1,1,1,1,22
+	.byte	'lock',0,3,153,1,42
+	.word	1692
+	.byte	0,17
+	.byte	'rt_hw_cpu_id',0,3,155,1,5
+	.word	167
+	.byte	1,1,1,1,16
+	.byte	'__size_t',0,4,1,1
+	.word	216
+	.byte	23,1,7
+	.word	1867
+	.byte	16
+	.byte	'__codeptr',0,4,1,1
+	.word	1869
+	.byte	16
+	.byte	'__intptr_t',0,4,1,1
+	.word	167
+	.byte	16
+	.byte	'__uintptr_t',0,4,1,1
+	.word	216
+	.byte	16
+	.byte	'rt_uint8_t',0,2,69,41
+	.word	311
+	.byte	16
+	.byte	'rt_uint16_t',0,2,70,41
+	.word	404
+	.byte	16
+	.byte	'rt_uint32_t',0,2,71,41
+	.word	216
+	.byte	16
+	.byte	'rt_base_t',0,2,83,41
+	.word	392
+	.byte	16
+	.byte	'rt_ubase_t',0,2,84,41
+	.word	426
+	.byte	16
+	.byte	'rt_err_t',0,2,86,41
+	.word	392
+	.byte	16
+	.byte	'rt_tick_t',0,2,88,41
+	.word	216
+	.byte	16
+	.byte	'rt_size_t',0,2,90,41
+	.word	426
+	.byte	16
+	.byte	'rt_list_t',0,2,234,2,29
+	.word	333
+	.byte	7
+	.word	.L168-.L38
+.L168:
 	.byte	12
 	.byte	'rt_slist_node',0,2,239,2,8,4,13
 	.byte	'next',0
-	.word	668
-	.byte	4,2,35,0,0,10
+	.word	2099
+	.byte	4,2,35,0,0,16
 	.byte	'rt_slist_t',0,2,243,2,30
-	.word	673
-	.byte	10
-	.byte	'uint16_t',0,3,246,1,41
-	.word	411
-	.byte	10
-	.byte	'uint32_t',0,3,254,1,41
+	.word	2104
+	.byte	16
+	.byte	'uint16_t',0,5,246,1,41
+	.word	404
+	.byte	16
+	.byte	'uint32_t',0,5,254,1,41
 	.word	216
-	.byte	10
-	.byte	'time_t',0,4,44,25
-	.word	503
-	.byte	10
-	.byte	'fd_mask',0,5,39,17
-	.word	473
-	.byte	14
-	.byte	'void',0,7
-	.word	795
+	.byte	16
+	.byte	'time_t',0,6,44,25
+	.word	426
+	.byte	16
+	.byte	'fd_mask',0,7,39,17
+	.word	392
 	.byte	15,1,1,5
 	.word	167
 	.byte	5
-	.word	801
+	.word	387
 	.byte	0,7
-	.word	806
-	.byte	10
-	.byte	'rt_isr_handler_t',0,6,73,16
-	.word	820
-	.byte	0
+	.word	2226
+	.byte	16
+	.byte	'rt_isr_handler_t',0,3,73,16
+	.word	2240
+	.byte	16
+	.byte	'rt_hw_spinlock_t',0,3,144,1,3
+	.word	1346
+.L143:
+	.byte	10,160,4
+	.word	1433
+	.byte	11,1,0,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L4:
+.L39:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
 	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
-	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,19,1
-	.byte	3,8,58,15,59,15,57,15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,14,59,0,3,8,0,0,15,21,1,54,15,39,12,0
-	.byte	0,0
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,1,1,11,15,73,19,0,0,11,33,0,47,15,0,0,12,19,1,3,8,58,15,59,15,57
+	.byte	15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,14,59,0,3,8,0,0,15,21,1,54,15,39,12,0,0,16,22,0,3,8,58,15
+	.byte	59,15,57,15,73,19,0,0,17,46,0,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,18,46,0,3,8,58,15
+	.byte	59,15,57,15,54,15,39,12,63,12,60,12,0,0,19,23,1,58,15,59,15,57,15,11,15,0,0,20,46,0,3,8,58,15,59,15,57
+	.byte	15,73,19,54,15,63,12,60,12,0,0,21,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,22,5,0,3,8,58
+	.byte	15,59,15,57,15,73,19,0,0,23,21,0,54,15,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L5:
-	.word	.L9-.L8
-.L8:
+.L40:
+	.word	.L170-.L169
+.L169:
 	.half	3
-	.word	.L11-.L10
-.L10:
+	.word	.L172-.L171
+.L171:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include',0
 	.byte	'D:\\App\\Tasking6_3_Install\\ctc\\include\\',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\0_AppSw\\Tricore\\rt-thread\\include\\libc',0
 	.byte	0
-	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0,0,0,0
+	.byte	'rtthread.h',0,1,0,0
 	.byte	'rtdef.h',0,1,0,0
+	.byte	'rthw.h',0,1,0,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0,0,0,0
 	.byte	'stdint.h',0,2,0,0
 	.byte	'time.h',0,2,0,0
-	.byte	'libc_fdset.h',0,3,0,0
-	.byte	'rthw.h',0,1,0,0,0
-.L11:
-.L9:
+	.byte	'libc_fdset.h',0,3,0,0,0
+.L172:
+.L170:
+	.sdecl	'.debug_info',debug,cluster('rt_spin_lock_init')
+	.sect	'.debug_info'
+.L41:
+	.word	237
+	.half	3
+	.word	.L42
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L44,.L43
+	.byte	2
+	.word	.L37
+	.byte	3
+	.byte	'rt_spin_lock_init',0,1,68,6,1,1,1
+	.word	.L18,.L105,.L17
+	.byte	4
+	.byte	'lock',0,1,68,44
+	.word	.L106,.L107
+	.byte	5
+	.word	.L18,.L105
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_spin_lock_init')
+	.sect	'.debug_abbrev'
+.L42:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_spin_lock_init')
+	.sect	'.debug_line'
+.L43:
+	.word	.L174-.L173
+.L173:
+	.half	3
+	.word	.L176-.L175
+.L175:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0,0,0,0,0
+.L176:
+	.byte	5,31,7,0,5,2
+	.word	.L18
+	.byte	3,197,0,1,5,1,7,9
+	.half	.L45-.L18
+	.byte	3,1,0,1,1
+.L174:
+	.sdecl	'.debug_ranges',debug,cluster('rt_spin_lock_init')
+	.sect	'.debug_ranges'
+.L44:
+	.word	-1,.L18,0,.L45-.L18,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_spin_lock')
+	.sect	'.debug_info'
+.L46:
+	.word	232
+	.half	3
+	.word	.L47
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L49,.L48
+	.byte	2
+	.word	.L37
+	.byte	3
+	.byte	'rt_spin_lock',0,1,74,6,1,1,1
+	.word	.L20,.L108,.L19
+	.byte	4
+	.byte	'lock',0,1,74,39
+	.word	.L106,.L109
+	.byte	5
+	.word	.L20,.L108
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_spin_lock')
+	.sect	'.debug_abbrev'
+.L47:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_spin_lock')
+	.sect	'.debug_line'
+.L48:
+	.word	.L178-.L177
+.L177:
+	.half	3
+	.word	.L180-.L179
+.L179:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0,0,0,0,0
+.L180:
+	.byte	5,6,7,0,5,2
+	.word	.L20
+	.byte	3,201,0,1,5,23,9
+	.half	.L151-.L20
+	.byte	3,2,1,5,26,9
+	.half	.L150-.L151
+	.byte	3,1,1,5,1,9
+	.half	.L50-.L150
+	.byte	3,1,0,1,1
+.L178:
+	.sdecl	'.debug_ranges',debug,cluster('rt_spin_lock')
+	.sect	'.debug_ranges'
+.L49:
+	.word	-1,.L20,0,.L50-.L20,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_spin_unlock')
+	.sect	'.debug_info'
+.L51:
+	.word	234
+	.half	3
+	.word	.L52
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L54,.L53
+	.byte	2
+	.word	.L37
+	.byte	3
+	.byte	'rt_spin_unlock',0,1,81,6,1,1,1
+	.word	.L22,.L110,.L21
+	.byte	4
+	.byte	'lock',0,1,81,41
+	.word	.L106,.L111
+	.byte	5
+	.word	.L22,.L110
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_spin_unlock')
+	.sect	'.debug_abbrev'
+.L52:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_spin_unlock')
+	.sect	'.debug_line'
+.L53:
+	.word	.L182-.L181
+.L181:
+	.half	3
+	.word	.L184-.L183
+.L183:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0,0,0,0,0
+.L184:
+	.byte	5,28,7,0,5,2
+	.word	.L22
+	.byte	3,210,0,1,5,22,9
+	.half	.L153-.L22
+	.byte	3,1,1,5,1,7,9
+	.half	.L55-.L153
+	.byte	3,1,0,1,1
+.L182:
+	.sdecl	'.debug_ranges',debug,cluster('rt_spin_unlock')
+	.sect	'.debug_ranges'
+.L54:
+	.word	-1,.L22,0,.L55-.L22,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_spin_lock_irqsave')
+	.sect	'.debug_info'
+.L56:
+	.word	263
+	.half	3
+	.word	.L57
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L59,.L58
+	.byte	2
+	.word	.L37
+	.byte	3
+	.byte	'rt_spin_lock_irqsave',0,1,88,11
+	.word	.L112
+	.byte	1,1,1
+	.word	.L24,.L113,.L23
+	.byte	4
+	.byte	'lock',0,1,88,52
+	.word	.L106,.L114
+	.byte	5
+	.word	.L24,.L113
+	.byte	6
+	.byte	'level',0,1,90,19
+	.word	.L115,.L116
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_spin_lock_irqsave')
+	.sect	'.debug_abbrev'
+.L57:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_spin_lock_irqsave')
+	.sect	'.debug_line'
+.L58:
+	.word	.L186-.L185
+.L185:
+	.half	3
+	.word	.L188-.L187
+.L187:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0,0,0,0,0
+.L188:
+	.byte	5,11,7,0,5,2
+	.word	.L24
+	.byte	3,215,0,1,5,23,9
+	.half	.L155-.L24
+	.byte	3,4,1,5,36,9
+	.half	.L154-.L155
+	.byte	3,2,1,5,11,9
+	.half	.L156-.L154
+	.byte	1,5,26,3,1,1,5,5,9
+	.half	.L158-.L156
+	.byte	3,2,1,5,1,3,1,1,7,9
+	.half	.L60-.L158
+	.byte	0,1,1
+.L186:
+	.sdecl	'.debug_ranges',debug,cluster('rt_spin_lock_irqsave')
+	.sect	'.debug_ranges'
+.L59:
+	.word	-1,.L24,0,.L60-.L24,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_spin_unlock_irqrestore')
+	.sect	'.debug_info'
+.L61:
+	.word	263
+	.half	3
+	.word	.L62
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L64,.L63
+	.byte	2
+	.word	.L37
+	.byte	3
+	.byte	'rt_spin_unlock_irqrestore',0,1,101,6,1,1,1
+	.word	.L26,.L117,.L25
+	.byte	4
+	.byte	'lock',0,1,101,52
+	.word	.L106,.L118
+	.byte	4
+	.byte	'level',0,1,101,68
+	.word	.L112,.L119
+	.byte	5
+	.word	.L26,.L117
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_spin_unlock_irqrestore')
+	.sect	'.debug_abbrev'
+.L62:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_spin_unlock_irqrestore')
+	.sect	'.debug_line'
+.L63:
+	.word	.L190-.L189
+.L189:
+	.half	3
+	.word	.L192-.L191
+.L191:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0,0,0,0,0
+.L192:
+	.byte	5,6,7,0,5,2
+	.word	.L26
+	.byte	3,228,0,1,5,28,3,2,1,9
+	.half	.L159-.L26
+	.byte	3,1,1,5,22,9
+	.half	.L193-.L159
+	.byte	3,2,1,5,1,7,9
+	.half	.L65-.L193
+	.byte	3,1,0,1,1
+.L190:
+	.sdecl	'.debug_ranges',debug,cluster('rt_spin_unlock_irqrestore')
+	.sect	'.debug_ranges'
+.L64:
+	.word	-1,.L26,0,.L65-.L26,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_cpus_lock')
+	.sect	'.debug_info'
+.L66:
+	.word	266
+	.half	3
+	.word	.L67
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L69,.L68
+	.byte	2
+	.word	.L37
+	.byte	3
+	.byte	'rt_cpus_lock',0,1,126,11
+	.word	.L112
+	.byte	1,1,1
+	.word	.L32,.L120,.L31
+	.byte	4
+	.word	.L32,.L120
+	.byte	5
+	.byte	'level',0,1,128,1,15
+	.word	.L112,.L121
+	.byte	5
+	.byte	'pcpu',0,1,129,1,20
+	.word	.L122,.L123
+	.byte	6
+	.word	.L124,.L7
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_cpus_lock')
+	.sect	'.debug_abbrev'
+.L67:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,6
+	.byte	11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_cpus_lock')
+	.sect	'.debug_line'
+.L68:
+	.word	.L195-.L194
+.L194:
+	.half	3
+	.word	.L197-.L196
+.L196:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0,0,0,0,0
+.L197:
+	.byte	5,36,7,0,5,2
+	.word	.L32
+	.byte	3,130,1,1,5,11,9
+	.half	.L161-.L32
+	.byte	1,5,23,3,2,1,5,13,9
+	.half	.L162-.L161
+	.byte	3,1,1,5,5,9
+	.half	.L198-.L162
+	.byte	1,5,61,7,9
+	.half	.L124-.L198
+	.byte	3,2,1,5,45,9
+	.half	.L199-.L124
+	.byte	3,2,1,5,9,9
+	.half	.L200-.L199
+	.byte	3,1,1,5,17,7,9
+	.half	.L201-.L200
+	.byte	3,2,1,5,30,9
+	.half	.L202-.L201
+	.byte	3,1,1,5,33,9
+	.half	.L203-.L202
+	.byte	3,127,1,5,54,9
+	.half	.L204-.L203
+	.byte	1,5,30,9
+	.half	.L205-.L204
+	.byte	3,1,1,5,5,9
+	.half	.L7-.L205
+	.byte	3,4,1,5,1,3,1,1,7,9
+	.half	.L70-.L7
+	.byte	0,1,1
+.L195:
+	.sdecl	'.debug_ranges',debug,cluster('rt_cpus_lock')
+	.sect	'.debug_ranges'
+.L69:
+	.word	-1,.L32,0,.L70-.L32,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_cpus_unlock')
+	.sect	'.debug_info'
+.L71:
+	.word	256
+	.half	3
+	.word	.L72
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L74,.L73
+	.byte	2
+	.word	.L37
+	.byte	3
+	.byte	'rt_cpus_unlock',0,1,153,1,6,1,1,1
+	.word	.L34,.L125,.L33
+	.byte	4
+	.byte	'level',0,1,153,1,31
+	.word	.L112,.L126
+	.byte	5
+	.word	.L34,.L125
+	.byte	6
+	.byte	'pcpu',0,1,155,1,20
+	.word	.L122,.L127
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_cpus_unlock')
+	.sect	'.debug_abbrev'
+.L72:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_cpus_unlock')
+	.sect	'.debug_line'
+.L73:
+	.word	.L207-.L206
+.L206:
+	.half	3
+	.word	.L209-.L208
+.L208:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0,0,0,0,0
+.L209:
+	.byte	5,6,7,0,5,2
+	.word	.L34
+	.byte	3,152,1,1,5,38,3,2,1,5,13,9
+	.half	.L163-.L34
+	.byte	3,2,1,5,5,9
+	.half	.L210-.L163
+	.byte	1,5,29,7,9
+	.half	.L211-.L210
+	.byte	3,2,1,5,45,9
+	.half	.L212-.L211
+	.byte	1,5,17,9
+	.half	.L213-.L212
+	.byte	3,2,1,5,33,9
+	.half	.L214-.L213
+	.byte	1,5,9,9
+	.half	.L215-.L214
+	.byte	1,5,33,7,9
+	.half	.L216-.L215
+	.byte	3,2,1,5,32,9
+	.half	.L217-.L216
+	.byte	3,1,1,5,54,9
+	.half	.L218-.L217
+	.byte	3,127,1,5,32,9
+	.half	.L219-.L218
+	.byte	3,1,1,5,28,9
+	.half	.L10-.L219
+	.byte	3,3,1,5,1,9
+	.half	.L75-.L10
+	.byte	3,1,0,1,1
+.L207:
+	.sdecl	'.debug_ranges',debug,cluster('rt_cpus_unlock')
+	.sect	'.debug_ranges'
+.L74:
+	.word	-1,.L34,0,.L75-.L34,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_cpu_self')
+	.sect	'.debug_info'
+.L76:
+	.word	218
+	.half	3
+	.word	.L77
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L79,.L78
+	.byte	2
+	.word	.L37
+	.byte	3
+	.byte	'rt_cpu_self',0,1,113,16
+	.word	.L122
+	.byte	1,1,1
+	.word	.L28,.L128,.L27
+	.byte	4
+	.word	.L28,.L128
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_cpu_self')
+	.sect	'.debug_abbrev'
+.L77:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_cpu_self')
+	.sect	'.debug_line'
+.L78:
+	.word	.L221-.L220
+.L220:
+	.half	3
+	.word	.L223-.L222
+.L222:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0,0,0,0,0
+.L223:
+	.byte	5,33,7,0,5,2
+	.word	.L28
+	.byte	3,242,0,1,5,20,9
+	.half	.L224-.L28
+	.byte	1,5,13,9
+	.half	.L225-.L224
+	.byte	1,5,20,9
+	.half	.L226-.L225
+	.byte	1,5,1,9
+	.half	.L227-.L226
+	.byte	3,1,1,7,9
+	.half	.L80-.L227
+	.byte	0,1,1
+.L221:
+	.sdecl	'.debug_ranges',debug,cluster('rt_cpu_self')
+	.sect	'.debug_ranges'
+.L79:
+	.word	-1,.L28,0,.L80-.L28,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_cpu_index')
+	.sect	'.debug_info'
+.L81:
+	.word	237
+	.half	3
+	.word	.L82
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L84,.L83
+	.byte	2
+	.word	.L37
+	.byte	3
+	.byte	'rt_cpu_index',0,1,118,16
+	.word	.L122
+	.byte	1,1,1
+	.word	.L30,.L129,.L29
+	.byte	4
+	.byte	'index',0,1,118,33
+	.word	.L130,.L131
+	.byte	5
+	.word	.L30,.L129
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_cpu_index')
+	.sect	'.debug_abbrev'
+.L82:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_cpu_index')
+	.sect	'.debug_line'
+.L83:
+	.word	.L229-.L228
+.L228:
+	.half	3
+	.word	.L231-.L230
+.L230:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0,0,0,0,0
+.L231:
+	.byte	5,20,7,0,5,2
+	.word	.L30
+	.byte	3,247,0,1,5,13,9
+	.half	.L232-.L30
+	.byte	1,5,20,9
+	.half	.L233-.L232
+	.byte	1,5,1,9
+	.half	.L234-.L233
+	.byte	3,1,1,7,9
+	.half	.L85-.L234
+	.byte	0,1,1
+.L229:
+	.sdecl	'.debug_ranges',debug,cluster('rt_cpu_index')
+	.sect	'.debug_ranges'
+.L84:
+	.word	-1,.L30,0,.L85-.L30,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_preempt_disable')
+	.sect	'.debug_info'
+.L86:
+	.word	266
+	.half	3
+	.word	.L87
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L89,.L88
+	.byte	2
+	.word	.L37
+	.byte	3
+	.byte	'rt_preempt_disable',0,1,20,13,1,1
+	.word	.L14,.L132,.L13
+	.byte	4
+	.word	.L14,.L132
+	.byte	5
+	.byte	'level',0,1,22,24
+	.word	.L112,.L133
+	.byte	5
+	.byte	'current_thread',0,1,23,23
+	.word	.L134,.L135
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_preempt_disable')
+	.sect	'.debug_abbrev'
+.L87:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_preempt_disable')
+	.sect	'.debug_line'
+.L88:
+	.word	.L236-.L235
+.L235:
+	.half	3
+	.word	.L238-.L237
+.L237:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0,0,0,0,0
+.L238:
+	.byte	5,36,7,0,5,2
+	.word	.L14
+	.byte	3,25,1,5,11,9
+	.half	.L144-.L14
+	.byte	1,5,36,3,2,1,5,10,9
+	.half	.L145-.L144
+	.byte	3,1,1,5,19,7,9
+	.half	.L239-.L145
+	.byte	3,7,1,5,41,9
+	.half	.L240-.L239
+	.byte	1,5,28,9
+	.half	.L2-.L240
+	.byte	3,3,1,5,1,9
+	.half	.L90-.L2
+	.byte	3,1,0,1,1
+.L236:
+	.sdecl	'.debug_ranges',debug,cluster('rt_preempt_disable')
+	.sect	'.debug_ranges'
+.L89:
+	.word	-1,.L14,0,.L90-.L14,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_preempt_enable')
+	.sect	'.debug_info'
+.L91:
+	.word	265
+	.half	3
+	.word	.L92
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L94,.L93
+	.byte	2
+	.word	.L37
+	.byte	3
+	.byte	'rt_preempt_enable',0,1,45,13,1,1
+	.word	.L16,.L136,.L15
+	.byte	4
+	.word	.L16,.L136
+	.byte	5
+	.byte	'level',0,1,47,24
+	.word	.L112,.L137
+	.byte	5
+	.byte	'current_thread',0,1,48,23
+	.word	.L134,.L138
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_preempt_enable')
+	.sect	'.debug_abbrev'
+.L92:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_preempt_enable')
+	.sect	'.debug_line'
+.L93:
+	.word	.L242-.L241
+.L241:
+	.half	3
+	.word	.L244-.L243
+.L243:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0,0,0,0,0
+.L244:
+	.byte	5,36,7,0,5,2
+	.word	.L16
+	.byte	3,50,1,5,11,9
+	.half	.L147-.L16
+	.byte	1,5,36,3,2,1,5,10,9
+	.half	.L148-.L147
+	.byte	3,1,1,5,19,7,9
+	.half	.L245-.L148
+	.byte	3,7,1,5,41,9
+	.half	.L246-.L245
+	.byte	1,5,16,9
+	.half	.L247-.L246
+	.byte	3,2,1,5,28,9
+	.half	.L3-.L247
+	.byte	3,2,1,5,1,9
+	.half	.L95-.L3
+	.byte	3,1,0,1,1
+.L242:
+	.sdecl	'.debug_ranges',debug,cluster('rt_preempt_enable')
+	.sect	'.debug_ranges'
+.L94:
+	.word	-1,.L16,0,.L95-.L16,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_cpus_lock_status_restore')
+	.sect	'.debug_info'
+.L96:
+	.word	270
+	.half	3
+	.word	.L97
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1
+	.word	.L99,.L98
+	.byte	2
+	.word	.L37
+	.byte	3
+	.byte	'rt_cpus_lock_status_restore',0,1,176,1,6,1,1,1
+	.word	.L36,.L139,.L35
+	.byte	4
+	.byte	'thread',0,1,176,1,52
+	.word	.L134,.L140
+	.byte	5
+	.word	.L36,.L139
+	.byte	6
+	.byte	'pcpu',0,1,178,1,20
+	.word	.L122,.L141
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_cpus_lock_status_restore')
+	.sect	'.debug_abbrev'
+.L97:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('rt_cpus_lock_status_restore')
+	.sect	'.debug_line'
+.L98:
+	.word	.L249-.L248
+.L248:
+	.half	3
+	.word	.L251-.L250
+.L250:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0,0,0,0,0
+.L251:
+	.byte	5,6,7,0,5,2
+	.word	.L36
+	.byte	3,175,1,1,5,38,9
+	.half	.L166-.L36
+	.byte	3,2,1,5,26,9
+	.half	.L165-.L166
+	.byte	3,2,1,5,16,9
+	.half	.L252-.L165
+	.byte	3,1,1,5,10,9
+	.half	.L253-.L252
+	.byte	1,5,28,7,9
+	.half	.L254-.L253
+	.byte	3,2,1,5,1,9
+	.half	.L12-.L254
+	.byte	3,2,1,7,9
+	.half	.L100-.L12
+	.byte	0,1,1
+.L249:
+	.sdecl	'.debug_ranges',debug,cluster('rt_cpus_lock_status_restore')
+	.sect	'.debug_ranges'
+.L99:
+	.word	-1,.L36,0,.L100-.L36,0,0
+	.sdecl	'.debug_info',debug,cluster('_cpus_lock')
+	.sect	'.debug_info'
+.L101:
+	.word	191
+	.half	3
+	.word	.L102
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L37
+	.byte	3
+	.byte	'_cpus_lock',0,4,15,18
+	.word	.L142
+	.byte	1,5,3
+	.word	_cpus_lock
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('_cpus_lock')
+	.sect	'.debug_abbrev'
+.L102:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('rt_cpus')
+	.sect	'.debug_info'
+.L103:
+	.word	187
+	.half	3
+	.word	.L104
+	.byte	4,1
+	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\cpu.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
+	.word	.L37
+	.byte	3
+	.byte	'rt_cpus',0,4,14,22
+	.word	.L143
+	.byte	5,3
+	.word	rt_cpus
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('rt_cpus')
+	.sect	'.debug_abbrev'
+.L104:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_cpu_index')
+	.sect	'.debug_loc'
+.L131:
+	.word	-1,.L30,0,.L160-.L30
+	.half	1
+	.byte	84
+	.word	0,0
+.L29:
+	.word	-1,.L30,0,.L129-.L30
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_cpu_self')
+	.sect	'.debug_loc'
+.L27:
+	.word	-1,.L28,0,.L128-.L28
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_cpus_lock')
+	.sect	'.debug_loc'
+.L121:
+	.word	-1,.L32,.L161-.L32,.L162-.L32
+	.half	1
+	.byte	82
+	.word	.L162-.L32,.L120-.L32
+	.half	1
+	.byte	88
+	.word	0,0
+.L123:
+	.word	-1,.L32,.L162-.L32,.L7-.L32
+	.half	1
+	.byte	98
+	.word	0,0
+.L31:
+	.word	-1,.L32,0,.L120-.L32
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_cpus_lock_status_restore')
+	.sect	'.debug_loc'
+.L141:
+	.word	-1,.L36,.L165-.L36,.L139-.L36
+	.half	1
+	.byte	98
+	.word	0,0
+.L35:
+	.word	-1,.L36,0,.L139-.L36
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L140:
+	.word	-1,.L36,0,.L165-.L36
+	.half	1
+	.byte	100
+	.word	.L166-.L36,.L139-.L36
+	.half	1
+	.byte	111
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_cpus_unlock')
+	.sect	'.debug_loc'
+.L126:
+	.word	-1,.L34,0,.L163-.L34
+	.half	1
+	.byte	84
+	.word	.L163-.L34,.L125-.L34
+	.half	1
+	.byte	88
+	.word	.L164-.L34,.L125-.L34
+	.half	1
+	.byte	84
+	.word	0,0
+.L127:
+	.word	-1,.L34,.L163-.L34,.L10-.L34
+	.half	1
+	.byte	98
+	.word	0,0
+.L33:
+	.word	-1,.L34,0,.L125-.L34
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_preempt_disable')
+	.sect	'.debug_loc'
+.L135:
+	.word	-1,.L14,.L145-.L14,.L132-.L14
+	.half	1
+	.byte	98
+	.word	0,0
+.L133:
+	.word	-1,.L14,.L144-.L14,.L145-.L14
+	.half	1
+	.byte	82
+	.word	.L145-.L14,.L132-.L14
+	.half	1
+	.byte	88
+	.word	.L146-.L14,.L132-.L14
+	.half	1
+	.byte	84
+	.word	0,0
+.L13:
+	.word	-1,.L14,0,.L132-.L14
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_preempt_enable')
+	.sect	'.debug_loc'
+.L138:
+	.word	-1,.L16,.L148-.L16,.L3-.L16
+	.half	1
+	.byte	98
+	.word	0,0
+.L137:
+	.word	-1,.L16,.L147-.L16,.L148-.L16
+	.half	1
+	.byte	82
+	.word	.L148-.L16,.L136-.L16
+	.half	1
+	.byte	88
+	.word	.L149-.L16,.L136-.L16
+	.half	1
+	.byte	84
+	.word	0,0
+.L15:
+	.word	-1,.L16,0,.L136-.L16
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_spin_lock')
+	.sect	'.debug_loc'
+.L109:
+	.word	-1,.L20,0,.L150-.L20
+	.half	1
+	.byte	100
+	.word	.L151-.L20,.L108-.L20
+	.half	1
+	.byte	111
+	.word	.L152-.L20,.L108-.L20
+	.half	1
+	.byte	100
+	.word	0,0
+.L19:
+	.word	-1,.L20,0,.L108-.L20
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_spin_lock_init')
+	.sect	'.debug_loc'
+.L107:
+	.word	-1,.L18,0,.L105-.L18
+	.half	1
+	.byte	100
+	.word	0,0
+.L17:
+	.word	-1,.L18,0,.L105-.L18
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_spin_lock_irqsave')
+	.sect	'.debug_loc'
+.L116:
+	.word	-1,.L24,.L156-.L24,.L157-.L24
+	.half	1
+	.byte	82
+	.word	.L157-.L24,.L113-.L24
+	.half	1
+	.byte	95
+	.word	0,0
+.L114:
+	.word	-1,.L24,0,.L154-.L24
+	.half	1
+	.byte	100
+	.word	.L155-.L24,.L113-.L24
+	.half	1
+	.byte	111
+	.word	.L157-.L24,.L158-.L24
+	.half	1
+	.byte	100
+	.word	0,0
+.L23:
+	.word	-1,.L24,0,.L113-.L24
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_spin_unlock')
+	.sect	'.debug_loc'
+.L111:
+	.word	-1,.L22,0,.L153-.L22
+	.half	1
+	.byte	100
+	.word	0,0
+.L21:
+	.word	-1,.L22,0,.L110-.L22
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('rt_spin_unlock_irqrestore')
+	.sect	'.debug_loc'
+.L119:
+	.word	-1,.L26,0,.L159-.L26
+	.half	1
+	.byte	84
+	.word	.L159-.L26,.L117-.L26
+	.half	1
+	.byte	95
+	.word	0,0
+.L118:
+	.word	-1,.L26,0,.L159-.L26
+	.half	1
+	.byte	100
+	.word	0,0
+.L25:
+	.word	-1,.L26,0,.L117-.L26
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L255:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('rt_preempt_disable')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L255,.L14,.L132-.L14
+	.sdecl	'.debug_frame',debug,cluster('rt_preempt_enable')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L255,.L16,.L136-.L16
+	.sdecl	'.debug_frame',debug,cluster('rt_spin_lock_init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L255,.L18,.L105-.L18
+	.sdecl	'.debug_frame',debug,cluster('rt_spin_lock')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L255,.L20,.L108-.L20
+	.sdecl	'.debug_frame',debug,cluster('rt_spin_unlock')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L255,.L22,.L110-.L22
+	.sdecl	'.debug_frame',debug,cluster('rt_spin_lock_irqsave')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L255,.L24,.L113-.L24
+	.sdecl	'.debug_frame',debug,cluster('rt_spin_unlock_irqrestore')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L255,.L26,.L117-.L26
+	.sdecl	'.debug_frame',debug,cluster('rt_cpu_self')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L255,.L28,.L128-.L28
+	.sdecl	'.debug_frame',debug,cluster('rt_cpu_index')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L255,.L30,.L129-.L30
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('rt_cpus_lock')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L255,.L32,.L120-.L32
+	.sdecl	'.debug_frame',debug,cluster('rt_cpus_unlock')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L255,.L34,.L125-.L34
+	.sdecl	'.debug_frame',debug,cluster('rt_cpus_lock_status_restore')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L255,.L36,.L139-.L36
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     1  /*
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     2   * Copyright (c) 2006-2021, RT-Thread Development Team
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     3   *
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     4   * SPDX-License-Identifier: Apache-2.0
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     5   *
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     6   * Change Logs:
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     7   * Date           Author       Notes
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     8   * 2018-10-30     Bernard      The first version
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	     9   */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    10  #include <rthw.h>
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    11  #include <rtthread.h>
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    12  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    13  #ifdef RT_USING_SMP
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    14  static struct rt_cpu rt_cpus[RT_CPUS_NR];
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    15  rt_hw_spinlock_t _cpus_lock;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    16  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    17  /*
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    18   * disable scheduler
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    19   */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    20  static void rt_preempt_disable(void)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    21  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    22      register rt_base_t level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    23      struct rt_thread *current_thread;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    24  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    25      /* disable interrupt */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    26      level = rt_hw_local_irq_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    27  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    28      current_thread = rt_thread_self();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    29      if (!current_thread)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    30      {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    31          rt_hw_local_irq_enable(level);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    32          return;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    33      }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    34  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    35      /* lock scheduler for local cpu */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    36      current_thread->scheduler_lock_nest ++;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    37  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    38      /* enable interrupt */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    39      rt_hw_local_irq_enable(level);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    40  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    41  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    42  /*
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    43   * enable scheduler
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    44   */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    45  static void rt_preempt_enable(void)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    46  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    47      register rt_base_t level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    48      struct rt_thread *current_thread;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    49  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    50      /* disable interrupt */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    51      level = rt_hw_local_irq_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    52  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    53      current_thread = rt_thread_self();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    54      if (!current_thread)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    55      {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    56          rt_hw_local_irq_enable(level);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    57          return;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    58      }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    59  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    60      /* unlock scheduler for local cpu */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    61      current_thread->scheduler_lock_nest --;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    62  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    63      rt_schedule();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    64      /* enable interrupt */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    65      rt_hw_local_irq_enable(level);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    66  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    67  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    68  void rt_spin_lock_init(struct rt_spinlock *lock)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    69  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    70      rt_hw_spin_lock_init(&lock->lock);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    71  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    72  RTM_EXPORT(rt_spin_lock_init)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    73  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    74  void rt_spin_lock(struct rt_spinlock *lock)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    75  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    76      rt_preempt_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    77      rt_hw_spin_lock(&lock->lock);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    78  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    79  RTM_EXPORT(rt_spin_lock)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    80  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    81  void rt_spin_unlock(struct rt_spinlock *lock)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    82  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    83      rt_hw_spin_unlock(&lock->lock);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    84      rt_preempt_enable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    85  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    86  RTM_EXPORT(rt_spin_unlock)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    87  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    88  rt_base_t rt_spin_lock_irqsave(struct rt_spinlock *lock)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    89  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    90      unsigned long level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    91  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    92      rt_preempt_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    93  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    94      level = rt_hw_local_irq_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    95      rt_hw_spin_lock(&lock->lock);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    96  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    97      return level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    98  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	    99  RTM_EXPORT(rt_spin_lock_irqsave)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   100  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   101  void rt_spin_unlock_irqrestore(struct rt_spinlock *lock, rt_base_t level)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   102  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   103      rt_hw_spin_unlock(&lock->lock);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   104      rt_hw_local_irq_enable(level);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   105  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   106      rt_preempt_enable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   107  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   108  RTM_EXPORT(rt_spin_unlock_irqrestore)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   109  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   110  /**
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   111   * This fucntion will return current cpu.
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   112   */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   113  struct rt_cpu *rt_cpu_self(void)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   114  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   115      return &rt_cpus[rt_hw_cpu_id()];
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   116  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   117  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   118  struct rt_cpu *rt_cpu_index(int index)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   119  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   120      return &rt_cpus[index];
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   121  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   122  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   123  /**
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   124   * This function will lock all cpus's scheduler and disable local irq.
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   125   */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   126  rt_base_t rt_cpus_lock(void)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   127  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   128      rt_base_t level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   129      struct rt_cpu* pcpu;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   130  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   131      level = rt_hw_local_irq_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   132  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   133      pcpu = rt_cpu_self();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   134      if (pcpu->current_thread != RT_NULL)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   135      {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   136          register rt_ubase_t lock_nest = pcpu->current_thread->cpus_lock_nest;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   137  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   138          pcpu->current_thread->cpus_lock_nest++;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   139          if (lock_nest == 0)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   140          {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   141              pcpu->current_thread->scheduler_lock_nest++;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   142              rt_hw_spin_lock(&_cpus_lock);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   143          }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   144      }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   145  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   146      return level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   147  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   148  RTM_EXPORT(rt_cpus_lock);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   149  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   150  /**
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   151   * This function will restore all cpus's scheduler and restore local irq.
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   152   */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   153  void rt_cpus_unlock(rt_base_t level)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   154  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   155      struct rt_cpu* pcpu = rt_cpu_self();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   156  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   157      if (pcpu->current_thread != RT_NULL)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   158      {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   159          pcpu->current_thread->cpus_lock_nest--;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   160  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   161          if (pcpu->current_thread->cpus_lock_nest == 0)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   162          {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   163              pcpu->current_thread->scheduler_lock_nest--;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   164              rt_hw_spin_unlock(&_cpus_lock);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   165          }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   166      }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   167      rt_hw_local_irq_enable(level);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   168  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   169  RTM_EXPORT(rt_cpus_unlock);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   170  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   171  /**
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   172   * This function is invoked by scheduler.
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   173   * It will restore the lock state to whatever the thread's counter expects.
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   174   * If target thread not locked the cpus then unlock the cpus lock.
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   175   */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   176  void rt_cpus_lock_status_restore(struct rt_thread *thread)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   177  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   178      struct rt_cpu* pcpu = rt_cpu_self();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   179  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   180      pcpu->current_thread = thread;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   181      if (!thread->cpus_lock_nest)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   182      {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   183          rt_hw_spin_unlock(&_cpus_lock);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   184      }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   185  }
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   186  RTM_EXPORT(rt_cpus_lock_status_restore);
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   187  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\cpu.c	   188  #endif

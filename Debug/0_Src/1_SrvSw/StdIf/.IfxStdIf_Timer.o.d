@@ -62,3 +62,7 @@
 "D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\1_SrvSw\_Utilities\Ifx_Assert.h" :
 0_Src\1_SrvSw\StdIf\IfxStdIf_Timer.o :	..\0_Src\1_SrvSw\StdIf\IfxStdIf.h
 ..\0_Src\1_SrvSw\StdIf\IfxStdIf.h :
+0_Src\1_SrvSw\StdIf\IfxStdIf_Timer.o :	"D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\_Reg\IfxCpu_reg.h"
+"D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\_Reg\IfxCpu_reg.h" :
+0_Src\1_SrvSw\StdIf\IfxStdIf_Timer.o :	"D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\_Reg\IfxCpu_regdef.h"
+"D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\_Reg\IfxCpu_regdef.h" :

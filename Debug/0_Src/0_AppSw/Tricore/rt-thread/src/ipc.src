@@ -236,7 +236,7 @@ rt_ipc_get_highest_priority:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   211          sthread = rt_list_entry(n, struct rt_thread, tlist);
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   212  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   213          priority = priority < sthread->current_priority ?
-	ld.bu	d15,[a15]33
+	ld.bu	d15,[a15]42
 .L1814:
 	ld.a	a15,[a15]
 .L1815:
@@ -421,7 +421,7 @@ rt_sem_detach:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 	j	.L6
 .L7:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L975:
 	mov	d8,d2
 	ld.a	a2,[a12]
@@ -431,7 +431,7 @@ rt_sem_detach:	.type	func
 	call	rt_thread_resume
 .L978:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 .L6:
@@ -711,7 +711,7 @@ rt_sem_take:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   367  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   368      /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   369      temp = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L983:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   370  
@@ -738,7 +738,7 @@ rt_sem_take:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   381          /* enable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   382          rt_hw_interrupt_enable(temp);
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L984:
 	j	.L11
 .L10:
@@ -756,7 +756,7 @@ rt_sem_take:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   388          {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   389              rt_hw_interrupt_enable(temp);
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L986:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   390  
@@ -840,9 +840,9 @@ rt_sem_take:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   104              for (n = list->next; n != list; n = n->next)      (inlined)
 	j	.L17
 .L18:
-	ld.bu	d15,[a12]53
+	ld.bu	d15,[a12]62
 .L1300:
-	ld.bu	d0,[a2]33
+	ld.bu	d0,[a2]42
 .L1301:
 	lea	a15,[a2]-20
 .L992:
@@ -1223,17 +1223,17 @@ rt_sem_take:	.type	func
 .L1310:
 	jlt	d15,#1,.L22
 .L1311:
-	lea	a4,[a12]76
+	lea	a4,[a12]84
 .L1312:
 	mov	d4,#0
 	mov.aa	a5,a10
 	call	rt_timer_control
 .L1313:
-	lea	a4,[a12]76
+	lea	a4,[a12]84
 	call	rt_timer_start
 .L22:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1314:
 	call	rt_schedule
 .L1315:
@@ -1334,7 +1334,7 @@ rt_sem_release:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   479      /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   480      temp = rt_hw_interrupt_disable();
 	mov	d8,#0
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L998:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   481  
@@ -1386,7 +1386,7 @@ rt_sem_release:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   500          {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   501              rt_hw_interrupt_enable(temp); /* enable interrupt */
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L999:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   502              return -RT_EFULL; /* value overflowed */
@@ -1407,7 +1407,7 @@ rt_sem_release:	.type	func
 .L32:
 .L30:
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1332:
 	jeq	d8,#0,.L34
 .L1333:
@@ -1593,7 +1593,7 @@ rt_sem_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   539          value = (rt_ubase_t)arg;
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   540          /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   541          level = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1000:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   542  
@@ -1607,7 +1607,7 @@ rt_sem_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 	j	.L37
 .L38:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1004:
 	mov	d9,d2
 	ld.a	a2,[a13]
@@ -1617,7 +1617,7 @@ rt_sem_control:	.type	func
 	call	rt_thread_resume
 .L1006:
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 .L37:
@@ -1741,7 +1741,7 @@ rt_sem_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   549          /* enable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   550          rt_hw_interrupt_enable(level);
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1340:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   551  
@@ -1887,7 +1887,7 @@ rt_mutex_detach:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 	j	.L42
 .L43:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1011:
 	mov	d8,d2
 	ld.a	a2,[a12]
@@ -1897,7 +1897,7 @@ rt_mutex_detach:	.type	func
 	call	rt_thread_resume
 .L1013:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 .L42:
@@ -2152,7 +2152,7 @@ rt_mutex_take:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   711  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   712      /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   713      temp = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1018:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   714  
@@ -2226,7 +2226,7 @@ rt_mutex_take:	.type	func
 .L1368:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   752              mutex->original_priority = thread->current_priority;
-	ld.bu	d15,[a12]53
+	ld.bu	d15,[a12]62
 .L1369:
 	st.b	[a15]30,d15
 .L46:
@@ -2253,7 +2253,7 @@ rt_mutex_take:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   758              {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   759                  rt_hw_interrupt_enable(temp); /* enable interrupt */
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1374:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   760                  return -RT_EFULL; /* value overflowed */
@@ -2350,19 +2350,19 @@ rt_mutex_take:	.type	func
 	st.w	[a12]48,d15
 .L1377:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1378:
 	mov	d2,#-2
 	ret
 .L51:
-	ld.bu	d15,[a12]53
+	ld.bu	d15,[a12]62
 .L1379:
-	ld.bu	d0,[a4]53
+	ld.bu	d0,[a4]62
 .L1380:
 	jge.u	d15,d0,.L53
 .L1381:
 	mov	d4,#2
-	lea	a5,[a12]53
+	lea	a5,[a12]62
 	call	rt_thread_control
 .L53:
 	lea	a13,[a15]20
@@ -2383,9 +2383,9 @@ rt_mutex_take:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   104              for (n = list->next; n != list; n = n->next)      (inlined)
 	j	.L57
 .L58:
-	ld.bu	d15,[a12]53
+	ld.bu	d15,[a12]62
 .L1384:
-	ld.bu	d0,[a2]33
+	ld.bu	d0,[a2]42
 .L1385:
 	lea	a4,[a2]-20
 .L1024:
@@ -2686,17 +2686,17 @@ rt_mutex_take:	.type	func
 .L1394:
 	jlt	d15,#1,.L62
 .L1395:
-	lea	a4,[a12]76
+	lea	a4,[a12]84
 .L1396:
 	mov	d4,#0
 	mov.aa	a5,a10
 	call	rt_timer_control
 .L1397:
-	lea	a4,[a12]76
+	lea	a4,[a12]84
 	call	rt_timer_start
 .L62:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1398:
 	call	rt_schedule
 .L1399:
@@ -2704,12 +2704,12 @@ rt_mutex_take:	.type	func
 .L1400:
 	jne	d2,#0,.L64
 .L1401:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1026:
 	mov	d8,d2
 .L49:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1402:
 	ld.a	a2,rt_object_take_hook
 	jz.a	a2,.L65
@@ -2782,7 +2782,7 @@ rt_mutex_release:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   871  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   872      /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   873      temp = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1031:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   874  
@@ -2820,7 +2820,7 @@ rt_mutex_release:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   886          /* enable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   887          rt_hw_interrupt_enable(temp);
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1413:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   888  
@@ -2929,7 +2929,7 @@ rt_mutex_release:	.type	func
 .L1418:
 	ld.bu	d0,[a15]30
 .L1419:
-	ld.bu	d15,[a4]53
+	ld.bu	d15,[a4]62
 .L1420:
 	jeq	d15,d0,.L71
 .L1421:
@@ -2949,7 +2949,7 @@ rt_mutex_release:	.type	func
 .L1426:
 	st.a	[a15]32,a12
 .L1427:
-	ld.bu	d15,[a12]53
+	ld.bu	d15,[a12]62
 .L1428:
 	st.b	[a15]30,d15
 .L1429:
@@ -2961,7 +2961,7 @@ rt_mutex_release:	.type	func
 .L1432:
 	jne	d15,#0,.L73
 .L1433:
-	ld.bu	d15,[a12]53
+	ld.bu	d15,[a12]62
 .L1434:
 	jeq	d15,d2,.L74
 .L1435:
@@ -3001,7 +3001,7 @@ rt_mutex_release:	.type	func
 .L77:
 .L75:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1443:
 	mov	d2,#-3
 	ret
@@ -3009,7 +3009,7 @@ rt_mutex_release:	.type	func
 .L76:
 .L70:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1444:
 	jeq	d9,#0,.L80
 .L1445:
@@ -3154,7 +3154,7 @@ rt_event_detach:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 	j	.L84
 .L85:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1041:
 	mov	d8,d2
 	ld.a	a2,[a12]
@@ -3164,7 +3164,7 @@ rt_event_detach:	.type	func
 	call	rt_thread_resume
 .L1043:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 .L84:
@@ -3485,7 +3485,7 @@ rt_event_send:	.type	func
 	ret
 .L87:
 	mov	d9,#0
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1046:
 	ld.w	d15,[a15]28
 .L1465:
@@ -3509,13 +3509,13 @@ rt_event_send:	.type	func
 	j	.L91
 .L92:
 	mov	d0,#-1
-	ld.bu	d15,[a12]44
+	ld.bu	d15,[a12]52
 .L1053:
 	lea	a4,[a12]-20
 .L1055:
 	jz.t	d15:0,.L93
 .L1467:
-	ld.w	d15,[a12]40
+	ld.w	d15,[a12]48
 .L1468:
 	ld.w	d1,[a15]28
 .L1469:
@@ -3527,7 +3527,7 @@ rt_event_send:	.type	func
 .L93:
 	jz.t	d15:1,.L96
 .L1472:
-	ld.w	d1,[a12]40
+	ld.w	d1,[a12]48
 .L1473:
 	ld.w	d15,[a15]28
 .L1474:
@@ -3535,13 +3535,13 @@ rt_event_send:	.type	func
 .L1475:
 	jeq	d15,#0,.L97
 .L1476:
-	st.w	[a12]40,d15
+	st.w	[a12]48,d15
 .L95:
 	mov	d0,#0
 	j	.L98
 .L96:
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1054:
 	mov	d2,#-10
 	ret
@@ -3552,19 +3552,19 @@ rt_event_send:	.type	func
 .L1477:
 	jne	d0,#0,.L100
 .L1478:
-	ld.bu	d15,[a4]64
+	ld.bu	d15,[a4]72
 .L1479:
 	jz.t	d15:2,.L101
 .L1480:
 	mov	d1,#-1
-	ld.w	d15,[a4]60
-.L1481:
-	ld.w	d0,[a15]28
+	ld.w	d0,[a4]68
 .L1056:
-	xor	d15,d1
+	ld.w	d15,[a15]28
+.L1481:
+	xor	d0,d1
 .L1482:
-	and	d0,d15
-	st.w	[a15]28,d0
+	and	d15,d0
+	st.w	[a15]28,d15
 .L101:
 	call	rt_thread_resume
 .L1057:
@@ -3576,7 +3576,7 @@ rt_event_send:	.type	func
 	jne.a	a12,a2,.L92
 .L90:
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1484:
 	jeq	d9,#0,.L102
 .L1485:
@@ -3765,7 +3765,7 @@ rt_event_recv:	.type	func
 .L1063:
 	calli	a2
 .L106:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1064:
 	mov	d11,d2
 .L1066:
@@ -3803,9 +3803,9 @@ rt_event_recv:	.type	func
 	ld.w	d15,[a15]28
 .L1074:
 	and	d15,d8
-	st.w	[a13]60,d15
+	st.w	[a13]68,d15
 .L1075:
-	st.b	[a13]64,d9
+	st.b	[a13]72,d9
 .L1494:
 	jz.t	d9:2,.L114
 .L1076:
@@ -3827,14 +3827,14 @@ rt_event_recv:	.type	func
 	st.w	[a13]48,d15
 .L1500:
 	mov	d4,d11
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1065:
 	mov	d2,#-2
 	ret
 .L116:
-	st.w	[a13]60,d8
+	st.w	[a13]68,d8
 .L1077:
-	st.b	[a13]64,d9
+	st.b	[a13]72,d9
 .L1078:
 	lea	a14,[a15]20
 .L1501:
@@ -3850,17 +3850,17 @@ rt_event_recv:	.type	func
 .L1503:
 	jlt	d15,#1,.L126
 .L1504:
-	lea	a4,[a13]76
+	lea	a4,[a13]84
 .L1505:
 	mov	d4,#0
 	mov.aa	a5,a10
 	call	rt_timer_control
 .L1506:
-	lea	a4,[a13]76
+	lea	a4,[a13]84
 	call	rt_timer_start
 .L126:
 	mov	d4,d11
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1507:
 	call	rt_schedule
 .L1508:
@@ -3868,19 +3868,19 @@ rt_event_recv:	.type	func
 .L1509:
 	jne	d15,#0,.L127
 .L1510:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1085:
 	mov	d11,d2
 	jz.a	a12,.L128
 .L1087:
-	ld.w	d15,[a13]60
+	ld.w	d15,[a13]68
 .L1511:
 	st.w	[a12],d15
 .L128:
 .L115:
 .L114:
 	mov	d4,d11
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1512:
 	ld.a	a2,rt_object_take_hook
 	jz.a	a2,.L129
@@ -3937,7 +3937,7 @@ rt_event_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1370      {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1371          /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1372          level = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1089:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1373  
@@ -3951,7 +3951,7 @@ rt_event_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 	j	.L132
 .L133:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1092:
 	mov	d9,d2
 	ld.a	a2,[a12]
@@ -3961,7 +3961,7 @@ rt_event_control:	.type	func
 	call	rt_thread_resume
 .L1094:
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 .L132:
@@ -4084,7 +4084,7 @@ rt_event_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1380          /* enable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1381          rt_hw_interrupt_enable(level);
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1521:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1382  
@@ -4298,7 +4298,7 @@ rt_mb_detach:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 	j	.L137
 .L138:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1100:
 	mov	d8,d2
 	ld.a	a2,[a15]
@@ -4308,7 +4308,7 @@ rt_mb_detach:	.type	func
 	call	rt_thread_resume
 .L1103:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 .L137:
@@ -4429,7 +4429,7 @@ rt_mb_detach:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 	j	.L139
 .L140:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1104:
 	mov	d8,d2
 	ld.a	a2,[a15]
@@ -4439,7 +4439,7 @@ rt_mb_detach:	.type	func
 	call	rt_thread_resume
 .L1106:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 .L139:
@@ -4716,7 +4716,7 @@ rt_mb_send_wait:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1572  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1573      /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1574      temp = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1117:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1575  
@@ -4791,9 +4791,9 @@ rt_mb_send_wait:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   104              for (n = list->next; n != list; n = n->next)      (inlined)
 	j	.L151
 .L152:
-	ld.bu	d0,[a13]53
+	ld.bu	d0,[a13]62
 .L1556:
-	ld.bu	d1,[a2]33
+	ld.bu	d1,[a2]42
 .L1557:
 	lea	a15,[a2]-20
 .L1123:
@@ -5192,7 +5192,7 @@ rt_mb_send_wait:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1613              /* reset the timeout of thread timer and start it */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1614              rt_timer_control(&(thread->thread_timer),
 	mov	d9,d2
-	lea	a4,[a13]76
+	lea	a4,[a13]84
 .L1125:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1615                               RT_TIMER_CTRL_SET_TIME,
@@ -5203,7 +5203,7 @@ rt_mb_send_wait:	.type	func
 .L1124:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1617              rt_timer_start(&(thread->thread_timer));
-	lea	a4,[a13]76
+	lea	a4,[a13]84
 	call	rt_timer_start
 .L156:
 
@@ -5212,7 +5212,7 @@ rt_mb_send_wait:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1620          /* enable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1621          rt_hw_interrupt_enable(temp);
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1568:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1622  
@@ -5236,7 +5236,7 @@ rt_mb_send_wait:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1632  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1633          /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1634          temp = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1119:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1635  
@@ -5450,7 +5450,7 @@ rt_mb_send_wait:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1669          /* enable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1670          rt_hw_interrupt_enable(temp);
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1592:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1671  
@@ -5473,14 +5473,14 @@ rt_mb_send_wait:	.type	func
 .L147:
 .L144:
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1594:
 	mov	d2,#-3
 .L158:
 	ret
 .L162:
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L163:
 	mov	d2,#0
 	ret
@@ -5570,7 +5570,7 @@ rt_mb_urgent:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1719  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1720      /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1721      temp = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1130:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1722  
@@ -5586,7 +5586,7 @@ rt_mb_urgent:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1724      {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1725          rt_hw_interrupt_enable(temp);
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1131:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1726          return -RT_EFULL;
@@ -5663,14 +5663,14 @@ rt_mb_urgent:	.type	func
 	call	rt_thread_resume
 .L968:
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1833:
 	call	rt_schedule
 .L1834:
 	j	.L173
 .L172:
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L173:
 	mov	d2,#0
 	ret
@@ -5744,7 +5744,7 @@ rt_mb_recv:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1791  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1792      /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1793      temp = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1139:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1794  
@@ -5763,7 +5763,7 @@ rt_mb_recv:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1797      {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1798          rt_hw_interrupt_enable(temp);
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1140:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1799  
@@ -5794,7 +5794,7 @@ rt_mb_recv:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1812              /* enable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1813              rt_hw_interrupt_enable(temp);
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1606:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1814  
@@ -5912,9 +5912,9 @@ rt_mb_recv:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   104              for (n = list->next; n != list; n = n->next)      (inlined)
 	j	.L185
 .L186:
-	ld.bu	d15,[a14]53
+	ld.bu	d15,[a14]62
 .L1609:
-	ld.bu	d0,[a2]33
+	ld.bu	d0,[a2]42
 .L1610:
 	lea	a4,[a2]-20
 .L1145:
@@ -6218,17 +6218,17 @@ rt_mb_recv:	.type	func
 	call	rt_tick_get
 .L1149:
 	mov	d8,d2
-	lea	a4,[a14]76
+	lea	a4,[a14]84
 .L1152:
 	mov	d4,#0
 	mov.aa	a5,a10
 	call	rt_timer_control
 .L1151:
-	lea	a4,[a14]76
+	lea	a4,[a14]84
 	call	rt_timer_start
 .L190:
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1621:
 	call	rt_schedule
 .L1622:
@@ -6236,7 +6236,7 @@ rt_mb_recv:	.type	func
 .L1623:
 	jne	d2,#0,.L192
 .L1624:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1147:
 	mov	d9,d2
 	ld.w	d15,[a10]
@@ -6401,7 +6401,7 @@ rt_mb_recv:	.type	func
 	call	rt_thread_resume
 .L842:
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1643:
 	ld.a	a15,rt_object_take_hook
 	jz.a	a15,.L197
@@ -6414,7 +6414,7 @@ rt_mb_recv:	.type	func
 	j	.L198
 .L196:
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1645:
 	ld.a	a15,rt_object_take_hook
 	jz.a	a15,.L199
@@ -6564,7 +6564,7 @@ rt_mb_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1924      {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1925          /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1926          level = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1157:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1927  
@@ -6578,7 +6578,7 @@ rt_mb_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 	j	.L202
 .L203:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1160:
 	mov	d9,d2
 	ld.a	a2,[a15]
@@ -6588,7 +6588,7 @@ rt_mb_control:	.type	func
 	call	rt_thread_resume
 .L1163:
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 .L202:
@@ -6709,7 +6709,7 @@ rt_mb_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 	j	.L204
 .L205:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1164:
 	mov	d9,d2
 	ld.a	a2,[a15]
@@ -6719,7 +6719,7 @@ rt_mb_control:	.type	func
 	call	rt_thread_resume
 .L1166:
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 .L204:
@@ -6850,7 +6850,7 @@ rt_mb_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1938          /* enable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1939          rt_hw_interrupt_enable(level);
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1656:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  1940  
@@ -7130,7 +7130,7 @@ rt_mq_detach:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 	j	.L211
 .L212:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1178:
 	mov	d8,d2
 	ld.a	a2,[a15]
@@ -7140,7 +7140,7 @@ rt_mq_detach:	.type	func
 	call	rt_thread_resume
 .L1181:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 .L211:
@@ -7261,7 +7261,7 @@ rt_mq_detach:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 	j	.L213
 .L214:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1182:
 	mov	d8,d2
 	ld.a	a2,[a15]
@@ -7271,7 +7271,7 @@ rt_mq_detach:	.type	func
 	call	rt_thread_resume
 .L1184:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 .L213:
@@ -7717,7 +7717,7 @@ rt_mq_send_wait:	.type	func
 .L1190:
 	calli	a2
 .L218:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1191:
 	ld.a	a14,[a15]48
 .L1192:
@@ -7756,9 +7756,9 @@ rt_mq_send_wait:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   104              for (n = list->next; n != list; n = n->next)      (inlined)
 	j	.L227
 .L228:
-	ld.bu	d0,[a13]53
+	ld.bu	d0,[a13]62
 .L1696:
-	ld.bu	d1,[a2]33
+	ld.bu	d1,[a2]42
 .L1697:
 	lea	a4,[a2]-20
 .L1201:
@@ -7971,17 +7971,17 @@ rt_mq_send_wait:	.type	func
 	call	rt_tick_get
 .L1205:
 	mov	d8,d2
-	lea	a4,[a13]76
+	lea	a4,[a13]84
 .L1207:
 	mov	d4,#0
 	mov.aa	a5,a10
 	call	rt_timer_control
 .L1206:
-	lea	a4,[a13]76
+	lea	a4,[a13]84
 	call	rt_timer_start
 .L232:
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1706:
 	call	rt_schedule
 .L1707:
@@ -7989,7 +7989,7 @@ rt_mq_send_wait:	.type	func
 .L1708:
 	jne	d2,#0,.L234
 .L1709:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1203:
 	mov	d10,d2
 	ld.w	d15,[a10]
@@ -8015,7 +8015,7 @@ rt_mq_send_wait:	.type	func
 	st.a	[a15]48,a2
 .L1715:
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1716:
 	mov.a	a2,#0
 .L1717:
@@ -8028,7 +8028,7 @@ rt_mq_send_wait:	.type	func
 	mov	d4,d9
 	call	rt_memcpy
 .L1212:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1210:
 	ld.a	a2,[a15]44
 .L1720:
@@ -8064,7 +8064,7 @@ rt_mq_send_wait:	.type	func
 	call	rt_thread_resume
 .L914:
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1728:
 	call	rt_schedule
 .L1729:
@@ -8073,14 +8073,14 @@ rt_mq_send_wait:	.type	func
 .L223:
 .L220:
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1730:
 	mov	d2,#-3
 .L234:
 	ret
 .L239:
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L240:
 	mov	d2,#0
 	ret
@@ -8347,7 +8347,7 @@ rt_mq_urgent:	.type	func
 	jz.a	a2,.L246
 	calli	a2
 .L246:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1221:
 	ld.a	a13,[a15]48
 .L1223:
@@ -8360,7 +8360,7 @@ rt_mq_urgent:	.type	func
 	st.a	[a15]48,a2
 .L1738:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1222:
 	lea	a4,[a13]4
 .L1739:
@@ -8369,7 +8369,7 @@ rt_mq_urgent:	.type	func
 	mov	d4,d15
 	call	rt_memcpy
 .L1227:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1225:
 	ld.a	a2,[a15]40
 .L1740:
@@ -8403,7 +8403,7 @@ rt_mq_urgent:	.type	func
 	call	rt_thread_resume
 .L923:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1747:
 	call	rt_schedule
 .L1748:
@@ -8411,13 +8411,13 @@ rt_mq_urgent:	.type	func
 .L249:
 .L247:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1749:
 	mov	d2,#-3
 	ret
 .L250:
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L251:
 	mov	d2,#0
 	ret
@@ -8499,7 +8499,7 @@ rt_mq_recv:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2466  
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2467      /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2468      temp = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1235:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2469  
@@ -8518,7 +8518,7 @@ rt_mq_recv:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2472      {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2473          rt_hw_interrupt_enable(temp);
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1236:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2474  
@@ -8551,7 +8551,7 @@ rt_mq_recv:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2489              /* enable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2490              rt_hw_interrupt_enable(temp);
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1760:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2491  
@@ -8680,17 +8680,17 @@ rt_mq_recv:	.type	func
 	call	rt_tick_get
 .L1247:
 	mov	d9,d2
-	lea	a4,[a13]76
+	lea	a4,[a13]84
 .L1249:
 	mov	d4,#0
 	mov.aa	a5,a10
 	call	rt_timer_control
 .L1248:
-	lea	a4,[a13]76
+	lea	a4,[a13]84
 	call	rt_timer_start
 .L269:
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1765:
 	call	rt_schedule
 .L1766:
@@ -8698,7 +8698,7 @@ rt_mq_recv:	.type	func
 .L1767:
 	jne	d2,#0,.L271
 .L1768:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1244:
 	mov	d10,d2
 	ld.w	d15,[a10]
@@ -8743,7 +8743,7 @@ rt_mq_recv:	.type	func
 	st.h	[a15]36,d15
 .L274:
 	mov	d4,d10
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1781:
 	ld.hu	d15,[a15]32
 .L1782:
@@ -8754,7 +8754,7 @@ rt_mq_recv:	.type	func
 .L1253:
 	call	rt_memcpy
 .L1254:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1252:
 	ld.a	a2,[a15]48
 .L1784:
@@ -8876,7 +8876,7 @@ rt_mq_recv:	.type	func
 	call	rt_thread_resume
 .L941:
 	mov	d4,d15
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1789:
 	ld.a	a2,rt_object_take_hook
 	jz.a	a2,.L276
@@ -8889,7 +8889,7 @@ rt_mq_recv:	.type	func
 	j	.L277
 .L275:
 	mov	d4,d15
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1257:
 	ld.a	a2,rt_object_take_hook
 	jz.a	a2,.L278
@@ -8925,9 +8925,9 @@ __rt_mq_recv_function_end:
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   104              for (n = list->next; n != list; n = n->next)      (inlined)
 	j	.L264
 .L265:
-	ld.bu	d15,[a13]53
+	ld.bu	d15,[a13]62
 .L1841:
-	ld.bu	d0,[a2]33
+	ld.bu	d0,[a2]42
 .L1842:
 	lea	a4,[a2]-20
 .L1083:
@@ -9176,7 +9176,7 @@ rt_mq_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2615      {
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2616          /* disable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2617          level = rt_hw_interrupt_disable();
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1259:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2618  
@@ -9190,7 +9190,7 @@ rt_mq_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 	j	.L281
 .L282:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1262:
 	mov	d9,d2
 	ld.a	a2,[a12]
@@ -9200,7 +9200,7 @@ rt_mq_control:	.type	func
 	call	rt_thread_resume
 .L1265:
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 .L281:
@@ -9321,7 +9321,7 @@ rt_mq_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 	j	.L283
 .L284:
-	call	rt_hw_interrupt_disable
+	call	rt_cpus_lock
 .L1266:
 	mov	d9,d2
 	ld.a	a2,[a12]
@@ -9331,7 +9331,7 @@ rt_mq_control:	.type	func
 	call	rt_thread_resume
 .L1268:
 	mov	d4,d9
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	   171      while (!rt_list_isempty(list))      (inlined)
 .L283:
@@ -9504,7 +9504,7 @@ rt_mq_control:	.type	func
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2644          /* enable interrupt */
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2645          rt_hw_interrupt_enable(level);
 	mov	d4,d8
-	call	rt_hw_interrupt_enable
+	call	rt_cpus_unlock
 .L1808:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\src\ipc.c	  2646  
@@ -9531,13 +9531,13 @@ __rt_mq_control_function_end:
 	; End of function
 	
 	.calls	'rt_sem_init','rt_object_init'
-	.calls	'rt_sem_detach','rt_hw_interrupt_disable'
+	.calls	'rt_sem_detach','rt_cpus_lock'
 	.calls	'rt_sem_detach','rt_thread_resume'
-	.calls	'rt_sem_detach','rt_hw_interrupt_enable'
+	.calls	'rt_sem_detach','rt_cpus_unlock'
 	.calls	'rt_sem_detach','rt_object_detach'
 	.calls	'rt_sem_take','__INDIRECT__'
-	.calls	'rt_sem_take','rt_hw_interrupt_disable'
-	.calls	'rt_sem_take','rt_hw_interrupt_enable'
+	.calls	'rt_sem_take','rt_cpus_lock'
+	.calls	'rt_sem_take','rt_cpus_unlock'
 	.calls	'rt_sem_take','rt_thread_self'
 	.calls	'rt_sem_take','rt_thread_suspend'
 	.calls	'rt_sem_take','rt_timer_control'
@@ -9545,120 +9545,120 @@ __rt_mq_control_function_end:
 	.calls	'rt_sem_take','rt_schedule'
 	.calls	'rt_sem_trytake','rt_sem_take'
 	.calls	'rt_sem_release','__INDIRECT__'
-	.calls	'rt_sem_release','rt_hw_interrupt_disable'
+	.calls	'rt_sem_release','rt_cpus_lock'
 	.calls	'rt_sem_release','rt_thread_resume'
-	.calls	'rt_sem_release','rt_hw_interrupt_enable'
+	.calls	'rt_sem_release','rt_cpus_unlock'
 	.calls	'rt_sem_release','rt_schedule'
-	.calls	'rt_sem_control','rt_hw_interrupt_disable'
+	.calls	'rt_sem_control','rt_cpus_lock'
 	.calls	'rt_sem_control','rt_thread_resume'
-	.calls	'rt_sem_control','rt_hw_interrupt_enable'
+	.calls	'rt_sem_control','rt_cpus_unlock'
 	.calls	'rt_sem_control','rt_schedule'
 	.calls	'rt_mutex_init','rt_object_init'
-	.calls	'rt_mutex_detach','rt_hw_interrupt_disable'
+	.calls	'rt_mutex_detach','rt_cpus_lock'
 	.calls	'rt_mutex_detach','rt_thread_resume'
-	.calls	'rt_mutex_detach','rt_hw_interrupt_enable'
+	.calls	'rt_mutex_detach','rt_cpus_unlock'
 	.calls	'rt_mutex_detach','rt_object_detach'
 	.calls	'rt_mutex_take','rt_thread_self'
-	.calls	'rt_mutex_take','rt_hw_interrupt_disable'
+	.calls	'rt_mutex_take','rt_cpus_lock'
 	.calls	'rt_mutex_take','__INDIRECT__'
-	.calls	'rt_mutex_take','rt_hw_interrupt_enable'
+	.calls	'rt_mutex_take','rt_cpus_unlock'
 	.calls	'rt_mutex_take','rt_thread_control'
 	.calls	'rt_mutex_take','rt_thread_suspend'
 	.calls	'rt_mutex_take','rt_timer_control'
 	.calls	'rt_mutex_take','rt_timer_start'
 	.calls	'rt_mutex_take','rt_schedule'
 	.calls	'rt_mutex_release','rt_thread_self'
-	.calls	'rt_mutex_release','rt_hw_interrupt_disable'
+	.calls	'rt_mutex_release','rt_cpus_lock'
 	.calls	'rt_mutex_release','__INDIRECT__'
-	.calls	'rt_mutex_release','rt_hw_interrupt_enable'
+	.calls	'rt_mutex_release','rt_cpus_unlock'
 	.calls	'rt_mutex_release','rt_thread_control'
 	.calls	'rt_mutex_release','rt_ipc_get_highest_priority'
 	.calls	'rt_mutex_release','rt_thread_resume'
 	.calls	'rt_mutex_release','rt_schedule'
 	.calls	'rt_event_init','rt_object_init'
-	.calls	'rt_event_detach','rt_hw_interrupt_disable'
+	.calls	'rt_event_detach','rt_cpus_lock'
 	.calls	'rt_event_detach','rt_thread_resume'
-	.calls	'rt_event_detach','rt_hw_interrupt_enable'
+	.calls	'rt_event_detach','rt_cpus_unlock'
 	.calls	'rt_event_detach','rt_object_detach'
-	.calls	'rt_event_send','rt_hw_interrupt_disable'
+	.calls	'rt_event_send','rt_cpus_lock'
 	.calls	'rt_event_send','__INDIRECT__'
-	.calls	'rt_event_send','rt_hw_interrupt_enable'
+	.calls	'rt_event_send','rt_cpus_unlock'
 	.calls	'rt_event_send','rt_thread_resume'
 	.calls	'rt_event_send','rt_schedule'
 	.calls	'rt_event_recv','rt_thread_self'
 	.calls	'rt_event_recv','__INDIRECT__'
-	.calls	'rt_event_recv','rt_hw_interrupt_disable'
-	.calls	'rt_event_recv','rt_hw_interrupt_enable'
+	.calls	'rt_event_recv','rt_cpus_lock'
+	.calls	'rt_event_recv','rt_cpus_unlock'
 	.calls	'rt_event_recv','rt_thread_suspend'
 	.calls	'rt_event_recv','rt_timer_control'
 	.calls	'rt_event_recv','rt_timer_start'
 	.calls	'rt_event_recv','rt_schedule'
-	.calls	'rt_event_control','rt_hw_interrupt_disable'
+	.calls	'rt_event_control','rt_cpus_lock'
 	.calls	'rt_event_control','rt_thread_resume'
-	.calls	'rt_event_control','rt_hw_interrupt_enable'
+	.calls	'rt_event_control','rt_cpus_unlock'
 	.calls	'rt_event_control','rt_schedule'
 	.calls	'rt_mb_init','rt_object_init'
-	.calls	'rt_mb_detach','rt_hw_interrupt_disable'
+	.calls	'rt_mb_detach','rt_cpus_lock'
 	.calls	'rt_mb_detach','rt_thread_resume'
-	.calls	'rt_mb_detach','rt_hw_interrupt_enable'
+	.calls	'rt_mb_detach','rt_cpus_unlock'
 	.calls	'rt_mb_detach','rt_object_detach'
 	.calls	'rt_mb_send_wait','rt_thread_self'
 	.calls	'rt_mb_send_wait','__INDIRECT__'
-	.calls	'rt_mb_send_wait','rt_hw_interrupt_disable'
+	.calls	'rt_mb_send_wait','rt_cpus_lock'
 	.calls	'rt_mb_send_wait','rt_thread_suspend'
 	.calls	'rt_mb_send_wait','rt_tick_get'
 	.calls	'rt_mb_send_wait','rt_timer_control'
 	.calls	'rt_mb_send_wait','rt_timer_start'
-	.calls	'rt_mb_send_wait','rt_hw_interrupt_enable'
+	.calls	'rt_mb_send_wait','rt_cpus_unlock'
 	.calls	'rt_mb_send_wait','rt_schedule'
 	.calls	'rt_mb_send_wait','rt_thread_resume'
 	.calls	'rt_mb_send','rt_mb_send_wait'
 	.calls	'rt_mb_urgent','__INDIRECT__'
-	.calls	'rt_mb_urgent','rt_hw_interrupt_disable'
-	.calls	'rt_mb_urgent','rt_hw_interrupt_enable'
+	.calls	'rt_mb_urgent','rt_cpus_lock'
+	.calls	'rt_mb_urgent','rt_cpus_unlock'
 	.calls	'rt_mb_urgent','rt_thread_resume'
 	.calls	'rt_mb_urgent','rt_schedule'
 	.calls	'rt_mb_recv','rt_thread_self'
 	.calls	'rt_mb_recv','__INDIRECT__'
-	.calls	'rt_mb_recv','rt_hw_interrupt_disable'
-	.calls	'rt_mb_recv','rt_hw_interrupt_enable'
+	.calls	'rt_mb_recv','rt_cpus_lock'
+	.calls	'rt_mb_recv','rt_cpus_unlock'
 	.calls	'rt_mb_recv','rt_thread_suspend'
 	.calls	'rt_mb_recv','rt_tick_get'
 	.calls	'rt_mb_recv','rt_timer_control'
 	.calls	'rt_mb_recv','rt_timer_start'
 	.calls	'rt_mb_recv','rt_schedule'
 	.calls	'rt_mb_recv','rt_thread_resume'
-	.calls	'rt_mb_control','rt_hw_interrupt_disable'
+	.calls	'rt_mb_control','rt_cpus_lock'
 	.calls	'rt_mb_control','rt_thread_resume'
-	.calls	'rt_mb_control','rt_hw_interrupt_enable'
+	.calls	'rt_mb_control','rt_cpus_unlock'
 	.calls	'rt_mb_control','rt_schedule'
 	.calls	'rt_mq_init','rt_object_init'
-	.calls	'rt_mq_detach','rt_hw_interrupt_disable'
+	.calls	'rt_mq_detach','rt_cpus_lock'
 	.calls	'rt_mq_detach','rt_thread_resume'
-	.calls	'rt_mq_detach','rt_hw_interrupt_enable'
+	.calls	'rt_mq_detach','rt_cpus_unlock'
 	.calls	'rt_mq_detach','rt_object_detach'
 	.calls	'rt_mq_send_wait','rt_thread_self'
 	.calls	'rt_mq_send_wait','__INDIRECT__'
-	.calls	'rt_mq_send_wait','rt_hw_interrupt_disable'
+	.calls	'rt_mq_send_wait','rt_cpus_lock'
 	.calls	'rt_mq_send_wait','rt_thread_suspend'
 	.calls	'rt_mq_send_wait','rt_tick_get'
 	.calls	'rt_mq_send_wait','rt_timer_control'
 	.calls	'rt_mq_send_wait','rt_timer_start'
-	.calls	'rt_mq_send_wait','rt_hw_interrupt_enable'
+	.calls	'rt_mq_send_wait','rt_cpus_unlock'
 	.calls	'rt_mq_send_wait','rt_schedule'
 	.calls	'rt_mq_send_wait','rt_memcpy'
 	.calls	'rt_mq_send_wait','rt_thread_resume'
 	.calls	'rt_mq_send','rt_mq_send_wait'
 	.calls	'rt_mq_urgent','__INDIRECT__'
-	.calls	'rt_mq_urgent','rt_hw_interrupt_disable'
-	.calls	'rt_mq_urgent','rt_hw_interrupt_enable'
+	.calls	'rt_mq_urgent','rt_cpus_lock'
+	.calls	'rt_mq_urgent','rt_cpus_unlock'
 	.calls	'rt_mq_urgent','rt_memcpy'
 	.calls	'rt_mq_urgent','rt_thread_resume'
 	.calls	'rt_mq_urgent','rt_schedule'
 	.calls	'rt_mq_recv','rt_thread_self'
 	.calls	'rt_mq_recv','__INDIRECT__'
-	.calls	'rt_mq_recv','rt_hw_interrupt_disable'
-	.calls	'rt_mq_recv','rt_hw_interrupt_enable'
+	.calls	'rt_mq_recv','rt_cpus_lock'
+	.calls	'rt_mq_recv','rt_cpus_unlock'
 	.calls	'rt_mq_recv','rt_thread_suspend'
 	.calls	'rt_mq_recv','rt_tick_get'
 	.calls	'rt_mq_recv','rt_timer_control'
@@ -9666,9 +9666,9 @@ __rt_mq_control_function_end:
 	.calls	'rt_mq_recv','rt_schedule'
 	.calls	'rt_mq_recv','rt_memcpy'
 	.calls	'rt_mq_recv','rt_thread_resume'
-	.calls	'rt_mq_control','rt_hw_interrupt_disable'
+	.calls	'rt_mq_control','rt_cpus_lock'
 	.calls	'rt_mq_control','rt_thread_resume'
-	.calls	'rt_mq_control','rt_hw_interrupt_enable'
+	.calls	'rt_mq_control','rt_cpus_unlock'
 	.calls	'rt_mq_control','rt_schedule'
 	.calls	'rt_sem_init','.cocofun_3'
 	.calls	'rt_sem_detach','.cocofun_5'
@@ -9756,9 +9756,9 @@ __rt_mq_control_function_end:
 	.extern	rt_thread_suspend
 	.extern	rt_thread_resume
 	.extern	rt_schedule
+	.extern	rt_cpus_lock
+	.extern	rt_cpus_unlock
 	.extern	rt_memcpy
-	.extern	rt_hw_interrupt_disable
-	.extern	rt_hw_interrupt_enable
 	.extern	rt_object_trytake_hook
 	.extern	rt_object_take_hook
 	.extern	rt_object_put_hook
@@ -9767,7 +9767,7 @@ __rt_mq_control_function_end:
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L371:
-	.word	4147
+	.word	4363
 	.half	3
 	.word	.L372
 	.byte	4
@@ -9874,7 +9874,8 @@ __rt_mq_control_function_end:
 	.word	595
 .L580:
 	.byte	8
-	.byte	'unsigned int',0,4,7
+	.byte	'unsigned int',0,4,7,8
+	.byte	'unsigned short int',0,2,7
 .L603:
 	.byte	8
 	.byte	'unsigned long int',0,4,7,11,8
@@ -9882,17 +9883,17 @@ __rt_mq_control_function_end:
 	.byte	12,0,0,15,1,1,16
 	.word	601
 	.byte	0,2
-	.word	652
+	.word	674
 	.byte	3
 	.byte	'rt_timer',0,2,236,3,8,44,4
 	.byte	'parent',0
 	.word	410
 	.byte	20,2,35,0,4
 	.byte	'row',0
-	.word	643
+	.word	665
 	.byte	8,2,35,20,4
 	.byte	'timeout_func',0
-	.word	661
+	.word	683
 	.byte	4,2,35,28,4
 	.byte	'parameter',0
 	.word	601
@@ -9905,9 +9906,9 @@ __rt_mq_control_function_end:
 	.byte	4,2,35,40,0,15,1,1,16
 	.word	.L601-.L371
 	.byte	0,2
-	.word	793
+	.word	815
 	.byte	3
-	.byte	'rt_thread',0,2,213,4,8,128,1,4
+	.byte	'rt_thread',0,2,213,4,8,136,1,4
 	.byte	'name',0
 	.word	384
 	.byte	8,2,35,0,4
@@ -9944,39 +9945,54 @@ __rt_mq_control_function_end:
 	.byte	'stat',0
 	.word	393
 	.byte	1,2,35,52,4
-	.byte	'current_priority',0
+	.byte	'bind_cpu',0
 	.word	393
 	.byte	1,2,35,53,4
-	.byte	'init_priority',0
+	.byte	'oncpu',0
 	.word	393
 	.byte	1,2,35,54,4
+	.byte	'scheduler_lock_nest',0
+	.word	622
+	.byte	2,2,35,56,4
+	.byte	'cpus_lock_nest',0
+	.word	622
+	.byte	2,2,35,58,4
+	.byte	'critical_lock_nest',0
+	.word	622
+	.byte	2,2,35,60,4
+	.byte	'current_priority',0
+	.word	393
+	.byte	1,2,35,62,4
+	.byte	'init_priority',0
+	.word	393
+	.byte	1,2,35,63,4
 	.byte	'number_mask',0
 	.word	606
-	.byte	4,2,35,56,4
+	.byte	4,2,35,64,4
 	.byte	'event_set',0
 	.word	606
-	.byte	4,2,35,60,4
+	.byte	4,2,35,68,4
 	.byte	'event_info',0
 	.word	393
-	.byte	1,2,35,64,4
+	.byte	1,2,35,72,4
 	.byte	'init_tick',0
-	.word	622
-	.byte	4,2,35,66,4
+	.word	644
+	.byte	4,2,35,74,4
 	.byte	'remaining_tick',0
-	.word	622
-	.byte	4,2,35,70,4
+	.word	644
+	.byte	4,2,35,78,4
 	.byte	'thread_timer',0
-	.word	666
-	.byte	44,2,35,76,4
+	.word	688
+	.byte	44,2,35,84,4
 	.byte	'cleanup',0
-	.word	802
-	.byte	4,2,35,120,4
+	.word	824
+	.byte	4,3,35,128,1,4
 	.byte	'user_data',0
-	.word	622
-	.byte	4,2,35,124,0
+	.word	644
+	.byte	4,3,35,132,1,0
 .L601:
 	.byte	2
-	.word	807
+	.word	829
 .L611:
 	.byte	10
 	.byte	'rt_ipc_list_suspend',0,3,3,85,20
@@ -9989,7 +10005,7 @@ __rt_mq_control_function_end:
 .L615:
 	.byte	6
 	.byte	'thread',0,3,86,58
-	.word	1222
+	.word	1360
 .L617:
 	.byte	6
 	.byte	'flag',0,3,87,58
@@ -10023,17 +10039,17 @@ __rt_mq_control_function_end:
 	.word	308
 	.byte	17
 	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,16
-	.word	1405
+	.word	1543
 	.byte	0,18
 	.word	606
 	.byte	2
 	.word	606
 	.byte	19
 	.byte	'__cmpswapw',0
-	.word	1447
+	.word	1585
 	.byte	1,1,1,1,20
 	.byte	'p',0
-	.word	1452
+	.word	1590
 	.byte	20
 	.byte	'value',0
 	.word	606
@@ -10075,48 +10091,48 @@ __rt_mq_control_function_end:
 	.word	376
 .L578:
 	.byte	2
-	.word	1942
+	.word	2080
 	.byte	25
 	.byte	'rt_object_init',0,4,47,6,1,1,1,1,6
 	.byte	'object',0,4,47,47
-	.word	1550
+	.word	1688
 	.byte	6
 	.byte	'type',0,4,48,47
-	.word	1555
+	.word	1693
 	.byte	6
 	.byte	'name',0,4,49,47
-	.word	1947
+	.word	2085
 	.byte	0,26
 	.byte	'rt_object_t',0,2,142,3,27
-	.word	1550
+	.word	1688
 	.byte	25
 	.byte	'rt_object_detach',0,4,50,6,1,1,1,1,6
 	.byte	'object',0,4,50,35
-	.word	2017
+	.word	2155
 	.byte	0,2
 	.word	410
 	.byte	27
 	.byte	'rt_tick_get',0,4,77,11
 	.word	606
 	.byte	1,1,1,1,2
-	.word	666
+	.word	688
 	.byte	26
 	.byte	'rt_timer_t',0,2,248,3,26
-	.word	2108
+	.word	2246
 	.byte	28
 	.byte	'rt_timer_start',0,4,99,10
 	.word	364
 	.byte	1,1,1,1,6
 	.byte	'timer',0,4,99,36
-	.word	2113
+	.word	2251
 	.byte	0,2
-	.word	666
+	.word	688
 	.byte	28
 	.byte	'rt_timer_control',0,4,101,10
 	.word	364
 	.byte	1,1,1,1,6
 	.byte	'timer',0,4,101,38
-	.word	2113
+	.word	2251
 	.byte	6
 	.byte	'cmd',0,4,101,49
 	.word	308
@@ -10125,18 +10141,18 @@ __rt_mq_control_function_end:
 	.word	601
 	.byte	0,26
 	.byte	'rt_thread_t',0,2,160,5,27
-	.word	1222
+	.word	1360
 	.byte	27
 	.byte	'rt_thread_self',0,4,137,1,13
-	.word	2248
+	.word	2386
 	.byte	1,1,1,1,2
-	.word	807
+	.word	829
 	.byte	28
 	.byte	'rt_thread_control',0,4,146,1,10
 	.word	364
 	.byte	1,1,1,1,6
 	.byte	'thread',0,4,146,1,40
-	.word	2248
+	.word	2386
 	.byte	6
 	.byte	'cmd',0,4,146,1,52
 	.word	308
@@ -10148,40 +10164,39 @@ __rt_mq_control_function_end:
 	.word	364
 	.byte	1,1,1,1,6
 	.byte	'thread',0,4,147,1,40
-	.word	2248
+	.word	2386
 	.byte	0,28
 	.byte	'rt_thread_resume',0,4,148,1,10
 	.word	364
 	.byte	1,1,1,1,6
 	.byte	'thread',0,4,148,1,39
-	.word	2248
+	.word	2386
 	.byte	0,29
-	.byte	'rt_schedule',0,4,180,1,6,1,1,1,1,8
-	.byte	'unsigned short int',0,2,7,3
+	.byte	'rt_schedule',0,4,180,1,6,1,1,1,1,3
 	.byte	'rt_semaphore',0,2,196,5,8,32,4
 	.byte	'parent',0
 	.word	483
 	.byte	28,2,35,0,4
 	.byte	'value',0
-	.word	2492
+	.word	622
 	.byte	2,2,35,28,4
 	.byte	'reserved',0
-	.word	2492
+	.word	622
 	.byte	2,2,35,30,0,2
-	.word	2514
+	.word	2630
 	.byte	2
-	.word	2514
+	.word	2630
 .L576:
 	.byte	26
 	.byte	'rt_sem_t',0,2,203,5,30
-	.word	2588
+	.word	2704
 	.byte	3
 	.byte	'rt_mutex',0,2,210,5,8,36,4
 	.byte	'parent',0
 	.word	483
 	.byte	28,2,35,0,4
 	.byte	'value',0
-	.word	2492
+	.word	622
 	.byte	2,2,35,28,4
 	.byte	'original_priority',0
 	.word	393
@@ -10190,15 +10205,15 @@ __rt_mq_control_function_end:
 	.word	393
 	.byte	1,2,35,31,4
 	.byte	'owner',0
-	.word	1222
+	.word	1360
 	.byte	4,2,35,32,0,2
-	.word	2611
+	.word	2727
 	.byte	2
-	.word	2611
+	.word	2727
 .L666:
 	.byte	26
 	.byte	'rt_mutex_t',0,2,221,5,26
-	.word	2719
+	.word	2835
 	.byte	3
 	.byte	'rt_event',0,2,235,5,8,32,4
 	.byte	'parent',0
@@ -10207,49 +10222,49 @@ __rt_mq_control_function_end:
 	.byte	'set',0
 	.word	606
 	.byte	4,2,35,28,0,2
-	.word	2744
+	.word	2860
 	.byte	2
-	.word	2744
+	.word	2860
 .L714:
 	.byte	26
 	.byte	'rt_event_t',0,2,241,5,26
-	.word	2794
+	.word	2910
 .L741:
 	.byte	2
 	.word	606
 .L820:
 	.byte	2
-	.word	622
+	.word	644
 	.byte	3
 	.byte	'rt_mailbox',0,2,248,5,8,48,4
 	.byte	'parent',0
 	.word	483
 	.byte	28,2,35,0,4
 	.byte	'msg_pool',0
-	.word	2824
+	.word	2940
 	.byte	4,2,35,28,4
 	.byte	'size',0
-	.word	2492
+	.word	622
 	.byte	2,2,35,32,4
 	.byte	'entry',0
-	.word	2492
+	.word	622
 	.byte	2,2,35,34,4
 	.byte	'in_offset',0
-	.word	2492
+	.word	622
 	.byte	2,2,35,36,4
 	.byte	'out_offset',0
-	.word	2492
+	.word	622
 	.byte	2,2,35,38,4
 	.byte	'suspend_sender_thread',0
 	.word	172
 	.byte	8,2,35,40,0,2
-	.word	2829
+	.word	2945
 	.byte	2
-	.word	2829
+	.word	2945
 .L762:
 	.byte	26
 	.byte	'rt_mailbox_t',0,2,134,6,28
-	.word	2985
+	.word	3101
 	.byte	3
 	.byte	'rt_messagequeue',0,2,141,6,8,60,4
 	.byte	'parent',0
@@ -10259,13 +10274,13 @@ __rt_mq_control_function_end:
 	.word	601
 	.byte	4,2,35,28,4
 	.byte	'msg_size',0
-	.word	2492
+	.word	622
 	.byte	2,2,35,32,4
 	.byte	'max_msgs',0
-	.word	2492
+	.word	622
 	.byte	2,2,35,34,4
 	.byte	'entry',0
-	.word	2492
+	.word	622
 	.byte	2,2,35,36,4
 	.byte	'msg_queue_head',0
 	.word	601
@@ -10279,13 +10294,13 @@ __rt_mq_control_function_end:
 	.byte	'suspend_sender_thread',0
 	.word	172
 	.byte	8,2,35,52,0,2
-	.word	3012
+	.word	3128
 	.byte	2
-	.word	3012
+	.word	3128
 .L859:
 	.byte	26
 	.byte	'rt_mq_t',0,2,158,6,33
-	.word	3228
+	.word	3344
 	.byte	3
 	.byte	'rt_mq_message',0,3,160,15,8,4,4
 	.byte	'next',0
@@ -10293,13 +10308,20 @@ __rt_mq_control_function_end:
 	.byte	4,2,35,0,0
 .L866:
 	.byte	2
-	.word	3250
+	.word	3366
 	.byte	9
 	.word	595
 .L888:
 	.byte	2
-	.word	3290
-	.byte	28
+	.word	3406
+	.byte	27
+	.byte	'rt_cpus_lock',0,4,224,3,11
+	.word	364
+	.byte	1,1,1,1,25
+	.byte	'rt_cpus_unlock',0,4,225,3,6,1,1,1,1,6
+	.byte	'level',0,4,225,3,31
+	.word	364
+	.byte	0,28
 	.byte	'rt_memcpy',0,4,159,4,7
 	.word	601
 	.byte	1,1,1,1,6
@@ -10307,17 +10329,10 @@ __rt_mq_control_function_end:
 	.word	601
 	.byte	6
 	.byte	'src',0,4,159,4,41
-	.word	3295
+	.word	3411
 	.byte	6
 	.byte	'n',0,4,159,4,57
-	.word	622
-	.byte	0,27
-	.byte	'rt_hw_interrupt_disable',0,5,105,11
-	.word	364
-	.byte	1,1,1,1,25
-	.byte	'rt_hw_interrupt_enable',0,5,106,6,1,1,1,1,6
-	.byte	'level',0,5,106,39
-	.word	364
+	.word	644
 	.byte	0,21
 	.word	549
 	.byte	22
@@ -10329,13 +10344,13 @@ __rt_mq_control_function_end:
 	.byte	31
 	.word	255
 	.byte	0,7,0,0,21
-	.word	1227
+	.word	1365
 	.byte	22
-	.word	1258
+	.word	1396
 	.byte	22
-	.word	1271
+	.word	1409
 	.byte	22
-	.word	1286
+	.word	1424
 	.byte	13,13,30
 	.word	257
 	.byte	22
@@ -10353,13 +10368,13 @@ __rt_mq_control_function_end:
 	.byte	31
 	.word	306
 	.byte	0,0,7,7,0,0,21
-	.word	1305
+	.word	1443
 	.byte	22
-	.word	1336
+	.word	1474
 	.byte	7,0,21
-	.word	1352
+	.word	1490
 	.byte	22
-	.word	1387
+	.word	1525
 	.byte	13,30
 	.word	325
 	.byte	22
@@ -10371,10 +10386,10 @@ __rt_mq_control_function_end:
 	.byte	'__size_t',0,3,1,1
 	.word	606
 	.byte	33,1,2
-	.word	3622
+	.word	3722
 	.byte	26
 	.byte	'__codeptr',0,3,1,1
-	.word	3624
+	.word	3724
 	.byte	26
 	.byte	'__intptr_t',0,3,1,1
 	.word	308
@@ -10389,7 +10404,7 @@ __rt_mq_control_function_end:
 	.word	393
 	.byte	26
 	.byte	'rt_uint16_t',0,2,70,41
-	.word	2492
+	.word	622
 	.byte	26
 	.byte	'rt_uint32_t',0,2,71,41
 	.word	606
@@ -10398,7 +10413,7 @@ __rt_mq_control_function_end:
 	.word	364
 	.byte	26
 	.byte	'rt_ubase_t',0,2,84,41
-	.word	622
+	.word	644
 	.byte	26
 	.byte	'rt_err_t',0,2,86,41
 	.word	364
@@ -10407,7 +10422,7 @@ __rt_mq_control_function_end:
 	.word	606
 	.byte	26
 	.byte	'rt_size_t',0,2,90,41
-	.word	622
+	.word	644
 	.byte	26
 	.byte	'rt_list_t',0,2,234,2,29
 	.word	172
@@ -10417,44 +10432,60 @@ __rt_mq_control_function_end:
 	.byte	3
 	.byte	'rt_slist_node',0,2,239,2,8,4,4
 	.byte	'next',0
-	.word	3873
+	.word	3973
 	.byte	4,2,35,0,0,26
 	.byte	'rt_slist_t',0,2,243,2,30
-	.word	3878
+	.word	3978
 	.byte	26
-	.byte	'uint16_t',0,6,246,1,41
-	.word	2492
-	.byte	26
-	.byte	'uint32_t',0,6,254,1,41
-	.word	606
-	.byte	26
-	.byte	'time_t',0,7,44,25
+	.byte	'uint16_t',0,5,246,1,41
 	.word	622
 	.byte	26
-	.byte	'fd_mask',0,8,39,17
+	.byte	'uint32_t',0,5,254,1,41
+	.word	606
+	.byte	26
+	.byte	'time_t',0,6,44,25
+	.word	644
+	.byte	26
+	.byte	'fd_mask',0,7,39,17
 	.word	364
 	.byte	15,1,1,16
 	.word	308
 	.byte	16
 	.word	601
 	.byte	0,2
-	.word	4000
+	.word	4100
 	.byte	26
-	.byte	'rt_isr_handler_t',0,5,73,16
-	.word	4014
+	.byte	'rt_isr_handler_t',0,8,73,16
+	.word	4114
+	.byte	3
+	.byte	'__arch_tickets',0,8,140,1,12,4,4
+	.byte	'owner',0
+	.word	622
+	.byte	2,2,35,0,4
+	.byte	'next',0
+	.word	622
+	.byte	2,2,35,2,0,34,8,138,1,9,4,4
+	.byte	'slock',0
+	.word	644
+	.byte	4,2,35,0,4
+	.byte	'tickets',0
+	.word	4144
+	.byte	4,2,35,0,0,26
+	.byte	'rt_hw_spinlock_t',0,8,144,1,3
+	.word	4195
 	.byte	15,1,1,16
-	.word	1550
+	.word	1688
 	.byte	0,2
-	.word	4044
-	.byte	34
+	.word	4260
+	.byte	35
 	.byte	'rt_object_trytake_hook',0,3,48,15
-	.word	4053
-	.byte	1,1,34
+	.word	4269
+	.byte	1,1,35
 	.byte	'rt_object_take_hook',0,3,49,15
-	.word	4053
-	.byte	1,1,34
+	.word	4269
+	.byte	1,1,35
 	.byte	'rt_object_put_hook',0,3,50,15
-	.word	4053
+	.word	4269
 	.byte	1,1,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -10469,7 +10500,8 @@ __rt_mq_control_function_end:
 	.byte	0,0,26,22,0,3,8,58,15,59,15,57,15,73,19,0,0,27,46,0,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12
 	.byte	0,0,28,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,29,46,0,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,60,12,0,0,30,29,1,49,19,0,0,31,11,0,49,19,0,0,32,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60
-	.byte	12,0,0,33,21,0,54,15,0,0,34,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,0
+	.byte	12,0,0,33,21,0,54,15,0,0,34,23,1,58,15,59,15,57,15,11,15,0,0,35,52,0,3,8,58,15,59,15,57,15,73,19,63,12
+	.byte	60,12,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
 .L373:
@@ -10487,10 +10519,10 @@ __rt_mq_control_function_end:
 	.byte	'rtdef.h',0,1,0,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\src\\ipc.c',0,0,0,0
 	.byte	'rtthread.h',0,1,0,0
-	.byte	'rthw.h',0,1,0,0
 	.byte	'stdint.h',0,2,0,0
 	.byte	'time.h',0,2,0,0
-	.byte	'libc_fdset.h',0,3,0,0,0
+	.byte	'libc_fdset.h',0,3,0,0
+	.byte	'rthw.h',0,1,0,0,0
 .L1275:
 .L1273:
 	.sdecl	'.debug_info',debug,cluster('rt_sem_init')
@@ -12092,11 +12124,11 @@ __rt_mq_control_function_end:
 	.byte	1,5,35,7,9
 	.half	.L1480-.L1479
 	.byte	3,1,1,5,42,1,5,26,9
-	.half	.L1481-.L1480
+	.half	.L1056-.L1480
 	.byte	1,5,35,9
-	.half	.L1056-.L1481
+	.half	.L1481-.L1056
 	.byte	1,5,32,9
-	.half	.L1482-.L1056
+	.half	.L1482-.L1481
 	.byte	1,5,34,9
 	.half	.L101-.L1482
 	.byte	3,3,1,5,31,9

@@ -76,8 +76,6 @@ void rt_tick_increase(void)
     -- thread->remaining_tick;
     if (thread->remaining_tick == 0)
     {
-        sendUARTMessage(thread->name,sizeof(thread->name));
-        sendUARTMessage("\r\n",2);
         rt_base_t level;
         /* change to initialized tick */
         thread->remaining_tick = thread->init_tick;
