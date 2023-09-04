@@ -1,60 +1,60 @@
 # space <name> <id> <mau size>
-space	mpe:tc5:csa	604	8
-space	mpe:tc5:abs18	603	8
-space	mpe:tc5:linear	601	8
 space	mpe:vtc:linear	1	8
+space	mpe:tc4:csa	504	8
 space	mpe:vtc:abs24	2	8
 space	mpe:tc5:abs24	602	8
-space	mpe:tc4:csa	504	8
+space	mpe:tc5:abs18	603	8
+space	mpe:tc5:csa	604	8
+space	mpe:tc5:linear	601	8
 space	mpe:vtc:abs18	3	8
-space	mpe:tc2:csa	304	8
-space	mpe:tc3:abs24	402	8
+space	mpe:tc0:abs18	103	8
+space	mpe:tc0:csa	104	8
+space	mpe:tc1:abs24	202	8
 space	mpe:tc2:linear	301	8
+space	mpe:tc2:abs18	303	8
+space	mpe:tc2:csa	304	8
+space	mpe:tc0:linear	101	8
+space	mpe:tc2:abs24	302	8
+space	mpe:tc3:linear	401	8
+space	mpe:tc3:abs24	402	8
+space	mpe:tc1:abs18	203	8
+space	mpe:tc1:csa	204	8
 space	mpe:tc3:abs18	403	8
 space	mpe:tc3:csa	404	8
-space	mpe:tc1:csa	204	8
 space	mpe:tc4:linear	501	8
 space	mpe:tc4:abs24	502	8
 space	mpe:tc4:abs18	503	8
-space	mpe:tc0:csa	104	8
-space	mpe:tc1:abs24	202	8
-space	mpe:tc2:abs18	303	8
-space	mpe:tc1:abs18	203	8
 space	mpe:tc0:abs24	102	8
-space	mpe:tc2:abs24	302	8
-space	mpe:tc0:abs18	103	8
-space	mpe:tc0:linear	101	8
-space	mpe:tc3:linear	401	8
 space	mpe:tc1:linear	201	8
 # chip <name> <id> <mau size> <size> <type>
-chip	mpe:dsram2	6	8	98304	ram
-chip	mpe:psram3	5	8	65536	ram
-chip	mpe:psram2	7	8	65536	ram
-chip	mpe:dsram5	0	8	98304	ram
-chip	mpe:psram5	1	8	65536	ram
-chip	mpe:psram4	3	8	65536	ram
 chip	mpe:dsram3	4	8	98304	ram
+chip	mpe:psram3	5	8	65536	ram
+chip	mpe:dsram2	6	8	98304	ram
+chip	mpe:psram2	7	8	65536	ram
 chip	mpe:dsram1	8	8	245760	ram
 chip	mpe:psram1	9	8	65536	ram
 chip	mpe:dsram0	10	8	245760	ram
 chip	mpe:psram0	11	8	65536	ram
+chip	mpe:dsram5	0	8	98304	ram
+chip	mpe:psram5	1	8	65536	ram
 chip	mpe:dsram4	2	8	98304	ram
-chip	mpe:pfls4	16	8	3145728	rom
+chip	mpe:psram4	3	8	65536	ram
+chip	mpe:dfls0	18	8	1048576	nvram
 chip	mpe:edmem	27	8	4194304	ram
 chip	mpe:lmuram	24	8	786432	ram
-chip	mpe:pfls1	13	8	3145728	rom
-chip	mpe:cpu0_dlmu	20	8	65536	ram
-chip	mpe:pfls5	17	8	1048576	rom
-chip	mpe:ucb	19	8	24576	rom
-chip	mpe:dfls0	18	8	1048576	nvram
-chip	mpe:cpu2_dlmu	22	8	65536	ram
-chip	mpe:cpu5_dlmu	26	8	65536	ram
-chip	mpe:pfls3	15	8	3145728	rom
-chip	mpe:cpu3_dlmu	23	8	65536	ram
+chip	mpe:pfls4	16	8	3145728	rom
 chip	mpe:cpu4_dlmu	25	8	65536	ram
 chip	mpe:pfls0	12	8	3145728	rom
+chip	mpe:cpu0_dlmu	20	8	65536	ram
+chip	mpe:cpu2_dlmu	22	8	65536	ram
 chip	mpe:pfls2	14	8	3145728	rom
+chip	mpe:cpu3_dlmu	23	8	65536	ram
 chip	mpe:cpu1_dlmu	21	8	65536	ram
+chip	mpe:ucb	19	8	24576	rom
+chip	mpe:pfls5	17	8	1048576	rom
+chip	mpe:cpu5_dlmu	26	8	65536	ram
+chip	mpe:pfls1	13	8	3145728	rom
+chip	mpe:pfls3	15	8	3145728	rom
 # map <space id> <start in space> <size in space> <chip id> <start on chip>
 map	601	3489660928	98304	0	0
 map	602	3489660928	98304	0	0

@@ -290,7 +290,7 @@ __core0_trigger_scheduling_function_end:
 ; Function body .cocofun_5, coco_iter:0
 	movh	d0,#15
 	and	d15,d0
-.L839:
+.L841:
 	sha	d15,d15,#12
 	fret
 .L247:
@@ -502,13 +502,13 @@ __Core0_INTERRUPT_function_end:
 .cocofun_6:	.type	func
 ; Function body .cocofun_6, coco_iter:0
 	and	d15,#15
-.L844:
+.L846:
 	mul	d15,d15,#24
 	movh.a	a15,#@his(tricore_timers)
 	lea	a15,[a15]@los(tricore_timers)
-.L845:
+.L847:
 	addsc.a	a4,a15,d15,#0
-.L846:
+.L848:
 	fret
 .L252:
 	; End of function
@@ -653,10 +653,10 @@ __Core0_YIELD_function_end:
 .cocofun_4:	.type	func
 ; Function body .cocofun_4, coco_iter:0
 	fcall	.cocofun_9
-.L833:
+.L835:
 	or	d15,#2
 	st.b	[a15],d15
-.L834:
+.L836:
 	fret
 .L242:
 	; End of function
@@ -669,12 +669,12 @@ __Core0_YIELD_function_end:
 ; Function body .cocofun_9, coco_iter:1
 	and	d15,#15
 	lea	a15,GPSR
-.L865:
+.L867:
 	addsc.a	a15,a15,d15,#2
 	ld.a	a15,[a15]
-.L866:
+.L868:
 	ld.bu	d15,[+a15]3
-.L867:
+.L869:
 	fret
 .L267:
 	; End of function
@@ -698,18 +698,26 @@ Core1_YIELD:	.type	func
 .L796:
 
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   213  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   214      /* clear the SRR bit */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   215      GPSR[TRICORE_CPU_ID]->B.CLRR = 1;
-	mfcr	d15,#65052
-	fcall	.cocofun_4
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   214      rt_interrupt_enter();
+	call	rt_interrupt_enter
 .L797:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   216  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   217      core1_trigger_scheduling();
-	call	core1_trigger_scheduling
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   215      /* clear the SRR bit */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   216      GPSR[TRICORE_CPU_ID]->B.CLRR = 1;
+	mfcr	d15,#65052
+	fcall	.cocofun_4
 .L798:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   218  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   217  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   218      core1_trigger_scheduling();
+	call	core1_trigger_scheduling
+.L799:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   219      rt_interrupt_leave();
+	call	rt_interrupt_leave
+.L800:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   220  }
 	rslcx
 	rfe
 .L432:
@@ -725,27 +733,27 @@ __Core1_YIELD_function_end:
 	
 	.global	rt_hw_board_init
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   219  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   220  /**
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   221   * This function will initial board.
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   222   */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   223  #ifdef RT_USING_HEAP
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   224  extern unsigned int __HEAP[];
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   225  extern unsigned int __HEAP_END[];
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   226  #endif
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   227  void rt_hw_board_init()
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   221  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   222  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   223   * This function will initial board.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   224   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   225  #ifdef RT_USING_HEAP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   226  extern unsigned int __HEAP[];
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   227  extern unsigned int __HEAP_END[];
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   228  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   229  void rt_hw_board_init()
 ; Function rt_hw_board_init
 .L66:
 rt_hw_board_init:	.type	func
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   228  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   229      IfxStm_setSuspendMode(STMs[TRICORE_CPU_ID], IfxStm_SuspendMode_hard);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   230  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   231      IfxStm_setSuspendMode(STMs[TRICORE_CPU_ID], IfxStm_SuspendMode_hard);
 	mfcr	d15,#65052
-.L803:
-	lea	a15,STMs
-.L804:
-	and	d15,#15
 .L805:
+	lea	a15,STMs
+.L806:
+	and	d15,#15
+.L807:
 	addsc.a	a15,a15,d15,#2
 .L435:
 
@@ -2168,7 +2176,7 @@ rt_hw_board_init:	.type	func
 	extr.u	d15,d15,#24,#8
 .L486:
 	or	d15,#16
-.L806:
+.L808:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\Stm\Std\IfxStm.h	   706          ocs.B.SUS        = mode;
 	insert	d15,d15,#1,#0,#4
@@ -2177,7 +2185,7 @@ rt_hw_board_init:	.type	func
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\Stm\Std\IfxStm.h	   707          stm->OCS.U       = ocs.U;
 	insert	d15,d15,d15,#24,#8
 	st.w	[a15]232,d15
-.L807:
+.L809:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\Stm\Std\IfxStm.h	   708          stm->OCS.B.SUS_P = 0;
 	ld.bu	d15,[a15]235
@@ -2188,46 +2196,46 @@ rt_hw_board_init:	.type	func
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\Stm\Std\IfxStm.h	   702      if (MODULE_CBS.OSTATE.B.OEN == 1U)      (inlined)
 .L9:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   230  #ifdef RT_USING_HEAP
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   231      /* initialize heap */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   232      rt_system_heap_init(__HEAP, __HEAP_END);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   233  #endif
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   234  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   235      /* Set-up the timer interrupt. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   236      rt_hw_systick_init();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   232  #ifdef RT_USING_HEAP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   233      /* initialize heap */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   234      rt_system_heap_init(__HEAP, __HEAP_END);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   235  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   236  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   237      /* Set-up the timer interrupt. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   238      rt_hw_systick_init();
 	call	rt_hw_systick_init
-.L808:
-
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   237      /* USART driver initialization is open by default */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   238  #ifdef RT_USING_SERIAL
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   239      rt_hw_usart_init();
-	call	rt_hw_usart_init
-.L809:
-
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   240  #endif
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   241  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   242      /* Set the shell console output device */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   243  #ifdef RT_USING_CONSOLE
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   244      // rt_console_set_device(RT_CONSOLE_DEVICE_NAME);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   245  #endif
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   246  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   247      /* Board underlying hardware initialization */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   248  #ifdef RT_USING_COMPONENTS_INIT
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   249      rt_components_board_init();
-	call	rt_components_board_init
 .L810:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   250  #endif
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   251  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   252      IfxSrc_init(GPSR[TRICORE_CPU_ID], (IfxSrc_Tos)TRICORE_CPU_ID, 1);
-	mfcr	d15,#65052
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   239      /* USART driver initialization is open by default */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   240  #ifdef RT_USING_SERIAL
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   241      rt_hw_usart_init();
+	call	rt_hw_usart_init
 .L811:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   242  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   243  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   244      /* Set the shell console output device */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   245  #ifdef RT_USING_CONSOLE
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   246      // rt_console_set_device(RT_CONSOLE_DEVICE_NAME);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   247  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   248  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   249      /* Board underlying hardware initialization */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   250  #ifdef RT_USING_COMPONENTS_INIT
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   251      rt_components_board_init();
+	call	rt_components_board_init
+.L812:
+
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   252  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   253  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   254      IfxSrc_init(GPSR[TRICORE_CPU_ID], (IfxSrc_Tos)TRICORE_CPU_ID, 1);
+	mfcr	d15,#65052
+.L813:
 	and	d15,#15
 	lea	a2,GPSR
-.L812:
+.L814:
 	addsc.a	a15,a2,d15,#2
 	ld.a	a15,[a15]
-.L813:
+.L815:
 	mfcr	d15,#65052
 	and	d0,d15,#15
 .L446:
@@ -2507,24 +2515,24 @@ rt_hw_board_init:	.type	func
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\Src\Std\IfxSrc.h	   273      src->B.SRPN = priority;
 	mov	d15,#1
 	st.b	[a15],d15
-.L814:
+.L816:
 
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\Src\Std\IfxSrc.h	   274      src->B.TOS  = typOfService;
 	ld.bu	d15,[a15]1
-.L815:
+.L817:
 	insert	d15,d15,d0,#3,#3
 	st.b	[a15]1,d15
 .L451:
 	ld.bu	d15,[a15]3
-.L816:
+.L818:
 	or	d15,#2
 	st.b	[a15]3,d15
 .L447:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   253      IfxSrc_enable(GPSR[TRICORE_CPU_ID]);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   255      IfxSrc_enable(GPSR[TRICORE_CPU_ID]);
 	mfcr	d15,#65052
 	and	d15,#15
-.L817:
+.L819:
 	addsc.a	a15,a2,d15,#2
 	ld.a	a15,[a15]
 .L453:
@@ -2797,12 +2805,12 @@ rt_hw_board_init:	.type	func
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\Src\Std\IfxSrc.h	   266  {
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\Src\Std\IfxSrc.h	   267      src->B.SRE = 1;
 	ld.bu	d15,[a15]1
-.L818:
+.L820:
 	or	d15,#4
 	st.b	[a15]1,d15
 .L454:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   254  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   256  }
 	ret
 .L433:
 	
@@ -2817,10 +2825,10 @@ __rt_hw_board_init_function_end:
 	
 	.global	rt_hw_context_switch_to
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   255  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   256  #ifdef RT_USING_SMP
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   257  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   258  void rt_hw_context_switch_to(rt_ubase_t to, struct rt_thread *to_thread)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   258  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   259  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   260  void rt_hw_context_switch_to(rt_ubase_t to, struct rt_thread *to_thread)
 ; Function rt_hw_context_switch_to
 .L68:
 rt_hw_context_switch_to:	.type	func
@@ -2828,40 +2836,40 @@ rt_hw_context_switch_to:	.type	func
 	mov.aa	a15,a4
 .L490:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   259  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   260      rt_base_t levelCore0,levelCore1;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   261      rt_base_t level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   262  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   263      switch (__mfcr(CPU_CORE_ID))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   261  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   262      rt_base_t levelCore0,levelCore1;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   263      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   264  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   265      switch (__mfcr(CPU_CORE_ID))
 	mfcr	d15,#65052
 .L611:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   264      {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   265      case 0:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   266      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   267      case 0:
 	jeq	d15,#0,.L10
 .L612:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   266          levelCore0 = rt_hw_local_irq_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   267          rt_interrupt_to_thread_core0 = (*((unsigned long *)to));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   268          rt_cpu_self()->current_thread = to_thread;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   269          rt_hw_local_irq_enable(levelCore0);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   270          __syscall( 0 );
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   271          break;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   272      case 1:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   268          levelCore0 = rt_hw_local_irq_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   269          rt_interrupt_to_thread_core0 = (*((unsigned long *)to));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   270          rt_cpu_self()->current_thread = to_thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   271          rt_hw_local_irq_enable(levelCore0);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   272          __syscall( 0 );
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   273          break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   274      case 1:
 	jeq	d15,#1,.L11
 .L613:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   273          levelCore1 = rt_hw_local_irq_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   274          rt_interrupt_to_thread_core1 = (*((unsigned long *)to));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   275          rt_cpu_self()->current_thread = to_thread;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   276          rt_hw_local_irq_enable(levelCore1);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   277          __syscall( 1 );
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   278          break;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   279      
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   280      default:
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   281          break;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   282      }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   283  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   275          levelCore1 = rt_hw_local_irq_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   276          rt_interrupt_to_thread_core1 = (*((unsigned long *)to));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   277          rt_cpu_self()->current_thread = to_thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   278          rt_hw_local_irq_enable(levelCore1);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   279          __syscall( 1 );
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   280          break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   281      
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   282      default:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   283          break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   284      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   285  }
 	ret
 .L10:
 	call	rt_hw_local_irq_disable
@@ -2918,8 +2926,8 @@ __rt_hw_context_switch_to_function_end:
 	
 	.global	rt_hw_context_switch_interrupt
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   284  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   285  void rt_hw_context_switch_interrupt(void *context, rt_ubase_t from, rt_ubase_t to, struct rt_thread *to_thread)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   286  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   287  void rt_hw_context_switch_interrupt(void *context, rt_ubase_t from, rt_ubase_t to, struct rt_thread *to_thread)
 ; Function rt_hw_context_switch_interrupt
 .L70:
 rt_hw_context_switch_interrupt:	.type	func
@@ -2927,25 +2935,25 @@ rt_hw_context_switch_interrupt:	.type	func
 	mov.aa	a12,a5
 .L509:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   286  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   287      rt_base_t levelCore0,levelCore1;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   288  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   289      switch (__mfcr(CPU_CORE_ID))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   288  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   289      rt_base_t levelCore0,levelCore1;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   290  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   291      switch (__mfcr(CPU_CORE_ID))
 	mfcr	d15,#65052
 .L628:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   290      {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   291      case 0:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   292      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   293      case 0:
 	jeq	d15,#0,.L14
 .L629:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   292          levelCore0 = rt_hw_local_irq_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   293          rt_interrupt_from_thread_core0 = (*( (unsigned long *)from ));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   294          rt_interrupt_to_thread_core0 = (*((unsigned long *)to));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   295          rt_cpu_self()->current_thread = to_thread;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   296          rt_hw_local_irq_enable(levelCore0);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   297          break;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   298      case 1:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   294          levelCore0 = rt_hw_local_irq_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   295          rt_interrupt_from_thread_core0 = (*( (unsigned long *)from ));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   296          rt_interrupt_to_thread_core0 = (*((unsigned long *)to));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   297          rt_cpu_self()->current_thread = to_thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   298          rt_hw_local_irq_enable(levelCore0);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   299          break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   300      case 1:
 	jeq	d15,#1,.L15
 .L630:
 	j	.L16
@@ -2957,22 +2965,22 @@ rt_hw_context_switch_interrupt:	.type	func
 	j	.L17
 .L15:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   299          levelCore1 = rt_hw_local_irq_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   301          levelCore1 = rt_hw_local_irq_disable();
 	call	rt_hw_local_irq_disable
 .L503:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   300          rt_interrupt_from_thread_core1 = (*( (unsigned long *)from ));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   302          rt_interrupt_from_thread_core1 = (*( (unsigned long *)from ));
 	fcall	.cocofun_8
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   301          rt_interrupt_to_thread_core1 = (*((unsigned long *)to));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   302          rt_cpu_self()->current_thread = to_thread;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   303          rt_hw_local_irq_enable(levelCore1);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   304          break;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   305      default:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   303          rt_interrupt_to_thread_core1 = (*((unsigned long *)to));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   304          rt_cpu_self()->current_thread = to_thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   305          rt_hw_local_irq_enable(levelCore1);
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   306          break;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   307      }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   308      /* 在保存完线程 CSA LinkWord 后,会给 SETR 位置 1，这样会触发一个异常陷阱函数。在这个陷阱函数里才会去真正的切换线程。*/
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   309      GPSR[TRICORE_CPU_ID]->B.SETR = 1;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   307      default:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   308          break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   309      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   310      /* 在保存完线程 CSA LinkWord 后,会给 SETR 位置 1，这样会触发一个异常陷阱函数。在这个陷阱函数里才会去真正的切换线程。*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   311      GPSR[TRICORE_CPU_ID]->B.SETR = 1;
 .L17:
 	mov	d15,d2
 	call	rt_cpu_self
@@ -2989,7 +2997,7 @@ rt_hw_context_switch_interrupt:	.type	func
 	st.b	[a15],d15
 .L632:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   310  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   312  }
 	ret
 .L335:
 	
@@ -3008,15 +3016,15 @@ __rt_hw_context_switch_interrupt_function_end:
 	mov.a	a15,d8
 .L504:
 	ld.w	d0,[a15]
-.L858:
+.L860:
 	st.w	rt_interrupt_from_thread_core1,d0
 .L506:
 	mov.a	a15,d9
 .L505:
 	ld.w	d0,[a15]
-.L859:
+.L861:
 	st.w	rt_interrupt_to_thread_core1,d0
-.L860:
+.L862:
 	fret
 .L262:
 	; End of function
@@ -3030,15 +3038,15 @@ __rt_hw_context_switch_interrupt_function_end:
 	mov.a	a15,d8
 .L500:
 	ld.w	d0,[a15]
-.L851:
+.L853:
 	st.w	rt_interrupt_from_thread_core0,d0
 .L502:
 	mov.a	a15,d9
 .L501:
 	ld.w	d0,[a15]
-.L852:
+.L854:
 	st.w	rt_interrupt_to_thread_core0,d0
-.L853:
+.L855:
 	fret
 .L257:
 	; End of function
@@ -3048,8 +3056,8 @@ __rt_hw_context_switch_interrupt_function_end:
 	
 	.global	rt_hw_context_switch
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   311  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   312  void rt_hw_context_switch(rt_ubase_t from, rt_ubase_t to, struct rt_thread *to_thread)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   313  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   314  void rt_hw_context_switch(rt_ubase_t from, rt_ubase_t to, struct rt_thread *to_thread)
 ; Function rt_hw_context_switch
 .L76:
 rt_hw_context_switch:	.type	func
@@ -3057,64 +3065,64 @@ rt_hw_context_switch:	.type	func
 	mov.aa	a12,a4
 .L518:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   313  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   314      rt_base_t levelCore0,levelCore1;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   315  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   316      switch (__mfcr(CPU_CORE_ID))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   315  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   316      rt_base_t levelCore0,levelCore1;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   317  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   318      switch (__mfcr(CPU_CORE_ID))
 	mfcr	d15,#65052
 .L594:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   317      {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   318      case 0:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   319      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   320      case 0:
 	jeq	d15,#0,.L18
 .L595:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   319          levelCore0 = rt_hw_local_irq_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   320          rt_interrupt_from_thread_core0 = (*( (unsigned long *)from ));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   321          rt_interrupt_to_thread_core0 = (*((unsigned long *)to));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   322          to = RT_NULL;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   323          rt_cpu_self()->current_thread = to_thread;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   324          rt_hw_local_irq_enable(levelCore0);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   325          /* 在保存完线程 CSA LinkWord 后，判断这次线程切换是否是 systick 触发的线程切换。*/
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   326          if(rt_thread_switch_interrupt_flag_core0 == 0)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   327          {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   328              extern rt_hw_spinlock_t _cpus_lock;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   329              if(_cpus_lock.slock)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   330              {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   331                  rt_hw_spin_unlock(&_cpus_lock);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   332              }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   333              // rt_interrupt_from_thread_core0 = (*( (unsigned long *)from ));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   334              /* 如果不是 systick 引发的线程切换，那么就触发一个线程切换的异常函数，这个异常函数里会真正做线程切换的事情。*/
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   335              __syscall( 0 );
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   336          }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   337          break;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   338      case 1:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   321          levelCore0 = rt_hw_local_irq_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   322          rt_interrupt_from_thread_core0 = (*( (unsigned long *)from ));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   323          rt_interrupt_to_thread_core0 = (*((unsigned long *)to));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   324          to = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   325          rt_cpu_self()->current_thread = to_thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   326          rt_hw_local_irq_enable(levelCore0);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   327          /* 在保存完线程 CSA LinkWord 后，判断这次线程切换是否是 systick 触发的线程切换。*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   328          if(rt_thread_switch_interrupt_flag_core0 == 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   329          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   330              extern rt_hw_spinlock_t _cpus_lock;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   331              if(_cpus_lock.slock)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   332              {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   333                  rt_hw_spin_unlock(&_cpus_lock);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   334              }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   335              // rt_interrupt_from_thread_core0 = (*( (unsigned long *)from ));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   336              /* 如果不是 systick 引发的线程切换，那么就触发一个线程切换的异常函数，这个异常函数里会真正做线程切换的事情。*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   337              __syscall( 0 );
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   338          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   339          break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   340      case 1:
 	jeq	d15,#1,.L19
 .L596:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   339          levelCore1 = rt_hw_local_irq_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   340          rt_interrupt_from_thread_core1 = (*( (unsigned long *)from ));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   341          rt_interrupt_to_thread_core1 = (*((unsigned long *)to));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   342          to = RT_NULL;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   343          rt_cpu_self()->current_thread = to_thread;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   344          rt_hw_local_irq_enable(levelCore1);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   345          /* 在保存完线程 CSA LinkWord 后，判断这次线程切换是否是 systick 触发的线程切换。*/
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   346          if(rt_thread_switch_interrupt_flag_core1 == 0)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   347          {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   348              extern rt_hw_spinlock_t _cpus_lock;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   349              if(_cpus_lock.slock)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   350              {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   351                  rt_hw_spin_unlock(&_cpus_lock);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   352              }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   353              // rt_interrupt_from_thread_core0 = (*( (unsigned long *)from ));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   354              /* 如果不是 systick 引发的线程切换，那么就触发一个线程切换的异常函数，这个异常函数里会真正做线程切换的事情。*/
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   355              __syscall( 1 );
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   356          }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   357          break;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   358      default:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   341          levelCore1 = rt_hw_local_irq_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   342          rt_interrupt_from_thread_core1 = (*( (unsigned long *)from ));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   343          rt_interrupt_to_thread_core1 = (*((unsigned long *)to));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   344          to = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   345          rt_cpu_self()->current_thread = to_thread;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   346          rt_hw_local_irq_enable(levelCore1);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   347          /* 在保存完线程 CSA LinkWord 后，判断这次线程切换是否是 systick 触发的线程切换。*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   348          if(rt_thread_switch_interrupt_flag_core1 == 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   349          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   350              extern rt_hw_spinlock_t _cpus_lock;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   351              if(_cpus_lock.slock)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   352              {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   353                  rt_hw_spin_unlock(&_cpus_lock);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   354              }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   355              // rt_interrupt_from_thread_core0 = (*( (unsigned long *)from ));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   356              /* 如果不是 systick 引发的线程切换，那么就触发一个线程切换的异常函数，这个异常函数里会真正做线程切换的事情。*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   357              __syscall( 1 );
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   358          }
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   359          break;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   360      }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   361  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   360      default:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   361          break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   362      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   363  }
 	ret
 .L18:
 	call	rt_hw_local_irq_disable
@@ -3185,15 +3193,15 @@ __rt_hw_context_switch_function_end:
 	
 	.global	rt_hw_secondary_cpu_up
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   362  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   363  void rt_hw_secondary_cpu_up(void)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   364  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   365  void rt_hw_secondary_cpu_up(void)
 ; Function rt_hw_secondary_cpu_up
 .L78:
 rt_hw_secondary_cpu_up:	.type	func
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   364  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   365  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   366  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   366  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   367  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   368  }
 	ret
 .L367:
 	
@@ -3208,38 +3216,38 @@ __rt_hw_secondary_cpu_up_function_end:
 	
 	.global	Core1_init
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   367  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   368  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   369  void Core1_init(void)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   369  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   370  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   371  void Core1_init(void)
 ; Function Core1_init
 .L80:
 Core1_init:	.type	func
 	sub.a	a10,#48
 .L519:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   370  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   371      #define TRICORE_CPU1_ID     1
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   372  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   373      IfxStm_Timer_Config timer_config;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   374      IfxStm_Timer_initConfig(&timer_config, STMs[TRICORE_CPU1_ID]);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   372  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   373      #define TRICORE_CPU1_ID     1
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   374  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   375      IfxStm_Timer_Config timer_config;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   376      IfxStm_Timer_initConfig(&timer_config, STMs[TRICORE_CPU1_ID]);
 	mov.aa	a4,a10
 .L679:
 	lea	a5,0xf0001100
 	call	IfxStm_Timer_initConfig
 .L680:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   375  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   376      timer_config.base.frequency = RT_TICK_PER_SECOND;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   377  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   378      timer_config.base.frequency = RT_TICK_PER_SECOND;
 	movh	d15,#17530
 	st.w	[a10],d15
 .L681:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   377      timer_config.base.isrPriority = 2;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   379      timer_config.base.isrPriority = 2;
 	mov	d15,#2
 	st.h	[a10]4,d15
 .L682:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   378      IfxStm_Timer_init(&tricore_timers[TRICORE_CPU1_ID], &timer_config);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   380      IfxStm_Timer_init(&tricore_timers[TRICORE_CPU1_ID], &timer_config);
 	movh.a	a15,#@his(tricore_timers+24)
 .L683:
 	lea	a15,[a15]@los(tricore_timers+24)
@@ -3249,7 +3257,7 @@ Core1_init:	.type	func
 	call	IfxStm_Timer_init
 .L685:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   379      IfxStm_Timer_run(&tricore_timers[TRICORE_CPU1_ID]);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   381      IfxStm_Timer_run(&tricore_timers[TRICORE_CPU1_ID]);
 	mov.aa	a4,a15
 	call	IfxStm_Timer_run
 .L373:
@@ -3553,10 +3561,10 @@ Core1_init:	.type	func
 	st.b	[a15],d15
 .L388:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   380  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   381      IfxSrc_init(GPSR[TRICORE_CPU1_ID], (IfxSrc_Tos)IfxSrc_Tos_cpu1, 1);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   382      IfxSrc_enable(GPSR[TRICORE_CPU1_ID]);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   383  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   382  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   383      IfxSrc_init(GPSR[TRICORE_CPU1_ID], (IfxSrc_Tos)IfxSrc_Tos_cpu1, 1);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   384      IfxSrc_enable(GPSR[TRICORE_CPU1_ID]);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   385  }
 	ret
 .L369:
 	
@@ -3571,15 +3579,15 @@ __Core1_init_function_end:
 	
 	.global	rt_hw_ipi_send
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   384  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   385  void rt_hw_ipi_send(int ipi_vector, unsigned int cpu_mask)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   386  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   387  void rt_hw_ipi_send(int ipi_vector, unsigned int cpu_mask)
 ; Function rt_hw_ipi_send
 .L82:
 rt_hw_ipi_send:	.type	func
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   386  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   387      
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   388  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   388  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   389      
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   390  }
 	ret
 .L363:
 	
@@ -3594,19 +3602,19 @@ __rt_hw_ipi_send_function_end:
 	
 	.global	rt_hw_spin_lock_init
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   389  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   390  void rt_hw_spin_lock_init(rt_hw_spinlock_t *lock)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   391  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   392  void rt_hw_spin_lock_init(rt_hw_spinlock_t *lock)
 ; Function rt_hw_spin_lock_init
 .L84:
 rt_hw_spin_lock_init:	.type	func
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   391  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   392      lock->slock = 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   393  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   394      lock->slock = 0;
 	mov	d15,#0
 	st.w	[a4],d15
 .L637:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   393  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   395  }
 	ret
 .L343:
 	
@@ -3621,38 +3629,40 @@ __rt_hw_spin_lock_init_function_end:
 	
 	.global	rt_hw_spin_lock
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   394  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   395  /* 获取spinlock，忙等待直到获取成功 */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   396  void rt_hw_spin_lock(rt_hw_spinlock_t *lock)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   396  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   397  /* 获取spinlock，忙等待直到获取成功 */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   398  void rt_hw_spin_lock(rt_hw_spinlock_t *lock)
 ; Function rt_hw_spin_lock
 .L86:
 rt_hw_spin_lock:	.type	func
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   397  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   398      boolean         retVal = FALSE;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   399  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   400      boolean         retVal = FALSE;
 	mov	d0,#0
 	sub.a	a10,#8
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   399      volatile unsigned int spinLockVal;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   400  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   401      do
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   402      {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   403          /** \brief This function is a implementation of a binary semaphore using compare and swap instruction
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   404           * \param address address of resource.
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   405           * \param value This variable is updated with status of address
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   406           * \param condition if the value of address matches with the value of condition, then swap of value & address occurs.
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   407           *  __cmpswapw((address), ((unsigned long)value), (condition) )
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   408           */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   409          spinLockVal = 1UL;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   410          spinLockVal =
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   411              (unsigned int)__cmpAndSwap(((unsigned int *)(&(lock->slock))), spinLockVal, 0);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   412  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   413          /* Check if the SpinLock WAS set before the attempt to acquire spinlock */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   414          if (spinLockVal == 0)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   415          {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   416              retVal = TRUE;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   417          }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   418      } while (retVal == FALSE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   401      volatile unsigned int spinLockVal;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   402  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   403      do
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   404      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   405          /** \brief This function is a implementation of a binary semaphore
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   406           *  using compare and swap instruction
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   407           * \param address address of resource.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   408           * \param value This variable is updated with status of address
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   409           * \param condition if the value of address matches with the value 
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   410           * of condition, then swap of value & address occurs.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   411           *  __cmpswapw((address), ((unsigned long)value), (condition) )
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   412           */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   413          spinLockVal = 1UL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   414          spinLockVal =
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   415          (unsigned int)__cmpAndSwap(((unsigned int *)(&(lock->slock))), spinLockVal, 0);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   416  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   417          /* Check if the SpinLock WAS set before the attempt to acquire spinlock */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   418          if (spinLockVal == 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   419          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   420              retVal = TRUE;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   421          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   422      } while (retVal == FALSE);
 .L26:
 	mov	d15,#1
 	st.w	[a10],d15
@@ -3670,7 +3680,7 @@ rt_hw_spin_lock:	.type	func
 	jeq	d0,#0,.L26
 .L647:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   419  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   423  }
 	ret
 .L346:
 	
@@ -3685,37 +3695,31 @@ __rt_hw_spin_lock_function_end:
 	
 	.global	rt_hw_spin_unlock
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   420  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   421  void rt_hw_spin_unlock(rt_hw_spinlock_t *lock)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   424  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   425  void rt_hw_spin_unlock(rt_hw_spinlock_t *lock)
 ; Function rt_hw_spin_unlock
 .L88:
 rt_hw_spin_unlock:	.type	func
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   422  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   423      boolean         retVal = FALSE;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   426  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   427      boolean         retVal = FALSE;
 	mov	d0,#0
 	sub.a	a10,#8
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   424      volatile unsigned int spinLockVal;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   425  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   426      do
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   427      {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   428          /** \brief This function is a implementation of a binary semaphore using compare and swap instruction
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   429           * \param address address of resource.
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   430           * \param value This variable is updated with status of address
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   431           * \param condition if the value of address matches with the value of condition, then swap of value & address occurs.
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   432           *  __cmpswapw((address), ((unsigned long)value), (condition) )
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   433           */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   434          spinLockVal = 0UL;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   435          spinLockVal =
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   436              (unsigned int)__cmpAndSwap(((unsigned int *)(&(lock->slock))), spinLockVal, 1);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   437  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   438          /* Check if the SpinLock WAS set before the attempt to acquire spinlock */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   439          if (spinLockVal == 1)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   440          {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   441              retVal = TRUE;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   442          }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   443      } while (retVal == FALSE);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   428      volatile unsigned int spinLockVal;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   429  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   430      do
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   431      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   432          spinLockVal = 0UL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   433          spinLockVal =
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   434              (unsigned int)__cmpAndSwap(((unsigned int *)(&(lock->slock))), spinLockVal, 1);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   435  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   436          /* Check if the SpinLock WAS set before the attempt to acquire spinlock */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   437          if (spinLockVal == 1)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   438          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   439              retVal = TRUE;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   440          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   441      } while (retVal == FALSE);
 .L28:
 	mov	d15,#0
 	st.w	[a10],d15
@@ -3735,7 +3739,7 @@ rt_hw_spin_unlock:	.type	func
 	jeq	d0,#0,.L28
 .L658:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   444  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   442  }
 	ret
 .L352:
 	
@@ -3750,8 +3754,8 @@ __rt_hw_spin_unlock_function_end:
 	
 	.global	rt_hw_cpu_id
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   445  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   446  int rt_hw_cpu_id(void)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   443  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   444  int rt_hw_cpu_id(void)
 ; Function rt_hw_cpu_id
 .L90:
 rt_hw_cpu_id:	.type	func
@@ -4632,9 +4636,9 @@ rt_hw_cpu_id:	.type	func
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\Cpu\Std\IfxCpu.h	   871      return (IfxCpu_Id)reg.B.CORE_ID;
 	and	d2,d15,#7
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   447  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   448      return ((int)IfxCpu_getCoreId());
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   449  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   445  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   446      return ((int)IfxCpu_getCoreId());
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   447  }
 	ret
 .L358:
 	
@@ -4649,14 +4653,14 @@ __rt_hw_cpu_id_function_end:
 	
 	.global	rt_hw_local_irq_enable
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   450  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   451  void rt_hw_local_irq_enable(rt_base_t level)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   448  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   449  void rt_hw_local_irq_enable(rt_base_t level)
 ; Function rt_hw_local_irq_enable
 .L92:
 rt_hw_local_irq_enable:	.type	func
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   452  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   453      restoreInterrupts((boolean)level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   450  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   451      restoreInterrupts((boolean)level);
 	extr.u	d15,d4,#0,#8
 .L588:
 
@@ -5703,7 +5707,7 @@ rt_hw_local_irq_enable:	.type	func
 ; D:\WorkSpace\Tasking\Tasking_TC397_MultiCore_RTThread\0_Src\4_McHal\Tricore\Cpu\Std\IfxCpu.h	  1032      if (enabled != FALSE)      (inlined)
 .L31:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   454  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   452  }
 	ret
 .L310:
 	
@@ -5718,13 +5722,13 @@ __rt_hw_local_irq_enable_function_end:
 	
 	.global	rt_hw_secondary_cpu_idle_exec
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   455  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   456  void rt_hw_secondary_cpu_idle_exec(void)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   453  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   454  void rt_hw_secondary_cpu_idle_exec(void)
 ; Function rt_hw_secondary_cpu_idle_exec
 rt_hw_secondary_cpu_idle_exec:	.type	func
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   457  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   458       while(1)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   455  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   456       while(1)
 .L32:
 	j	.L32
 .L368:
@@ -5740,12 +5744,12 @@ __rt_hw_secondary_cpu_idle_exec_function_end:
 	
 	.global	rt_hw_local_irq_disable
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   459       {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   460  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   461       }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   462  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   463  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   464  rt_base_t rt_hw_local_irq_disable()
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   457       {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   458  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   459       }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   460  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   461  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   462  rt_base_t rt_hw_local_irq_disable()
 ; Function rt_hw_local_irq_disable
 .L95:
 rt_hw_local_irq_disable:	.type	func
@@ -6522,11 +6526,11 @@ rt_hw_local_irq_disable:	.type	func
 	nop
 .L303:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   465  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   466      rt_base_t level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   467      level = IfxCpu_disableInterrupts();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   468      return level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   469  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   463  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   464      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   465      level = IfxCpu_disableInterrupts();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   466      return level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   467  }
 	ret
 .L301:
 	
@@ -6541,73 +6545,73 @@ __rt_hw_local_irq_disable_function_end:
 	
 	.global	rt_hw_stack_init
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   470  #else
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   471  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   472  rt_base_t rt_hw_interrupt_disable(void)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   473  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   474      rt_base_t level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   475      level = IfxCpu_disableInterrupts();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   476      return level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   477  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   478  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   479  void rt_hw_interrupt_enable(rt_base_t level)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   480  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   481      restoreInterrupts((boolean)level);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   482  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   483  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   484  void rt_hw_context_switch_to(rt_ubase_t to)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   485  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   486      rt_base_t level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   487  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   488      level = rt_hw_interrupt_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   489      rt_interrupt_to_thread_core0 = (*((unsigned long *)to));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   490      __syscall( 0 );
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   491      rt_hw_interrupt_enable(level);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   492     /* Will not get here. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   493  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   494  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   495  void rt_hw_context_switch_interrupt(rt_ubase_t from, rt_ubase_t to)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   496  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   497      rt_base_t level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   498  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   499      level = rt_hw_interrupt_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   500      rt_interrupt_from_thread_core0 = (*( (unsigned long *)from ));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   501      rt_interrupt_to_thread_core0 = (*((unsigned long *)to));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   502      rt_hw_interrupt_enable(level);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   503      /* 在保存完线程 CSA LinkWord 后,会给 SETR 位置 1，这样会触发一个异常陷阱函数。在这个陷阱函数里才会去真正的切换线程。*/
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   504      GPSR[TRICORE_CPU_ID]->B.SETR = 1;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   505  }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   506  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   507  void rt_hw_context_switch(rt_ubase_t from, rt_ubase_t to)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   508  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   509      rt_base_t level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   510  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   511      level = rt_hw_interrupt_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   512      rt_interrupt_from_thread_core0 = (*( (unsigned long *)from ));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   513      rt_interrupt_to_thread_core0 = (*((unsigned long *)to));
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   514      to = RT_NULL;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   515      rt_hw_interrupt_enable(level);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   516      /* 在保存完线程 CSA LinkWord 后，判断这次线程切换是否是 systick 触发的线程切换。*/
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   517      if(rt_thread_switch_interrupt_flag_core0 == 0)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   518      {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   519           /* 如果不是 systick 引发的线程切换，那么就触发一个线程切换的异常函数，这个异常函数里会真正做线程切换的事情。*/
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   520          __syscall( 0 );
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   521      }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   522  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   468  #else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   469  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   470  rt_base_t rt_hw_interrupt_disable(void)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   471  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   472      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   473      level = IfxCpu_disableInterrupts();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   474      return level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   475  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   476  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   477  void rt_hw_interrupt_enable(rt_base_t level)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   478  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   479      restoreInterrupts((boolean)level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   480  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   481  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   482  void rt_hw_context_switch_to(rt_ubase_t to)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   483  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   484      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   485  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   486      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   487      rt_interrupt_to_thread_core0 = (*((unsigned long *)to));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   488      __syscall( 0 );
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   489      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   490     /* Will not get here. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   491  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   492  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   493  void rt_hw_context_switch_interrupt(rt_ubase_t from, rt_ubase_t to)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   494  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   495      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   496  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   497      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   498      rt_interrupt_from_thread_core0 = (*( (unsigned long *)from ));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   499      rt_interrupt_to_thread_core0 = (*((unsigned long *)to));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   500      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   501      /* 在保存完线程 CSA LinkWord 后,会给 SETR 位置 1，这样会触发一个异常陷阱函数。在这个陷阱函数里才会去真正的切换线程。*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   502      GPSR[TRICORE_CPU_ID]->B.SETR = 1;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   503  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   504  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   505  void rt_hw_context_switch(rt_ubase_t from, rt_ubase_t to)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   506  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   507      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   508  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   509      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   510      rt_interrupt_from_thread_core0 = (*( (unsigned long *)from ));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   511      rt_interrupt_to_thread_core0 = (*((unsigned long *)to));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   512      to = RT_NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   513      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   514      /* 在保存完线程 CSA LinkWord 后，判断这次线程切换是否是 systick 触发的线程切换。*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   515      if(rt_thread_switch_interrupt_flag_core0 == 0)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   516      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   517           /* 如果不是 systick 引发的线程切换，那么就触发一个线程切换的异常函数，这个异常函数里会真正做线程切换的事情。*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   518          __syscall( 0 );
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   519      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   520  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   521  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   522  #endif
 ; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   523  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   524  #endif
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   525  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   526  /**
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   527   * This function will initialize thread stack
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   528   *
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   529   * @param tentry the entry of thread
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   530   * @param parameter the parameter of entry
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   531   * @param stack_addr the beginning stack address
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   532   * @param texit the function will be called when thread exit
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   533   *
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   534   * @return stack address
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   535   */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   536  rt_uint8_t *rt_hw_stack_init(void       *tentry,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   524  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   525   * This function will initialize thread stack
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   526   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   527   * @param tentry the entry of thread
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   528   * @param parameter the parameter of entry
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   529   * @param stack_addr the beginning stack address
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   530   * @param texit the function will be called when thread exit
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   531   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   532   * @return stack address
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   533   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   534  rt_uint8_t *rt_hw_stack_init(void       *tentry,
 ; Function rt_hw_stack_init
 .L97:
 rt_hw_stack_init:	.type	func
@@ -6622,33 +6626,33 @@ rt_hw_stack_init:	.type	func
 	mov.aa	a13,a7
 .L531:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   537                               void       *parameter,
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   538                               rt_uint8_t *stack_addr,
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   539                               void       *texit)
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   540  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   541      rt_base_t level;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   542      UpperCtx_Ptr upperCtxPtr = NULL;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   543      LowCtx_Ptr   lowCtxPtr = NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   535                               void       *parameter,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   536                               rt_uint8_t *stack_addr,
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   537                               void       *texit)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   538  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   539      rt_base_t level;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   540      UpperCtx_Ptr upperCtxPtr = NULL;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   541      LowCtx_Ptr   lowCtxPtr = NULL;
 	mov.a	a14,#0
 .L526:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   544  #ifdef RT_USING_SMP
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   545      level = rt_hw_local_irq_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   542  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   543      level = rt_hw_local_irq_disable();
 	call	rt_hw_local_irq_disable
 .L524:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   546  #else
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   547      level = rt_hw_interrupt_disable();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   548  #endif
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   549      {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   550          /* DSync to ensure that buffering is not a problem. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   551          __dsync();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   544  #else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   545      level = rt_hw_interrupt_disable();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   546  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   547      {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   548          /* DSync to ensure that buffering is not a problem. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   549          __dsync();
 	dsync
 .L560:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   552  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   553          /* Consume two free CSAs. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   554          upperCtxPtr = LINKWORD_TO_ADDRESS(__mfcr(CPU_FCX));
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   550  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   551          /* Consume two free CSAs. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   552          upperCtxPtr = LINKWORD_TO_ADDRESS(__mfcr(CPU_FCX));
 	mfcr	d15,#65080
 	fcall	.cocofun_5
 	mfcr	d1,#65080
@@ -6662,16 +6666,16 @@ rt_hw_stack_init:	.type	func
 	st.a	[a10]8,a15
 .L533:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   555  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   556          if( NULL != upperCtxPtr )
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   553  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   554          if( NULL != upperCtxPtr )
 	mov.a	a2,#0
 .L562:
 	jeq.a	a2,a15,.L34
 .L563:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   557          {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   558              /* The Lower Links to the Upper. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   559              lowCtxPtr = LINKWORD_TO_ADDRESS( upperCtxPtr->_PCXI );
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   555          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   556              /* The Lower Links to the Upper. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   557              lowCtxPtr = LINKWORD_TO_ADDRESS( upperCtxPtr->_PCXI );
 	ld.w	d1,[a15]
 	and	d0,d1
 	sh	d15,d0,#12
@@ -6683,58 +6687,58 @@ rt_hw_stack_init:	.type	func
 	mov.a	a14,d15
 .L34:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   560          }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   561  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   562          /* Check that we have successfully reserved two CSAs. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   563          if( ( NULL != lowCtxPtr ) && ( NULL != upperCtxPtr ))
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   558          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   559  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   560          /* Check that we have successfully reserved two CSAs. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   561          if( ( NULL != lowCtxPtr ) && ( NULL != upperCtxPtr ))
 	movh	d8,#15
 	jeq.a	a2,a14,.L35
 .L564:
 	jeq.a	a2,a15,.L36
 .L565:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   564          {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   565              /* Remove the two consumed CSAs from the free CSA list. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   566              __dsync();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   562          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   563              /* Remove the two consumed CSAs from the free CSA list. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   564              __dsync();
 	dsync
 .L566:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   567              __mtcr( CPU_FCX, lowCtxPtr->_PCXI );
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   565              __mtcr( CPU_FCX, lowCtxPtr->_PCXI );
 	ld.w	d15,[a14]
 .L567:
 	mtcr	#65080,d15
 	isync
 .L568:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   568              /* MTCR is an exception and must be followed by an ISYNC instruction. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   569              __isync();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   566              /* MTCR is an exception and must be followed by an ISYNC instruction. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   567              __isync();
 	isync
 .L569:
 	j	.L37
 .L36:
 .L35:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   570          }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   571          else
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   572          {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   573              /* Simply trigger a context list depletion trap. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   574              __svlcx();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   568          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   569          else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   570          {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   571              /* Simply trigger a context list depletion trap. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   572              __svlcx();
 	svlcx
 .L37:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   575          }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   576      }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   577  #ifdef RT_USING_SMP
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   578      rt_hw_local_irq_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   573          }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   574      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   575  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   576      rt_hw_local_irq_enable(level);
 	mov	d4,d2
 	call	rt_hw_local_irq_enable
 .L525:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   579  #else
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   580      rt_hw_interrupt_enable(level);
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   581  #endif
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   582  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   583      memset( upperCtxPtr, 0, TRICORE_NUM_WORDS_IN_CSA * sizeof( unsigned long ) );
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   577  #else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   578      rt_hw_interrupt_enable(level);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   579  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   580  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   581      memset( upperCtxPtr, 0, TRICORE_NUM_WORDS_IN_CSA * sizeof( unsigned long ) );
 	mov	d4,#0
 	ld.a	a4,[a10]8
 .L535:
@@ -6742,21 +6746,21 @@ rt_hw_stack_init:	.type	func
 	call	memset
 .L537:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   584      upperCtxPtr->_A11 = ( unsigned long* )texit;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   582      upperCtxPtr->_A11 = ( unsigned long* )texit;
 	st.a	[a15]12,a13
 .L570:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   585      /* 对应 A10 寄存器; 这个寄存器用于保存栈指针 */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   586      upperCtxPtr->_A10 = ( unsigned long* )stack_addr;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   587      /* 对应 PSW 寄存器；这个寄存器用于保存当前线程的初始状态*/
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   588      upperCtxPtr->_PSW = TRICORE_SYSTEM_PROGRAM_STATUS_WORD;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   583      /* 对应 A10 寄存器; 这个寄存器用于保存栈指针 */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   584      upperCtxPtr->_A10 = ( unsigned long* )stack_addr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   585      /* 对应 PSW 寄存器；这个寄存器用于保存当前线程的初始状态*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   586      upperCtxPtr->_PSW = TRICORE_SYSTEM_PROGRAM_STATUS_WORD;
 	mov	d15,#2303
 	st.a	[a15]8,a12
 .L571:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   589  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   590      /* Clear the lower CSA. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   591      memset( lowCtxPtr, 0, TRICORE_NUM_WORDS_IN_CSA * sizeof( unsigned long ) );
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   587  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   588      /* Clear the lower CSA. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   589      memset( lowCtxPtr, 0, TRICORE_NUM_WORDS_IN_CSA * sizeof( unsigned long ) );
 	mov	d4,#0
 	st.w	[a15]4,d15
 .L538:
@@ -6766,22 +6770,22 @@ rt_hw_stack_init:	.type	func
 	call	memset
 .L540:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   592      /* 对应 A4 寄存器; 用于保存函数的入参 */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   593      lowCtxPtr->_A4 = ( unsigned long *) parameter;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   590      /* 对应 A4 寄存器; 用于保存函数的入参 */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   591      lowCtxPtr->_A4 = ( unsigned long *) parameter;
 	ld.a	a15,[a10]
 .L541:
 	st.a	[a14]32,a15
 .L572:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   594      /* 对应 A11 寄存器; 用于保存 PC 指针。*/
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   595      lowCtxPtr->_PC = ( unsigned long *) tentry;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   592      /* 对应 A11 寄存器; 用于保存 PC 指针。*/
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   593      lowCtxPtr->_PC = ( unsigned long *) tentry;
 	ld.a	a15,[a10]4
 .L542:
 	st.a	[a14]4,a15
 .L573:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   596      /* PCXI pointing to the Upper context. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   597      lowCtxPtr->_PCXI = ( TRICORE_INITIAL_PCXI_UPPER_CONTEXT_WORD | ( unsigned long ) ADDRESS_TO_LINKWORD( upperCtxPtr ) );
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   594      /* PCXI pointing to the Upper context. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   595      lowCtxPtr->_PCXI = ( TRICORE_INITIAL_PCXI_UPPER_CONTEXT_WORD | ( unsigned long ) ADDRESS_TO_LINKWORD( upperCtxPtr ) );
 	ld.a	a15,[a10]8
 .L543:
 	mov.d	d0,a15
@@ -6792,8 +6796,8 @@ rt_hw_stack_init:	.type	func
 	and	d15,d8
 .L574:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   598      /* Save the link to the CSA in the top of stack. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   599      *((unsigned long * )stack_addr) = (unsigned long) ADDRESS_TO_LINKWORD( lowCtxPtr );
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   596      /* Save the link to the CSA in the top of stack. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   597      *((unsigned long * )stack_addr) = (unsigned long) ADDRESS_TO_LINKWORD( lowCtxPtr );
 	or	d15,d0
 	mov.d	d0,a14
 .L546:
@@ -6808,17 +6812,17 @@ rt_hw_stack_init:	.type	func
 	st.w	[a12],d8
 .L577:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   600      /* DSync to ensure that buffering is not a problem. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   601      __dsync();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   598      /* DSync to ensure that buffering is not a problem. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   599      __dsync();
 	dsync
 .L578:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   602  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   603      return stack_addr;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   600  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   601      return stack_addr;
 	mov.aa	a2,a12
 .L547:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   604  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   602  }
 	ret
 .L289:
 	
@@ -6833,8 +6837,8 @@ __rt_hw_stack_init_function_end:
 	
 	.global	get_clk
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   605  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   606  void get_clk(void)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   603  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   604  void get_clk(void)
 ; Function get_clk
 .L99:
 get_clk:	.type	func
@@ -7606,24 +7610,24 @@ get_clk:	.type	func
 	nop
 .L394:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   607  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   608  	disableInterrupts();
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   609  	//禁用看门狗
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   610      IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   605  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   606  	disableInterrupts();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   607  	//禁用看门狗
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   608      IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());
 	call	IfxScuWdt_getCpuWatchdogPassword
 	mov	d4,d2
 	call	IfxScuWdt_disableCpuWatchdog
 .L695:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   611      IfxScuWdt_disableSafetyWatchdog(IfxScuWdt_getSafetyWatchdogPassword());
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   609      IfxScuWdt_disableSafetyWatchdog(IfxScuWdt_getSafetyWatchdogPassword());
 	call	IfxScuWdt_getSafetyWatchdogPassword
 	mov	d4,d2
 	call	IfxScuWdt_disableSafetyWatchdog
 .L696:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   612  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   613      //获取时钟频率，便于查看当前系统运行频率
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   614      g_AppCpu0.info.pllFreq = IfxScuCcu_getPllFrequency();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   610  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   611      //获取时钟频率，便于查看当前系统运行频率
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   612      g_AppCpu0.info.pllFreq = IfxScuCcu_getPllFrequency();
 	movh.a	a15,#@his(g_AppCpu0)
 	lea	a15,[a15]@los(g_AppCpu0)
 .L697:
@@ -8518,13 +8522,13 @@ get_clk:	.type	func
 .L549:
 	extr.u	d4,d15,#0,#8
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   615      g_AppCpu0.info.cpuFreq = IfxScuCcu_getCpuFrequency(IfxCpu_getCoreIndex());
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   613      g_AppCpu0.info.cpuFreq = IfxScuCcu_getCpuFrequency(IfxCpu_getCoreIndex());
 	call	IfxScuCcu_getCpuFrequency
 .L400:
 	st.w	[a15]4,d2
 .L699:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   616      g_AppCpu0.info.sysFreq = IfxScuCcu_getSpbFrequency();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   614      g_AppCpu0.info.sysFreq = IfxScuCcu_getSpbFrequency();
 	call	IfxScuCcu_getSpbFrequency
 .L700:
 	st.w	[a15],d2
@@ -10266,11 +10270,11 @@ get_clk:	.type	func
 .L702:
 	div.f	d15,d2,d15
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   617      g_AppCpu0.info.stmFreq = IfxStm_getFrequency(&MODULE_STM0);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   615      g_AppCpu0.info.stmFreq = IfxStm_getFrequency(&MODULE_STM0);
 	st.w	[a15]12,d15
 .L405:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   618  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   616  }
 	ret
 .L392:
 	
@@ -10285,32 +10289,32 @@ __get_clk_function_end:
 	
 	.global	tricore0_trap_yield_for_task
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   619  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   620  void tricore0_trap_yield_for_task( int iTrapIdentification )
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   617  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   618  void tricore0_trap_yield_for_task( int iTrapIdentification )
 ; Function tricore0_trap_yield_for_task
 .L101:
 tricore0_trap_yield_for_task:	.type	func
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   621  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   622    switch( iTrapIdentification )
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   619  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   620    switch( iTrapIdentification )
 	jne	d4,#0,.L39
-.L823:
+.L825:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   623    {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   624      case 0:
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   625          core0_trigger_scheduling();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   621    {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   622      case 0:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   623          core0_trigger_scheduling();
 	j	core0_trigger_scheduling
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   626        break;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   627  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   628      default:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   624        break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   625  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   626      default:
 .L39:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   629        /* Unimplemented trap called. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   630        /* TODO */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   631        break;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   632    }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   633  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   627        /* Unimplemented trap called. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   628        /* TODO */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   629        break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   630    }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   631  }
 	ret
 .L456:
 	
@@ -10325,33 +10329,33 @@ __tricore0_trap_yield_for_task_function_end:
 	
 	.global	tricore1_trap_yield_for_task
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   634  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   635  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   636  void tricore1_trap_yield_for_task( int iTrapIdentification )
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   632  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   633  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   634  void tricore1_trap_yield_for_task( int iTrapIdentification )
 ; Function tricore1_trap_yield_for_task
 .L103:
 tricore1_trap_yield_for_task:	.type	func
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   637  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   638    switch( iTrapIdentification )
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   635  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   636    switch( iTrapIdentification )
 	jne	d4,#1,.L40
-.L828:
+.L830:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   639    {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   640      case 1:
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   641          core1_trigger_scheduling();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   637    {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   638      case 1:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   639          core1_trigger_scheduling();
 	j	core1_trigger_scheduling
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   642        break;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   643  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   644      default:
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   640        break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   641  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   642      default:
 .L40:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   645        /* Unimplemented trap called. */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   646        /* TODO */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   647        break;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   648    }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   649  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   643        /* Unimplemented trap called. */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   644        /* TODO */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   645        break;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   646    }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   647  }
 	ret
 .L458:
 	
@@ -10444,7 +10448,9 @@ g_AppCpu0:	.type	object
 	.calls	'Core0_YIELD','rt_interrupt_enter'
 	.calls	'Core0_YIELD','core0_trigger_scheduling'
 	.calls	'Core0_YIELD','rt_interrupt_leave'
+	.calls	'Core1_YIELD','rt_interrupt_enter'
 	.calls	'Core1_YIELD','core1_trigger_scheduling'
+	.calls	'Core1_YIELD','rt_interrupt_leave'
 	.calls	'rt_hw_board_init','rt_hw_systick_init'
 	.calls	'rt_hw_board_init','rt_hw_usart_init'
 	.calls	'rt_hw_board_init','rt_components_board_init'
@@ -14145,7 +14151,7 @@ g_AppCpu0:	.type	object
 	.byte	'rt_scheduler_do_irq_switch',0,20,174,1,9
 	.word	454
 	.byte	1,1,1,39
-	.byte	'memset',0,20,199,4,5
+	.byte	'memset',0,20,197,4,5
 	.word	454
 	.byte	1,1,1,7
 	.byte	'short int',0,2,5,20
@@ -36672,32 +36678,32 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'rt_hw_stack_init',0,1,152,4,13
+	.byte	'rt_hw_stack_init',0,1,150,4,13
 	.word	.L288
 	.byte	1,1,1
 	.word	.L97,.L289,.L96
 	.byte	4
-	.byte	'tentry',0,1,152,4,42
+	.byte	'tentry',0,1,150,4,42
 	.word	.L290,.L291
 	.byte	4
-	.byte	'parameter',0,1,153,4,42
+	.byte	'parameter',0,1,151,4,42
 	.word	.L290,.L292
 	.byte	4
-	.byte	'stack_addr',0,1,154,4,42
+	.byte	'stack_addr',0,1,152,4,42
 	.word	.L288,.L293
 	.byte	4
-	.byte	'texit',0,1,155,4,42
+	.byte	'texit',0,1,153,4,42
 	.word	.L290,.L294
 	.byte	5
 	.word	.L97,.L289
 	.byte	6
-	.byte	'level',0,1,157,4,15
+	.byte	'level',0,1,155,4,15
 	.word	.L295,.L296
 	.byte	6
-	.byte	'upperCtxPtr',0,1,158,4,18
+	.byte	'upperCtxPtr',0,1,156,4,18
 	.word	.L297,.L298
 	.byte	6
-	.byte	'lowCtxPtr',0,1,159,4,18
+	.byte	'lowCtxPtr',0,1,157,4,18
 	.word	.L299,.L300
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_hw_stack_init')
@@ -36719,7 +36725,7 @@ g_AppCpu0:	.type	object
 .L559:
 	.byte	5,13,7,0,5,2
 	.word	.L97
-	.byte	3,151,4,1,5,28,9
+	.byte	3,149,4,1,5,28,9
 	.half	.L531-.L97
 	.byte	3,7,1,5,36,9
 	.half	.L526-.L531
@@ -36807,7 +36813,7 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'rt_hw_local_irq_disable',0,1,208,3,11
+	.byte	'rt_hw_local_irq_disable',0,1,206,3,11
 	.word	.L295
 	.byte	1,1
 	.word	.L95,.L301,.L94
@@ -36856,7 +36862,7 @@ g_AppCpu0:	.type	object
 	.half	.L583-.L306
 	.byte	3,1,1,4,1,5,1,9
 	.half	.L303-.L583
-	.byte	3,223,125,1,7,9
+	.byte	3,221,125,1,7,9
 	.half	.L117-.L303
 	.byte	0,1,1
 .L580:
@@ -36878,10 +36884,10 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'rt_hw_local_irq_enable',0,1,195,3,6,1,1,1
+	.byte	'rt_hw_local_irq_enable',0,1,193,3,6,1,1,1
 	.word	.L92,.L310,.L91
 	.byte	4
-	.byte	'level',0,1,195,3,39
+	.byte	'level',0,1,193,3,39
 	.word	.L295,.L311
 	.byte	5
 	.word	.L92,.L310
@@ -36919,13 +36925,13 @@ g_AppCpu0:	.type	object
 .L587:
 	.byte	5,23,7,0,5,2
 	.word	.L92
-	.byte	3,196,3,1,4,2,5,5,9
+	.byte	3,194,3,1,4,2,5,5,9
 	.half	.L588-.L92
-	.byte	3,195,4,1,5,17,7,9
+	.byte	3,197,4,1,5,17,7,9
 	.half	.L589-.L588
 	.byte	3,2,1,4,1,5,1,9
 	.half	.L31-.L589
-	.byte	3,188,123,1,7,9
+	.byte	3,186,123,1,7,9
 	.half	.L122-.L31
 	.byte	0,1,1
 .L585:
@@ -36947,24 +36953,24 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'rt_hw_context_switch',0,1,184,2,6,1,1,1
+	.byte	'rt_hw_context_switch',0,1,186,2,6,1,1,1
 	.word	.L76,.L320,.L75
 	.byte	4
-	.byte	'from',0,1,184,2,38
+	.byte	'from',0,1,186,2,38
 	.word	.L321,.L322
 	.byte	4
-	.byte	'to',0,1,184,2,55
+	.byte	'to',0,1,186,2,55
 	.word	.L321,.L323
 	.byte	4
-	.byte	'to_thread',0,1,184,2,77
+	.byte	'to_thread',0,1,186,2,77
 	.word	.L324,.L325
 	.byte	5
 	.word	.L76,.L320
 	.byte	6
-	.byte	'levelCore0',0,1,186,2,15
+	.byte	'levelCore0',0,1,188,2,15
 	.word	.L295,.L326
 	.byte	6
-	.byte	'levelCore1',0,1,186,2,26
+	.byte	'levelCore1',0,1,188,2,26
 	.word	.L295,.L327
 	.byte	7
 	.word	.L328,.L21
@@ -36990,7 +36996,7 @@ g_AppCpu0:	.type	object
 .L593:
 	.byte	5,6,7,0,5,2
 	.word	.L76
-	.byte	3,183,2,1,5,19,9
+	.byte	3,185,2,1,5,19,9
 	.half	.L518-.L76
 	.byte	3,4,1,5,10,9
 	.half	.L594-.L518
@@ -37072,21 +37078,21 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'rt_hw_context_switch_to',0,1,130,2,6,1,1,1
+	.byte	'rt_hw_context_switch_to',0,1,132,2,6,1,1,1
 	.word	.L68,.L330,.L67
 	.byte	4
-	.byte	'to',0,1,130,2,41
+	.byte	'to',0,1,132,2,41
 	.word	.L321,.L331
 	.byte	4
-	.byte	'to_thread',0,1,130,2,63
+	.byte	'to_thread',0,1,132,2,63
 	.word	.L324,.L332
 	.byte	5
 	.word	.L68,.L330
 	.byte	6
-	.byte	'levelCore0',0,1,132,2,15
+	.byte	'levelCore0',0,1,134,2,15
 	.word	.L295,.L333
 	.byte	6
-	.byte	'levelCore1',0,1,132,2,26
+	.byte	'levelCore1',0,1,134,2,26
 	.word	.L295,.L334
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_hw_context_switch_to')
@@ -37108,7 +37114,7 @@ g_AppCpu0:	.type	object
 .L610:
 	.byte	5,6,7,0,5,2
 	.word	.L68
-	.byte	3,129,2,1,5,19,9
+	.byte	3,131,2,1,5,19,9
 	.half	.L490-.L68
 	.byte	3,5,1,5,10,9
 	.half	.L611-.L490
@@ -37178,27 +37184,27 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'rt_hw_context_switch_interrupt',0,1,157,2,6,1,1,1
+	.byte	'rt_hw_context_switch_interrupt',0,1,159,2,6,1,1,1
 	.word	.L70,.L335,.L69
 	.byte	4
-	.byte	'context',0,1,157,2,43
+	.byte	'context',0,1,159,2,43
 	.word	.L290,.L336
 	.byte	4
-	.byte	'from',0,1,157,2,63
+	.byte	'from',0,1,159,2,63
 	.word	.L321,.L337
 	.byte	4
-	.byte	'to',0,1,157,2,80
+	.byte	'to',0,1,159,2,80
 	.word	.L321,.L338
 	.byte	4
-	.byte	'to_thread',0,1,157,2,102
+	.byte	'to_thread',0,1,159,2,102
 	.word	.L324,.L339
 	.byte	5
 	.word	.L340
 	.byte	6
-	.byte	'levelCore0',0,1,159,2,15
+	.byte	'levelCore0',0,1,161,2,15
 	.word	.L295,.L341
 	.byte	6
-	.byte	'levelCore1',0,1,159,2,26
+	.byte	'levelCore1',0,1,161,2,26
 	.word	.L295,.L342
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_hw_context_switch_interrupt')
@@ -37220,7 +37226,7 @@ g_AppCpu0:	.type	object
 .L627:
 	.byte	5,6,7,0,5,2
 	.word	.L70
-	.byte	3,156,2,1,5,19,9
+	.byte	3,158,2,1,5,19,9
 	.half	.L509-.L70
 	.byte	3,4,1,5,10,9
 	.half	.L628-.L509
@@ -37274,10 +37280,10 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'rt_hw_spin_lock_init',0,1,134,3,6,1,1,1
+	.byte	'rt_hw_spin_lock_init',0,1,136,3,6,1,1,1
 	.word	.L84,.L343,.L83
 	.byte	4
-	.byte	'lock',0,1,134,3,45
+	.byte	'lock',0,1,136,3,45
 	.word	.L344,.L345
 	.byte	5
 	.word	.L84,.L343
@@ -37300,7 +37306,7 @@ g_AppCpu0:	.type	object
 .L636:
 	.byte	5,19,7,0,5,2
 	.word	.L84
-	.byte	3,135,3,1,5,17,1,5,1,9
+	.byte	3,137,3,1,5,17,1,5,1,9
 	.half	.L637-.L84
 	.byte	3,1,1,7,9
 	.half	.L142-.L637
@@ -37324,18 +37330,18 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'rt_hw_spin_lock',0,1,140,3,6,1,1,1
+	.byte	'rt_hw_spin_lock',0,1,142,3,6,1,1,1
 	.word	.L86,.L346,.L85
 	.byte	4
-	.byte	'lock',0,1,140,3,40
+	.byte	'lock',0,1,142,3,40
 	.word	.L344,.L347
 	.byte	5
 	.word	.L86,.L346
 	.byte	6
-	.byte	'retVal',0,1,142,3,21
+	.byte	'retVal',0,1,144,3,21
 	.word	.L348,.L349
 	.byte	6
-	.byte	'spinLockVal',0,1,143,3,27
+	.byte	'spinLockVal',0,1,145,3,27
 	.word	.L350,.L351
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_hw_spin_lock')
@@ -37357,9 +37363,9 @@ g_AppCpu0:	.type	object
 .L641:
 	.byte	5,28,7,0,5,2
 	.word	.L86
-	.byte	3,141,3,1,5,6,3,126,1,5,23,9
+	.byte	3,143,3,1,5,6,3,126,1,5,23,9
 	.half	.L26-.L86
-	.byte	3,13,1,5,21,1,5,27,9
+	.byte	3,15,1,5,21,1,5,23,9
 	.half	.L642-.L26
 	.byte	3,2,1,5,21,9
 	.half	.L643-.L642
@@ -37393,18 +37399,18 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'rt_hw_spin_unlock',0,1,165,3,6,1,1,1
+	.byte	'rt_hw_spin_unlock',0,1,169,3,6,1,1,1
 	.word	.L88,.L352,.L87
 	.byte	4
-	.byte	'lock',0,1,165,3,42
+	.byte	'lock',0,1,169,3,42
 	.word	.L344,.L353
 	.byte	5
 	.word	.L88,.L352
 	.byte	6
-	.byte	'retVal',0,1,167,3,21
+	.byte	'retVal',0,1,171,3,21
 	.word	.L348,.L354
 	.byte	6
-	.byte	'spinLockVal',0,1,168,3,27
+	.byte	'spinLockVal',0,1,172,3,27
 	.word	.L355,.L356
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_hw_spin_unlock')
@@ -37426,9 +37432,9 @@ g_AppCpu0:	.type	object
 .L651:
 	.byte	5,28,7,0,5,2
 	.word	.L88
-	.byte	3,166,3,1,5,6,3,126,1,5,23,9
+	.byte	3,170,3,1,5,6,3,126,1,5,23,9
 	.half	.L28-.L88
-	.byte	3,13,1,5,21,1,5,27,9
+	.byte	3,7,1,5,21,1,5,27,9
 	.half	.L652-.L28
 	.byte	3,2,1,5,21,9
 	.half	.L653-.L652
@@ -37464,7 +37470,7 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'rt_hw_cpu_id',0,1,190,3,5
+	.byte	'rt_hw_cpu_id',0,1,188,3,5
 	.word	.L357
 	.byte	1,1,1
 	.word	.L90,.L358,.L89
@@ -37501,7 +37507,7 @@ g_AppCpu0:	.type	object
 	.word	.L90
 	.byte	3,229,6,1,5,28,9
 	.half	.L520-.L90
-	.byte	3,1,1,4,1,5,1,3,218,124,1,7,9
+	.byte	3,1,1,4,1,5,1,3,216,124,1,7,9
 	.half	.L157-.L520
 	.byte	0,1,1
 .L660:
@@ -37523,13 +37529,13 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'rt_hw_ipi_send',0,1,129,3,6,1,1,1
+	.byte	'rt_hw_ipi_send',0,1,131,3,6,1,1,1
 	.word	.L82,.L363,.L81
 	.byte	4
-	.byte	'ipi_vector',0,1,129,3,25
+	.byte	'ipi_vector',0,1,131,3,25
 	.word	.L357,.L364
 	.byte	4
-	.byte	'cpu_mask',0,1,129,3,50
+	.byte	'cpu_mask',0,1,131,3,50
 	.word	.L365,.L366
 	.byte	5
 	.word	.L82,.L363
@@ -37552,7 +37558,7 @@ g_AppCpu0:	.type	object
 .L666:
 	.byte	5,1,7,0,5,2
 	.word	.L82
-	.byte	3,131,3,1,7,9
+	.byte	3,133,3,1,7,9
 	.half	.L162-.L82
 	.byte	0,1,1
 .L664:
@@ -37574,7 +37580,7 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'rt_hw_secondary_cpu_up',0,1,235,2,6,1,1,1
+	.byte	'rt_hw_secondary_cpu_up',0,1,237,2,6,1,1,1
 	.word	.L78,.L367,.L77
 	.byte	4
 	.word	.L78,.L367
@@ -37597,7 +37603,7 @@ g_AppCpu0:	.type	object
 .L670:
 	.byte	5,1,7,0,5,2
 	.word	.L78
-	.byte	3,237,2,1,7,9
+	.byte	3,239,2,1,7,9
 	.half	.L167-.L78
 	.byte	0,1,1
 .L668:
@@ -37619,7 +37625,7 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'rt_hw_secondary_cpu_idle_exec',0,1,200,3,6,1,1,1
+	.byte	'rt_hw_secondary_cpu_idle_exec',0,1,198,3,6,1,1,1
 	.word	.L32,.L368,.L93
 	.byte	4
 	.word	.L32,.L368
@@ -37642,7 +37648,7 @@ g_AppCpu0:	.type	object
 .L674:
 	.byte	5,13,7,0,5,2
 	.word	.L32
-	.byte	3,201,3,1,5,1,9
+	.byte	3,199,3,1,5,1,9
 	.half	.L172-.L32
 	.byte	3,4,0,1,1
 .L672:
@@ -37664,12 +37670,12 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'Core1_init',0,1,241,2,6,1,1,1
+	.byte	'Core1_init',0,1,243,2,6,1,1,1
 	.word	.L80,.L369,.L79
 	.byte	4
 	.word	.L80,.L369
 	.byte	5
-	.byte	'timer_config',0,1,245,2,25
+	.byte	'timer_config',0,1,247,2,25
 	.word	.L370,.L371
 	.byte	6
 	.word	.L372,.L373,.L374
@@ -37715,13 +37721,13 @@ g_AppCpu0:	.type	object
 .L678:
 	.byte	5,6,7,0,5,2
 	.word	.L80
-	.byte	3,240,2,1,5,30,9
+	.byte	3,242,2,1,5,30,9
 	.half	.L519-.L80
 	.byte	3,5,1,5,58,9
 	.half	.L679-.L519
-	.byte	3,158,125,1,5,35,9
+	.byte	3,156,125,1,5,35,9
 	.half	.L680-.L679
-	.byte	3,228,2,1,5,33,1,5,37,9
+	.byte	3,230,2,1,5,33,1,5,37,9
 	.half	.L681-.L680
 	.byte	3,1,1,5,35,1,5,24,9
 	.half	.L682-.L681
@@ -37733,7 +37739,7 @@ g_AppCpu0:	.type	object
 	.half	.L685-.L684
 	.byte	3,1,1,4,2,5,19,9
 	.half	.L373-.L685
-	.byte	3,150,127,1,5,17,1,5,11,9
+	.byte	3,148,127,1,5,17,1,5,11,9
 	.half	.L686-.L373
 	.byte	3,1,1,5,17,9
 	.half	.L687-.L686
@@ -37747,7 +37753,7 @@ g_AppCpu0:	.type	object
 	.half	.L689-.L374
 	.byte	1,4,1,5,1,9
 	.half	.L388-.L689
-	.byte	3,244,0,1,7,9
+	.byte	3,246,0,1,7,9
 	.half	.L177-.L388
 	.byte	0,1,1
 .L676:
@@ -37769,7 +37775,7 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'get_clk',0,1,222,4,6,1,1,1
+	.byte	'get_clk',0,1,220,4,6,1,1,1
 	.word	.L99,.L392,.L98
 	.byte	4
 	.word	.L99,.L392
@@ -37837,7 +37843,7 @@ g_AppCpu0:	.type	object
 	.half	.L694-.L396
 	.byte	3,1,1,4,1,5,66,9
 	.half	.L394-.L694
-	.byte	3,236,126,1,5,72,9
+	.byte	3,234,126,1,5,72,9
 	.half	.L695-.L394
 	.byte	3,1,1,5,5,9
 	.half	.L696-.L695
@@ -37847,11 +37853,11 @@ g_AppCpu0:	.type	object
 	.half	.L698-.L697
 	.byte	1,4,2,5,17,9
 	.half	.L399-.L698
-	.byte	3,136,2,1,5,38,9
+	.byte	3,138,2,1,5,38,9
 	.half	.L548-.L399
 	.byte	3,1,1,5,12,9
 	.half	.L549-.L548
-	.byte	1,4,1,5,75,3,248,125,1,5,28,9
+	.byte	1,4,1,5,75,3,246,125,1,5,28,9
 	.half	.L400-.L549
 	.byte	1,5,55,9
 	.half	.L699-.L400
@@ -37859,11 +37865,11 @@ g_AppCpu0:	.type	object
 	.half	.L700-.L699
 	.byte	1,4,3,5,41,9
 	.half	.L404-.L700
-	.byte	3,214,8,1,5,77,9
+	.byte	3,216,8,1,5,77,9
 	.half	.L701-.L404
 	.byte	1,5,62,9
 	.half	.L702-.L701
-	.byte	1,4,1,5,28,3,171,119,1,5,1,9
+	.byte	1,4,1,5,28,3,169,119,1,5,1,9
 	.half	.L405-.L702
 	.byte	3,1,1,7,9
 	.half	.L182-.L405
@@ -38416,14 +38422,18 @@ g_AppCpu0:	.type	object
 .L795:
 	.byte	5,1,7,0,5,2
 	.word	.L64
-	.byte	3,211,1,1,5,10,9
+	.byte	3,211,1,1,5,23,9
 	.half	.L796-.L64
-	.byte	3,3,1,5,29,9
+	.byte	3,2,1,5,10,9
 	.half	.L797-.L796
-	.byte	3,2,1,5,1,9
+	.byte	3,2,1,5,29,9
 	.half	.L798-.L797
+	.byte	3,2,1,5,23,9
+	.half	.L799-.L798
+	.byte	3,1,1,5,1,9
+	.half	.L800-.L799
 	.byte	3,1,1,9
-	.half	.L222-.L798
+	.half	.L222-.L800
 	.byte	0,1,1
 .L793:
 	.sdecl	'.debug_ranges',debug,cluster('Core1_YIELD')
@@ -38444,7 +38454,7 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'rt_hw_board_init',0,1,227,1,6,1,1
+	.byte	'rt_hw_board_init',0,1,229,1,6,1,1
 	.word	.L66,.L433,.L65
 	.byte	4
 	.word	.L66,.L433
@@ -38498,82 +38508,82 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_line',debug,cluster('rt_hw_board_init')
 	.sect	'.debug_line'
 .L225:
-	.word	.L800-.L799
-.L799:
-	.half	3
 	.word	.L802-.L801
 .L801:
+	.half	3
+	.word	.L804-.L803
+.L803:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Stm\\Std',0
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\0_Src\\4_McHal\\Tricore\\Src\\Std',0,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu\\cpuport.c',0,0,0,0
 	.byte	'IfxStm.h',0,1,0,0
 	.byte	'IfxSrc.h',0,2,0,0,0
-.L802:
+.L804:
 	.byte	5,32,7,0,5,2
 	.word	.L66
-	.byte	3,228,1,1,5,27,9
-	.half	.L803-.L66
+	.byte	3,230,1,1,5,27,9
+	.half	.L805-.L66
 	.byte	1,5,32,9
-	.half	.L804-.L803
+	.half	.L806-.L805
 	.byte	1,5,31,9
-	.half	.L805-.L804
+	.half	.L807-.L806
 	.byte	1,4,2,5,28,9
-	.half	.L435-.L805
-	.byte	3,217,3,1,4,1,5,31,9
+	.half	.L435-.L807
+	.byte	3,215,3,1,4,1,5,31,9
 	.half	.L436-.L435
-	.byte	3,167,124,1,4,2,5,5,9
+	.byte	3,169,124,1,4,2,5,5,9
 	.half	.L443-.L436
-	.byte	3,217,3,1,5,14,7,9
+	.byte	3,215,3,1,5,14,7,9
 	.half	.L485-.L443
 	.byte	3,3,1,5,26,9
 	.half	.L486-.L485
 	.byte	1,9
-	.half	.L806-.L486
+	.half	.L808-.L486
 	.byte	3,1,1,9
-	.half	.L487-.L806
+	.half	.L487-.L808
 	.byte	3,1,1,5,19,9
-	.half	.L807-.L487
+	.half	.L809-.L487
 	.byte	3,1,1,5,26,9
-	.half	.L488-.L807
+	.half	.L488-.L809
 	.byte	1,4,1,5,23,9
 	.half	.L9-.L488
-	.byte	3,168,124,1,5,21,9
-	.half	.L808-.L9
+	.byte	3,170,124,1,5,21,9
+	.half	.L810-.L9
 	.byte	3,3,1,5,29,9
-	.half	.L809-.L808
-	.byte	3,10,1,5,22,9
-	.half	.L810-.L809
-	.byte	3,3,1,5,17,9
 	.half	.L811-.L810
-	.byte	1,5,21,9
+	.byte	3,10,1,5,22,9
 	.half	.L812-.L811
-	.byte	1,5,51,9
+	.byte	3,3,1,5,17,9
 	.half	.L813-.L812
-	.byte	1,4,3,5,19,9
-	.half	.L446-.L813
-	.byte	3,21,1,5,17,1,5,11,9
-	.half	.L814-.L446
-	.byte	3,1,1,5,17,9
+	.byte	1,5,21,9
+	.half	.L814-.L813
+	.byte	1,5,51,9
 	.half	.L815-.L814
+	.byte	1,4,3,5,19,9
+	.half	.L446-.L815
+	.byte	3,19,1,5,17,1,5,11,9
+	.half	.L816-.L446
+	.byte	3,1,1,5,17,9
+	.half	.L817-.L816
 	.byte	1,5,11,9
-	.half	.L451-.L815
+	.half	.L451-.L817
 	.byte	3,103,1,5,17,9
-	.half	.L816-.L451
+	.half	.L818-.L451
 	.byte	1,4,1,5,24,9
-	.half	.L447-.L816
-	.byte	3,4,1,5,23,9
-	.half	.L817-.L447
+	.half	.L447-.L818
+	.byte	3,6,1,5,23,9
+	.half	.L819-.L447
 	.byte	1,4,3,5,11,9
-	.half	.L453-.L817
-	.byte	3,14,1,5,16,9
-	.half	.L818-.L453
+	.half	.L453-.L819
+	.byte	3,12,1,5,16,9
+	.half	.L820-.L453
 	.byte	1,4,1,5,1,9
-	.half	.L454-.L818
-	.byte	3,115,1,7,9
+	.half	.L454-.L820
+	.byte	3,117,1,7,9
 	.half	.L227-.L454
 	.byte	0,1,1
-.L800:
+.L802:
 	.sdecl	'.debug_ranges',debug,cluster('rt_hw_board_init')
 	.sect	'.debug_ranges'
 .L226:
@@ -38594,10 +38604,10 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'tricore0_trap_yield_for_task',0,1,236,4,6,1,1,1
+	.byte	'tricore0_trap_yield_for_task',0,1,234,4,6,1,1,1
 	.word	.L101,.L456,.L100
 	.byte	4
-	.byte	'iTrapIdentification',0,1,236,4,40
+	.byte	'iTrapIdentification',0,1,234,4,40
 	.word	.L357,.L457
 	.byte	5
 	.word	.L101,.L456
@@ -38610,24 +38620,24 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_line',debug,cluster('tricore0_trap_yield_for_task')
 	.sect	'.debug_line'
 .L230:
-	.word	.L820-.L819
-.L819:
-	.half	3
 	.word	.L822-.L821
 .L821:
+	.half	3
+	.word	.L824-.L823
+.L823:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu\\cpuport.c',0,0,0,0,0
-.L822:
+.L824:
 	.byte	5,3,7,0,5,2
 	.word	.L101
-	.byte	3,237,4,1,5,33,7,9
-	.half	.L823-.L101
+	.byte	3,235,4,1,5,33,7,9
+	.half	.L825-.L101
 	.byte	3,3,1,5,1,7,9
-	.half	.L39-.L823
+	.half	.L39-.L825
 	.byte	3,8,1,7,9
 	.half	.L232-.L39
 	.byte	0,1,1
-.L820:
+.L822:
 	.sdecl	'.debug_ranges',debug,cluster('tricore0_trap_yield_for_task')
 	.sect	'.debug_ranges'
 .L231:
@@ -38646,10 +38656,10 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'tricore1_trap_yield_for_task',0,1,252,4,6,1,1,1
+	.byte	'tricore1_trap_yield_for_task',0,1,250,4,6,1,1,1
 	.word	.L103,.L458,.L102
 	.byte	4
-	.byte	'iTrapIdentification',0,1,252,4,40
+	.byte	'iTrapIdentification',0,1,250,4,40
 	.word	.L357,.L459
 	.byte	5
 	.word	.L103,.L458
@@ -38662,24 +38672,24 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_line',debug,cluster('tricore1_trap_yield_for_task')
 	.sect	'.debug_line'
 .L235:
-	.word	.L825-.L824
-.L824:
-	.half	3
 	.word	.L827-.L826
 .L826:
+	.half	3
+	.word	.L829-.L828
+.L828:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu\\cpuport.c',0,0,0,0,0
-.L827:
+.L829:
 	.byte	5,3,7,0,5,2
 	.word	.L103
-	.byte	3,253,4,1,5,33,7,9
-	.half	.L828-.L103
+	.byte	3,251,4,1,5,33,7,9
+	.half	.L830-.L103
 	.byte	3,3,1,5,1,7,9
-	.half	.L40-.L828
+	.half	.L40-.L830
 	.byte	3,8,1,7,9
 	.half	.L237-.L40
 	.byte	0,1,1
-.L825:
+.L827:
 	.sdecl	'.debug_ranges',debug,cluster('tricore1_trap_yield_for_task')
 	.sect	'.debug_ranges'
 .L236:
@@ -38709,30 +38719,30 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_line',debug,cluster('.cocofun_4')
 	.sect	'.debug_line'
 .L240:
-	.word	.L830-.L829
-.L829:
-	.half	3
 	.word	.L832-.L831
 .L831:
+	.half	3
+	.word	.L834-.L833
+.L833:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu\\cpuport.c',0,0,0,0,0
-.L832:
+.L834:
 	.byte	5,10,7,0,5,2
 	.word	.L60
 	.byte	3,205,1,1,5,34,9
-	.half	.L833-.L60
+	.half	.L835-.L60
 	.byte	1,9
-	.half	.L242-.L833
+	.half	.L242-.L835
 	.byte	0,1,1,5,10,0,5,2
 	.word	.L60
 	.byte	3,205,1,1,5,34,9
-	.half	.L833-.L60
-	.byte	3,9,1,9
-	.half	.L834-.L833
-	.byte	3,119,1,7,9
-	.half	.L242-.L834
+	.half	.L835-.L60
+	.byte	3,10,1,9
+	.half	.L836-.L835
+	.byte	3,118,1,7,9
+	.half	.L242-.L836
 	.byte	0,1,1
-.L830:
+.L832:
 	.sdecl	'.debug_ranges',debug,cluster('.cocofun_4')
 	.sect	'.debug_ranges'
 .L241:
@@ -38762,14 +38772,14 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_line',debug,cluster('.cocofun_5')
 	.sect	'.debug_line'
 .L245:
-	.word	.L836-.L835
-.L835:
-	.half	3
 	.word	.L838-.L837
 .L837:
+	.half	3
+	.word	.L840-.L839
+.L839:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu\\cpuport.c',0,0,0,0,0
-.L838:
+.L840:
 	.byte	5,22,7,0,5,2
 	.word	.L48
 	.byte	3,230,0,1,9
@@ -38777,17 +38787,17 @@ g_AppCpu0:	.type	object
 	.byte	0,1,1,5,22,0,5,2
 	.word	.L48
 	.byte	3,138,1,1,9
-	.half	.L839-.L48
+	.half	.L841-.L48
 	.byte	3,92,1,7,9
-	.half	.L247-.L839
+	.half	.L247-.L841
 	.byte	0,1,1,5,23,0,5,2
 	.word	.L48
-	.byte	3,169,4,1,5,22,9
-	.half	.L839-.L48
-	.byte	3,189,124,1,7,9
-	.half	.L247-.L839
+	.byte	3,167,4,1,5,22,9
+	.half	.L841-.L48
+	.byte	3,191,124,1,7,9
+	.half	.L247-.L841
 	.byte	0,1,1
-.L836:
+.L838:
 	.sdecl	'.debug_ranges',debug,cluster('.cocofun_5')
 	.sect	'.debug_ranges'
 .L246:
@@ -38817,34 +38827,34 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_line',debug,cluster('.cocofun_6')
 	.sect	'.debug_line'
 .L250:
-	.word	.L841-.L840
-.L840:
-	.half	3
 	.word	.L843-.L842
 .L842:
+	.half	3
+	.word	.L845-.L844
+.L844:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu\\cpuport.c',0,0,0,0,0
-.L843:
+.L845:
 	.byte	5,54,7,0,5,2
 	.word	.L54
 	.byte	3,163,1,1,5,53,9
-	.half	.L844-.L54
+	.half	.L846-.L54
 	.byte	1,5,39,1,5,53,9
-	.half	.L845-.L844
+	.half	.L847-.L846
 	.byte	1,9
-	.half	.L252-.L845
+	.half	.L252-.L847
 	.byte	0,1,1,5,54,0,5,2
 	.word	.L54
 	.byte	3,186,1,1,5,53,9
-	.half	.L844-.L54
+	.half	.L846-.L54
 	.byte	1,5,39,1,5,53,9
-	.half	.L845-.L844
+	.half	.L847-.L846
 	.byte	1,9
-	.half	.L846-.L845
+	.half	.L848-.L847
 	.byte	3,105,1,7,9
-	.half	.L252-.L846
+	.half	.L252-.L848
 	.byte	0,1,1
-.L841:
+.L843:
 	.sdecl	'.debug_ranges',debug,cluster('.cocofun_6')
 	.sect	'.debug_ranges'
 .L251:
@@ -38863,7 +38873,7 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'.cocofun_7',0,1,157,2,6,1
+	.byte	'.cocofun_7',0,1,159,2,6,1
 	.word	.L74,.L257,.L73
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_7')
@@ -38874,46 +38884,46 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_line',debug,cluster('.cocofun_7')
 	.sect	'.debug_line'
 .L255:
-	.word	.L848-.L847
-.L847:
-	.half	3
 	.word	.L850-.L849
 .L849:
+	.half	3
+	.word	.L852-.L851
+.L851:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu\\cpuport.c',0,0,0,0,0
-.L850:
+.L852:
 	.byte	5,46,7,0,5,2
 	.word	.L74
-	.byte	3,164,2,1,5,43,9
+	.byte	3,166,2,1,5,43,9
 	.half	.L500-.L74
 	.byte	1,5,40,9
-	.half	.L851-.L500
+	.half	.L853-.L500
 	.byte	1,5,43,9
-	.half	.L502-.L851
+	.half	.L502-.L853
 	.byte	3,1,1,5,41,9
 	.half	.L501-.L502
 	.byte	1,5,38,9
-	.half	.L852-.L501
+	.half	.L854-.L501
 	.byte	1,9
-	.half	.L257-.L852
+	.half	.L257-.L854
 	.byte	0,1,1,5,46,0,5,2
 	.word	.L74
-	.byte	3,191,2,1,5,43,9
+	.byte	3,193,2,1,5,43,9
 	.half	.L500-.L74
 	.byte	1,5,40,9
-	.half	.L851-.L500
+	.half	.L853-.L500
 	.byte	1,5,43,9
-	.half	.L502-.L851
+	.half	.L502-.L853
 	.byte	3,1,1,5,41,9
 	.half	.L501-.L502
 	.byte	1,5,38,9
-	.half	.L852-.L501
+	.half	.L854-.L501
 	.byte	1,9
-	.half	.L853-.L852
+	.half	.L855-.L854
 	.byte	3,101,1,7,9
-	.half	.L257-.L853
+	.half	.L257-.L855
 	.byte	0,1,1
-.L848:
+.L850:
 	.sdecl	'.debug_ranges',debug,cluster('.cocofun_7')
 	.sect	'.debug_ranges'
 .L256:
@@ -38932,7 +38942,7 @@ g_AppCpu0:	.type	object
 	.byte	2
 	.word	.L104
 	.byte	3
-	.byte	'.cocofun_8',0,1,157,2,6,1
+	.byte	'.cocofun_8',0,1,159,2,6,1
 	.word	.L72,.L262,.L71
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_8')
@@ -38943,46 +38953,46 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_line',debug,cluster('.cocofun_8')
 	.sect	'.debug_line'
 .L260:
-	.word	.L855-.L854
-.L854:
-	.half	3
 	.word	.L857-.L856
 .L856:
+	.half	3
+	.word	.L859-.L858
+.L858:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu\\cpuport.c',0,0,0,0,0
-.L857:
+.L859:
 	.byte	5,46,7,0,5,2
 	.word	.L72
-	.byte	3,171,2,1,5,43,9
+	.byte	3,173,2,1,5,43,9
 	.half	.L504-.L72
 	.byte	1,5,40,9
-	.half	.L858-.L504
+	.half	.L860-.L504
 	.byte	1,5,43,9
-	.half	.L506-.L858
+	.half	.L506-.L860
 	.byte	3,1,1,5,41,9
 	.half	.L505-.L506
 	.byte	1,5,38,9
-	.half	.L859-.L505
+	.half	.L861-.L505
 	.byte	1,9
-	.half	.L262-.L859
+	.half	.L262-.L861
 	.byte	0,1,1,5,46,0,5,2
 	.word	.L72
-	.byte	3,211,2,1,5,43,9
+	.byte	3,213,2,1,5,43,9
 	.half	.L504-.L72
 	.byte	1,5,40,9
-	.half	.L858-.L504
+	.half	.L860-.L504
 	.byte	1,5,43,9
-	.half	.L506-.L858
+	.half	.L506-.L860
 	.byte	3,1,1,5,41,9
 	.half	.L505-.L506
 	.byte	1,5,38,9
-	.half	.L859-.L505
+	.half	.L861-.L505
 	.byte	1,9
-	.half	.L860-.L859
+	.half	.L862-.L861
 	.byte	3,88,1,7,9
-	.half	.L262-.L860
+	.half	.L262-.L862
 	.byte	0,1,1
-.L855:
+.L857:
 	.sdecl	'.debug_ranges',debug,cluster('.cocofun_8')
 	.sect	'.debug_ranges'
 .L261:
@@ -39012,44 +39022,44 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_line',debug,cluster('.cocofun_9')
 	.sect	'.debug_line'
 .L265:
-	.word	.L862-.L861
-.L861:
-	.half	3
 	.word	.L864-.L863
 .L863:
+	.half	3
+	.word	.L866-.L865
+.L865:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\rt-thread\\libcpu\\cpuport.c',0,0,0,0,0
-.L864:
+.L866:
 	.byte	5,10,7,0,5,2
 	.word	.L62
 	.byte	3,205,1,1,5,5,1,5,9,9
-	.half	.L865-.L62
+	.half	.L867-.L62
 	.byte	1,5,34,9
-	.half	.L866-.L865
+	.half	.L868-.L867
 	.byte	1,9
-	.half	.L267-.L866
+	.half	.L267-.L868
 	.byte	0,1,1,5,10,0,5,2
 	.word	.L62
-	.byte	3,214,1,1,5,5,1,5,9,9
-	.half	.L865-.L62
+	.byte	3,215,1,1,5,5,1,5,9,9
+	.half	.L867-.L62
 	.byte	1,5,34,9
-	.half	.L866-.L865
+	.half	.L868-.L867
 	.byte	1,9
-	.half	.L867-.L866
-	.byte	3,119,1,7,9
-	.half	.L267-.L867
+	.half	.L869-.L868
+	.byte	3,118,1,7,9
+	.half	.L267-.L869
 	.byte	0,1,1,5,10,0,5,2
 	.word	.L62
-	.byte	3,180,2,1,5,5,1,5,9,9
-	.half	.L865-.L62
+	.byte	3,182,2,1,5,5,1,5,9,9
+	.half	.L867-.L62
 	.byte	1,5,34,9
-	.half	.L866-.L865
+	.half	.L868-.L867
 	.byte	1,9
-	.half	.L867-.L866
-	.byte	3,153,127,1,7,9
-	.half	.L267-.L867
+	.half	.L869-.L868
+	.byte	3,151,127,1,7,9
+	.half	.L267-.L869
 	.byte	0,1,1
-.L862:
+.L864:
 	.sdecl	'.debug_ranges',debug,cluster('.cocofun_9')
 	.sect	'.debug_ranges'
 .L266:
@@ -40035,7 +40045,7 @@ g_AppCpu0:	.type	object
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L868:
+.L870:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
@@ -40043,7 +40053,7 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_systick_init')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L868,.L42,.L412-.L42
+	.word	.L870,.L42,.L412-.L42
 	.byte	4
 	.word	(.L470-.L42)/2
 	.byte	19,48,22,26,3,19,138,48,4
@@ -40052,56 +40062,56 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_usart_init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L868,.L44,.L414-.L44
+	.word	.L870,.L44,.L414-.L44
 	.sdecl	'.debug_frame',debug,cluster('core0_trigger_scheduling')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L868,.L46,.L415-.L46
+	.word	.L870,.L46,.L415-.L46
 	.sdecl	'.debug_frame',debug,cluster('core1_trigger_scheduling')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L868,.L50,.L419-.L50
+	.word	.L870,.L50,.L419-.L50
 	.sdecl	'.debug_frame',debug,cluster('Core0_INTERRUPT')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L868,.L52,.L422-.L52
+	.word	.L870,.L52,.L422-.L52
 	.sdecl	'.debug_frame',debug,cluster('Core1_INTERRUPT')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L868,.L56,.L427-.L56
+	.word	.L870,.L56,.L427-.L56
 	.sdecl	'.debug_frame',debug,cluster('Core0_YIELD')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L868,.L58,.L430-.L58
+	.word	.L870,.L58,.L430-.L58
 	.sdecl	'.debug_frame',debug,cluster('Core1_YIELD')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L868,.L64,.L432-.L64
+	.word	.L870,.L64,.L432-.L64
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_board_init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L868,.L66,.L433-.L66
+	.word	.L870,.L66,.L433-.L66
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_context_switch_to')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L868,.L68,.L330-.L68
+	.word	.L870,.L68,.L330-.L68
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_context_switch_interrupt')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L868,.L70,.L335-.L70
+	.word	.L870,.L70,.L335-.L70
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_context_switch')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L868,.L76,.L320-.L76
+	.word	.L870,.L76,.L320-.L76
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_secondary_cpu_up')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L868,.L78,.L367-.L78
+	.word	.L870,.L78,.L367-.L78
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Core1_init')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L868,.L80,.L369-.L80
+	.word	.L870,.L80,.L369-.L80
 	.byte	4
 	.word	(.L519-.L80)/2
 	.byte	19,48,22,26,3,19,138,48,4
@@ -40110,17 +40120,17 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_ipi_send')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L868,.L82,.L363-.L82
+	.word	.L870,.L82,.L363-.L82
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_spin_lock_init')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L868,.L84,.L343-.L84
+	.word	.L870,.L84,.L343-.L84
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_spin_lock')
 	.sect	'.debug_frame'
 	.word	44
-	.word	.L868,.L86,.L346-.L86
+	.word	.L870,.L86,.L346-.L86
 	.byte	8,18,8,19,8,21,8,22,8,23,4
 	.word	(.L26-.L86)/2
 	.byte	19,8,22,26,3,19,138,8,4
@@ -40129,7 +40139,7 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_spin_unlock')
 	.sect	'.debug_frame'
 	.word	44
-	.word	.L868,.L88,.L352-.L88
+	.word	.L870,.L88,.L352-.L88
 	.byte	8,18,8,19,8,21,8,22,8,23,4
 	.word	(.L28-.L88)/2
 	.byte	19,8,22,26,3,19,138,8,4
@@ -40138,27 +40148,27 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_cpu_id')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L868,.L90,.L358-.L90
+	.word	.L870,.L90,.L358-.L90
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_local_irq_enable')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L868,.L92,.L310-.L92
+	.word	.L870,.L92,.L310-.L92
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_secondary_cpu_idle_exec')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L868,.L32,.L368-.L32
+	.word	.L870,.L32,.L368-.L32
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_local_irq_disable')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L868,.L95,.L301-.L95
+	.word	.L870,.L95,.L301-.L95
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('rt_hw_stack_init')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L868,.L97,.L289-.L97
+	.word	.L870,.L97,.L289-.L97
 	.byte	4
 	.word	(.L523-.L97)/2
 	.byte	19,16,22,26,3,19,138,16,4
@@ -40167,18 +40177,18 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('get_clk')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L868,.L99,.L392-.L99
+	.word	.L870,.L99,.L392-.L99
 	.sdecl	'.debug_frame',debug,cluster('tricore0_trap_yield_for_task')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L868,.L101,.L456-.L101
+	.word	.L870,.L101,.L456-.L101
 	.sdecl	'.debug_frame',debug,cluster('tricore1_trap_yield_for_task')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L868,.L103,.L458-.L103
+	.word	.L870,.L103,.L458-.L103
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L869:
+.L871:
 	.word	52
 	.word	-1
 	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
@@ -40186,35 +40196,35 @@ g_AppCpu0:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('.cocofun_5')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L869,.L48,.L247-.L48
+	.word	.L871,.L48,.L247-.L48
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('.cocofun_6')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L869,.L54,.L252-.L54
+	.word	.L871,.L54,.L252-.L54
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('.cocofun_4')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L869,.L60,.L242-.L60
+	.word	.L871,.L60,.L242-.L60
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('.cocofun_9')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L869,.L62,.L267-.L62
+	.word	.L871,.L62,.L267-.L62
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('.cocofun_8')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L869,.L72,.L262-.L72
+	.word	.L871,.L72,.L262-.L72
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('.cocofun_7')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L869,.L74,.L257-.L74
+	.word	.L871,.L74,.L257-.L74
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   650  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   651  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   648  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\libcpu\cpuport.c	   649  
 
 	; Module end

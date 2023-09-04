@@ -211,10 +211,12 @@ IFX_INTERRUPT(Core0_YIELD, 0, 1)
 
 IFX_INTERRUPT(Core1_YIELD, 1, 1)
 {
+    rt_interrupt_enter();
     /* clear the SRR bit */
     GPSR[TRICORE_CPU_ID]->B.CLRR = 1;
 
     core1_trigger_scheduling();
+    rt_interrupt_leave();
 }
 
 /**
@@ -400,15 +402,17 @@ void rt_hw_spin_lock(rt_hw_spinlock_t *lock)
 
     do
     {
-        /** \brief This function is a implementation of a binary semaphore using compare and swap instruction
+        /** \brief This function is a implementation of a binary semaphore
+         *  using compare and swap instruction
          * \param address address of resource.
          * \param value This variable is updated with status of address
-         * \param condition if the value of address matches with the value of condition, then swap of value & address occurs.
+         * \param condition if the value of address matches with the value 
+         * of condition, then swap of value & address occurs.
          *  __cmpswapw((address), ((unsigned long)value), (condition) )
          */
         spinLockVal = 1UL;
         spinLockVal =
-            (unsigned int)__cmpAndSwap(((unsigned int *)(&(lock->slock))), spinLockVal, 0);
+        (unsigned int)__cmpAndSwap(((unsigned int *)(&(lock->slock))), spinLockVal, 0);
 
         /* Check if the SpinLock WAS set before the attempt to acquire spinlock */
         if (spinLockVal == 0)
@@ -425,12 +429,6 @@ void rt_hw_spin_unlock(rt_hw_spinlock_t *lock)
 
     do
     {
-        /** \brief This function is a implementation of a binary semaphore using compare and swap instruction
-         * \param address address of resource.
-         * \param value This variable is updated with status of address
-         * \param condition if the value of address matches with the value of condition, then swap of value & address occurs.
-         *  __cmpswapw((address), ((unsigned long)value), (condition) )
-         */
         spinLockVal = 0UL;
         spinLockVal =
             (unsigned int)__cmpAndSwap(((unsigned int *)(&(lock->slock))), spinLockVal, 1);

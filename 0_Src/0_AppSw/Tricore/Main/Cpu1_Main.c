@@ -76,7 +76,7 @@ static void core1_thread_entry(void *parameter)
 {
     while(1)
     {
-        sendUARTMessage("core1_thread_entry\r\n",sizeof("core1_thread_entry")+2);
+        // sendUARTMessage("core1_thread_entry\r\n",sizeof("core1_thread_entry")+2);
         core1_CNT++; 
         rt_thread_mdelay(30);
     }
