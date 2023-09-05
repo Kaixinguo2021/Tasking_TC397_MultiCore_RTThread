@@ -448,8 +448,8 @@ rt_thread_idle_init:	.type	func
 	movh.a	a6,#@his(rt_thread_idle_entry)
 .L124:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   244                  32);
-	mov	d6,#32
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   244                  10);
+	mov	d6,#10
 	lea	a6,[a6]@los(rt_thread_idle_entry)
 .L125:
 	mov.aa	a4,a15
@@ -463,8 +463,9 @@ rt_thread_idle_init:	.type	func
 	lea	a12,[a12]2048
 .L130:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   245  #ifdef RT_USING_SMP
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   246          rt_thread_control(&idle[i], RT_THREAD_CTRL_BIND_CPU, (void*)i);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   245                  // 32);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   246  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   247          rt_thread_control(&idle[i], RT_THREAD_CTRL_BIND_CPU, (void*)i);
 	mov	d4,#4
 	mov.a	a5,d15
 .L107:
@@ -472,9 +473,9 @@ rt_thread_idle_init:	.type	func
 	call	rt_thread_control
 .L108:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   247  #endif
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   248          /* startup */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   249          rt_thread_startup(&idle[i]);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   248  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   249          /* startup */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   250          rt_thread_startup(&idle[i]);
 	mov.aa	a4,a15
 	call	rt_thread_startup
 .L131:
@@ -483,8 +484,8 @@ rt_thread_idle_init:	.type	func
 	loop	a13,.L15
 .L132:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   250      }
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   251  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   251      }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   252  }
 	ret
 .L69:
 	
@@ -499,29 +500,29 @@ __rt_thread_idle_init_function_end:
 	
 	.global	rt_thread_idle_gethandler
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   252  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   253  /**
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   254   * @ingroup Thread
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   255   *
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   256   * This function will get the handler of the idle thread.
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   257   *
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   258   */
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   259  rt_thread_t rt_thread_idle_gethandler(void)
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   253  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   254  /**
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   255   * @ingroup Thread
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   256   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   257   * This function will get the handler of the idle thread.
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   258   *
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   259   */
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   260  rt_thread_t rt_thread_idle_gethandler(void)
 ; Function rt_thread_idle_gethandler
 .L28:
 rt_thread_idle_gethandler:	.type	func
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   260  {
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   261  #ifdef RT_USING_SMP
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   262      register int id = rt_hw_cpu_id();
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   261  {
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   262  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   263      register int id = rt_hw_cpu_id();
 	call	rt_hw_cpu_id
 .L109:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   263  #else
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   264      register int id = 0;
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   265  #endif
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   266  
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   267      return (rt_thread_t)(&idle[id]);
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   264  #else
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   265      register int id = 0;
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   266  #endif
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   267  
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   268      return (rt_thread_t)(&idle[id]);
 	mul	d15,d2,#136
 	movh.a	a15,#@his(idle)
 	lea	a15,[a15]@los(idle)
@@ -529,7 +530,7 @@ rt_thread_idle_gethandler:	.type	func
 	addsc.a	a2,a15,d15,#0
 .L158:
 
-; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   268  }
+; ..\0_Src\0_AppSw\Tricore\rt-thread\src\idle.c	   269  }
 	ret
 .L86:
 	
@@ -1052,13 +1053,13 @@ idle_hook_list:	.type	object
 	.half	.L129-.L128
 	.byte	3,118,1,5,37,9
 	.half	.L130-.L129
-	.byte	3,12,1,5,62,1,5,32,9
+	.byte	3,13,1,5,62,1,5,32,9
 	.half	.L108-.L130
 	.byte	3,3,1,9
 	.half	.L131-.L108
-	.byte	3,113,1,5,29,1,5,1,7,9
+	.byte	3,112,1,5,29,1,5,1,7,9
 	.half	.L132-.L131
-	.byte	3,17,1,7,9
+	.byte	3,18,1,7,9
 	.half	.L37-.L132
 	.byte	0,1,1
 .L118:
@@ -1287,14 +1288,14 @@ idle_hook_list:	.type	object
 	.byte	2
 	.word	.L29
 	.byte	3
-	.byte	'rt_thread_idle_gethandler',0,1,131,2,13
+	.byte	'rt_thread_idle_gethandler',0,1,132,2,13
 	.word	.L85
 	.byte	1,1,1
 	.word	.L28,.L86,.L27
 	.byte	4
 	.word	.L28,.L86
 	.byte	5
-	.byte	'id',0,1,134,2,18
+	.byte	'id',0,1,135,2,18
 	.word	.L87,.L88
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('rt_thread_idle_gethandler')
@@ -1315,7 +1316,7 @@ idle_hook_list:	.type	object
 .L156:
 	.byte	5,35,7,0,5,2
 	.word	.L28
-	.byte	3,133,2,1,5,31,9
+	.byte	3,134,2,1,5,31,9
 	.half	.L109-.L28
 	.byte	3,5,1,5,27,1,5,31,9
 	.half	.L157-.L109

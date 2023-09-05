@@ -125,9 +125,6 @@ void core1_trigger_scheduling(void)
     level = rt_hw_local_irq_disable();
 #endif
 
-    if(rt_thread_switch_interrupt_flag_core1 == 1)
-        rt_thread_switch_interrupt_flag_core1 = 0;
-
     /* 判断是否需要切换到 to 线程 */
     if(rt_interrupt_to_thread_core1)
     {
@@ -314,7 +311,7 @@ void rt_hw_context_switch_interrupt(void *context, rt_ubase_t from, rt_ubase_t t
 void rt_hw_context_switch(rt_ubase_t from, rt_ubase_t to, struct rt_thread *to_thread)
 {
     rt_base_t levelCore0,levelCore1;
-
+    
     switch (__mfcr(CPU_CORE_ID))
     {
     case 0:
@@ -453,10 +450,7 @@ void rt_hw_local_irq_enable(rt_base_t level)
 
 void rt_hw_secondary_cpu_idle_exec(void)
 {
-     while(1)
-     {
 
-     }
 }
 
 rt_base_t rt_hw_local_irq_disable()

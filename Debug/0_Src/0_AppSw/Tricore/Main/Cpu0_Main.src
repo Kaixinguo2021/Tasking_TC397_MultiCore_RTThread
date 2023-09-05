@@ -883,16 +883,18 @@ __core0_main_function_end:
 ; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    67  }
 ; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    68  
 ; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    69  static rt_uint32_t Led_CNT = 0x00;
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    70  static void led_thread_entry(void *parameter)
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    70  static rt_uint8_t led_thread_stack[512];
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    71  static struct rt_thread led_thread_thread;
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    72  static void led_thread_entry(void *parameter)
 ; Function led_thread_entry
 led_thread_entry:	.type	func
 
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    71  {
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    72      while(1)
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    73  {
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    74      while(1)
 .L3:
 
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    73      {
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    74          sendUARTMessage("led_thread_entry\r\n",sizeof("led_thread_entry")+2);
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    75      {
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    76          sendUARTMessage("led_thread_entry\r\n",sizeof("led_thread_entry")+2);
 	movh.a	a4,#@his(.2.str)
 .L52:
 	lea	a4,[a4]@los(.2.str)
@@ -901,12 +903,12 @@ led_thread_entry:	.type	func
 	call	sendUARTMessage
 .L73:
 
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    75          Led_CNT++; 
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    77          Led_CNT++; 
 	ld.w	d15,Led_CNT
 .L74:
 
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    76          rt_thread_mdelay(30);
-	mov	d4,#30
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    78          rt_thread_mdelay(20);
+	mov	d4,#20
 .L75:
 	add	d15,#1
 	st.w	Led_CNT,d15
@@ -927,82 +929,78 @@ __led_thread_entry_function_end:
 	
 	.global	main
 
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    77      }
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    78  }
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    79  
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    80  static rt_uint8_t led_thread_stack[512];
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    81  static struct rt_thread led_thread_thread;
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    82  
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    83  uint32 Main_CNT = 0x00;
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    84  int main(void)
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    79      }
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    80  }
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    81  
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    82  uint32 Main_CNT = 0x00;
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    83  int main(void)
 ; Function main
 .L9:
 main:	.type	func
-	sub.a	a10,#8
-.L53:
 
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    85  {
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    86      IfxCpu_emitEvent(&g_cpuSyncEvent);
-	lea	a4,g_cpuSyncEvent
-	call	IfxCpu_emitEvent
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    84  {
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    85      rt_thread_init(&led_thread_thread, "led", led_thread_entry, RT_NULL,\ 
+	movh.a	a15,#@his(led_thread_thread)
 .L82:
 
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    87      IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
-	lea	a4,g_cpuSyncEvent
-.L83:
-	mov	d4,#1
-	call	IfxCpu_waitEvent
-.L84:
-
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    88      
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    89      rt_thread_init(&led_thread_thread, "led", led_thread_entry, RT_NULL,\ 
-	movh.a	a15,#@his(led_thread_thread)
-.L85:
-
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    90      &led_thread_stack[0], sizeof(led_thread_stack), RT_MAIN_THREAD_PRIORITY+1, 20);
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    86      &led_thread_stack[0], sizeof(led_thread_stack), RT_MAIN_THREAD_PRIORITY+1, 20);
 	movh.a	a2,#@his(led_thread_stack)
-.L86:
+.L83:
 	mov	d4,#512
 	lea	a15,[a15]@los(led_thread_thread)
-.L87:
+.L84:
 	mov	d5,#11
 	lea	a2,[a2]@los(led_thread_stack)
-.L88:
+.L85:
 	mov	d6,#20
+	sub.a	a10,#8
+.L53:
 	movh.a	a6,#@his(led_thread_entry)
-.L89:
+.L86:
 	st.a	[a10],a2
-.L90:
+.L87:
 	lea	a6,[a6]@los(led_thread_entry)
-.L91:
+.L88:
 	mov.aa	a4,a15
-.L92:
+.L89:
 	lea	a5,.4.str
-.L93:
+.L90:
 	mov.a	a7,#0
-.L94:
+.L91:
 	call	rt_thread_init
-.L95:
+.L92:
 
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    91  #ifdef RT_USING_SMP
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    92      rt_thread_control(&led_thread_thread, RT_THREAD_CTRL_BIND_CPU, 0);
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    87  #ifdef RT_USING_SMP
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    88      rt_thread_control(&led_thread_thread, RT_THREAD_CTRL_BIND_CPU, (void*)1);
 	mov	d4,#4
-	mov.a	a5,#0
+	mov.a	a5,#1
 	mov.aa	a4,a15
 	call	rt_thread_control
-.L96:
+.L93:
 
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    93  #endif
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    94      rt_thread_startup(&led_thread_thread);
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    89  #endif
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    90      rt_thread_startup(&led_thread_thread);
 	mov.aa	a4,a15
 	call	rt_thread_startup
+.L94:
 
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    95  
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    96      for(;;)
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    91  
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    92      IfxCpu_emitEvent(&g_cpuSyncEvent);
+	lea	a4,g_cpuSyncEvent
+	call	IfxCpu_emitEvent
+.L95:
+
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    93      IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
+	lea	a4,g_cpuSyncEvent
+.L96:
+	mov	d4,#1
+	call	IfxCpu_waitEvent
+
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    94      for(;;)
 .L4:
 
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    97      {
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    98          sendUARTMessage("int main(void)\r\n",sizeof("int main(void)")+2);
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    95      {
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    96          sendUARTMessage("int main(void)\r\n",sizeof("int main(void)")+2);
 	movh.a	a4,#@his(.5.str)
 	lea	a4,[a4]@los(.5.str)
 .L97:
@@ -1010,11 +1008,11 @@ main:	.type	func
 	call	sendUARTMessage
 .L98:
 
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    99          Main_CNT++;
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    97          Main_CNT++;
 	ld.w	d15,Main_CNT
 .L99:
 
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	   100          rt_thread_mdelay(50);
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    98          rt_thread_mdelay(50);
 	mov	d4,#50
 .L100:
 	add	d15,#1
@@ -1043,16 +1041,6 @@ g_cpuSyncEvent:	.type	object
 Led_CNT:	.type	object
 	.size	Led_CNT,4
 	.space	4
-	.sdecl	'.rodata.Cpu0_Main..2.str',data,rom
-	.sect	'.rodata.Cpu0_Main..2.str'
-.2.str:	.type	object
-	.size	.2.str,19
-	.byte	108,101,100,95
-	.byte	116,104,114,101
-	.byte	97,100,95,101
-	.byte	110,116,114,121
-	.byte	13,10
-	.space	1
 	.sdecl	'.bss.Cpu0_Main.led_thread_stack',data,cluster('led_thread_stack')
 	.sect	'.bss.Cpu0_Main.led_thread_stack'
 led_thread_stack:	.type	object
@@ -1064,6 +1052,16 @@ led_thread_stack:	.type	object
 led_thread_thread:	.type	object
 	.size	led_thread_thread,136
 	.space	136
+	.sdecl	'.rodata.Cpu0_Main..2.str',data,rom
+	.sect	'.rodata.Cpu0_Main..2.str'
+.2.str:	.type	object
+	.size	.2.str,19
+	.byte	108,101,100,95
+	.byte	116,104,114,101
+	.byte	97,100,95,101
+	.byte	110,116,114,121
+	.byte	13,10
+	.space	1
 	.sdecl	'.zdata.Cpu0_Main.Main_CNT',data,cluster('Main_CNT')
 	.sect	'.zdata.Cpu0_Main.Main_CNT'
 	.global	Main_CNT
@@ -1095,11 +1093,11 @@ Main_CNT:	.type	object
 	.calls	'core0_main','rtthread_startup'
 	.calls	'led_thread_entry','sendUARTMessage'
 	.calls	'led_thread_entry','rt_thread_mdelay'
-	.calls	'main','IfxCpu_emitEvent'
-	.calls	'main','IfxCpu_waitEvent'
 	.calls	'main','rt_thread_init'
 	.calls	'main','rt_thread_control'
 	.calls	'main','rt_thread_startup'
+	.calls	'main','IfxCpu_emitEvent'
+	.calls	'main','IfxCpu_waitEvent'
 	.calls	'main','sendUARTMessage'
 	.calls	'main','rt_thread_mdelay'
 	.calls	'core0_main','',0
@@ -26872,10 +26870,10 @@ Main_CNT:	.type	object
 	.byte	2
 	.word	.L10
 	.byte	3
-	.byte	'led_thread_entry',0,1,70,13,1,1
+	.byte	'led_thread_entry',0,1,72,13,1,1
 	.word	.L3,.L43,.L7
 	.byte	4
-	.byte	'parameter',0,1,70,36
+	.byte	'parameter',0,1,72,36
 	.word	.L44,.L45
 	.byte	5
 	.word	.L3,.L43
@@ -26898,7 +26896,7 @@ Main_CNT:	.type	object
 .L71:
 	.byte	5,25,7,0,5,2
 	.word	.L3
-	.byte	3,201,0,1,5,74,9
+	.byte	3,203,0,1,5,74,9
 	.half	.L72-.L3
 	.byte	1,5,9,9
 	.half	.L73-.L72
@@ -26932,7 +26930,7 @@ Main_CNT:	.type	object
 	.byte	2
 	.word	.L10
 	.byte	3
-	.byte	'main',0,1,84,5
+	.byte	'main',0,1,83,5
 	.word	.L46
 	.byte	1,1,1
 	.word	.L9,.L47,.L8
@@ -26955,43 +26953,43 @@ Main_CNT:	.type	object
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\0_Src\\0_AppSw\\Tricore\\Main\\Cpu0_Main.c',0,0,0,0,0
 .L81:
-	.byte	5,5,7,0,5,2
+	.byte	5,21,7,0,5,2
 	.word	.L9
-	.byte	3,211,0,1,5,23,9
-	.half	.L53-.L9
-	.byte	3,2,1,9
-	.half	.L82-.L53
-	.byte	3,1,1,5,39,9
-	.half	.L83-.L82
-	.byte	1,5,21,9
-	.half	.L84-.L83
-	.byte	3,2,1,5,6,9
-	.half	.L85-.L84
+	.byte	3,212,0,1,5,6,9
+	.half	.L82-.L9
 	.byte	3,1,1,5,27,9
-	.half	.L86-.L85
+	.half	.L83-.L82
 	.byte	1,5,21,3,127,1,5,76,9
-	.half	.L87-.L86
+	.half	.L84-.L83
 	.byte	3,1,1,5,6,1,5,80,9
-	.half	.L88-.L87
-	.byte	1,5,47,3,127,1,5,22,9
-	.half	.L89-.L88
+	.half	.L85-.L84
+	.byte	1,5,5,3,125,1,5,47,9
+	.half	.L53-.L85
+	.byte	3,2,1,5,22,9
+	.half	.L86-.L53
 	.byte	3,1,1,5,47,9
-	.half	.L90-.L89
+	.half	.L87-.L86
 	.byte	3,127,1,5,80,9
-	.half	.L91-.L90
+	.half	.L88-.L87
 	.byte	3,1,1,5,40,9
-	.half	.L92-.L91
+	.half	.L89-.L88
 	.byte	3,127,1,5,65,9
-	.half	.L93-.L92
+	.half	.L90-.L89
 	.byte	1,5,80,9
-	.half	.L94-.L93
+	.half	.L91-.L90
 	.byte	3,1,1,5,43,9
-	.half	.L95-.L94
+	.half	.L92-.L91
 	.byte	3,2,1,5,68,1,5,24,9
+	.half	.L93-.L92
+	.byte	3,2,1,5,23,9
+	.half	.L94-.L93
+	.byte	3,2,1,9
+	.half	.L95-.L94
+	.byte	3,1,1,5,39,9
 	.half	.L96-.L95
-	.byte	3,2,1,5,25,9
+	.byte	1,5,25,9
 	.half	.L4-.L96
-	.byte	3,4,1,5,70,9
+	.byte	3,3,1,5,70,9
 	.half	.L97-.L4
 	.byte	1,5,9,9
 	.half	.L98-.L97
@@ -27066,7 +27064,7 @@ Main_CNT:	.type	object
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
 	.word	.L10
 	.byte	3
-	.byte	'led_thread_stack',0,21,80,19
+	.byte	'led_thread_stack',0,21,70,19
 	.word	.L49
 	.byte	5,3
 	.word	led_thread_stack
@@ -27087,7 +27085,7 @@ Main_CNT:	.type	object
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
 	.word	.L10
 	.byte	3
-	.byte	'led_thread_thread',0,21,81,25
+	.byte	'led_thread_thread',0,21,71,25
 	.word	.L50
 	.byte	5,3
 	.word	led_thread_thread
@@ -27108,7 +27106,7 @@ Main_CNT:	.type	object
 	.byte	'D:\\WorkSpace\\Tasking\\Tasking_TC397_MultiCore_RTThread\\Debug\\',0,12,1,2
 	.word	.L10
 	.byte	3
-	.byte	'Main_CNT',0,21,83,8
+	.byte	'Main_CNT',0,21,82,8
 	.word	.L51
 	.byte	1,5,3
 	.word	Main_CNT
@@ -27170,7 +27168,8 @@ Main_CNT:	.type	object
 	.word	(.L53-.L9)/2
 	.byte	19,8,22,26,3,19,138,8,0,0,0
 
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	   101      }
-; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	   101  }
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	    99      }
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	   100  }
+; ..\0_Src\0_AppSw\Tricore\Main\Cpu0_Main.c	   101  
 
 	; Module end

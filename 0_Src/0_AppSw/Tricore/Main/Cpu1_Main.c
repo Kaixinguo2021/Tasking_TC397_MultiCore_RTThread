@@ -47,10 +47,6 @@ void core1_main(void)
      * Enable the watchdog and service it periodically if it is required
      */
     IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());
-    
-    /* Wait for CPU sync event */
-    // IfxCpu_emitEvent(&g_cpuSyncEvent);
-    // IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
 
 #ifdef RT_USING_SMP
     Core1_init();
@@ -58,11 +54,12 @@ void core1_main(void)
     IfxCpu_emitEvent(&g_cpuSyncEvent);
     IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
 
-    rt_thread_init(&core1_thread_1, "core1", core1_thread_entry, RT_NULL,&core1_thread_stack[0], \
-    sizeof(core1_thread_stack), RT_MAIN_THREAD_PRIORITY, 20);
+    rt_thread_init(&core1_thread_1, "core1", core1_thread_entry,\
+    RT_NULL,&core1_thread_stack[0], \
+    sizeof(core1_thread_stack), 5, 10);
     rt_thread_control(&core1_thread_1, RT_THREAD_CTRL_BIND_CPU, 1);
-
     rt_thread_startup(&core1_thread_1);
+    
     /* start scheduler */
     rt_system_scheduler_start();
 #endif
@@ -76,7 +73,7 @@ static void core1_thread_entry(void *parameter)
 {
     while(1)
     {
-        // sendUARTMessage("core1_thread_entry\r\n",sizeof("core1_thread_entry")+2);
+        sendUARTMessage("core1_thread_entry\r\n",sizeof("core1_thread_entry")+2);
         core1_CNT++; 
         rt_thread_mdelay(30);
     }

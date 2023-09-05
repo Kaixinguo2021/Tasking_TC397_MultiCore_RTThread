@@ -67,32 +67,30 @@ void core0_main(void)
 }
 
 static rt_uint32_t Led_CNT = 0x00;
+static rt_uint8_t led_thread_stack[512];
+static struct rt_thread led_thread_thread;
 static void led_thread_entry(void *parameter)
 {
     while(1)
     {
         sendUARTMessage("led_thread_entry\r\n",sizeof("led_thread_entry")+2);
         Led_CNT++; 
-        rt_thread_mdelay(30);
+        rt_thread_mdelay(20);
     }
 }
-
-static rt_uint8_t led_thread_stack[512];
-static struct rt_thread led_thread_thread;
 
 uint32 Main_CNT = 0x00;
 int main(void)
 {
-    IfxCpu_emitEvent(&g_cpuSyncEvent);
-    IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
-    
     rt_thread_init(&led_thread_thread, "led", led_thread_entry, RT_NULL,\
     &led_thread_stack[0], sizeof(led_thread_stack), RT_MAIN_THREAD_PRIORITY+1, 20);
 #ifdef RT_USING_SMP
-    rt_thread_control(&led_thread_thread, RT_THREAD_CTRL_BIND_CPU, 0);
+    rt_thread_control(&led_thread_thread, RT_THREAD_CTRL_BIND_CPU, (void*)1);
 #endif
     rt_thread_startup(&led_thread_thread);
 
+    IfxCpu_emitEvent(&g_cpuSyncEvent);
+    IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
     for(;;)
     {
         sendUARTMessage("int main(void)\r\n",sizeof("int main(void)")+2);
@@ -100,3 +98,4 @@ int main(void)
         rt_thread_mdelay(50);
     }
 }
+
